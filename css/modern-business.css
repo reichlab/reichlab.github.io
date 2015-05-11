@@ -122,3 +122,12 @@ div.desc{
 .carousel-indicators {
   bottom:-40px;
 }
+
+/* for offsetting anchors on fixed header pages from: http://fellowtuts.com/html-css/offsetting-anchor-hash-tag-links-to-adjust-for-fixed-header/ */
+.offset:before { 
+    display: block; 
+ 	content: " "; 
+  	height: 100px;      /* Give height of your fixed element */
+        margin-top: -200px; /* Give negative margin of your fixed element */  	
+        visibility: hidden; 
+}
