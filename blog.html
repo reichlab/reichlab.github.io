@@ -22,19 +22,15 @@ layout: default
                 {% for post in site.posts %}
                 <!-- First Blog Post -->
                 <h2>
-                    <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
+                    {{ post.title }}
                 </h2>
                 <p class="lead">
                     by {{ post.author }}
                 </p>
-                <p><i class="fa fa-clock-o"></i> Posted on {{ post.date | date: '%B %d, %Y' }}</p>
-<!--                <hr>
-                <a href="#">
-                    <img class="img-responsive img-hover" src="https://avatars1.githubusercontent.com/u/6520333?v=3&s=460" alt="">
-                </a>
-                <hr>
--->
                 <p>{{ post.excerpt }}</p>
+                <p><i class="fa fa-clock-o"></i> Posted on {{ post.date | date: '%B %d, %Y' }}</p>
+                <a class="btn btn-primary" href="{{ site.baseurl }}{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
+
                 {% endfor %}
 
             </div>
