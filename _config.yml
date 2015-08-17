@@ -2,7 +2,7 @@ name: Nicholas Reich
 title: "Nicholas Reich: Biostatistics and Infectious Disease Epidemiology"
 
 url: "reichlab.github.io"
-baseurl: "/"
+baseurl: ""
 
 paginate: 5
 paginate_path: "/page:num"
