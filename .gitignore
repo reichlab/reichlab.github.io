@@ -4,3 +4,5 @@
 *.Rproj
 
 *.DS_Store
+
+*_site/*
