@@ -1,5 +1,5 @@
 ---
-title: Dengue competition
+title: Dengue forecasting competition
 layout: post
 author: Nick
 ---
