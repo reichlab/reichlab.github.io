@@ -7,14 +7,32 @@ layout: default
   			<h1 class="page-header"> 
           {{page.title}} 
         </h1>
+        <p class="lead">
+          by {{page.author}}
+        </p>
 
-    		<p class="muted">
-    			{{ page.date | date_to_long_string }}
-    		</p>
-
+    		<p><i class="fa fa-clock-o"></i> 
+          Posted on {{ page.date | date: '%d %B, %Y' }}
+        </p>
+        <hr>  
     		{{ content }}
 
   		</div>
 	</div>
 
 	<hr>
+
+  <!--the Twitter base 
+    https://twitter.com/share --> 
+
+<a href="https://twitter.com/share?
+    text={{ page.title }}
+    &url={{ page.shorturl }}
+    &via=reichlab">
+
+    <!-- use the twitter logo for the link --> 
+    <img alt="..." 
+        class="footer-icon" 
+        src="{{ site.baseurl }}/images/twitter.png">
+
+</a>

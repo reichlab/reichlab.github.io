@@ -21,14 +21,14 @@ layout: default
             <div class="col-md-8">
                 {% for post in site.posts %}
                 <!-- First Blog Post -->
-                <h2>
+                <h2><a href="{{ site.baseurl }}{{ post.url }}">
                     {{ post.title }}
-                </h2>
+                </a></h2>
                 <p class="lead">
                     by {{ post.author }}
                 </p>
                 <p>{{ post.excerpt }}</p>
-                <p><i class="fa fa-clock-o"></i> Posted on {{ post.date | date: '%B %d, %Y' }}</p>
+                <p><i class="fa fa-clock-o"></i> Posted on {{ post.date | date: '%d %B, %Y' }}</p>
                 <a class="btn btn-primary" href="{{ site.baseurl }}{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
 
                 {% endfor %}
