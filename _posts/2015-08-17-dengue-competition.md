@@ -2,6 +2,7 @@
 title: Dengue forecasting competition
 layout: post
 author: Nick
+comments: True
 ---
 
 The lab participated in the [Dengue Forecasting Project](http://predict.phiresearchlab.org/dengue/index.html), hosted by various federal government agencies. 
