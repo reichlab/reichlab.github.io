@@ -2,6 +2,7 @@
 title: Summer activities
 layout: post
 author: Nicholas Reich
+comments: True
 ---
 
 The Reich Lab has had a busy summer!
