@@ -2,6 +2,7 @@
 title: Contributing to STAN
 layout: post
 author: Nick
+comments: True
 ---
 
 In a feat of focused coding jujitsu, Krzysztof successfully put together a pull-request to the base development version of [STAN](http://mc-stan.org/). 
