@@ -1,5 +1,5 @@
 ---
-title: Strange bedfellows: methods for predicting the NBA and flu
+title: "Strange bedfellows: methods for predicting the NBA and flu"
 layout: post
 author: Nick
 comments: True
