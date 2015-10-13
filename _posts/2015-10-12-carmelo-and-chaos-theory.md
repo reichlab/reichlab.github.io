@@ -1,7 +1,7 @@
 ---
 title: Strange bedfellows: methods for predicting the NBA and flu
 layout: post
-author: Nicholas Reich
+author: Nick
 comments: True
 ---
 
