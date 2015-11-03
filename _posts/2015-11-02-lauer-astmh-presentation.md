@@ -25,7 +25,7 @@ Every two weeks, the Thai Ministry of Public Health (MoPH) sends us a cumulative
 
 #### Slide 7: Interactive web app
 
-With our interactive web app, the Thai MoPH can view the observed cases and our predictions for the rest of the year as a plot or on a heat map of Thailand. The app can be viewed in either English or Thai. In this screenshot, you can observe that 2013 was a large epidemic season, while 2014 was rather low. Thus far, we have already observed more cases for 2015 than for 2014, though we believe it is unlikely that there will be as many cases this year as in 2013.
+With our interactive web app, the Thai MoPH can view the observed cases and our predictions for the rest of the year as a plot or on a heat map of Thailand. The app can be viewed in either English or Thai. In this screenshot, you can observe that 2013 was a large epidemic season, while 2014 was rather low. Thus far, we have already observed more cases for 2015 than for 2014. The model forecasts that it is unlikely - but not impossible - that there will be as many cases this year as in 2013.
 
 #### Slide 8: Database
 
@@ -95,7 +95,7 @@ Therefore, we continued on to predict the 2015 dengue season in real time with t
 
 #### Slide 27: 2015 predictions to date
 
-This graph shows the observed case counts of 2015 as of October 22nd as black bars and our predictions for each time point as green lines. From our experience with reporting delays, we know that all of the cases will increase between now and April 2016. Thus far, 2015 has been a more regular dengue season than 2014. In October, we started to receive a large number of reported cases for Bangkok in July and August. While our model generally predicts that 2015 will have fewer cases than 2013, the large uncertainty about Bangkok allows a slim possibility for 2015 to surpass that season.
+This graph shows the observed case counts of 2015 as of October 22nd as black bars and our predictions for each time point as green lines. From our experience with reporting delays, we know that all of the cases will increase between now and April 2016. Thus far, 2015 has been a more regular dengue season than 2014. In October, we started to receive a large number of reported cases for Bangkok in July and August. While our model generally predicts that 2015 will have fewer cases than 2013, the large uncertainty about Bangkok allows a possibility for 2015 to surpass that season.
 
 #### Slide 28: Central achievements
 
