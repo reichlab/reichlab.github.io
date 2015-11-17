@@ -7,7 +7,7 @@ comments: True
 
 Last week, I had the honor of presenting at the 64th Annual Meeting of the [American Society of Tropical Medicine & Hygiene (ASTMH)](https://www.astmh.org/Home.htm) in the well-attended [Dengue: Epidemiology session](http://www.abstractsonline.com/Plan/ViewSession.aspx?sKey=b42307ef-cc96-4877-9cfe-40cb3e3ffb51&mKey=%7bAB652FDF-0111-45C7-A5E5-0BA9D4AF5E12%7d). This presentation covers our work with the Thai Ministry of Public Health and Johns Hopkins University in building an infrastructure for making real-time dengue hemorrhagic fever case predictions and evaluating the performance of our predictions thus far.
 
-You can find the slides for the presentation [here](https://speakerdeck.com/salauer/real-time-prediction-of-dengue-fever-in-thailand). After the jump, I'll provide a slide-by-slide summary.
+You can find the slides for the presentation [here](https://speakerdeck.com/salauer/real-time-prediction-of-dengue-fever-in-thailand). After the jump, I'll provide a slide-by-slide summary. To view the paper associated with this work, you can check it out on [arXiv](http://arxiv.org/abs/1511.04812).
 
 <!--more-->
 
@@ -25,7 +25,7 @@ Every two weeks, the Thai Ministry of Public Health (MoPH) sends us a cumulative
 
 #### Slide 7: Interactive web app
 
-With our interactive web app, the Thai MoPH can view the observed cases and our predictions for the rest of the year as a plot or on a heat map of Thailand. The app can be viewed in either English or Thai. In this screenshot, you can observe that 2013 was a large epidemic season, while 2014 was rather low. Thus far, we have already observed more cases for 2015 than for 2014. The model forecasts that it is unlikely - but not impossible - that there will be as many cases this year as in 2013.
+With our interactive web app, the Thai MoPH can view the observed cases and our predictions for the rest of the year as a plot or on a heat map of Thailand. The app can be viewed in either English or Thai. In this screenshot, you can observe that 2013 was a large epidemic season, while 2014 was rather low. Thus far, we have already observed more cases for 2015 than for 2014, though we believe it is unlikely that there will be as many cases this year as in 2013.
 
 #### Slide 8: Database
 
@@ -95,7 +95,7 @@ Therefore, we continued on to predict the 2015 dengue season in real time with t
 
 #### Slide 27: 2015 predictions to date
 
-This graph shows the observed case counts of 2015 as of October 22nd as black bars and our predictions for each time point as green lines. From our experience with reporting delays, we know that all of the cases will increase between now and April 2016. Thus far, 2015 has been a more regular dengue season than 2014. In October, we started to receive a large number of reported cases for Bangkok in July and August. While our model generally predicts that 2015 will have fewer cases than 2013, the large uncertainty about Bangkok allows a possibility for 2015 to surpass that season.
+This graph shows the observed case counts of 2015 as of October 22nd as black bars and our predictions for each time point as green lines. From our experience with reporting delays, we know that all of the cases will increase between now and April 2016. Thus far, 2015 has been a more regular dengue season than 2014. In October, we started to receive a large number of reported cases for Bangkok in July and August. While our model generally predicts that 2015 will have fewer cases than 2013, the large uncertainty about Bangkok allows a slim possibility for 2015 to surpass that season.
 
 #### Slide 28: Central achievements
 
