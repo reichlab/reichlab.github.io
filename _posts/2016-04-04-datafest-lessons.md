@@ -7,8 +7,8 @@ comments: True
 
 Another Five College ASA DataFest has long come and gone, and I've been meaning to write a recap for a while. Now in its third year in the Pioneer Valley in Western Massachusetts, the number of registrants doubled from last year, from 70 to 140. All Five Colleges (Amherst, Hampshire, Mt. Holyoke, Smith, and UMass-Amherst) sent multiple teams, and there were a few teams with a mix of students from different schools. 
 
-Team Scatterplot from Amherst College took home the Best in Show award.
-<img class="img-responsive" width="450" src="http://www.science.smith.edu/datafest/wp-content/uploads/sites/12/2016/04/IMG_3432.jpg">
+Team "Beta than U" from UMass-Amherst took home one of the Best in Group awards. From left to right: Laura Bowles, Vincent Lee, Harley Jean, Bianca Agustin, and Stephanie Crowley.
+<img class="img-responsive" width="450" src="https://reichlab.github.io/images/beta-than-u.jpg">
 
 <!--more-->
 
