@@ -1,5 +1,5 @@
 ---
-title: "Intro to using the delphi-epidata API to access infectious disease data"
+title: "Using the DELPHI API to access infectious disease data"
 layout: post
 author: Nick
 comments: True
