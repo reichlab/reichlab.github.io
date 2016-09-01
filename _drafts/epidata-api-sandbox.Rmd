@@ -1,0 +1,50 @@
+---
+title: "Intro to using the delphi-epidata API to access infectious disease data"
+author: "Nick Reich"
+date: "2016-09-01"
+output: github_document
+---
+
+```{r setup, include=TRUE}
+source("https://raw.githubusercontent.com/undefx/delphi-epidata/master/code/delphi_epidata.R")
+library(MMWRweek)
+library(ggplot2)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+
+## Dengue data from Taiwan CDC
+
+You can also embed plots, for example:
+
+```{r dengue}
+res <- Epidata$nidss.dengue(locations = list('nationwide', 'central'), 
+                            epiweeks = list(Epidata$range(201001, 201653)))
+df <- data.frame(matrix(unlist(res$epidata), nrow=length(res$epidata), byrow=T))
+colnames(df) <- names(res$epidata[[1]])[!is.null(res$epidata[[1]])]
+df$count <- as.numeric(df$count)
+df$year <- as.numeric(substr(df$epiweek, 0, 4))
+df$week <- as.numeric(substr(df$epiweek, 5, 6))
+df$date <- MMWRweek2Date(MMWRyear = df$year, MMWRweek = df$week)
+
+ggplot(df, aes(x=date, y=count, color=location)) + geom_line() + geom_smooth(se=FALSE)
+```
+
+## Flu data from the CDC
+
+```{r}
+res <- Epidata$fluview(list('nat'), list(201440, Epidata$range(201501, 201510)))
+cat(paste(res$result, res$message, length(res$epidata), "\n"))
+
+str(res$epidata)
+length(res$epidata)
+as.data.frame(res$epidata)
+df <- data.frame(matrix(unlist(res$epidata), nrow=length(res$epidata), byrow=T))
+colnames(df) <- names(res$epidata[[1]])[!is.null(res$epidata[[1]])]
+
+## doesn't work because is.null(res$epidata[[1]]$num_age_2) is TRUE so that column is dropped
+```
+
