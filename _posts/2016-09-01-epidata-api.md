@@ -7,12 +7,12 @@ comments: True
 
 This week I attended a workshop at the CDC about last year's [FluSight challenge](https://predict.phiresearchlab.org/flu/index.html), a competition that scores weekly real-time predictions about the course of the influenza season. They are planning another round this year and are hoping to increase the number of teams particiating. Stay tuned to [this site](https://predict.phiresearchlab.org/flu/index.html) for more info.
 
-Here's a teaser of the data that you can also interactively explore on the [EpiVis site](http://delphi.midas.cs.cmu.edu/epivis/epivis.html) website:
+At the workshop, I learned about [DELPHI's](http://delphi.midas.cs.cmu.edu/) real-time epidemiological [data API](https://github.com/undefx/delphi-epidata). The API is linked to various data sources on influenza and dengue, including US CDC flu data, Google Flu Trends, and Wikipedia data. There is [some documentation](https://github.com/undefx/delphi-epidata#the-api) and [minimal examples](https://github.com/undefx/delphi-epidata#code-samples), and this post documents a more robust and complete example for using the API via R. I'll note that the CDC's influenza data, can also be accessed via the `cdcfluview` R package, which I'm not going to discuss here and I will focus here on accessing some of the other data sources. Here's a teaser of this data that you can also interactively explore on the [DELPHI EpiVis website](http://delphi.midas.cs.cmu.edu/epivis/epivis.html):
 <img class="img-responsive" width="600" src="https://reichlab.github.io/images/blog-figs/epivis.png">
 
-<!--more-->
 
-At the workshop, I learned about [DELPHI's](http://delphi.midas.cs.cmu.edu/) real-time epidemiological [data API](https://github.com/undefx/delphi-epidata). The API is linked to various data sources on influenza and dengue, including US CDC flu data, Google Flu Trends, and Wikipedia data. There is [some documentation](https://github.com/undefx/delphi-epidata#the-api) and [minimal examples](https://github.com/undefx/delphi-epidata#code-samples), and this post documents a more robust and complete example for using the API via R. I'll note that the CDC's influenza data, can also be accessed via the `cdcfluview` R package, which I'm not going to discuss here and I will focus here on accessing some of the other data sources.
+
+<!--more-->
 
 
 Setup
