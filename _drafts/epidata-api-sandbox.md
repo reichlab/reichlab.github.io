@@ -38,7 +38,7 @@ The above command should pull data down into your current session, but it will b
 ``` r
 df <- data.frame(matrix(unlist(res$epidata), nrow=length(res$epidata), byrow=T))
 colnames(df) <- names(res$epidata[[1]])[!is.null(res$epidata[[1]])]
-df$count <- as.numeric(df$count)
+df$count <- as.numeric(as.character(df$count))
 df$year <- as.numeric(substr(df$epiweek, 0, 4))
 df$week <- as.numeric(substr(df$epiweek, 5, 6))
 df$date <- MMWRweek2Date(MMWRyear = df$year, MMWRweek = df$week)
@@ -49,7 +49,7 @@ Note the use of the `MMWRweek2Date()` function that gives us a date column in ou
 And here is a plot of the resulting data. Pretty noisy, but interesting to look at nonetheless.
 
 ``` r
-ggplot(df, aes(x=date, y=count, color=location)) + geom_point() + geom_smooth(se=FALSE)
+ggplot(df, aes(x=date, y=count, color=location)) + geom_point()
 ```
 
 ![](epidata-api-sandbox_files/figure-markdown_github/plot-1.png)
@@ -64,7 +64,7 @@ res <- Epidata$wiki(articles=list("influenza", "common_cold", "cough"),
                     epiweeks=list(Epidata$range(201101, 201553)))
 df <- data.frame(matrix(unlist(res$epidata), nrow=length(res$epidata), byrow=T))
 colnames(df) <- names(res$epidata[[1]])[!is.null(res$epidata[[1]])]
-df$count <- as.numeric(df$count)
+df$count <- as.numeric(as.character(df$count))
 df$year <- as.numeric(substr(df$epiweek, 0, 4))
 df$week <- as.numeric(substr(df$epiweek, 5, 6))
 df$date <- MMWRweek2Date(MMWRyear = df$year, MMWRweek = df$week)

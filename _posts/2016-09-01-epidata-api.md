@@ -7,8 +7,8 @@ comments: True
 
 This week I attended a workshop at the CDC about last year's [FluSight challenge](https://predict.phiresearchlab.org/flu/index.html), a competition that scores weekly real-time predictions about the course of the influenza season. They are planning another round this year and are hoping to increase the number of teams particiating. Stay tuned to [this site](https://predict.phiresearchlab.org/flu/index.html) for more info.
 
-Here's a teaser of one of the images that we can make using public Wikipedia data from this API: 
-<img class="img-responsive" width="450" src="https://reichlab.github.io/images/blog-figs/wiki-data.png">
+Here's a teaser of the data that you can also interactively explore on the [EpiVis site](http://delphi.midas.cs.cmu.edu/epivis/epivis.html) website:
+<img class="img-responsive" width="600" src="https://reichlab.github.io/images/blog-figs/epivis.png">
 
 <!--more-->
 
@@ -46,18 +46,16 @@ The above command should pull data down into your current session, but it will b
 ``` r
 df <- data.frame(matrix(unlist(res$epidata), nrow=length(res$epidata), byrow=T))
 colnames(df) <- names(res$epidata[[1]])[!is.null(res$epidata[[1]])]
-df$count <- as.numeric(df$count)
+df$count <- as.numeric(as.character(df$count))
 df$year <- as.numeric(substr(df$epiweek, 0, 4))
 df$week <- as.numeric(substr(df$epiweek, 5, 6))
 df$date <- MMWRweek2Date(MMWRyear = df$year, MMWRweek = df$week)
 ```
 
-Note the use of the `MMWRweek2Date()` function that gives us a date column in our data frame.
-
-And here is a plot of the resulting data. Pretty noisy, but interesting to look at nonetheless.
+Note the use of the `MMWRweek2Date()` function that gives us a date column in our data frame. And here is a plot of the resulting data. 
 
 ``` r
-ggplot(df, aes(x=date, y=count, color=location)) + geom_point() + geom_smooth(se=FALSE)
+ggplot(df, aes(x=date, y=count, color=location)) + geom_point() + scale_y_log10()
 ```
 
 ![](https://reichlab.github.io/images/blog-figs/nidss-data.png)
@@ -72,7 +70,7 @@ res <- Epidata$wiki(articles=list("influenza", "common_cold", "cough"),
                     epiweeks=list(Epidata$range(201101, 201553)))
 df <- data.frame(matrix(unlist(res$epidata), nrow=length(res$epidata), byrow=T))
 colnames(df) <- names(res$epidata[[1]])[!is.null(res$epidata[[1]])]
-df$count <- as.numeric(df$count)
+df$count <- as.numeric(as.character(df$count))
 df$year <- as.numeric(substr(df$epiweek, 0, 4))
 df$week <- as.numeric(substr(df$epiweek, 5, 6))
 df$date <- MMWRweek2Date(MMWRyear = df$year, MMWRweek = df$week)
