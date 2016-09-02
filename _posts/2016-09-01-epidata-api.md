@@ -82,3 +82,5 @@ ggplot(df, aes(x=date, y=count, color=article)) +
 ![](https://reichlab.github.io/images/blog-figs/wiki-data.png)
 
 Happy data exploring!
+
+__UPDATE__: (2 Sept 2016) Roni Rosenfeld, the head of the DELPHI group at CMU, pointed out and asked me to mention that David Farrow was the force behind the creation of the epidata API and the epivis tool.
