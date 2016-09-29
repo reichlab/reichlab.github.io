@@ -1,11 +1,10 @@
 name: Nicholas Reich
 title: "Nicholas Reich: Biostatistics and Infectious Disease Epidemiology"
+url: "https://reichlab.github.io"
 
-url: "reichlab.github.io"
-
+markdown: kramdown
 paginate: 5
 paginate_path: "/page:num"
 excerpt_separator: <!--more-->
-
-markdown: kramdown
-
+gems:
+  [jekyll-paginate]
