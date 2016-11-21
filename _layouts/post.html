@@ -4,17 +4,17 @@ layout: default
 <div class="container">
 	<div class="row">
   		<div class="col-xs-12">
-  			<h1 class="page-header"> 
-          {{page.title}} 
+  			<h1 class="page-header">
+          {{page.title}}
         </h1>
         <p class="lead">
           by {{page.author}}
         </p>
 
-    		<p><i class="fa fa-clock-o"></i> 
+    		<p><i class="fa fa-clock-o"></i>
           Posted on {{ page.date | date: '%d %B, %Y' }}
         </p>
-        <hr>  
+        <hr>
     		{{ content }}
 
   		</div>
@@ -36,8 +36,8 @@ layout: default
     &url={{ page.shorturl }}
     &via=reichlab">
 
-    <img alt="..." 
-        class="footer-icon" 
+    <img alt="..."
+        class="footer-icon"
         src="{{ site.baseurl }}/images/twitter.png">
 </a>
 

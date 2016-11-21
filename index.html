@@ -112,7 +112,7 @@ layout: default
                             {% for post in site.posts %}
                                 <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
                                 {{ post.excerpt }}
-                                <p><i class="fa fa-clock-o"></i> 
+                                <p><i class="fa fa-clock-o"></i>
                                     Posted on {{ post.date | date: '%d %B, %Y' }}
                                 </p>
                             {% endfor %}
@@ -120,20 +120,23 @@ layout: default
                 </div>
             </div>
             <div class="col-md-4">
-<!--                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4>On twitter</h4>
-                    </div>
-                    <div class="panel-body"> -->
-                    
-<a class="twitter-timeline" href="https://twitter.com/reichlab" data-widget-id="560990797194342402">Tweets by @reichlab</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                        <!-- <a href="#" class="btn btn-default">Learn More</a> -->
-<!--                    </div>
-                </div> -->
+                <!-- <div class="panel panel-default">
+                     <div class="panel-heading">
+                     <h4>On twitter</h4>
+                     </div>
+                     <div class="panel-body"> -->
+                <a class="twitter-timeline"
+                   href="https://twitter.com/reichlab"
+                   data-widget-id="560990797194342402">
+                    Tweets by @reichlab
+                </a>
+                <script>
+                    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+                </script>
+                <!-- <a href="#" class="btn btn-default">Learn More</a> -->
+                <!--                    </div>
+                     </div> -->
             </div>
-        </div>
-        <!-- /.row -->
-
-
-        <hr>
+       </div>
+       <!-- /.row -->
+       <hr>
