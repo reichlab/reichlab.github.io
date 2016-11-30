@@ -9,7 +9,7 @@ We updated our [U.S. influenza forecasts](https://reichlab.github.io/flusight/) 
 
 <a href="https://reichlab.github.io/flusight/">
     <img class="img-responsive" width="700" src="https://reichlab.github.io/images/blog-figs/20161130-us-flu-map.png">
-     <div style='width: 600px; text-align: center;'>Reported U.S. regional influenza incidence in Nov 13-19 (MMWR week 46), 2016. Colors show percent above or below baseline.</div>
+     Reported U.S. regional influenza incidence in Nov 13-19 (MMWR week 46), 2016. Colors show percent above or below baseline.
 </a>
 
 <!--more-->
