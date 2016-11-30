@@ -1,18 +1,19 @@
 {% if page.comments %}
 <div id="disqus_thread"></div>
 <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = 'reichlab';
-    var disqus_identifier = "{{ page.url }}";
-    var disqus_title = '{{ page.title }}';
+    var disqus_config = function () {
+        this.page = this.page || {};
+        this.page.url = '{{ site.url }}{{ page.url }}';
+        this.page.identifier = '{{ page.url }}';
+        this.page.title = '{{ page.title }}';
+    };
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
 
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        s.src = 'https://reichlab.disqus.com/embed.js';
+
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
     })();
 </script>
 <noscript>Please enable JavaScript to view the
