@@ -1,0 +1,40 @@
+/* Additional css properties writing over the modern-business.css template */
+
+footer {
+    margin: 0px;
+    margin-top: 20px;
+    padding: 30px 20px;
+    background-color: #f5f5f5;
+}
+
+footer a, a:hover, a:focus {
+    color: #666;
+    text-decoration: none;
+}
+
+.btn-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+footer a .text-light {
+    font-weight: normal;
+    color: #777;
+}
+
+footer a#twitter-btn {
+    margin-left: 10px;
+}
+
+footer a#github-btn:hover {
+    color: black !important;
+}
+
+footer a#twitter-btn:hover {
+    color: #1da1f2 !important;
+}
+
+footer #footer-note {
+    margin-top: 20px;
+    color: #666;
+}
