@@ -13,3 +13,7 @@ defaults:
       path: "blog/_posts"
     values:
       permalink: /:year/:month/:day/:title.html
+  - scope:
+      path: "talks/_posts"
+    values:
+      permalink: /talks/:title.html
