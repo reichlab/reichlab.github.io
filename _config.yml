@@ -8,3 +8,8 @@ paginate_path: "/page:num"
 excerpt_separator: <!--more-->
 gems:
   [jekyll-paginate]
+defaults:
+  - scope:
+      path: "blog/_posts"
+    values:
+      permalink: /:year/:month/:day/:title.html
