@@ -33,13 +33,21 @@ Outline
 
 
 <section>
-    <h3>Spread of Ebola in West Africa</h3>
-    <img class="stretch" src="/images/talks/am-model-schema-v9.pdf">
+    <h3>Modeling the cost-effectiveness</h3>
+    <img class="stretch" src="/images/talks/am-model-schema-v9.jpg">
     <div class="citation">
         Reich et al. 2017 (under review)
     </div>
 </section>
 
 <section>
-
+- We want a predictive distribution for $y | \mathbf{x}$.
+    - $y$ = e.g. season onset timing, peak timing, or peak incidence
+    - $\mathbf{x}$ = time of year, recent incidence, weather, ...
+- We have $M = 3$ predictive distributions $f_m(y | \mathbf{x})$ from different models
+- Combine with covariate-dependent weights $\pi_m(\mathbf{x})$:
+$$f(y | \mathbf{x}) = \sum_{m = 1}^M \pi_m(\mathbf{x}) f_m(y | \mathbf{x})$$
+- We require $\pi_m(\mathbf{x}) \geq 0$ and $\sum_{m = 1}^M \pi_m(\mathbf{x}) = 1$ for each $\mathbf{x}$.  One approach:
+$$\pi_m(\mathbf{x}) = \frac{\exp\{\rho_m(\mathbf{x})\}}{\sum_{m' = 1}^M \exp\{\rho_{m'}(\mathbf{x})\}}$$
+- We estimate the functions $\rho_m(\mathbf{x})$ via Gradient Tree Boosting (GTB)
 </section>
