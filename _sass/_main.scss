@@ -4,3 +4,9 @@
 .bg-gray {
   background-color: $color-gray-light;
 }
+
+.carousel {
+  img {
+    max-height: 200px;
+  }
+}
