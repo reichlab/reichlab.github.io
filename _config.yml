@@ -1,11 +1,12 @@
 title: "Nicholas Reich: Biostatistics and Infectious Disease Epidemiology"
 description: "Reich Lab @ UMassAmherst"
-author: "Nicholar Reich"
+author: "Nicholas Reich"
 baseurl: ""
 url: "http://reichlab.io/"
 
 twitter_username: reichlab
-github_username:  reichlab
+github_username: reichlab
+source_url: "https://github.com/reichlab/reichlab.github.io"
 
 # Build settings
 markdown: kramdown

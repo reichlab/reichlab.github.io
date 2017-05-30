@@ -1,0 +1,49 @@
+<div class="carousel">
+  {% assign counter = 0 %}
+  {% for image in site.static_files %}
+    {% if image.path contains 'images/carousel' %}
+      {% assign counter = counter | plus: 1 %}
+      <input type="radio"
+         id="slide-{{ counter }}"
+         name="carousel-radio"
+         hidden=""
+         class="carousel-locator"
+         {% if counter == 1 %} checked="" {% endif %}>
+    {% endif %}
+  {% endfor %}
+
+  {% comment %} Collecting total number of carousel items {% endcomment %}
+  {% assign total = counter %}
+
+  <div class="carousel-container">
+    {% assign counter = 0 %}
+    {% for image in site.static_files %}
+      {% if image.path contains 'images/carousel' %}
+        {% assign counter = counter | plus: 1 %}
+        <figure class="carousel-item">
+          <label
+            class="item-prev btn btn-action btn-lg"
+            for="slide-{% if counter == 1 %}{{ total }}{% else %}{{ counter | minus: 1 }}{% endif %}">
+            <i class="icon icon-arrow-left"></i>
+          </label>
+          <label
+            class="item-next btn btn-action btn-lg"
+            for="slide-{% if counter == total %}1{% else %}{{ counter | plus: 1 }}{% endif %}">
+            <i class="icon icon-arrow-right"></i>
+          </label>
+          <img src="{{ site.baseurl }}{{ image.path }}" class="img-responsive rounded" alt="{{ image.name }}">
+        </figure>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="carousel-nav">
+    {% assign counter = 0 %}
+    {% for image in site.static_files %}
+      {% if image.path contains 'images/carousel' %}
+        {% assign counter = counter | plus: 1 %}
+        <label class="nav-item text-hide hand" for="slide-{{ counter }}">{{ counter }}</label>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

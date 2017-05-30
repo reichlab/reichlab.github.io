@@ -1,0 +1,19 @@
+.section-footer {
+  padding: 3rem .5rem;
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a#twitter-btn {
+    margin-left: 10px;
+  }
+
+  a#github-btn:hover {
+    color: $color-black;
+  }
+
+  a#twitter-btn:hover {
+    color: $color-twitter;
+  }
+}

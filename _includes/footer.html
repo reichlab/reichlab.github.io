@@ -1,2 +1,27 @@
-<footer class="footer">
+<footer class="bg-gray">
+  <section class="section-footer container grid-960">
+    <p>
+      <a href="https://github.com/{{ site.github_username }}" id="github-btn" target="_blank">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+        </span>
+        <span class="btn-text">
+          <span class="text-light">github /</span>
+          <strong>{{ site.github_username }}</strong>
+        </span>
+      </a>
+      <a href="https://twitter.com/{{ site.twitter_username }}" id="twitter-btn" target="_blank">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        </span>
+        <span class="btn-text">
+          <span class="text-light">twitter /</span>
+          <strong>@{{ site.twitter_username }}</strong>
+        </span>
+      </a>
+    </p>
+    <p>Copyright &copy; {{ site.author }} {{ site.time | date: '%Y' }}. Source code <a href="{{ site.source_url }}">here</a>.</p>
+  </section>
 </footer>
