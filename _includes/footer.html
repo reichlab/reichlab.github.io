@@ -2,9 +2,8 @@
   <section class="section-footer container grid-960">
     <p>
       <a href="https://github.com/{{ site.github_username }}" id="github-btn" target="_blank">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+        <span class="fa-lg">
+          <i class="fa fa-github-alt"></i>
         </span>
         <span class="btn-text">
           <span class="text-light">github /</span>
@@ -12,9 +11,8 @@
         </span>
       </a>
       <a href="https://twitter.com/{{ site.twitter_username }}" id="twitter-btn" target="_blank">
-        <span class="fa-stack fa-lg">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        <span class="fa-lg">
+          <i class="fa fa-twitter"></i>
         </span>
         <span class="btn-text">
           <span class="text-light">twitter /</span>
@@ -22,6 +20,6 @@
         </span>
       </a>
     </p>
-    <p>Copyright &copy; {{ site.author }} {{ site.time | date: '%Y' }}. Source code <a href="{{ site.source_url }}">here</a>.</p>
+    <p class="foot-note"><small>&copy; {{ site.author }} {{ site.time | date: '%Y' }}. Source code available <a href="{{ site.source_url }}">here</a>.</small></p>
   </section>
 </footer>
