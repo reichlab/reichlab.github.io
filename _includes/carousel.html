@@ -1,9 +1,11 @@
-<div class="carousel">
-  {% for image in site.static_files %}
-    {% if image.path contains 'images/carousel' %}
-      <figure class="carousel-figure">
-        <img data-lazy="{{ site.baseurl }}{{ image.path }}" class="img-responsive rounded" alt="{{ image.name }}">
-      </figure>
-    {% endif %}
-  {% endfor %}
-</div>
+<section class="container grid-960">
+  <div class="carousel">
+    {% for image in site.static_files %}
+      {% if image.path contains 'images/carousel' %}
+        <figure class="carousel-figure">
+          <img data-lazy="{{ site.baseurl }}{{ image.path }}" class="img-responsive rounded" alt="{{ image.name }}">
+        </figure>
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
