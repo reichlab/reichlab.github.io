@@ -2,7 +2,10 @@
 layout: default
 ---
 
-### Publications <small class="label"> peer-reviewed journal articles</small>
+# Publications
+### <small class="label"> peer-reviewed journal articles</small>
+
+<br>
 
 #### Disease forecasting
 
