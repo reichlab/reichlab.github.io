@@ -7,6 +7,8 @@ layout: default
 
 <br>
 
+{{ page.data.test }}
+
 #### Disease forecasting
 
 - Reich NG, Lessler J, Sakrejda K, Lauer SA, Iamsirithaworn S, Cummings DAT.
