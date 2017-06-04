@@ -3,9 +3,22 @@ GEM
   specs:
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
+    bibtex-ruby (4.4.3)
+      latex-decode (~> 0.0)
     colorator (1.1.0)
+    domain_name (0.5.20170404)
+      unf (>= 0.0.5, < 1.0.0)
     ffi (1.9.18)
     forwardable-extended (2.6.0)
+    http (2.2.2)
+      addressable (~> 2.3)
+      http-cookie (~> 1.0)
+      http-form_data (~> 1.0.1)
+      http_parser.rb (~> 0.6.0)
+    http-cookie (1.0.3)
+      domain_name (~> 0.5)
+    http-form_data (1.0.3)
+    http_parser.rb (0.6.0)
     jekyll (3.3.1)
       addressable (~> 2.4)
       colorator (~> 1.0)
@@ -17,14 +30,14 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-feed (0.9.2)
-      jekyll (~> 3.3)
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
     kramdown (1.13.2)
+    latex-decode (0.2.2)
+      unicode (~> 0.4)
     liquid (3.0.6)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -39,17 +52,22 @@ GEM
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.24)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.4)
+    unicode (0.4.4.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (= 3.3.1)
-  jekyll-feed (~> 0.6)
+  bibtex-ruby
+  http
+  jekyll (>= 3.3.1)
   jekyll-paginate
 
 RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.13.7
+   1.15.1

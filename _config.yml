@@ -29,3 +29,7 @@ defaults:
       path: "talks/_posts"
     values:
       permalink: /talks/:title.html
+
+# Preprocessing configuration
+bibtex_sources:
+  - <test-source>
