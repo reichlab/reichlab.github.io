@@ -19,6 +19,10 @@
       <div class="columns">
         <div class="column col-8 col-md-12">
           {{ content }}
+
+          {% if page.comments %}
+            {% include comments.html %}
+          {% endif %}
         </div>
       </div>
     </section>
