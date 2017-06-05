@@ -7,7 +7,11 @@ layout: default
 
 <br>
 
-{{ page.data.test }}
+{% for item in page.bib_entries %}
+
+- {{ item.authors }}. *{{ item.title }}*. {{ item.journal }}
+
+{% endfor %}
 
 #### Disease forecasting
 
