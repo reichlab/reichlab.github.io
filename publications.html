@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<h1>Publications</h1>
+<h3><small class="label"> peer-reviewed journal articles</small></h3>
+
+<ul>
+  {% for item in page.bib_entries %}
+    <li>{{ item.authors }}. <em>{{ item.title }}</em>. {{ item.journal }}</li>
+  {% endfor %}
+</ul>

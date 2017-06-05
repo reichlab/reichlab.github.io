@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<!-- Page Heading/Breadcrumbs -->
+<h1 class="page-header">Reich Lab Blog</h1>
+<h3><small class="label">Predicting Dengue Fever at an Outbreak Near You</small></h3>
+
+<div class="columns">
+
+  <div class="column col-8 col-md-12">
+    {% for post in site.posts %}
+      <div>
+        <h2>
+          <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }}</a>
+        </h2>
+        <p>
+          by <em>{{ post.author }}</em>
+        </p>
+        <p><i class="fa fa-clock-o"></i> Posted on {{ post.date | date: '%d %B, %Y' }}</p>
+        <p>{{ post.excerpt }}</p>
+        <p>
+          <a class="btn btn-primary" href="{{ site.baseurl }}{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
+        </p>
+        <br><br>
+      </div>
+    {% endfor %}
+  </div>
+
+  <div class="column col-4 hide-md">
+    <div class="empty">
+      <h4>Reich Lab News</h4>
+      <p>
+        <a href="{{ site.baseurl }}/feed.xml"><i class="fa fa-rss"></i> Atom feed - Blog Entries</a>
+      </p>
+      <p>
+        This blog was launched in the summer of 2015. We occasionally post news
+        and other little tidbits of interest about our ongoing collaborative
+        research on this blog.
+      </p>
+    </div>
+    <br>
+    {% include tweets.html %}
+  </div>
+</div>
