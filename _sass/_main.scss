@@ -20,5 +20,30 @@ ul {
 }
 
 .error-panel {
-  margin: 10rem 0rem;
+  margin: 10rem 0;
+}
+
+.highlight {
+  border-radius: 5px;
+  font-family: 'Source Code Pro';
+  font-size: 14px;
+  overflow-x: auto;
+
+  // Fix for parens
+  .p {
+    font-size: 12px;
+  }
+
+  code {
+    line-height: 1.8em;
+    padding: 1em;
+  }
+}
+
+code {
+  background: $code-background;
+  border-radius: 5px;
+  color: $code-foreground;
+  font-family: 'Source Code Pro';
+  padding: 0 5px;
 }
