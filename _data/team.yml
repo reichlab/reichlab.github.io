@@ -1,0 +1,122 @@
+# Team directory
+# Accepts markdown in `description` (needs escaping for few chars)
+
+- name: Nicholas Reich
+  role: Principal Investigator
+  description: |
+    Nick\'s research focuses on developing statistical methods for analyzing
+    infectious disease data. He also enjoys hiking, canoeing, and juggling.
+  image: "http://people.umass.edu/nick/faceshot.jpg"
+  links:
+    - name: Google Scholar
+      url: "https://scholar.google.com/citations?hl=en&user=AQUsdvkAAAAJ"
+    - name: Twitter
+      url: "https://twitter.com/reichlab"
+    - name: CV
+      url: "https://people.umass.edu/nick/cvReich.pdf"
+
+
+- name: Alexandria (Lexi) Brown
+  role: Post-doctoral fellow
+  description: |
+    Lexi received her PhD in Organismic and Evolutionary Biology. She is
+    interested in machine learning and developing intelligent, interpretable
+    statistical models for analyzing infectious diseases in human populations.
+  image: images/people/lexi.jpg
+  links:
+    - name: CV
+      url: "https://drive.google.com/file/d/0B-fpi_ROKnbcQ3ZrbVh3UVY1SE0/view?usp=sharing"
+
+
+- name: Evan Ray
+  role: Post-doctoral fellow
+  description: |
+    Evan got his PhD in statistics developing methods to infer physical activity
+    type and intensity from accelerometer data. He is working on developing
+    inference techniques for multi-pathogen disease models.
+  image: images/people/evan.jpg
+  links:
+    - name: CV
+      url: assets/misc/Evan_Ray_CV.pdf
+
+
+- name: Krzysztof Sakrejda
+  role: Post-doctoral fellow
+  description: |
+    Krzysztof received his PhD in Organismic and Evolutionary Biology studying
+    environmental sensitivty in survival and developing time-to-event and local
+    regression models for mark-recapture data. He is working on incorporating
+    time-delayed data into predictive disease models.
+  image: images/people/krzysztof.jpg
+  links:
+    - name: Google Scholar
+      url: "https://scholar.google.com/citations?user=nWWt_dMAAAAJ&hl=en"
+    - name: Github
+      url: "https://github.com/sakrejda"
+
+
+- name: Stephen Lauer
+  role: PhD student
+  description: |
+    Stephen is a graduate researcher pursuing his PhD in biostatistics. His work
+    focuses on developing tools to make and evaluate real-time infectious
+    disease forecasts, such as the [Shiny web
+    application](http://iddynamics.jhsph.edu/apps/shiny/ALERT/) for the ALERT
+    algorithm. He likes the NBA and maps.
+  image: images/people/steve.jpg
+  links:
+    - name: Google Scholar
+      url: "https://scholar.google.com/citations?user=EEKbG5sAAAAJ&hl=en"
+    - name: Twitter
+      url: "https://twitter.com/salauer_biostat"
+
+- name: Xi Meng
+  role: MS student
+  description: |
+     Xi received her BS degree from Beijing Institute of Technology with a major
+     in Electrical Engineering. She is working as a research assistant to
+     conduct simulation studies and analysis on multi-strain infectious disease
+     time-series data.
+  image: images/people/xi.png
+  links:
+    - name: CV
+      url: "https://drive.google.com/file/d/0B66FkAegj6nrdlZPSXlIZm9jWDQ/view"
+
+
+- name: Harley Jean
+  role: Undergraduate
+  description: |
+    Harley is a senior Public Health major at UMass-Amherst. He is working as a
+    research assistant, investigating methods for analyzing spatial dynamics of
+    infectious disease time-series data.
+  image: images/people/harley.jpeg
+  links: []
+
+
+- name: Abhinav Tushar
+  role: MS Student
+  description: |
+    Abhinav is an MS student in Computer Science department. He is interested in
+    machine learning and data science.
+  image: images/people/abhinav.jpg
+  links:
+    - name: Github
+      url: "https://github.com/lepisma"
+    - name: Home Page
+      url: "https://lepisma.github.io/about"
+
+
+- name: Matthew Cornell
+  role: Software Engineer
+  description: |
+    Matt is the lab\'s research software engineer. His M.S. is in Computer
+    Science from UMass/Amherst, and his B.S. is in E.E. Before grad school he
+    worked for NASA\'s Kennedy Space Center in Space Shuttle operations. Since
+    then he\'s worked for decades in various AI research labs, writing all types
+    of software.
+  image: images/people/matt.jpg
+  links:
+    - name: My Site
+      url: "http://www.matthewcornell.org"
+    - name: LinkedIn
+      url: "https://www.linkedin.com/in/matthewcornell"

@@ -9,7 +9,7 @@ module Publications
       if File.exist? bib_file
         bib_entries = BibTeX.open bib_file
 
-        publications = site.pages.detect {|page| page.name == 'publications.md'}
+        publications = site.pages.detect { |page| page.name == 'publications.md' }
         publications.data['bib_entries'] = bib_entries.map { |e| parse_entry e }
       end
     end
