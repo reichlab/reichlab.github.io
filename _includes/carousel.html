@@ -2,8 +2,8 @@
   <div class="carousel">
     {% for image in site.static_files %}
       {% if image.path contains 'images/carousel' %}
-        <figure class="carousel-figure">
-          <img data-lazy="{{ site.baseurl }}{{ image.path }}" class="img-responsive rounded" alt="{{ image.name }}">
+    <figure class="carousel-figure">
+      <img src="{{ site.baseurl }}{{ image.path }}" class="rounded img-responsive" alt="{{ image.name }}">
         </figure>
       {% endif %}
     {% endfor %}
