@@ -18,7 +18,7 @@ SHA=`git rev-parse --verify HEAD`
 git checkout gh-pages || git checkout --orphan gh-pages
 
 git config user.name "CI auto deploy"
-git config user.email $COMMIT_AUHOR_EMAIL
+git config user.email $COMMIT_AUTHOR_EMAIL
 
 git add .
 git commit -m "Auto deploy to GitHub Pages: ${SHA}"
