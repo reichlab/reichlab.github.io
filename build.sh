@@ -10,18 +10,18 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "master" ]; then
     exit 0
 fi
 
-REPO=`git config remote.origin.url`
-SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
-SHA=`git rev-parse --verify HEAD`
+cd _site
 
-# Run deployment steps
-git checkout gh-pages || git checkout --orphan gh-pages
+REPO=git@github.com:reichlab/beta
 
 git config user.name "CI auto deploy"
 git config user.email $COMMIT_AUTHOR_EMAIL
-
+git init
 git add .
 git commit -m "Auto deploy to GitHub Pages: ${SHA}"
+
+git checkout -b gh-pages
+git remote add ghp $REPO
 
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
 ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
@@ -34,4 +34,4 @@ eval `ssh-agent -s`
 ssh-add deploy_key
 
 # Push to gh-pages
-git push $SSH_REPO gh-pages --force
+git push ghp gh-pages --force
