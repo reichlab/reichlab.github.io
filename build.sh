@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 set -e
 
+# Collect bibtex entries
+bundle exec ruby ./_scripts/collect-bibtex.rb
+bundle exec jekyll build
+# bundle exec htmlproofer ./_site
+
 if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "master" ]; then
-    echo "Skipping deploy; just doing a build."
-    # Collect bibtex entries
-    bundle exec ruby ./_scripts/collect-bibtex.rb
-    bundle exec jekyll build
-    # bundle exec htmlproofer ./_site
+    echo "Skipping deploy"
     exit 0
 fi
 
