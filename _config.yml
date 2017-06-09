@@ -31,5 +31,5 @@ defaults:
       permalink: /talks/:title.html
 
 # Preprocessing configuration
-bibtex_sources:
-  - <test-source>
+# bibtex_sources:
+#   - <test-source>
