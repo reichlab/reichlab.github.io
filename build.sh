@@ -15,9 +15,9 @@ cd _site
 
 REPO=git@github.com:reichlab/beta
 
+git init
 git config user.name "CI auto deploy"
 git config user.email $COMMIT_AUTHOR_EMAIL
-git init
 git add .
 git commit -m "Auto deploy to GitHub Pages: ${SHA}"
 
