@@ -16,6 +16,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - researches
+  - teachings
 paginate: 5
 paginate_path: "/page:num"
 excerpt_separator: <!--more-->
