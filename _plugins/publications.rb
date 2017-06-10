@@ -22,8 +22,9 @@ module Publications
       parsed['journal'] = entry.journal.to_s
 
       # Trim title
-      parsed['title']['{'] = ''
-      parsed['title']['}'] = ''
+      parsed['title']['{'] = '' if parsed['title'].start_with? '{'
+      parsed['title']['}'] = '' if parsed['title'].end_with? '}'
+
       parsed
     end
   end

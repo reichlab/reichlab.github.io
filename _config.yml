@@ -16,8 +16,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
-  - research
-  - teaching
+  - research/
+  - teaching/
 paginate: 5
 paginate_path: "/page:num"
 excerpt_separator: <!--more-->
@@ -39,11 +39,11 @@ bibtex_sources:
   - reichlab-pub-list.bib
 
 # GitHub research sources
-# Local researches in `research` are included automatically
+# Local researches in `_research` are included automatically
 research_sources:
   # - reichlab/flusight
 
 # GitHub teaching sources
-# Local files in `teaching` are included automatically
+# Local files in `_teaching` are included automatically
 teaching_sources:
   # - <>
