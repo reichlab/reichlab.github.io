@@ -1,6 +1,6 @@
 ---
 title: Cluster-randomized Trial Design
-image: /images/crxo-power.jpg
+image: /images/research/crxo-power.jpg
 link:
   name: View Publications
   url: /publications

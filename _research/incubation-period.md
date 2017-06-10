@@ -1,6 +1,6 @@
 ---
 title: Estimating Incubation Period Distributions
-image: /images/gamma-posterior.png
+image: /images/research/gamma-posterior.png
 link:
   name: View Publications
   url: /publications

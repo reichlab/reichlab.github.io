@@ -1,6 +1,6 @@
 ---
 title: Statistical Methods for Pathogen Interactions
-image: /images/simulatedSpectra3.png
+image: /images/research/simulatedSpectra3.png
 link:
   name: View Publications
   url: /publications

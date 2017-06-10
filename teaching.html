@@ -1,3 +1,49 @@
 ---
 layout: default
 ---
+
+<h1>Teaching</h1>
+
+<div class="columns">
+  <div class="column col-12">
+    <h2>Courses and curriculum</h2>
+  </div>
+
+  {% for item in page.items %}
+    {% if item.category == 'course' %}
+      <div class="column col-4 col-md-6 col-sm-12">
+        <div class="card">
+          <div class="card-image">
+            <img class="img-responsive" src="{{ item.image }}" alt="">
+          </div>
+          <div class="card-header">
+            <a href="{{ item.link }}">
+              <h3>{{ item.title }}</h3>
+            </a>
+          </div>
+          <div class="card-body">
+            {{ item.content }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+{% for item in page.items %}
+  {% if item.category == 'wide' %}
+    <div class="columns">
+      <div class="column col-12">
+        <h2>
+          {{ item.title }}
+        </h2>
+      </div>
+      <div class="column col-6 col-md-12">
+        {{ item.content }}
+      </div>
+      <div class="column col-6 col-md-12">
+        <img class="img-responsive" src="{{ item.image }}" alt="">
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}

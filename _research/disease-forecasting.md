@@ -1,6 +1,6 @@
 ---
 title: Disease forecasting
-image: /images/map-all-narrow.jpg
+image: /images/research/map-all-narrow.jpg
 link:
   name: View Publications
   url: /publications
