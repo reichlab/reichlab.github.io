@@ -16,8 +16,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
-  - researches
-  - teachings
+  - research
+  - teaching
 paginate: 5
 paginate_path: "/page:num"
 excerpt_separator: <!--more-->
@@ -34,7 +34,16 @@ defaults:
       permalink: /talks/:title.html
 
 # Preprocessing configuration
-
-# BibTeX file names relative to _data/bibtex_sources
+# BibTeX file names relative to `_data/bibtex_sources`
 bibtex_sources:
   - reichlab-pub-list.bib
+
+# GitHub research sources
+# Local researches in `research` are included automatically
+research_sources:
+  # - reichlab/flusight
+
+# GitHub teaching sources
+# Local files in `teaching` are included automatically
+teaching_sources:
+  # - <>
