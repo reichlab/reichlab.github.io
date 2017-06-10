@@ -15,7 +15,7 @@ module Research
           'image' => get_full_url(fm['image'], site.config['baseurl']),
           'link' => {
             'name' => fm['link']['name'],
-            'url' => get_full_url(fm['link']['name'], site.config['baseurl'])
+            'url' => get_full_url(fm['link']['url'], site.config['baseurl'])
           }
         }
       end
