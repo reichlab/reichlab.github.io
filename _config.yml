@@ -34,5 +34,7 @@ defaults:
       permalink: /talks/:title.html
 
 # Preprocessing configuration
-# bibtex_sources:
-#   - <test-source>
+
+# BibTeX file names relative to _data/bibtex_sources
+bibtex_sources:
+  - reichlab-pub-list.bib
