@@ -5,7 +5,7 @@ require 'bibtex'
 module Publications
   class PubGen < Jekyll::Generator
     def generate(site)
-      bib_file = '_data/_bibliography.bib'
+      bib_file = File.join('_data', '_bibliography.bib')
       if File.exist? bib_file
         bib_entries = BibTeX.open bib_file
 
