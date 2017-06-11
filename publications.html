@@ -5,8 +5,28 @@ layout: default
 <h1>Publications</h1>
 <h3><small class="label"> peer-reviewed journal articles</small></h3>
 
-<ul>
+<div class="columns">
+  <div class="column col-8 col-md-12">
+    <input class="form-input input-lg filter-input" type="search" placeholder="Filter">
+  </div>
+  <div class="column col-4 col-md-12">
+    <button class="btn btn-default btn-lg">sort</button>
+  </div>
+  <div class="column">
+    <div class="search-results"></div>
+  </div>
+</div>
+
+<ul class="pub-list">
   {% for item in page.bib_entries %}
-    <li>{{ item.authors }}. <em>{{ item.title }}</em>. {{ item.journal }}</li>
+  <li class="pub-item">
+    <span class="pub-author">{{ item.authors }}.</span>
+    <span class="pub-title"><em>{{ item.title }}</em>.</span>
+    <span class="pub-source">{{ item.journal }}</span>
+    <span class="hide pub-bibtex">{{ item.bibtex }}</span>
+  </li>
   {% endfor %}
 </ul>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/publications.js"></script>
