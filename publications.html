@@ -23,7 +23,12 @@ layout: default
     <span class="pub-author">{{ item.authors }}.</span>
     <span class="pub-title"><em>{{ item.title }}</em>.</span>
     <span class="pub-source">{{ item.journal }}</span>
-    <span class="hide pub-bibtex">{{ item.bibtex }}</span>
+    <button class="btn btn-link tooltip" data-tooltip="Get bibtex entry">
+      <i class="fa fa-clipboard"></i>
+    </button>
+    <div class="hide pub-bibtex">
+      {{ item.bibtex }}
+    </div>
   </li>
   {% endfor %}
 </ul>
