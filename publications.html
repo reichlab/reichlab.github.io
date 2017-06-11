@@ -7,13 +7,30 @@ layout: default
 
 <div class="columns">
   <div class="column col-8 col-md-12">
-    <input class="form-input input-lg filter-input" type="search" placeholder="Filter">
+    <div class="form-group">
+      <label class="form-label">Filter</label>
+      <input class="form-input filter-input" type="search" placeholder="Filter">
+      <p class="form-input-hint search-results"></p>
+    </div>
+    <div>
+      <label class="chip">
+        tag one
+      </label>
+      <label class="chip">
+        tag two
+      </label>
+      <label class="chip active">
+        enabled tag
+        <button class="btn btn-clear"></button>
+      </label>
+    </div>
   </div>
   <div class="column col-4 col-md-12">
-    <button class="btn btn-default btn-lg">sort</button>
-  </div>
-  <div class="column">
-    <div class="search-results"></div>
+    <div class="form-group">
+      <label class="form-label" for="sort-input">Sort by</label>
+      <button class="btn btn-primary"><i class="fa fa-sort"></i> Author</button>
+      <button class="btn btn-primary"><i class="fa fa-sort"></i> Date</button>
+    </div>
   </div>
 </div>
 
