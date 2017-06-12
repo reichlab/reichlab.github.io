@@ -47,6 +47,11 @@ function sortPublications (btnElem, sortingFn) {
   var wrapper = $('.pub-list')
   var items = wrapper.find('.pub-item')
 
+  // Clear other sort btns
+  $(btnElem).siblings().find('i').removeClass('fa-sort-desc')
+  $(btnElem).siblings().find('i').removeClass('fa-sort-asc')
+  $(btnElem).siblings().find('i').addClass('fa-sort')
+
   var asc = $(btnElem).find('i').hasClass('fa-sort-asc')
 
   if (!asc) {
