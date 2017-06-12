@@ -42,6 +42,28 @@ function sortFnDate (a, b) {
   return aDate - bDate
 }
 
+// Function to sort elements
+function sortPublications (btnElem, sortingFn) {
+  var wrapper = $('.pub-list')
+  var items = wrapper.find('.pub-item')
+
+  var asc = $(btnElem).find('i').hasClass('fa-sort-asc')
+
+  if (!asc) {
+    Array.prototype.sort.call(items, sortingFn)
+  } else {
+    Array.prototype.sort.call(items, function (a, b) {
+      return sortingFn(b, a)
+    })
+  }
+
+  $(btnElem).find('i').removeClass('fa-sort')
+  $(btnElem).find('i').toggleClass('fa-sort-desc', asc)
+  $(btnElem).find('i').toggleClass('fa-sort-asc', !asc)
+
+  wrapper.append(items)
+}
+
 $(document).ready(function () {
   var allPubs = $('.pub-item')
   $('.search-results').text(nShown(allPubs) + ' of ' + allPubs.length + ' publications displayed')
@@ -55,49 +77,11 @@ $(document).ready(function () {
 
   // Sort event
   $('.sort-btn-author').click(function () {
-    var wrapper = $('.pub-list')
-    var items = wrapper.find('.pub-item')
-
-    var asc = $(this).find('i').hasClass('fa-sort-asc')
-
-    if (!asc) {
-      Array.prototype.sort.call(items, sortFnAuthor)
-      $(this).find('i').removeClass('fa-sort')
-      $(this).find('i').removeClass('fa-sort-desc')
-      $(this).find('i').addClass('fa-sort-asc')
-    } else {
-      Array.prototype.sort.call(items, function (a, b) {
-        return sortFnAuthor(b, a)
-      })
-      $(this).find('i').removeClass('fa-sort')
-      $(this).find('i').removeClass('fa-sort-asc')
-      $(this).find('i').addClass('fa-sort-desc')
-    }
-
-    wrapper.append(items)
+    sortPublications(this, sortFnAuthor)
   })
 
   $('.sort-btn-date').click(function () {
-    var wrapper = $('.pub-list')
-    var items = wrapper.find('.pub-item')
-
-    var asc = $(this).find('i').hasClass('fa-sort-asc')
-
-    if (!asc) {
-      Array.prototype.sort.call(items, sortFnDate)
-      $(this).find('i').removeClass('fa-sort')
-      $(this).find('i').removeClass('fa-sort-desc')
-      $(this).find('i').addClass('fa-sort-asc')
-    } else {
-      Array.prototype.sort.call(items, function (a, b) {
-        return sortFnDate(b, a)
-      })
-      $(this).find('i').removeClass('fa-sort')
-      $(this).find('i').removeClass('fa-sort-asc')
-      $(this).find('i').addClass('fa-sort-desc')
-    }
-
-    wrapper.append(items)
+    sortPublications(this, sortFnDate)
   })
 
   // Start with recent pubs
