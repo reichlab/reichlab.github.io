@@ -9,6 +9,7 @@ gem "html-proofer"
 gem "front_matter_parser"
 gem "kramdown"
 gem "git"
+gem "rake"
 
 group :jekyll_plugins do
   gem "jekyll-paginate"
