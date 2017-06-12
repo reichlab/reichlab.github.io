@@ -16,7 +16,17 @@ if config.key? 'research_sources'
     }
   end
 
+  markdown_target = File.join('_data', '_research')
+
   sources.each do |src|
-    Git.clone(src['url'], src['repo'], :path => File.join(clone_dir, src['root']), :depth => 1)
+    local_path = File.join(clone_dir, src['root'])
+    Git.clone(src['url'], src['repo'], :path => local_path, :depth => 1)
+    metadata_file = File.join(local_path, src['repo'], 'websitemeta.md')
+
+    if File.exist? metadata_file
+      FileUtils.cp(metadata_file, File.join(markdown_target, src['root'] + '-' + src['repo'] + '.md'))
+    else
+      abort("Metadata file for #{src['repo']} not found")
+    end
   end
 end
