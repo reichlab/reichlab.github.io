@@ -13,39 +13,39 @@ layout: default
       <p class="form-input-hint search-results"></p>
     </div>
     <div>
-      <label class="chip">
-        tag one
-      </label>
-      <label class="chip">
-        tag two
-      </label>
-      <label class="chip active">
-        enabled tag
-      </label>
+      {% for tag in page.bib_tags %}
+        <label class="chip active">
+          {{ tag }}
+        </label>
+      {% endfor %}
     </div>
   </div>
   <div class="column col-4 col-md-12">
     <div class="form-group">
       <label class="form-label" for="sort-input">Sort by</label>
-      <button class="btn btn-primary"><i class="fa fa-sort"></i> Author</button>
-      <button class="btn btn-primary"><i class="fa fa-sort"></i> Date</button>
+      <button class="btn btn-primary sort-btn-author"><i class="fa fa-sort"></i> Author</button>
+      <button class="btn btn-primary sort-btn-date"><i class="fa fa-sort"></i> Date</button>
     </div>
   </div>
 </div>
 
 <ul class="pub-list">
   {% for item in page.bib_entries %}
-  <li class="pub-item">
-    <span class="pub-author">{{ item.authors }}.</span>
-    <span class="pub-title"><em>{{ item.title }}</em>.</span>
-    <span class="pub-source">{{ item.journal }}</span>
-    <button class="btn btn-link tooltip" data-tooltip="Get bibtex entry">
-      <i class="fa fa-clipboard"></i>
-    </button>
-    <div class="hide pub-bibtex">
-      {{ item.bibtex }}
-    </div>
-  </li>
+    <li class="pub-item">
+      <span>{{ item.cite_text }}</span>
+      <button class="btn btn-link tooltip" data-tooltip="Get bibtex entry">
+        <i class="fa fa-clipboard"></i>
+      </button>
+      <div class="hide pub-bibtex">
+        {{ item.bibtex }}
+      </div>
+      <div class="hide sort-key-author">
+        {{ item.sort.author }}
+      </div>
+      <div class="hide sort-key-date">
+        {{ item.sort.date }}
+      </div>
+    </li>
   {% endfor %}
 </ul>
 
