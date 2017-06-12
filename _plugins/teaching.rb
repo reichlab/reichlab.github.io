@@ -6,8 +6,9 @@ require 'yaml'
 module Teaching
   class TeachingGen < Jekyll::Generator
     def generate(site)
-      teaching_data = Dir.glob(File.join('_teaching', '*.md')).map do |teaching_file|
-        parsed = FrontMatterParser::Parser.parse_file(teaching_file)
+      teaching_files = Dir.glob(File.join('_teaching', '*.md')) + Dir.glob(File.join('_data', '_teaching', '*.md'))
+      teaching_data = teaching_files.map do |teaching_file|
+        parsed = FrontMatterParser::Parser.parse_file teaching_file
         fm = parsed.front_matter
         {
           'content' => Kramdown::Document.new(parsed.content).to_html,
