@@ -24,8 +24,8 @@ function filterEntries (items, searchTerm) {
 
 // Sorting function for alphabetical author order
 function sortFnAuthor (a, b) {
-  let aText = $(a).find('.sort-key-author').text().toLowerCase()
-  let bText = $(b).find('.sort-key-author').text().toLowerCase()
+  var aText = $(a).find('.sort-key-author').text().toLowerCase()
+  var bText = $(b).find('.sort-key-author').text().toLowerCase()
   if (aText < bText) {
     return -1
   }
@@ -37,8 +37,8 @@ function sortFnAuthor (a, b) {
 
 // Sorting function for sorting by date
 function sortFnDate (a, b) {
-  let aDate = parseInt($(a).find('.sort-key-date').text())
-  let bDate = parseInt($(b).find('.sort-key-date').text())
+  var aDate = parseInt($(a).find('.sort-key-date').text())
+  var bDate = parseInt($(b).find('.sort-key-date').text())
   return aDate - bDate
 }
 
@@ -55,16 +55,52 @@ $(document).ready(function () {
 
   // Sort event
   $('.sort-btn-author').click(function () {
-    let wrapper = $('.pub-list')
-    let items = wrapper.find('.pub-item')
-    Array.prototype.sort.call(items, sortFnAuthor)
+    var wrapper = $('.pub-list')
+    var items = wrapper.find('.pub-item')
+
+    var asc = $(this).find('i').hasClass('fa-sort-asc')
+
+    if (!asc) {
+      Array.prototype.sort.call(items, sortFnAuthor)
+      $(this).find('i').removeClass('fa-sort')
+      $(this).find('i').removeClass('fa-sort-desc')
+      $(this).find('i').addClass('fa-sort-asc')
+    } else {
+      Array.prototype.sort.call(items, function (a, b) {
+        return sortFnAuthor(b, a)
+      })
+      $(this).find('i').removeClass('fa-sort')
+      $(this).find('i').removeClass('fa-sort-asc')
+      $(this).find('i').addClass('fa-sort-desc')
+    }
+
     wrapper.append(items)
   })
 
   $('.sort-btn-date').click(function () {
-    let wrapper = $('.pub-list')
-    let items = wrapper.find('.pub-item')
-    Array.prototype.sort.call(items, sortFnDate)
+    var wrapper = $('.pub-list')
+    var items = wrapper.find('.pub-item')
+
+    var asc = $(this).find('i').hasClass('fa-sort-asc')
+
+    if (!asc) {
+      Array.prototype.sort.call(items, sortFnDate)
+      $(this).find('i').removeClass('fa-sort')
+      $(this).find('i').removeClass('fa-sort-desc')
+      $(this).find('i').addClass('fa-sort-asc')
+    } else {
+      Array.prototype.sort.call(items, function (a, b) {
+        return sortFnDate(b, a)
+      })
+      $(this).find('i').removeClass('fa-sort')
+      $(this).find('i').removeClass('fa-sort-asc')
+      $(this).find('i').addClass('fa-sort-desc')
+    }
+
     wrapper.append(items)
   })
+
+  // Start with recent pubs
+  $('.sort-btn-date').trigger('click')
+  $('.sort-btn-date').trigger('click')
 })
