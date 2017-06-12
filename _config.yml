@@ -41,7 +41,7 @@ bibtex_sources:
 # GitHub research sources
 # Local researches in `_research` are included automatically
 research_sources:
-  # - reichlab/flusight
+  - reichlab/flusight
 
 # GitHub teaching sources
 # Local files in `_teaching` are included automatically
