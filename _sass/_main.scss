@@ -47,3 +47,11 @@ code {
   font-family: 'Source Code Pro';
   padding: 0 5px;
 }
+
+
+.modal {
+  textarea {
+    min-height: 100px;
+    min-width: 300px;
+  }
+}

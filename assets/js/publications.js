@@ -13,7 +13,7 @@ function nShown (items) {
 // Filter displayed entries
 function filterEntries (items, searchTerm) {
   function isMatch (item, term) {
-    var fullText = $(item).find('.btn').data('pubBibtex').toLowerCase()
+    var fullText = $(item).find('.btn-bibtex').data('pubBibtex').toLowerCase()
     return ~fullText.indexOf(term.toLowerCase())
   }
 
@@ -48,6 +48,7 @@ function sortPublications (btnElem, sortingFn) {
   var items = wrapper.find('.pub-item')
 
   // Clear other sort btns
+  // TODO minimize stuff here
   $(btnElem).siblings().find('i').removeClass('fa-sort-desc')
   $(btnElem).siblings().find('i').removeClass('fa-sort-asc')
   $(btnElem).siblings().find('i').addClass('fa-sort')
@@ -69,6 +70,18 @@ function sortPublications (btnElem, sortingFn) {
   wrapper.append(items)
 }
 
+function showBibtexModal (content) {
+  var modalDiv = $('.modal')
+  modalDiv.find('textarea').text(content)
+  modalDiv.addClass('active')
+  modalDiv.find('.btn-clear').click(function () {
+    modalDiv.removeClass('active')
+  })
+  modalDiv.find('.modal-overlay').click(function () {
+    modalDiv.removeClass('active')
+  })
+}
+
 $(document).ready(function () {
   var allPubs = $('.pub-item')
   $('.search-results').text(nShown(allPubs) + ' of ' + allPubs.length + ' publications displayed')
@@ -87,6 +100,11 @@ $(document).ready(function () {
 
   $('.sort-btn-date').click(function () {
     sortPublications(this, sortFnDate)
+  })
+
+  // Open bibtex modal
+  $('.btn-bibtex').click(function () {
+    showBibtexModal($(this).data('pubBibtex'))
   })
 
   // Start with recent pubs
