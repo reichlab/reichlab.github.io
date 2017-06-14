@@ -9,7 +9,7 @@ layout: default
 <div class="columns">
 
   <div class="column col-8 col-md-12">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <div>
         <h2>
           <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }}</a>
@@ -26,6 +26,49 @@ layout: default
       <br>
       <div class="divider"></div>
     {% endfor %}
+
+    {% if paginator.total_pages > 1 %}
+      <div class="float-right">
+        <ul class="pagination">
+          {% if paginator.previous_page %}
+            <li class="page-item">
+              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Previous</a>
+            </li>
+          {% else %}
+            <li class="page-item">
+              <a href="#" disabled>Previous</a>
+            </li>
+          {% endif %}
+
+          {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+              <li class="page-item active">
+                <a href="#">{{ page }}</a>
+              </li>
+            {% elsif page == 1 %}
+              <li class="page-item">
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+              </li>
+            {% else %}
+              <li class="page-item">
+                <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+
+          {% if paginator.next_page %}
+            <li class="page-item">
+              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next</a>
+            </li>
+          {% else %}
+            <li class="page-item">
+              <a href="#" disabled>Next</a>
+            </li>
+          {% endif %}
+        </ul>
+      </div>
+    {% endif %}
+
   </div>
 
   <div class="column col-4 hide-md">
