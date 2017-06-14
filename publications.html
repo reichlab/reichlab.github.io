@@ -14,7 +14,7 @@ layout: default
     </div>
     <div>
       {% for tag in page.bib_tags %}
-        <label class="chip active">
+        <label class="chip active btn-tag">
           {{ tag }}
         </label>
       {% endfor %}
@@ -52,12 +52,19 @@ layout: default
     <li class="pub-item"
         data-sort-key-author="{{ item.sort.author }}"
         data-sort-key-date="{{ item.sort.date }}">
-      <span>{{ item.cite_text }}</span>
-      <button class="btn btn-link tooltip btn-bibtex"
-              data-tooltip="Get bibtex entry"
-              data-pub-bibtex="{{ item.bibtex }}">
-        <i class="fa fa-clipboard"></i>
-      </button>
+      <div>
+        <span>{{ item.cite_text }}</span>
+        <button class="btn btn-link tooltip btn-bibtex"
+                data-tooltip="Get bibtex entry"
+                data-pub-bibtex="{{ item.bibtex }}">
+          <i class="fa fa-clipboard"></i>
+        </button>
+      </div>
+      <div>
+        {% for tag in item.tags %}
+          <span class="label pub-tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
     </li>
   {% endfor %}
 </ul>

@@ -14,18 +14,17 @@ module Publications
         cp.import bib_entries.to_citeproc
 
         publications = site.pages.detect { |page| page.name == 'publications.html' }
-        publications.data['bib_tags'] = get_tags(bib_entries)
         publications.data['bib_entries'] = bib_entries.map { |e| parse_entry e, cp }
+
+        # Collect unique tags
+        publications.data['bib_tags'] = get_unique_tags(publications.data['bib_entries'])
       end
     end
 
-    def get_tags(bib_entries)
+    def get_unique_tags(bib_entries)
       tags = Set.new
       bib_entries.each do |entry|
-        begin
-          tags.merge entry['keywords'].split(',').map { |kw| kw.downcase.strip }
-        rescue
-        end
+        tags.merge entry['tags']
       end
       Array(tags)
     end
@@ -42,6 +41,12 @@ module Publications
         'author' => entry.authors.to_s,
         'date' => get_date_key(entry)
       }
+
+      begin
+        parsed['tags'] = entry['keywords'].split(',').map { |kw| kw.downcase.strip }
+      rescue
+        parsed['tags'] = []
+      end
 
       parsed
     end

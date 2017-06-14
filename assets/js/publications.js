@@ -48,10 +48,11 @@ function sortPublications (btnElem, sortingFn) {
   var items = wrapper.find('.pub-item')
 
   // Clear other sort btns
-  // TODO minimize stuff here
-  $(btnElem).siblings().find('i').removeClass('fa-sort-desc')
-  $(btnElem).siblings().find('i').removeClass('fa-sort-asc')
-  $(btnElem).siblings().find('i').addClass('fa-sort')
+  var otherBtns = $(btnElem).siblings()
+  otherBtns.find('i')
+    .removeClass('fa-sort-desc')
+    .removeClass('fa-sort-asc')
+    .addClass('fa-sort')
 
   var asc = $(btnElem).find('i').hasClass('fa-sort-asc')
 
@@ -63,9 +64,10 @@ function sortPublications (btnElem, sortingFn) {
     })
   }
 
-  $(btnElem).find('i').removeClass('fa-sort')
-  $(btnElem).find('i').toggleClass('fa-sort-desc', asc)
-  $(btnElem).find('i').toggleClass('fa-sort-asc', !asc)
+  $(btnElem).find('i')
+    .removeClass('fa-sort')
+    .toggleClass('fa-sort-desc', asc)
+    .toggleClass('fa-sort-asc', !asc)
 
   wrapper.append(items)
 }
@@ -105,6 +107,11 @@ $(document).ready(function () {
   // Open bibtex modal
   $('.btn-bibtex').click(function () {
     showBibtexModal($(this).data('pubBibtex'))
+  })
+
+  // Tag buttons
+  $('.btn-tag').click(function () {
+    //
   })
 
   // Start with recent pubs
