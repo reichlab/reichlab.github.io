@@ -16,8 +16,10 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
-  - research/
-  - teaching/
+  - README.md
+  - build.sh
+  - Rakefile
+  - deploy_key.enc
 paginate: 5
 paginate_path: "/page:num"
 excerpt_separator: <!--more-->
