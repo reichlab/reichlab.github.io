@@ -31,20 +31,15 @@ layout: default
 
 <ul class="pub-list">
   {% for item in page.bib_entries %}
-    <li class="pub-item">
+    <li class="pub-item"
+        data-sort-key-author="{{ item.sort.author }}"
+        data-sort-key-date="{{ item.sort.date }}">
       <span>{{ item.cite_text }}</span>
-      <button class="btn btn-link tooltip" data-tooltip="Get bibtex entry">
+      <button class="btn btn-link tooltip"
+              data-tooltip="Get bibtex entry"
+              data-pub-bibtex="{{ item.bibtex }}">
         <i class="fa fa-clipboard"></i>
       </button>
-      <div class="hide pub-bibtex">
-        {{ item.bibtex }}
-      </div>
-      <div class="hide sort-key-author">
-        {{ item.sort.author }}
-      </div>
-      <div class="hide sort-key-date">
-        {{ item.sort.date }}
-      </div>
     </li>
   {% endfor %}
 </ul>

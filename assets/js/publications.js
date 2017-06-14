@@ -13,7 +13,7 @@ function nShown (items) {
 // Filter displayed entries
 function filterEntries (items, searchTerm) {
   function isMatch (item, term) {
-    var fullText = $(item).find('.pub-bibtex').text().toLowerCase()
+    var fullText = $(item).find('.btn').data('pubBibtex').toLowerCase()
     return ~fullText.indexOf(term.toLowerCase())
   }
 
@@ -24,8 +24,8 @@ function filterEntries (items, searchTerm) {
 
 // Sorting function for alphabetical author order
 function sortFnAuthor (a, b) {
-  var aText = $(a).find('.sort-key-author').text().toLowerCase()
-  var bText = $(b).find('.sort-key-author').text().toLowerCase()
+  var aText = $(a).data('sortKeyAuthor').toLowerCase()
+  var bText = $(b).data('sortKeyAuthor').toLowerCase()
   if (aText < bText) {
     return -1
   }
@@ -37,8 +37,8 @@ function sortFnAuthor (a, b) {
 
 // Sorting function for sorting by date
 function sortFnDate (a, b) {
-  var aDate = parseInt($(a).find('.sort-key-date').text())
-  var bDate = parseInt($(b).find('.sort-key-date').text())
+  var aDate = parseInt($(a).data('sortKeyDate'))
+  var bDate = parseInt($(b).data('sortKeyDate'))
   return aDate - bDate
 }
 
