@@ -14,9 +14,7 @@ layout: default
     </div>
     <div>
       {% for tag in page.bib_tags %}
-        <label class="chip active btn-tag">
-          {{ tag }}
-        </label>
+        <span class="chip active btn-tag">{{ tag }}</span>
       {% endfor %}
     </div>
   </div>

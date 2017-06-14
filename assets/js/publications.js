@@ -1,11 +1,11 @@
 // Script for publications page
 /* global $ */
 
-// Return number of displayed entries
+// Return number of visible entries
 function nShown (items) {
   var n = 0
-  items.each(function (index) {
-    if (!$(this).hasClass('hide')) n++
+  items.each(function () {
+    if (!($(this).hasClass('hide') || $(this).hasClass('bib-disabled'))) n++
   })
   return n
 }
@@ -17,7 +17,7 @@ function filterEntries (items, searchTerm) {
     return ~fullText.indexOf(term.toLowerCase())
   }
 
-  items.each(function (index) {
+  items.each(function () {
     $(this).toggleClass('hide', !isMatch(this, searchTerm))
   })
 }
@@ -42,10 +42,9 @@ function sortFnDate (a, b) {
   return aDate - bDate
 }
 
-// Function to sort elements
-function sortPublications (btnElem, sortingFn) {
+// Function to actually sort elements
+function sortPublications (items, btnElem, sortingFn) {
   var wrapper = $('.pub-list')
-  var items = wrapper.find('.pub-item')
 
   // Clear other sort btns
   var otherBtns = $(btnElem).siblings()
@@ -72,6 +71,7 @@ function sortPublications (btnElem, sortingFn) {
   wrapper.append(items)
 }
 
+// Show modal displaying the content
 function showBibtexModal (content) {
   var modalDiv = $('.modal')
   modalDiv.find('textarea').text(content)
@@ -84,24 +84,66 @@ function showBibtexModal (content) {
   })
 }
 
+// Filter all entries according to current selection state of tags
+function filterTaggedEntries (items) {
+  var enabledTags = $('.btn-tag').filter(function () {
+    return $(this).hasClass('active')
+  }).map(function () {
+    return $(this).text().toLowerCase()
+  })
+
+  var disabledTags = $('.btn-tag').filter(function () {
+    return !$(this).hasClass('active')
+  }).map(function () {
+    return $(this).text().toLowerCase()
+  })
+
+  // if all tags are disabled, disable entry
+  // if any tag is enabled, enable entry
+  items.each(function () {
+    var itemTags = $(this).find('.pub-tag').map(function () {
+      return $(this).text().toLowerCase()
+    })
+
+    if (itemTags.length === 0) {
+      $(this).removeClass('bib-disabled')
+    } else {
+      if (Array.prototype.every.call(itemTags, function (tag) {
+        return ~Array.prototype.indexOf.call(disabledTags, tag)
+      })) {
+        $(this).addClass('bib-disabled')
+      } else if (Array.prototype.some.call(itemTags, function (tag) {
+        return ~Array.prototype.indexOf.call(enabledTags, tag)
+      })) {
+        $(this).removeClass('bib-disabled')
+      }
+    }
+  })
+}
+
+// Refresh hint text below the search input specifyin number of items displayed
+function refreshDisplayedText (items) {
+  $('.search-results').text(nShown(items) + ' of ' + items.length + ' publications displayed')
+}
+
 $(document).ready(function () {
-  var allPubs = $('.pub-item')
-  $('.search-results').text(nShown(allPubs) + ' of ' + allPubs.length + ' publications displayed')
+  var allItems = $('.pub-item')
+  refreshDisplayedText(allItems)
 
   // Handle event on filter input
   $('.filter-input').keyup(function () {
     var searchTerm = $(this).val()
-    filterEntries(allPubs, searchTerm)
-    $('.search-results').text(nShown(allPubs) + ' of ' + allPubs.length + ' publications displayed')
+    filterEntries(allItems, searchTerm)
+    refreshDisplayedText(allItems)
   })
 
   // Sort event
   $('.sort-btn-author').click(function () {
-    sortPublications(this, sortFnAuthor)
+    sortPublications(allItems, this, sortFnAuthor)
   })
 
   $('.sort-btn-date').click(function () {
-    sortPublications(this, sortFnDate)
+    sortPublications(allItems, this, sortFnDate)
   })
 
   // Open bibtex modal
@@ -111,7 +153,9 @@ $(document).ready(function () {
 
   // Tag buttons
   $('.btn-tag').click(function () {
-    //
+    $(this).toggleClass('active')
+    filterTaggedEntries(allItems)
+    refreshDisplayedText(allItems)
   })
 
   // Start with recent pubs
