@@ -41,16 +41,17 @@ layout: default
       Administration branches in New York City and Iowa City.
     </p>
   </div>
-
 </div>
 
-<div class="columns">
+<div class="divider"></div>
 
+<div class="columns">
   {% for member in page.members %}
     <div class="column col-4 col-md-6 col-sm-12">
-      <div class="card">
+      <div class="card card-people">
         <div class="card-image">
-          <img src="{{ member.image }}" class="img-responsive" />
+          <div class="img-people" style="background-image: url({{ member.image }});">
+          </div>
         </div>
         <div class="card-header">
           <h4 class="card-title">{{ member.name }}</h4>
@@ -67,5 +68,4 @@ layout: default
       </div>
     </div>
   {% endfor %}
-
 </div>
