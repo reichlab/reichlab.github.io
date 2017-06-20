@@ -13,7 +13,7 @@ function nShown (items) {
 // Filter displayed entries
 function filterEntries (items, searchTerm) {
   function isMatch (item, term) {
-    var fullText = $(item).find('.btn-bibtex').data('pubBibtex').toLowerCase()
+    var fullText = $(item).find('.btn-bibtex').data('clipboardText').toLowerCase()
     return ~fullText.indexOf(term.toLowerCase())
   }
 
