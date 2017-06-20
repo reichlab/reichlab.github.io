@@ -1,5 +1,5 @@
 // Script for publications page
-/* global $ */
+/* global $, Clipboard */
 
 // Return number of visible entries
 function nShown (items) {
@@ -71,19 +71,6 @@ function sortPublications (items, btnElem, sortingFn) {
   wrapper.append(items)
 }
 
-// Show modal displaying the content
-function showBibtexModal (content) {
-  var modalDiv = $('.modal')
-  modalDiv.find('textarea').text(content)
-  modalDiv.addClass('active')
-  modalDiv.find('.btn-clear').click(function () {
-    modalDiv.removeClass('active')
-  })
-  modalDiv.find('.modal-overlay').click(function () {
-    modalDiv.removeClass('active')
-  })
-}
-
 // Filter all entries according to current selection state of tags
 function filterTaggedEntries (items) {
   var enabledTags = $('.btn-tag').filter(function () {
@@ -127,6 +114,8 @@ function refreshDisplayedText (items) {
 }
 
 $(document).ready(function () {
+  new Clipboard('.btn')
+
   var allItems = $('.pub-item')
   refreshDisplayedText(allItems)
 
@@ -144,11 +133,6 @@ $(document).ready(function () {
 
   $('.sort-btn-date').click(function () {
     sortPublications(allItems, this, sortFnDate)
-  })
-
-  // Open bibtex modal
-  $('.btn-bibtex').click(function () {
-    showBibtexModal($(this).data('pubBibtex'))
   })
 
   // Tag buttons
