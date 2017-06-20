@@ -114,7 +114,12 @@ function refreshDisplayedText (items) {
 }
 
 $(document).ready(function () {
-  new Clipboard('.btn')
+  var clipboard = new Clipboard('.btn')
+
+  clipboard.on('success', function (e) {
+    // Send toast notification
+    notify('Copied to clipboard')
+  })
 
   var allItems = $('.pub-item')
   refreshDisplayedText(allItems)
