@@ -81,7 +81,7 @@ layout: home
       <div class="panel-body">
         {% for post in site.categories.blog limit:site.paginate %}
           <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-          <p><i class="fa fa-clock-o"></i>Posted on {{ post.date | date: '%d %B, %Y' }}</p>
+          <p><i class="fa fa-clock-o"></i> Posted on {{ post.date | date: '%d %B, %Y' }}</p>
           <p>{{ post.excerpt }}</p>
           <p>
             <a class="btn btn-primary" href="{{ site.baseurl }}{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
