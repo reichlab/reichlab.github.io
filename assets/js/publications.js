@@ -1,5 +1,5 @@
 // Script for publications page
-/* global $, Clipboard */
+/* global $, Clipboard, notify */
 
 // Return number of visible entries
 function nShown (items) {
@@ -150,4 +150,20 @@ $(document).ready(function () {
   // Start with recent pubs
   $('.sort-btn-date').trigger('click')
   $('.sort-btn-date').trigger('click')
+
+  // Hash part represents the tag to start with
+  var tag = document.location.hash
+  if (tag !== '') {
+    tag = tag.slice(1)
+    var tagBtns = $('.btn-tag')
+    var availableTags = tagBtns.map(function () {
+      return $(this).text().toLowerCase().replace(/ /g, '-')
+    })
+
+    var tagIdx = Array.prototype.indexOf.call(availableTags, tag)
+    if (tagIdx > -1) {
+      tagBtns.trigger('click')
+      tagBtns.eq(tagIdx).trigger('click')
+    }
+  }
 })
