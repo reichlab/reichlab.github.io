@@ -1,10 +1,27 @@
-# Collect research and teaching items from github sources
+# Build thematic data files
 
+require 'octokit'
 require 'yaml'
 require 'git'
 require 'front_matter_parser'
 
 config = YAML.load_file('_config.yml')
+
+# Return details from github
+def get_github_details(identifier, client)
+  repo = client.repo(identifier)
+  last_commit = client.commits(identifier)[0].commit
+  {
+    "url" => repo.html_url,
+    "name" => repo.name,
+    "description" => repo.description,
+    "commit" => {
+      "date" => last_commit.author.date,
+      "string" => last_commit.message,
+      "author" => last_commit.author.name
+    }
+  }
+end
 
 
 # Add given github sources meta files to target directory
