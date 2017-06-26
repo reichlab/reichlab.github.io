@@ -49,12 +49,12 @@ layout: default
 <div class="columns">
   {% for member in page.members %}
     <div class="column col-12">
-      <div class="card card-people">
-        <div class="card-image float-left">
+      <div class="card-people columns">
+        <div class="card-image column col-4">
           <div class="img-people" style="background-image: url({{ member.image }});">
           </div>
         </div>
-        <div>
+        <div class="column col-8">
           <div class="card-header">
             <h4 class="card-title">{{ member.name }}</h4>
             <h6 class="card-subtitle">{{ member.role }}</h6>
