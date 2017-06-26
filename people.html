@@ -3,16 +3,10 @@ layout: default
 ---
 
 
-<h1>People</h1>
+<h2>About the Reich Lab</h2>
 
 <div class="columns">
-
   <div class="column col-6 col-md-12">
-    <img class="img-responsive" src="images/group-shot-smaller.jpg" alt="">
-  </div>
-
-  <div class="column col-6 col-md-12">
-    <h2>About the Reich Lab</h2>
     <p>
       Led by PI Nicholas Reich and based in the
       <a href="http://www.umass.edu/sphhs/biostatistics" target="_blank">Department
@@ -41,29 +35,38 @@ layout: default
       Administration branches in New York City and Iowa City.
     </p>
   </div>
+
+
+  <div class="column col-6 col-md-12 float-left">
+    <img class="img-responsive" src="images/group-shot-smaller.jpg" alt="">
+  </div>
 </div>
 
 <div class="divider"></div>
 
+<h2>People</h2>
+
 <div class="columns">
   {% for member in page.members %}
-    <div class="column col-4 col-md-6 col-sm-12">
+    <div class="column col-12">
       <div class="card card-people">
-        <div class="card-image">
+        <div class="card-image float-left">
           <div class="img-people" style="background-image: url({{ member.image }});">
           </div>
         </div>
-        <div class="card-header">
-          <h4 class="card-title">{{ member.name }}</h4>
-          <h6 class="card-subtitle">{{ member.role }}</h6>
-        </div>
-        <div class="card-body">
-          {{ member.description }}
-        </div>
-        <div class="card-footer">
-          {% for link in member.links %}
-            <a href="{{ link.url }}" class="btn btn-primary">{{ link.name }}</a>
-          {% endfor %}
+        <div>
+          <div class="card-header">
+            <h4 class="card-title">{{ member.name }}</h4>
+            <h6 class="card-subtitle">{{ member.role }}</h6>
+          </div>
+          <div class="card-body">
+            {{ member.description }}
+          </div>
+          <div class="card-footer">
+            {% for link in member.links %}
+              <a href="{{ link.url }}" class="btn btn-primary">{{ link.name }}</a>
+            {% endfor %}
+          </div>
         </div>
       </div>
     </div>

@@ -64,16 +64,15 @@ code {
   display: none;
 }
 
-
 .card-people {
-  text-align: center;
+  padding: 20px 10px;
   .card-image {
-    padding: 40px !important;
+    margin: 10px 40px;
     .img-people {
       background-position: center;
       background-size: cover;
       border-radius: 1000px;
-      box-shadow: 0 0 5px;
+      box-shadow: 0 0 2px;
       height: 200px;
       margin: 0 auto;
       width: 200px;
