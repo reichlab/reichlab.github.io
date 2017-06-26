@@ -34,18 +34,3 @@ defaults:
       path: "talks/_posts"
     values:
       permalink: /talks/:title.html
-
-# Preprocessing configuration
-# BibTeX file names relative to `_data/bibtex_sources`
-bibtex_sources:
-  - reichlab-pub-list.bib
-
-# GitHub research sources
-# Local researches in `_research` are included automatically
-research_sources:
-  - reichlab/flusight
-
-# GitHub teaching sources
-# Local files in `_teaching` are included automatically
-# teaching_sources:
-  # - <>
