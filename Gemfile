@@ -10,6 +10,7 @@ gem "front_matter_parser"
 gem "kramdown"
 gem "git"
 gem "rake"
+gem "octokit"
 
 group :jekyll_plugins do
   gem "jekyll-paginate"
