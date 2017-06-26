@@ -48,14 +48,6 @@ code {
   padding: 0 5px;
 }
 
-
-.modal {
-  textarea {
-    min-height: 100px;
-    min-width: 300px;
-  }
-}
-
 .btn-tag {
   cursor: pointer;
 }
@@ -72,7 +64,7 @@ code {
       background-position: center;
       background-size: cover;
       border-radius: 1000px;
-      box-shadow: 0 0 2px;
+      box-shadow: 0 0 2px $gray-dark;
       height: 200px;
       margin: 0 auto;
       width: 200px;
