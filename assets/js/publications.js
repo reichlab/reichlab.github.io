@@ -55,18 +55,20 @@ $(document).ready(function () {
   })
 
   // Hash part represents the tag to start with
-  var tag = document.location.hash
-  if (tag !== '') {
-    tag = tag.slice(1)
+  var tags = document.location.hash
+  if (tags !== '') {
+    tags = tags.slice(1).split('%2C')
     var tagBtns = $('.btn-tag')
     var availableTags = tagBtns.map(function () {
       return $(this).text().toLowerCase().replace(/ /g, '-')
     })
 
-    var tagIdx = Array.prototype.indexOf.call(availableTags, tag)
-    if (tagIdx > -1) {
-      tagBtns.trigger('click')
-      tagBtns.eq(tagIdx).trigger('click')
-    }
+    tagBtns.trigger('click')
+    tags.forEach(function (tag) {
+      var tagIdx = Array.prototype.indexOf.call(availableTags, tag)
+      if (tagIdx > -1) {
+        tagBtns.eq(tagIdx).trigger('click')
+      }
+    })
   }
 })
