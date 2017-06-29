@@ -5,26 +5,10 @@ layout: default
 <h1>Publications</h1>
 <h3><small class="label"> peer-reviewed journal articles</small></h3>
 
-<div class="columns">
-  <div class="column col-8 col-md-12">
-    <div class="form-group">
-      <label class="form-label">Filter publications</label>
-      <input class="form-input filter-input" type="search" placeholder="Filter">
-      <p class="form-input-hint search-results"></p>
-    </div>
-    <div>
-      {% for tag in page.bib_tags %}
-        <span class="chip active btn-tag">{{ tag }}</span>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="column col-4 col-md-12">
-    <div class="form-group">
-      <label class="form-label" for="sort-input">Sort by</label>
-      <button class="btn btn-primary sort-btn sort-btn-author"><i class="fa fa-sort"></i> Author</button>
-      <button class="btn btn-primary sort-btn sort-btn-date"><i class="fa fa-sort"></i> Date</button>
-    </div>
-  </div>
+<div>
+  {% for tag in page.bib_tags %}
+    <span class="chip active btn-tag">{{ tag }}</span>
+  {% endfor %}
 </div>
 
 <ul class="pub-list">
