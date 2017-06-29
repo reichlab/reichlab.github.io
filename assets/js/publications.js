@@ -38,6 +38,17 @@ function filterTaggedEntries (items) {
   })
 }
 
+// Update document hash using currently active tags
+function updateHash () {
+  var enabledTags = $('.btn-tag').filter(function () {
+    return $(this).hasClass('active')
+  }).map(function () {
+    return $(this).text().toLowerCase().replace(/ /g, '-')
+  })
+
+  document.location.hash = '#' + Array.prototype.join.call(enabledTags, '%2C')
+}
+
 $(document).ready(function () {
   var clipboard = new Clipboard('.btn')
 
@@ -52,6 +63,7 @@ $(document).ready(function () {
   $('.btn-tag').click(function () {
     $(this).toggleClass('active')
     filterTaggedEntries(allItems)
+    updateHash()
   })
 
   // Hash part represents the tag to start with
@@ -63,12 +75,13 @@ $(document).ready(function () {
       return $(this).text().toLowerCase().replace(/ /g, '-')
     })
 
-    tagBtns.trigger('click')
+    tagBtns.removeClass('active')
     tags.forEach(function (tag) {
       var tagIdx = Array.prototype.indexOf.call(availableTags, tag)
       if (tagIdx > -1) {
-        tagBtns.eq(tagIdx).trigger('click')
+        tagBtns.eq(tagIdx).addClass('active')
       }
     })
+    filterTaggedEntries(allItems)
   }
 })
