@@ -6,8 +6,7 @@ projects:
   - reichlab/flusight
   - reichlab/pymmwr
   - title: Project title
-    description: Project details
-    url: Optional url for project
+    description: Nullam libero mauris, consequat quis, varius et, dictum id, arcu.  Nunc eleifend leo vitae magna.  Phasellus at dui in ligula mollis ultricies.
 publications: hello # Optional tag for publications page
 ---
 
