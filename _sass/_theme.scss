@@ -1,0 +1,27 @@
+// Thematic page css
+
+.project-section-divider {
+  margin-top: 30px;
+  width: 40%;
+  &::after {
+    color: $color-text-light !important;
+    font-size: 1.4rem !important;
+  }
+}
+
+.project-container {
+  margin-top: 20px;
+
+  .project-entry {
+    margin-bottom: 10px;
+
+    .project-title {
+      margin-bottom: 0;
+    }
+
+    .project-description {
+      color: $color-text-light;
+      padding-top: 10px;
+    }
+  }
+}

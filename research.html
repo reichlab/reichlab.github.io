@@ -4,24 +4,57 @@ layout: default
 
 <h1>Research</h1>
 
-<div class="columns">
-
-  {% for item in page.items %}
+{% for item in page.items %}
+  <div class="columns">
+    <div class="column col-12">
+      <h2>
+        {{ item.title }}
+      </h2>
+    </div>
     <div class="column col-6 col-md-12">
-      <div class="card">
-        <div class="card-image">
-          <img class="img-responsive" src="{{ item.image }}">
+      <div>{{ item.content }}</div>
+
+      {% if item.publications %}
+        <div>
+          <a href="/publications#{{ item.publications }}"
+             class="btn btn-sm btn-default">
+            See publications
+          </a>
         </div>
-        <div class="card-header">
-          <h3>{{ item.title }}</h3>
-        </div>
-        <div class="card-body">
-          {{ item.content }}
-        </div>
-        <div class="card-footer">
-          <a href="{{ item.link.url }}" class="btn btn-primary">{{ item.link.name }}</a>
+      {% endif %}
+    </div>
+
+    <div class="column col-6 col-md-12">
+      <img class="img-responsive" src="{{ item.image }}" alt="">
+    </div>
+  </div>
+
+  <div class="project-section-divider divider" data-content="PROJECTS"></div>
+
+  <div class="columns project-container">
+    {% for project in item.projects %}
+      <div class="column col-6 col-md-12">
+        <div class="card project-entry">
+          <div class="card-header">
+            <h6 class="project-title">
+              {% if project.url %}
+                <a href="{{ project.url }}">{{ project.title }}</a>
+              {% else %}
+                {{ project.title }}
+              {% endif %}
+            </h6>
+          </div>
+          <div class="card-body project-description">
+            {{ project.description }}
+          </div>
+          {% if project.commit %}
+            <div class="card-footer">
+              <small class="label">Updated by {{ project.commit.author }} at {{ project.commit.date }}</small>
+            </div>
+          {% endif %}
         </div>
       </div>
-    </div>
-  {% endfor %}
-</div>
+    {% endfor %}
+  </div>
+  <div class="divider"></div>
+{% endfor %}

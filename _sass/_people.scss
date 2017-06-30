@@ -1,0 +1,15 @@
+.card-people {
+  border: .1rem solid $color-gray-light;
+  padding: 20px 10px;
+  .card-image {
+    .img-people {
+      background-position: center;
+      background-size: cover;
+      border-radius: 1000px;
+      box-shadow: 0 0 2px $color-gray-medium;
+      height: 200px;
+      margin: 0 auto;
+      width: 200px;
+    }
+  }
+}
