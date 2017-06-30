@@ -3,9 +3,9 @@ title: Disease forecasting
 image: /images/research/map-all-narrow.jpg
 projects:
   - reichlab/test-repo # This is a github project
-  - name: Project title
+  - title: Project title
     description: Project details
-    link: Optional url for project
+    url: Optional url for project
 publications: theme-one # Optional tag for publications page
 ---
 

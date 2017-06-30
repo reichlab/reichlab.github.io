@@ -1,0 +1,42 @@
+# Generator for theme generator plugin
+
+page_name = ARGV[0]
+class_name = page_name.dup
+class_name[0] = class_name[0].upcase
+
+.# Thematic data generator for @{page_name} page
+.
+.require 'front_matter_parser'
+.require 'yaml'
+.
+.module @{class_name}
+.  class @{class_name}Gen < Jekyll::Generator
+.    def generate(site)
+.      repo_data = YAML.load_file(File.join('_data', 'repositories.yml'))
+.      @{page_name}_files = Dir.glob(File.join('_@{page_name}', '*.md'))
+.      @{page_name}_data = @{page_name}_files.map do |@{page_name}_file|
+.        parsed = FrontMatterParser::Parser.parse_file @{page_name}_file
+.        fm = parsed.front_matter
+.        data = {
+.          'content' => Kramdown::Document.new(parsed.content).to_html,
+.          'title' => fm['title'],
+.          'image' => get_full_url(fm['image'], site.config['baseurl']),
+.          'projects' => fm.projects.map do |project|
+.            # Read from yaml if its a github project
+.            if project.respond_to? :to_str
+.              repo_data[project]
+.            else
+.              project
+.            end
+.          end
+.        }
+.        if fm.key? 'publications'
+.          data['publications'] = fm['publications']
+.        end
+.      end
+.
+.      @{page_name} = site.pages.detect { |page| page.name == '@{page_name}.html' }
+.      @{page_name}.data['items'] = @{page_name}_data
+.    end
+.  end
+.end
