@@ -4,46 +4,47 @@ layout: default
 
 <h1>Teaching</h1>
 
-<div class="columns">
-  <div class="column col-12">
-    <h2>Courses and curriculum</h2>
+{% for item in page.items %}
+  <div class="columns">
+    <div class="column col-12">
+      <h2>
+        {{ item.title }}
+      </h2>
+    </div>
+    <div class="column col-6 col-md-12">
+      <div>{{ item.content }}</div>
+    </div>
+
+    <div class="column col-6 col-md-12">
+      <img class="img-responsive" src="{{ item.image }}" alt="">
+    </div>
   </div>
 
-  {% for item in page.items %}
-    {% if item.category == 'course' %}
-      <div class="column col-4 col-md-6 col-sm-12">
-        <div class="card">
-          <div class="card-image">
-            <img class="img-responsive" src="{{ item.image }}" alt="">
-          </div>
+  <div class="project-section-divider divider" data-content="LINKS"></div>
+
+  <div class="columns project-container">
+    {% for project in item.projects %}
+      <div class="column col-6 col-md-12">
+        <div class="card project-entry">
           <div class="card-header">
-            <a href="{{ item.link }}">
-              <h3>{{ item.title }}</h3>
-            </a>
+            <h6 class="project-title">
+              {% if project.url %}
+                <a href="{{ project.url }}">{{ project.title }}</a>
+              {% else %}
+                {{ project.title }}
+              {% endif %}
+            </h6>
           </div>
-          <div class="card-body">
-            {{ item.content }}
+          <div class="card-body project-description">
+            {{ project.description }}
           </div>
+          {% if project.commit %}
+            <div class="card-footer">
+              <small class="label">Updated by {{ project.commit.author }} at {{ project.commit.date }}</small>
+            </div>
+          {% endif %}
         </div>
       </div>
-    {% endif %}
-  {% endfor %}
-</div>
-
-{% for item in page.items %}
-  {% if item.category == 'wide' %}
-    <div class="columns">
-      <div class="column col-12">
-        <h2>
-          {{ item.title }}
-        </h2>
-      </div>
-      <div class="column col-6 col-md-12">
-        {{ item.content }}
-      </div>
-      <div class="column col-6 col-md-12">
-        <img class="img-responsive" src="{{ item.image }}" alt="">
-      </div>
-    </div>
-  {% endif %}
+    {% endfor %}
+  </div>
 {% endfor %}
