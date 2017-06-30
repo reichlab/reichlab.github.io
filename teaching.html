@@ -29,7 +29,7 @@ layout: default
           <div class="card-header">
             <h6 class="project-title">
               {% if project.url %}
-                <a href="{{ project.url }}">{{ project.title }}</a>
+                <a href="{{ project.url }}">{% if project.commit %}<i class="fa fa-github-alt"></i> / {% endif %}{{ project.title }}</a>
               {% else %}
                 {{ project.title }}
               {% endif %}
