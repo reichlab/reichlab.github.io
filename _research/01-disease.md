@@ -2,11 +2,13 @@
 title: Disease forecasting
 image: /images/research/map-all-narrow.jpg
 projects:
-  - reichlab/test-repo # This is a github project
+  - reichlab/beta
+  - reichlab/flusight
+  - reichlab/pymmwr
   - title: Project title
     description: Project details
     url: Optional url for project
-publications: theme-one # Optional tag for publications page
+publications: hello # Optional tag for publications page
 ---
 
 Our team is working to develop statistical methods and tools that can improve
