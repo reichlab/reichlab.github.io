@@ -27,6 +27,7 @@ module Teaching
         if fm.key? 'publications'
           data['publications'] = fm['publications']
         end
+        data
       end
 
       teaching = site.pages.detect { |page| page.name == 'teaching.html' }

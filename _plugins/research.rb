@@ -27,6 +27,7 @@ module Research
         if fm.key? 'publications'
           data['publications'] = fm['publications']
         end
+        data
       end
 
       research = site.pages.detect { |page| page.name == 'research.html' }
