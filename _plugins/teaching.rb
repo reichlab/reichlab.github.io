@@ -14,8 +14,8 @@ module Teaching
         data = {
           'content' => Kramdown::Document.new(parsed.content).to_html,
           'title' => fm['title'],
-          'image' => get_full_url(fm['image'], site.config['baseurl']),
-          'projects' => fm.projects.map do |project|
+          'image' => fm['image'],
+          'projects' => fm['projects'].map do |project|
             # Read from yaml if its a github project
             if project.respond_to? :to_str
               repo_data[project]
