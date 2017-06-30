@@ -2,7 +2,7 @@
 title: Disease forecasting
 image: /images/research/map-all-narrow.jpg
 projects:
-  - reichlab/beta
+  - reichlab/ALERT
   - reichlab/flusight
   - reichlab/pymmwr
   - title: Project title
