@@ -6,31 +6,71 @@ layout: default
 <h3><small class="label"> peer-reviewed journal articles</small></h3>
 
 <div>
-  {% for tag in page.bib_tags %}
-    <span class="chip active btn-tag">{{ tag }}</span>
+  {% for keyword in page.keywords %}
+    <span class="chip active btn-tag">{{ keyword }}</span>
   {% endfor %}
 </div>
 
-<ul class="pub-list">
-  {% for item in page.bib_entries %}
-    <li class="pub-item"">
-      <div>
-        <span>{{ item.cite_text }}</span>
-        <button class="btn btn-link tooltip btn-bibtex"
-                data-tooltip="Copy BibTeX"
-                data-clipboard-action="copy"
-                data-clipboard-text="{{ item.bibtex }}">
-          <i class="fa fa-clipboard"></i>
-        </button>
+<br><br>
+
+{% for year_item in page.items %}
+  {% unless year_item.year == 9999 %}
+    <h3 class="pub-year">{{ year_item.year }}</h3>
+  {% endunless %}
+
+  <div class="pub-list columns">
+    {% for item in year_item.items %}
+      <div class="column col-12">
+        <div class="card-publication pub-item columns">
+          <div class="card-image column col-2 col-sm-12">
+            <img class="rounded" src="papers/images/{{ item.slug }}.png">
+          </div>
+          <div class="column col-10 col-sm-12">
+            <div class="card-header">
+              <h4 class="card-title">
+                {% if item.doi %}
+                  <a href="https://doi.org/{{ item.doi }}">{{ item.title }}</a>
+                {% else %}
+                  {{ item.title }}
+                {% endif %}
+              </h4>
+              <h6 class="card-subtitle">
+              {{ item.authors }}, <em>{{ item.journal }}</em>
+              </h6>
+            </div>
+            <div class="card-footer">
+              <div>
+                {% for keyword in item.keywords %}
+                  <span class="label pub-tag">{{ keyword }}</span>
+                {% endfor %}
+              </div>
+              <div class="pub-btns">
+                <button class="btn btn-link tooltip btn-bibtex"
+                        data-tooltip="Copy BibTeX"
+                        data-clipboard-action="copy"
+                        data-clipboard-text="{{ item.abstract }}">
+                  <i class="fa fa-clipboard"></i>
+                </button>
+                <a class="btn btn-link tooltip"
+                   data-tooltip="Get pdf"
+                   href="papers/pdfs/{{ item.slug }}.pdf">
+                  <i class="fa fa-file-pdf-o"></i>
+                </a>
+                {% if item.doi %}
+                  <a class="btn btn-link tooltip"
+                     data-tooltip="Save to mendeley"
+                     href="http://www.mendeley.com/import/?url=https://doi.org/{{ item.doi }}">
+                    <i class="fa fa-save"></i>
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        {% for tag in item.tags %}
-          <span class="label pub-tag">{{ tag }}</span>
-        {% endfor %}
-      </div>
-    </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </div>
+{% endfor %}
 
 {% include toast.html %}
 

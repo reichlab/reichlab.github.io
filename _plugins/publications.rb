@@ -1,84 +1,90 @@
 # Generate data for publications page
 
-require 'bibtex'
-require 'citeproc'
-require 'csl/styles'
+require 'yaml'
 
 module Publications
   class PubGen < Jekyll::Generator
     def generate(site)
-      bib_file = File.join('_data', '_bibliography.bib')
-      if File.exist? bib_file
-        bib_entries = BibTeX.open bib_file
-        cp = CiteProc::Processor.new style: 'apa', format: 'html'
-        cp.import bib_entries.to_citeproc
+      data = YAML.load_file(File.join('papers', 'reichlab-pub-list.yml'))
+      publications = site.pages.detect { |page| page.name == 'publications.html' }
 
-        publications = site.pages.detect { |page| page.name == 'publications.html' }
-        publications.data['bib_entries'] = bib_entries.map { |e| parse_entry e, cp }
-
-        # Collect unique tags
-        publications.data['bib_tags'] = get_unique_tags(publications.data['bib_entries'])
-      end
+      publications.data['keywords'] = get_unique_keywords(data)
+      publications.data['items'] = process_data(data)
     end
 
-    def get_unique_tags(bib_entries)
-      tags = Set.new
-      bib_entries.each do |entry|
-        tags.merge entry['tags']
+    def get_unique_keywords(data)
+      keywords = []
+      data.each do |item|
+        if item.key? 'keywords'
+          keywords += item['keywords'].split(',').map { |kw| kw.downcase.strip }
+        end
       end
-      Array(tags)
+      keywords.uniq
     end
 
-    def parse_entry(entry, cp)
-      parsed = Hash.new
-      parsed['bibtex'] = entry.to_s
+    def process_data(data)
+      year_map = Hash.new
 
-      parsed['cite_text'] = cp.render(:bibliography, id: entry.key)[0].to_s
-      parsed['cite_text'].gsub! '{', ''
-      parsed['cite_text'].gsub! '}', ''
+      data.each do |entry|
+        year = if entry.key? 'year' then entry['year'] else 9999 end
 
-      parsed['sort'] = {
-        'author' => entry.authors.to_s,
-        'date' => get_date_key(entry)
-      }
+        unless year_map.key? year
+          year_map[year] = []
+        end
 
-      begin
-        parsed['tags'] = entry['keywords'].split(',').map { |kw| kw.downcase.strip }
-      rescue
-        parsed['tags'] = []
+        entry['sort_date'] = get_date_key(entry)
+
+        begin
+          entry['keywords'] = entry['keywords'].split(',').map { |kw| kw.downcase.strip }
+        rescue
+          entry['keywords'] = []
+        end
+
+        year_map[year] << entry
       end
 
-      parsed
+      year_map.each do |key, value|
+        value.sort_by! { |i| i['sort_date'] }
+      end
+
+      year_list = year_map.map do |key, value|
+        {
+          'year' => key,
+          'items' => value
+        }
+      end
+
+      year_list.sort_by { |i| -i['year'] }
     end
 
     def get_date_key(entry)
-      month_map = {
-        'jan' => '01',
-        'feb' => '02',
-        'mar' => '03',
-        'apr' => '04',
-        'may' => '05',
-        'jun' => '06',
-        'jul' => '07',
-        'aug' => '08',
-        'sep' => '09',
-        'oct' => '10',
-        'nov' => '11',
-        'dec' => '12'
-      }
+      # month_map = {
+      #   'jan' => '01',
+      #   'feb' => '02',
+      #   'mar' => '03',
+      #   'apr' => '04',
+      #   'may' => '05',
+      #   'jun' => '06',
+      #   'jul' => '07',
+      #   'aug' => '08',
+      #   'sep' => '09',
+      #   'oct' => '10',
+      #   'nov' => '11',
+      #   'dec' => '12'
+      # }
       year = begin
-               entry.year.to_s
+               entry['year'].to_s
              rescue
                # Assuming its the most recent
                '9999'
              end
-      month = begin
-                month_map[entry.month.to_s]
-              rescue
-                # Assuming its the most recent
-                '13'
-              end
-      year + month
+      # month = begin
+      #           month_map[entry['month'].to_s]
+      #         rescue
+      #           # Assuming its the most recent
+      #           '13'
+      #         end
+      Integer(year)
     end
   end
 end

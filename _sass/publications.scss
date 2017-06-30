@@ -1,0 +1,22 @@
+.btn-tag {
+  cursor: pointer;
+}
+
+.pub-year {
+  color: $color-text-light;
+  margin-top: 30px;
+}
+
+.card-publication {
+  border: .1rem solid $color-gray-light;
+  padding: 10px;
+
+  .card-image {
+    img {
+      box-shadow: 0 0 2px $color-gray-medium;
+      height: 120px;
+      margin: 0 auto;
+      width: 120px;
+    }
+  }
+}

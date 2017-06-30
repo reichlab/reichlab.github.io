@@ -2,6 +2,7 @@
 @import 'footer';
 @import 'people';
 @import 'theme';
+@import 'publications';
 
 .bg-gray {
   background-color: $color-gray-light;
@@ -48,10 +49,6 @@ code {
   color: $code-foreground;
   font-family: 'Source Code Pro';
   padding: 0 5px;
-}
-
-.btn-tag {
-  cursor: pointer;
 }
 
 .toast {
