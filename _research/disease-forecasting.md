@@ -1,9 +1,12 @@
 ---
 title: Disease forecasting
 image: /images/research/map-all-narrow.jpg
-link:
-  name: View Publications
-  url: /publications
+projects:
+  - reichlab/test-repo # This is a github project
+  - name: Project title
+    description: Project details
+    link: Optional url for project
+publications: theme-one # Optional tag for publications page
 ---
 
 Our team is working to develop statistical methods and tools that can improve

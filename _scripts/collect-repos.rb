@@ -1,19 +1,16 @@
-# Build thematic data files
+# Collect details from github repositories involved in the theme pages
 
 require 'octokit'
 require 'yaml'
-require 'git'
 require 'front_matter_parser'
 
-config = YAML.load_file('_config.yml')
-
-# Return details from github
+# Return details from github using octokit client
 def get_github_details(identifier, client)
   repo = client.repo(identifier)
   last_commit = client.commits(identifier)[0].commit
   {
     "url" => repo.html_url,
-    "name" => repo.name,
+    "title" => repo.name,
     "description" => repo.description,
     "commit" => {
       "date" => last_commit.author.date,
@@ -23,63 +20,28 @@ def get_github_details(identifier, client)
   }
 end
 
-
-# Add given github sources meta files to target directory
-def add_sources(sources, target)
-  sources.each do |src|
-    local_path = File.join('_data', 'clones', src['root'])
-
-    Git.clone(src['url'], src['repo'], :path => local_path, :depth => 1)
-    metadata_file = File.join(local_path, src['repo'], 'websitemeta.md')
-
-    if File.exist? metadata_file
-      metadata_content = File.read(metadata_file)
-      parsed = FrontMatterParser::Parser.new(:md).call(metadata_content)
-
-      # Resolve image urls local to repo
-      # NOTE; Not working on link urls since they are hard to reason about,
-      # e.g. should it go relative to project's web page or is it just a file
-      image_url = parsed.front_matter['image']
-      if image_url.start_with? '/'
-        source_image = File.join(local_path, src['repo'], image_url)
-        target_image = File.join('images', 'git', src['root'] + '-' + src['repo'] + '-' + image_url[1..-1])
-        FileUtils.cp(source_image, target_image)
-
-        # Change path in metadata
-        metadata_content.sub!(image_url, '/' + target_image.to_s)
+# Get a list of github repositories to parse
+def get_repositories()
+  mds = Dir.glob(File.join('_teaching', '*.md')) + Dir.glob(File.join('_research', '*.md'))
+  repos = []
+  mds.each do |md|
+    content = File.read(md)
+    front = FrontMatterParser::Parser.new(:md).call(content).front_matter
+    front['projects'].each do |project|
+      if project.respond_to? :to_str
+        repos << project
       end
-
-      # Write to new location
-      File.write(File.join(target, src['root'] + '-' + src['repo'] + '.md'), metadata_content)
-    else
-      abort("Metadata file for #{src['repo']} not found")
     end
   end
+  repos.uniq
 end
 
-def get_source_hash(source_list)
-  source_list.map do |src|
-    root, repo = src.split('/')
-    {
-      'url' => 'https://github.com/' + src,
-      'root' => root,
-      'repo' => repo
-    }
-  end
+# Get API key from environment
+client = Octokit::Client.new(:access_token => ENV['GH_TOKEN'])
+data = Hash.new
+get_repositories().each do |repo|
+  data[repo] = get_github_details(repo, client)
 end
 
-
-if config.key? 'research_sources'
-  sources = get_source_hash config['research_sources']
-  markdown_target = File.join('_data', '_research')
-
-  add_sources sources, markdown_target
-end
-
-if config.key? 'teaching_sources'
-  sources = get_source_hash config['teaching_sources']
-
-  markdown_target = File.join('_data', '_teaching')
-  add_sources sources, markdown_target
-end
-
+# Write to yaml
+File.write(File.join('_data', 'repositories.yml'), data.to_yaml)
