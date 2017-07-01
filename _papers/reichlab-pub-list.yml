@@ -134,6 +134,7 @@
     Suthachana S, Clapham H, Salje H, Cummings DAT, Lessler J
   journal: PLOS Neg Trop Dis
   year: 2016
+  keywords: forecasting, dengue
   citation: "PLOS Neg Trop Dis 10: e0004761"
   abstract: >
     Epidemics of communicable diseases place a huge burden on public health
@@ -161,6 +162,7 @@
   authors: Ray EL, Reich NG
   journal: arXiv
   citation: "arXiv: 1703.10936"
+  url: https://arxiv.org/abs/1703.10936
   year: 2017
   github: reichlab/adaptively-weighted-ensemble
   abstract: >
@@ -188,3 +190,13 @@
     offered more consistent performance across seasons than the component
     models. Ensemble methods offer the potential to deliver more reliable
     predictions to public health decision makers.
+
+- title: >
+    Enriching Students' Conceptual Understanding of Confidence Intervals: An Interactive Trivia-based Classroom Activity
+  slug: wang-confidence
+  authors: Wang X, Reich NG, Horton NJ
+  doi: 10.1080/00031305.2017.1305294
+  year: 2017
+  journal: Am Stat
+  abstract: >
+    Confidence intervals provide a way to determine plausible values for a population parameter. They are omnipresent in research articles involving statistical analyses. Appropriately, a key statistical literacy learning objective is the ability to interpret and understand confidence intervals in a wide range of settings. As instructors, we devote a considerable amount of time and effort to ensure that students master this topic in introductory courses and beyond. Yet, studies continue to find that confidence intervals are commonly misinterpreted and that even experts have trouble calibrating their individual confidence levels. In this article, we present a ten-minute trivia game-based activity that addresses these misconceptions by exposing students to confidence intervals from a personal perspective. We describe how the activity can be integrated into a statistics course as a one-time activity or with repetition at intervals throughout a course, discuss results of using the activity in class, and present possible extensions.
