@@ -81,12 +81,7 @@ function updateHashPub (pubItem) {
 
 // Toggle hash
 function togglePubAbstract (pubItem) {
-  // Hide all others
-  var visible = pubItem.find('.pub-abstract').is(':visible')
-  $('.pub-abstract').hide()
-  if (!visible) {
-    pubItem.find('.pub-abstract').show(200)
-  }
+  pubItem.find('.pub-abstract').toggle(200)
 }
 
 // Parse data from hash string
