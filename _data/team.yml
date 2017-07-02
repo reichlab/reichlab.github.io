@@ -4,8 +4,12 @@
 - name: Nicholas Reich
   role: Principal Investigator
   description: |
-    Nick\'s research focuses on developing statistical methods for analyzing
-    infectious disease data. He also enjoys hiking, canoeing, and juggling.
+    Nick joined the UMass Biostatistics faculty in 2011, having received a 
+    PhD in Biostatstics from Johns Hopkins, where he also did his post-doctoral
+    training in infectious disease epidemiology.    
+    He enjoys spending time outside with his family (hiking, camping, canoeing, 
+    gardening). As an undergraduate, he won a national 
+    collegiate championship playing for the Carleton Ultimate Team. 
   image: "http://people.umass.edu/nick/faceshot.jpg"
   links:
     - name: Google Scholar
@@ -14,6 +18,20 @@
       url: "https://twitter.com/reichlab"
     - name: CV
       url: "https://people.umass.edu/nick/cvReich.pdf"
+
+
+- name: Evan Ray
+  role: Affiliated Faculty
+  description: |
+    Evan is an Assistant Professor of Mathematics and Statistics at Mt Holyoke 
+    College. He received his PhD in statistics from UMass-Amherst, developing 
+    methods to infer physical activity type and intensity from accelerometer 
+    data. A former post-doc in the Reich Lab, he also works on developing 
+    methods for predicting infectious disease outbreaks.
+  image: /images/people/evan.jpg
+  links:
+    - name: CV
+      url: /pdfs/people/Evan_Ray_CV.pdf
 
 
 - name: Alexandria (Lexi) Brown
@@ -26,18 +44,6 @@
   links:
     - name: CV
       url: "https://drive.google.com/file/d/0B-fpi_ROKnbcQ3ZrbVh3UVY1SE0/view?usp=sharing"
-
-
-- name: Evan Ray
-  role: Post-doctoral fellow
-  description: |
-    Evan got his PhD in statistics developing methods to infer physical activity
-    type and intensity from accelerometer data. He is working on developing
-    inference techniques for multi-pathogen disease models.
-  image: /images/people/evan.jpg
-  links:
-    - name: CV
-      url: /pdfs/people/Evan_Ray_CV.pdf
 
 
 - name: Krzysztof Sakrejda
@@ -71,26 +77,16 @@
       url: "https://twitter.com/salauer_biostat"
 
 - name: Xi Meng
-  role: MS student
+  role: PhD student
   description: |
      Xi received her BS degree from Beijing Institute of Technology with a major
-     in Electrical Engineering. She is working as a research assistant to
-     conduct simulation studies and analysis on multi-strain infectious disease
-     time-series data.
+     in Electrical Engineering. Her PhD research focuses on using particle 
+     filtering approaches to draw inference about dynamics in complex, 
+     multi-strain infectious disease settings.
   image: /images/people/xi.png
   links:
     - name: CV
       url: "https://drive.google.com/file/d/0B66FkAegj6nrdlZPSXlIZm9jWDQ/view"
-
-
-- name: Harley Jean
-  role: Undergraduate
-  description: |
-    Harley is a senior Public Health major at UMass-Amherst. He is working as a
-    research assistant, investigating methods for analyzing spatial dynamics of
-    infectious disease time-series data.
-  image: /images/people/harley.jpeg
-  links: []
 
 
 - name: Abhinav Tushar
@@ -104,6 +100,16 @@
       url: "https://github.com/lepisma"
     - name: Home Page
       url: "https://lepisma.github.io/about"
+      
+      
+- name: Harley Jean
+  role: Post-bac research fellow
+  description: |
+    Harley is a recent Public Health BS graduate from UMass-Amherst. He is working as a
+    research fellow, investigating methods for analyzing spatial dynamics of
+    infectious disease time-series data.
+  image: /images/people/harley.jpeg
+  links: []
 
 
 - name: Matthew Cornell

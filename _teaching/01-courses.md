@@ -1,16 +1,13 @@
 ---
-title: Courses and stuff
-image: /images/research/map-all-narrow.jpg
+title: Courses
+image: /images/teaching/simpsons-paradox.png
 projects:
-  - reichlab/pymmwr
-  - title: Title without link
-    description: Phasellus neque orci, porta a, aliquet quis, semper a, massa. Cras placerat accumsan nulla.
-  - title: Course with link
-    description: Phasellus lacus.  Mauris ac felis vel velit tristique imperdiet.  Aliquam posuere. Praesent fermentum tempor tellus.
-    url: "https://reddit.com"
+  - nickreich/data-stories
+  - nickreich/data-stories-2016
+  - nickreich/applied-regression-2016
+  - nickreich/methods2
+  - nickreich/stat-modeling-2015
+  - nickreich/statComp2014
 ---
 
-Pellentesque dapibus suscipit ligula.  Donec posuere augue in quam.  Etiam vel
-tortor sodales tellus ultricies commodo.  Suspendisse potenti.  Aenean in sem ac
-leo mollis blandit.  Donec neque quam, dignissim in, mollis nec, sagittis eu,
-wisi.  Phasellus lacus.  Etiam laoreet quam sed arcu.  Phasellus at dui in
+Dr. Reich has developed and taught courses in regression, statistical modeling, and data visualization, both at the graduate and undergraduate levels.
