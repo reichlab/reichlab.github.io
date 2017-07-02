@@ -53,12 +53,14 @@ layout: default
                 {% if item.doi %}
                   <a class="btn btn-link btn-sm pub-btn tooltip"
                      data-tooltip="Open doi link"
-                     href="https://doi.org/{{ item.doi }}">
+                     href="https://doi.org/{{ item.doi }}"
+                     target="_blank">
                     <i class="fa fa-external-link"></i> article
                   </a>
                   <a class="btn btn-link btn-sm pub-btn tooltip"
                      data-tooltip="Save to mendeley"
-                     href="http://www.mendeley.com/import/?url=https://doi.org/{{ item.doi }}">
+                     href="http://www.mendeley.com/import/?url=https://doi.org/{{ item.doi }}"
+                     target="_blank">
                     <i class="fa fa-save"></i> save
                   </a>
                 {% endif %}
