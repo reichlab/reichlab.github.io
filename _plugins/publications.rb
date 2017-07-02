@@ -32,7 +32,7 @@ module Publications
           year_map[year] = []
         end
 
-        entry['sort_date'] = get_date_key(entry)
+        entry['year'] = year
 
         begin
           entry['keywords'] = entry['keywords'].split(',').map { |kw| kw.downcase.strip }
@@ -43,10 +43,6 @@ module Publications
         year_map[year] << entry
       end
 
-      year_map.each do |key, value|
-        value.sort_by! { |i| i['sort_date'] }
-      end
-
       year_list = year_map.map do |key, value|
         {
           'year' => key,
@@ -54,37 +50,8 @@ module Publications
         }
       end
 
+      # Sort groups from latest year to oldest
       year_list.sort_by { |i| -i['year'] }
-    end
-
-    def get_date_key(entry)
-      # month_map = {
-      #   'jan' => '01',
-      #   'feb' => '02',
-      #   'mar' => '03',
-      #   'apr' => '04',
-      #   'may' => '05',
-      #   'jun' => '06',
-      #   'jul' => '07',
-      #   'aug' => '08',
-      #   'sep' => '09',
-      #   'oct' => '10',
-      #   'nov' => '11',
-      #   'dec' => '12'
-      # }
-      year = begin
-               entry['year'].to_s
-             rescue
-               # Assuming its the most recent
-               '9999'
-             end
-      # month = begin
-      #           month_map[entry['month'].to_s]
-      #         rescue
-      #           # Assuming its the most recent
-      #           '13'
-      #         end
-      Integer(year)
     end
   end
 end
