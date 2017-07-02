@@ -7,7 +7,7 @@ layout: default
 
 <div>
   {% for keyword in page.keywords %}
-    <span class="chip active btn-tag">{{ keyword }}</span>
+    <span class="chip active btn-keyword">{{ keyword }}</span>
   {% endfor %}
 </div>
 
@@ -21,26 +21,26 @@ layout: default
   <div class="pub-list columns">
     {% for item in year_item.items %}
       <div class="column col-12">
-        <div class="card-publication pub-item columns"">
+        <div class="card-publication pub-item columns" id="{{ item.slug }}">
           <div class="card-image column col-2 col-sm-12">
-            <a href="#{{ item.slug }}">
+            <a href="#pub={{ item.slug }}">
               <img class="rounded pub-image" src="images/publications/{{ item.slug }}.png">
             </a>
           </div>
           <div class="column col-10 col-sm-12">
             <div class="card-header">
               <h4 class="card-title">
-                <a href="#{{ item.slug }}" class="pub-title">{{ item.title }}</a>
+                <a href="#pub={{ item.slug }}" class="pub-title">{{ item.title }}</a>
               </h4>
               <h6 class="card-subtitle">
-              {{ item.authors }}, <em>{{ item.journal }}</em>
+                {{ item.authors }}, <em>{{ item.journal }}</em>
               </h6>
             </div>
             <div class="card-footer">
               {% if item.keywords.size > 0 %}
                 <div class="pub-keywords">
                   {% for keyword in item.keywords %}
-                    <span class="label pub-tag">{{ keyword }}</span>
+                    <span class="label pub-keyword">{{ keyword }}</span>
                   {% endfor %}
                 </div>
               {% endif %}
@@ -65,7 +65,7 @@ layout: default
               </div>
               <div class="pub-abstract">
                 <h6>Abstract</h6>
-                {{ item.abstract }}
+                  {{ item.abstract }}
               </div>
             </div>
           </div>
