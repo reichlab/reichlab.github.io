@@ -108,6 +108,19 @@ function parseHash (hash) {
 $(document).ready(function () {
   var allItems = $('.pub-item')
 
+  // Show all / none buttons
+  $('.btn-keyword-all').click(function () {
+    $('.btn-keyword').addClass('active')
+    filterKeywordEntries(allItems)
+    updateHashKeywords()
+  })
+
+  $('.btn-keyword-none').click(function () {
+    $('.btn-keyword').removeClass('active')
+    filterKeywordEntries(allItems)
+    updateHashKeywords()
+  })
+
   // Keyword buttons
   $('.btn-keyword').click(function () {
     $(this).toggleClass('active')

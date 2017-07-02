@@ -6,9 +6,19 @@ layout: default
 <h3><small class="label"> peer-reviewed journal articles</small></h3>
 
 <div>
-  {% for keyword in page.keywords %}
-    <span class="chip active btn-keyword">{{ keyword }}</span>
-  {% endfor %}
+  <div class="keyword-toggle-container">
+    <span class="btn btn-sm btn-default btn-keyword-all">
+      Show All
+    </span>
+    <span class="btn btn-sm btn-default btn-keyword-none">
+      None
+    </span>
+  </div>
+  <div class="keyword-btn-container">
+    {% for keyword in page.keywords %}
+      <span class="chip active btn-keyword">{{ keyword }}</span>
+    {% endfor %}
+  </div>
 </div>
 
 <br><br>
