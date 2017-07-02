@@ -7,7 +7,7 @@ layout: default
 
 <div>
   {% for keyword in page.keywords %}
-    <span class="chip active btn-tag">{{ keyword }}</span>
+    <span class="chip active btn-keyword">{{ keyword }}</span>
   {% endfor %}
 </div>
 
@@ -21,48 +21,53 @@ layout: default
   <div class="pub-list columns">
     {% for item in year_item.items %}
       <div class="column col-12">
-        <div class="card-publication pub-item columns">
+        <div class="card-publication pub-item columns" id="{{ item.slug }}">
           <div class="card-image column col-2 col-sm-12">
-            <img class="rounded" src="papers/images/{{ item.slug }}.png">
+            <a href="#pub={{ item.slug }}">
+              <img class="rounded pub-image" src="images/publications/{{ item.slug }}.png">
+            </a>
           </div>
           <div class="column col-10 col-sm-12">
             <div class="card-header">
               <h4 class="card-title">
-                {% if item.doi %}
-                  <a href="https://doi.org/{{ item.doi }}">{{ item.title }}</a>
-                {% else %}
-                  {{ item.title }}
-                {% endif %}
+                <a href="#pub={{ item.slug }}" class="pub-title">{{ item.title }}</a>
               </h4>
               <h6 class="card-subtitle">
-              {{ item.authors }}, <em>{{ item.journal }}</em>
+                {{ item.authors }}, <em>{{ item.journal }}</em>
               </h6>
             </div>
             <div class="card-footer">
-              <div>
-                {% for keyword in item.keywords %}
-                  <span class="label pub-tag">{{ keyword }}</span>
-                {% endfor %}
-              </div>
+              {% if item.keywords.size > 0 %}
+                <div class="pub-keywords">
+                  {% for keyword in item.keywords %}
+                    <span class="label pub-keyword">{{ keyword }}</span>
+                  {% endfor %}
+                </div>
+              {% endif %}
               <div class="pub-btns">
-                <button class="btn btn-link tooltip btn-bibtex"
-                        data-tooltip="Copy BibTeX"
-                        data-clipboard-action="copy"
-                        data-clipboard-text="{{ item.abstract }}">
-                  <i class="fa fa-clipboard"></i>
-                </button>
-                <a class="btn btn-link tooltip"
+                <a class="btn btn-link btn-sm pub-btn tooltip"
                    data-tooltip="Get pdf"
-                   href="papers/pdfs/{{ item.slug }}.pdf">
-                  <i class="fa fa-file-pdf-o"></i>
+                   href="/pdfs/publications/{{ item.slug }}.pdf">
+                  <i class="fa fa-file-pdf-o"></i> pdf
                 </a>
                 {% if item.doi %}
-                  <a class="btn btn-link tooltip"
+                  <a class="btn btn-link btn-sm pub-btn tooltip"
+                     data-tooltip="Open doi link"
+                     href="https://doi.org/{{ item.doi }}"
+                     target="_blank">
+                    <i class="fa fa-external-link"></i> article
+                  </a>
+                  <a class="btn btn-link btn-sm pub-btn tooltip"
                      data-tooltip="Save to mendeley"
-                     href="http://www.mendeley.com/import/?url=https://doi.org/{{ item.doi }}">
-                    <i class="fa fa-save"></i>
+                     href="http://www.mendeley.com/import/?url=https://doi.org/{{ item.doi }}"
+                     target="_blank">
+                    <i class="fa fa-save"></i> save
                   </a>
                 {% endif %}
+              </div>
+              <div class="pub-abstract">
+                <h6>Abstract</h6>
+                  {{ item.abstract }}
               </div>
             </div>
           </div>
@@ -72,9 +77,5 @@ layout: default
   </div>
 {% endfor %}
 
-{% include toast.html %}
-
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/toast.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/publications.js"></script>

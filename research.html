@@ -7,22 +7,14 @@ layout: default
 {% for item in page.items %}
   <div class="columns">
     <div class="column col-12">
-      <h2>
-        {{ item.title }}
-      </h2>
+      <a href="#{{ item.id }}">
+        <h2 id="{{ item.id }}" class="theme-title">
+          {{ item.title }}
+        </h2>
+      </a>
     </div>
     <div class="column col-6 col-md-12">
       <div>{{ item.content }}</div>
-
-      {% if item.publications %}
-        <br>
-        <div>
-          <a href="/publications#{{ item.publications }}"
-             class="btn btn-sm btn-default">
-            See publications
-          </a>
-        </div>
-      {% endif %}
     </div>
 
     <div class="column col-6 col-md-12">
@@ -50,7 +42,15 @@ layout: default
           </div>
           {% if project.commit %}
             <div class="card-footer">
-              <small class="label">Updated by {{ project.commit.author }} at {{ project.commit.date }}</small>
+              <small class="label">
+                Updated by
+                <a href="{{ project.commit.author_url }}">
+                  {{ project.commit.author }}
+                </a> on
+                <a href="{{ project.commit.url }}">
+                  {{ project.commit.date }}
+                </a>
+              </small>
             </div>
           {% endif %}
         </div>
