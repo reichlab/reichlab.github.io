@@ -50,13 +50,6 @@ function updateHash () {
 }
 
 $(document).ready(function () {
-  var clipboard = new Clipboard('.btn')
-
-  clipboard.on('success', function (e) {
-    // Send toast notification
-    notify('Copied to clipboard')
-  })
-
   var allItems = $('.pub-item')
 
   // Tag buttons

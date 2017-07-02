@@ -45,12 +45,6 @@ layout: default
                 {% endfor %}
               </div>
               <div class="pub-btns">
-                <button class="btn btn-link tooltip btn-bibtex"
-                        data-tooltip="Copy BibTeX"
-                        data-clipboard-action="copy"
-                        data-clipboard-text="{{ item.abstract }}">
-                  <i class="fa fa-clipboard"></i>
-                </button>
                 <a class="btn btn-link tooltip"
                    data-tooltip="Get pdf"
                    href="/pdfs/publications/{{ item.slug }}.pdf">
@@ -72,9 +66,5 @@ layout: default
   </div>
 {% endfor %}
 
-{% include toast.html %}
-
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
-<script type="text/javascript" src="{{ site.baseurl }}/assets/js/toast.js"></script>
 <script type="text/javascript" src="{{ site.baseurl }}/assets/js/publications.js"></script>
