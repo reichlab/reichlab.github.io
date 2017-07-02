@@ -44,9 +44,14 @@ layout: default
             <div class="card-footer">
               <small class="label">
                 Updated by
-                <a href="{{ project.commit.author_url }}">
+                {% if project.commit.author_url %}
+                  <a href="{{ project.commit.author_url }}">
+                    {{ project.commit.author }}
+                  </a>
+                {% else %}
                   {{ project.commit.author }}
-                </a> on
+                {% endif %}
+                on
                 <a href="{{ project.commit.url }}">
                   {{ project.commit.date }}
                 </a>

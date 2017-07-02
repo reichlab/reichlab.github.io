@@ -8,18 +8,25 @@ require 'front_matter_parser'
 def get_github_details(identifier, client)
   repo = client.repo(identifier)
   last_commit = client.commits(identifier)[0]
-  {
-    "url" => repo.html_url,
-    "title" => repo.name,
-    "description" => repo.description,
-    "commit" => {
-      "date" => last_commit.commit.author.date.strftime('%b %d, %Y'),
-      "string" => last_commit.commit.message,
-      "author" => last_commit.commit.author.name,
-      "author_url" => last_commit.author.html_url,
-      "url" => last_commit.html_url
+  repo_data = {
+    'url' => repo.html_url,
+    'title' => repo.name,
+    'description' => repo.description,
+    'commit' => {
+      'date' => last_commit.commit.author.date.strftime('%b %d, %Y'),
+      'string' => last_commit.commit.message,
+      'author' => last_commit.commit.author.name,
+      'url' => last_commit.html_url
     }
   }
+
+  # Authors might now always have urls
+  begin
+    repo_data['commit']['author_url'] = last_commit.author.html_url
+  rescue
+  end
+
+  repo_data
 end
 
 # Get a list of github repositories to parse
