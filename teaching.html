@@ -7,9 +7,11 @@ layout: default
 {% for item in page.items %}
   <div class="columns">
     <div class="column col-12">
-      <h2>
-        {{ item.title }}
-      </h2>
+      <a href="#{{ item.id }}">
+        <h2 id="{{ item.id }}" class="theme-title">
+          {{ item.title }}
+        </h2>
+      </a>
     </div>
     <div class="column col-6 col-md-12">
       <div>{{ item.content }}</div>
