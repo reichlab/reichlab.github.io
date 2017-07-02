@@ -23,7 +23,7 @@ layout: default
       <div class="column col-12">
         <div class="card-publication pub-item columns">
           <div class="card-image column col-2 col-sm-12">
-            <img class="rounded" src="papers/images/{{ item.slug }}.png">
+            <img class="rounded" src="images/publications/{{ item.slug }}.png">
           </div>
           <div class="column col-10 col-sm-12">
             <div class="card-header">
@@ -53,7 +53,7 @@ layout: default
                 </button>
                 <a class="btn btn-link tooltip"
                    data-tooltip="Get pdf"
-                   href="papers/pdfs/{{ item.slug }}.pdf">
+                   href="/pdfs/publications/{{ item.slug }}.pdf">
                   <i class="fa fa-file-pdf-o"></i>
                 </a>
                 {% if item.doi %}

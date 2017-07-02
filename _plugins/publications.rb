@@ -5,7 +5,7 @@ require 'yaml'
 module Publications
   class PubGen < Jekyll::Generator
     def generate(site)
-      data = YAML.load_file(File.join('_papers', 'reichlab-pub-list.yml'))
+      data = YAML.load_file(File.join('_data', 'publications.yml'))
       publications = site.pages.detect { |page| page.name == 'publications.html' }
 
       publications.data['keywords'] = get_unique_keywords(data)
