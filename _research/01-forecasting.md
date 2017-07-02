@@ -3,8 +3,8 @@ title: Infectious Disease Forecasting
 image: /images/research/map-all-narrow.jpg
 projects:
   - reichlab/adaptively-weighted-ensemble
+  - reichlab/annual-predictions-paper
   - reichlab/KCDE
-  - reichlab/ALERT
   - reichlab/2017-2018-cdc-flu-contest
 publications: forecasting # Optional tag for publications page
 ---
