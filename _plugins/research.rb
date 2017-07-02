@@ -14,6 +14,7 @@ module Research
         data = {
           'content' => Kramdown::Document.new(parsed.content).to_html,
           'title' => fm['title'],
+          'id' => File.basename(research_file, '.md'),
           'image' => fm['image'],
           'projects' => fm['projects'].map do |project|
             # Read from yaml if its a github project
