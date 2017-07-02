@@ -40,7 +40,7 @@ class_name[0] = class_name[0].upcase
 .      end
 .
 .      @{page_name} = site.pages.detect { |page| page.name == '@{page_name}.html' }
-.      @{page_name}.data['items'] = @{page_name}_data
+.      @{page_name}.data['items'] = @{page_name}_data.sort_by { |it| it['id'] }
 .    end
 .  end
 .end

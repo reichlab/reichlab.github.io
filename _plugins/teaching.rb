@@ -34,7 +34,7 @@ module Teaching
       end
 
       teaching = site.pages.detect { |page| page.name == 'teaching.html' }
-      teaching.data['items'] = teaching_data
+      teaching.data['items'] = teaching_data.sort_by { |it| it['id'] }
     end
   end
 end

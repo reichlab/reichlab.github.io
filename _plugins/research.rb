@@ -34,7 +34,7 @@ module Research
       end
 
       research = site.pages.detect { |page| page.name == 'research.html' }
-      research.data['items'] = research_data
+      research.data['items'] = research_data.sort_by { |it| it['id'] }
     end
   end
 end
