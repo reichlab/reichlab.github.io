@@ -36,6 +36,18 @@ function filterKeywordEntries (items) {
       }
     }
   })
+
+  filterYearEntries()
+}
+
+// Show/hide year text depending on visibility states of its group items
+function filterYearEntries () {
+  $('.pub-year').each(function () {
+    var children = $(this).closest('.pub-list').find('.pub-item')
+    $(this).toggle(Array.prototype.some.call(children, function (child) {
+      return $(child).is(':visible')
+    }))
+  })
 }
 
 function serializeKeywords (keywords) {

@@ -24,14 +24,13 @@ layout: default
 <br><br>
 
 {% for year_item in page.items %}
-  {% unless year_item.year == 9999 %}
-    <h3 class="pub-year">{{ year_item.year }}</h3>
-  {% endunless %}
-
   <div class="pub-list columns">
+    {% unless year_item.year == 9999 %}
+      <h3 class="pub-year">{{ year_item.year }}</h3>
+    {% endunless %}
     {% for item in year_item.items %}
-      <div class="column col-12">
-        <div class="card-publication pub-item columns" id="{{ item.slug }}">
+      <div class="column pub-item col-12">
+        <div class="card-publication columns" id="{{ item.slug }}">
           <div class="card-image column col-2 col-sm-12">
             <a href="#pub={{ item.slug }}">
               <img class="rounded pub-image" src="images/publications/{{ item.slug }}.png">
