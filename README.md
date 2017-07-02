@@ -15,6 +15,12 @@ Home page source code.
 3. Collect udates from github repositories mentioned in files.
 
     `bundle exec rake collect`
+    
+    > Running this uses unauthenticated requests to Github's API. The limit is
+    > 60 per hour. Recommended way is to generate a personal token
+    > (https://github.com/settings/tokens) and run collect command as
+
+    `env GH_TOKEN='<token-here>' bundle exec rake collect`
 
 4. Serve/build with jekyll
 
