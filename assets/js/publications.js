@@ -1,5 +1,5 @@
 // Script for publications page
-/* global $, Clipboard, notify */
+/* global $ */
 
 // Filter all entries according to current selection state of tags
 function filterTaggedEntries (items) {
@@ -77,4 +77,13 @@ $(document).ready(function () {
     })
     filterTaggedEntries(allItems)
   }
+
+  // Show abstract on click
+  $('.pub-title').click(function () {
+    $(this).closest('.card-publication').find('.pub-abstract').toggle(200)
+  })
+
+  $('.pub-image').click(function () {
+    $(this).closest('.card-publication').find('.pub-abstract').toggle(200)
+  })
 })

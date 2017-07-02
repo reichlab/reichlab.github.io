@@ -2,6 +2,11 @@
   cursor: pointer;
 }
 
+// Squeeze columns to allow more space
+.pub-list > .column {
+  padding-bottom: 0;
+}
+
 .pub-year {
   color: $color-text-light;
   margin-top: 30px;
@@ -9,7 +14,7 @@
 
 .card-publication {
   border: .1rem solid $color-gray-light;
-  padding: 10px;
+  padding: 5px 10px;
 
   .card-image {
     img {
@@ -18,5 +23,23 @@
       margin: 0 auto;
       width: 120px;
     }
+  }
+
+  .pub-keywords {
+    margin-bottom: 10px;
+  }
+
+  .pub-abstract {
+    display: none;
+    margin-top: 20px;
+  }
+
+  .pub-btn {
+    padding-left: 0;
+  }
+
+  .pub-image,
+  .pub-title {
+    cursor: pointer;
   }
 }

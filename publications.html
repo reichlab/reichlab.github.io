@@ -22,41 +22,48 @@ layout: default
     {% for item in year_item.items %}
       <div class="column col-12">
         <div class="card-publication pub-item columns">
-          <div class="card-image column col-2 col-sm-12">
+          <div class="card-image pub-image column col-2 col-sm-12">
             <img class="rounded" src="images/publications/{{ item.slug }}.png">
           </div>
           <div class="column col-10 col-sm-12">
             <div class="card-header">
               <h4 class="card-title">
-                {% if item.doi %}
-                  <a href="https://doi.org/{{ item.doi }}">{{ item.title }}</a>
-                {% else %}
-                  {{ item.title }}
-                {% endif %}
+                <a class="pub-title">{{ item.title }}</a>
               </h4>
               <h6 class="card-subtitle">
               {{ item.authors }}, <em>{{ item.journal }}</em>
               </h6>
             </div>
             <div class="card-footer">
-              <div>
-                {% for keyword in item.keywords %}
-                  <span class="label pub-tag">{{ keyword }}</span>
-                {% endfor %}
-              </div>
+              {% if item.keywords.size > 0 %}
+                <div class="pub-keywords">
+                  {% for keyword in item.keywords %}
+                    <span class="label pub-tag">{{ keyword }}</span>
+                  {% endfor %}
+                </div>
+              {% endif %}
               <div class="pub-btns">
-                <a class="btn btn-link tooltip"
+                <a class="btn btn-link btn-sm pub-btn tooltip"
                    data-tooltip="Get pdf"
                    href="/pdfs/publications/{{ item.slug }}.pdf">
-                  <i class="fa fa-file-pdf-o"></i>
+                  <i class="fa fa-file-pdf-o"></i> pdf
                 </a>
                 {% if item.doi %}
-                  <a class="btn btn-link tooltip"
+                  <a class="btn btn-link btn-sm pub-btn tooltip"
+                     data-tooltip="Open doi link"
+                     href="https://doi.org/{{ item.doi }}">
+                    <i class="fa fa-external-link"></i> article
+                  </a>
+                  <a class="btn btn-link btn-sm pub-btn tooltip"
                      data-tooltip="Save to mendeley"
                      href="http://www.mendeley.com/import/?url=https://doi.org/{{ item.doi }}">
-                    <i class="fa fa-save"></i>
+                    <i class="fa fa-save"></i> save
                   </a>
                 {% endif %}
+              </div>
+              <div class="pub-abstract">
+                <h6>Abstract</h6>
+                {{ item.abstract }}
               </div>
             </div>
           </div>
