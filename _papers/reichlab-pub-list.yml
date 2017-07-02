@@ -200,3 +200,15 @@
   journal: Am Stat
   abstract: >
     Confidence intervals provide a way to determine plausible values for a population parameter. They are omnipresent in research articles involving statistical analyses. Appropriately, a key statistical literacy learning objective is the ability to interpret and understand confidence intervals in a wide range of settings. As instructors, we devote a considerable amount of time and effort to ensure that students master this topic in introductory courses and beyond. Yet, studies continue to find that confidence intervals are commonly misinterpreted and that even experts have trouble calibrating their individual confidence levels. In this article, we present a ten-minute trivia game-based activity that addresses these misconceptions by exposing students to confidence intervals from a personal perspective. We describe how the activity can be integrated into a statistics course as a one-time activity or with repetition at intervals throughout a course, discuss results of using the activity in class, and present possible extensions.
+
+- title: >
+    The Effect of Cluster Size Variability on Statistical Power in Cluster-Randomized Trials
+  slug: lauer-cluster-power
+  doi: 10.1371/journal.pone.0119074
+  authors: Lauer SA, Kleinman K, Reich NG
+  journal: PLOS ONE
+  year: 2015
+  volume: 10
+  pages: e0119074
+  abstract: >
+    The frequency of cluster-randomized trials (CRTs) in peer-reviewed literature has increased exponentially over the past two decades. CRTs are a valuable tool for studying interventions that cannot be effectively implemented or randomized at the individual level. However, some aspects of the design and analysis of data from CRTs are more complex than those for individually randomized controlled trials. One of the key components to designing a successful CRT is calculating the proper sample size (i.e. number of clusters) needed to attain an acceptable level of statistical power. In order to do this, a researcher must make assumptions about the value of several variables, including a fixed mean cluster size. In practice, cluster size can often vary dramatically. Few studies account for the effect of cluster size variation when assessing the statistical power for a given trial. We conducted a simulation study to investigate how the statistical power of CRTs changes with variable cluster sizes. In general, we observed that increases in cluster size variability lead to a decrease in power.
