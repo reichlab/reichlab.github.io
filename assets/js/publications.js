@@ -87,18 +87,20 @@ function togglePubAbstract (pubItem) {
 // Parse data from hash string
 function parseHash (hash) {
   var hashText = hash.substr(1)
-  var items = hashText.split('&')
   var output = {}
-  items.forEach(function (it) {
-    var key = it.split('=')[0]
-    var value = it.split('=')[1].split(',')
+  if (hashText.length > 0) {
+    var items = hashText.split('&')
+    items.forEach(function (it) {
+      var key = it.split('=')[0]
+      var value = it.split('=')[1].split(',')
 
-    // Keyword is the only plural thing here
-    if (key !== 'keywords') {
-      value = value[0]
-    }
-    output[key] = value
-  })
+      // Keyword is the only plural thing here
+      if (key !== 'keywords') {
+        value = value[0]
+      }
+      output[key] = value
+    })
+  }
 
   return output
 }
