@@ -21,14 +21,16 @@ layout: default
   <div class="pub-list columns">
     {% for item in year_item.items %}
       <div class="column col-12">
-        <div class="card-publication pub-item columns">
-          <div class="card-image pub-image column col-2 col-sm-12">
-            <img class="rounded" src="images/publications/{{ item.slug }}.png">
+        <div class="card-publication pub-item columns"">
+          <div class="card-image column col-2 col-sm-12">
+            <a href="#{{ item.slug }}">
+              <img class="rounded pub-image" src="images/publications/{{ item.slug }}.png">
+            </a>
           </div>
           <div class="column col-10 col-sm-12">
             <div class="card-header">
               <h4 class="card-title">
-                <a class="pub-title">{{ item.title }}</a>
+                <a href="#{{ item.slug }}" class="pub-title">{{ item.title }}</a>
               </h4>
               <h6 class="card-subtitle">
               {{ item.authors }}, <em>{{ item.journal }}</em>
