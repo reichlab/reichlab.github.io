@@ -10,6 +10,12 @@ task :ggen, [:page] do |t, args|
      "#{args["page"]} > ./_plugins/#{args["page"]}.rb"
 end
 
+desc "Generate a thematic page in root"
+task :tpgen, [:page, :divider] do |t, args|
+  sh "bundle exec ruby ./_scripts/ribosome.rb ./_scripts/theme-page.html.dna "\
+     "#{args["page"]} #{args["divider"]} > #{args["page"]}.html"
+end
+
 task test: [:build] do
   sh 'bundle exec jekyll build'
   options = { :assume_extension => true }

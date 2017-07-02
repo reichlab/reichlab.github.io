@@ -42,7 +42,15 @@ layout: default
           </div>
           {% if project.commit %}
             <div class="card-footer">
-              <small class="label">Updated by {{ project.commit.author }} at {{ project.commit.date }}</small>
+              <small class="label">
+                Updated by
+                <a href="{{ project.commit.author_url }}">
+                  {{ project.commit.author }}
+                </a> on
+                <a href="{{ project.commit.url }}">
+                  {{ project.commit.date }}
+                </a>
+              </small>
             </div>
           {% endif %}
         </div>

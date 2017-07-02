@@ -1,0 +1,66 @@
+# Generator for theme page, should move this to layouts somehow
+
+page_name = ARGV[0].dup
+page_name[0] = page_name[0].upcase
+divider_text = ARGV[1].upcase
+
+.---
+.layout: default
+.---
+.
+.<h1>@{page_name}</h1>
+.
+.{% for item in page.items %}
+.  <div class="columns">
+.    <div class="column col-12">
+.      <a href="#{{ item.id }}">
+.        <h2 id="{{ item.id }}" class="theme-title">
+.          {{ item.title }}
+.        </h2>
+.      </a>
+.    </div>
+.    <div class="column col-6 col-md-12">
+.      <div>{{ item.content }}</div>
+.    </div>
+.
+.    <div class="column col-6 col-md-12">
+.      <img class="img-responsive" src="{{ item.image }}" alt="">
+.    </div>
+.  </div>
+.
+.  <div class="project-section-divider divider" data-content="@{divider_text}"></div>
+.
+.  <div class="columns project-container">
+.    {% for project in item.projects %}
+.      <div class="column col-6 col-md-12">
+.        <div class="card project-entry">
+.          <div class="card-header">
+.            <h6 class="project-title">
+.              {% if project.url %}
+.                <a href="{{ project.url }}">{% if project.commit %}<i class="fa fa-github-alt"></i> / {% endif %}{{ project.title }}</a>
+.              {% else %}
+.                {{ project.title }}
+.              {% endif %}
+.            </h6>
+.          </div>
+.          <div class="card-body project-description">
+.            {{ project.description }}
+.          </div>
+.          {% if project.commit %}
+.            <div class="card-footer">
+.              <small class="label">
+.                Updated by
+.                <a href="{{ project.commit.author_url }}">
+.                  {{ project.commit.author }}
+.                </a> on
+.                <a href="{{ project.commit.url }}">
+.                  {{ project.commit.date }}
+.                </a>
+.              </small>
+.            </div>
+.          {% endif %}
+.        </div>
+.      </div>
+.    {% endfor %}
+.  </div>
+.{% endfor %}
