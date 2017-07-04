@@ -10,4 +10,4 @@ projects:
   - nickreich/statComp2014
 ---
 
-Dr. Reich has developed and taught courses in regression, statistical modeling, and data visualization, both at the graduate and undergraduate levels.
+The Reich Lab has developed and taught courses in regression, statistical modeling, and data visualization, both at the graduate and undergraduate levels. These courses have included Applied Regression Modleing (BIOSTATS 650/690NR), Telling Stories with Data (PUBHLTH 490ST), and Intro to Statistical Computing with R (PUBHLTH 597).
