@@ -1,6 +1,6 @@
 ---
 title: Courses
-image: /images/teaching/simpsons-paradox.png
+image: /images/teaching/icb3-workshop-teachr-moment-2.jpg
 projects:
   - nickreich/data-stories
   - nickreich/data-stories-2016

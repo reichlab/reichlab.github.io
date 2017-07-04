@@ -1,6 +1,6 @@
 ---
 title: Cluster-randomized trial design
-image: /images/research/map-all-narrow.jpg
+image: /images/research/clusters.png
 projects:
   - Kenkleinman/clusterPower
   - title: The ResPECT Study

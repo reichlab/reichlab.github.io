@@ -1,6 +1,6 @@
 ---
 title: Infectious Disease Forecasting
-image: /images/research/map-all-narrow.jpg
+image: /images/research/map-all-narrow-zoom.jpg
 projects:
   - reichlab/adaptively-weighted-ensemble
   - reichlab/annual-predictions-paper

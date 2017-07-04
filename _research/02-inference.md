@@ -1,6 +1,6 @@
 ---
 title: Learning about Disease Transmission
-image: /images/research/map-all-narrow.jpg
+image: /images/research/gamma-posterior-zoom.png
 projects:
   - reichlab/activemonitr
   - nickreich/dengueCP
