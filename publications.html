@@ -24,7 +24,9 @@ layout: default
 {% for year_item in page.items %}
   <div class="pub-list columns">
     {% unless year_item.year == 9999 %}
-      <h3 class="pub-year">{{ year_item.year }}</h3>
+      <div class="column col-12">
+        <h3 class="pub-year">{{ year_item.year }}</h3>
+      </div>
     {% endunless %}
     {% for item in year_item.items %}
       <div class="column pub-item col-12">
