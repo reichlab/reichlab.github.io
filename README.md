@@ -12,7 +12,7 @@ Home page source code.
 
 2. Add data resources.
 
-3. Collect udates from github repositories mentioned in files.
+3. Collect updates from github repositories mentioned in files.
 
     `bundle exec rake collect`
     
