@@ -9,19 +9,47 @@
           </a>
         </section>
         <section class="navbar-section">
-          <a href="{{ site.baseurl }}/people" class="btn btn-link">People</a>
-          <a href="{{ site.baseurl }}/research" class="btn btn-link">Research</a>
-          <a href="{{ site.baseurl }}/teaching" class="btn btn-link">Teaching</a>
-          <a href="{{ site.baseurl }}/publications" class="btn btn-link">Publications</a>
-          <a href="{{ site.baseurl }}/blog" class="btn btn-link">Blog</a>
-          <div class="dropdown dropdown-right">
-            <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
-              Apps <i class="fa fa-caret-down"></i>
+          <!-- Show this segment when in small device -->
+          <div class="dropdown dropdown-right show-sm">
+            <a href="#" class="btn btn-link btn-lg dropdown-toggle" tabindex="0">
+              <i class="fa fa-navicon"></i>
             </a>
             <ul class="menu">
-              <li><a href="{{ site.baseurl }}/alert" class="btn btn-link">ALERT</a></li>
-              <li><a href="{{ site.baseurl }}/flusight" class="btn btn-link">Flusight</a></li>
+              <li><a href="{{ site.baseurl }}/people" class="btn btn-link">People</a></li>
+              <li><a href="{{ site.baseurl }}/research" class="btn btn-link">Research</a></li>
+              <li><a href="{{ site.baseurl }}/teaching" class="btn btn-link">Teaching</a></li>
+              <li><a href="{{ site.baseurl }}/publications" class="btn btn-link">Publications</a></li>
+              <li><a href="{{ site.baseurl }}/blog" class="btn btn-link">Blog</a></li>
+              <li>
+                <div class="dropdown dropdown-right show-sm">
+                  <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                    Apps <i class="fa fa-caret-down"></i>
+                  </a>
+                 <ul class="menu">
+                   <li><a href="{{ site.baseurl }}/alert" class="btn btn-link">ALERT</a></li>
+                   <li><a href="{{ site.baseurl }}/flusight" class="btn btn-link">Flusight</a></li>
+                 </ul>
+               </div>
+             </li>
             </ul>
+          </div>
+
+          <!-- Hide this segment when in small device -->
+          <div class="hide-sm">
+            <a href="{{ site.baseurl }}/people" class="btn btn-link">People</a>
+            <a href="{{ site.baseurl }}/research" class="btn btn-link">Research</a>
+            <a href="{{ site.baseurl }}/teaching" class="btn btn-link">Teaching</a>
+            <a href="{{ site.baseurl }}/publications" class="btn btn-link">Publications</a>
+            <a href="{{ site.baseurl }}/blog" class="btn btn-link">Blog</a>
+            <div class="dropdown dropdown-right">
+              <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                Apps <i class="fa fa-caret-down"></i>
+              </a>
+              <ul class="menu">
+                <li><a href="{{ site.baseurl }}/alert" class="btn btn-link">ALERT</a></li>
+                <li><a href="{{ site.baseurl }}/flusight" class="btn btn-link">Flusight</a></li>
+              </ul>
+            </div>
           </div>
         </section>
       </header>
