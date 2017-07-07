@@ -30,8 +30,18 @@
     }
   }
 
+  .card-header {
+    .card-title {
+      margin-bottom: 2px;
+    }
+
+    .card-subtitle {
+      margin-bottom: 5px;
+    }
+  }
+
   .pub-keywords {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .pub-abstract {
