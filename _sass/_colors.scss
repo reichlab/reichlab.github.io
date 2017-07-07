@@ -1,16 +1,21 @@
 // Color palette
 
+// Main theme colors
 $color-accent: #881c1c;
-$color-black: #000000;
 $color-gray-dark: #273640;
 $color-gray-medium: #b8cecf;
 $color-gray-light: #eef2f2;
+
+// Other shades of gray
 $color-white: #ffffff;
 $color-text-light: #acb3c2;
 $color-text-medium: #666;
+$color-black: #000;
 
+// Social icon colors
 $color-github: $color-black;
 $color-twitter: #1da1f2;
 
-$code-foreground: #2c3e50;
-$code-background: #ecf0f1;
+// Code div colors. See _pyg.scss for syntax colors
+$color-code-foreground: #2c3e50;
+$color-code-background: #ecf0f1;
