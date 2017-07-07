@@ -56,8 +56,9 @@ layout: default
         </div>
         <div class="column col-9 col-sm-12">
           <div class="card-header">
-            <h4 class="card-title">{{ member.name }}</h4>
-            <h6 class="card-subtitle">{{ member.role }}</h6>
+            <h4 class="card-title">{{ member.name }}</h4>&nbsp;&nbsp;
+            <h6 class="card-subtitle show-sm">{{ member.role }}</h6>
+            <h6 class="card-subtitle-inline hide-sm">{{ member.role }}</h6>
           </div>
           <div class="card-body">
             {{ member.description }}
