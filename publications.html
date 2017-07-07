@@ -73,6 +73,14 @@ layout: default
                     <i class="fa fa-save"></i> save
                   </a>
                 {% endif %}
+                {% if item.github %}
+                  <a class="btn btn-link btn-sm pub-btn tooltip"
+                     data-tooltip="Open github repository"
+                     href="https://github.com/{{ item.github }}"
+                     target="_blank">
+                    <i class="fa fa-github-alt"></i> github
+                  </a>
+                {% endif %}
               </div>
               <div class="pub-abstract">
                 <h6>Abstract</h6>
