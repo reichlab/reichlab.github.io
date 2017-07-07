@@ -3,12 +3,12 @@ layout: default
 ---
 
 <h1>Publications</h1>
-<h3><small class="label"> peer-reviewed journal articles</small></h3>
 
 <div>
   <div class="keyword-toggle-container">
+  <span class="label">Filter by keywords</span>
     <span class="btn btn-sm btn-default btn-keyword-all">
-      Select All
+        All
     </span>
     <span class="btn btn-sm btn-default btn-keyword-none">
       None
@@ -20,8 +20,6 @@ layout: default
     {% endfor %}
   </div>
 </div>
-
-<br><br>
 
 {% for year_item in page.items %}
   <div class="pub-list columns">
