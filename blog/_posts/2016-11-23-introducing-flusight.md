@@ -11,7 +11,7 @@ This year, we -- well, mostly [Evan](https://github.com/elray1) -- have develope
 In this post, I'm going to give you a quick tour under the hood of our ensemble forecasting methodology. At some point, we'll have an article up on GitHub or arXiv, but for now, this explanation will have to suffice.
 
 <a href="https://reichlab.github.io/flusight/">
-    <img class="img-responsive" width="700" src="https://reichlab.github.io/images/blog-figs/flusight-wide.png">
+    <img class="img-responsive" width="700" src="/images/blog/flusight-wide.png">
 </a>
 
 <!--more-->

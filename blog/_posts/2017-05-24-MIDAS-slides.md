@@ -7,7 +7,7 @@ comments: True
 
 Here are the slides for my presentation today at the annual MIDAS conference in Atlanta, GA. The talk summarizes recent work led by post-doc Evan Ray on creating interpretable "feature-weighted density ensembles" for infectious disease forecasting. The paper is currently under review, but [the preprint is available on arXiv](https://arxiv.org/abs/1703.10936). Check out the 2017-2018 real-time influenza forecasts from this model available on our [flusight app](http://reichlab.io/flusight/). And here are some slices of the feature-dependent weighting functions for predicting peak incidence for influenza in the U.S.
 
-<img class="img-responsive" width="700" src="http://reichlab.io/images/ensemble-model-weights.png">
+<img class="img-responsive" width="700" src="/images/blog/ensemble-model-weights.png">
 
 
 <!--more-->

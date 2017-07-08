@@ -7,7 +7,7 @@ comments: True
 
 Sheri Fink published [this nice piece](http://www.nytimes.com/2015/12/03/health/ebola-crisis-passes-but-questions-on-quarantines-persist.html?_r=0) in the New York Times yesterday on the legal issues surrounding state-imposed quarantines on travelers returning from countries with widespread Ebola transmission. In addition to the toll these policies have had on the individuals who have been put under quarantine, I took away from this article that there is still a need for better data on and communication about the risks of travelers being infected with Ebola. As it happens, this is the topic of my talk today at the [Epidemics5 conference](http://www.epidemics.elsevier.com/).
 
-<img class="img-responsive" src="https://reichlab.github.io/images/prob-of-AM-miss-both.jpg">
+<img class="img-responsive" src="/images/blog/prob-of-AM-miss-both.jpg">
 
 <!--more-->
 

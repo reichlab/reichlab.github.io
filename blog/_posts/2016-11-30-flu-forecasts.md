@@ -9,7 +9,7 @@ We updated our [U.S. influenza forecasts](https://reichlab.github.io/flusight/) 
 
 Reported U.S. regional influenza incidence in Nov 13-19 (MMWR week 46), 2016. Colors show percent above or below baseline:
 <a href="https://reichlab.github.io/flusight/">
-    <img class="img-responsive" width="700" src="https://reichlab.github.io/images/blog-figs/20161130-us-flu-map.png">
+    <img class="img-responsive" width="700" src="/images/blog/20161130-us-flu-map.png">
 </a>
 
 <!--more-->
@@ -20,13 +20,13 @@ Our model is currently combiing predictions from three component models to deliv
 
 These are early assessments of prediction accuracy, and they may change, as the CDC often does update its data over the course of a few subsequent weeks. See for example this example of data reported in week 52 of 2015 (dark line with dots in the figure below) that was subsequently adjusted down (solid green line):
 <a href="https://reichlab.github.io/flusight/">
-    <img class="img-responsive" width="700" src="https://reichlab.github.io/images/blog-figs/20161130-backfill-issue.png">
+    <img class="img-responsive" width="700" src="/images/blog/20161130-backfill-issue.png">
 </a>
 This "backfill" issue (adjustment of reported data in weeks following the initial report) is not something that we have yet accounted for in our forecasts, although it is on the short-list of issues to add to our development model that will be udpated throughout the season.
 
 In most regions, our ensemble model is sticking closely to the [KCDE model](https://github.com/reichlab/article-disease-pred-with-kcde/raw/master/inst/article/infectious-disease-prediction-with-kcde.pdf) for its weekly forecasts. The figure below, showing our current forecasts for Region 4, highlights how the red predictions (ensemble model) overlay the blue predictions (KCDE) almost exactly. For now, the ensemble is resisting the urge to follow the urgency of the green SARIMA model or the conservatism of the orange model which is pulling the trajectory back towards a seasonal average:
 <a href="https://reichlab.github.io/flusight/">
-    <img class="img-responsive" width="700" src="https://reichlab.github.io/images/blog-figs/20161130-region4-forecast.png">
+    <img class="img-responsive" width="700" src="/images/blog/20161130-region4-forecast.png">
 </a>
 
 Stay tuned for periodic updates throughout the season!
