@@ -27,5 +27,5 @@ task :collect do
 end
 
 task :build do
-  sh 'bundle exec jekyll build'
+  sh 'bundle exec jekyll build --trace'
 end
