@@ -6,14 +6,14 @@ REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 
-git checkout gh-pages || git checkout --orphan gh-pages
+git checkout master || git checkout --orphan master
 
 # Collect data
 bundle exec rake collect
 bundle exec rake build
 # bundle exec rake test
 
-if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "master" ]; then
+if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "source" ]; then
     echo "Skipping deploy"
     exit 0
 fi
