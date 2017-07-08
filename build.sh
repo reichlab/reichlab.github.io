@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -e
 
+git checkout gh-pages || git checkout --orphan gh-pages
+
 # Collect data
 bundle exec rake collect
 bundle exec rake build
@@ -11,21 +13,18 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "master" ]; then
     exit 0
 fi
 
-cd _site
+# Save some useful information
+REPO=`git config remote.origin.url`
+SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
+SHA=`git rev-parse --verify HEAD`
 
-REPO=git@github.com:reichlab/beta
+cp -r ./_site/* ./
 
-git init
 git config user.name "CI auto deploy"
-git config user.email $COMMIT_AUTHOR_EMAIL
+git config user.email "abhinav.tushar.vs@gmail.com"
+
 git add .
 git commit -m "Auto deploy to GitHub Pages: ${SHA}"
-
-git checkout -b gh-pages
-git remote add ghp $REPO
-
-git status
-git remote show ghp
 
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
 ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
@@ -38,4 +37,4 @@ eval `ssh-agent -s`
 ssh-add deploy_key
 
 # Push to gh-pages
-git push ghp gh-pages --force
+git push $SSH_REPO gh-pages --force

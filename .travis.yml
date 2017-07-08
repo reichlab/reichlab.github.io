@@ -8,6 +8,5 @@ env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES: true
   - ENCRYPTION_LABEL: 68a1829e6ee3
-  - COMMIT_AUTHOR_EMAIL: abhinav.tushar.vs@gmail.com
 
 sudo: false
