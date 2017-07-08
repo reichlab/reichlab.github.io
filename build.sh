@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 set -e
 
+# Save some useful information
+REPO=`git config remote.origin.url`
+SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
+SHA=`git rev-parse --verify HEAD`
+
 git checkout gh-pages || git checkout --orphan gh-pages
 
 # Collect data
@@ -12,11 +17,6 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "master" ]; then
     echo "Skipping deploy"
     exit 0
 fi
-
-# Save some useful information
-REPO=`git config remote.origin.url`
-SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
-SHA=`git rev-parse --verify HEAD`
 
 cp -r ./_site/* ./
 
