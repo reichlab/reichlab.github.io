@@ -24,7 +24,7 @@ rm -rf _scripts _teaching _assets blog css images pdfs vendor
 cp -r ./_site/* ./
 
 git config user.name "CI auto deploy"
-git config user.email "abhinav.tushar.vs@gmail.com"
+git config user.email "nick@schoolph.umass.edu"
 
 git add .
 git commit -m "Auto deploy to GitHub Pages: ${SHA}"

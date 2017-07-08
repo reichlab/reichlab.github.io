@@ -7,6 +7,6 @@ script: "bash ./build.sh"
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES: true
-  - ENCRYPTION_LABEL: 68a1829e6ee3
+  - ENCRYPTION_LABEL: 557a87bf97e9
 
 sudo: false
