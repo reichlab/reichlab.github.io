@@ -18,6 +18,9 @@ if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "master" ]; then
     exit 0
 fi
 
+# Cleanup
+rm -rf _data _includes _layouts _plugins _research _sass
+rm -rf _scripts _teaching _assets blog css images pdfs vendor
 cp -r ./_site/* ./
 
 git config user.name "CI auto deploy"
