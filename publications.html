@@ -29,8 +29,8 @@ layout: default
       </div>
     {% endunless %}
     {% for item in year_item.items %}
-      <div class="column pub-item col-12">
-        <div class="card-publication columns" id="{{ item.slug }}">
+      <div class="column pub-item col-12" id="{{ item.slug }}">
+        <div class="card-publication columns">
           <div class="card-image column col-2 col-sm-12">
             <a href="#pub={{ item.slug }}">
               <img class="rounded pub-image" src="images/publications/{{ item.slug }}.png">
