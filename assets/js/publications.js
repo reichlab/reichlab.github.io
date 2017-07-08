@@ -160,9 +160,11 @@ $(document).ready(function () {
     filterKeywordEntries(allItems)
   }
 
-  // Scroll to pub if specified
+  // Scroll to pub and open abstract if specified
   if (hash.pub) {
-    $(window).scrollTop($('#' + hash.pub).offset().top)
+    var pubItem = $('#' + hash.pub)
+    $(window).scrollTop(pubItem.offset().top)
+    togglePubAbstract(pubItem)
   }
 
   // Show abstract on click
