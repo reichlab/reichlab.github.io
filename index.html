@@ -6,10 +6,8 @@ layout: home
   <div class="carousel">
     {% for image in site.static_files %}
       {% if image.path contains 'images/carousel' %}
-        <div class="carousel-item-home"
-             style="background: url({{ site.baseurl }}{{ image.path }}) no-repeat center center;
-                    min-height: 330px;
-                    background-size: contain">
+        <div>
+          <img class="carousel-home-image" src="{{ site.baseurl }}{{image.path}}" alt="" />
         </div>
       {% endif %}
     {% endfor %}

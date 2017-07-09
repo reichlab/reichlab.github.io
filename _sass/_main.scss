@@ -53,3 +53,14 @@ code {
   padding: 10px;
   text-align: left;
 }
+
+// Carousel
+.carousel-home-image {
+  width: 100%;
+}
+
+.slick-track {
+  align-items: center;
+  display: flex !important;
+  justify-content: center;
+}
