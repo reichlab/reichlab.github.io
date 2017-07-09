@@ -31,7 +31,6 @@ module Publications
         unless year_map.key? year
           year_map[year] = []
         end
-
         entry['year'] = year
 
         begin
@@ -40,6 +39,9 @@ module Publications
           entry['keywords'] = []
         end
 
+        entry['abstract'].strip!
+        entry['authors'].strip!
+        entry['title'].strip!
         year_map[year] << entry
       end
 
