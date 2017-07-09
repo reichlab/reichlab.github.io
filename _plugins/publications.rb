@@ -42,6 +42,18 @@ module Publications
         entry['abstract'].strip!
         entry['authors'].strip!
         entry['title'].strip!
+
+        # Create cite text of format /journal/, volume : pages
+        if entry.key?('journal')
+          text = "<em>#{entry['journal']}</em>"
+          if entry.key?('volume')
+            text += ', ' + entry['volume'].to_s
+            if entry.key?('pages')
+              text += ' : ' + entry['pages'].to_s
+            end
+          end
+          entry['cite_text'] = text
+        end
         year_map[year] << entry
       end
 
