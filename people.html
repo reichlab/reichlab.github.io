@@ -2,7 +2,6 @@
 layout: default
 ---
 
-
 <h2>About the Reich Lab</h2>
 
 <div class="columns">
@@ -44,32 +43,43 @@ layout: default
 
 <div class="divider"></div>
 
-<h2>People</h2>
-
 <div class="columns">
-  {% for member in page.members %}
-    <div class="column col-12">
-      <div class="card-people columns">
-        <div class="card-image column col-3 col-sm-12">
-          <div class="img-people" style="background-image: url({{ member.image }});">
-          </div>
-        </div>
-        <div class="column col-9 col-sm-12">
-          <div class="card-header">
-            <h4 class="card-title">{{ member.name }}</h4>&nbsp;&nbsp;
-            <h6 class="card-subtitle show-sm">{{ member.role }}</h6>
-            <h6 class="card-subtitle-inline hide-sm">{{ member.role }}</h6>
-          </div>
-          <div class="card-body">
-            {{ member.description }}
-          </div>
-          <div class="card-footer">
-            {% for link in member.links %}
-              <a href="{{ link.url }}" class="btn btn-sm btn-default">{{ link.name }}</a>
-            {% endfor %}
-          </div>
-        </div>
+  <div class="column col-12">
+    <h2>People</h2>
+  </div>
+
+  {% for type in page.types %}
+    {% unless type == 'default' %}
+      <div class="column col-12">
+        <h3 class="people-type">{{ type }}</h3>
       </div>
-    </div>
+    {% endunless %}
+    {% for member in page.members %}
+      {% if member.type == type %}
+        <div class="column col-12">
+          <div class="card-people columns">
+            <div class="card-image column col-3 col-sm-12">
+              <div class="img-people" style="background-image: url({{ member.image }});">
+              </div>
+            </div>
+            <div class="column col-9 col-sm-12">
+              <div class="card-header">
+                <h4 class="card-title">{{ member.name }}</h4>&nbsp;&nbsp;
+                <h6 class="card-subtitle show-sm">{{ member.role }}</h6>
+                <h6 class="card-subtitle-inline hide-sm">{{ member.role }}</h6>
+              </div>
+              <div class="card-body">
+                {{ member.description }}
+              </div>
+              <div class="card-footer">
+                {% for link in member.links %}
+                  <a href="{{ link.url }}" class="btn btn-sm btn-default">{{ link.name }}</a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
   {% endfor %}
 </div>
