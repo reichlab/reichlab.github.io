@@ -41,3 +41,4 @@ ssh-add deploy_key
 
 # Push to gh-pages
 git push $SSH_REPO master --force
+ssh-agent -k
