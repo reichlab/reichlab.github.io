@@ -87,6 +87,15 @@
       url: "https://drive.google.com/file/d/0B66FkAegj6nrdlZPSXlIZm9jWDQ/view"
 
 
+- name: Graham Casey Gibson
+  role: Phd Student
+  description: |
+    Casey is a graduate researcher pursuing his PhD in biostatistics. His work
+    focuses on developing tools to make and evaluate real-time infectious
+    disease forecasts using bayesian non-parametric methods. He likes biking, dogs, and probability.
+  image: /images/people/casey.jpg
+  links:[]
+
 - name: Abhinav Tushar
   role: MS Student
   description: |
@@ -124,12 +133,3 @@
       url: "http://www.matthewcornell.org"
     - name: LinkedIn
       url: "https://www.linkedin.com/in/matthewcornell"
-
-- name: Graham Casey Gibson
-  role: Phd Studen
-  description: |
-    Casey is a graduate researcher pursuing his PhD in biostatistics. His work
-    focuses on developing tools to make and evaluate real-time infectious
-    disease forecasts using bayesian non-parametric methods. He likes biking, dogs, and probability.
-  image: /images/people/casey.jpg
-  links:[]
