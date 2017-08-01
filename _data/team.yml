@@ -4,9 +4,9 @@
 - name: Nicholas Reich
   role: Principal Investigator
   description: |
-    Nick joined the UMass Biostatistics faculty in 2011, having received a 
+    Nick joined the UMass Biostatistics faculty in 2011, having received a
     PhD in Biostatstics from Johns Hopkins, where he also did his post-doctoral
-    training in infectious disease epidemiology. He also enjoys spending time outside 
+    training in infectious disease epidemiology. He also enjoys spending time outside
     with his family (hiking, camping, canoeing, gardening).
   image: "http://people.umass.edu/nick/faceshot.jpg"
   links:
@@ -21,10 +21,10 @@
 - name: Evan Ray
   role: Affiliated Faculty
   description: |
-    Evan is an Assistant Professor of Mathematics and Statistics at Mt Holyoke 
-    College. He received his PhD in statistics from UMass-Amherst, developing 
-    methods to infer physical activity type and intensity from accelerometer 
-    data. A former post-doc in the Reich Lab, he also works on developing 
+    Evan is an Assistant Professor of Mathematics and Statistics at Mt Holyoke
+    College. He received his PhD in statistics from UMass-Amherst, developing
+    methods to infer physical activity type and intensity from accelerometer
+    data. A former post-doc in the Reich Lab, he also works on developing
     methods for predicting infectious disease outbreaks.
   image: /images/people/evan.jpg
   links:
@@ -78,8 +78,8 @@
   role: PhD student
   description: |
      Xi received her BS degree from Beijing Institute of Technology with a major
-     in Electrical Engineering. Her PhD research focuses on using particle 
-     filtering approaches to draw inference about dynamics in complex, 
+     in Electrical Engineering. Her PhD research focuses on using particle
+     filtering approaches to draw inference about dynamics in complex,
      multi-strain infectious disease settings.
   image: /images/people/xi.png
   links:
@@ -98,8 +98,8 @@
       url: "https://github.com/lepisma"
     - name: Home Page
       url: "https://lepisma.github.io/about"
-      
-      
+
+
 - name: Harley Jean
   role: Post-bac research fellow
   description: |
@@ -124,3 +124,12 @@
       url: "http://www.matthewcornell.org"
     - name: LinkedIn
       url: "https://www.linkedin.com/in/matthewcornell"
+
+- name: Graham Casey Gibson
+  role: Phd Studen
+  description: |
+    Casey is a graduate researcher pursuing his PhD in biostatistics. His work
+    focuses on developing tools to make and evaluate real-time infectious
+    disease forecasts using bayesian non-parametric methods. He likes biking, dogs, and probability.
+  image: /images/people/casey.jpg
+  links:[]
