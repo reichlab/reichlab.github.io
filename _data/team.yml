@@ -110,11 +110,10 @@
 
 
 - name: Harley Jean
-  role: Post-bac research fellow
+  role: Undergraduate researcher
   description: |
-    Harley is a recent Public Health BS graduate from UMass-Amherst. He is working as a
-    research fellow, investigating methods for analyzing spatial dynamics of
-    infectious disease time-series data.
+    Harley currently works in data science at Partners HealthCare.
+  type: Alumni
   image: /images/people/harley.jpeg
   links: []
 
