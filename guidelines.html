@@ -11,7 +11,7 @@
 
 <meta name="author" content="Nicholas Reich" />
 
-<meta name="date" content="2017-06-12" />
+<meta name="date" content="2017-09-10" />
 
 <title>Dengue in Thailand: Predict the District Challenge</title>
 
@@ -223,11 +223,31 @@ div.tocify {
 
 <h1 class="title toc-ignore">Dengue in Thailand: Predict the District Challenge</h1>
 <h4 class="author"><em>Nicholas Reich</em></h4>
-<h4 class="date"><em>June 12, 2017</em></h4>
+<h4 class="date"><em>September 10, 2017</em></h4>
 
 </div>
 
 
+<!--
+
+Scoring
+  - best overall model (across targets (perhaps weighted), locations, and time-zeros)
+  - best for peak week (across locations and time-zeros)
+  - best for peak incidence (across locations and time-zeros)
+  - best for total incidence (across locations and time-zeros)
+  - best for biweekly incidence (across locations, model-steps, and time-zeros)
+  - one best for each focal province (across all targets (possibly weighted), districts within that province, and time-zeros)
+  - fastest model that achieves some minimal level of accuracy
+
+In each case, best determined by highest average log-score (or RPS).
+
+Should we predict at province-level too?
+
+Add in R6 specifications.
+
+Add in nomenclature for prediction.repository
+
+-->
 <p>This document contains the guidelines for a Reich Lab challenge of predicting dengue fever in Thailand at the district level.</p>
 <div id="challenge-overview" class="section level2">
 <h2>Challenge Overview</h2>
@@ -239,7 +259,7 @@ div.tocify {
 <h2>The Dataset</h2>
 <p>The primary dataset that we will use for this project contains counts of DHF at aggregated spatially the district level and temporally into biweeks (standard 14 or 15 day units of calendar time, see table at end of document). We have used biweeks in our work modeling dengue because two weeks is roughly the generation time of dengue fever (the time between subsequent human infections in a chain of transmission), making it an epidemiologically relevant unit of time. It has the added advantage (unlike a week, but similar to months) of having a clear definition relative to calendar time.</p>
 <p>Here are the top few rows of the primary dataset which has 215488 total rows:</p>
-<pre><code>## # A tibble: 6 × 7
+<pre><code>## # A tibble: 6 x 7
 ##   province district  year biweek cases  date_sick          prov_name
 ##      &lt;dbl&gt;    &lt;chr&gt; &lt;int&gt;  &lt;int&gt; &lt;int&gt;     &lt;date&gt;             &lt;fctr&gt;
 ## 1       10     1000  2006      1     0 2006-01-01 Bangkok Metropolis
@@ -292,19 +312,22 @@ div.tocify {
 <div id="challenge-details" class="section level2">
 <h2>Challenge Details</h2>
 <p>Each forecasting team member will create probabilistic forecasts using data provided above and any additional available data sources. The challenge is to construct a model or a set of models that can produce reasonable and repoducible forecasts for a set of district-level targets for each district in the provinces Bangkok, Songkhla, Chiang Mai, Udon Thani, and Ratchaburi. These five provinces were suggested by Dr. Sopon Iamsirithaworn as “of interest” and offering “benefit [to] dengue control strategists.”</p>
+<div id="submission-format" class="section level3">
+<h3>Submission format</h3>
+<p>This challenge will use the <a href="https://github.com/HopkinsIDD/ForecastFramework"><code>ForecastFramework</code> R package</a> for model creation, validation, and evaluation. This package uses the R6 object-oriented syntax. Models are defined using a common syntax that wraps model-specific code for fitting, predicting, and forecasting data. Therefore, submissions will consist only of a <code>.R</code> model file. The challenge organizers will then apply these models to both training and testing datasets to obtain forecasts for an objective, indepenent, and pre-specified evaluation.</p>
+</div>
 <div id="timeline" class="section level3">
 <h3>Timeline</h3>
 <ul>
 <li>June 2017: challenge announced and disseminated to Reich Lab</li>
 <li>October 16, 2017: Lab meeting presentations of model progress</li>
-<li>December 22, 2017: Training set forecast submissions due</li>
-<li>January 19, 2018: Test set forecasts due</li>
+<li>December 22, 2017: Model files due</li>
 <li>February 26, 2018: preliminary model performance report at lab meeting</li>
 </ul>
 </div>
 <div id="forecasting-targets" class="section level3">
 <h3>Forecasting targets</h3>
-<p>The following “targets” represent quantities of public health relevance that can be predicted at any time throughout the year. For each district at biweek <span class="math inline">\(t\)</span> in a given year, we are interested in forecasts for:</p>
+<p>Each model will be asked to predict a set of “targets” that represent quantities of public health relevance and that can be predicted at any time throughout the year. For each district at biweek <span class="math inline">\(t\)</span> in a given year, we are interested in forecsts for:</p>
 <ol style="list-style-type: decimal">
 <li>The number of reported cases in each of the following 10 biweeks. If data is observed through time <span class="math inline">\(t\)</span> then forecasts for times <span class="math inline">\(t+1\)</span>, …, <span class="math inline">\(t+10\)</span> will be handed in. If time <span class="math inline">\(t\)</span> falls within 10 biweeks of the end of the calendar year, still, the forecast should include 10 biweeks into the future.<br />
 </li>
@@ -312,45 +335,45 @@ div.tocify {
 <li>Peak number of reported cases in a single biweek for that calendar year. Unlike the biweekly incidence targets, this target is a single scalar value; the target does not change throughout the year.</li>
 <li>The biweek in which the peak incidence will occur. This is the only target whose set of units are not based on case incidence. The predictive distribution here is a discrete distribution that can take values between 1 and 26.</li>
 </ol>
-<p>The expectation is that each team will submit predictions for each target, although exceptions can be made by request.</p>
+<p>The expectation is that each team’s model will be capable of producing predictions for each target, although exceptions can be made by request.</p>
 </div>
 <div id="training-set" class="section level3">
 <h3>Training set</h3>
-<p>Initially, each team will be given a dataset containing the integer numer of confirmed DHF cases reported in each district for each biweek in the years 2006 through 2013. This will be considered the “training set” of data.</p>
-<p>Forecasts for each target must be submitted for each biweek in 2008 through 2013. These forecasts should be produced from models that have been fitted to data with the current forecasting season left out. E.g. If you are making forecasts for biweek <span class="math inline">\(t\)</span> in 2009, you should fit the model to data from 2006-2008 and 2010-2013. Then, forecasts may consider all training set data to be known except for biweeks greater than <span class="math inline">\(t\)</span> in year 2009.</p>
-<p>To follow the “best practices” for creating predictions, teams are encouraged to fit and generate forecasts from multiple different models in the training period. However, a maximum of two models’ forecasts may be submitted. Using the leave-one-season-out cross-validation described in the above paragraph, multiple models may be tested and compared to each other. This will provide an estimate of the predictive performance of each model in the testing phase. In our (and others’) previous prediction work, we have seen simple models that perform slightly worse than a more complicated model in the training phase show stronger performance in the testing phase. This can reflect “overfitting” (or getting lucky) in the training phase, which, given that we have a relatively small number of training seasons, is likely to be a factor.</p>
+<p>Initially, each team will be given a dataset containing the integer numer of confirmed DHF cases reported in each district for each biweek in the years 2006 through 2013. This will be considered the “training set” of data. Teams may use the training dataset to train different models and compare performance, however ultimately only 1-2 model file(s) may be submitted per team.</p>
+<p>During the evaluation phase, forecasts will always be made prospectively, meaning that only data in the past will be used to fit models and forecast for times in the future.</p>
+<p>To follow the “best practices” for creating predictions, teams are encouraged to fit and generate forecasts from multiple different models in the training period. However, a maximum of two models’ forecasts may be submitted. Using cross-validation, multiple models may be tested and compared to each other in the training phase. This will provide an estimate of the predictive performance of each model in the testing phase. In our (and others’) previous prediction work, we have seen simple models that perform slightly worse than a more complicated model in the training phase show stronger performance in the testing phase. This can reflect “overfitting” (or getting lucky) in the training phase, which, given that we have a relatively small number of training seasons, is likely to be a factor.</p>
 </div>
 <div id="test-set" class="section level3">
 <h3>Test set</h3>
-<p>Once the training set forecasts are submitted, the test set will be provided to the team members. This will include data in the same format as earlier, but for years 2014 through 2016. The same modeling process that was used in the training set must be used to then create forecasts for the same targets in the test set. The only difference is that for the test set, the forecasts should be “prospective” meaning that for each of the years in the test set, the model should be fit only to years prior to the current year. E.g. if you are making test-set forecasts for biweeks in 2015, you should fit the same model(s) that you submitted training set forecasts only to data from 2006-2014.</p>
+<p>Once the training set forecasts are submitted, organizers will run all models and create prospective forecasts for both the training phase and the test phase.</p>
 </div>
-<div id="submission-format" class="section level3">
+<div id="submission-format-1" class="section level3">
 <h3>Submission format</h3>
-<p>A “forecast submission” refers to a file containing information about the predictive distributions for all the locations and targets made by particular model in a particular biweek. Therefore, a complete submission will require <span class="math inline">\(6 training set years \cdot 26 biweeks per year = 156\)</span> separate files. Each file must follow a standard format, similar to that <a href="https://predict.phiresearchlab.org/post/57f3f440123b0f563ece2576">specified by the CDC guidelines for the FluSight challenges</a>. A value in the interval [0,1] will be assigned to every possible outcome for each target. E.g. for cases peak biweek, the possible values are 1 through 26. For all of the incidence measures, the possible values are integers between 0 and <span class="math inline">\(\infty\)</span>. However, there will be a single “bin” for incidence value above 150 cases.</p>
+<p>A “forecast submission” refers to a valid model file. Specific checks and tests will be implemented in fall 2017. More detail on these will be forthcoming.</p>
 <div id="submissions" class="section level4">
 <h4>Submissions</h4>
-<p>A complete submission will include a metadata file describing the model and out-of-sample forecasts for the training set purposes as described above. Templates for the submission materials will be made available.</p>
+<p>A complete submission will include two files: a metadata file describing the model as well as the model file itself. The model file should be named using SentenceCase (e.g. “MyModel.R”) and the metadata file should be a <code>.txt</code> file with the same name as the model file with “-metadata” appended before the file prefix, e.g. “MyModel-metadat.txt”. Some templates for the submission materials are available in the <a href="https://github.com/reichlab/thai-dengue-district-challenge/tree/master/models">models folder on the GitHub repository</a>.</p>
 <ol style="list-style-type: decimal">
 <li>Metadata file</li>
 </ol>
-<p>This will include</p>
+<p>This will include the following fields:</p>
 <ul>
-<li>team name</li>
-<li>team abbreviation for submission files</li>
-<li>team members (with point of contact specified)</li>
-<li>brief description of data sources</li>
-<li>brief methodological description</li>
+<li>Model name</li>
+<li>Model abbreviation for submission files</li>
+<li>Authors</li>
+<li>Brief description of data sources</li>
+<li>Brief methodological description</li>
 </ul>
 <ol start="2" style="list-style-type: decimal">
-<li>The set of out-of-sample forecast submission files</li>
+<li>The model file</li>
 </ol>
-<p>A team’s out-of-sample forecasts should consist of a folder containing a set of forecast files. Each forecast file must represent a single forecast submission file. Every filename should adopt the following standard naming convention: a forecast submission using biweek 13 surveillance data from 2011 submitted by Team KCDE should be named “BW13-2016-TeamKCDE.csv” where BW11-2016 is the latest biweek and year of data used in the forecast, and TeamKCDE is the abbreviated name of the team making the submission. Neither of these names are pre-defined, but they must be consistent for all submissions by the team and specified in the metadata file. It should not include special characters or match the name of another team.</p>
+<p>This model should be a valid ForecastFramework model. More details on the checks that will be put in place will be forthcoming.</p>
 </div>
 </div>
 </div>
 <div id="ensemble-model" class="section level2">
 <h2>Ensemble model</h2>
-<p>After training set forecasts are submitted, we will estimate parameters for an ensemble model that will be used to fuse the forecasts from each model into a single forecast. We will use the feature-weighted density ensemble approach described <a href="https://arxiv.org/abs/1703.10936">here</a>.</p>
+<p>After training set forecasts are submitted, we will estimate parameters for an ensemble model that will be used to fuse the forecasts from each model into a single forecast. We will use a variation on the feature-weighted density ensemble approach described <a href="https://arxiv.org/abs/1703.10936">here</a>.</p>
 <p>The ensemble will be used in the test phase to generate predictions. Specifically, it will use the leave-one-season-out forecasts from the training phase to estimate weights and generate predictions for 2014; it will incorporate the prospective test-phase forecasts for component models in 2014 with the leave-one-season-out forecasts to estimate weights and generate predictions for 2015; etc…</p>
 <div id="ensemble-model-weights" class="section level3">
 <h3>Ensemble model weights</h3>
@@ -372,8 +395,8 @@ div.tocify {
 </ul>
 </div>
 </div>
-<div id="pre-specified-analyses" class="section level2">
-<h2>Pre-specified analyses</h2>
+<div id="pre-specified-analysesscoring" class="section level2">
+<h2>Pre-specified analyses/scoring</h2>
 <p>For each model individually (including ensemble specifications):</p>
 <ul>
 <li>the test set average log score for each metric</li>
@@ -404,32 +427,24 @@ div.tocify {
 </thead>
 <tbody>
 <tr class="odd">
-<td align="center">Harley</td>
-<td align="center">spatial model/HHH4</td>
-</tr>
-<tr class="even">
 <td align="center">Casey</td>
-<td align="center">KCDE variant?</td>
-</tr>
-<tr class="odd">
-<td align="center">Steve</td>
-<td align="center">annual GAM?</td>
+<td align="center">Gaussian Processes</td>
 </tr>
 <tr class="even">
-<td align="center">Xi</td>
-<td align="center">TSIR w/serotype?</td>
+<td align="center">Steve</td>
+<td align="center">annual GAM</td>
 </tr>
 <tr class="odd">
 <td align="center">Kristina</td>
-<td align="center">Prophet (facebook)</td>
+<td align="center">Prophet</td>
 </tr>
 <tr class="even">
-<td align="center">MS student</td>
-<td align="center">SARIMA?, Google?</td>
+<td align="center">Coco</td>
+<td align="center">SARIMA? + Google</td>
 </tr>
 <tr class="odd">
-<td align="center">…</td>
-<td align="center">Hierarchical, state space,</td>
+<td align="center">John G</td>
+<td align="center">Hierarchical/state space</td>
 </tr>
 <tr class="even">
 <td align="center">…</td>
