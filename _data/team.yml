@@ -15,7 +15,7 @@
     - name: Twitter
       url: "https://twitter.com/reichlab"
     - name: CV
-      url: "https://people.umass.edu/nick/cvReich.pdf"
+      url: "http://reichlab.io/pdfs/cv/cvReich.pdf"
 
 
 - name: Evan Ray
