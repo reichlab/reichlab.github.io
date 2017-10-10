@@ -6,6 +6,8 @@ projects:
   - reichlab/annual-predictions-paper
   - reichlab/KCDE
   - reichlab/2017-2018-cdc-flu-contest
+  - FluSightNetwork/cdc-flusight-ensemble
+  - reichlab/dengue-thailand-2014-forecasts
 publications: forecasting # Optional tag for publications page
 ---
 

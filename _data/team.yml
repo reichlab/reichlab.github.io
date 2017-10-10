@@ -4,9 +4,9 @@
 - name: Nicholas Reich
   role: Principal Investigator
   description: |
-    Nick joined the UMass Biostatistics faculty in 2011, having received a 
+    Nick is an Associate Professor of Biostatistics at UMass. He received his
     PhD in Biostatstics from Johns Hopkins, where he also did his post-doctoral
-    training in infectious disease epidemiology. He also enjoys spending time outside 
+    training in infectious disease epidemiology. He also enjoys spending time outside
     with his family (hiking, camping, canoeing, gardening).
   image: "http://people.umass.edu/nick/faceshot.jpg"
   links:
@@ -15,21 +15,23 @@
     - name: Twitter
       url: "https://twitter.com/reichlab"
     - name: CV
-      url: "https://people.umass.edu/nick/cvReich.pdf"
+      url: "http://reichlab.io/pdfs/cv/cvReich.pdf"
 
 
 - name: Evan Ray
   role: Affiliated Faculty
   description: |
-    Evan is an Assistant Professor of Mathematics and Statistics at Mt Holyoke 
-    College. He received his PhD in statistics from UMass-Amherst, developing 
-    methods to infer physical activity type and intensity from accelerometer 
-    data. A former post-doc in the Reich Lab, he also works on developing 
+    Evan is an Assistant Professor of Mathematics and Statistics at Mt Holyoke
+    College. He received his PhD in statistics from UMass-Amherst, developing
+    methods to infer physical activity type and intensity from accelerometer
+    data. A former post-doc in the Reich Lab, he also works on developing
     methods for predicting infectious disease outbreaks.
   image: /images/people/evan.jpg
   links:
     - name: CV
       url: /pdfs/people/Evan_Ray_CV.pdf
+    - name: website
+      url: "http://www.mtholyoke.edu/~eray/"
 
 
 - name: Alexandria (Lexi) Brown
@@ -42,21 +44,6 @@
   links:
     - name: CV
       url: "https://drive.google.com/file/d/0B-fpi_ROKnbcQ3ZrbVh3UVY1SE0/view?usp=sharing"
-
-
-- name: Krzysztof Sakrejda
-  role: Post-doctoral fellow
-  description: |
-    Krzysztof received his PhD in Organismic and Evolutionary Biology studying
-    environmental sensitivty in survival and developing time-to-event and local
-    regression models for mark-recapture data. He is working on incorporating
-    time-delayed data into predictive disease models.
-  image: /images/people/krzysztof.jpg
-  links:
-    - name: Google Scholar
-      url: "https://scholar.google.com/citations?user=nWWt_dMAAAAJ&hl=en"
-    - name: Github
-      url: "https://github.com/sakrejda"
 
 
 - name: Stephen Lauer
@@ -78,14 +65,23 @@
   role: PhD student
   description: |
      Xi received her BS degree from Beijing Institute of Technology with a major
-     in Electrical Engineering. Her PhD research focuses on using particle 
-     filtering approaches to draw inference about dynamics in complex, 
+     in Electrical Engineering. Her PhD research focuses on using particle
+     filtering approaches to draw inference about dynamics in complex,
      multi-strain infectious disease settings.
   image: /images/people/xi.png
   links:
     - name: CV
       url: "https://drive.google.com/file/d/0B66FkAegj6nrdlZPSXlIZm9jWDQ/view"
 
+
+- name: Graham Casey Gibson
+  role: PhD Student
+  description: |
+    Casey is a graduate researcher pursuing his PhD in biostatistics. His work
+    focuses on developing tools to make and evaluate real-time infectious
+    disease forecasts using bayesian non-parametric methods. He likes biking, dogs, and probability.
+  image: /images/people/casey.jpg
+  links: []
 
 - name: Abhinav Tushar
   role: MS Student
@@ -96,18 +92,8 @@
   links:
     - name: Github
       url: "https://github.com/lepisma"
-    - name: Home Page
+    - name: website
       url: "https://lepisma.github.io/about"
-      
-      
-- name: Harley Jean
-  role: Post-bac research fellow
-  description: |
-    Harley is a recent Public Health BS graduate from UMass-Amherst. He is working as a
-    research fellow, investigating methods for analyzing spatial dynamics of
-    infectious disease time-series data.
-  image: /images/people/harley.jpeg
-  links: []
 
 
 - name: Matthew Cornell
@@ -120,7 +106,31 @@
     of software.
   image: /images/people/matt.jpg
   links:
-    - name: My Site
+    - name: website
       url: "http://www.matthewcornell.org"
     - name: LinkedIn
       url: "https://www.linkedin.com/in/matthewcornell"
+
+
+- name: Harley Jean
+  role: Undergraduate researcher
+  description: |
+    Harley currently works in data science at Partners HealthCare.
+  type: Alumni
+  image: /images/people/harley.jpeg
+  links: []
+
+
+- name: Krzysztof Sakrejda
+  role: Post-doctoral fellow
+  description: |
+    Krzysztof currently works as a post-doc in the lab of Leontine Alkema at UMass-Amherst.
+  type: Alumni
+  image: /images/people/krzysztof.jpg
+  links:
+    - name: Google Scholar
+      url: "https://scholar.google.com/citations?user=nWWt_dMAAAAJ&hl=en"
+    - name: GitHub
+      url: "https://github.com/sakrejda"
+
+
