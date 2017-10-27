@@ -96,6 +96,15 @@
       url: "https://lepisma.github.io/about"
 
 
+- name: Coco Kusiak
+  role: MS Student
+  description: |
+    Coco is a graduate researcher and MS student in Biostatistics. 
+    She is currently working on the Thai Dengue Forecasting Challenge. 
+    She loves sports and dogs.
+  image: /images/people/coco.jpg
+  links: []
+
 - name: Matthew Cornell
   role: Software Engineer
   description: |
