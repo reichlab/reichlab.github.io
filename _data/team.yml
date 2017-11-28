@@ -96,6 +96,26 @@
       url: "https://lepisma.github.io/about"
 
 
+- name: Coco Kusiak
+  role: MS Student
+  description: |
+    Coco is a graduate researcher and MS student in Biostatistics. 
+    She is currently working on the Thai Dengue Forecasting Challenge. 
+    She loves sports and dogs.
+  image: /images/people/coco.jpg
+  links: []
+
+
+- name: Kristina Yamkovoy
+  role: Undergradute Researcher
+  description: |
+    Kristina is an undergraduate Mathematics major with concentrations in Applied Mathematics and Statistics. She is interested in disease surveillance and global health and is currently working on the Thai Dengue Forecasting Challenge. She likes dogs.
+  image: /images/people/kristina.jpg
+  links:
+    - name: Github
+      url: "https://github.com/kyamkovoy"
+  
+  
 - name: Matthew Cornell
   role: Software Engineer
   description: |
