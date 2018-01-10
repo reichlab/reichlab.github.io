@@ -35,7 +35,7 @@
 
 
 - name: Alexandria (Lexi) Brown
-  role: Post-doctoral fellow
+  role: Post-doctoral Fellow
   description: |
     Lexi received her PhD in Organismic and Evolutionary Biology. She is
     interested in machine learning and developing intelligent, interpretable
@@ -47,7 +47,7 @@
 
 
 - name: Stephen Lauer
-  role: PhD student
+  role: PhD Student
   description: |
     Stephen is a graduate researcher pursuing his PhD in biostatistics. His work
     focuses on developing tools to make and evaluate real-time infectious
@@ -62,7 +62,7 @@
       url: "https://twitter.com/salauer_biostat"
 
 - name: Xi Meng
-  role: PhD student
+  role: PhD Student
   description: |
      Xi received her BS degree from Beijing Institute of Technology with a major
      in Electrical Engineering. Her PhD research focuses on using particle
@@ -115,6 +115,19 @@
     - name: Github
       url: "https://github.com/kyamkovoy"
   
+- name: Evan Moore
+  role: Undergraduate Researcher
+  description: |
+    Evan is an English and Informatics double major interested in statistical modeling, visualization, and communication.
+    He serves as of the president of Undergraduate Researchers Interested in Data, an interdisciplinary student organization for data science.
+    In his spare time, he enjoys reading and listening to music.    
+  image: /images/people/evan-m.jpg
+  links:
+    - name: Website
+      url: "https://evanm31.github.io/"
+    - name: Github
+      url: "https://github.com/evanm31"
+
   
 - name: Matthew Cornell
   role: Software Engineer
@@ -133,7 +146,7 @@
 
 
 - name: Harley Jean
-  role: Undergraduate researcher
+  role: Undergraduate Researcher
   description: |
     Harley currently works in data science at Partners HealthCare.
   type: Alumni
@@ -142,7 +155,7 @@
 
 
 - name: Krzysztof Sakrejda
-  role: Post-doctoral fellow
+  role: Post-doctoral Fellow
   description: |
     Krzysztof currently works as a post-doc in the lab of Leontine Alkema at UMass-Amherst.
   type: Alumni
