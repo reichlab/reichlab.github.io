@@ -161,40 +161,6 @@
     decision making.
 
 
-- title: Prediction of infectious disease epidemics via weighted density ensembles
-  slug: ray-density-ensembles
-  authors: Ray EL, Reich NG
-  journal: arXiv
-  citation: "arXiv: 1703.10936"
-  url: https://arxiv.org/abs/1703.10936
-  year: 2017
-  keywords: forecasting
-  github: reichlab/adaptively-weighted-ensemble
-  abstract: >
-    Accurate and reliable predictions of infectious disease dynamics can be
-    valuable to public health organizations that plan interventions to decrease
-    or prevent disease transmission. A great variety of models have been
-    developed for this task, using different model structures, covariates, and
-    targets for prediction. Experience has shown that the performance of these
-    models varies; some tend to do better or worse in different seasons or at
-    different points within a season. Ensemble methods combine multiple models
-    to obtain a single prediction that leverages the strengths of each model. We
-    considered a range of ensemble methods that each form a predictive density
-    for a target of interest as a weighted sum of the predictive densities from
-    component models. In the simplest case, equal weight is assigned to each
-    component model; in the most complex case, the weights vary with the region,
-    prediction target, week of the season when the predictions are made, a
-    measure of component model uncertainty, and recent observations of disease
-    incidence. We applied these methods to predict measures of influenza season
-    timing and severity in the United States, both at the national and regional
-    levels, using three component models. We trained the models on retrospective
-    predictions from 14 seasons (1997/1998 - 2010/2011) and evaluated each
-    model's prospective, out-of-sample performance in the five subsequent
-    influenza seasons. In this test phase, the ensemble methods showed overall
-    performance that was similar to the best of the component models, but
-    offered more consistent performance across seasons than the component
-    models. Ensemble methods offer the potential to deliver more reliable
-    predictions to public health decision makers.
 
 - title: >
     Enriching Students' Conceptual Understanding of Confidence Intervals: An Interactive Trivia-based Classroom Activity
@@ -233,16 +199,6 @@
   abstract: >
     Creating statistical models that generate accurate predictions of infectious disease incidence over multiple time points is a challenging problem whose solution could benefit public health decision makers. We develop a new approach to this problem using kernel conditional density estimation (KCDE) and copulas. We obtain predictive distributions for incidence in individual weeks using KCDE and tie those distributions together into joint distributions using copulas. This strategy enables us to create predictions for the timing of and incidence in the peak week of the season. Our implementation of KCDE incorporates two novel kernel components: a periodic component that captures seasonality in disease incidence, and a component that allows for a full parameterization of the bandwidth matrix with discrete variables. We demonstrate via simulation that a fully parameterized bandwidth matrix can be beneficial for estimating conditional densities. We apply the method to predicting dengue fever and influenza, and compare to a seasonal autoregressive integrated moving average (SARIMA) model and a previously published generalized linear model for infectious disease incidence known as HHH4. KCDE outperforms the baseline methods for predictions of dengue incidence in individual weeks. KCDE also offers more consistent performance than the baseline models for predictions of incidence in the peak week, and is comparable to the baseline models on the other prediction targets. Using the periodic kernel function led to better predictions of incidence. Our approach and extensions of it could yield improved predictions for public health decision makers, particularly in diseases with heterogeneous seasonal dynamics such as dengue fever. 
     
-- title: >
-    Quantifying the Risk and Cost of Active Monitoring for Infectious Diseases
-  slug: reich-active-monitoring
-  authors: Reich NG, Lessler J, Varma JK, Vora NM
-  year: 2017
-  doi: 10.1101/156497
-  journal: bioRxiv
-  keywords: incubation-period
-  abstract: >
-    During outbreaks of deadly emerging pathogens (e.g., Ebola, MERS-CoV) and bioterror threats (e.g., smallpox), actively monitoring potentially infected individuals aims to limit disease transmission and morbidity. Guidance issued by CDC on active monitoring was a cornerstone of its response to the West Africa Ebola outbreak. There are limited data on how to balance the costs and performance of this important public health activity. We present a framework that estimates the risks and costs of specific durations of active monitoring for pathogens of significant public health concern. We analyze data from New York City's Ebola active monitoring program over a 16-month period in 2014-2016. For monitored individuals, we identified unique durations of active monitoring that minimize expected costs for those at “low (but not zero) risk” and “some or high risk”: 21 and 31 days, respectively. Extending our analysis to smallpox and MERS-CoV, we found that the optimal length of active monitoring relative to the median incubation period was reduced compared to Ebola due to less variable incubation periods. Active monitoring can save lives but is expensive. Resources can be most effectively allocated by using exposure-risk categories to modify the duration or intensity of active monitoring.
     
 - title: >
     flusight: interactive visualizations for infectious disease forecasts
@@ -292,3 +248,51 @@
   doi: 10.1186/s12879-016-1494-2
   abstract: >
     Although N95 filtering facepiece respirators and medical masks are commonly used for protection against respiratory infections in healthcare settings, more clinical evidence is needed to understand the optimal settings and exposure circumstances for healthcare personnel to use these devices. A lack of clinically germane research has led to equivocal, and occasionally conflicting, healthcare respiratory protection recommendations from public health organizations, professional societies, and experts. The Respiratory Protection Effectiveness Clinical Trial (ResPECT) is a prospective comparison of respiratory protective equipment to be conducted at multiple U.S. study sites. Healthcare personnel who work in outpatient settings will be cluster-randomized to wear N95 respirators or medical masks for protection against infections during respiratory virus season. Outcome measures will include laboratory-confirmed viral respiratory infections, acute respiratory illness, and influenza-like illness. Participant exposures to patients, coworkers, and others with symptoms and signs of respiratory infection, both within and beyond the workplace, will be recorded in daily diaries. Adherence to study protocols will be monitored by the study team. ResPECT is designed to better understand the extent to which N95s and MMs reduce clinical illness among healthcare personnel. A fully successful study would produce clinically relevant results that help clinician-leaders make reasoned decisions about protection of healthcare personnel against occupationally acquired respiratory infections and prevention of spread within healthcare systems.
+
+- title: >
+    Quantifying the Risk and Cost of Active Monitoring for Infectious Diseases
+  slug: reich-active-monitoring
+  authors: Reich NG, Lessler J, Varma JK, Vora NM
+  year: 2018
+  doi: 10.1038/s41598-018-19406-x
+  volume: 8
+  pages: 1093
+  journal: Nat Sci Rep
+  keywords: incubation-period
+  abstract: >
+    During outbreaks of deadly emerging pathogens (e.g., Ebola, MERS-CoV) and bioterror threats (e.g., smallpox), actively monitoring potentially infected individuals aims to limit disease transmission and morbidity. Guidance issued by CDC on active monitoring was a cornerstone of its response to the West Africa Ebola outbreak. There are limited data on how to balance the costs and performance of this important public health activity. We present a framework that estimates the risks and costs of specific durations of active monitoring for pathogens of significant public health concern. We analyze data from New York City's Ebola active monitoring program over a 16-month period in 2014-2016. For monitored individuals, we identified unique durations of active monitoring that minimize expected costs for those at “low (but not zero) risk” and “some or high risk”: 21 and 31 days, respectively. Extending our analysis to smallpox and MERS-CoV, we found that the optimal length of active monitoring relative to the median incubation period was reduced compared to Ebola due to less variable incubation periods. Active monitoring can save lives but is expensive. Resources can be most effectively allocated by using exposure-risk categories to modify the duration or intensity of active monitoring.
+
+- title: Prediction of infectious disease epidemics via weighted density ensembles
+  slug: ray-density-ensembles
+  authors: Ray EL, Reich NG
+  journal: arXiv
+  citation: "arXiv: 1703.10936"
+  url: https://arxiv.org/abs/1703.10936
+  year: 2017
+  keywords: forecasting
+  github: reichlab/adaptively-weighted-ensemble
+  abstract: >
+    Accurate and reliable predictions of infectious disease dynamics can be
+    valuable to public health organizations that plan interventions to decrease
+    or prevent disease transmission. A great variety of models have been
+    developed for this task, using different model structures, covariates, and
+    targets for prediction. Experience has shown that the performance of these
+    models varies; some tend to do better or worse in different seasons or at
+    different points within a season. Ensemble methods combine multiple models
+    to obtain a single prediction that leverages the strengths of each model. We
+    considered a range of ensemble methods that each form a predictive density
+    for a target of interest as a weighted sum of the predictive densities from
+    component models. In the simplest case, equal weight is assigned to each
+    component model; in the most complex case, the weights vary with the region,
+    prediction target, week of the season when the predictions are made, a
+    measure of component model uncertainty, and recent observations of disease
+    incidence. We applied these methods to predict measures of influenza season
+    timing and severity in the United States, both at the national and regional
+    levels, using three component models. We trained the models on retrospective
+    predictions from 14 seasons (1997/1998 - 2010/2011) and evaluated each
+    model's prospective, out-of-sample performance in the five subsequent
+    influenza seasons. In this test phase, the ensemble methods showed overall
+    performance that was similar to the best of the component models, but
+    offered more consistent performance across seasons than the component
+    models. Ensemble methods offer the potential to deliver more reliable
+    predictions to public health decision makers.
