@@ -20,6 +20,7 @@ exclude:
   - build.sh
   - Rakefile
   - deploy_key.enc
+  - spectre
 paginate: 5
 paginate_path: "/blog/page:num/"
 excerpt_separator: <!--more-->
