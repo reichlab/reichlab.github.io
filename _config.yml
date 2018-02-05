@@ -23,8 +23,6 @@ exclude:
 paginate: 5
 paginate_path: "/blog/page:num/"
 excerpt_separator: <!--more-->
-gems:
-  - jekyll-paginate
 defaults:
   - scope:
       path: "blog/_posts"
