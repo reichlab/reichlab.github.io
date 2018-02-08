@@ -73,6 +73,14 @@ layout: default
                     <i class="fa fa-save"></i> save
                   </a>
                 {% endif %}
+                {% if item.preprint %}
+                  <a class="btn btn-link btn-sm pub-btn tooltip"
+                     data-tooltip="Open preprint"
+                     href="{{ item.preprint }}"
+                     target="_blank">
+                    <i class="fa fa-external-link"></i> preprint
+                  </a>
+                {% endif %}
                 {% if item.github %}
                   <a class="btn btn-link btn-sm pub-btn tooltip"
                      data-tooltip="Open github repository"
