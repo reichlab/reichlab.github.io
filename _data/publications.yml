@@ -3,7 +3,6 @@
     cluster-randomized crossover studies
   doi: 10.1371/journal.pone.0035564
   slug: reich-cluster-power
-  citation: "PLOS ONE 7: e35564"
   journal: PLOS ONE
   year: 2012
   volume: 7
@@ -40,7 +39,8 @@
   doi: 10.1098/rsif.2013.0414
   slug: reich-dengue-serotype-interactions
   journal: JRSI
-  citation: "JRSI 10: 20130414"
+  volume: 10
+  pages: 20130414
   year: 2013
   keywords: pathogen-interactions
   authors: >
@@ -74,7 +74,8 @@
   journal: Clin Inf Dis
   year: 2015
   keywords: forecasting
-  citation: "Clin Inf Dis 60: 499--504"
+  volume: 60
+  pages: 499-504
   abstract: >
     Early, accurate predictions of the onset of influenza season enable targeted
     implementation of control efforts. Our objective was to develop a tool to
@@ -107,7 +108,8 @@
   journal: Am Stat
   year: 2016
   keywords: forecasting
-  citation: "Am Stat 70: 285--292"
+  volume: 70
+  pages: 285-292
   abstract: >
     Statistical prediction models inform decision-making processes in many
     real-world settings. Prior to using predictions in practice, one must
@@ -133,13 +135,15 @@
     Dengue in Thailand
   doi: 10.1371/journal.pntd.0004761
   slug: reich-realtime-dengue-prediction
+  preprint: https://arxiv.org/abs/1511.04812
+  volume: 10
+  pages: e0004761
   authors: >
     Reich NG, Lauer SA, Sakrejda K, Iamsirithaworn S, Hinjoy S, Suangtho P,
     Suthachana S, Clapham H, Salje H, Cummings DAT, Lessler J
   journal: PLOS Neg Trop Dis
   year: 2016
   keywords: forecasting, dengue
-  citation: "PLOS Neg Trop Dis 10: e0004761"
   abstract: >
     Epidemics of communicable diseases place a huge burden on public health
     infrastructures across the world. Producing accurate and actionable
@@ -167,6 +171,7 @@
   slug: wang-confidence
   authors: Wang X, Reich NG, Horton NJ
   doi: 10.1080/00031305.2017.1305294
+  preprint: https://arxiv.org/abs/1701.08452
   year: 2017
   keywords: education
   journal: Am Stat
@@ -218,6 +223,7 @@
   slug: lessler-zika-key-events
   year: 2016
   keywords: incubation-period
+  preprint: https://www.biorxiv.org/content/early/2016/03/02/041913
   volume: 94
   journal: Bull WHO
   doi: 10.2471/BLT.16.174540
@@ -253,6 +259,7 @@
     Quantifying the Risk and Cost of Active Monitoring for Infectious Diseases
   slug: reich-active-monitoring
   authors: Reich NG, Lessler J, Varma JK, Vora NM
+  preprint: https://www.biorxiv.org/content/early/2017/06/28/156497
   year: 2018
   doi: 10.1038/s41598-018-19406-x
   volume: 8
@@ -265,10 +272,9 @@
 - title: Prediction of infectious disease epidemics via weighted density ensembles
   slug: ray-density-ensembles
   authors: Ray EL, Reich NG
-  journal: arXiv
-  citation: "arXiv: 1703.10936"
-  url: https://arxiv.org/abs/1703.10936
-  year: 2017
+  journal: PLOS Comp Bio 
+  preprint: https://arxiv.org/abs/1703.10936
+  year: 2018
   keywords: forecasting
   github: reichlab/adaptively-weighted-ensemble
   abstract: >
