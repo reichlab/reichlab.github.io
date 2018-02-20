@@ -42,7 +42,7 @@
   volume: 10
   pages: 20130414
   year: 2013
-  keywords: pathogen-interactions
+  keywords: pathogen-interactions, dengue
   authors: >
     Reich NG, Shrestha S, King AA, Rohani P, Lessler J, Kalayanarooj S, Yoon IK,
     Gibbons RV, Burke DS, Cummings DAT.
@@ -73,7 +73,7 @@
     Simberkoff M, Radonovich LJ, Perl TM
   journal: Clin Inf Dis
   year: 2015
-  keywords: forecasting
+  keywords: forecasting, influenza
   volume: 60
   pages: 499-504
   abstract: >
@@ -107,7 +107,7 @@
     Reich NG, Lessler J, Sakrejda K, Lauer SA, Iamsirithaworn S, Cummings DAT
   journal: Am Stat
   year: 2016
-  keywords: forecasting
+  keywords: forecasting, dengue
   volume: 70
   pages: 285-292
   abstract: >
@@ -275,7 +275,7 @@
   journal: PLOS Comp Bio 
   preprint: https://arxiv.org/abs/1703.10936
   year: 2018
-  keywords: forecasting
+  keywords: forecasting, influenza
   github: reichlab/adaptively-weighted-ensemble
   abstract: >
     Accurate and reliable predictions of infectious disease dynamics can be
@@ -302,3 +302,15 @@
     offered more consistent performance across seasons than the component
     models. Ensemble methods offer the potential to deliver more reliable
     predictions to public health decision makers.
+
+- title: Prospective forecasts of annual dengue hemorrhagic fever incidence in Thailand, 2010–2014
+  slug: lauer-annual-preds
+  authors: Lauer SA, Sakrejda K, Ray EL, Keegan LT, Bi Q, Suangtho P, Hinjoy S, Iamsirithaworn S, Suthachana S, Laosiritaworn Y, Cummings DAT, Lessler J and Reich NG
+  journal: PNAS
+  doi: 10.1073/pnas.1714457115
+  year: 2018
+  keywords: forecasting, dengue
+  github: reichlab/annual-predictions-paper
+  abstract: >
+    Dengue hemorrhagic fever (DHF), a severe manifestation of dengue viral infection that can cause severe bleeding, organ impairment, and even death, affects between 15,000 and 105,000 people each year in Thailand. While all Thai provinces experience at least one DHF case most years, the distribution of cases shifts regionally from year to year. Accurately forecasting where DHF outbreaks occur before the dengue season could help public health officials prioritize public health activities. We develop statistical models that use biologically plausible covariates, observed by April each year, to forecast the cumulative DHF incidence for the remainder of the year. We perform cross-validation during the training phase (2000–2009) to select the covariates for these models. A parsimonious model based on preseason incidence outperforms the 10-y median for 65% of province-level annual forecasts, reduces the mean absolute error by 19%, and successfully forecasts outbreaks (area under the receiver operating characteristic curve = 0.84) over the testing period (2010–2014). We find that functions of past incidence contribute most strongly to model performance, whereas the importance of environmental covariates varies regionally. This work illustrates that accurate forecasts of dengue risk are possible in a policy-relevant timeframe.
+
