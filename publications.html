@@ -54,11 +54,19 @@ layout: default
                 </div>
               {% endif %}
               <div class="pub-btns">
-                <a class="btn btn-link btn-sm pub-btn tooltip"
-                   data-tooltip="Get pdf"
-                   href="/pdfs/publications/{{ item.slug }}.pdf">
-                  <i class="fa fa-file-pdf-o"></i> pdf
-                </a>
+                {% if item.pdf %}
+                  <a class="btn btn-link btn-sm pub-btn tooltip"
+                     data-tooltip="Get pdf"
+                     href="{{ item.pdf }}">
+                    <i class="fa fa-file-pdf-o"></i> pdf
+                  </a>
+                {% else %}
+                  <a class="btn btn-link btn-sm pub-btn tooltip"
+                     data-tooltip="Get pdf"
+                     href="/pdfs/publications/{{ item.slug }}.pdf">
+                    <i class="fa fa-file-pdf-o"></i> pdf
+                  </a>
+                {% endif %}
                 {% if item.doi %}
                   <a class="btn btn-link btn-sm pub-btn tooltip"
                      data-tooltip="Open doi link"
