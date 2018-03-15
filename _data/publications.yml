@@ -318,3 +318,19 @@
   abstract: >
     Dengue hemorrhagic fever (DHF), a severe manifestation of dengue viral infection that can cause severe bleeding, organ impairment, and even death, affects between 15,000 and 105,000 people each year in Thailand. While all Thai provinces experience at least one DHF case most years, the distribution of cases shifts regionally from year to year. Accurately forecasting where DHF outbreaks occur before the dengue season could help public health officials prioritize public health activities. We develop statistical models that use biologically plausible covariates, observed by April each year, to forecast the cumulative DHF incidence for the remainder of the year. We perform cross-validation during the training phase (2000–2009) to select the covariates for these models. A parsimonious model based on preseason incidence outperforms the 10-y median for 65% of province-level annual forecasts, reduces the mean absolute error by 19%, and successfully forecasts outbreaks (area under the receiver operating characteristic curve = 0.84) over the testing period (2010–2014). We find that functions of past incidence contribute most strongly to model performance, whereas the importance of environmental covariates varies regionally. This work illustrates that accurate forecasts of dengue risk are possible in a policy-relevant timeframe.
 
+- title: >
+    Protecting Healthcare Personnel in Outpatient Settings: The Influence of Mandatory Versus Nonmandatory Influenza Vaccination Policies on Workplace Absenteeism During Multiple Respiratory Virus Seasons
+  slug: frederick-absenteeism
+  authors: Frederick J, Brown AC, Cummings DAT, Gaydos CA, Gibert CL, Gorse GJ, Los JG, Nyquist AC, Perl TM, Price CS, Radonovich LJ, Reich NG, Rodriguez-Barradas MC, Bessesen MT, Simberkoff MS, for the ResPECT Teama
+  journal: Infect Control Hosp Epidemiol
+  doi: 10.1017/ice.2018.9
+  year: 2018
+  keywords: influenza
+  abstract: >
+    Objective: To determine the effect of mandatory and nonmandatory influenza vaccination policies on vaccination rates and symptomatic absenteeism among healthcare personnel (HCP).
+    Design: Retrospective observational cohort study.
+    Setting: This study took place at 3 university medical centers with mandatory influenza vaccination policies and 4 Veterans Affairs (VA) healthcare systems with nonmandatory influenza vaccination policies.
+    Participants: The study included 2,304 outpatient HCP at mandatory vaccination sites and 1,759 outpatient HCP at nonmandatory vaccination sites.
+    Methods: To determine the incidence and duration of absenteeism in outpatient settings, HCP participating in the Respiratory Protection Effectiveness Clinical Trial at both mandatory and nonmandatory vaccination sites over 3 viral respiratory illness (VRI) seasons (2012–2015) reported their influenza vaccination status and symptomatic days absent from work weekly throughout a 12-week period during the peak VRI season each year. The adjusted effects of vaccination and other modulating factors on absenteeism rates were estimated using multivariable regression models.
+    Results: The proportion of participants who received influenza vaccination was lower each year at nonmandatory than at mandatory vaccination sites (odds ratio [OR], 0.09; 95% confidence interval [CI], 0.07–0.11). Among HCP who reported at least 1 sick day, vaccinated HCP had lower symptomatic days absent compared to unvaccinated HCP (OR for 2012–2013 and 2013–2014, 0.82; 95% CI, 0.72–0.93; OR for 2014–2015, 0.81; 95% CI, 0.69–0.95).
+    Conclusions: These data suggest that mandatory HCP influenza vaccination policies increase influenza vaccination rates and that HCP symptomatic absenteeism diminishes as rates of influenza vaccination increase. These findings should be considered in formulating HCP influenza vaccination policies.
