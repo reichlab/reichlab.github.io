@@ -95,6 +95,17 @@
     - name: website
       url: "https://lepisma.github.io/about"
 
+- name: Katie House
+  role: MS Student
+  description: |
+    Katie is an MS student in Computer Science concentrating in Data Science. She is interested in data visualization and 
+    machine learning. Outside of school, she likes to participate in hackathons and make baked goods.
+  image: /images/people/katie.jpg
+  links:
+    - name: Github
+      url: "https://github.com/katiehouse3"
+    - name: website
+      url: "www.katie-house.com"
 
 - name: Coco Kusiak
   role: MS Student
