@@ -265,7 +265,7 @@
   volume: 8
   pages: 1093
   journal: Nat Sci Rep
-  keywords: incubation-period
+  keywords: incubation-period, ebola
   abstract: >
     During outbreaks of deadly emerging pathogens (e.g., Ebola, MERS-CoV) and bioterror threats (e.g., smallpox), actively monitoring potentially infected individuals aims to limit disease transmission and morbidity. Guidance issued by CDC on active monitoring was a cornerstone of its response to the West Africa Ebola outbreak. There are limited data on how to balance the costs and performance of this important public health activity. We present a framework that estimates the risks and costs of specific durations of active monitoring for pathogens of significant public health concern. We analyze data from New York City's Ebola active monitoring program over a 16-month period in 2014-2016. For monitored individuals, we identified unique durations of active monitoring that minimize expected costs for those at “low (but not zero) risk” and “some or high risk”: 21 and 31 days, respectively. Extending our analysis to smallpox and MERS-CoV, we found that the optimal length of active monitoring relative to the median incubation period was reduced compared to Ebola due to less variable incubation periods. Active monitoring can save lives but is expensive. Resources can be most effectively allocated by using exposure-risk categories to modify the duration or intensity of active monitoring.
 
@@ -276,7 +276,8 @@
   preprint: https://arxiv.org/abs/1703.10936
   pdf: http://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005910&type=printable
   doi: 10.1371/journal.pcbi.1005910
-  volume: 14
+  volume: 14(2)
+  pages: e1005910
   year: 2018
   keywords: forecasting, influenza
   github: reichlab/adaptively-weighted-ensemble
@@ -313,6 +314,8 @@
   doi: 10.1073/pnas.1714457115
   pdf: http://www.pnas.org/content/early/2018/02/13/1714457115.full.pdf
   year: 2018
+  volume: 115(10) 
+  pages: E2175-E2182
   keywords: forecasting, dengue
   github: reichlab/annual-predictions-paper
   abstract: >
@@ -334,3 +337,20 @@
     Methods: To determine the incidence and duration of absenteeism in outpatient settings, HCP participating in the Respiratory Protection Effectiveness Clinical Trial at both mandatory and nonmandatory vaccination sites over 3 viral respiratory illness (VRI) seasons (2012–2015) reported their influenza vaccination status and symptomatic days absent from work weekly throughout a 12-week period during the peak VRI season each year. The adjusted effects of vaccination and other modulating factors on absenteeism rates were estimated using multivariable regression models.
     Results: The proportion of participants who received influenza vaccination was lower each year at nonmandatory than at mandatory vaccination sites (odds ratio [OR], 0.09; 95% confidence interval [CI], 0.07–0.11). Among HCP who reported at least 1 sick day, vaccinated HCP had lower symptomatic days absent compared to unvaccinated HCP (OR for 2012–2013 and 2013–2014, 0.82; 95% CI, 0.72–0.93; OR for 2014–2015, 0.81; 95% CI, 0.69–0.95).
     Conclusions: These data suggest that mandatory HCP influenza vaccination policies increase influenza vaccination rates and that HCP symptomatic absenteeism diminishes as rates of influenza vaccination increase. These findings should be considered in formulating HCP influenza vaccination policies.
+
+- title: >
+    Preprints: An underutilized mechanism to accelerate outbreak science
+  slug: johansson-preprints
+  authors: Johansson MA, Reich NG, Meyers LA, Lipsitch M
+  doi: 10.1371/journal.pmed.1002549
+  journal: PLOS Medicine
+  volume: 15(4)
+  pages: e1002549
+  year: 2018
+  pdf: http://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1002549&type=printable
+  keywords: ebola, zika
+  abstract: >
+    Preprints—manuscripts posted openly online prior to peer review—offer an opportunity to accelerate the dissemination of scientific findings to support responses to infectious disease outbreaks.
+    Preprints posted during the Ebola and Zika outbreaks included novel analyses and new data, and most of those that were matched to peer-reviewed publications were available more than 100 days before publication.
+    Despite the advantages of preprints and the endorsement of journals and funders in the context of outbreaks, less than 5% of Ebola and Zika journal articles were posted as preprints prior to publication in journals.
+    With broader adoption by scientists, journals, and funding agencies, preprints can complement peer-reviewed publication and ensure the early, open, and transparent dissemination of science relevant to the prevention and control of disease outbreaks.
