@@ -8,15 +8,27 @@ SHA=`git rev-parse --verify HEAD`
 
 git checkout master || git checkout --orphan master
 
-if [ "$TRAVIS_PULL_REQUEST" != "false" -o "$TRAVIS_BRANCH" != "source" ]; then
+if [ "$TRAVIS_BRANCH" == "master" ]; then
+    echo "This contains static files, not doing anything"
+    exit 0
+fi
+
+if [ "$TRAVIS_PULL_REQUEST" == "true" ]; then
+    echo "This is a pull request"
+    bundle exec rake collect
     bundle exec rake build
-    echo "Skipping deploy"
+    exit 0
+fi
+
+if [ "$TRAVIS_BRANCH" != "source" ]; then
+    echo "Non source branch, building but not deploying"
+    bundle exec rake collect
+    bundle exec rake hash
     exit 0
 fi
 
 bundle exec rake collect
 bundle exec rake build
-# bundle exec rake test
 
 # Cleanup
 rm -rf _data _includes _layouts _plugins _research _sass
