@@ -20,7 +20,7 @@ fi
 if [ "$TRAVIS_BRANCH" != "source" ]; then
     echo "Non source branch, collecting and building but not deploying"
     bundle exec rake collect
-    bundle exec rake hash
+    bundle exec rake build
     exit 0
 fi
 
