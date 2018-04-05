@@ -6,26 +6,25 @@ REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
 
-git checkout master || git checkout --orphan master
-
 if [ "$TRAVIS_BRANCH" == "master" ]; then
     echo "This contains static files, not doing anything"
     exit 0
 fi
 
 if [ "$TRAVIS_PULL_REQUEST" == "true" ]; then
-    echo "This is a pull request"
-    bundle exec rake collect
+    echo "This is a pull request, just doing a build"
     bundle exec rake build
     exit 0
 fi
 
 if [ "$TRAVIS_BRANCH" != "source" ]; then
-    echo "Non source branch, building but not deploying"
+    echo "Non source branch, collecting and building but not deploying"
     bundle exec rake collect
     bundle exec rake hash
     exit 0
 fi
+
+git checkout master || git checkout --orphan master
 
 bundle exec rake collect
 bundle exec rake build
