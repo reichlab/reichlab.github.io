@@ -12,7 +12,11 @@ class_name[0] = class_name[0].upcase
 .module @{class_name}
 .  class @{class_name}Gen < Jekyll::Generator
 .    def generate(site)
-.      repo_data = YAML.load_file(File.join('_data', 'repositories.yml'))
+.      repo_data = {}
+.      data_file = File.join('_data', 'repositories.yml')
+.      if File.exists? data_file
+.        repo_data = YAML.load_file(data_file)
+.      end
 .      @{page_name}_files = Dir.glob(File.join('_@{page_name}', '*.md'))
 .      @{page_name}_data = @{page_name}_files.map do |@{page_name}_file|
 .        parsed = FrontMatterParser::Parser.parse_file @{page_name}_file

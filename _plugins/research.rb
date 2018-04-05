@@ -6,7 +6,11 @@ require 'yaml'
 module Research
   class ResearchGen < Jekyll::Generator
     def generate(site)
-      repo_data = YAML.load_file(File.join('_data', 'repositories.yml'))
+      repo_data = {}
+      data_file = File.join('_data', 'repositories.yml')
+      if File.exists? data_file
+        repo_data = YAML.load_file(data_file)
+      end
       research_files = Dir.glob(File.join('_research', '*.md'))
       research_data = research_files.map do |research_file|
         parsed = FrontMatterParser::Parser.parse_file research_file

@@ -6,7 +6,11 @@ require 'yaml'
 module Teaching
   class TeachingGen < Jekyll::Generator
     def generate(site)
-      repo_data = YAML.load_file(File.join('_data', 'repositories.yml'))
+      repo_data = {}
+      data_file = File.join('_data', 'repositories.yml')
+      if File.exists? data_file
+        repo_data = YAML.load_file(data_file)
+      end
       teaching_files = Dir.glob(File.join('_teaching', '*.md'))
       teaching_data = teaching_files.map do |teaching_file|
         parsed = FrontMatterParser::Parser.parse_file teaching_file
