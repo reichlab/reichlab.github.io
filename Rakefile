@@ -1,5 +1,9 @@
 require 'html-proofer'
 
+task :noop do
+  sh "exit 0"
+end
+
 task :clean do
   File.delete('_data/repositories.yml')
 end
