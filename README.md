@@ -126,3 +126,84 @@ publications: >
 ---
 Here goes the section summary.
 ```
+
+## Developing
+
+Overall, the source code follows the usual [jekyll](http://jekyllrb.com/)
+structure. We use a few additional custom scripts/plugins to work with data
+files like `_data/team.yml`. This section documents the peripheral tooling
+involved.
+
+## Plugins
+
+Plugins in `./_plugins` read in the data from `./_data`, `./_research` and
+`./_teaching` and provide them as variables in the corresponding pages (like
+`./teaching.html` for `_teaching`).
+
+Since the plugin and html file for research and teaching look very similar, we
+generate both of them from a single source file using
+[ribosome](https://github.com/sustrik/ribosome). We call these pages (research
+and teaching) _thematic_ pages. The ruby plugin file is generated from
+`./_scripts/theme-gen-gen.rb.dna` and the html file from
+`./_scripts/theme-page.html.dna`. The process is scripted in the rakefile and is
+described in the next section.
+
+## rake
+
+We use [rake](https://github.com/ruby/rake) for specifying and running tasks..
+The main tasks are `collect` and `build`.
+
+### `collect`
+Before building the website, we need to collect some metadata (last commit
+information etc.) about github repositories listed in the files
+`./_research/*.md` and `./_teaching/*.md`. This involves using the github api
+and running the script `./_scripts/collect-repos.rb`. The following command runs
+this task and produces an updated `._data/repositories.yml` file with all the
+metadata required:
+
+```sh
+bundle exec rake collect
+```
+
+Since github api has limits, we need to pass [a
+token](https://github.com/settings/tokens) so that the task can finish
+successfully:
+
+```sh
+env GH_TOKEN='<token-here>' bundle exec rake collect
+```
+
+### `build`
+This is the main build task which just wraps around jekyll's own build.
+
+```sh
+bundle exec rake build
+```
+
+### `tpgen`
+
+This task generates a thematic page template (the html file). It needs two extra
+arguments,
+
+1. The name of the theme page (like 'research' or 'teaching')
+2. Short text (divider text) which goes over the list of projects (like 'LINKS'
+   in teaching and 'PROJECTS' in research)
+
+The command below will produce a page `./teaching.html` with a divider text
+'ITEMS'.
+
+```sh
+bundle exec rake tpen[teaching,items]
+```
+
+### `ggen`
+
+This produces a ruby plugin for corresponding (html of the same name) thematic
+page. It needs one extra argument which is the name of the theme page.
+
+The command below produces a plugin `./_plugins/teaching.rb` and works with the
+template page `./teaching.html` using data from `_/teaching` directory.
+
+```sh
+bundle exec rake ggen[teaching]
+```

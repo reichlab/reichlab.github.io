@@ -4,13 +4,13 @@ task :clean do
   File.delete('_data/repositories.yml')
 end
 
-desc "Generate a thematic page generator in _plugins"
+desc "Generate a thematic page plugin in _plugins"
 task :ggen, [:page] do |t, args|
   sh "bundle exec ruby ./_scripts/ribosome.rb ./_scripts/theme-gen-gen.rb.dna "\
      "#{args["page"]} > ./_plugins/#{args["page"]}.rb"
 end
 
-desc "Generate a thematic page in root"
+desc "Generate a thematic page html in root"
 task :tpgen, [:page, :divider] do |t, args|
   sh "bundle exec ruby ./_scripts/ribosome.rb ./_scripts/theme-page.html.dna "\
      "#{args["page"]} #{args["divider"]} > #{args["page"]}.html"
