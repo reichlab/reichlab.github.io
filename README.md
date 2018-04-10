@@ -134,7 +134,7 @@ structure. We use a few additional custom scripts/plugins to work with data
 files like `_data/team.yml`. This section documents the peripheral tooling
 involved.
 
-## Plugins
+## 1. Plugins
 
 Plugins in `./_plugins` read in the data from `./_data`, `./_research` and
 `./_teaching` and provide them as variables in the corresponding pages (like
@@ -148,7 +148,7 @@ and teaching) _thematic_ pages. The ruby plugin file is generated from
 `./_scripts/theme-page.html.dna`. The process is scripted in the rakefile and is
 described in the next section.
 
-## rake
+## 2. Rake tasks
 
 We use [rake](https://github.com/ruby/rake) for specifying and running tasks..
 The main tasks are `collect` and `build`.
@@ -207,3 +207,15 @@ template page `./teaching.html` using data from `_/teaching` directory.
 ```sh
 bundle exec rake ggen[teaching]
 ```
+
+## 3. Travis
+
+We use travis to run the website build process every time commits are pushed on
+github. Travis also rebuilds the website each night so that the information
+collected about the github repositories stays fresh.
+
+The main file for travis is `./build.sh` which checks for a few things (like
+which branch are we building for) and runs the rake tasks `collect` and `build`.
+Once done, it pushes the generated static html files to the repository's master
+branch. For pushing, it needs an authentication key which is kept encrypted in
+the file `./deploy_key.enc`.
