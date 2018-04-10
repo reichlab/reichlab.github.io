@@ -47,9 +47,7 @@ website from there.
 
 A short description of the data files follow:
 
-### Data
-
-#### `publications.yml`
+### `publications.yml`
 
 This contains publications that get displayed on the
 [/publications](http://reichlab.io/publications) page. A full featured entry for
@@ -80,7 +78,7 @@ pdf: >
 github: [Optional] Github repository identifier like <user>/<repo>
 ```
 
-#### `team.yml`
+### `team.yml`
 
 This contains information about lab members. An entry looks like this:
 
@@ -103,7 +101,7 @@ type: >
     categorize list of members in sections like 'Alumni'.
 ```
 
-#### `research` and `teaching` sections
+### `research` and `teaching` sections
 
 Both the [research](http://reichlab.io/research) and
 [teaching](http://reichlab.io/teaching) page are organized in terms of sections
