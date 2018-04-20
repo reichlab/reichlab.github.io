@@ -56,6 +56,8 @@
     algorithm. He likes the NBA and maps.
   image: /images/people/steve.jpg
   links:
+    - name: CV
+      url: /pdfs/people/LauerSA-CV.pdf
     - name: Google Scholar
       url: "https://scholar.google.com/citations?user=EEKbG5sAAAAJ&hl=en"
     - name: Twitter
@@ -110,8 +112,8 @@
 - name: Coco Kusiak
   role: MS Student
   description: |
-    Coco is a graduate researcher and MS student in Biostatistics. 
-    She is currently working on the Thai Dengue Forecasting Challenge. 
+    Coco is a graduate researcher and MS student in Biostatistics.
+    She is currently working on the Thai Dengue Forecasting Challenge.
     She loves sports and dogs.
   image: /images/people/coco.jpg
   links: []
@@ -125,13 +127,13 @@
   links:
     - name: Github
       url: "https://github.com/kyamkovoy"
-  
+
 - name: Evan Moore
   role: Undergraduate Researcher
   description: |
     Evan is an English and Informatics double major interested in statistical modeling, visualization, and communication.
     He serves as of the president of Undergraduate Researchers Interested in Data, an interdisciplinary student organization for data science.
-    In his spare time, he enjoys reading and listening to music.    
+    In his spare time, he enjoys reading and listening to music.
   image: /images/people/evan-m.jpg
   links:
     - name: Website
@@ -139,7 +141,7 @@
     - name: Github
       url: "https://github.com/evanm31"
 
-  
+
 - name: Matthew Cornell
   role: Software Engineer
   description: |
