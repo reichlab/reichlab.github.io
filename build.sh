@@ -11,7 +11,7 @@ if [ "$TRAVIS_BRANCH" == "master" ]; then
     exit 0
 fi
 
-if [ "$TRAVIS_PULL_REQUEST" == "true" ]; then
+if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
     echo "This is a pull request, just doing a build"
     bundle exec rake build
     exit 0
