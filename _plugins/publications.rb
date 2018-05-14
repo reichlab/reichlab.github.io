@@ -49,7 +49,7 @@ module Publications
           if entry.key?('volume')
             text += ', ' + entry['volume'].to_s
             if entry.key?('pages')
-              text += ' : ' + entry['pages'].to_s
+              text += ': ' + entry['pages'].to_s
             end
           end
           entry['cite_text'] = text
