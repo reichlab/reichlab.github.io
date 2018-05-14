@@ -42,7 +42,7 @@ layout: default
                 <a href="#pub={{ item.slug }}" class="pub-title">{{ item.title }}</a>
               </h4>
               <h6 class="card-subtitle">
-                {{ item.authors }}{% if item.cite_text %}. {{ item.cite_text }}{% endif %}
+                {{ item.authors }} ({{item.year}}){% if item.cite_text %}. {{ item.cite_text }}{% endif %}.
               </h6>
             </div>
             <div class="card-footer">
