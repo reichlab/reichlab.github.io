@@ -54,7 +54,7 @@ code {
   text-align: left;
 }
 
-// Carousel
+// ****** Carousel ******
 .carousel-home-image {
   width: 100%;
 }
@@ -63,4 +63,44 @@ code {
   align-items: center;
   display: flex !important;
   justify-content: center;
+}
+
+// Carosel Button
+.slick-prev:before, .slick-next:before { 
+    color:$color-gray-medium !important;
+}
+
+// Carosel Caption
+.slick-slide {
+    position: relative;
+}
+
+.info {
+  position: absolute;
+  left: 70%;
+  z-index: 2;
+  padding:5px;
+  color:#fff; 
+  background: rgba(0, 0, 0, 0.6);
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.top-caption {
+  top: 5%;
+}
+.bottom-caption {
+  bottom: 3%;
+}
+
+.info h3{
+    margin: 0;
+    top: 50%;
+    left: 50%;
+}
+.info:hover {
+  background: rgba(0, 0, 0, 1);
 }
