@@ -1,19 +1,60 @@
 ---
 layout: home
 ---
-
+<!-- Home Page Carousel -->
 <section class="container grid-custom">
   <div class="carousel">
-    {% for image in site.static_files %}
-      {% if image.path contains 'images/carousel' %}
-        <div>
-          <img class="carousel-home-image" src="{{ site.baseurl }}{{image.path}}" alt="" />
-        </div>
-      {% endif %}
-    {% endfor %}
+    <div>
+      <a href="/research">
+        <img class="carousel-home-image" src="images/carousel/new_1.png" alt="" />
+        <div class="info bottom-caption panel-title">infectious disease forecasting</div>
+      </a>
+    </div>
+    <div>
+      <a href="/2017/11/28/flusight-ensemble.html">
+        <img class="carousel-home-image" src="images/carousel/new_2.png" alt="" />
+        <div class="info bottom-caption panel-title">ensemble learning</div>
+      </a>
+    </div>
+    <div>
+      <a href="http://flusightnetwork.io/">
+        <img class="carousel-home-image" src="images/carousel/new_4.png" alt="" />
+        <div class="info top-caption panel-title">interactive visualization</div>
+      </a>
+    </div>
+    <div>
+      <a href="/publications">
+        <img class="carousel-home-image" src="images/carousel/new_5.png" alt="" />
+        <div class="info top-caption panel-title">biostatistics research</div>
+      </a>
+    </div>
+    <div>
+      <a href="/publications">
+        <img class="carousel-home-image" src="images/carousel/new_6.png" alt="" />
+        <div class="info bottom-caption panel-title">data science</div>
+      </a>
+    </div>
+    <div>
+      <a href="/people">
+        <img class="carousel-home-image" src="images/carousel/new_7.png" alt="" />
+        <div class="info top-caption panel-title">the lab</div>
+      </a>
+    </div>
+    <div>
+      <a href="/research">
+        <img class="carousel-home-image" src="images/carousel/new_8.png" alt="" />
+        <div class="info bottom-caption panel-title">big data</div>
+      </a>
+    </div>
+    <div>
+      <a href="/publications">
+        <img class="carousel-home-image" src="images/carousel/new_9.png" alt="" />
+        <div class="info bottom-caption panel-title">scientific communication</div>
+      </a>
+    </div>
   </div>
 </section>
-
+<!-- End of Carousel-->
 <div class="columns">
   <div class="column col-12">
     <h3>
