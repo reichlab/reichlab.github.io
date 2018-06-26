@@ -85,17 +85,13 @@
   image: /images/people/casey.jpg
   links: []
 
-- name: Abhinav Tushar
-  role: MS Student
+- name: Nutcha Wattanachit
+  role: PhD Student
   description: |
-    Abhinav is an MS student in Computer Science department. He is interested in
-    machine learning and data science.
-  image: /images/people/abhinav.jpg
-  links:
-    - name: Github
-      url: "https://github.com/lepisma"
-    - name: website
-      url: "https://lepisma.github.io/about"
+    Nutcha is pursuing her PhD in Biostatistics. She is interested in infectious disease forecasting, 
+    causal inference, and ensemble methods.
+  image: /images/people/nutcha.jpg
+  links: []
 
 - name: Katie House
   role: MS Student
@@ -108,7 +104,7 @@
       url: "https://github.com/katiehouse3"
     - name: website
       url: "http://www.katie-house.com"
-
+      
 - name: Coco Kusiak
   role: MS Student
   description: |
@@ -117,30 +113,6 @@
     She loves sports and dogs.
   image: /images/people/coco.jpg
   links: []
-
-
-- name: Kristina Yamkovoy
-  role: Undergradute Researcher
-  description: |
-    Kristina is an undergraduate Mathematics major with concentrations in Applied Mathematics and Statistics. She is interested in disease surveillance and global health and is currently working on the Thai Dengue Forecasting Challenge. She likes dogs.
-  image: /images/people/kristina.jpg
-  links:
-    - name: Github
-      url: "https://github.com/kyamkovoy"
-
-- name: Evan Moore
-  role: Undergraduate Researcher
-  description: |
-    Evan is an English and Informatics double major interested in statistical modeling, visualization, and communication.
-    He serves as of the president of Undergraduate Researchers Interested in Data, an interdisciplinary student organization for data science.
-    In his spare time, he enjoys reading and listening to music.
-  image: /images/people/evan-m.jpg
-  links:
-    - name: Website
-      url: "https://evanm31.github.io/"
-    - name: Github
-      url: "https://github.com/evanm31"
-
 
 - name: Matthew Cornell
   role: Software Engineer
@@ -156,6 +128,24 @@
       url: "http://www.matthewcornell.org"
     - name: LinkedIn
       url: "https://www.linkedin.com/in/matthewcornell"
+
+- name: Willow Crawford-Crudell
+  role: Undergradute Intern
+  description: |
+   Willow is an undergraduate student majoring in Mathematics and Spanish at Smith College. 
+   Her focus while at the Reich Lab is on the expectation-maximization algorithm in the context of infectious disease forecasting. 
+   She enjoys swimming, hiking, and knitting.
+  image: /images/people/willow.jpg
+  links: []
+
+- name: Rebecca Silva
+  role: Undergradute Intern
+  description: |
+   Rebecca is a senior mathematics major at Amherst College and is most excited about using data science and statistics to answer public health questions. 
+   This summer, while at the Reich Lab, she is investigating the probability integral transform method to evaluate ensemble forecast models for influenza. 
+   She enjoys dancing and going on runs.
+  image: /images/people/rebecca.jpg
+  links: []
 
 
 - name: Harley Jean
@@ -180,3 +170,41 @@
       url: "https://github.com/sakrejda"
 
 
+- name: Kristina Yamkovoy
+  role: Undergradute Researcher
+  description: |
+    Kristina is an undergraduate Mathematics major with concentrations in Applied Mathematics and Statistics. She is interested in disease surveillance and global health and is currently working on the Thai Dengue Forecasting Challenge. She likes dogs.
+  type: Alumni
+  image: /images/people/kristina.jpg
+  links:
+    - name: Github
+      url: "https://github.com/kyamkovoy"
+
+
+- name: Evan Moore
+  role: Undergraduate Researcher
+  description: |
+    Evan is an English and Informatics double major interested in statistical modeling, visualization, and communication.
+    He serves as of the president of Undergraduate Researchers Interested in Data, an interdisciplinary student organization for data science.
+    In his spare time, he enjoys reading and listening to music.
+  type: Alumni
+  image: /images/people/evan-m.jpg
+  links:
+    - name: Website
+      url: "https://evanm31.github.io/"
+    - name: Github
+      url: "https://github.com/evanm31"
+
+
+- name: Abhinav Tushar
+  role: MS Student
+  description: |
+    Abhinav is an MS student in Computer Science department. He is interested in
+    machine learning and data science.
+  type: Alumni  
+  image: /images/people/abhinav.jpg
+  links:
+    - name: Github
+      url: "https://github.com/lepisma"
+    - name: website
+      url: "https://lepisma.github.io/about"
