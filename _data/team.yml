@@ -138,6 +138,19 @@
   image: /images/people/willow.jpg
   links: []
 
+- name: Dean Gladish
+  role: Undergradute Intern
+  description: |
+   Dean is an undergraduate math major from Carleton College whose primary interest is in applied math, computer science, 
+   and making advancements in the field of public health.  
+   At the Reich Lab, he is interested in evaluating similarities among component models using various diagnostics.  
+   He enjoys going for walks and listening to music.
+  image: /images/people/dean.jpg
+  links:
+    - name: GitHub
+      url: "https://github.com/deangladish"
+
+
 - name: Rebecca Silva
   role: Undergradute Intern
   description: |
@@ -145,7 +158,9 @@
    This summer, while at the Reich Lab, she is investigating the probability integral transform method to evaluate ensemble forecast models for influenza. 
    She enjoys dancing and going on runs.
   image: /images/people/rebecca.jpg
-  links: []
+  links:
+    - name: GitHub
+      url: "https://github.com/rsilva19"
 
 
 - name: Harley Jean
