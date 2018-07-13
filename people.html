@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+ 
 <h2>About the Reich Lab</h2>
 
 <div class="columns">
@@ -49,14 +49,8 @@ layout: default
     <h2>People</h2>
   </div>
 
-  {% for type in page.types %}
-    {% unless type == 'default' %}
-      <div class="column col-12">
-        <h3 class="people-type">{{ type }}</h3>
-      </div>
-    {% endunless %}
     {% for member in page.members %}
-      {% if member.type == type %}
+      {% if member.type != "Alumni" %}
         <div class="column col-12">
           <div class="card-people columns">
             <div class="card-image column col-3 col-sm-12">
@@ -81,6 +75,28 @@ layout: default
           </div>
         </div>
       {% endif %}
-    {% endfor %}
+  {% endfor %}
+  <div class="column col-12">    
+    <h3 class="people-type">Alumni</h3>
+  </div>
+  <div class="columns">
+    {% for member in page.members %}
+        {% if member.type == "Alumni" %}
+              <div class="alumni-container">
+                <div class="card-people alumni-card">
+                  <div class="card-image">
+                    <div class="img-people" style="background-image: url({{ member.image }});">
+                    </div>
+                  </div>
+                    <div class="card-header">
+                      <h4 class="card-title">{{ member.name }}</h4>&nbsp;&nbsp;<br>
+                      <h6 class="card-subtitle-inline">{{ member.role }}</h6>
+                    <div class="card-body">
+                      {{ member.description }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+      {% endif %}
   {% endfor %}
 </div>

@@ -1,4 +1,4 @@
-# Team directory
+# Team directory 
 # Accepts markdown in `description` (needs escaping for few chars)
 
 - name: Nicholas Reich
@@ -164,62 +164,41 @@
 
 
 - name: Harley Jean
-  role: Undergraduate Researcher
+  role: Undergraduate Researcher (2016-2017) 
   description: |
-    Harley currently works in data science at Partners HealthCare.
+      
   type: Alumni
   image: /images/people/harley.jpeg
   links: []
 
-
 - name: Krzysztof Sakrejda
-  role: Post-doctoral Fellow
   description: |
-    Krzysztof currently works as a post-doc in the lab of Leontine Alkema at UMass-Amherst.
+    
+  role: Post-doctoral Fellow (2015-2017)
   type: Alumni
   image: /images/people/krzysztof.jpg
-  links:
-    - name: Google Scholar
-      url: "https://scholar.google.com/citations?user=nWWt_dMAAAAJ&hl=en"
-    - name: GitHub
-      url: "https://github.com/sakrejda"
-
+  links: []
 
 - name: Kristina Yamkovoy
-  role: Undergradute Researcher
+  role: Undergradute Researcher (2017-2018)
   description: |
-    Kristina is an undergraduate Mathematics major with concentrations in Applied Mathematics and Statistics. She is interested in disease surveillance and global health and is currently working on the Thai Dengue Forecasting Challenge. She likes dogs.
+   
   type: Alumni
   image: /images/people/kristina.jpg
-  links:
-    - name: Github
-      url: "https://github.com/kyamkovoy"
-
+  links: []
 
 - name: Evan Moore
-  role: Undergraduate Researcher
+  role: Undergraduate Researcher (2018)
   description: |
-    Evan is an English and Informatics double major interested in statistical modeling, visualization, and communication.
-    He serves as of the president of Undergraduate Researchers Interested in Data, an interdisciplinary student organization for data science.
-    In his spare time, he enjoys reading and listening to music.
+   
   type: Alumni
   image: /images/people/evan-m.jpg
-  links:
-    - name: Website
-      url: "https://evanm31.github.io/"
-    - name: Github
-      url: "https://github.com/evanm31"
-
+  links: []
 
 - name: Abhinav Tushar
-  role: MS Student
+  role: MS Student (2016-2018)
   description: |
-    Abhinav is an MS student in Computer Science department. He is interested in
-    machine learning and data science.
+   
   type: Alumni  
   image: /images/people/abhinav.jpg
-  links:
-    - name: Github
-      url: "https://github.com/lepisma"
-    - name: website
-      url: "https://lepisma.github.io/about"
+  links: []
