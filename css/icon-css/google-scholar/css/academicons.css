@@ -16,7 +16,7 @@
 }
 .ai {
 	display:inline-block;
-	font:normal normal normal 22px/1 Academicons;
+	font:normal normal normal 16px/1 Academicons;
 	font-size:inherit;
 	text-rendering:auto;
 	-webkit-font-smoothing:antialiased;
@@ -257,10 +257,10 @@
   vertical-align: -15%;
 }
 .ai-2x {
-  font-size: 27px !important;
-  padding-top: 6px !important;
-  height: 40.4px;
-  width: 42px;
+  font-size: 22px !important;
+  padding-top: 4px !important;
+  height: 32.4px;
+  width: 36px;
 }
 .ai-3x {
   font-size: 3em;
