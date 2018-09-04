@@ -68,7 +68,9 @@ layout: default
               </div>
               <div class="card-footer">
                 {% for link in member.links %}
-                  <a href="{{ link.url }}" class="btn btn-sm btn-default">{{ link.name }}</a>
+                  <a href="{{ link.url }}" id="link-container">
+                    <span class="{{ link.name }}" id="link"></span>
+                  </a>
                 {% endfor %}
               </div>
             </div>
@@ -82,20 +84,26 @@ layout: default
   <div class="columns">
     {% for member in page.members %}
         {% if member.type == "Alumni" %}
-              <div class="alumni-container">
+            <div class="alumni-container">
                 <div class="card-people alumni-card">
                   <div class="card-image">
                     <div class="img-people" style="background-image: url({{ member.image }});">
                     </div>
-                  </div>
-                    <div class="card-header">
-                      <h4 class="card-title">{{ member.name }}</h4>&nbsp;&nbsp;<br>
-                      <h6 class="card-subtitle-inline">{{ member.role }}</h6>
-                    <div class="card-body">
+                    </div>
+                      <div class="card-header">
+                        <h4 class="card-title">{{ member.name }}</h4>
+                        {% for link in member.links %}
+                          <a href="{{ link.url }}" target="_blank" id="alumni-link-container">
+                            <span class="flaticon-foreign" id="alumni-link"></span>
+                          </a>
+                        {% endfor %}
+                        <br>
+                        <h6 class="card-subtitle-inline">{{ member.role }}</h6>
+                      <div class="card-body">
                       {{ member.description }}
                     </div>
                   </div>
-                </div>
+                </div>    
               </div>
       {% endif %}
   {% endfor %}

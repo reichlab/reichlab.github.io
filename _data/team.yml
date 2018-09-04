@@ -10,11 +10,11 @@
     with his family (hiking, camping, canoeing, gardening).
   image: "http://people.umass.edu/nick/faceshot.jpg"
   links:
-    - name: Google Scholar
+    - name: ai ai-google-scholar-square ai-2x
       url: "https://scholar.google.com/citations?hl=en&user=AQUsdvkAAAAJ"
-    - name: Twitter
+    - name: flaticon-twitter-1
       url: "https://twitter.com/reichlab"
-    - name: CV
+    - name: flaticon-curriculum
       url: "http://reichlab.io/pdfs/cv/cvReich.pdf"
 
 
@@ -28,9 +28,9 @@
     methods for predicting infectious disease outbreaks.
   image: /images/people/evan.jpg
   links:
-    - name: CV
+    - name: flaticon-curriculum
       url: /pdfs/people/Evan_L_Ray_CV.pdf
-    - name: website
+    - name: flaticon-laptop-1
       url: "http://www.mtholyoke.edu/~eray/"
 
 
@@ -42,7 +42,7 @@
     statistical models for analyzing infectious diseases in human populations.
   image: /images/people/lexi.jpg
   links:
-    - name: CV
+    - name: flaticon-curriculum
       url: "https://drive.google.com/file/d/0B-fpi_ROKnbcQ3ZrbVh3UVY1SE0/view?usp=sharing"
 
 
@@ -56,11 +56,11 @@
     algorithm. He likes the NBA and maps.
   image: /images/people/steve.jpg
   links:
-    - name: CV
+    - name: flaticon-curriculum
       url: /pdfs/people/LauerSA-CV.pdf
-    - name: Google Scholar
+    - name: ai ai-google-scholar-square ai-2x
       url: "https://scholar.google.com/citations?user=EEKbG5sAAAAJ&hl=en"
-    - name: Twitter
+    - name: flaticon-twitter-1
       url: "https://twitter.com/salauer_biostat"
 
 - name: Xi Meng
@@ -72,7 +72,7 @@
      multi-strain infectious disease settings.
   image: /images/people/xi.png
   links:
-    - name: CV
+    - name: flaticon-curriculum
       url: "https://drive.google.com/file/d/0B66FkAegj6nrdlZPSXlIZm9jWDQ/view"
 
 
@@ -100,9 +100,9 @@
     machine learning. Outside of school, she likes to participate in hackathons and make baked goods.
   image: /images/people/katie.jpg
   links:
-    - name: Github
+    - name: flaticon-github-1
       url: "https://github.com/katiehouse3"
-    - name: website
+    - name: flaticon-laptop-1
       url: "http://www.katie-house.com"
 
 - name: Matthew Cornell
@@ -115,10 +115,12 @@
     of software.
   image: /images/people/matt.jpg
   links:
-    - name: website
+    - name: flaticon-laptop-1
       url: "http://www.matthewcornell.org"
-    - name: LinkedIn
+    - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/matthewcornell"
+
+# Alumni Section
 
 - name: Coco Kusiak
   role: MS Student (2017-2018)
@@ -126,12 +128,14 @@
     
   type: Alumni
   image: /images/people/coco.jpg
-  links: []
+  links:
+    - name: alumni_link
+      url: "https://github.com/ckusiak17"
 
 - name: Willow Crawford-Crudell
   role: Undergradute Intern (2018)
   description: |
-  
+    
   type: Alumni
   image: /images/people/willow.jpg
   links: []
@@ -142,7 +146,9 @@
    
   type: Alumni
   image: /images/people/dean.jpg
-  links: []
+  links:
+    - name: alumni_link
+      url: "https://github.com/deangladish"
 
 - name: Rebecca Silva
   role: Undergradute Intern (2018)
@@ -150,7 +156,9 @@
    
   type: Alumni
   image: /images/people/rebecca.jpg
-  links: []
+  links:
+    - name: alumni_link
+      url: "https://github.com/rsilva19"
 
 - name: Abhinav Tushar
   role: MS Student (2016-2018)
@@ -158,7 +166,9 @@
    
   type: Alumni  
   image: /images/people/abhinav.jpg
-  links: []
+  links:
+    - name: alumni_link
+      url: "https://github.com/lepisma"
   
 - name: Kristina Yamkovoy
   role: Undergradute Researcher (2017-2018)
@@ -166,7 +176,9 @@
    
   type: Alumni
   image: /images/people/kristina.jpg
-  links: []
+  links:
+    - name: alumni_link
+      url: "https://github.com/kyamkovoy"
 
 - name: Evan Moore
   role: Undergraduate Researcher (2018)
@@ -174,7 +186,9 @@
    
   type: Alumni
   image: /images/people/evan-m.jpg
-  links: []
+  links:
+    - name: alumni_link
+      url: "https://github.com/evanm31"
   
 - name: Harley Jean
   role: Undergraduate Researcher (2016-2017) 
@@ -198,4 +212,6 @@
   role: Post-doctoral Fellow (2015-2017)
   type: Alumni
   image: /images/people/krzysztof.jpg
-  links: []
+  links:
+    - name: alumni_link
+      url: "https://github.com/sakrejda"
