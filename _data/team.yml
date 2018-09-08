@@ -204,7 +204,10 @@
       
   type: Alumni
   image: /images/people/justin.jpg
-  links: []
+  links:
+    - name: alumni_link
+      url: "https://www.researchgate.net/profile/Justin_Baldwin"
+
   
 - name: Krzysztof Sakrejda
   description: |
