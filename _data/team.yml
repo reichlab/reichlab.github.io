@@ -1,4 +1,4 @@
-# Team directory
+# Team directory 
 # Accepts markdown in `description` (needs escaping for few chars)
 
 - name: Nicholas Reich
@@ -10,11 +10,11 @@
     with his family (hiking, camping, canoeing, gardening).
   image: "http://people.umass.edu/nick/faceshot.jpg"
   links:
-    - name: Google Scholar
+    - name: ai ai-google-scholar-square ai-2x
       url: "https://scholar.google.com/citations?hl=en&user=AQUsdvkAAAAJ"
-    - name: Twitter
+    - name: flaticon-twitter-1
       url: "https://twitter.com/reichlab"
-    - name: CV
+    - name: flaticon-curriculum
       url: "http://reichlab.io/pdfs/cv/cvReich.pdf"
 
 
@@ -28,9 +28,9 @@
     methods for predicting infectious disease outbreaks.
   image: /images/people/evan.jpg
   links:
-    - name: CV
+    - name: flaticon-curriculum
       url: /pdfs/people/Evan_L_Ray_CV.pdf
-    - name: website
+    - name: flaticon-laptop-1
       url: "http://www.mtholyoke.edu/~eray/"
 
 
@@ -42,7 +42,7 @@
     statistical models for analyzing infectious diseases in human populations.
   image: /images/people/lexi.jpg
   links:
-    - name: CV
+    - name: flaticon-curriculum
       url: "https://drive.google.com/file/d/0B-fpi_ROKnbcQ3ZrbVh3UVY1SE0/view?usp=sharing"
 
 
@@ -56,11 +56,11 @@
     algorithm. He likes the NBA and maps.
   image: /images/people/steve.jpg
   links:
-    - name: CV
+    - name: flaticon-curriculum
       url: /pdfs/people/LauerSA-CV.pdf
-    - name: Google Scholar
+    - name: ai ai-google-scholar-square ai-2x
       url: "https://scholar.google.com/citations?user=EEKbG5sAAAAJ&hl=en"
-    - name: Twitter
+    - name: flaticon-twitter-1
       url: "https://twitter.com/salauer_biostat"
 
 - name: Xi Meng
@@ -72,7 +72,7 @@
      multi-strain infectious disease settings.
   image: /images/people/xi.png
   links:
-    - name: CV
+    - name: flaticon-curriculum
       url: "https://drive.google.com/file/d/0B66FkAegj6nrdlZPSXlIZm9jWDQ/view"
 
 
@@ -85,17 +85,13 @@
   image: /images/people/casey.jpg
   links: []
 
-- name: Abhinav Tushar
-  role: MS Student
+- name: Nutcha Wattanachit
+  role: PhD Student
   description: |
-    Abhinav is an MS student in Computer Science department. He is interested in
-    machine learning and data science.
-  image: /images/people/abhinav.jpg
-  links:
-    - name: Github
-      url: "https://github.com/lepisma"
-    - name: website
-      url: "https://lepisma.github.io/about"
+    Nutcha is pursuing her PhD in Biostatistics. She is interested in infectious disease forecasting, 
+    causal inference, and ensemble methods.
+  image: /images/people/nutcha.jpg
+  links: []
 
 - name: Katie House
   role: MS Student
@@ -104,43 +100,10 @@
     machine learning. Outside of school, she likes to participate in hackathons and make baked goods.
   image: /images/people/katie.jpg
   links:
-    - name: Github
+    - name: flaticon-github-1
       url: "https://github.com/katiehouse3"
-    - name: website
+    - name: flaticon-laptop-1
       url: "http://www.katie-house.com"
-
-- name: Coco Kusiak
-  role: MS Student
-  description: |
-    Coco is a graduate researcher and MS student in Biostatistics.
-    She is currently working on the Thai Dengue Forecasting Challenge.
-    She loves sports and dogs.
-  image: /images/people/coco.jpg
-  links: []
-
-
-- name: Kristina Yamkovoy
-  role: Undergradute Researcher
-  description: |
-    Kristina is an undergraduate Mathematics major with concentrations in Applied Mathematics and Statistics. She is interested in disease surveillance and global health and is currently working on the Thai Dengue Forecasting Challenge. She likes dogs.
-  image: /images/people/kristina.jpg
-  links:
-    - name: Github
-      url: "https://github.com/kyamkovoy"
-
-- name: Evan Moore
-  role: Undergraduate Researcher
-  description: |
-    Evan is an English and Informatics double major interested in statistical modeling, visualization, and communication.
-    He serves as of the president of Undergraduate Researchers Interested in Data, an interdisciplinary student organization for data science.
-    In his spare time, he enjoys reading and listening to music.
-  image: /images/people/evan-m.jpg
-  links:
-    - name: Website
-      url: "https://evanm31.github.io/"
-    - name: Github
-      url: "https://github.com/evanm31"
-
 
 - name: Matthew Cornell
   role: Software Engineer
@@ -152,31 +115,106 @@
     of software.
   image: /images/people/matt.jpg
   links:
-    - name: website
+    - name: flaticon-laptop-1
       url: "http://www.matthewcornell.org"
-    - name: LinkedIn
+    - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/matthewcornell"
 
+# Alumni Section
 
-- name: Harley Jean
-  role: Undergraduate Researcher
+- name: Coco Kusiak
+  role: MS Student (2017-2018)
   description: |
-    Harley currently works in data science at Partners HealthCare.
+    
+  type: Alumni
+  image: /images/people/coco.jpg
+  links:
+    - name: alumni_link
+      url: "https://github.com/ckusiak17"
+
+- name: Willow Crawford-Crudell
+  role: Undergrad Intern (2018)
+  description: |
+    
+  type: Alumni
+  image: /images/people/willow.jpg
+  links: []
+
+- name: Dean Gladish
+  role: Undergrad Intern (2018)
+  description: |
+   
+  type: Alumni
+  image: /images/people/dean.jpg
+  links:
+    - name: alumni_link
+      url: "https://github.com/deangladish"
+
+- name: Rebecca Silva
+  role: Undergrad Intern (2018)
+  description: |
+   
+  type: Alumni
+  image: /images/people/rebecca.jpg
+  links:
+    - name: alumni_link
+      url: "https://github.com/rsilva19"
+
+- name: Abhinav Tushar
+  role: MS Student (2016-2018)
+  description: |
+   
+  type: Alumni  
+  image: /images/people/abhinav.jpg
+  links:
+    - name: alumni_link
+      url: "https://github.com/lepisma"
+  
+- name: Kristina Yamkovoy
+  role: Undergrad Researcher (2017-2018)
+  description: |
+   
+  type: Alumni
+  image: /images/people/kristina.jpg
+  links:
+    - name: alumni_link
+      url: "https://github.com/kyamkovoy"
+
+- name: Evan Moore
+  role: Undergrad Researcher (2018)
+  description: |
+   
+  type: Alumni
+  image: /images/people/evan-m.jpg
+  links:
+    - name: alumni_link
+      url: "https://github.com/evanm31"
+  
+- name: Harley Jean
+  role: Undergrad Researcher (2016-2017) 
+  description: |
+      
   type: Alumni
   image: /images/people/harley.jpeg
   links: []
 
-
-- name: Krzysztof Sakrejda
-  role: Post-doctoral Fellow
+- name: Justin Baldwin
+  role: MS Student (2016-2017) 
   description: |
-    Krzysztof currently works as a post-doc in the lab of Leontine Alkema at UMass-Amherst.
+      
+  type: Alumni
+  image: /images/people/justin.jpg
+  links:
+    - name: alumni_link
+      url: "https://www.researchgate.net/profile/Justin_Baldwin"
+
+  
+- name: Krzysztof Sakrejda
+  description: |
+    
+  role: Post-doctoral Fellow (2015-2017)
   type: Alumni
   image: /images/people/krzysztof.jpg
   links:
-    - name: Google Scholar
-      url: "https://scholar.google.com/citations?user=nWWt_dMAAAAJ&hl=en"
-    - name: GitHub
+    - name: alumni_link
       url: "https://github.com/sakrejda"
-
-

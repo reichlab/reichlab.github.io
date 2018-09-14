@@ -4,7 +4,7 @@ rvm:
 script: bash ./build.sh
 
 before_install:
-  - echo $super_secret_password | gpg --passphrase-fd 0 deploy_key.gpg
+  - if [ "$TRAVIS_BRANCH" = "source" ]; then  echo $super_secret_password | gpg --passphrase-fd 0 deploy_key.gpg; fi
   
 env:
   global:

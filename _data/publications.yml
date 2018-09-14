@@ -1,4 +1,31 @@
 # 2018
+- title: 'Forecasting seasonal influenza in the U.S.: A collaborative multi-year, multi-model assessment of forecast performance'
+  slug: collab-forecasts
+  journal: bioRxiv
+  authors: Reich NG, Brooks L, Spencer F, Kandula S, McGowan C, Moore E, Osthus D, Ray E, Tushar A,Yamana T, Biggerstaff M, Johansson MA, Rosenfeld R, and Shaman J
+  preprint: https://www.biorxiv.org/content/early/2018/08/24/397190
+  pdf: https://www.biorxiv.org/content/biorxiv/early/2018/08/24/397190.full.pdf
+  doi: 10.1101/397190
+  year: 2018
+  keywords: forecasting, influenza
+  github: FluSightNetwork/cdc-flusight-ensemble
+  abstract: >
+    Influenza infects an estimated 9 to 35 million individuals each year in the United States and is a 
+    contributing cause for between 12,000 and 56,000 deaths annually. Seasonal outbreaks of influenza are 
+    common in temperate regions of the world, with highest incidence typically occurring in colder and 
+    drier months of the year. Real-time forecasts of influenza transmission can inform public health 
+    response to outbreaks. We present the results of a multi-institution collaborative effort to standardize 
+    the collection and evaluation of forecasting models for influenza in the US for the 2010/2011 through 
+    2016/2017 influenza seasons. For these seven seasons, we assembled weekly real-time forecasts of 7 
+    targets of public health interest from 22 different models. We compared forecast accuracy of each model 
+    relative to a historical baseline seasonal average. Across all regions of the US, over half of the models 
+    showed consistently better performance than the historical baseline when forecasting incidence of 
+    influenza-like illness 1, 2 and 3 weeks ahead of available data and when forecasting the timing and 
+    magnitude of the seasonal peak. In some regions, delays in data reporting were strongly and negatively 
+    associated with forecast accuracy. More timely reporting and an improved overall accessibility to novel and 
+    traditional data sources are needed to improve forecasting accuracy 
+    and its integration with real-time public health decision-making.
+
 
 - title: Prospective forecasts of annual dengue hemorrhagic fever incidence in Thailand, 2010–2014
   slug: lauer-annual-preds

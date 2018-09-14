@@ -5,6 +5,7 @@
 .card-people {
   border: .1rem solid $color-gray-light;
   padding: 0;
+ 
 
   .card-image {
     .img-people {
@@ -15,6 +16,7 @@
       height: 160px;
       margin: 0 auto;
       width: 160px;
+      padding: 5px;
     }
   }
 
@@ -31,3 +33,60 @@
   }
 }
 
+.alumni-card{
+  width: 300px;
+  display: inline-block;
+  clear: both;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  padding: 5px;
+  text-align: center;
+  border: .1rem solid $color-gray-light;
+}
+
+.alumni-container{
+  padding: 10px;
+}
+
+#link-container{
+   text-align:center;
+   text-decoration: none;
+   margin:0 auto;
+}
+#link{
+  margin:4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top:2px;
+  padding-bottom: 2px;
+  display:inline-block;
+  color: #881c1c;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 1px solid #881c1c;
+}
+
+#link:hover {
+  color:white;
+  background-color: #881c1c;
+  border-radius: 5px;
+  border: 1px solid #881c1c;
+}
+
+#alumni-link-container{
+  text-decoration:none;
+}
+#alumni-link{
+  font-size:12px !important;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-bottom:4px;
+  display:inline-block;
+  color: #881c1c;
+  font-size: 24px;
+}
+
+#alumni-link:hover{
+  color:black;
+}
