@@ -273,8 +273,8 @@ pneumonia, but even then, as is evident from the city-level data, there
 are lots of gaps in the observations. This is not as evident in the
 overall aggregate data shown in the first plot above the fold. In 1918,
 the data clearly show a first peak in late 1918 and then a second peak
-in early 1920, although most cities are missing data for almost all of
-1919. In the 1968 pandemic, there seems to be a small first wave (or
+in early 1920, although most cities are missing data for almost all of 1919. 
+In the 1968 pandemic, there seems to be a small first wave (or
 maybe just a larger seasonal wave) in the 1967/1968 season followed by a
 larger peak right around December 1968 and January 1969. But this
 analogy to the flu pandemic is dependent on the assumption that reported
