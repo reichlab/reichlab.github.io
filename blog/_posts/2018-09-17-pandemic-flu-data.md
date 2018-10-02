@@ -3,7 +3,7 @@ title: "Data needs for forecasting influenza pandemics"
 layout: post
 author: Nick
 comments: True
-category: rbloggers
+category: R
 ---
 
 Last week, I attended a Pandemic Influenza Exercise at the US CDC. To be
