@@ -33,19 +33,6 @@
     - name: flaticon-laptop-1
       url: "http://www.mtholyoke.edu/~eray/"
 
-
-- name: Alexandria (Lexi) Brown
-  role: Post-doctoral Fellow
-  description: |
-    Lexi received her PhD in Organismic and Evolutionary Biology. She is
-    interested in machine learning and developing intelligent, interpretable
-    statistical models for analyzing infectious diseases in human populations.
-  image: /images/people/lexi.jpg
-  links:
-    - name: flaticon-curriculum
-      url: "https://drive.google.com/file/d/0B-fpi_ROKnbcQ3ZrbVh3UVY1SE0/view?usp=sharing"
-
-
 - name: Stephen Lauer
   role: PhD Student
   description: |
@@ -121,6 +108,15 @@
       url: "https://www.linkedin.com/in/matthewcornell"
 
 # Alumni Section
+
+
+- name: Alexandria (Lexi) Brown
+  role: Post-doctoral Fellow (2015-2018)
+  description: |
+  
+  type: Alumni
+  image: /images/people/lexi.jpg
+  links:
 
 - name: Coco Kusiak
   role: MS Student (2017-2018)
