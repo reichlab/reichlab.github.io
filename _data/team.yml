@@ -130,6 +130,8 @@
   type: Alumni
   image: /images/people/lexi.jpg
   links:
+    - name: alumni_link
+      url: "https://www.linkedin.com/in/alexandria-lexi-brown-phd/"  
 
 - name: Coco Kusiak
   role: MS Student (2017-2018)
