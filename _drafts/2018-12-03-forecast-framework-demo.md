@@ -20,11 +20,11 @@ The graduate programmer at the Reich Lab, Katie House, created a step-by-step de
 The purpose of these demonstrations is to make ForecastFramework accessible. However, these demonstrations only touch the surface as to the ennumerous uses of ForecastFramework. In fact, ForecastFramework is Reich Lab's primary library for generating our real-time dengue forecasts for the Ministry of Public Health in Thailand.
 
 The demo is separated into five sections. Each section will build off knowledge from the previous and will gradually increase in difficulty. However, the demos work as standalone scripts as well. The demos are categorized as the following:
-1. **The Data** - This section will examine the raw data used in the ForecastFramework models ahead.
-2. **Defining Inputs** - This section will define what an Incidence Matrix is, show how to format your data to be used as an Incidence Matrix, and exemplify functions of Incidence Matrices.
-3. **Fitting and Forecasting** - This section will focus on fitting data to a SARIMA model with ForecastFramework.
-4. **Evaluating Complex Models** - This section will demonstrate evaluation metrics and techniques by comparing two complex models in ForecastFramework.
-5. **Creating your own Model** - This section will use object-oriented R programming demonstrate how to create your own model with ForecastFramework. 
+1. [**The Data**](http://reichlab.io/forecast-framework-demos/#the-data-1) - This section will examine the raw data used in the ForecastFramework models ahead.
+2. [**Defining Inputs**](http://reichlab.io/forecast-framework-demos/#defining-inputs-incidence-matrix-1) - This section will define what an Incidence Matrix is, show how to format your data to be used as an Incidence Matrix, and exemplify functions of Incidence Matrices.
+3. [**Fitting and Forecasting**](http://reichlab.io/forecast-framework-demos/#fitting-and-forecasting) - This section will focus on fitting data to a SARIMA model with ForecastFramework.
+4. [**Evaluating Complex Models**](http://reichlab.io/forecast-framework-demos/#evaluating-multiple-models) - This section will demonstrate evaluation metrics and techniques by comparing two complex models in ForecastFramework.
+5. [**Creating your own Model**](http://reichlab.io/forecast-framework-demos/#creating-your-own-model) - This section will use object-oriented R programming demonstrate how to create your own model with ForecastFramework. 
 
 [Try using ForecastFramework today](http://reichlab.io/forecast-framework-demos/)! For any questions or bug reporting, please contact khouse@umass.edu.
 
