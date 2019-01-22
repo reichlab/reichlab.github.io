@@ -119,7 +119,18 @@
       url: "http://www.matthewcornell.org"
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/matthewcornell"
-
+      
+- name: Justin Stott
+  role: Undergrad Program Assistant
+  description: |
+    Justin is a junior double major in Biology and Informatics.
+    He is interested in algorithms, statistics, and data collection.
+    When not busy with his studies, Justin enjoys social and competitive
+    Ballroom Dance and Sailing on the respective UMass teams.
+  image: images/people/justinstott.jpg
+  links: []
+      
+      
 # Alumni Section
 
 
