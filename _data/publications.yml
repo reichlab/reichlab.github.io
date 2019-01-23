@@ -1,12 +1,13 @@
-# 2018
-- title: 'Forecasting seasonal influenza in the U.S.: A collaborative multi-year, multi-model assessment of forecast performance'
+#2019
+
+- title: 'A collaborative multiyear, multimodel assessment of seasonal influenza forecasting in the United States'
   slug: collab-forecasts
-  journal: bioRxiv
+  journal: PNAS
   authors: Reich NG, Brooks L, Spencer F, Kandula S, McGowan C, Moore E, Osthus D, Ray E, Tushar A,Yamana T, Biggerstaff M, Johansson MA, Rosenfeld R, and Shaman J
   preprint: https://www.biorxiv.org/content/early/2018/08/24/397190
-  pdf: https://www.biorxiv.org/content/biorxiv/early/2018/08/24/397190.full.pdf
-  doi: 10.1101/397190
-  year: 2018
+  pdf: https://www.pnas.org/content/pnas/early/2019/01/14/1812594116.full.pdf
+  doi: 10.1073/pnas.1812594116
+  year: 2019
   keywords: forecasting, influenza
   github: FluSightNetwork/cdc-flusight-ensemble
   abstract: >
@@ -26,7 +27,7 @@
     traditional data sources are needed to improve forecasting accuracy 
     and its integration with real-time public health decision-making.
 
-
+# 2018
 - title: Prospective forecasts of annual dengue hemorrhagic fever incidence in Thailand, 2010–2014
   slug: lauer-annual-preds
   authors: Lauer SA, Sakrejda K, Ray EL, Keegan LT, Bi Q, Suangtho P, Hinjoy S, Iamsirithaworn S, Suthachana S, Laosiritaworn Y, Cummings DAT, Lessler J and Reich NG
