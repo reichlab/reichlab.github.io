@@ -27,6 +27,20 @@
     traditional data sources are needed to improve forecasting accuracy 
     and its integration with real-time public health decision-making.
 
+
+- title: 'Collaborative efforts to forecast seasonal influenza in the United States, 2015–2016'
+  slug: flusight-201516
+  journal: Sci Rep
+  authors: McGowan C, Biggerstaff M, Johansson M, Apfeldorf K, Ben-Nun M, Brooks L, Convertino M, Erraguntla M, Farrow D, Freeze J, Ghosh S, Hyun S, Kandula S, Lega J, Liu Y, Michaud N, Morita H, Niemi J, Ramakrishnan N, Ray EL, Reich NG, Riley P, Shaman J, Tibshirani R, Vespignani A, Zhang Q, Reed C
+  pdf: https://www.nature.com/articles/s41598-018-36361-9.pdf
+  doi: 10.1038/s41598-018-36361-9
+  year: 2019
+  volume: 9(683)
+  keywords: forecasting, influenza
+  abstract: >
+    Since 2013, the Centers for Disease Control and Prevention (CDC) has hosted an annual influenza season forecasting challenge. The 2015–2016 challenge consisted of weekly probabilistic forecasts of multiple targets, including fourteen models submitted by eleven teams. Forecast skill was evaluated using a modified logarithmic score. We averaged submitted forecasts into a mean ensemble model and compared them against predictions based on historical trends. Forecast skill was highest for seasonal peak intensity and short-term forecasts, while forecast skill for timing of season onset and peak week was generally low. Higher forecast skill was associated with team participation in previous influenza forecasting challenges and utilization of ensemble forecasting techniques. The mean ensemble consistently performed well and outperformed historical trend predictions. CDC and contributing teams will continue to advance influenza forecasting and work to improve the accuracy and reliability of forecasts to facilitate increased incorporation into public health response efforts.
+
+
 # 2018
 - title: Prospective forecasts of annual dengue hemorrhagic fever incidence in Thailand, 2010–2014
   slug: lauer-annual-preds
