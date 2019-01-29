@@ -3,6 +3,7 @@ title: Forecast Framework Demo
 layout: post
 author: Katie
 comments: True
+category: R
 ---
 
 Want to learn how to do some forecasting with R? Here's your chance to try out a new time-series forecasting package for R whose aim is to standardize and simplify the process of making and evaluating forecasts!
@@ -17,7 +18,7 @@ After watching students in the lab working on learning how to use `ForecastFrame
 
 <!--more-->
 
-As the resident CS grad-student programmer in the lab, I wanted to write these demonstrations to make `ForecastFramework` accessible. However, the demo only scrape the surface of the many way that we (and others, we hope) will use  `ForecastFramework`. We have incorporated `ForecastFramework` into our workflow for generating [real-time dengue forecasts for the Ministry of Public Health in Thailand](https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0004761), and students have found it really useful in generating small model comparison projects.
+As the resident CS grad-student programmer in the lab, I wanted to write these demonstrations to make `ForecastFramework` accessible. However, the demo only scrapes the surface of the many way that we (and others, we hope) will use  `ForecastFramework`. We have incorporated `ForecastFramework` into our workflow for generating [real-time dengue forecasts for the Ministry of Public Health in Thailand](https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0004761), and students have found it useful in generating small model comparison projects.
 
 [The online demo](http://reichlab.io/forecast-framework-demos/) is separated into five sections. Each section will build off knowledge from the previous and will gradually increase in difficulty. However, the demos work as standalone scripts as well. The demos are categorized as the following:
 1. [**The Data**](http://reichlab.io/forecast-framework-demos/#the-data-1) - This section will examine the raw data used in the `ForecastFramework` models ahead.
