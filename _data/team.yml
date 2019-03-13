@@ -46,23 +46,6 @@
     - name: flaticon-twitter-1
       url: "https://twitter.com/tomcm39"
 
-- name: Stephen Lauer
-  role: PhD Student
-  description: |
-    Stephen is a graduate researcher pursuing his PhD in biostatistics. His work
-    focuses on developing tools to make and evaluate real-time infectious
-    disease forecasts, such as the [Shiny web
-    application](http://iddynamics.jhsph.edu/apps/shiny/ALERT/) for the ALERT
-    algorithm. He likes the NBA and maps.
-  image: /images/people/steve.jpg
-  links:
-    - name: flaticon-curriculum
-      url: /pdfs/people/LauerSA-CV.pdf
-    - name: ai ai-google-scholar-square ai-2x
-      url: "https://scholar.google.com/citations?user=EEKbG5sAAAAJ&hl=en"
-    - name: flaticon-twitter-1
-      url: "https://twitter.com/salauer_biostat"
-
 - name: Xi Meng
   role: PhD Student
   description: |
@@ -133,6 +116,14 @@
       
 # Alumni Section
 
+- name: Stephen Lauer
+  role: PhD Student (2014-2019)
+  description: |
+  
+  image: /images/people/steve.jpg
+  links:
+    - name: alumni_link
+      url: "https://scholar.google.com/citations?user=EEKbG5sAAAAJ&hl=en"
 
 - name: Alexandria (Lexi) Brown
   role: Post-doctoral Fellow (2015-2018)
