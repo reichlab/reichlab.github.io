@@ -1,0 +1,57 @@
+---
+layout: alert
+---
+
+<h1>The FluSight Network</h1>
+<h3><small class="label">Collaborative, multi-team, ensemble influenza forecasting</small></h3>
+
+<div class="columns">
+  <div class="column col-8 col-md-12">
+    <div class="carousel">
+      {% assign images = "CID_Figure1.jpg|CID_Figure2.jpg|shiny-app-screenshot.png" | split: "|" %}
+      {% for image in images %}
+        <div class="carousel-item">
+          <img src="images/alert/{{ image }}" class="rounded img-responsive">
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="column col-4 col-md-12">
+    <h3>Overview</h3>
+    <p>
+      Since the 2013/2014 influenza season in the US, the CDC has organized <a href="https://predict.cdc.gov/">the FluSight challenge</a>. Teams from around the globe submit weekly forecasts about the current and projected trajectory of the influenza season. The Reich Lab began participating in the FluSight challenge in the 2015/2016 season. In March of 2017, we led the effort to establish the FluSight Network, a consortium of teams participating in the FluSight challenge, with the goal of creating an ensemble that weighted models differently depending on their past performance. Working with teams from <a href="https://delphi.midas.cs.cmu.edu/">Carnegie Mellon</a>, <a href="http://blogs.cuit.columbia.edu/jls106/">Columbia University</a>, <a href="https://www.lanl.gov/expertise/profiles/view/david-osthus">Los Alamos National Laboratory</a>, and, in 2018/2019, Protea Analytics, we developed and implemented the FluSight Network Ensemble Model. This model was the second best overall performing model in the FluSight challenge during the 2017/2018 season. Based on its strong performance in this pilot season, the CDC chose to use the forecasts from this model on its <a href="https://www.cdc.gov/flu/weekly/flusight/index.html">official FluSight webpage</a> during the 2018/2019 influenza season.
+    </p>
+    <h3>Links</h3>
+    <ul>
+      <li>
+        <a href="https://www.pnas.org/content/116/8/3146">
+          Component model comparison paper in <i>PNAS</i>
+        </a>
+      </li>
+      <li>
+        <a href="https://doi.org/10.1101/566604">
+          Paper evaluating prospective ensemble performance (preprint)
+        </a>
+      </li>
+      <li>
+        <a href="http://flusightnetwork.io/">Interactive, real-time forecasts</a>
+        </li>
+      <li>
+        <a href="http://reichlab.io/2017/11/28/flusight-ensemble.html">
+          Blog post describing the 2017/2018 ensemble
+        </a>
+      </li>
+      <li>
+        <a href="https://www.cdc.gov/flu/weekly/flusight/index.html">
+          Official CDC FluSight website
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/FluSightNetwork/cdc-flusight-ensemble/blob/master/README.md">
+          FluSight Network on GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
