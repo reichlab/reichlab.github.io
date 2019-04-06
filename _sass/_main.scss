@@ -55,6 +55,10 @@ code {
 }
 
 // ****** Carousel ******
+.carousel{
+  width: 80%;
+}
+
 .carousel-home-image {
   width: 100%;
 }
@@ -63,6 +67,11 @@ code {
   align-items: center;
   display: flex !important;
   justify-content: center;
+}
+
+slick-dotted.slick-slider {
+    margin-bottom: 0px;
+    margin: auto;
 }
 
 // Carosel Button
