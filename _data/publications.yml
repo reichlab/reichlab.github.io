@@ -1,4 +1,30 @@
 #2019
+
+- title: 'Evaluating the ALERT algorithm for local outbreak onset detection in seasonal infectious disease surveillance data'
+  slug: alert-onset
+  authors: Brown AC, Lauer SA, Robinson C, Nyquist C, Rao S, Reich NG
+  preprint: https://www.biorxiv.org/content/10.1101/664433v1
+  pdf: https://www.biorxiv.org/content/biorxiv/early/2019/06/14/664433.full.pdf
+  doi: 10.1101/664433
+  year: 2019
+  keywords: forecasting, influenza
+  github: reichlab/ALERT
+  abstract: >
+    Estimation of epidemic onset timing is an important component of controlling the spread of 
+    seasonal infectious diseases within community healthcare sites. The Above Local Elevated 
+    Respiratory Illness Threshold (ALERT) algorithm uses a threshold-based approach to suggest 
+    incidence levels that historically have indicated the transition from endemic to epidemic 
+    activity. In this paper, we present the first detailed overview of the computational approach 
+    underlying the algorithm. In the motivating example section, we evaluate the performance of 
+    ALERT in determining the onset of increased respiratory virus incidence using laboratory 
+    testing data from the Children’s Hospital of Colorado. At a threshold of 10 cases per week, 
+    ALERT-selected intervention periods performed better than the observed hospital site periods 
+    (2004/2005-2012/2013) and a CUSUM method. Additional simulation studies show how data properties
+    may effect ALERT performance on novel data. We found that the conditions under which ALERT showed 
+    ideal performance generally included high seasonality and low off-season incidence.
+
+
+    
 - title: 'A Collaborative Multi-Model Ensemble for Real-Time Influenza Season Forecasting in the U.S.'
   slug: flu-ensemble-1
   authors: Reich NG, McGowan CJ, Yamana TK, Tushar A, Ray E, Osthus D, Kandula S, Brooks LC, Crawford-Crudell W, Gibson GC, Moore E, Silva R, Biggerstaff M, Johanssom M, Rosenfeld R, Shaman J
