@@ -1,5 +1,22 @@
 #2019
 
+- title: 'Using "outbreak science" to strengthen the use of models during epidemics'
+  slug: nature
+  authors: Rivers C, Chretien JP, Riley S, Pavlin J, Woodward A, Brett-Major D, Berry IB, Morton L, Jarman RG, 
+           Biggerstaff M, Johansson MA, Reich NG, Meyer D, Snyder MR, Pollett S
+  preprint: https://www.nature.com/articles/s41467-019-11067-2
+  pdf: https://www.nature.com/articles/s41467-019-11067-2.pdf
+  doi: 10.1038/s41467-019-11067-2
+  year: 2019
+  keywords: forecasting 
+  github: FluSightNetwork/cdc-flusight-ensemble
+  abstract: >
+    Infectious disease modeling has played a prominent role in recent outbreaks, yet 
+    integrating these analyses into public health decision-making has been challenging.
+     We recommend establishing ‘outbreak science’ as an inter-disciplinary 
+     field to improve applied epidemic modeling. 
+
+
 - title: 'Evaluating the ALERT algorithm for local outbreak onset detection in seasonal infectious disease surveillance data'
   slug: alert-onset-2
   authors: Brown AC, Lauer SA, Robinson C, Nyquist C, Rao S, Reich NG
