@@ -79,8 +79,8 @@
 - name: Katie House
   role: MS Student
   description: |
-    Katie is an MS student in Computer Science concentrating in Data Science. She is interested in data visualization and 
-    machine learning. Outside of school, she likes to participate in hackathons and make baked goods.
+    Katie is an MS student in Computer Science concentrating in Data Science. She is interested in data visualization, 
+    computer vision, and machine learning. Outside of school, she likes to participate in hackathons and make baked goods.
   image: /images/people/katie.jpg
   links:
     - name: flaticon-github-1
