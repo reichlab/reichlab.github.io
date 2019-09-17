@@ -1,5 +1,29 @@
 #2019
+- title: 'N95 Respirators vs Medical Masks for Preventing Influenza Among Health Care Personnel'
+  slug: respirators
+  authors: Radonovich LJ, Simberkoff MS, Bessesen MT
+  preprint: https://arxiv.org/abs/1908.01675
+  pdf: https://scholar.google.com/scholar_url?url=https://jamanetwork.com/journals/jama/articlepdf/2749214/jama_radonovich_2019_oi_190087.pdf&hl=en&sa=T&oi=ucasa&ct=usl&ei=3-V_Xb3DF4ukmAH3l62YDw&scisig=AAGBfm16ej4L9ZhatlupvVocAifiMiFfBA
+  doi: 10.1001/jama.2019.11645
+  year: 2019
+  keywords: influenza
+  abstract: >
+     Clinical studies have been inconclusive about the effectiveness of N95 respirators and medical masks in preventing health care personnel (HCP) from acquiring workplace viral respiratory infections.
 
+
+- title: 'Technology to advance infectious disease forecasting for outbreak management'
+  slug: forcasting
+  authors: George GB, Taylor W, Shaman J, Rivers C, Paul B, O'Toole T, Johansson MA, Hirschman L, Biggerstaff M, Asher J, Reich NG
+  pdf: https://www.nature.com/articles/s41467-019-11901-7.pdf
+  year: 2019
+  keywords: forecasting
+  abstract: >
+    Forecasting is beginning to be integrated into decision-making processes for
+    infectious disease outbreak response. We discuss how technologies could
+    accelerate the adoption of forecasting among public health practitioners,
+    improve epidemic management, save lives, and reduce the economic impact of
+    outbreaks.
+    
 - title: 'Adaptively stacking ensembles for influenza forecasting with incomplete data'
   slug: adaptive-ensembles
   authors: McAndrew T, Reich NG 
