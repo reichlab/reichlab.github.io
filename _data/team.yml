@@ -88,6 +88,19 @@
     - name: flaticon-laptop-1
       url: "http://www.katie-house.com"
 
+- name: Khoa Le
+  role: MS Student
+  description: |
+    Khoa is an MS student in Computer Science, with a concentration in Data Science. He is interested in machine learning
+    and its application in interdisplinary fields such as computational sustainability. Besides studying, Khoa enjoys reading
+    about history and international relations.
+  image: /images/people/khoa.jpg
+  links:
+    - name: flaticon-github-1
+      url: "https://github.com/Khoale1096"
+    - name: flaticon-linkedin-1
+      url: "https://www.linkedin.com/in/khoagle/"
+
 - name: Matthew Cornell
   role: Software Engineer
   description: |
