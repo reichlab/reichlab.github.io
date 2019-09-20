@@ -1,20 +1,24 @@
 #2019
 - title: 'N95 Respirators vs Medical Masks for Preventing Influenza Among Health Care Personnel'
   slug: respirators
-  authors: Radonovich LJ, Simberkoff MS, Bessesen MT
-  preprint: https://arxiv.org/abs/1908.01675
+  authors: Radonovich LJ, Simberkoff MS, Bessesen MT, Brown AC, Cummings DAT, Gaydos CA, Los JG, Krosche AE, Gibert CL, Gorse GJ, Nyquist AC, Reich NG, Rodriguez-Barradas MC, Price CS, Perl TM
   pdf: https://scholar.google.com/scholar_url?url=https://jamanetwork.com/journals/jama/articlepdf/2749214/jama_radonovich_2019_oi_190087.pdf&hl=en&sa=T&oi=ucasa&ct=usl&ei=3-V_Xb3DF4ukmAH3l62YDw&scisig=AAGBfm16ej4L9ZhatlupvVocAifiMiFfBA
   doi: 10.1001/jama.2019.11645
+  journal: JAMA
+  volume: 322(9)
+  pages: 824-833
   year: 2019
   keywords: influenza
   abstract: >
      Clinical studies have been inconclusive about the effectiveness of N95 respirators and medical masks in preventing health care personnel (HCP) from acquiring workplace viral respiratory infections.
 
-
 - title: 'Technology to advance infectious disease forecasting for outbreak management'
   slug: forcasting
   authors: George GB, Taylor W, Shaman J, Rivers C, Paul B, O'Toole T, Johansson MA, Hirschman L, Biggerstaff M, Asher J, Reich NG
   pdf: https://www.nature.com/articles/s41467-019-11901-7.pdf
+  doi: 10.1038/s41467-019-11901-7
+  journal: Nature Communications
+  volume: 10(3932)
   year: 2019
   keywords: forecasting
   abstract: >
@@ -60,9 +64,10 @@
   slug: nature-1
   authors: Rivers C, Chretien JP, Riley S, Pavlin J, Woodward A, Brett-Major D, Berry IB, Morton L, Jarman RG, 
            Biggerstaff M, Johansson MA, Reich NG, Meyer D, Snyder MR, Pollett S
-  preprint: https://www.nature.com/articles/s41467-019-11067-2
   pdf: https://www.nature.com/articles/s41467-019-11067-2.pdf
   doi: 10.1038/s41467-019-11067-2
+  journal: Nature Communications
+  volume: 10(3932)
   year: 2019
   keywords: forecasting 
   github: FluSightNetwork/cdc-flusight-ensemble
@@ -101,9 +106,11 @@
 - title: 'A Collaborative Multi-Model Ensemble for Real-Time Influenza Season Forecasting in the U.S.'
   slug: flu-ensemble-1
   authors: Reich NG, McGowan CJ, Yamana TK, Tushar A, Ray E, Osthus D, Kandula S, Brooks LC, Crawford-Crudell W, Gibson GC, Moore E, Silva R, Biggerstaff M, Johanssom M, Rosenfeld R, Shaman J
-  preprint: https://www.biorxiv.org/content/10.1101/566604v1
-  pdf: https://www.biorxiv.org/content/biorxiv/early/2019/03/08/566604.full.pdf
+  pdf: https://www.pnas.org/content/pnas/116/8/3146.full.pdf
   doi: 10.1101/566604
+  journal: PNAS
+  volume: 116(8)
+  pages: 3146-3154
   year: 2019
   keywords: forecasting, influenza
   github: FluSightNetwork/cdc-flusight-ensemble
@@ -136,10 +143,11 @@
   slug: collab-forecasts
   journal: PNAS
   authors: Reich NG, Brooks L, Spencer F, Kandula S, McGowan C, Moore E, Osthus D, Ray E, Tushar A,Yamana T, Biggerstaff M, Johansson MA, Rosenfeld R, and Shaman J
-  preprint: https://www.biorxiv.org/content/early/2018/08/24/397190
   pdf: https://www.pnas.org/content/pnas/early/2019/01/14/1812594116.full.pdf
   doi: 10.1073/pnas.1812594116
   year: 2019
+  volume: 116(8)
+  pages: 3146-3154
   keywords: forecasting, influenza
   github: FluSightNetwork/cdc-flusight-ensemble
   abstract: >
