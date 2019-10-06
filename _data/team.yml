@@ -36,7 +36,11 @@
 - name: Tom McAndrew
   role: Postdoctoral Fellow
   description: |
-   Tom is a Postdoctoral Fellow of Biostatistics. His research focuses on combining multiple data sources, and translating crowd-driven predictions, into useful forecasts of infectious disease. Before joining the Reich Lab, Tom spent his time leading a Biostatistics department planning cardiovascular clinical trials. Besides work, Tom enjoys spending time hiking with his family, reading, and playing music. 
+   Tom is a Postdoctoral Fellow of Biostatistics.
+   His research advances ensemble, and judgmental, forecasting techniques applied to predicting seasonal influenza-like illness.
+   Before joining the Reich Lab, Tom spent his time as Associate Director of Biostatistics.
+   He designed novel cardiovascular clinical trials and led a team of biostatisticians.
+   Tom also enjoys spending time with his family, reading, playing the guitar, and carpentry.
   image: /images/people/tom.jpg
   links:
     - name: flaticon-curriculum
@@ -45,6 +49,8 @@
       url: "https://scholar.google.com/citations?user=JFIv-bIAAAAJ&hl=en"
     - name: flaticon-twitter-1
       url: "https://twitter.com/tomcm39"
+    - name: flaticon-laptop-1
+      url: "http://www.thomasmcandrew.com/"
 
 - name: Xi Meng
   role: PhD Student
