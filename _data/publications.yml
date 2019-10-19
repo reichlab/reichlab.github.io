@@ -165,14 +165,10 @@
     ideal performance generally included high seasonality and low off-season incidence.
 
     
-- title: 'A Collaborative Multi-Model Ensemble for Real-Time Influenza Season Forecasting in the U.S.'
+- title: 'Accuracy of real-time multi-model ensemble forecasts for seasonal influenza in the U.S.'
   slug: flu-ensemble-1
   authors: Reich NG, McGowan CJ, Yamana TK, Tushar A, Ray E, Osthus D, Kandula S, Brooks LC, Crawford-Crudell W, Gibson GC, Moore E, Silva R, Biggerstaff M, Johanssom M, Rosenfeld R, Shaman J
-  pdf: https://www.pnas.org/content/pnas/116/8/3146.full.pdf
-  doi: 10.1101/566604
-  journal: PNAS
-  volume: 116(8)
-  pages: 3146-3154
+  preprint: https://doi.org/10.1101/566604
   year: 2019
   keywords: forecasting, influenza
   github: FluSightNetwork/cdc-flusight-ensemble

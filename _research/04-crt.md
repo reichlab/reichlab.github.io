@@ -5,7 +5,7 @@ projects:
   - Kenkleinman/clusterPower
   - salauer/CARE-in-RCTs-and-obs
   - title: The ResPECT Study
-    description: A multi-site cluster-randomized trial to evaluate the comparative effectiveness of health care workers wearing surgical masks or N95 respirators to prevent respiratory infections during influenza season. The [main results from the ResPECT Study](https://doi.org/10.1001/jama.2019.11645) appeared in JAMA in 2019.
+    description: A multi-site cluster-randomized trial to evaluate the comparative effectiveness of health care workers wearing surgical masks or N95 respirators to prevent respiratory infections during influenza season. The <a href="https://doi.org/10.1001/jama.2019.11645" target="_blank">main results from the ResPECT Study</a> appeared in JAMA in 2019.
 publications: cluster-randomization
 ---
 
