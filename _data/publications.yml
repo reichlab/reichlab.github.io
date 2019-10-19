@@ -169,6 +169,7 @@
   slug: flu-ensemble-1
   authors: Reich NG, McGowan CJ, Yamana TK, Tushar A, Ray E, Osthus D, Kandula S, Brooks LC, Crawford-Crudell W, Gibson GC, Moore E, Silva R, Biggerstaff M, Johanssom M, Rosenfeld R, Shaman J
   preprint: https://doi.org/10.1101/566604
+  pdf: https://www.biorxiv.org/content/biorxiv/early/2019/03/08/566604.full-text.pdf
   year: 2019
   keywords: forecasting, influenza
   github: FluSightNetwork/cdc-flusight-ensemble
