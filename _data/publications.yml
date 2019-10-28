@@ -1,5 +1,29 @@
 #2019
 
+- title: 'The covariate-adjusted residual estimator and its use in both randomized trials and observational settings'
+  slug: covariate-adjusted
+  authors: Lauer SA, Reich NG, Balzer LB
+  preprint: https://arxiv.org/abs/1910.11397
+  pdf: https://arxiv.org/pdf/1910.11397.pdf
+  year: 2019
+  keywords: estimator 
+  abstract: >
+    We often seek to estimate the causal effect of an exposure on a particular outcome in both randomized
+    and observational settings. One such estimation method is the covariate-adjusted residuals estimator,
+    which was designed for individually or cluster randomized trials. In this manuscript, we study the
+    properties of this estimator and develop a new estimator that utilizes both covariate adjustment
+    and inverse probability weighting. We support our theoretical results with a simulation study and
+    an application in an infectious disease setting. The covariate-adjusted residuals estimator is an
+    efficient and unbiased estimator of the average treatment effect in randomized trials; however, it is
+    not guaranteed to be unbiased in observational studies. Our novel estimator, the covariate-adjusted
+    residuals estimator with inverse probability weighting, is unbiased in randomized and observational
+    settings, under a reasonable set of assumptions. Furthermore, when these assumptions hold, it provides
+    efficiency gains over inverse probability weighting in observational studies. The covariate-adjusted
+    residuals estimator is valid for use in randomized trials, but should not be used in observational
+    studies. The covariate-adjusted residuals estimator with inverse probability weighting provides an
+    efficient alternative for use in randomized and observational settings.
+
+
 - title: 'Opioids in the USA: Disparities in addiction and incarceration'
   slug: opioids-disparities
   authors: Kazemi A, Kennedy C, Silverman G, Reich NG
