@@ -6,7 +6,7 @@
   preprint: https://arxiv.org/abs/1910.11397
   pdf: https://arxiv.org/pdf/1910.11397.pdf
   year: 2019
-  keywords: estimator 
+  keywords: cluster-randomization
   abstract: >
     We often seek to estimate the causal effect of an exposure on a particular outcome in both randomized
     and observational settings. One such estimation method is the covariate-adjusted residuals estimator,
