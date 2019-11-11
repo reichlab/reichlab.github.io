@@ -1,5 +1,37 @@
 #2019
 
+- title: 'An open challenge to advance probabilistic forecasting for dengue epidemics'
+  slug: challenge-probabilistic
+  authors: Johansson MA et al.
+  pdf: https://www.pnas.org/content/pnas/early/2019/11/05/1909865116.full.pdf
+  doi: 10.1073/pnas.1909865116
+  journal: PNAS
+  year: 2019
+  keywords: forecasting, dengue
+  github: FluSightNetwork/cdc-flusight-ensemble
+  abstract: >
+    A wide range of research has promised new tools for forecasting infectious disease 
+    dynamics, but little of that research is currently being applied in practice, because tools do 
+    not address key public health needs, do not produce probabilistic forecasts, have not been 
+    evaluated on external data, or do not provide sufficient forecast skill to be useful. We 
+    developed an open collaborative forecasting challenge to assess probabilistic forecasts for 
+    seasonal epidemics of dengue, a major global public health problem. Sixteen teams used a 
+    variety of methods and data to generate forecasts for 3 epidemiological targets (peak 
+    incidence, the week of the peak, and total incidence) over 8 dengue seasons in Iquitos, 
+    Peru and San Juan, Puerto Rico. Forecast skill was highly variable across teams and 
+    targets. While numerous forecasts showed high skill for midseason situational awareness, 
+    early season skill was low, and skill was generally lowest for high incidence seasons, those 
+    for which forecasts would be most valuable. A comparison of modeling approaches 
+    revealed that average forecast skill was lower for models including biologically meaningful 
+    data and mechanisms and that both multimodel and multiteam ensemble forecasts 
+    consistently outperformed individual model forecasts. Leveraging these insights, data, and 
+    the forecasting framework will be critical to improve forecast skill and the application of 
+    forecasts in real time for epidemic preparedness and response. Moreover, key components 
+    of this project—integration with public health needs, a common forecasting framework, 
+    shared and standardized data, and open participation—can help advance infectious 
+    disease forecasting beyond dengue.
+
+
 - title: 'The covariate-adjusted residual estimator and its use in both randomized trials and observational settings'
   slug: covariate-adjusted
   authors: Lauer SA, Reich NG, Balzer LB
