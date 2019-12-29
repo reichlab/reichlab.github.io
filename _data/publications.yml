@@ -1,5 +1,27 @@
 #2019
 
+- title: 'Aggregating predictions from experts: a scoping review of statistical methods, experiments, and applications'
+  slug: aggregate-prediction
+  authors: McAndrew T, Wattanachit N, Gibson GC, Reich NG
+  preprint: https://arxiv.org/abs/1912.11409
+  pdf: https://arxiv.org/pdf/1912.11409.pdf
+  year: 2019
+  keywords: forecasting
+  abstract: >
+    Forecasts support decision making in a variety of applications. Statistical mod-
+    els can produce accurate forecasts given abundant training data, but when data 
+    is sparse, rapidly changing, or unavailable, statistical models may not be able to 
+    make accurate predictions. Expert judgmental forecasts-models that combine 
+    expert-generated predictions into a single forecast-can make predictions when 
+    training data is limited by relying on expert intuition to take the place of con-
+    crete training data. Researchers have proposed a wide array of algorithms to 
+    combine expert predictions into a single forecast, but there is no consensus on 
+    an optimal aggregation model. This scoping review surveyed recent literature 
+    on aggregating expert-elicited predictions. We gathered common terminology, 
+    aggregation methods, and forecasting performance metrics, and offer guidance 
+    to strengthen future work that is growing at an accelerated pace.
+
+
 - title: 'Accuracy of real-time multi-model ensemble forecasts for seasonal influenza in the U.S.'
   slug: flu-ensemble-1
   authors: Reich NG, McGowan CJ, Yamana TK, Tushar A, Ray E, Osthus D, Kandula S, Brooks LC, Crawford-Crudell W, Gibson GC, Moore E, Silva R, Biggerstaff M, Johanssom M, Rosenfeld R, Shaman J
