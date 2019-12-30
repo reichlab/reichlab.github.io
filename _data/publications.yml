@@ -1,5 +1,25 @@
 #2019
 
+- title: 'Improving Probabilistic Infectious Disease Forecasting Through Coherence'
+  slug: improving-probabilistic-coherence
+  authors: Gibson GC, Moran K, Reich NG, Osthus D
+  preprint: https://www.biorxiv.org/content/10.1101/2019.12.27.889212v1
+  pdf: https://www.biorxiv.org/content/10.1101/2019.12.27.889212v1.full.pdf
+  year: 2019
+  doi: 10.1101/2019.12.27.889212
+  keywords: forecasting, influenza
+  abstract: >
+    With an estimated $10 . 4 billion in medical costs and 31.4 million outpatient visits each year, influenza 
+    poses a serious burden of disease in the United States. To provide insights and advance warning into the spread 
+    of influenza, the U.S. Centers for Disease Control and Prevention (CDC) runs a challenge for forecasting 
+    weighted influenza-like illness (wILI) at the national and regional level. Many models produce independent 
+    forecasts for each geographical unit, ignoring the constraint that the national wILI is a weighted sum of regional 
+    wILI, where the weights correspond to the population size of the region. We propose a novel algorithm that transforms 
+    a set of independent forecast distributions to obey this constraint, which we refer to as probabilistically 
+    coherent. Enforcing probabilistic coherence led to an increase in forecast skill for 90% of the models we tested 
+    over multiple flu seasons, highlighting the importance of respecting the forecasting system's geographical hierarchy.
+
+
 - title: 'Aggregating predictions from experts: a scoping review of statistical methods, experiments, and applications'
   slug: aggregate-prediction
   authors: McAndrew T, Wattanachit N, Gibson GC, Reich NG
@@ -8,13 +28,13 @@
   year: 2019
   keywords: forecasting
   abstract: >
-    Forecasts support decision making in a variety of applications. Statistical mod-
-    els can produce accurate forecasts given abundant training data, but when data 
+    Forecasts support decision making in a variety of applications. Statistical models 
+    can produce accurate forecasts given abundant training data, but when data 
     is sparse, rapidly changing, or unavailable, statistical models may not be able to 
     make accurate predictions. Expert judgmental forecasts-models that combine 
     expert-generated predictions into a single forecast-can make predictions when 
-    training data is limited by relying on expert intuition to take the place of con-
-    crete training data. Researchers have proposed a wide array of algorithms to 
+    training data is limited by relying on expert intuition to take the place of concrete 
+    training data. Researchers have proposed a wide array of algorithms to 
     combine expert predictions into a single forecast, but there is no consensus on 
     an optimal aggregation model. This scoping review surveyed recent literature 
     on aggregating expert-elicited predictions. We gathered common terminology, 
