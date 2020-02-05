@@ -1,3 +1,30 @@
+#2020
+
+- title: 'Evaluating the ALERT algorithm for local outbreak onset detection in seasonal infectious disease surveillance data'
+  slug: alert-onset-2
+  authors: Brown AC, Lauer SA, Robinson C, Nyquist C, Rao S, Reich NG
+  preprint: https://www.biorxiv.org/content/10.1101/664433v1
+  pdf: https://www.biorxiv.org/content/biorxiv/early/2019/06/14/664433.full.pdf
+  doi: 10.1002/sim.8467
+  journal: Statistics in Medicine
+  year: 2020
+  keywords: forecasting, influenza
+  github: reichlab/ALERT
+  abstract: >
+    Estimation of epidemic onset timing is an important component of controlling the spread of 
+    seasonal infectious diseases within community healthcare sites. The Above Local Elevated 
+    Respiratory Illness Threshold (ALERT) algorithm uses a threshold-based approach to suggest 
+    incidence levels that historically have indicated the transition from endemic to epidemic 
+    activity. In this paper, we present the first detailed overview of the computational approach 
+    underlying the algorithm. In the motivating example section, we evaluate the performance of 
+    ALERT in determining the onset of increased respiratory virus incidence using laboratory 
+    testing data from the Children’s Hospital of Colorado. At a threshold of 10 cases per week, 
+    ALERT-selected intervention periods performed better than the observed hospital site periods 
+    (2004/2005-2012/2013) and a CUSUM method. Additional simulation studies show how data properties
+    may effect ALERT performance on novel data. We found that the conditions under which ALERT showed 
+    ideal performance generally included high seasonality and low off-season incidence.
+
+
 #2019
 
 - title: 'Improving Probabilistic Infectious Disease Forecasting Through Coherence'
@@ -275,31 +302,6 @@
     integrating these analyses into public health decision-making has been challenging.
      We recommend establishing ‘outbreak science’ as an inter-disciplinary 
      field to improve applied epidemic modeling. 
-
-
-- title: 'Evaluating the ALERT algorithm for local outbreak onset detection in seasonal infectious disease surveillance data'
-  slug: alert-onset-2
-  authors: Brown AC, Lauer SA, Robinson C, Nyquist C, Rao S, Reich NG
-  preprint: https://www.biorxiv.org/content/10.1101/664433v1
-  pdf: https://www.biorxiv.org/content/biorxiv/early/2019/06/14/664433.full.pdf
-  doi: 10.1002/sim.8467
-  journal: Statistics in Medicine
-  year: 2020
-  keywords: forecasting, influenza
-  github: reichlab/ALERT
-  abstract: >
-    Estimation of epidemic onset timing is an important component of controlling the spread of 
-    seasonal infectious diseases within community healthcare sites. The Above Local Elevated 
-    Respiratory Illness Threshold (ALERT) algorithm uses a threshold-based approach to suggest 
-    incidence levels that historically have indicated the transition from endemic to epidemic 
-    activity. In this paper, we present the first detailed overview of the computational approach 
-    underlying the algorithm. In the motivating example section, we evaluate the performance of 
-    ALERT in determining the onset of increased respiratory virus incidence using laboratory 
-    testing data from the Children’s Hospital of Colorado. At a threshold of 10 cases per week, 
-    ALERT-selected intervention periods performed better than the observed hospital site periods 
-    (2004/2005-2012/2013) and a CUSUM method. Additional simulation studies show how data properties
-    may effect ALERT performance on novel data. We found that the conditions under which ALERT showed 
-    ideal performance generally included high seasonality and low off-season incidence.
 
     
 - title: 'A collaborative multiyear, multimodel assessment of seasonal influenza forecasting in the United States'
@@ -723,3 +725,58 @@
     clinical trials. More research is needed to develop standardized and
     recommended methodology for cluster-randomized crossover studies.
 
+
+- title: 'Estimating Absolute and Relative Case Fatality Ratios from Infectious Disease Surveillance Data'
+  slug: case-fatality-ratio
+  authors: Reich NG, Lessler J, Cummings DAT, Brookmeyer R
+  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4540071/pdf/nihms-636908.pdf
+  journal: Biometrics
+  volume: 68(2)
+  pages: 598-606
+  doi: 10.1111/j.1541-0420.2011.01709.x
+  year: 2012
+  keywords: influenza, case-fatality
+  abstract: >
+    Knowing which populations are most at risk for severe outcomes from an 
+    emerging infectious disease is crucial in deciding the optimal allocation of resources 
+    during an outbreak response. The case fatality ratio (CFR) is the fraction of cases that die 
+    after contracting a disease. The relative CFR is the factor by which the case fatality in one 
+    group is greater or less than that in a second group. Incomplete reporting of the number 
+    of infected individuals, both recovered and dead, can lead to biased estimates of the CFR. 
+    We define conditions under which the CFR and the relative CFR are identifiable. 
+    Furthermore, we propose an estimator for the relative CFR that controls for time‐varying 
+    reporting rates. We generalize our methods to account for elapsed time between 
+    infection and death. To demonstrate the new methodology, we use data from the 1918 
+    influenza pandemic to estimate relative CFRs between counties in Maryland. A simulation 
+    study evaluates the performance of the methods in outbreak scenarios. An R software 
+    package makes the methods and data presented here freely available. Our work 
+    highlights the limitations and challenges associated with estimating absolute and relative 
+    CFRs in practice. However, in certain situations, the methods presented here can help 
+    identify vulnerable subpopulations early in an outbreak of an emerging pathogen such as 
+    pandemic influenza.
+
+
+#2009
+
+- title: 'Estimating incubation period distributions with coarse data.'
+  slug: reich-estimate-incubation
+  authors: Reich NG, Lessler J, Cummings DAT, Brookmeyer R
+  doi: 10.1002/sim.3659
+  journal: Statistics in Medicine
+  volume: 28(22)
+  pages: 2769-84
+  year: 2009
+  keywords: influenza, incubation-period
+  abstract: >
+    The incubation period, the time between infection and disease onset, is important in the surveillance and 
+    control of infectious diseases but is often coarsely observed. Coarse data arises because the time of infection, 
+    the time of disease onset or both are not known precisely. Accurate estimates of an incubation period 
+    distribution are useful in real-time outbreak investigations and in modeling public health interventions. 
+    We compare two methods of estimating such distributions. The first method represents the data as doubly 
+    interval-censored. The second introduces a data reduction technique that makes the computation more 
+    tractable. In a simulation study, the methods perform similarly when estimating the median, but the first 
+    method yields more reliable estimates of the distributional tails. We conduct a sensitivity analysis of the 
+    two methods to violations of model assumption and we apply these methods to historical incubation period 
+    data on influenza A and respiratory syncytial virus. The analysis of reduced data is less computationally 
+    intensive and performs well for estimating the median under a wide range of conditions. However for 
+    estimation of the tails of the distribution, the doubly interval-censored analysis is the recommended procedure.
