@@ -1,7 +1,0 @@
-I"�<p>In a feat of focused coding jujitsu, Krzysztof successfully put together a pull-request to the base development version of <a href="http://mc-stan.org/">STAN</a>. 
-<!--more-->
-He incorporated into STAN some of his dissertation work that required sparse matrix multiplication. Here’s snippet from the Lab’s favorite comment on <a href="https://github.com/stan-dev/stan/pull/1605">the pull request</a>:</p>
-
-<p><img src="/images/blog/stan-comment.png" alt="alt text" title="merge before it breaks" /></p>
-
-:ET
