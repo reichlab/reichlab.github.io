@@ -1,0 +1,26 @@
+I"Ç<p>Want to learn how to do some forecasting with R? Hereâ€™s your chance to try out a new time-series forecasting package for R whose aim is to standardize and simplify the process of making and evaluating forecasts!</p>
+
+<p>The <a href="http://reichlab.io/">Reich Lab</a> uses an R package called <code class="highlighter-rouge">ForecastFramework</code> to implement forecasting models. There are many benefits to using <code class="highlighter-rouge">ForecastFramework</code> in a forecasting pipeline, including: standardized and simplified rapid model development and performance evaluation. <code class="highlighter-rouge">ForecastFramework</code> was created by Joshua Kaminsky of the <a href="http://www.iddynamics.jhsph.edu/">Infectious Disease Dynamics Group at Johns Hopkins University</a>. The package is open source and can be found <a href="https://github.com/HopkinsIDD/ForecastFramework">on Github</a>.</p>
+
+<p>After watching students in the lab working on learning how to use <code class="highlighter-rouge">ForecastFramework</code>, I decided to create a step-by-step demonstration of the primary use cases of <code class="highlighter-rouge">ForecastFramework</code>. The complete demo lives at <a href="http://reichlab.io/forecast-framework-demos/">reichlab.io/forecast-framework-demos/</a>.</p>
+
+<p><a href="https://reichlab.github.io/flusight/">
+    <img class="img-responsive" width="700" src="/images/blog/ff-demo.PNG" />
+</a></p>
+
+<!--more-->
+
+<p>As the resident CS grad-student programmer in the lab, I wanted to write these demonstrations to make <code class="highlighter-rouge">ForecastFramework</code> accessible. However, the demo only scrapes the surface of the many way that we (and others, we hope) will use  <code class="highlighter-rouge">ForecastFramework</code>. We have incorporated <code class="highlighter-rouge">ForecastFramework</code> into our workflow for generating <a href="https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0004761">real-time dengue forecasts for the Ministry of Public Health in Thailand</a>, and students have found it useful in generating small model comparison projects.</p>
+
+<p><a href="http://reichlab.io/forecast-framework-demos/">The online demo</a> is separated into five sections. Each section will build off knowledge from the previous and will gradually increase in difficulty. However, the demos work as standalone scripts as well. The demos are categorized as the following:</p>
+<ol>
+  <li><a href="http://reichlab.io/forecast-framework-demos/#the-data-1"><strong>The Data</strong></a> - This section will examine the raw data used in the <code class="highlighter-rouge">ForecastFramework</code> models ahead.</li>
+  <li><a href="http://reichlab.io/forecast-framework-demos/#defining-inputs-incidence-matrix-1"><strong>Defining Inputs</strong></a> - This section will define what an <code class="highlighter-rouge">IncidenceMatrix</code> is, show how to format your data to be used as an <code class="highlighter-rouge">IncidenceMatrix</code>, and exemplify functions of the <code class="highlighter-rouge">IncidenceMatrix</code> class.</li>
+  <li><a href="http://reichlab.io/forecast-framework-demos/#fitting-and-forecasting"><strong>Fitting and Forecasting</strong></a> - This section will focus on fitting data to a SARIMA model with <code class="highlighter-rouge">ForecastFramework</code>, using the <a href="https://github.com/reichlab/sarimaTD"><code class="highlighter-rouge">sarimaTD</code> package</a> developed by <a href="http://www.mtholyoke.edu/~eray/">Evan Ray</a>.</li>
+  <li><a href="http://reichlab.io/forecast-framework-demos/#evaluating-multiple-models"><strong>Evaluating Complex Models</strong></a> - This section will demonstrate evaluation metrics and techniques by comparing two complex models in <code class="highlighter-rouge">ForecastFramework</code>.</li>
+  <li><a href="http://reichlab.io/forecast-framework-demos/#creating-your-own-model"><strong>Creating your own Model</strong></a> - This section will use object-oriented R programming demonstrate how to create your own model with <code class="highlighter-rouge">ForecastFramework</code>.</li>
+</ol>
+
+<p><a href="http://reichlab.io/forecast-framework-demos/">Try using <code class="highlighter-rouge">ForecastFramework</code> today</a>! I hope you find the tutorials interesting and instructive. If you have any questions or find any bugs, please let me know! I can be found at khouse [at] umass.edu or through <a href="http://katie-house.com/">my personal website</a>.</p>
+
+:ET
