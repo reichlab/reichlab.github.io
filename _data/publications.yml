@@ -4,23 +4,106 @@
   slug: lauer-2019-ncov-incubation
   authors: Lauer SA, Grantz KH, Bi Q, Jones FK, Zheng Q, Meredith H, Azman AS, Reich NG, Lessler J
   preprint: https://www.medrxiv.org/content/10.1101/2020.02.02.20020016v1
-  pdf: https://www.medrxiv.org/content/10.1101/2020.02.02.20020016v1.full.pdf
+  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7081172/pdf/aim-olf-M200504.pdf
   year: 2020
-  doi: 10.1101/2020.02.02.20020016
+  journal: Annals of Internal Medicine
+  doi: 10.7326/M20-0504
   keywords: incubation-period
   abstract: >
-    A novel human coronavirus (2019-nCoV) was identified in China in December, 2019. There is
-    limited support for many of its key epidemiologic features, including the incubation period, which
-    has important implications for surveillance and control activities. Here, we use data from public
-    reports of 101 confirmed cases in 38 provinces, regions, and countries outside of Wuhan (Hubei
-    province, China) with identifiable exposure windows and known dates of symptom onset to
-    estimate the incubation period of 2019-nCoV. We estimate the median incubation period of
-    2019-nCoV to be 5.2 days (95% CI: 4.4, 6.0), and 97.5% of those who develop symptoms will
-    do so within 10.5 days (95% CI: 7.3, 15.3) of infection. These estimates imply that, under
-    conservative assumptions, 64 out of every 10,000 cases will develop symptoms after 14 days of
-    active monitoring or quarantine. Whether this risk is acceptable depends on the underlying risk
-    of infection and consequences of missed cases. The estimates presented here can be used to
-    inform policy in multiple contexts based on these judgments.
+    Background: A novel human coronavirus, severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), was identified in
+    China in December 2019. There is limited support for many of its
+    key epidemiologic features, including the incubation period for
+    clinical disease (coronavirus disease 2019 [COVID-19]), which
+    has important implications for surveillance and control activities.
+    Objective: To estimate the length of the incubation period of
+    COVID-19 and describe its public health implications.
+    Design: Pooled analysis of confirmed COVID-19 cases reported
+    between 4 January 2020 and 24 February 2020.
+    Setting: News reports and press releases from 50 provinces,
+    regions, and countries outside Wuhan, Hubei province, China.
+    Participants: Persons with confirmed SARS-CoV-2 infection outside Hubei province, China.
+    Measurements: Patient demographic characteristics and dates
+    and times of possible exposure, symptom onset, fever onset,
+    and hospitalization.
+    Results: There were 181 confirmed cases with identifiable exposure and symptom onset windows to estimate the incubation
+    period of COVID-19. The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days), and 97.5% of
+    those who develop symptoms will do so within 11.5 days (CI, 8.2
+    to 15.6 days) of infection. These estimates imply that, under conservative assumptions, 101 out of every 10 000 cases (99th percentile, 482) will develop symptoms after 14 days of active monitoring or quarantine.
+    Limitation: Publicly reported cases may overrepresent severe
+    cases, the incubation period for which may differ from that of
+    mild cases.
+    Conclusion: This work provides additional evidence for a median incubation period for COVID-19 of approximately 5 days,
+    similar to SARS. Our results support current proposals for the
+    length of quarantine or active monitoring of persons potentially
+    exposed to SARS-CoV-2, although longer monitoring periods
+    might be justified in extreme cases.
+    Primary Funding Source: U.S. Centers for Disease Control and
+    Prevention, National Institute of Allergy and Infectious Diseases,
+    National Institute of General Medical Sciences, and Alexander
+    von Humboldt Foundation.
+
+
+- title: 'Coordinating the real‐time use of global influenza activity data for better public health planning'
+  slug: biggerstaff-global-influenza
+  authors: Biggerstaff M et al.
+  pdf: https://onlinelibrary.wiley.com/doi/pdf/10.1111/irv.12705
+  year: 2020
+  journal: Influenza and Other Respiratory Viruses
+  volume: 14(2)
+  pages: 105-110
+  doi: 10.1111/irv.12705
+  keywords: influenza
+  abstract: >
+    Health planners from global to local levels must anticipate year‐to‐year and week‐to‐
+    week variation in seasonal influenza activity when planning for and responding to 
+    epidemics to mitigate their impact. To help with this, countries routinely collect incidence 
+    of mild and severe respiratory illness and virologic data on circulating subtypes and use 
+    these data for situational awareness, burden of disease estimates and severity 
+    assessments. Advanced analytics and modelling are increasingly used to aid planning 
+    and response activities by describing key features of influenza activity for a given location 
+    and generating forecasts that can be translated to useful actions such as enhanced risk 
+    communications, and informing clinical supply chains. Here, we describe the formation of 
+    the Influenza Incidence Analytics Group (IIAG), a coordinated global effort to apply 
+    advanced analytics and modelling to public influenza data, both epidemiological and 
+    virologic, in real‐time and thus provide additional insights to countries who provide 
+    routine surveillance data to WHO. Our objectives are to systematically increase the value 
+    of data to health planners by applying advanced analytics and forecasting and for results 
+    to be immediately reproducible and deployable using an open repository of data and 
+    code. We expect the resources we develop and the associated community to provide an 
+    attractive option for the open analysis of key epidemiological data during seasonal 
+    epidemics and the early stages of an influenza pandemic.
+
+
+- title: 'FluSense: A Contactless Syndromic Surveillance Platform for Influenza-Like Illness in Hospital Waiting Areas'
+  slug: hossain-flusense
+  authors: Hossain FA, Lover AA, Corey GA, Reich NG, Rahman T
+  pdf: https://dl.acm.org/doi/pdf/10.1145/3381014
+  year: 2020
+  journal: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies
+  volume: 4(1)
+  pages: 1
+  doi: 10.1145/3381014
+  keywords: influenza, software
+  abstract: >
+    We developed a contactless syndromic surveillance platform FluSense that aims to 
+    expand the current paradigm of influenza-like illness (ILI) surveillance by capturing 
+    crowd-level bio-clinical signals directly related to physical symptoms of ILI from 
+    hospital waiting areas in an unobtrusive and privacy-sensitive manner. FluSense 
+    consists of a novel edge-computing sensor system, models and data processing 
+    pipelines to track crowd behaviors and influenza-related indicators, such as coughs, 
+    and to predict daily ILI and laboratory-confirmed influenza caseloads. FluSense uses 
+    a microphone array and a thermal camera along with a neural computing engine to 
+    passively and continuously characterize speech and cough sounds along with changes 
+    in crowd density on the edge in a real-time manner. We conducted an IRB-approved 7 
+    month-long study from December 10, 2018 to July 12, 2019 where we deployed 
+    FluSense in four public waiting areas within the hospital of a large university. During 
+    this period, the FluSense platform collected and analyzed more than 350,000 waiting 
+    room thermal images and 21 million non-speech audio samples from the hospital 
+    waiting areas. FluSense can accurately predict daily patient counts with a Pearson 
+    correlation coefficient of 0.95. We also compared signals from FluSense with the gold 
+    standard laboratory-confirmed influenza case data obtained in the same facility and 
+    found that our sensor-based features are strongly correlated with laboratory-
+    confirmed influenza trends.
 
 
 - title: 'Evaluating the ALERT algorithm for local outbreak onset detection in seasonal infectious disease surveillance data'
