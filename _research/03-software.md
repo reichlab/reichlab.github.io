@@ -2,13 +2,15 @@
 title: Software
 image: /images/research/flusight-screenshot.png
 projects:
+  - reichlab/d3-foresight
+  - reichlab/forecast-repository
   - reichlab/zoltr
   - reichlab/zoltpy
-  - reichlab/forecast-repository
   - nickreich/coarseDataTools
+  - reichlab/cdcForecastUtils
   - reichlab/sarimaTD
   - reichlab/kcde
-  - reichlab/d3-foresight
+  - reichlab/activemonitr
   - reichlab/pymmwr
   - reichlab/ALERT
   - Kenkleinman/clusterPower

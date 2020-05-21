@@ -122,18 +122,15 @@
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/matthewcornell"
       
+      
+# Alumni Section
+
 - name: Justin Stott
-  role: Undergrad Program Assistant
+  role: Undergrad RA (2019-2020)
   description: |
-    Justin is a junior double major in Biology and Informatics.
-    He is interested in algorithms, statistics, and data collection.
-    When not busy with his studies, Justin enjoys social and competitive
-    Ballroom Dance and Sailing on the respective UMass teams.
   image: images/people/justinstott.jpg
   links: []
       
-      
-# Alumni Section
 
 - name: Stephen Lauer
   role: PhD Student (2014-2019)
