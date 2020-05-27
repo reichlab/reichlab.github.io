@@ -1,5 +1,56 @@
 #2020
 
+- title: 'Estimating the early death toll of COVID-19 in the United States'
+  slug: weinberger-estimate-death
+  authors: Weinberger D, Cohen T, Crawford F, Mostashari F, Olson D, Pitzer VE, Reich NG, Russi M, Simonsen L, Watkins A, Viboud C
+  preprint: https://www.medrxiv.org/content/10.1101/2020.04.15.20066431v2
+  pdf: https://www.medrxiv.org/content/10.1101/2020.04.15.20066431v2.full.pdf
+  year: 2020
+  doi: 10.1101/2020.04.15.20066431
+  keywords: covid-19
+  abstract: >
+    Background: Efforts to track the severity and public health impact of the novel coronavirus, COVID-19, in the
+    US have been hampered by testing issues, reporting lags, and inconsistency between states.
+    Evaluating unexplained increases in deaths attributed to broad outcomes, such as pneumonia and
+    influenza (P&I) or all causes, can provide a more complete and consistent picture of the burden
+    caused by COVID-19. 
+    Methods: We evaluated increases in the occurrence of deaths due to P&I above a seasonal baseline
+    (adjusted for influenza activity) or due to any cause across the United States in February and
+    March 2020. These estimates are compared with reported deaths due to COVID-19 and with
+    testing data.
+    Results: There were notable increases in the rate of death due to P&I in February and March 2020. In a
+    number of states, these deaths pre-dated increases in COVID-19 testing rates and were not
+    counted in official records as related to COVID-19. There was substantial variability between
+    states in the discrepancy between reported rates of death due to COVID-19 and the estimated
+    burden of excess deaths due to P&I. The increase in all-cause deaths in New York and New
+    Jersey is 1.5-3 times higher than the official tally of COVID-19 confirmed deaths or the
+    estimated excess death due to P&I. 
+    Conclusion: Excess P&I deaths provide a conservative estimate of COVID-19 burden and indicate that
+    COVID-19-related deaths are missed in locations with inadequate testing or intense pandemic
+    activity.
+
+
+- title: 'Evaluating epidemic forecasts in an interval format'
+  slug: bracher-interval-format
+  authors: Bracher J, Ray EL, Gneiting T, Reich NG
+  preprint: https://arxiv.org/abs/2005.12881
+  pdf: https://arxiv.org/pdf/2005.12881.pdf
+  year: 2020
+  keywords: forecasting, covid-19
+  abstract: >
+    For practical reasons, many forecasts of case, hospitalization and death counts in the context 
+    of the current COVID-19 pandemic are issued in the form of central predictive intervals at various 
+    levels. This is also the case for the forecasts collected in the COVID-19 Forecast Hub run by the 
+    UMass-Amherst Influenza Forecasting Center of Excellence. Forecast evaluation metrics like the 
+    logarithmic score, which has been applied in several infectious disease forecasting challenges, 
+    are then not available as they require full predictive distributions. This note provides an overview 
+    of how established methods for the evaluation of quantile and interval forecasts can be applied to 
+    epidemic forecasts. Specifically, we discuss the computation and interpretation of the weighted 
+    interval score, which is a proper score that approximates the continuous ranked probability score. 
+    It can be interpreted as a generalization of the absolute error to probabilistic forecasts and allows 
+    for a simple decomposition into a measure of sharpness and penalties for over- and underprediction.
+
+
 - title: 'The incubation period of 2019-nCoV from publicly reported confirmed cases: estimation and application'
   slug: lauer-2019-ncov-incubation
   authors: Lauer SA, Grantz KH, Bi Q, Jones FK, Zheng Q, Meredith H, Azman AS, Reich NG, Lessler J
@@ -8,7 +59,7 @@
   year: 2020
   journal: Annals of Internal Medicine
   doi: 10.7326/M20-0504
-  keywords: incubation-period
+  keywords: incubation-period, covid-19
   abstract: >
     Background: A novel human coronavirus, severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), was identified in
     China in December 2019. There is limited support for many of its
