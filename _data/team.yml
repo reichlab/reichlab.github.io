@@ -121,6 +121,18 @@
       url: "http://www.matthewcornell.org"
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/matthewcornell"
+
+- name: Abdul Hannan Kanji
+  role: MS Student
+  description: |
+    Abdul is an MS student in Computer Science at UMass Amherst. He is interested in Machine Learning 
+    with an emphasis on Deep Learning and fairness in AI. 
+  image: /images/people/abdul.jpg
+  links:
+    - name: flaticon-github-1
+      url: "https://github.com/hannanabdul55"
+    - name: flaticon-laptop-1
+      url: "https://abdulhannan.in"
       
       
 # Alumni Section
