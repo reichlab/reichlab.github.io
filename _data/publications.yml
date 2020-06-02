@@ -1,5 +1,30 @@
 #2020
 
+- title: 'Infectious Disease Forecasting for Public Health'
+  slug: lauer-public-health
+  authors: Lauer SA, Brown AC, Reich NG
+  preprint: https://arxiv.org/abs/2006.00073
+  pdf: https://arxiv.org/pdf/2006.00073.pdf
+  year: 2020
+  keywords: forecasting
+  abstract: >
+    Forecasting transmission of infectious diseases, especially for vector-borne diseases, poses unique challenges 
+    for researchers. Behaviors of and interactions between viruses, vectors, hosts, and the environment each play 
+    a part in determining the transmission of a disease. Public health surveillance systems and other sources provide 
+    valuable data that can be used to accurately forecast disease incidence. However, many aspects of common infectious 
+    disease surveillance data are imperfect: cases may be reported with a delay or in some cases not at all, data on 
+    vectors may not be available, and case data may not be available at high geographical or temporal resolution. In the 
+    face of these challenges, researchers must make assumptions to either account for these underlying processes in a 
+    mechanistic model or to justify their exclusion altogether in a statistical model. Whether a model is mechanistic 
+    or statistical, researchers should evaluate their model using accepted best practices from the emerging field of 
+    infectious disease forecasting while adopting conventions from other fields that have been developing forecasting 
+    methods for decades. Accounting for assumptions and properly evaluating models will allow researchers to generate 
+    forecasts that have the potential to provide valuable insights for public health officials. This chapter provides 
+    a background to the practice of forecasting in general, discusses the biological and statistical models used for 
+    infectious disease forecasting, presents technical details about making and evaluating forecasting models, and 
+    explores the issues in communicating forecasting results in a public health context.
+
+
 - title: 'Estimating the early death toll of COVID-19 in the United States'
   slug: weinberger-estimate-death
   authors: Weinberger D, Cohen T, Crawford F, Mostashari F, Olson D, Pitzer VE, Reich NG, Russi M, Simonsen L, Watkins A, Viboud C
