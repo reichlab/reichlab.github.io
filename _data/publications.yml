@@ -140,7 +140,7 @@
   pdf: https://www.biorxiv.org/content/10.1101/2019.12.27.889212v1.full.pdf
   year: 2019
   doi: 10.1101/2019.12.27.889212
-  keywords: forecasting, influenza
+  keywords: forecasting, influenza, flusight
   abstract: >
     With an estimated $10 . 4 billion in medical costs and 31.4 million outpatient visits each year, influenza 
     poses a serious burden of disease in the United States. To provide insights and advance warning into the spread 
@@ -185,7 +185,7 @@
   pages: e1007486
   doi: 10.1371/journal.pcbi.1007486
   year: 2019
-  keywords: forecasting, influenza
+  keywords: forecasting, influenza, flusight
   github: FluSightNetwork/cdc-flusight-ensemble
   abstract: >
     Seasonal influenza results in substantial annual morbidity and mortality in the United States and worldwide. 
@@ -220,8 +220,7 @@
   doi: 10.1073/pnas.1909865116
   journal: PNAS
   year: 2019
-  keywords: forecasting, dengue
-  github: FluSightNetwork/cdc-flusight-ensemble
+  keywords: forecasting, dengue, flusight
   abstract: >
     A wide range of research has promised new tools for forecasting infectious disease 
     dynamics, but little of that research is currently being applied in practice, because tools do 
@@ -291,7 +290,7 @@
   doi: 10.1073/pnas.1912694116
   journal: PNAS
   year: 2019
-  keywords: forecasting, influenza
+  keywords: forecasting, influenza, flusight
   github: FluSightNetwork/cdc-flusight-ensemble
   abstract: >
     Evaluating probabilistic forecasts in the context of a real-time public health surveillance 
@@ -351,7 +350,7 @@
   journal: Nature Communications
   volume: 10(3932)
   year: 2019
-  keywords: forecasting
+  keywords: forecasting, flusight
   abstract: >
     Forecasting is beginning to be integrated into decision-making processes for
     infectious disease outbreak response. We discuss how technologies could
@@ -366,7 +365,7 @@
   preprint: https://arxiv.org/abs/1908.01675
   pdf: https://arxiv.org/pdf/1908.01675.pdf
   year: 2019
-  keywords: forecasting, influenza 
+  keywords: forecasting, influenza, flusight 
   github: tomcm39/adaptively_stacking_ensembles_for_infleunza_forecasting_with_incomplete_data
   abstract: >
     Seasonal influenza infects between 10 and 50 million people in the United States every year, 
@@ -419,7 +418,7 @@
   year: 2019
   volume: 116(8)
   pages: 3146-3154
-  keywords: forecasting, influenza
+  keywords: forecasting, influenza, flusight
   github: FluSightNetwork/cdc-flusight-ensemble
   abstract: >
     Influenza infects an estimated 9 to 35 million individuals each year in the United States and is a 
@@ -447,7 +446,7 @@
   doi: 10.1038/s41598-018-36361-9
   year: 2019
   volume: 9(683)
-  keywords: forecasting, influenza
+  keywords: forecasting, influenza, flusight
   abstract: >
     Since 2013, the Centers for Disease Control and Prevention (CDC) has hosted an annual influenza season forecasting challenge. The 2015–2016 challenge consisted of weekly probabilistic forecasts of multiple targets, including fourteen models submitted by eleven teams. Forecast skill was evaluated using a modified logarithmic score. We averaged submitted forecasts into a mean ensemble model and compared them against predictions based on historical trends. Forecast skill was highest for seasonal peak intensity and short-term forecasts, while forecast skill for timing of season onset and peak week was generally low. Higher forecast skill was associated with team participation in previous influenza forecasting challenges and utilization of ensemble forecasting techniques. The mean ensemble consistently performed well and outperformed historical trend predictions. CDC and contributing teams will continue to advance influenza forecasting and work to improve the accuracy and reliability of forecasts to facilitate increased incorporation into public health response efforts.
 
@@ -479,7 +478,7 @@
   volume: 14(2)
   pages: e1005910
   year: 2018
-  keywords: forecasting, influenza
+  keywords: forecasting, influenza, flusight
   github: reichlab/adaptively-weighted-ensemble
   abstract: >
     Accurate and reliable predictions of infectious disease dynamics can be
@@ -571,7 +570,7 @@
   volume: 36
   pages: 4908-4929
   doi: 10.1002/sim.7488
-  keywords: forecasting, dengue, influenza
+  keywords: forecasting, dengue, influenza, flusight
   abstract: >
     Creating statistical models that generate accurate predictions of infectious disease incidence over multiple time points is a challenging problem whose solution could benefit public health decision makers. We develop a new approach to this problem using kernel conditional density estimation (KCDE) and copulas. We obtain predictive distributions for incidence in individual weeks using KCDE and tie those distributions together into joint distributions using copulas. This strategy enables us to create predictions for the timing of and incidence in the peak week of the season. Our implementation of KCDE incorporates two novel kernel components: a periodic component that captures seasonality in disease incidence, and a component that allows for a full parameterization of the bandwidth matrix with discrete variables. We demonstrate via simulation that a fully parameterized bandwidth matrix can be beneficial for estimating conditional densities. We apply the method to predicting dengue fever and influenza, and compare to a seasonal autoregressive integrated moving average (SARIMA) model and a previously published generalized linear model for infectious disease incidence known as HHH4. KCDE outperforms the baseline methods for predictions of dengue incidence in individual weeks. KCDE also offers more consistent performance than the baseline models for predictions of incidence in the peak week, and is comparable to the baseline models on the other prediction targets. Using the periodic kernel function led to better predictions of incidence. Our approach and extensions of it could yield improved predictions for public health decision makers, particularly in diseases with heterogeneous seasonal dynamics such as dengue fever. 
     
@@ -582,7 +581,7 @@
   slug: tushar-flusight
   year: 2017
   journal: JOSS
-  keywords: software
+  keywords: software, flusight
   volume: 2
   doi: 10.21105/joss.00231
   abstract: >
