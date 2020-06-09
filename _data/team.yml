@@ -143,6 +143,17 @@
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/martha-zorn-20015628/"
 
+- name: Ayush Khandelwal
+  role: Software Engineer
+  description: |
+    Ayush is an undergrad Computer Science major and is passionate about developing technology that can help have a positive impact on the community. In his free time he enjoys playing soccer, hiking, and watching aircraft documentaries.
+  image: /images/people/ayush.jpg
+  links:
+    - name: flaticon-linkedin-1  
+      url: "https://www.linkedin.com/in/ayushkhd"
+    - name: flaticon-github-1
+      url: "https://github.com/ayushkhd"
+
 # Alumni Section
 
 - name: Justin Stott
