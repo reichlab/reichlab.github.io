@@ -1,5 +1,25 @@
 #2020
 
+- title: 'Aggregating predictions from experts: A review of statistical methods, experiments, and applications'
+  slug: aggregate-prediction
+  authors: McAndrew T, Wattanachit N, Gibson GC, Reich NG
+  doi: 10.1002/wics.1514
+  preprint: https://arxiv.org/abs/1912.11409
+  pdf: https://arxiv.org/pdf/1912.11409.pdf
+  year: 2020
+  keywords: forecasting
+  abstract: >
+    Forecasts support decision making in a variety of applications. Statistical models can produce 
+    accurate forecasts given abundant training data, but when data is sparse or rapidly changing, 
+    statistical models may not be able to make accurate predictions. Expert judgmental forecasts—models 
+    that combine expert‐generated predictions into a single forecast—can make predictions when training 
+    data is limited by relying on human intuition. Researchers have proposed a wide array of algorithms 
+    to combine expert predictions into a single forecast, but there is no consensus on an optimal 
+    aggregation model. This review surveyed recent literature on aggregating expert‐elicited predictions. 
+    We gathered common terminology, aggregation methods, and forecasting performance metrics, and offer 
+    guidance to strengthen future work that is growing at an accelerated pace.
+
+
 - title: 'The Zoltar forecast archive: a tool to facilitate standardization and storage of interdisciplinary prediction research'
   slug: reich-zoltar-forecast
   authors: Reich NG, Cornell M, Ray EL, House K, Le K
@@ -246,28 +266,6 @@
     a set of independent forecast distributions to obey this constraint, which we refer to as probabilistically 
     coherent. Enforcing probabilistic coherence led to an increase in forecast skill for 90% of the models we tested 
     over multiple flu seasons, highlighting the importance of respecting the forecasting system's geographical hierarchy.
-
-
-- title: 'Aggregating predictions from experts: a scoping review of statistical methods, experiments, and applications'
-  slug: aggregate-prediction
-  authors: McAndrew T, Wattanachit N, Gibson GC, Reich NG
-  preprint: https://arxiv.org/abs/1912.11409
-  pdf: https://arxiv.org/pdf/1912.11409.pdf
-  year: 2019
-  keywords: forecasting
-  abstract: >
-    Forecasts support decision making in a variety of applications. Statistical models 
-    can produce accurate forecasts given abundant training data, but when data 
-    is sparse, rapidly changing, or unavailable, statistical models may not be able to 
-    make accurate predictions. Expert judgmental forecasts-models that combine 
-    expert-generated predictions into a single forecast-can make predictions when 
-    training data is limited by relying on expert intuition to take the place of concrete 
-    training data. Researchers have proposed a wide array of algorithms to 
-    combine expert predictions into a single forecast, but there is no consensus on 
-    an optimal aggregation model. This scoping review surveyed recent literature 
-    on aggregating expert-elicited predictions. We gathered common terminology, 
-    aggregation methods, and forecasting performance metrics, and offer guidance 
-    to strengthen future work that is growing at an accelerated pace.
 
 
 - title: 'Accuracy of real-time multi-model ensemble forecasts for seasonal influenza in the U.S.'
