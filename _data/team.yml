@@ -154,6 +154,14 @@
     - name: flaticon-github-1
       url: "https://github.com/ayushkhd"
 
+
+- name: Dasuni Jayawardena
+  role: Student
+  description: |
+    practice test 1
+  image: /images/people/Dasuni.jpg
+  links:[]
+  
 # Alumni Section
 
 - name: Justin Stott
