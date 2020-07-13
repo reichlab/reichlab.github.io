@@ -153,6 +153,14 @@
     - name: flaticon-linkedin-1  
       url: “https://www.linkedin.com/in/estee-cramer-48860a167/”
 
+
+- name: Dasuni Jayawardena
+  role: Student
+  description: |
+    Dasuni is an Undergrad Mathematics major with a Statistics concentration who aspires to apply mathematical and statistical techniques to help solve real-world problems. IN her free time she likes painting, listening to music and hiking.
+  image: /images/people/Dasuni.jpg
+  links:[]
+  
 # Alumni Section
 
 - name: Tom McAndrew
