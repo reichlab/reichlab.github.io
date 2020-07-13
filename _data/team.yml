@@ -153,6 +153,17 @@
       url: "https://www.linkedin.com/in/ayushkhd"
     - name: flaticon-github-1
       url: "https://github.com/ayushkhd"
+      
+- name: Estee Cramer
+  role: PhD Student
+  description: |
+    Estee is a PhD student in epidemiology. She is interested in infectious disease transmission and malaria surveillance. She received her MPH in global health from Case Western Reserve University. In her free time she enjoys traveling.
+  image: /images/people/Estee.jpg
+    links:
+    - name: flaticon-curriculum
+      url: /pdfs/people/CV_EsteeCramer_July2020.pdf
+    - name: flaticon-linkedin-1  
+      url: “https://www.linkedin.com/in/estee-cramer-48860a167/”
 
 # Alumni Section
 
