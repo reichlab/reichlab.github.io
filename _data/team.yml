@@ -159,7 +159,7 @@
   description: |
     Estee is a PhD student in epidemiology. She is interested in infectious disease transmission and malaria surveillance. She received her MPH in global health from Case Western Reserve University. In her free time she enjoys traveling.
   image: /images/people/Estee.jpg
-    links:
+  links:
     - name: flaticon-curriculum
       url: /pdfs/people/CV_EsteeCramer_July2020.pdf
     - name: flaticon-linkedin-1  
