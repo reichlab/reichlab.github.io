@@ -82,18 +82,6 @@
   image: /images/people/nutcha.jpg
   links: []
 
-- name: Katie House
-  role: Software Developer
-  description: |
-    Katie got her MS in Computer Science concentrating in Data Science from UMass Amherst. She is interested in
-    data visualization and machine learning. Outside of school, she likes to participate in hackathons and make baked goods.
-  image: /images/people/katie.jpg
-  links:
-    - name: flaticon-github-1
-      url: "https://github.com/katiehouse3"
-    - name: flaticon-laptop-1
-      url: "http://www.katie-house.com"
-
 - name: Khoa Le
   role: MS Student
   description: |
@@ -167,6 +155,26 @@
 
 # Alumni Section
 
+- name: Tom McAndrew
+  role: Postdoctoral Fellow (2018-2020)
+  description: |
+
+  type: Alumni
+  image: /images/people/tom.jpg
+  links:
+    - name: alumni_link
+      url: "http://www.thomasmcandrew.com/"
+
+- name: Katie House
+  role: Software Developer (2018-2020)
+  description: |
+
+  type: Alumni
+  image: /images/people/katie.jpg
+  links:
+    - name: alumni_link
+      url: "http://www.katie-house.com"
+      
 - name: Justin Stott
   role: Undergrad RA (2019-2020)
   description: |
