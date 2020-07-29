@@ -1,5 +1,82 @@
 #2020
 
+- title: 'Estimation of Excess Deaths Associated With the COVID-19 Pandemic in the United States, March to May 2020'
+  slug: weinberger-estimate-death
+  authors: Weinberger D, Cohen T, Crawford F, Mostashari F, Olson D, Pitzer VE, Reich NG, Russi M, Simonsen L, Watkins A, Viboud C
+  preprint: https://www.medrxiv.org/content/10.1101/2020.04.15.20066431v2
+  journal: JAMA Internal Medicine
+  year: 2020
+  doi: 10.1001/jamainternmed.2020.3391
+  keywords: covid-19
+  abstract: >
+    Importance: Efforts to track the severity and public health impact of coronavirus disease 
+    2019 (COVID-19) in the United States have been hampered by state-level differences in 
+    diagnostic test availability, differing strategies for prioritization of individuals for 
+    testing, and delays between testing and reporting. Evaluating unexplained increases in deaths 
+    due to all causes or attributed to nonspecific outcomes, such as pneumonia and influenza, can 
+    provide a more complete picture of the burden of COVID-19.
+    Objective: To estimate the burden of all deaths related to COVID-19 in the United States from March to May 2020.
+    Design, Setting, and Population: This observational study evaluated the numbers of US deaths 
+    from any cause and deaths from pneumonia, influenza, and/or COVID-19 from March 1 through 
+    May 30, 2020, using public data of the entire US population from the National Center for 
+    Health Statistics (NCHS). These numbers were compared with those from the same period of 
+    previous years. All data analyzed were accessed on June 12, 2020.
+    Main Outcomes and Measures: Increases in weekly deaths due to any cause or deaths due to 
+    pneumonia/influenza/COVID-19 above a baseline, which was adjusted for time of year, influenza 
+    activity, and reporting delays. These estimates were compared with reported deaths attributed 
+    to COVID-19 and with testing data.
+    Results: There were approximately 781 000 total deaths in the United States from March 1 to 
+    May 30, 2020, representing 122 300 (95% prediction interval, 116 800-127 000) more deaths 
+    than would typically be expected at that time of year. There were 95 235 reported deaths officially 
+    attributed to COVID-19 from March 1 to May 30, 2020. The number of excess all-cause deaths was 28% 
+    higher than the official tally of COVID-19–reported deaths during that period. In several states, 
+    these deaths occurred before increases in the availability of COVID-19 diagnostic tests and were 
+    not counted in official COVID-19 death records. There was substantial variability between states 
+    in the difference between official COVID-19 deaths and the estimated burden of excess deaths.
+    Conclusions and Relevance: Excess deaths provide an estimate of the full COVID-19 burden and 
+    indicate that official tallies likely undercount deaths due to the virus. The mortality burden 
+    and the completeness of the tallies vary markedly between states.
+
+
+- title: 'Aggregating predictions from experts: A review of statistical methods, experiments, and applications'
+  slug: aggregate-prediction
+  authors: McAndrew T, Wattanachit N, Gibson GC, Reich NG
+  doi: 10.1002/wics.1514
+  preprint: https://arxiv.org/abs/1912.11409
+  pdf: https://arxiv.org/pdf/1912.11409.pdf
+  year: 2020
+  keywords: forecasting
+  abstract: >
+    Forecasts support decision making in a variety of applications. Statistical models can produce 
+    accurate forecasts given abundant training data, but when data is sparse or rapidly changing, 
+    statistical models may not be able to make accurate predictions. Expert judgmental forecasts—models 
+    that combine expert‐generated predictions into a single forecast—can make predictions when training 
+    data is limited by relying on human intuition. Researchers have proposed a wide array of algorithms 
+    to combine expert predictions into a single forecast, but there is no consensus on an optimal 
+    aggregation model. This review surveyed recent literature on aggregating expert‐elicited predictions. 
+    We gathered common terminology, aggregation methods, and forecasting performance metrics, and offer 
+    guidance to strengthen future work that is growing at an accelerated pace.
+
+
+- title: 'The Zoltar forecast archive: a tool to facilitate standardization and storage of interdisciplinary prediction research'
+  slug: reich-zoltar-forecast
+  authors: Reich NG, Cornell M, Ray EL, House K, Le K
+  preprint: https://arxiv.org/abs/2006.03922
+  pdf: https://arxiv.org/pdf/2006.03922.pdf
+  year: 2020
+  keywords: forecasting, software
+  abstract: >
+    Forecasting has emerged as an important component of informed, data-driven decision-making in a wide array of fields. 
+    We introduce a new data model for probabilistic predictions that encompasses a wide range of forecasting settings. This 
+    framework clearly defines the constituent parts of a probabilistic forecast and proposes one approach for representing 
+    these data elements. The data model is implemented in Zoltar, a new software application that stores forecasts using the 
+    data model and provides standardized API access to the data. In one real-time case study, an instance of the Zoltar web 
+    application was used to store, provide access to, and evaluate real-time forecast data on the order of 107 rows, provided 
+    by over 20 international research teams from academia and industry making forecasts of the COVID-19 outbreak in the US. 
+    Tools and data infrastructure for probabilistic forecasts, such as those introduced here, will play an increasingly 
+    important role in ensuring that future forecasting research adheres to a strict set of rigorous and reproducible standards.
+
+
 - title: 'Infectious Disease Forecasting for Public Health'
   slug: lauer-public-health
   authors: Lauer SA, Brown AC, Reich NG
@@ -23,36 +100,6 @@
     a background to the practice of forecasting in general, discusses the biological and statistical models used for 
     infectious disease forecasting, presents technical details about making and evaluating forecasting models, and 
     explores the issues in communicating forecasting results in a public health context.
-
-
-- title: 'Estimating the early death toll of COVID-19 in the United States'
-  slug: weinberger-estimate-death
-  authors: Weinberger D, Cohen T, Crawford F, Mostashari F, Olson D, Pitzer VE, Reich NG, Russi M, Simonsen L, Watkins A, Viboud C
-  preprint: https://www.medrxiv.org/content/10.1101/2020.04.15.20066431v2
-  pdf: https://www.medrxiv.org/content/10.1101/2020.04.15.20066431v2.full.pdf
-  year: 2020
-  doi: 10.1101/2020.04.15.20066431
-  keywords: covid-19
-  abstract: >
-    Background: Efforts to track the severity and public health impact of the novel coronavirus, COVID-19, in the
-    US have been hampered by testing issues, reporting lags, and inconsistency between states.
-    Evaluating unexplained increases in deaths attributed to broad outcomes, such as pneumonia and
-    influenza (P&I) or all causes, can provide a more complete and consistent picture of the burden
-    caused by COVID-19. 
-    Methods: We evaluated increases in the occurrence of deaths due to P&I above a seasonal baseline
-    (adjusted for influenza activity) or due to any cause across the United States in February and
-    March 2020. These estimates are compared with reported deaths due to COVID-19 and with
-    testing data.
-    Results: There were notable increases in the rate of death due to P&I in February and March 2020. In a
-    number of states, these deaths pre-dated increases in COVID-19 testing rates and were not
-    counted in official records as related to COVID-19. There was substantial variability between
-    states in the discrepancy between reported rates of death due to COVID-19 and the estimated
-    burden of excess deaths due to P&I. The increase in all-cause deaths in New York and New
-    Jersey is 1.5-3 times higher than the official tally of COVID-19 confirmed deaths or the
-    estimated excess death due to P&I. 
-    Conclusion: Excess P&I deaths provide a conservative estimate of COVID-19 burden and indicate that
-    COVID-19-related deaths are missed in locations with inadequate testing or intense pandemic
-    activity.
 
 
 - title: 'Evaluating epidemic forecasts in an interval format'
@@ -227,28 +274,6 @@
     a set of independent forecast distributions to obey this constraint, which we refer to as probabilistically 
     coherent. Enforcing probabilistic coherence led to an increase in forecast skill for 90% of the models we tested 
     over multiple flu seasons, highlighting the importance of respecting the forecasting system's geographical hierarchy.
-
-
-- title: 'Aggregating predictions from experts: a scoping review of statistical methods, experiments, and applications'
-  slug: aggregate-prediction
-  authors: McAndrew T, Wattanachit N, Gibson GC, Reich NG
-  preprint: https://arxiv.org/abs/1912.11409
-  pdf: https://arxiv.org/pdf/1912.11409.pdf
-  year: 2019
-  keywords: forecasting
-  abstract: >
-    Forecasts support decision making in a variety of applications. Statistical models 
-    can produce accurate forecasts given abundant training data, but when data 
-    is sparse, rapidly changing, or unavailable, statistical models may not be able to 
-    make accurate predictions. Expert judgmental forecasts-models that combine 
-    expert-generated predictions into a single forecast-can make predictions when 
-    training data is limited by relying on expert intuition to take the place of concrete 
-    training data. Researchers have proposed a wide array of algorithms to 
-    combine expert predictions into a single forecast, but there is no consensus on 
-    an optimal aggregation model. This scoping review surveyed recent literature 
-    on aggregating expert-elicited predictions. We gathered common terminology, 
-    aggregation methods, and forecasting performance metrics, and offer guidance 
-    to strengthen future work that is growing at an accelerated pace.
 
 
 - title: 'Accuracy of real-time multi-model ensemble forecasts for seasonal influenza in the U.S.'

@@ -82,18 +82,6 @@
   image: /images/people/nutcha.jpg
   links: []
 
-- name: Katie House
-  role: Software Developer
-  description: |
-    Katie got her MS in Computer Science concentrating in Data Science from UMass Amherst. She is interested in
-    data visualization and machine learning. Outside of school, she likes to participate in hackathons and make baked goods.
-  image: /images/people/katie.jpg
-  links:
-    - name: flaticon-github-1
-      url: "https://github.com/katiehouse3"
-    - name: flaticon-laptop-1
-      url: "http://www.katie-house.com"
-
 - name: Khoa Le
   role: MS Student
   description: |
@@ -143,8 +131,58 @@
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/martha-zorn-20015628/"
 
+- name: Ayush Khandelwal
+  role: Software Engineer
+  description: |
+    Ayush is an undergrad Computer Science major and is passionate about developing technology that can help have a positive impact on the community. In his free time he enjoys playing soccer, hiking, and watching aircraft documentaries.
+  image: /images/people/ayush.jpg
+  links:
+    - name: flaticon-linkedin-1  
+      url: "https://www.linkedin.com/in/ayushkhd"
+    - name: flaticon-github-1
+      url: "https://github.com/ayushkhd"
+      
+- name: Estee Cramer
+  role: PhD Student
+  description: |
+    Estee is a PhD student in epidemiology. She is interested in infectious disease transmission and malaria surveillance. She received her MPH in global health from Case Western Reserve University. In her free time she enjoys traveling.
+  image: /images/people/Estee.jpg
+  links:
+    - name: flaticon-curriculum
+      url: /pdfs/people/CV_EsteeCramer_July2020.pdf
+    - name: flaticon-linkedin-1  
+      url: “https://www.linkedin.com/in/estee-cramer-48860a167/”
+
+
+- name: Dasuni Jayawardena
+  role: Student
+  description: |
+    Dasuni is an Undergrad Mathematics major with a Statistics concentration who aspires to apply mathematical and statistical techniques to help solve real-world problems. IN her free time she likes painting, listening to music and hiking.
+  image: /images/people/Dasuni.jpg
+  links: []
+  
 # Alumni Section
 
+- name: Tom McAndrew
+  role: Postdoctoral Fellow (2018-2020)
+  description: |
+
+  type: Alumni
+  image: /images/people/tom.jpg
+  links:
+    - name: alumni_link
+      url: "http://www.thomasmcandrew.com/"
+
+- name: Katie House
+  role: Software Developer (2018-2020)
+  description: |
+
+  type: Alumni
+  image: /images/people/katie.jpg
+  links:
+    - name: alumni_link
+      url: "http://www.katie-house.com"
+      
 - name: Justin Stott
   role: Undergrad RA (2019-2020)
   description: |
