@@ -142,6 +142,18 @@
   image: /images/people/Dasuni.JPG
   links: []
   
+- name: Serena Yijin Wang
+ role: Data Analyst
+ description: |
+   Serena graduated Magna cum laude from Mount Holyoke College. She was a double major of Computer Science and Statistics. She is very intersted in infectious disease forecasting. In her free time, she enjoys traveling and reading about Art History.
+ image: /images/people/serena.jpg
+ links:
+     - name: flaticon-github-1
+       url: "https://github.com/Serena-Wang"
+     - name: flaticon-linkedin-1
+       url: "https://www.linkedin.com/in/serena-wang-899562119/"
+
+  
 # Alumni Section
 
 - name: Tom McAndrew
