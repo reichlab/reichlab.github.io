@@ -5,6 +5,7 @@ gem "jekyll", ">=3.3.1"
 gem "html-proofer"
 gem "front_matter_parser"
 gem "kramdown"
+gem "kramdown-parser-gfm"
 gem "rake"
 gem "octokit"
 

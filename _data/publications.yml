@@ -1,5 +1,36 @@
 #2020
 
+- title: 'Ensemble Forecasts of Coronavirus Disease 2019 (COVID-19) in the U.S.'
+  slug: ray-ensemble-covid19
+  authors: Ray EL et al.
+  preprint: https://www.medrxiv.org/content/10.1101/2020.08.19.20177493v1
+  pdf: https://www.medrxiv.org/content/10.1101/2020.08.19.20177493v1.full.pdf
+  year: 2020
+  doi: 10.1101/2020.08.19.20177493
+  keywords: covid-19, forecasting
+  abstract: >
+    Background: The COVID-19 pandemic has driven demand for forecasts to guide policy and planning.
+    Previous research has suggested that combining forecasts from multiple models into a
+    single “ensemble” forecast can increase the robustness of forecasts. Here we evaluate the
+    real-time application of an open, collaborative ensemble to forecast deaths attributable to
+    COVID-19 in the U.S.
+    Methods: Beginning on April 13, 2020, we collected and combined one- to four-week ahead forecasts
+    of cumulative deaths for U.S. jurisdictions in standardized, probabilistic formats to generate
+    real-time, publicly available ensemble forecasts. We evaluated the point prediction accuracy
+    and calibration of these forecasts compared to reported deaths.
+    Results: Analysis of 2,512 ensemble forecasts made April 27 to July 20 with outcomes observed in
+    the weeks ending May 23 through July 25, 2020 revealed precise short-term forecasts, with
+    accuracy deteriorating at longer prediction horizons of up to four weeks. At all prediction
+    horizons, the prediction intervals were well calibrated with 92-96% of observations falling
+    within the rounded 95% prediction intervals.
+    Conclusions: This analysis demonstrates that real-time, publicly available ensemble forecasts issued in
+    April-July 2020 provided robust short-term predictions of reported COVID-19 deaths in the
+    United States. With the ongoing need for forecasts of impacts and resource needs for the
+    COVID-19 response, the results underscore the importance of combining multiple
+    probabilistic models and assessing forecast skill at different prediction horizons. Careful
+    development, assessment, and communication of ensemble forecasts can provide reliable
+    insight to public health decision makers. 
+
 - title: 'Estimation of Excess Deaths Associated With the COVID-19 Pandemic in the United States, March to May 2020'
   slug: weinberger-estimate-death
   authors: Weinberger D, Cohen T, Crawford F, Mostashari F, Olson D, Pitzer VE, Reich NG, Russi M, Simonsen L, Watkins A, Viboud C

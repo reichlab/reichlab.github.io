@@ -33,25 +33,6 @@
     - name: flaticon-laptop-1
       url: "http://www.mtholyoke.edu/~eray/"
 
-- name: Tom McAndrew
-  role: Postdoctoral Fellow
-  description: |
-   Tom is a Postdoctoral Fellow of Biostatistics.
-   His research advances ensemble, and judgmental, forecasting techniques applied to predicting seasonal influenza-like illness.
-   Before joining the Reich Lab, Tom spent his time as Associate Director of Biostatistics.
-   He designed novel cardiovascular clinical trials and led a team of biostatisticians.
-   Tom also enjoys spending time with his family, reading, playing the guitar, and carpentry.
-  image: /images/people/tom.jpg
-  links:
-    - name: flaticon-curriculum
-      url: /pdfs/people/mcandrewCV.pdf
-    - name: ai ai-google-scholar-square ai-2x
-      url: "https://scholar.google.com/citations?user=JFIv-bIAAAAJ&hl=en"
-    - name: flaticon-twitter-1
-      url: "https://twitter.com/tomcm39"
-    - name: flaticon-laptop-1
-      url: "http://www.thomasmcandrew.com/"
-
 - name: Xi Meng
   role: PhD Student
   description: |
@@ -158,8 +139,20 @@
   role: Student
   description: |
     Dasuni is an Undergrad Mathematics major with a Statistics concentration who aspires to apply mathematical and statistical techniques to help solve real-world problems. IN her free time she likes painting, listening to music and hiking.
-  image: /images/people/Dasuni.jpg
+  image: /images/people/Dasuni.JPG
   links: []
+  
+- name: Serena Yijin Wang
+  role: Data Analyst
+  description: |
+    Serena graduated Magna cum laude from Mount Holyoke College. She was a double major of Computer Science and Statistics. She is very intersted in infectious disease forecasting. In her free time, she enjoys traveling and reading about Art History.
+  image: /images/people/serena.jpg
+  links:
+      - name: flaticon-github-1
+        url: "https://github.com/Serena-Wang"
+      - name: flaticon-linkedin-1
+        url: "https://www.linkedin.com/in/serena-wang-899562119/"
+
   
 # Alumni Section
 
