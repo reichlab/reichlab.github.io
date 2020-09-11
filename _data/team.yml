@@ -19,10 +19,10 @@
 
 
 - name: Evan Ray
-  role: Affiliated Faculty
+  role: Research Faculty
   description: |
-    Evan is an Assistant Professor of Mathematics and Statistics at Mt Holyoke
-    College. He received his PhD in statistics from UMass-Amherst, developing
+    Evan is a Research Assistant Professor of Biostatistics at UMass-Amherst. 
+    He received his PhD in statistics from UMass-Amherst, developing
     methods to infer physical activity type and intensity from accelerometer
     data. A former post-doc in the Reich Lab, he also works on developing
     methods for predicting infectious disease outbreaks.
@@ -32,6 +32,8 @@
       url: /pdfs/people/Evan_L_Ray_CV.pdf
     - name: flaticon-laptop-1
       url: "http://www.mtholyoke.edu/~eray/"
+
+# Student section (PhD, MS, undergrad students, in order of seniority)
 
 - name: Xi Meng
   role: PhD Student
@@ -44,7 +46,6 @@
   links:
     - name: flaticon-curriculum
       url: "https://drive.google.com/file/d/0B66FkAegj6nrdlZPSXlIZm9jWDQ/view"
-
 
 - name: Graham Casey Gibson
   role: PhD Student
@@ -63,8 +64,19 @@
   image: /images/people/nutcha.jpg
   links: []
 
+- name: Estee Cramer
+  role: PhD Student
+  description: |
+    Estee is a PhD student in epidemiology. She is interested in infectious disease transmission and malaria surveillance. She received her MPH in global health from Case Western Reserve University. In her free time she enjoys traveling.
+  image: /images/people/Estee.jpg
+  links:
+    - name: flaticon-curriculum
+      url: /pdfs/people/CV_EsteeCramer_July2020.pdf
+    - name: flaticon-linkedin-1  
+      url: “https://www.linkedin.com/in/estee-cramer-48860a167/”
+
 - name: Khoa Le
-  role: MS Student
+  role: MS Student/Software Engineer
   description: |
     Khoa is an MS student in Computer Science, with a concentration in Data Science. He is interested in machine learning
     and its application in interdisciplinary fields such as computational sustainability. Besides studying, Khoa enjoys reading
@@ -75,6 +87,39 @@
       url: "https://github.com/Khoale1096"
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/khoagle/"
+
+- name: Abdul Hannan Kanji
+  role: MS Student/Software Engineer
+  description: |
+    Abdul is an MS student in Computer Science at UMass Amherst. He is interested in Machine Learning
+    with an emphasis on Deep Learning and fairness in AI.
+  image: /images/people/abdul.jpg
+  links:
+    - name: flaticon-github-1
+      url: "https://github.com/hannanabdul55"
+    - name: flaticon-laptop-1
+      url: "https://abdulhannan.in"
+
+- name: Dasuni Jayawardena
+  role: Undergraduate Student
+  description: |
+    Dasuni is an Undergrad Mathematics major with a Statistics concentration who aspires to apply mathematical and statistical techniques to help solve real-world problems. IN her free time she likes painting, listening to music and hiking.
+  image: /images/people/Dasuni.JPG
+  links: []
+
+- name: Ayush Khandelwal
+  role: Undergraduate Student/Software Engineer
+  description: |
+    Ayush is an undergrad Computer Science major and is passionate about developing technology that can help have a positive impact on the community. In his free time he enjoys playing soccer, hiking, and watching aircraft documentaries.
+  image: /images/people/ayush.jpg
+  links:
+    - name: flaticon-linkedin-1  
+      url: "https://www.linkedin.com/in/ayushkhd"
+    - name: flaticon-github-1
+      url: "https://github.com/ayushkhd"
+
+
+# Staff section
 
 - name: Matthew Cornell
   role: Software Engineer
@@ -91,18 +136,6 @@
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/matthewcornell"
 
-- name: Abdul Hannan Kanji
-  role: MS Student
-  description: |
-    Abdul is an MS student in Computer Science at UMass Amherst. He is interested in Machine Learning
-    with an emphasis on Deep Learning and fairness in AI.
-  image: /images/people/abdul.jpg
-  links:
-    - name: flaticon-github-1
-      url: "https://github.com/hannanabdul55"
-    - name: flaticon-laptop-1
-      url: "https://abdulhannan.in"
-
 - name: Martha Zorn
   role: Data analyst/Project manager
   description: |
@@ -112,36 +145,6 @@
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/martha-zorn-20015628/"
 
-- name: Ayush Khandelwal
-  role: Software Engineer
-  description: |
-    Ayush is an undergrad Computer Science major and is passionate about developing technology that can help have a positive impact on the community. In his free time he enjoys playing soccer, hiking, and watching aircraft documentaries.
-  image: /images/people/ayush.jpg
-  links:
-    - name: flaticon-linkedin-1  
-      url: "https://www.linkedin.com/in/ayushkhd"
-    - name: flaticon-github-1
-      url: "https://github.com/ayushkhd"
-      
-- name: Estee Cramer
-  role: PhD Student
-  description: |
-    Estee is a PhD student in epidemiology. She is interested in infectious disease transmission and malaria surveillance. She received her MPH in global health from Case Western Reserve University. In her free time she enjoys traveling.
-  image: /images/people/Estee.jpg
-  links:
-    - name: flaticon-curriculum
-      url: /pdfs/people/CV_EsteeCramer_July2020.pdf
-    - name: flaticon-linkedin-1  
-      url: “https://www.linkedin.com/in/estee-cramer-48860a167/”
-
-
-- name: Dasuni Jayawardena
-  role: Student
-  description: |
-    Dasuni is an Undergrad Mathematics major with a Statistics concentration who aspires to apply mathematical and statistical techniques to help solve real-world problems. IN her free time she likes painting, listening to music and hiking.
-  image: /images/people/Dasuni.JPG
-  links: []
-  
 - name: Serena Yijin Wang
   role: Data Analyst
   description: |
