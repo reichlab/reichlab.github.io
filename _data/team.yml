@@ -156,6 +156,21 @@
       - name: flaticon-linkedin-1
         url: "https://www.linkedin.com/in/serena-wang-899562119/"
 
+- name: Yuxin David Huang
+  role: Software Engineer
+  description: |
+    Yuxin is a software engineer with a mathematics background. He has a B.A. in
+    Computer Science and Mathematics from Colgate University and recently graduated
+    from UMass Amherst with a M.S. in Computer Science. In his free time he enjoys
+    watching comedy/satirical shows and Twitch streams, link-surfing on Wikipedia,
+    and playing basketball.
+  image: /images/people/yuxin.jpg
+  links:
+    - name: flaticon-github-1
+      url: "https://github.com/ydhuang28"
+    - name: flaticon-linkedin-1
+      url: "https://www.linkedin.com/in/yuxin-david-huang-aa663547/"
+
   
 # Alumni Section
 
