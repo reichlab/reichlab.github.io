@@ -1,5 +1,26 @@
 #2020
 
+- title: 'An expert judgment model to predict early stages of the COVID-19 outbreak in the United States'
+  slug: mcandrew-judgement-model
+  authors: McAndrew TC, Reich NG
+  preprint: https://www.medrxiv.org/content/10.1101/2020.09.21.20196725v1
+  pdf: https://www.medrxiv.org/content/10.1101/2020.09.21.20196725v1.full.pdf
+  year: 2020
+  doi: 10.1101/2020.09.21.20196725
+  keywords: covid-19, forecasting
+  abstract: >
+    During early stages of the COVID-19 pandemic, forecasts provided actionable information about
+    disease transmission to public health decision-makers. Between February and May 2020, experts
+    in infectious disease modeling made weekly predictions about the impact of the pandemic in the
+    U.S. We aggregated these predictions into consensus predictions. In March and April 2020,
+    experts predicted that the number of COVID-19 related deaths in the U.S. by the end of 2020
+    would be in the range of 150,000 to 250,000, with scenarios of near 1m deaths considered
+    plausible. The wide range of possible future outcomes underscored the uncertainty surrounding
+    the outbreak’s trajectory. Experts’ predictions of measurable short-term outcomes had varying
+    levels of accuracy over the surveys but showed appropriate levels of uncertainty when
+    aggregated. An expert consensus model can provide important insight early on in an emerging
+    global catastrophe.
+
 - title: 'Ensemble Forecasts of Coronavirus Disease 2019 (COVID-19) in the U.S.'
   slug: ray-ensemble-covid19
   authors: Ray EL et al.
