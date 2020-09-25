@@ -80,10 +80,10 @@
   description: |
     Ariane is a PhD student in biostatistics. She received her undergraduate degree in Mathematics from the Georgia Institute of Technology. 
     She is interested in infectious disease forecasting. In her free time she likes to play bridge (a card game). 
-  image: /images/people/Ariane.jpg
+  image: /images/people/ariane.jpg
   links:
     - name: flaticon-linkedin-1  
-      url: “https://www.linkedin.com/in/ariane-stark-82974183/”
+      url: “https://www.linkedin.com/in/arianestark/”
 
 - name: Khoa Le
   role: MS Student/Software Engineer
