@@ -1,5 +1,32 @@
 #2020
 
+- title: 'Seasonal patterns of dengue incidence in Thailand across the urban-rural gradient'
+  slug: bi-dengue-patterns
+  authors: Bi Q, Cummings DAT, Reich NG, Keegan LT, Kaminsky J, Salje H, Clapham H, Doung-ngern P, Iamsirithaworn S, Lessler J
+  preprint: https://www.medrxiv.org/content/10.1101/2020.11.25.20186056v1
+  pdf: https://www.medrxiv.org/content/10.1101/2020.11.25.20186056v1.full.pdf
+  year: 2020
+  doi: 10.1101/2020.11.25.20186056
+  keywords: dengue
+  abstract: >
+    In Southeast Asia, endemic dengue follows strong spatio-temporal 
+    patterns with major epidemics occurring every 2-5 years. However, 
+    important spatio-temporal variation in seasonal dengue epidemics 
+    remains poorly understood. Using 13 years (2003-2015) of dengue 
+    surveillance data from 926 districts in Thailand and wavelet 
+    analysis, we show that rural epidemics lead urban epidemics within 
+    a dengue season, both nationally and within health regions. 
+    However, local dengue fade-outs are more likely in rural areas than 
+    in urban areas during the off season, suggesting rural areas are not 
+    the source of viral dispersion. Simple dynamic models show that 
+    stronger seasonal forcing in rural areas could explain the 
+    inconsistency between earlier rural epidemics and dengue “over 
+    wintering” in urban areas. These results add important nuance to 
+    earlier work showing the importance of urban areas in driving 
+    multi-annual patterns of dengue incidence in Thailand. Feedback 
+    between geographically linked locations with markedly different 
+    ecology is key to explaining full disease dynamics across urban-rural gradient.
+
 - title: 'An expert judgment model to predict early stages of the COVID-19 outbreak in the United States'
   slug: mcandrew-judgement-model
   authors: McAndrew TC, Reich NG
