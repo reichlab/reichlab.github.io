@@ -181,7 +181,17 @@
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/yuxin-david-huang-aa663547/"
 
-  
+ - name: Apurv Shah
+  role: Software Engineer
+  description: |
+    Apurv is a junior at UMass double majoring in CS and Mathematics and is passionate about writing impactful code and developing software that has a positive impact. In his free time he loves watching and playing basketball and watching documenteries. 
+  image: /images/people/apurv.jpg
+  links:
+    - name: flaticon-github-1
+      url: "https://github.com/ApurvShah007"
+    - name: flaticon-linkedin-1
+      url: "https://www.linkedin.com/in/apurv-shah/"
+    
 # Alumni Section
 
 - name: Tom McAndrew
