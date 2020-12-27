@@ -1,5 +1,31 @@
 #2020
 
+- title: 'Real-time mechanistic bayesian forecasts of Covid-19 mortality'
+  slug: gibson-mortality
+  authors: Gibson GC , Reich NG , Sheldon D
+  preprint: https://www.medrxiv.org/content/10.1101/2020.12.22.20248736v2
+  pdf: https://www.medrxiv.org/content/10.1101/2020.12.22.20248736v2.full.pdf
+  year: 2020
+  doi: 10.1101/2020.12.22.20248736
+  keywords: covid-19
+  abstract: >
+    The COVID-19 pandemic emerged in late December 2019. In the first six months of the global outbreak, 
+    the US reported more cases and deaths than any other country in the world. Effective modeling of the course of the pandemic can help assist 
+    with public health resource planning, intervention efforts, and vaccine clinical trials. 
+    However, building applied forecasting models presents unique challenges during a pandemic. First, case data available to models in 
+    real-time represent a non-stationary fraction of the true case incidence due to changes in available diagnostic tests and test-seeking behavior. 
+    Second, interventions varied across time and geography leading to large changes in transmissibility over the course of the pandemic. 
+    We propose a mechanistic Bayesian model (MechBayes) that builds upon the classic compartmental susceptible-exposed-infected-recovered (SEIR) 
+    model to operationalize COVID-19 forecasting in real time. This framework includes non-parametric modeling of varying transmission rates, 
+    non-parametric modeling of case and death discrepancies due to testing and reporting issues, and a joint observation likelihood on new case 
+    counts and new deaths; it is implemented in a probabilistic programming language to automate the use of Bayesian reasoning for quantifying 
+    uncertainty in probabilistic forecasts. The model has been used to submit forecasts to the US Centers for Disease Control, 
+    through the COVID-19 Forecast Hub. We examine the performance relative to a baseline model as well as alternate models submitted to the Forecast Hub. 
+    Additionally, we include an ablation test of our extensions to the classic SEIR models. We demonstrate a significant gain in both point and 
+    probabilistic forecast scoring measures using MechBayes when compared to a baseline model. We show that MechBayes ranks as one of the top models 
+    out of those submitted to the COVID-19 Forecast Hub. Finally, we demonstrate that MechBayes performs significantly better than the classical SEIR model.
+
+
 - title: 'Seasonal patterns of dengue incidence in Thailand across the urban-rural gradient'
   slug: bi-dengue-patterns
   authors: Bi Q, Cummings DAT, Reich NG, Keegan LT, Kaminsky J, Salje H, Clapham H, Doung-ngern P, Iamsirithaworn S, Lessler J
