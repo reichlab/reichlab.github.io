@@ -128,6 +128,13 @@
     - name: flaticon-github-1
       url: "https://github.com/ayushkhd"
 
+- name: Aaron Gerding
+  role: MS Student
+  description: |
+    Aaron is pursuing a degree in biostatistics after a previous career lecturing in the UMass-Amherst math department.  He is especially interested in how the public health needs of populations with low social or political visibility should inform forecasting and risk assessment methodologies.
+  image: /images/people/aaron.jpg
+  links: []
+
 
 # Staff section
 
