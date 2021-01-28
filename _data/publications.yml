@@ -1,5 +1,23 @@
 #2020
 
+- title: 'Identification and evaluation of epidemic prediction and forecasting reporting guidelines: A systematic review and a call for action'
+  slug: pollet-epidemic
+  authors: Pollett S, Johansson M,Biggerstaff M, Morton LC, Bazaco SL, Major DMB, Ibarra AMS, Pavlin JA, Mate S, Sippy R, Hartman LJ, Reich NG, Maljkovic I, Chretien BJP, Althouse BM, Myer D, Viboud C, Rivers C
+  pdf: https://reader.elsevier.com/reader/sd/pii/S175543652030027X?token=DCCCED844BA8FB8FC0D1A0D760890C5C5075CCC1D37C317DF5404D7621D9DB43EF5A2BF4D3120AE454E3BAEEC2EF49A1
+  year: 2020
+  doi: https://doi.org/10.1016/j.epidem.2020.100400
+  keywords: forecasting
+  abstract: >
+    Introduction
+      High quality epidemic forecasting and prediction are critical to support response to local, regional and global infectious disease threats. Other fields of biomedical research use consensus reporting guidelines to ensure standardization and quality of research practice among researchers, and to provide a framework for end-users to interpret the validity of study results. The purpose of this study was to determine whether guidelines exist specifically for epidemic forecast and prediction publications.
+    Methods
+      We undertook a formal systematic review to identify and evaluate any published infectious disease epidemic forecasting and prediction reporting guidelines. This review leveraged a team of 18 investigators from US Government and academic sectors.
+    Results
+      A literature database search through May 26, 2019, identified 1467 publications (MEDLINE n = 584, EMBASE n = 883), and a grey-literature review identified a further 407 publications, yielding a total 1777 unique publications. A paired-reviewer system screened in 25 potentially eligible publications, of which two were ultimately deemed eligible. A qualitative review of these two published reporting guidelines indicated that neither were specific for epidemic forecasting and prediction, although they described reporting items which may be relevant to epidemic forecasting and prediction studies.
+    Conclusions
+      This systematic review confirms that no specific guidelines have been published to standardize the reporting of epidemic forecasting and prediction studies. These findings underscore the need to develop such reporting guidelines in order to improve the transparency, quality and implementation of epidemic forecasting and prediction research in operational public health.
+  
+  
 - title: 'Real-time mechanistic bayesian forecasts of Covid-19 mortality'
   slug: gibson-mortality
   authors: Gibson GC , Reich NG , Sheldon D
