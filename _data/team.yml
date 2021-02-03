@@ -110,6 +110,13 @@
     - name: flaticon-laptop-1
       url: "https://abdulhannan.in"
 
+- name: Aaron Gerding
+  role: MS Student
+  description: |
+    Aaron is pursuing a degree in biostatistics after a previous career lecturing in the UMass-Amherst math department.  He is especially interested in how the public health needs of populations with low social or political visibility should inform forecasting and risk assessment methodologies.
+  image: /images/people/aaron.jpg
+  links: []
+  
 - name: Dasuni Jayawardena
   role: Undergraduate Student
   description: |
@@ -117,24 +124,16 @@
   image: /images/people/Dasuni.JPG
   links: []
 
-- name: Ayush Khandelwal
+- name: Apurv Shah
   role: Undergraduate Student/Software Engineer
   description: |
-    Ayush is an undergrad Computer Science major and is passionate about developing technology that can help have a positive impact on the community. In his free time he enjoys playing soccer, hiking, and watching aircraft documentaries.
-  image: /images/people/ayush.jpg
+    Apurv is a junior at UMass double majoring in CS and Mathematics and is passionate about writing impactful code and developing software that has a positive impact. In his free time he loves watching and playing basketball and watching documenteries. 
+  image: /images/people/apurv.jpg
   links:
-    - name: flaticon-linkedin-1  
-      url: "https://www.linkedin.com/in/ayushkhd"
     - name: flaticon-github-1
-      url: "https://github.com/ayushkhd"
-
-- name: Aaron Gerding
-  role: MS Student
-  description: |
-    Aaron is pursuing a degree in biostatistics after a previous career lecturing in the UMass-Amherst math department.  He is especially interested in how the public health needs of populations with low social or political visibility should inform forecasting and risk assessment methodologies.
-  image: /images/people/aaron.jpg
-  links: []
-
+      url: "https://github.com/ApurvShah007"
+    - name: flaticon-linkedin-1
+      url: "https://www.linkedin.com/in/apurv-shah/"
 
 # Staff section
 
@@ -187,19 +186,20 @@
       url: "https://github.com/ydhuang28"
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/yuxin-david-huang-aa663547/"
-
-- name: Apurv Shah
-  role: Software Engineer
-  description: |
-    Apurv is a junior at UMass double majoring in CS and Mathematics and is passionate about writing impactful code and developing software that has a positive impact. In his free time he loves watching and playing basketball and watching documenteries. 
-  image: /images/people/apurv.jpg
-  links:
-    - name: flaticon-github-1
-      url: "https://github.com/ApurvShah007"
-    - name: flaticon-linkedin-1
-      url: "https://www.linkedin.com/in/apurv-shah/"
     
 # Alumni Section
+
+- name: Ayush Khandelwal
+  role: Undergraduate Student/Software Engineer (2020)
+  description: |
+
+  type: Alumni
+  image: /images/people/ayush.jpg
+  links:
+    - name: flaticon-linkedin-1  
+      url: "https://www.linkedin.com/in/ayushkhd"
+    - name: flaticon-github-1
+      url: "https://github.com/ayushkhd"
 
 - name: Tom McAndrew
   role: Postdoctoral Fellow (2018-2020)
