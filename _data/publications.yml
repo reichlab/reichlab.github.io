@@ -1,3 +1,21 @@
+# 2021
+
+- title: 'Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the US'
+  slug: cramer-evaluation
+  authors: Cramer EY , Ray EL , Lopez VK , Bracher J ...... Slayton RB, Johansson M , Biggerstaff M  , Reich NG
+  pdf: https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1.full.pdf
+  year: 2021
+  doi: https://doi.org/10.1101/2021.02.03.21250974
+  keywords: covid-19
+  abstract: >
+    Short-term probabilistic forecasts of the trajectory of the COVID-19 pandemic in the United States have served as a visible and important communication channel between the scientific modeling community and both the general public and decision-makers. 
+    Forecasting models provide specific, quantitative, and evaluable predictions that inform short-term decisions such as healthcare staffing needs, school closures, and allocation of medical supplies. 
+    In 2020, the COVID-19 Forecast Hub (https://covid19forecasthub.org/) collected, disseminated, and synthesized hundreds of thousands of specific predictions from more than 50 different academic, industry, and independent research groups. 
+    This manuscript systematically evaluates 23 models that regularly submitted forecasts of reported weekly incident COVID-19 mortality counts in the US at the state and national level. 
+    One of these models was a multi-model ensemble that combined all available forecasts each week. The performance of individual models showed high variability across time, geospatial units, and forecast horizons. 
+    Half of the models evaluated showed better accuracy than a naïve baseline model. In combining the forecasts from all teams, the ensemble showed the best overall probabilistic accuracy of any model. 
+    Forecast accuracy degraded as models made predictions farther into the future, with probabilistic accuracy at a 20-week horizon more than 5 times worse than when predicting at a 1-week horizon. 
+    This project underscores the role that collaboration and active coordination between governmental public health agencies, academic modeling teams, and industry partners can play in developing modern modeling capabilities to support local, state, and federal response to outbreaks.
 #2020
 
 - title: 'Identification and evaluation of epidemic prediction and forecasting reporting guidelines: A systematic review and a call for action'
