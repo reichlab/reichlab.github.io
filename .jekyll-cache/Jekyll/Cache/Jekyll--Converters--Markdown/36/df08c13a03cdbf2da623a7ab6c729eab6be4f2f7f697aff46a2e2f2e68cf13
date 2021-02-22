@@ -1,0 +1,11 @@
+I"<p>Want to learn how to do some forecasting with R? Here’s your chance to try out a new time-series forecasting package for R whose aim is to standardize and simplify the process of making and evaluating forecasts!</p>
+
+<p>The <a href="http://reichlab.io/">Reich Lab</a> uses an R package called <code class="language-plaintext highlighter-rouge">ForecastFramework</code> to implement forecasting models. There are many benefits to using <code class="language-plaintext highlighter-rouge">ForecastFramework</code> in a forecasting pipeline, including: standardized and simplified rapid model development and performance evaluation. <code class="language-plaintext highlighter-rouge">ForecastFramework</code> was created by Joshua Kaminsky of the <a href="http://www.iddynamics.jhsph.edu/">Infectious Disease Dynamics Group at Johns Hopkins University</a>. The package is open source and can be found <a href="https://github.com/HopkinsIDD/ForecastFramework">on Github</a>.</p>
+
+<p>After watching students in the lab working on learning how to use <code class="language-plaintext highlighter-rouge">ForecastFramework</code>, I decided to create a step-by-step demonstration of the primary use cases of <code class="language-plaintext highlighter-rouge">ForecastFramework</code>. The complete demo lives at <a href="http://reichlab.io/forecast-framework-demos/">reichlab.io/forecast-framework-demos/</a>.</p>
+
+<p><a href="https://reichlab.github.io/flusight/">
+    <img class="img-responsive" width="700" src="/images/blog/ff-demo.PNG" />
+</a></p>
+
+:ET

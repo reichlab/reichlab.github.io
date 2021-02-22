@@ -1,0 +1,8 @@
+I"v<p>We updated our <a href="https://reichlab.github.io/flusight/">U.S. influenza forecasts</a> on Tuesday, November 29th. (We tend to update the forecasts on Mondays, but the CDC data release was delayed this week due to Thanksgiving last week.) Overall, the data and the short-term forecasts for flu are showing regional circulation of flu that is a bit below the CDC-defined baseline levels. The two exceptions are in HHS Region 2 (NY and NJ) which is right at its baseline level, according to the most recent data from the CDC (reported through November 19th), and HHS Region 4 (the southeastern corner of the US) which already has risen above its baseline. Region 4 has historically had somewhat earlier seasons than the rest of the US. Check out our interactive <a href="https://reichlab.github.io/flusight/">FluSight app</a> for more details on each region.</p>
+
+<p>Reported U.S. regional influenza incidence in Nov 13-19 (MMWR week 46), 2016. Colors show percent above or below baseline:
+<a href="https://reichlab.github.io/flusight/">
+    <img class="img-responsive" width="700" src="/images/blog/20161130-us-flu-map.png" />
+</a></p>
+
+:ET
