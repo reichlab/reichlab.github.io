@@ -1,3 +1,82 @@
+# 2021
+
+
+- title: 'The Zoltar forecast archive: a tool to facilitate standardization and storage of interdisciplinary prediction research'
+  slug: reich-zoltar-forecast
+  authors: Reich NG, Cornell M, Ray EL, House K, Le K
+  preprint: https://arxiv.org/abs/2006.03922
+  pdf: reich-zoltar-forecast
+  year: 2021
+  doi: https://doi.org/10.1038/s41597-021-00839-5
+  keywords: forecasting, software
+  abstract: >
+    Forecasting has emerged as an important component of informed, data-driven decision-making in a wide array of fields. 
+    We introduce a new data model for probabilistic predictions that encompasses a wide range of forecasting settings. This 
+    framework clearly defines the constituent parts of a probabilistic forecast and proposes one approach for representing 
+    these data elements. The data model is implemented in Zoltar, a new software application that stores forecasts using the 
+    data model and provides standardized API access to the data. In one real-time case study, an instance of the Zoltar web 
+    application was used to store, provide access to, and evaluate real-time forecast data on the order of 107 rows, provided 
+    by over 20 international research teams from academia and industry making forecasts of the COVID-19 outbreak in the US. 
+    Tools and data infrastructure for probabilistic forecasts, such as those introduced here, will play an increasingly 
+    important role in ensuring that future forecasting research adheres to a strict set of rigorous and reproducible standards.
+
+- title: 'Improving Probabilistic Infectious Disease Forecasting Through Coherence'
+  slug: improving-probabilistic-coherence
+  authors: Gibson GC, Moran K, Reich NG, Osthus D
+  preprint: https://www.biorxiv.org/content/10.1101/2019.12.27.889212v1
+  pdf: https://www.biorxiv.org/content/10.1101/2019.12.27.889212v1.full.pdf
+  year: 2021
+  doi:  http://dx.doi.org/10.1371/journal.pcbi.1007623
+  keywords: forecasting, influenza, flusight
+  abstract: >
+    With an estimated $10 . 4 billion in medical costs and 31.4 million outpatient visits each year, influenza 
+    poses a serious burden of disease in the United States. To provide insights and advance warning into the spread 
+    of influenza, the U.S. Centers for Disease Control and Prevention (CDC) runs a challenge for forecasting 
+    weighted influenza-like illness (wILI) at the national and regional level. Many models produce independent 
+    forecasts for each geographical unit, ignoring the constraint that the national wILI is a weighted sum of regional 
+    wILI, where the weights correspond to the population size of the region. We propose a novel algorithm that transforms 
+    a set of independent forecast distributions to obey this constraint, which we refer to as probabilistically 
+    coherent. Enforcing probabilistic coherence led to an increase in forecast skill for 90% of the models we tested 
+    over multiple flu seasons, highlighting the importance of respecting the forecasting system's geographical hierarchy.
+
+
+- title: 'Evaluating epidemic forecasts in an interval format'
+  slug: bracher-interval-format
+  authors: Bracher J, Ray EL, Gneiting T, Reich NG
+  preprint: https://arxiv.org/abs/2005.12881
+  pdf: https://arxiv.org/pdf/2005.12881.pdf
+  year: 2021
+  doi: https://doi.org/10.1371/journal.pcbi.1008618
+  keywords: forecasting, covid-19
+  abstract: >
+    For practical reasons, many forecasts of case, hospitalization and death counts in the context 
+    of the current COVID-19 pandemic are issued in the form of central predictive intervals at various 
+    levels. This is also the case for the forecasts collected in the COVID-19 Forecast Hub run by the 
+    UMass-Amherst Influenza Forecasting Center of Excellence. Forecast evaluation metrics like the 
+    logarithmic score, which has been applied in several infectious disease forecasting challenges, 
+    are then not available as they require full predictive distributions. This note provides an overview 
+    of how established methods for the evaluation of quantile and interval forecasts can be applied to 
+    epidemic forecasts. Specifically, we discuss the computation and interpretation of the weighted 
+    interval score, which is a proper score that approximates the continuous ranked probability score. 
+    It can be interpreted as a generalization of the absolute error to probabilistic forecasts and allows 
+    for a simple decomposition into a measure of sharpness and penalties for over- and underprediction.
+
+- title: 'Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the US'
+  slug: cramer-evaluation
+  authors: Cramer EY , Ray EL , Lopez VK , Bracher J ...... Slayton RB, Johansson M , Biggerstaff M  , Reich NG
+  pdf: https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1.full.pdf
+  year: 2021
+  doi: https://doi.org/10.1101/2021.02.03.21250974
+  keywords: covid-19
+  abstract: >
+    Short-term probabilistic forecasts of the trajectory of the COVID-19 pandemic in the United States have served as a visible and important communication channel between the scientific modeling community and both the general public and decision-makers. 
+    Forecasting models provide specific, quantitative, and evaluable predictions that inform short-term decisions such as healthcare staffing needs, school closures, and allocation of medical supplies. 
+    In 2020, the COVID-19 Forecast Hub (https://covid19forecasthub.org/) collected, disseminated, and synthesized hundreds of thousands of specific predictions from more than 50 different academic, industry, and independent research groups. 
+    This manuscript systematically evaluates 23 models that regularly submitted forecasts of reported weekly incident COVID-19 mortality counts in the US at the state and national level. 
+    One of these models was a multi-model ensemble that combined all available forecasts each week. The performance of individual models showed high variability across time, geospatial units, and forecast horizons. 
+    Half of the models evaluated showed better accuracy than a naïve baseline model. In combining the forecasts from all teams, the ensemble showed the best overall probabilistic accuracy of any model. 
+    Forecast accuracy degraded as models made predictions farther into the future, with probabilistic accuracy at a 20-week horizon more than 5 times worse than when predicting at a 1-week horizon. 
+    This project underscores the role that collaboration and active coordination between governmental public health agencies, academic modeling teams, and industry partners can play in developing modern modeling capabilities to support local, state, and federal response to outbreaks.
 #2020
 
 - title: 'Identification and evaluation of epidemic prediction and forecasting reporting guidelines: A systematic review and a call for action'
@@ -181,24 +260,6 @@
     guidance to strengthen future work that is growing at an accelerated pace.
 
 
-- title: 'The Zoltar forecast archive: a tool to facilitate standardization and storage of interdisciplinary prediction research'
-  slug: reich-zoltar-forecast
-  authors: Reich NG, Cornell M, Ray EL, House K, Le K
-  preprint: https://arxiv.org/abs/2006.03922
-  pdf: https://arxiv.org/pdf/2006.03922.pdf
-  year: 2020
-  keywords: forecasting, software
-  abstract: >
-    Forecasting has emerged as an important component of informed, data-driven decision-making in a wide array of fields. 
-    We introduce a new data model for probabilistic predictions that encompasses a wide range of forecasting settings. This 
-    framework clearly defines the constituent parts of a probabilistic forecast and proposes one approach for representing 
-    these data elements. The data model is implemented in Zoltar, a new software application that stores forecasts using the 
-    data model and provides standardized API access to the data. In one real-time case study, an instance of the Zoltar web 
-    application was used to store, provide access to, and evaluate real-time forecast data on the order of 107 rows, provided 
-    by over 20 international research teams from academia and industry making forecasts of the COVID-19 outbreak in the US. 
-    Tools and data infrastructure for probabilistic forecasts, such as those introduced here, will play an increasingly 
-    important role in ensuring that future forecasting research adheres to a strict set of rigorous and reproducible standards.
-
 
 - title: 'Infectious Disease Forecasting for Public Health'
   slug: lauer-public-health
@@ -224,26 +285,6 @@
     infectious disease forecasting, presents technical details about making and evaluating forecasting models, and 
     explores the issues in communicating forecasting results in a public health context.
 
-
-- title: 'Evaluating epidemic forecasts in an interval format'
-  slug: bracher-interval-format
-  authors: Bracher J, Ray EL, Gneiting T, Reich NG
-  preprint: https://arxiv.org/abs/2005.12881
-  pdf: https://arxiv.org/pdf/2005.12881.pdf
-  year: 2020
-  keywords: forecasting, covid-19
-  abstract: >
-    For practical reasons, many forecasts of case, hospitalization and death counts in the context 
-    of the current COVID-19 pandemic are issued in the form of central predictive intervals at various 
-    levels. This is also the case for the forecasts collected in the COVID-19 Forecast Hub run by the 
-    UMass-Amherst Influenza Forecasting Center of Excellence. Forecast evaluation metrics like the 
-    logarithmic score, which has been applied in several infectious disease forecasting challenges, 
-    are then not available as they require full predictive distributions. This note provides an overview 
-    of how established methods for the evaluation of quantile and interval forecasts can be applied to 
-    epidemic forecasts. Specifically, we discuss the computation and interpretation of the weighted 
-    interval score, which is a proper score that approximates the continuous ranked probability score. 
-    It can be interpreted as a generalization of the absolute error to probabilistic forecasts and allows 
-    for a simple decomposition into a measure of sharpness and penalties for over- and underprediction.
 
 
 - title: 'The incubation period of 2019-nCoV from publicly reported confirmed cases: estimation and application'
@@ -378,25 +419,6 @@
 
 
 #2019
-
-- title: 'Improving Probabilistic Infectious Disease Forecasting Through Coherence'
-  slug: improving-probabilistic-coherence
-  authors: Gibson GC, Moran K, Reich NG, Osthus D
-  preprint: https://www.biorxiv.org/content/10.1101/2019.12.27.889212v1
-  pdf: https://www.biorxiv.org/content/10.1101/2019.12.27.889212v1.full.pdf
-  year: 2019
-  doi: 10.1101/2019.12.27.889212
-  keywords: forecasting, influenza, flusight
-  abstract: >
-    With an estimated $10 . 4 billion in medical costs and 31.4 million outpatient visits each year, influenza 
-    poses a serious burden of disease in the United States. To provide insights and advance warning into the spread 
-    of influenza, the U.S. Centers for Disease Control and Prevention (CDC) runs a challenge for forecasting 
-    weighted influenza-like illness (wILI) at the national and regional level. Many models produce independent 
-    forecasts for each geographical unit, ignoring the constraint that the national wILI is a weighted sum of regional 
-    wILI, where the weights correspond to the population size of the region. We propose a novel algorithm that transforms 
-    a set of independent forecast distributions to obey this constraint, which we refer to as probabilistically 
-    coherent. Enforcing probabilistic coherence led to an increase in forecast skill for 90% of the models we tested 
-    over multiple flu seasons, highlighting the importance of respecting the forecasting system's geographical hierarchy.
 
 
 - title: 'Accuracy of real-time multi-model ensemble forecasts for seasonal influenza in the U.S.'
