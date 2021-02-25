@@ -135,6 +135,19 @@
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/apurv-shah/"
 
+- name: Álvaro J. Castro Rivadeneira
+  role: PhD Student
+  description: |
+    Álvaro is a PhD student in epidemiology. He is interested in science communication, economic inequality, gambling, and infectious diseases. He received his MD from Universidad Internacional del Ecuador, and a BSc in Biochemistry from McGill University.
+  image: /images/people/alvaro.jpeg
+  links:
+    - name: flaticon-twitter-1
+      url: "https://twitter.com/micokoch"
+    - name: flaticon-github-1
+      url: "https://github.com/micokoch"
+    - name: flaticon-linkedin-1
+      url: "https://www.linkedin.com/in/alvaro-j-castro-rivadeneira/"
+
 # Staff section
 
 - name: Matthew Cornell
