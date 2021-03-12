@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title> - R</title>
+		<description>Posts categorized as 'R'</description>
+		<link>http://reichlab.io/</link>
+		<atom:link href="http://reichlab.io//feed.category.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Forecasting tools in development</title>
+				<description>&lt;p&gt;As I’ve been writing up a progress report for &lt;a href=&quot;https://projectreporter.nih.gov/project_info_description.cfm?aid=9553816&quot;&gt;my NIGMS R35 MIRA award&lt;/a&gt;, I’ve been reminded at how much of the work that we’ve been doing is focused on forecasting infrastructure. A common theme in the &lt;a href=&quot;http://reichlab.io/&quot;&gt;Reich Lab&lt;/a&gt; is making &lt;em&gt;operational&lt;/em&gt; forecasts of infectious disease outbreaks. The operational aspect means that we focus on everything from &lt;a href=&quot;https://doi.org/10.1002/sim.7488&quot;&gt;developing&lt;/a&gt; and &lt;a href=&quot;https://doi.org/10.1371/journal.pcbi.1005910&quot;&gt;adapting&lt;/a&gt; statistical methods to be used in forecasting applications to thinking about the data science toolkit that you need to store, evaluate, and visualize forecasts. To that end, in addition to working closely with the CDC in their &lt;a href=&quot;https://www.cdc.gov/flu/weekly/flusight/index.html&quot;&gt;FluSight initiative&lt;/a&gt;, we’ve been doing a lot of collaborative work on new R packages and data repositories that I hope will be useful beyond the confines of our lab. Some of these projects are fully operational, used in our &lt;a href=&quot;http://flusightnetwork.io/&quot;&gt;production flu forecasts for CDC&lt;/a&gt;, and some have even gone through &lt;a href=&quot;https://doi.org/10.21105/joss.00231&quot;&gt;a level of code peer review&lt;/a&gt;. Others are in earlier stages of development. My hope is that in putting this list out there (see below the fold) we will generate some interest (and possibly find some new open-source collaborators) for these projects.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://flusightnetwork.io/&quot;&gt;
+    &lt;img class=&quot;img-responsive&quot; width=&quot;700&quot; src=&quot;/images/flusight/2_flusight.JPG&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Here is a partial list of in-progress software that we’ve been working on:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/reichlab/sarimaTD&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sarimaTD&lt;/code&gt;&lt;/a&gt; is an R package that serves as a wrapper to some of the ARIMA modeling functionality in the &lt;a href=&quot;http://pkg.robjhyndman.com/forecast/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;forecast&lt;/code&gt;&lt;/a&gt; R package. We found that we consistently wanted to be specifying some transformations (T) and differencing (D) in specific ways that we have found useful in modeling infectious disease time-series data, so we made it easy for us and others to use specifications.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cran.r-project.org/package=ForecastFramework&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ForecastFramework&lt;/code&gt;&lt;/a&gt; is an R package that we have collaborated on with our colleagues at the &lt;a href=&quot;http://www.iddynamics.jhsph.edu/&quot;&gt;Johns Hopkins Infectious Disease Dynamics lab&lt;/a&gt;. We’ve &lt;a href=&quot;http://reichlab.io/2019/01/29/forecast-framework-demo.html&quot;&gt;blogged about this before&lt;/a&gt;, and we see a lot of potential in this object-oriented framework for both standardizing how datasets are specified/accessed and how models are generated. That said, there still is a long ways to go to document and make this infrastructure usable by a wide audience. The most success I’ve had using it so far was having PhD students write &lt;a href=&quot;https://github.com/reichlab/german-flu-forecasting&quot;&gt;forecast models for a seminar I taught this spring&lt;/a&gt;. I used &lt;a href=&quot;https://github.com/reichlab/german-flu-forecasting/blob/master/code/evaluation-code.R&quot;&gt;a single script&lt;/a&gt; that could run and score forecasts from each model, with a very simple plug-and-play interface to the models because they had been specified appropriately.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://zoltardata.com/&quot;&gt;Zoltar&lt;/a&gt; is a new repository (in alpha-ish release right now) for forecasts that we have been working on over the last year. It was initially designed with our CDC flu forecast use-case in mind, although the forecast structure is quite general, and with &lt;a href=&quot;http://cdcepi.github.io/predx&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;predx&lt;/code&gt;&lt;/a&gt; integration on the way (see next bullet) we are hoping that this will broaden the scope of possible use cases for Zoltar. To help facilitate our and others use of Zoltar, we are working on two interfaces to the Zoltar API, &lt;a href=&quot;https://github.com/reichlab/zoltpy&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zoltpy&lt;/code&gt;&lt;/a&gt; for python and &lt;a href=&quot;http://reichlab.io/zoltr/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zoltr&lt;/code&gt;&lt;/a&gt; for R. Check out the documentation, especially for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;zoltr&lt;/code&gt;. There is quite a bit of data available!&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://cdcepi.github.io/predx&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;predx&lt;/code&gt;&lt;/a&gt; is an R package designed my colleague and friend Michael Johansson of &lt;a href=&quot;https://cdc.gov/&quot;&gt;the US Centers for Disease Control and Prevention&lt;/a&gt; and &lt;a href=&quot;http://outbreakscience.org/&quot;&gt;OutbreakScience&lt;/a&gt;. &lt;a href=&quot;https://www.mtholyoke.edu/~eray/&quot;&gt;Evan Ray&lt;/a&gt;, from the Reich Lab team, has contributed to it as well. The goal of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;predx&lt;/code&gt; is to define some general classes of data for both probabilistic and point forecasts, to better standardize ways that we might want to store and operate on these data.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://reichlab.io/d3-foresight/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;d3-foresight&lt;/code&gt;&lt;/a&gt; is the main engine behind our &lt;a href=&quot;http://flusightnetwork.io/&quot;&gt;interactive forecast visualizations for flu in the US&lt;/a&gt;. We have also integrated it with Zoltar, so that you can &lt;a href=&quot;https://zoltardata.com/project/4/visualizations&quot;&gt;view forecasts stored in Zoltar&lt;/a&gt; (note, kind of a long load time for that last link) using some of the basic &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;d3-foresight&lt;/code&gt; functionality.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The lion’s share of the credit for all of the above are due to some combination of &lt;a href=&quot;http://www.matthewcornell.org/&quot;&gt;Matthew Cornell&lt;/a&gt;, &lt;a href=&quot;https://lepisma.xyz/about&quot;&gt;Abhinav Tushar&lt;/a&gt;, &lt;a href=&quot;http://katie-house.com/&quot;&gt;Katie House&lt;/a&gt;, and &lt;a href=&quot;https://www.mtholyoke.edu/~eray/&quot;&gt;Evan Ray&lt;/a&gt;.&lt;/p&gt;
+</description>
+				<pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+				<link>http://reichlab.io//2019/06/17/forecast-tools.html</link>
+				<guid isPermaLink="true">http://reichlab.io//2019/06/17/forecast-tools.html</guid>
+			</item>
+		
+			<item>
+				<title>Forecast Framework Demo</title>
+				<description>&lt;p&gt;Want to learn how to do some forecasting with R? Here’s your chance to try out a new time-series forecasting package for R whose aim is to standardize and simplify the process of making and evaluating forecasts!&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://reichlab.io/&quot;&gt;Reich Lab&lt;/a&gt; uses an R package called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ForecastFramework&lt;/code&gt; to implement forecasting models. There are many benefits to using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ForecastFramework&lt;/code&gt; in a forecasting pipeline, including: standardized and simplified rapid model development and performance evaluation. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ForecastFramework&lt;/code&gt; was created by Joshua Kaminsky of the &lt;a href=&quot;http://www.iddynamics.jhsph.edu/&quot;&gt;Infectious Disease Dynamics Group at Johns Hopkins University&lt;/a&gt;. The package is open source and can be found &lt;a href=&quot;https://github.com/HopkinsIDD/ForecastFramework&quot;&gt;on Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After watching students in the lab working on learning how to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ForecastFramework&lt;/code&gt;, I decided to create a step-by-step demonstration of the primary use cases of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ForecastFramework&lt;/code&gt;. The complete demo lives at &lt;a href=&quot;http://reichlab.io/forecast-framework-demos/&quot;&gt;reichlab.io/forecast-framework-demos/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://reichlab.github.io/flusight/&quot;&gt;
+    &lt;img class=&quot;img-responsive&quot; width=&quot;700&quot; src=&quot;/images/blog/ff-demo.PNG&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;As the resident CS grad-student programmer in the lab, I wanted to write these demonstrations to make &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ForecastFramework&lt;/code&gt; accessible. However, the demo only scrapes the surface of the many way that we (and others, we hope) will use  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ForecastFramework&lt;/code&gt;. We have incorporated &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ForecastFramework&lt;/code&gt; into our workflow for generating &lt;a href=&quot;https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0004761&quot;&gt;real-time dengue forecasts for the Ministry of Public Health in Thailand&lt;/a&gt;, and students have found it useful in generating small model comparison projects.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://reichlab.io/forecast-framework-demos/&quot;&gt;The online demo&lt;/a&gt; is separated into five sections. Each section will build off knowledge from the previous and will gradually increase in difficulty. However, the demos work as standalone scripts as well. The demos are categorized as the following:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://reichlab.io/forecast-framework-demos/#the-data-1&quot;&gt;&lt;strong&gt;The Data&lt;/strong&gt;&lt;/a&gt; - This section will examine the raw data used in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ForecastFramework&lt;/code&gt; models ahead.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://reichlab.io/forecast-framework-demos/#defining-inputs-incidence-matrix-1&quot;&gt;&lt;strong&gt;Defining Inputs&lt;/strong&gt;&lt;/a&gt; - This section will define what an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IncidenceMatrix&lt;/code&gt; is, show how to format your data to be used as an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IncidenceMatrix&lt;/code&gt;, and exemplify functions of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IncidenceMatrix&lt;/code&gt; class.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://reichlab.io/forecast-framework-demos/#fitting-and-forecasting&quot;&gt;&lt;strong&gt;Fitting and Forecasting&lt;/strong&gt;&lt;/a&gt; - This section will focus on fitting data to a SARIMA model with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ForecastFramework&lt;/code&gt;, using the &lt;a href=&quot;https://github.com/reichlab/sarimaTD&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sarimaTD&lt;/code&gt; package&lt;/a&gt; developed by &lt;a href=&quot;http://www.mtholyoke.edu/~eray/&quot;&gt;Evan Ray&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://reichlab.io/forecast-framework-demos/#evaluating-multiple-models&quot;&gt;&lt;strong&gt;Evaluating Complex Models&lt;/strong&gt;&lt;/a&gt; - This section will demonstrate evaluation metrics and techniques by comparing two complex models in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ForecastFramework&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://reichlab.io/forecast-framework-demos/#creating-your-own-model&quot;&gt;&lt;strong&gt;Creating your own Model&lt;/strong&gt;&lt;/a&gt; - This section will use object-oriented R programming demonstrate how to create your own model with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ForecastFramework&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://reichlab.io/forecast-framework-demos/&quot;&gt;Try using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ForecastFramework&lt;/code&gt; today&lt;/a&gt;! I hope you find the tutorials interesting and instructive. If you have any questions or find any bugs, please let me know! I can be found at khouse [at] umass.edu or through &lt;a href=&quot;http://katie-house.com/&quot;&gt;my personal website&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+				<pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
+				<link>http://reichlab.io//2019/01/29/forecast-framework-demo.html</link>
+				<guid isPermaLink="true">http://reichlab.io//2019/01/29/forecast-framework-demo.html</guid>
+			</item>
+		
+			<item>
+				<title>Data needs for forecasting influenza pandemics</title>
+				<description>&lt;p&gt;Last week, I attended a Pandemic Influenza Exercise at the US CDC. To be
+clear, there is NOT a pandemic occuring right now, but the CDC ran this
+exercise where hundreds of staff members and outside observers and
+participants came together to practice going through the motions of a
+public health response to a major pandemic. As someone who is usually
+sheltered from this everyday aspect of public health decision-making,
+this was a fascinating window into understanding the careful, if
+time-pressured, scientific deliberation that underlies the response to
+public health emergencies.&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-responsive&quot; width=&quot;700&quot; src=&quot;/images/blog/20180917-pneumo-deaths-total.png&quot; /&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h3 id=&quot;forecasting-in-a-pandemic&quot;&gt;Forecasting in a pandemic&lt;/h3&gt;
+
+&lt;p&gt;I was sitting with a team called Risk Assessment and Forecasting, and
+was one of three academic forecasters in this group. (The others were
+&lt;a href=&quot;http://www.columbia.edu/~jls106/&quot;&gt;Jeff Shaman&lt;/a&gt; and &lt;a href=&quot;https://delphi.midas.cs.cmu.edu/&quot;&gt;Roni
+Rosenfeld&lt;/a&gt;.) When I was invited, I
+wasn’t sure whether I was going to spend these three days scrambling on
+my computer to actually run data analyses or not. As it turned out, our
+job was more to listen, watch, and occasionally give some input about
+what kind of data would be helpful if we were needing to produce
+real-time pandemic forecasts. Jeff was the only one of us who had
+actively worked in producing real-time pandemic forecasts before (e.g.,
+&lt;a href=&quot;http://currents.plos.org/outbreaks/article/inference-and-forecast-of-the-current-west-african-ebola-outbreak-in-guinea-sierra-leone-and-liberia/&quot;&gt;for the Ebola
+outbreak&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;There are lots of open questions about what kinds of models would be
+useful and how you might go about setting up forecasting models
+(especially more statistical models) in a real pandemic. Fortunately for
+public health (although unfortuantely for the science of forecasting),
+we don’t get many opportunities to practice. There were a
+&lt;a href=&quot;https://www.sciencedirect.com/science/article/pii/S1755436517301275&quot;&gt;handful&lt;/a&gt;
+of &lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4234409/&quot;&gt;good&lt;/a&gt;
+&lt;a href=&quot;http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;amp;id=25254986&amp;amp;retmode=ref&amp;amp;cmd=prlinks&quot;&gt;forecasting&lt;/a&gt;
+&lt;a href=&quot;http://eutils.ncbi.nlm.nih.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&amp;amp;id=25480136&amp;amp;retmode=ref&amp;amp;cmd=prlinks&quot;&gt;studies&lt;/a&gt;
+during Ebola, and these provide some of our best data on the models and
+experience of creating forecasts in real-time during large global
+outbreaks. Never before had a global pandemic occurred at a time when a
+number of different research groups had the capacity and technical
+knowledge to implement reasonable attempts at forecasting the trajectory
+of a pandemic.&lt;/p&gt;
+
+&lt;p&gt;Over the course of the past week, our team at the CDC exercise talked a
+bit about data that would be useful in real-time for pandemic
+forecasting. One thread of this conversation focused on real-time
+epidemiological data that would be collected during the outbreak. For
+example, consistently sampled surveillance data, especially
+laboratory-confirmed case counts and strain-specific positivity rates,
+would provide valuable measures of infection rates in a population at a
+given time that could be used in models.&lt;/p&gt;
+
+&lt;p&gt;However, a second thread focused on data that exist right now in various
+forms that may also be useful in pandemic settings, especially if they
+were made more readily and easily available. I am a forecaster and
+statistician whose team builds mostly “statistical” models, that is,
+models that rely strongly on previously observed empirical data and
+patterns in similar prior situations. This is an uncomfortable position
+to be in when forecasting new emerging pandemics, as there are so few
+“comparable” events on record. This approach constrasts with more
+“mechanistic” model-building approaches that rely heavily on a
+structured set of assumptions about susceptibility in the underlying
+population, and how transmissible the population is, etc…&lt;/p&gt;
+
+&lt;p&gt;So the statistician/data-scientist in me argues that there would be not
+insignificant value in having some curated datasets on pandemics.
+Certainly things have changed dramatically since 1918, 1957, 1968, and
+even 2009, so what we can learn from those settings in a new influenza
+pandemic would be limited. But having both &lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5198166/&quot;&gt;a historical understanding
+of pandemics&lt;/a&gt; as
+well as some data from those outbreaks &lt;a href=&quot;https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005749&quot;&gt;can provide useful insights into
+potential future dynamics of
+pandemics&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Some circulating questions during the recent CDC exercise revolved
+around whether there would be a hypothetical second wave and if so, what
+it would look like. Mechanistic models could start to answer that
+question quantitatively early on in an outbreak, but I’d argue that for
+a while they’d be so uncertain as to be almost useless in a hypothetical
+pandemic response. To start to answer the question about a second wave,
+I wanted to look at past data. It is not obvious what the best source of
+data like this is, and there does not appear to be a single
+authoritative repository or archive of data on pandemic flu. That’s what
+set me off on a hunt to make some plots of influenza pandemic dynamics
+over the past century.&lt;/p&gt;
+
+&lt;h3 id=&quot;finding-data-from-project-tycho&quot;&gt;Finding data from Project Tycho&lt;/h3&gt;
+
+&lt;p&gt;After a brief and unsuccessful round of Googling for public datasets on
+pandemic flu, I turned to &lt;a href=&quot;https://www.tycho.pitt.edu/data/&quot;&gt;Project
+Tycho&lt;/a&gt;, a carefully curated public
+repository of infectious disease data. As it turns out (as you will see
+below), the data they have on influenza (and pneumonia) is not
+particularly helpful or exhaustive, but it was at least a place to
+start. So I’ll walk through an edited and simplified version of some of
+the back-of-the-envelope descriptive analyses I ran for myself this
+week. In particular, I’m going to walk through the creation of two
+different plots of public pandemic data from two different Project Tycho
+data sources that I tried to use to help me think about the potential of
+a second wave.&lt;/p&gt;
+
+&lt;p&gt;I’m going to walk through this analysis in R, so first let’s get some
+preliminaries out of the way to get my R session set up…&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data.table&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dplyr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MMWRweek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theme_set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theme_bw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;## because I don't like the ggplot default theme :-)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;the-1918-influenza-pandemic-plotting-pneumonia-deaths&quot;&gt;The 1918 influenza pandemic: plotting pneumonia deaths&lt;/h3&gt;
+
+&lt;p&gt;Let’s start by using the &lt;a href=&quot;https://www.tycho.pitt.edu/dataset/api/&quot;&gt;Project Tycho
+API&lt;/a&gt; to access data through R.
+To replicate this analysis, you will need to create an account (if you
+don’t have one already), find your API key on your profile page, and
+insert it in the code below.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;APIKEY&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;put-your-key-here&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I toggled back and forth for a while from my code and the &lt;a href=&quot;https://www.tycho.pitt.edu/dataset/api/&quot;&gt;Project Tycho
+API site&lt;/a&gt; to build some code to
+construct an API query. It took some time to figure out exactly which
+“Condition Name” I should use, but after some hunting and pecking it
+turned out the best data for either pneumonia or influenza during the
+1918 pandemic is case and death data for pneumonia. The following code
+sets up the query:&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;baseAPIlink&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;https://www.tycho.pitt.edu/api/query?&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ConditionName&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Pneumonia&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CountryISO&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;US&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PeriodStartDate&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1918-01-01&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PeriodEndDate&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1921-12-31&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;API_link&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;paste0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;baseAPIlink&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apikey=&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;APIKEY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;amp;ConditionName=&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ConditionName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;amp;CountryISO=&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CountryISO&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;amp;Fatalities=0&amp;amp;PartOfCumulativeCountSeries=0&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;amp;PeriodStartDate&amp;gt;=&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PeriodStartDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&amp;amp;PeriodEndDate&amp;lt;=&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PeriodEndDate&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then, I downloaded the data and made a few small data transformations
+for easier management later, like making date fields dates and expanding
+the dataframe to have &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NA&lt;/code&gt; for missing values instead of just having
+entirely missing rows.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;pneumo_dat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read.csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;API_link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mutate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PeriodStartDate&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;as.Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PeriodStartDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PeriodEndDate&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;as.Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PeriodEndDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tidyr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;complete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CityName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PeriodStartDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Since not all cities have a lot of cases, I did some subsetting to
+identify just cities that had both a lot of cases and weeks where cases
+were reported.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;cities_with_1918&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pneumo_dat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PeriodEndDate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;as.Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1919-12-31&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group_by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CityName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summarize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tot_records&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;is.na&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CountValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tot_records&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CityName&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;big_cities&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pneumo_dat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group_by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CityName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summarize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tot_count&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CountValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;na.rm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tot_count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CityName&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Once we have all that done, it’s not that difficult to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ggplot&lt;/code&gt; to
+construct a plot of pneumonia deaths during and after the 1918 pandemic.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pneumo_dat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CityName&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%in%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;big_cities&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CityName&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%in%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cities_with_1918&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PeriodStartDate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CountValue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;facet_grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;CityName&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scales&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;free_y&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/20180917-pneumo-deaths-city.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;the-1968-influenza-pandemic-pneumonia-and-influenza-deaths&quot;&gt;The 1968 influenza pandemic: pneumonia and influenza deaths&lt;/h3&gt;
+
+&lt;p&gt;The dataset I used above ends in the early 1950s, so it didn’t cover the
+other influenza pandemics of the second half of the 20th century.
+However, the “Level 2” data from Proejct Tycho (available, as best I
+could tell via a zip file download but not through the API) does have
+some different data that covers the 1968 pandemic. If you’re trying to
+run this code, you will need to download the Level2 data and insert
+below the path to your csv file.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;fname&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;your-path-to-download/ProjectTycho_Level2_v1.1.0.csv&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data.table&lt;/code&gt; to read it in, since it’s a big ol’ file (~450MB).&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;DT&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fname&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fludat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DT&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;disease&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%in%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;INFLUENZA&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PNEUMONIA&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PNEUMONIA AND INFLUENZA&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mutate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from_date&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;as.Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from_date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to_date&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;as.Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to_date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;as.numeric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;substr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;epi_week&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;city_state&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;paste&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tidyr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;complete&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;city_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;epi_week&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;As was necessary in the first example, this needed a bit of cleaning up
+to prepare for plotting.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;aggpidat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fludat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;epi_week&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;196700&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;epi_week&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;197100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;DEATHS&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;disease&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;PNEUMONIA AND INFLUENZA&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mutate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;MMWRweek2Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;as.numeric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;substr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;epi_week&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;as.numeric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;substr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;epi_week&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Again, I tried to focus on cities where there were higher counts and
+more weeks with observed data.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;big_pi_cities&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aggpidat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group_by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;city_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summarize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tot_count&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tot_count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;city_state&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cities_with_1968&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aggpidat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;epi_week&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;196800&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;epi_week&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;197000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group_by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;city_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summarize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tot_records&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tot_records&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;city_state&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;And, here’s the plot:&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aggpidat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;city_state&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%in%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;big_pi_cities&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;city_state&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%in%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cities_with_1968&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;facet_grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;city_state&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scales&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;free_y&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/20180917-p-and-i-deaths-city.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-there-to-learn-from-pandemic-data&quot;&gt;What is there to learn from pandemic data?&lt;/h3&gt;
+
+&lt;p&gt;These few plots tell us just a little bit about these historical
+pandemics. In 1918, the best data from Tycho seemed to be about
+pneumonia, but even then, as is evident from the city-level data, there
+are lots of gaps in the observations. This is not as evident in the
+overall aggregate data shown in the first plot above the fold. In 1918,
+the data clearly show a first peak in late 1918 and then a second peak
+in early 1920, although most cities are missing data for almost all of 1919. 
+In the 1968 pandemic, there seems to be a small first wave (or
+maybe just a larger seasonal wave) in the 1967/1968 season followed by a
+larger peak right around December 1968 and January 1969. But this
+analogy to the flu pandemic is dependent on the assumption that reported
+pneumonia deaths serve as a reasonable proxy for incident flu cases.&lt;/p&gt;
+
+&lt;p&gt;Certainly there must be more and better data out there on influenza
+pandemics. For the 2009 N1H1 pandemic, we could retrieve data from 2009
+from the &lt;a href=&quot;https://gis.cdc.gov/grasp/fluview/fluportaldashboard.html&quot;&gt;CDC
+FluView&lt;/a&gt;
+application (which has a nice interface from R in the &lt;a href=&quot;https://github.com/hrbrmstr/cdcfluview&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cdcfluview&lt;/code&gt;
+package&lt;/a&gt;) But I’m sure there is
+more data on these older pandemics as well out there. It might require
+heading into the depths of library stacks, or poring through academic
+papers, or finding other less well-established data repositories. But
+having this data systematically organized in one place would be useful,
+and not all that hard, at least to get it started.&lt;/p&gt;
+
+&lt;p&gt;Once again, this is just one very small piece of a huge puzzle of
+pandemic response. Clearly assembling some historical data isn’t going
+to prevent the next pandemic, nor will it directly inform
+countermeasures or interventions that are part of the response.
+Especially given how difficult it is to generalize from these
+once-in-a-generation type experiences, it is unclear how directly
+applicable these data are to a hypothetical emerging outbreak. That
+said, we have precious little real data about pandemics to go on. And
+there’s no reason to drive blind without having better and more
+accessible versions of what could be a valuable source of information
+about dynamics of pandemic second waves, spatial variation in outbreaks,
+and more.&lt;/p&gt;
+</description>
+				<pubDate>Mon, 17 Sep 2018 00:00:00 +0000</pubDate>
+				<link>http://reichlab.io//2018/09/17/pandemic-flu-data.html</link>
+				<guid isPermaLink="true">http://reichlab.io//2018/09/17/pandemic-flu-data.html</guid>
+			</item>
+		
+	</channel>
+</rss>

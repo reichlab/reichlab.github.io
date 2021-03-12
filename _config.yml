@@ -1,0 +1,35 @@
+title: "Nicholas Reich: Biostatistics and Infectious Disease Epidemiology"
+description: "Reich Lab @ UMassAmherst"
+author: "Nicholas Reich"
+baseurl: ""
+url: "http://reichlab.io/"
+
+twitter_username: reichlab
+github_username: reichlab
+source_url: "https://github.com/reichlab/reichlab.github.io"
+
+# Build settings
+markdown: kramdown
+sass:
+  compressed: true
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - build.sh
+  - Rakefile
+  - deploy_key.enc
+  - spectre
+paginate: 5
+paginate_path: "/blog/page:num/"
+excerpt_separator: <!--more-->
+defaults:
+  - scope:
+      path: "blog/_posts"
+    values:
+      permalink: /:year/:month/:day/:title.html
+  - scope:
+      path: "talks/_posts"
+    values:
+      permalink: /talks/:title.html
