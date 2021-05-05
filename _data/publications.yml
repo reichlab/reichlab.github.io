@@ -1,6 +1,27 @@
 # 2021
 
 
+- title: >
+    Modeling of Future COVID-19 Cases, Hospitalizations, and Deaths, by Vaccination Rates and Nonpharmaceutical Intervention Scenarios
+    — United States, April–September 2021
+  slug: modeling-future
+  authors: Borchering RK, Viboud C, ...... Reich NG, ...... Shea K, Lessler J
+  pdf: https://www.cdc.gov/mmwr/volumes/70/wr/pdfs/mm7019e3-H.pdf
+  year: 2021
+  keywords: covid-19, forecasting
+  abstract: >
+    What is already known about this topic?
+      Increases in COVID-19 cases in March and early April occurred despite a large-scale vaccination program.
+      Increases coincided with the spread of SARS-CoV-2 variants and relaxation of nonpharmaceutical interventions (NPIs).
+    What is added by this report?
+      Data from six models indicate that with high vaccination coverage and moderate NPI adherence,
+      hospitalizations and deaths will likely remain low nationally, with a sharp decline in cases projected by July 2021.
+      Lower NPI adherence could lead to substantial increases in severe COVID-19 outcomes, even with improved vaccination coverage.
+    What are the implications for public health practice?
+      High vaccination coverage and compliance with NPIs are essential to control COVID-19 and prevent surges in
+      hospitalizations and deaths in the coming months.
+
+
 - title: 'The Zoltar forecast archive: a tool to facilitate standardization and storage of interdisciplinary prediction research'
   slug: reich-zoltar-forecast
   authors: Reich NG, Cornell M, Ray EL, House K, Le K
@@ -77,7 +98,8 @@
     Half of the models evaluated showed better accuracy than a naïve baseline model. In combining the forecasts from all teams, the ensemble showed the best overall probabilistic accuracy of any model. 
     Forecast accuracy degraded as models made predictions farther into the future, with probabilistic accuracy at a 20-week horizon more than 5 times worse than when predicting at a 1-week horizon. 
     This project underscores the role that collaboration and active coordination between governmental public health agencies, academic modeling teams, and industry partners can play in developing modern modeling capabilities to support local, state, and federal response to outbreaks.
-#2020
+
+# 2020
 
 - title: 'Identification and evaluation of epidemic prediction and forecasting reporting guidelines: A systematic review and a call for action'
   slug: pollet-epidemic
@@ -285,8 +307,6 @@
     infectious disease forecasting, presents technical details about making and evaluating forecasting models, and 
     explores the issues in communicating forecasting results in a public health context.
 
-
-
 - title: 'The incubation period of 2019-nCoV from publicly reported confirmed cases: estimation and application'
   slug: lauer-2019-ncov-incubation
   authors: Lauer SA, Grantz KH, Bi Q, Jones FK, Zheng Q, Meredith H, Azman AS, Reich NG, Lessler J
@@ -329,7 +349,6 @@
     National Institute of General Medical Sciences, and Alexander
     von Humboldt Foundation.
 
-
 - title: 'Coordinating the real‐time use of global influenza activity data for better public health planning'
   slug: biggerstaff-global-influenza
   authors: Biggerstaff M et al.
@@ -359,7 +378,6 @@
     code. We expect the resources we develop and the associated community to provide an 
     attractive option for the open analysis of key epidemiological data during seasonal 
     epidemics and the early stages of an influenza pandemic.
-
 
 - title: 'FluSense: A Contactless Syndromic Surveillance Platform for Influenza-Like Illness in Hospital Waiting Areas'
   slug: hossain-flusense
@@ -699,6 +717,7 @@
 
 # 2018
 
+
 - title: Prospective forecasts of annual dengue hemorrhagic fever incidence in Thailand, 2010–2014
   slug: lauer-annual-preds
   authors: Lauer SA, Sakrejda K, Ray EL, Keegan LT, Bi Q, Suangtho P, Hinjoy S, Iamsirithaworn S, Suthachana S, Laosiritaworn Y, Cummings DAT, Lessler J and Reich NG
@@ -849,6 +868,7 @@
 
 # 2016
 
+
 - title: >
     Challenges in Real-Time Prediction of Infectious Disease: A Case Study of
     Dengue in Thailand
@@ -959,6 +979,7 @@
 
 # 2015
 
+
 - title: "Triggering Interventions for Influenza: The ALERT Algorithm"
   doi: 10.1093/cid/ciu749
   slug: reich-alert
@@ -1008,6 +1029,7 @@
 
 # 2013
 
+
 - title: >
     Interactions between serotypes of dengue highlight epidemiological impact of
     cross-immunity
@@ -1041,6 +1063,7 @@
 
 
 #2012
+
 
 - title: >
     Empirical power and sample size calculations for cluster-randomized and
@@ -1108,6 +1131,7 @@
 
 
 #2009
+
 
 - title: 'Estimating incubation period distributions with coarse data.'
   slug: reich-estimate-incubation
