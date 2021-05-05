@@ -1,31 +1,24 @@
 #!/usr/bin/env bash
+
+# make sure error stop script
 set -e
 
 # Save some useful information
-REPO=`git config remote.origin.url`
-SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
-SHA=`git rev-parse --verify HEAD`
+REPO=`git config remote.origin.url` # repo URL (https)
+SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:} # repo URL (ssh)
+HEAD_HASH=`git rev-parse --verify HEAD` # latest commit hash
+HEAD_HASH=${HEAD_HASH: -7} # get the last 7 characters of hash
 
-if [ "$TRAVIS_BRANCH" == "master" ]; then
-    echo "This contains static files, not doing anything"
-    exit 0
-fi
+# install system dependencies
+sudo apt install ruby ruby-dev gem
 
-if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
-    echo "This is a pull request, just doing a build"
-    bundle exec rake build
-    exit 0
-fi
+# install bundler
+gem install bundler
 
-if [ "$TRAVIS_BRANCH" != "source" ]; then
-    echo "Non source branch, collecting and building but not deploying"
-    bundle exec rake collect
-    bundle exec rake build
-    exit 0
-fi
+# install packages
+bundle install
 
-git checkout master || git checkout --orphan master
-
+# collect and build
 bundle exec rake collect
 bundle exec rake build
 
@@ -34,19 +27,25 @@ rm -rf _data _includes _layouts _plugins _research _sass
 rm -rf _scripts _teaching _assets blog css images pdfs vendor
 cp -r ./_site/* ./
 
-git config user.name "CI auto deploy"
-git config user.email "nick@schoolph.umass.edu"
+git checkout master || git checkout --orphan master
+
+if [ "$ENV" = "CI" ]; then
+  git config user.name "GitHub Action"
+  git config user.email "user@example.com"
+fi
+
+#git config user.name "CI auto deploy"
+#git config user.email "nick@schoolph.umass.edu"
 
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
-chmod 600 deploy_key
-eval `ssh-agent -s`
-ssh-add deploy_key
-rm deploy_key # remove secret file
+#chmod 600 deploy_key
+#eval `ssh-agent -s`
+#ssh-add deploy_key
+#rm deploy_key # remove secret file
 
 # Commit 
-git add .
-git commit -m "Auto deploy to GitHub Pages: ${SHA}"
+git add -A
+git commit -m "Auto deploy commit ${HEAD_HASH} to GitHub Pages at ${date}"
 
 # Push to gh-pages
 git push $SSH_REPO master --force
-ssh-agent -k
