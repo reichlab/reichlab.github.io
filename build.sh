@@ -26,6 +26,8 @@ if [ "$CI" = true ]; then
   git config user.email "user@example.com"
 fi
 
+git checkout gh-pages
+git checkout source
 git worktree add _site gh-pages
 
 # collect and build
