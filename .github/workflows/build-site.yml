@@ -22,4 +22,5 @@ jobs:
     - name: run deploy script
       env:
         ENV: CI
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: bash ./build.sh
