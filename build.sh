@@ -22,14 +22,13 @@ bundle install
 bundle exec rake collect
 bundle exec rake build
 
+cd _site
+git init
+git add .
 if [ "$CI" = true ]; then
   git config user.name "GitHub Action"
   git config user.email "user@example.com"
 fi
-
-cd _site
-git init
-git add .
 git commit -am "Auto deploy commit ${HEAD_HASH} to GitHub Pages at ${date}"
 git push --force "$SSH_REPO" gh-pages
 rm -rf .git
