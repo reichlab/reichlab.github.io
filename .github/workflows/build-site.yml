@@ -1,0 +1,25 @@
+name: Build site
+
+on:
+  push:
+    branches: [ source ]
+  pull_request:
+    branches: [ source ]
+  schedule:
+  - cron: '30 4 * * *'
+  workflow_dispatch:
+    inputs:
+      params:
+        description: 'Arguments to deploy script'
+        required: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: check out repository
+      uses: actions/checkout@v2
+    - name: run deploy script
+      env:
+        ENV: CI
+      run: bash ./build.sh
