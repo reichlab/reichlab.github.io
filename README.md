@@ -1,6 +1,6 @@
 # reichlab.github.io
 
-[![Travis](https://img.shields.io/travis/reichlab/reichlab.github.io.svg?style=flat-square)](https://travis-ci.org/reichlab/reichlab.github.io)
+![site build](https://github.com/reichlab/reichlab.github.io/actions/workflows/build-site.yml/badge.svg)
 
 Home page source code. Source lies in branch `source`. Github build goes to
 `master`.
