@@ -24,7 +24,7 @@ git add -A
 git commit -m "Auto deploy commit ${HEAD_HASH} to GitHub Pages at ${date}"
 git subtree push --prefix _site origin gh-pages
 
-if [ "$ENV" = "CI" ]; then
+if [ "$CI" = true ]; then
   git config user.name "GitHub Action"
   git config user.email "user@example.com"
 fi
