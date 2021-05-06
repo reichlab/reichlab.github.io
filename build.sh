@@ -4,6 +4,8 @@
 set -e
 
 # Save some useful information
+REPO=`git config remote.origin.url`
+SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 HEAD_HASH=`git rev-parse --verify HEAD` # latest commit hash
 HEAD_HASH=${HEAD_HASH: -7} # get the last 7 characters of hash
 
@@ -25,7 +27,9 @@ if [ "$CI" = true ]; then
   git config user.email "user@example.com"
 fi
 
-git add -A
-git commit -m "Auto deploy commit ${HEAD_HASH} to GitHub Pages at ${date}"
-git subtree push --prefix _site origin gh-pages
-git push origin source
+cd _site
+git init
+git add .
+git commit -am "Auto deploy commit ${HEAD_HASH} to GitHub Pages at ${date}"
+git push --force "$SSH_REPO" gh-pages
+rm -rf .git
