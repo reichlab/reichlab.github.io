@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Reich Lab @ UMassAmherst">
+<meta name="author" content="Katie">
+<meta name="keywords" content="blog, R">
+<link rel="canonical" href="http://reichlab.io//2019/01/29/forecast-framework-demo.html">
+
+<title>
+  Forecast Framework Demo &#8211; Nicholas Reich: Biostatistics and Infectious Disease Epidemiology
+</title>
+
+<link href="/assets/css/spectre.min.css" rel="stylesheet">
+<link href="/css/custom.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/icon-css/font/flaticon.css"> 
+<link rel="stylesheet" href="css/icon-css/google-scholar/css/academicons.css"/> <!--Google Scholar logo-->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-128x128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#881c1c" />
+<meta name="msapplication-TileImage" content="/assets/images/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/images/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/images/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/images/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/images/favicons/mstile-310x310.png" />
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Forecast Framework Demo">
+<meta property="og:description" content="Reich Lab @ UMassAmherst">
+<meta property="og:url" content="http://reichlab.io//2019/01/29/forecast-framework-demo.html">
+<meta property="og:site_name" content="Nicholas Reich: Biostatistics and Infectious Disease Epidemiology">
+
+<meta name="twitter:url" content="http://reichlab.io//2019/01/29/forecast-framework-demo.html">
+<meta name="twitter:title" content="Forecast Framework Demo">
+<meta name="twitter:description" content="Reich Lab @ UMassAmherst">
+
+<meta itemprop="name" content="Forecast Framework Demo">
+<meta itemprop="description" content="Reich Lab @ UMassAmherst">
+
+  </head>
+  <body>
+    <div class="nav-accent"></div>
+<section class="section-nav bg-gray">
+  <section class="container grid-custom">
+    <div class="columns">
+      <header class="navbar column col-12">
+        <section class="navbar-section">
+          <a href="/" class="navbar-brand mr-10">
+            <img src="/assets/images/logo/nav-logo.png" alt="Reich Lab">
+          </a>
+        </section>
+        <section class="navbar-section">
+          <!-- Show this segment when in small device -->
+          <div class="dropdown dropdown-right show-sm">
+            <a href="#" class="btn btn-link btn-lg dropdown-toggle" tabindex="0">
+              <i class="fa fa-navicon"></i>
+            </a>
+            <ul class="menu">                
+              <li><a href="/people" class="btn btn-link">People</a></li>
+              <li><a href="/research" class="btn btn-link">Research</a></li>
+              <li><a href="/teaching" class="btn btn-link">Teaching</a></li>
+              <li><a href="https://covid19forecasthub.org/" class="btn btn-link">COVID-19</a></li>
+              <li><a href="/publications" class="btn btn-link">Publications</a></li>
+              <li><a href="/blog" class="btn btn-link">Blog</a></li>
+              <li>
+                <div class="dropdown dropdown-right show-sm">
+                  <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                    Apps <i class="fa fa-caret-down"></i>
+                  </a>
+                 <ul class="menu">
+                   <li><a href="/alert" class="btn btn-link">ALERT</a></li>
+                   <li><a href="/flusightnetwork" class="btn btn-link">Flusight Network</a></li>
+                 </ul>
+               </div>
+             </li>
+            </ul>
+          </div>
+
+          <!-- Hide this segment when in small device -->
+          <div class="hide-sm">
+            <a href="/people" class="btn btn-link">People</a>
+            <a href="/research" class="btn btn-link">Research</a>
+            <a href="/teaching" class="btn btn-link">Teaching</a>
+            <a href="https://covid19forecasthub.org/" class="btn btn-link">COVID-19</a>
+            <a href="/publications" class="btn btn-link">Publications</a>
+            <a href="/blog" class="btn btn-link">Blog</a>
+            <div class="dropdown dropdown-right">
+              <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                Apps <i class="fa fa-caret-down"></i>
+              </a>
+              <ul class="menu">
+                <li><a href="/alert" class="btn btn-link">ALERT</a></li>
+                <li><a href="/flusightnetwork" class="btn btn-link">Flusight Network</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </header>
+    </div>
+  </section>
+</section>
+
+
+    <section class="container container-body grid-custom">
+      <div class="columns">
+        <div class="column col-8 col-md-12">
+          <h1>Forecast Framework Demo</h1>
+          <p>
+            by <em>Katie</em>
+          </p>
+          <p><i class="fa fa-clock-o"></i> Posted on 29 January, 2019</p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column col-8 col-md-12">
+          <p>Want to learn how to do some forecasting with R? Here’s your chance to try out a new time-series forecasting package for R whose aim is to standardize and simplify the process of making and evaluating forecasts!</p>
+
+<p>The <a href="http://reichlab.io/">Reich Lab</a> uses an R package called <code class="language-plaintext highlighter-rouge">ForecastFramework</code> to implement forecasting models. There are many benefits to using <code class="language-plaintext highlighter-rouge">ForecastFramework</code> in a forecasting pipeline, including: standardized and simplified rapid model development and performance evaluation. <code class="language-plaintext highlighter-rouge">ForecastFramework</code> was created by Joshua Kaminsky of the <a href="http://www.iddynamics.jhsph.edu/">Infectious Disease Dynamics Group at Johns Hopkins University</a>. The package is open source and can be found <a href="https://github.com/HopkinsIDD/ForecastFramework">on Github</a>.</p>
+
+<p>After watching students in the lab working on learning how to use <code class="language-plaintext highlighter-rouge">ForecastFramework</code>, I decided to create a step-by-step demonstration of the primary use cases of <code class="language-plaintext highlighter-rouge">ForecastFramework</code>. The complete demo lives at <a href="http://reichlab.io/forecast-framework-demos/">reichlab.io/forecast-framework-demos/</a>.</p>
+
+<p><a href="https://reichlab.github.io/flusight/">
+    <img class="img-responsive" width="700" src="/images/blog/ff-demo.PNG" />
+</a></p>
+
+<!--more-->
+
+<p>As the resident CS grad-student programmer in the lab, I wanted to write these demonstrations to make <code class="language-plaintext highlighter-rouge">ForecastFramework</code> accessible. However, the demo only scrapes the surface of the many way that we (and others, we hope) will use  <code class="language-plaintext highlighter-rouge">ForecastFramework</code>. We have incorporated <code class="language-plaintext highlighter-rouge">ForecastFramework</code> into our workflow for generating <a href="https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0004761">real-time dengue forecasts for the Ministry of Public Health in Thailand</a>, and students have found it useful in generating small model comparison projects.</p>
+
+<p><a href="http://reichlab.io/forecast-framework-demos/">The online demo</a> is separated into five sections. Each section will build off knowledge from the previous and will gradually increase in difficulty. However, the demos work as standalone scripts as well. The demos are categorized as the following:</p>
+<ol>
+  <li><a href="http://reichlab.io/forecast-framework-demos/#the-data-1"><strong>The Data</strong></a> - This section will examine the raw data used in the <code class="language-plaintext highlighter-rouge">ForecastFramework</code> models ahead.</li>
+  <li><a href="http://reichlab.io/forecast-framework-demos/#defining-inputs-incidence-matrix-1"><strong>Defining Inputs</strong></a> - This section will define what an <code class="language-plaintext highlighter-rouge">IncidenceMatrix</code> is, show how to format your data to be used as an <code class="language-plaintext highlighter-rouge">IncidenceMatrix</code>, and exemplify functions of the <code class="language-plaintext highlighter-rouge">IncidenceMatrix</code> class.</li>
+  <li><a href="http://reichlab.io/forecast-framework-demos/#fitting-and-forecasting"><strong>Fitting and Forecasting</strong></a> - This section will focus on fitting data to a SARIMA model with <code class="language-plaintext highlighter-rouge">ForecastFramework</code>, using the <a href="https://github.com/reichlab/sarimaTD"><code class="language-plaintext highlighter-rouge">sarimaTD</code> package</a> developed by <a href="http://www.mtholyoke.edu/~eray/">Evan Ray</a>.</li>
+  <li><a href="http://reichlab.io/forecast-framework-demos/#evaluating-multiple-models"><strong>Evaluating Complex Models</strong></a> - This section will demonstrate evaluation metrics and techniques by comparing two complex models in <code class="language-plaintext highlighter-rouge">ForecastFramework</code>.</li>
+  <li><a href="http://reichlab.io/forecast-framework-demos/#creating-your-own-model"><strong>Creating your own Model</strong></a> - This section will use object-oriented R programming demonstrate how to create your own model with <code class="language-plaintext highlighter-rouge">ForecastFramework</code>.</li>
+</ol>
+
+<p><a href="http://reichlab.io/forecast-framework-demos/">Try using <code class="language-plaintext highlighter-rouge">ForecastFramework</code> today</a>! I hope you find the tutorials interesting and instructive. If you have any questions or find any bugs, please let me know! I can be found at khouse [at] umass.edu or through <a href="http://katie-house.com/">my personal website</a>.</p>
+
+
+
+          
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+ var disqus_config = function () {
+   this.page = this.page || {};
+   this.page.url = 'http://reichlab.io//2019/01/29/forecast-framework-demo.html';
+   this.page.identifier = '/2019/01/29/forecast-framework-demo.html';
+   this.page.title = 'Forecast Framework Demo';
+ };
+ (function() {  // DON'T EDIT BELOW THIS LINE
+   var d = document, s = d.createElement('script');
+   s.src = 'https://reichlab.disqus.com/embed.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (d.head || d.body).appendChild(s);
+ })();
+</script>
+<noscript>Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+    comments powered by Disqus.
+  </a>
+</noscript>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray">
+  <section class="section-footer container grid-custom">
+    <div class="columns">
+      <div class="column col-12">
+        <p>
+          <a href="https://github.com/reichlab" id="github-btn" target="_blank">
+            <span class="fa-lg">
+              <i class="fa fa-github-alt"></i>
+            </span>
+            <span class="btn-text">
+              <span class="text-light">github /</span>
+              <strong>reichlab</strong>
+            </span>
+          </a>
+          <a href="https://twitter.com/reichlab" id="twitter-btn" target="_blank">
+            <span class="fa-lg">
+              <i class="fa fa-twitter"></i>
+            </span>
+            <span class="btn-text">
+              <span class="text-light">twitter /</span>
+              <strong>@reichlab</strong>
+            </span>
+          </a>
+        </p>
+        <p class="foot-note"><small>&copy; Nicholas Reich 2021. Source code available <a href="https://github.com/reichlab/reichlab.github.io">here</a>.</small></p>
+      </div>
+    </div>
+  </section>
+</footer>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+ var sc_project=10491184;
+ var sc_invisible=1;
+ var sc_security="40c0ea38";
+ var scJsHost = (("https:" == document.location.protocol) ?
+                 "https://secure." : "http://www.");
+ document.write("<sc" + "ript type='text/javascript' src='" +
+                scJsHost + "statcounter.com/counter/counter.js'></" +
+                "script>");
+</script>
+<noscript>
+  <div class="statcounter">
+    <a title="shopify site analytics"
+       href="http://statcounter.com/shopify/" target="_blank">
+      <img class="statcounter"
+           src="http://c.statcounter.com/10491184/0/40c0ea38/1/"
+           alt="shopify site analytics">
+    </a>
+  </div>
+</noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+  </body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Reich Lab @ UMassAmherst">
+<meta name="author" content="Nick">
+<meta name="keywords" content="blog">
+<link rel="canonical" href="http://reichlab.io//2015/10/12/predicting-basketball-and-flu.html">
+
+<title>
+  Strange bedfellows: methods for predicting the NBA and flu &#8211; Nicholas Reich: Biostatistics and Infectious Disease Epidemiology
+</title>
+
+<link href="/assets/css/spectre.min.css" rel="stylesheet">
+<link href="/css/custom.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/icon-css/font/flaticon.css"> 
+<link rel="stylesheet" href="css/icon-css/google-scholar/css/academicons.css"/> <!--Google Scholar logo-->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-128x128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#881c1c" />
+<meta name="msapplication-TileImage" content="/assets/images/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/images/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/images/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/images/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/images/favicons/mstile-310x310.png" />
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Strange bedfellows: methods for predicting the NBA and flu">
+<meta property="og:description" content="Reich Lab @ UMassAmherst">
+<meta property="og:url" content="http://reichlab.io//2015/10/12/predicting-basketball-and-flu.html">
+<meta property="og:site_name" content="Nicholas Reich: Biostatistics and Infectious Disease Epidemiology">
+
+<meta name="twitter:url" content="http://reichlab.io//2015/10/12/predicting-basketball-and-flu.html">
+<meta name="twitter:title" content="Strange bedfellows: methods for predicting the NBA and flu">
+<meta name="twitter:description" content="Reich Lab @ UMassAmherst">
+
+<meta itemprop="name" content="Strange bedfellows: methods for predicting the NBA and flu">
+<meta itemprop="description" content="Reich Lab @ UMassAmherst">
+
+  </head>
+  <body>
+    <div class="nav-accent"></div>
+<section class="section-nav bg-gray">
+  <section class="container grid-custom">
+    <div class="columns">
+      <header class="navbar column col-12">
+        <section class="navbar-section">
+          <a href="/" class="navbar-brand mr-10">
+            <img src="/assets/images/logo/nav-logo.png" alt="Reich Lab">
+          </a>
+        </section>
+        <section class="navbar-section">
+          <!-- Show this segment when in small device -->
+          <div class="dropdown dropdown-right show-sm">
+            <a href="#" class="btn btn-link btn-lg dropdown-toggle" tabindex="0">
+              <i class="fa fa-navicon"></i>
+            </a>
+            <ul class="menu">                
+              <li><a href="/people" class="btn btn-link">People</a></li>
+              <li><a href="/research" class="btn btn-link">Research</a></li>
+              <li><a href="/teaching" class="btn btn-link">Teaching</a></li>
+              <li><a href="https://covid19forecasthub.org/" class="btn btn-link">COVID-19</a></li>
+              <li><a href="/publications" class="btn btn-link">Publications</a></li>
+              <li><a href="/blog" class="btn btn-link">Blog</a></li>
+              <li>
+                <div class="dropdown dropdown-right show-sm">
+                  <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                    Apps <i class="fa fa-caret-down"></i>
+                  </a>
+                 <ul class="menu">
+                   <li><a href="/alert" class="btn btn-link">ALERT</a></li>
+                   <li><a href="/flusightnetwork" class="btn btn-link">Flusight Network</a></li>
+                 </ul>
+               </div>
+             </li>
+            </ul>
+          </div>
+
+          <!-- Hide this segment when in small device -->
+          <div class="hide-sm">
+            <a href="/people" class="btn btn-link">People</a>
+            <a href="/research" class="btn btn-link">Research</a>
+            <a href="/teaching" class="btn btn-link">Teaching</a>
+            <a href="https://covid19forecasthub.org/" class="btn btn-link">COVID-19</a>
+            <a href="/publications" class="btn btn-link">Publications</a>
+            <a href="/blog" class="btn btn-link">Blog</a>
+            <div class="dropdown dropdown-right">
+              <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                Apps <i class="fa fa-caret-down"></i>
+              </a>
+              <ul class="menu">
+                <li><a href="/alert" class="btn btn-link">ALERT</a></li>
+                <li><a href="/flusightnetwork" class="btn btn-link">Flusight Network</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </header>
+    </div>
+  </section>
+</section>
+
+
+    <section class="container container-body grid-custom">
+      <div class="columns">
+        <div class="column col-8 col-md-12">
+          <h1>Strange bedfellows: methods for predicting the NBA and flu</h1>
+          <p>
+            by <em>Nick</em>
+          </p>
+          <p><i class="fa fa-clock-o"></i> Posted on 12 October, 2015</p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column col-8 col-md-12">
+          <p>FiveThirtyEight’s new <a href="http://fivethirtyeight.com/features/how-were-predicting-nba-player-career/">CARMELO prediction alorithm, that projects the future careers of every NBA player</a>, has similarity with prediction methods in other fields.</p>
+
+<!--more-->
+
+<p>I read up this morning on <a href="http://fivethirtyeight.com/features/how-were-predicting-nba-player-career/">CARMELO</a>, the latest stats-backed tool to come out of Nate Silver’s shop at FiveThirtyEight. They clearly have down the formla for putting together real quantitative predictions with a glossy front end delivery. <a href="http://projects.fivethirtyeight.com/carmelo/">It looks slick!</a> As they point out, CARMELO is based on <a href="https://en.wikipedia.org/wiki/PECOTA">PECOTA, a similar system for predicting baseball player careers</a>, which was Nate’s first big modeling breakthrough back in the early-mid 2000s.</p>
+
+<p>What struck me reading through this today was how similar it is to what is known as “the method of analogues” in at least the <a href="http://ww2010.atmos.uiuc.edu/(Gh)/guides/mtr/fcst/mth/oth.rxml">meterological</a> and <a href="http://www.ncbi.nlm.nih.gov/pubmed/14607808">infectious disease</a> forecasting communities. The shared idea in these prediction methods is that you find “similar” observations to the one that you are trying to predict in your existing dataset. Then, look at those similar observations, see what they did in the future and use them to come up with some intelligent guess about what your observation of interest will do. (Hint: it tends to be something like a weighted mean of the observed trajectories of the similar datapoints.)</p>
+
+<p>Evan Ray and Krzysztof Sakrejda, post-docs in the <a href="http://reichlab.github.io">Reich Lab</a>, put together a new formulation of the method of analogues for a submission to the <a href="http://predict.phiresearchlab.org/dengue/index.html">White House Dengue Prediction Challenge</a> this past summer, for predicting outbreaks of dengue fever in Puerto Rico and Peru. Their submission method wasn’t in the top three performers, but it wasn’t too shabby either, and there were a few small tweaks and fixes that they are working on to see if that might improve performance. (The complete story will be the topic of a future blog post.) Their method (still a work in progress) including code, as well as brief and detailed write-ups can be found on <a href="https://github.com/reichlab/dengue-ssr-prediction/">GitHub</a>.</p>
+
+<p>I find it interesting to see the similarities of some of these methods from disparate fields. Please comment if you know or recognize these prediction methods from yet other contexts.</p>
+
+<p>I’ll be curious to see (and hope the folks at FiveThirtyEight put together, in 8 months) some honest evaluations of these early drafts of CARMELO. At the end of this season, for example, what will the actual CARMELO prediction interval coverages be? How much more/less accurate will the  point predictions for a player’s WAR be comparing CARMELO to a simple model? (Possible simple model: a player’s WAR from last year or the average WAR of players with a given number of years’ experience.) These questions get at a common theme of a lot of our research lately: how can you tell that a prediction is adding value? Turns out, this is a tougher question to answer than it appears.</p>
+
+
+          
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+ var disqus_config = function () {
+   this.page = this.page || {};
+   this.page.url = 'http://reichlab.io//2015/10/12/predicting-basketball-and-flu.html';
+   this.page.identifier = '/2015/10/12/predicting-basketball-and-flu.html';
+   this.page.title = 'Strange bedfellows: methods for predicting the NBA and flu';
+ };
+ (function() {  // DON'T EDIT BELOW THIS LINE
+   var d = document, s = d.createElement('script');
+   s.src = 'https://reichlab.disqus.com/embed.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (d.head || d.body).appendChild(s);
+ })();
+</script>
+<noscript>Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+    comments powered by Disqus.
+  </a>
+</noscript>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray">
+  <section class="section-footer container grid-custom">
+    <div class="columns">
+      <div class="column col-12">
+        <p>
+          <a href="https://github.com/reichlab" id="github-btn" target="_blank">
+            <span class="fa-lg">
+              <i class="fa fa-github-alt"></i>
+            </span>
+            <span class="btn-text">
+              <span class="text-light">github /</span>
+              <strong>reichlab</strong>
+            </span>
+          </a>
+          <a href="https://twitter.com/reichlab" id="twitter-btn" target="_blank">
+            <span class="fa-lg">
+              <i class="fa fa-twitter"></i>
+            </span>
+            <span class="btn-text">
+              <span class="text-light">twitter /</span>
+              <strong>@reichlab</strong>
+            </span>
+          </a>
+        </p>
+        <p class="foot-note"><small>&copy; Nicholas Reich 2021. Source code available <a href="https://github.com/reichlab/reichlab.github.io">here</a>.</small></p>
+      </div>
+    </div>
+  </section>
+</footer>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+ var sc_project=10491184;
+ var sc_invisible=1;
+ var sc_security="40c0ea38";
+ var scJsHost = (("https:" == document.location.protocol) ?
+                 "https://secure." : "http://www.");
+ document.write("<sc" + "ript type='text/javascript' src='" +
+                scJsHost + "statcounter.com/counter/counter.js'></" +
+                "script>");
+</script>
+<noscript>
+  <div class="statcounter">
+    <a title="shopify site analytics"
+       href="http://statcounter.com/shopify/" target="_blank">
+      <img class="statcounter"
+           src="http://c.statcounter.com/10491184/0/40c0ea38/1/"
+           alt="shopify site analytics">
+    </a>
+  </div>
+</noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+  </body>
+</html>
