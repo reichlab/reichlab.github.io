@@ -18,9 +18,8 @@ sudo gem install bundler
 # install packages
 bundle install
 
-# collect and build
-bundle exec rake collect
-bundle exec rake build
+# remove old site
+rm -rf ./_site
 
 if [ "$CI" = true ]; then
   git config user.name "GitHub Action"
@@ -28,6 +27,10 @@ if [ "$CI" = true ]; then
 fi
 
 git worktree add _site gh-pages
+
+# collect and build
+bundle exec rake collect
+bundle exec rake build
 (cd _site; git add .)
 (cd _site; git commit -am "Auto deploy commit ${HEAD_HASH} to GitHub Pages at ${date}")
 git push origin gh-pages
