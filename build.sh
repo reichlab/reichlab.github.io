@@ -33,5 +33,5 @@ git worktree add _site gh-pages
 bundle exec rake collect
 bundle exec rake build
 (cd _site; git add .)
-(cd _site; git commit -am "Auto deploy commit ${HEAD_HASH} to GitHub Pages at ${date}")
+(cd _site; git diff-index --quiet HEAD || git commit -am "Auto deploy commit ${HEAD_HASH} to GitHub Pages at ${date}")
 git push origin gh-pages
