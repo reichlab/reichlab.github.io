@@ -20,13 +20,12 @@ bundle install
 bundle exec rake collect
 bundle exec rake build
 
-git add -A
-git commit -m "Auto deploy commit ${HEAD_HASH} to GitHub Pages at ${date}"
-git subtree push --prefix _site origin gh-pages
-
 if [ "$CI" = true ]; then
   git config user.name "GitHub Action"
   git config user.email "user@example.com"
 fi
 
+git add -A
+git commit -m "Auto deploy commit ${HEAD_HASH} to GitHub Pages at ${date}"
 git subtree push --prefix _site origin gh-pages
+git push origin source
