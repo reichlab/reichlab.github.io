@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Reich Lab @ UMassAmherst">
+<meta name="author" content="Nick">
+<meta name="keywords" content="blog">
+<link rel="canonical" href="http://reichlab.io//2016/09/01/epidata-api.html">
+
+<title>
+  Using the DELPHI API to access infectious disease data &#8211; Nicholas Reich: Biostatistics and Infectious Disease Epidemiology
+</title>
+
+<link href="/assets/css/spectre.min.css" rel="stylesheet">
+<link href="/css/custom.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/icon-css/font/flaticon.css"> 
+<link rel="stylesheet" href="css/icon-css/google-scholar/css/academicons.css"/> <!--Google Scholar logo-->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-128x128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#881c1c" />
+<meta name="msapplication-TileImage" content="/assets/images/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/images/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/images/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/images/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/images/favicons/mstile-310x310.png" />
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Using the DELPHI API to access infectious disease data">
+<meta property="og:description" content="Reich Lab @ UMassAmherst">
+<meta property="og:url" content="http://reichlab.io//2016/09/01/epidata-api.html">
+<meta property="og:site_name" content="Nicholas Reich: Biostatistics and Infectious Disease Epidemiology">
+
+<meta name="twitter:url" content="http://reichlab.io//2016/09/01/epidata-api.html">
+<meta name="twitter:title" content="Using the DELPHI API to access infectious disease data">
+<meta name="twitter:description" content="Reich Lab @ UMassAmherst">
+
+<meta itemprop="name" content="Using the DELPHI API to access infectious disease data">
+<meta itemprop="description" content="Reich Lab @ UMassAmherst">
+
+  </head>
+  <body>
+    <div class="nav-accent"></div>
+<section class="section-nav bg-gray">
+  <section class="container grid-custom">
+    <div class="columns">
+      <header class="navbar column col-12">
+        <section class="navbar-section">
+          <a href="/" class="navbar-brand mr-10">
+            <img src="/assets/images/logo/nav-logo.png" alt="Reich Lab">
+          </a>
+        </section>
+        <section class="navbar-section">
+          <!-- Show this segment when in small device -->
+          <div class="dropdown dropdown-right show-sm">
+            <a href="#" class="btn btn-link btn-lg dropdown-toggle" tabindex="0">
+              <i class="fa fa-navicon"></i>
+            </a>
+            <ul class="menu">                
+              <li><a href="/people" class="btn btn-link">People</a></li>
+              <li><a href="/research" class="btn btn-link">Research</a></li>
+              <li><a href="/teaching" class="btn btn-link">Teaching</a></li>
+              <li><a href="https://covid19forecasthub.org/" class="btn btn-link">COVID-19</a></li>
+              <li><a href="/publications" class="btn btn-link">Publications</a></li>
+              <li><a href="/blog" class="btn btn-link">Blog</a></li>
+              <li>
+                <div class="dropdown dropdown-right show-sm">
+                  <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                    Apps <i class="fa fa-caret-down"></i>
+                  </a>
+                 <ul class="menu">
+                   <li><a href="/alert" class="btn btn-link">ALERT</a></li>
+                   <li><a href="/flusightnetwork" class="btn btn-link">Flusight Network</a></li>
+                 </ul>
+               </div>
+             </li>
+            </ul>
+          </div>
+
+          <!-- Hide this segment when in small device -->
+          <div class="hide-sm">
+            <a href="/people" class="btn btn-link">People</a>
+            <a href="/research" class="btn btn-link">Research</a>
+            <a href="/teaching" class="btn btn-link">Teaching</a>
+            <a href="https://covid19forecasthub.org/" class="btn btn-link">COVID-19</a>
+            <a href="/publications" class="btn btn-link">Publications</a>
+            <a href="/blog" class="btn btn-link">Blog</a>
+            <div class="dropdown dropdown-right">
+              <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                Apps <i class="fa fa-caret-down"></i>
+              </a>
+              <ul class="menu">
+                <li><a href="/alert" class="btn btn-link">ALERT</a></li>
+                <li><a href="/flusightnetwork" class="btn btn-link">Flusight Network</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </header>
+    </div>
+  </section>
+</section>
+
+
+    <section class="container container-body grid-custom">
+      <div class="columns">
+        <div class="column col-8 col-md-12">
+          <h1>Using the DELPHI API to access infectious disease data</h1>
+          <p>
+            by <em>Nick</em>
+          </p>
+          <p><i class="fa fa-clock-o"></i> Posted on 01 September, 2016</p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column col-8 col-md-12">
+          <p>This week I attended a workshop at the CDC about last year’s <a href="https://predict.phiresearchlab.org/flu/index.html">FluSight challenge</a>, a competition that scores weekly real-time predictions about the course of the influenza season. They are planning another round this year and are hoping to increase the number of teams particiating. Stay tuned to <a href="https://predict.phiresearchlab.org/flu/index.html">this site</a> for more info.</p>
+
+<p>At the workshop, I learned about <a href="http://delphi.midas.cs.cmu.edu/">DELPHI’s</a> real-time epidemiological <a href="https://github.com/undefx/delphi-epidata">data API</a>. The API is linked to various data sources on influenza and dengue, including US CDC flu data, Google Flu Trends, and Wikipedia data. There is <a href="https://github.com/undefx/delphi-epidata#the-api">some documentation</a> and <a href="https://github.com/undefx/delphi-epidata#code-samples">minimal examples</a>, and this post documents a more robust and complete example for using the API via R. I’ll note that the CDC’s influenza data, can also be accessed via the <code class="language-plaintext highlighter-rouge">cdcfluview</code> R package, which I’m not going to discuss here and I will focus here on accessing some of the other data sources. Here’s a teaser of this data that you can also interactively explore on the <a href="http://delphi.midas.cs.cmu.edu/epivis/epivis.html">DELPHI EpiVis website</a>:
+<img class="img-responsive" width="600" src="/images/blog/epivis.png" /></p>
+
+<!--more-->
+
+<h2 id="setup">Setup</h2>
+
+<p>Let’s start by loading the R script containing the relevant methods needed to access the API.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">source</span><span class="p">(</span><span class="s2">"https://raw.githubusercontent.com/undefx/delphi-epidata/master/code/delphi_epidata.R"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Then, load in two packages that we will use to tidy and plot the data.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">MMWRweek</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="dengue-data-from-taiwan-cdc">Dengue data from Taiwan CDC</h2>
+
+<p>Here is some code that pulls data from <a href="http://nidss.cdc.gov.tw/en/">Taiwan’s NIDSS</a>, specifically asking for nationwide data, and data from the central region. A complete list of <a href="https://github.com/undefx/delphi-epidata/blob/master/labels/nidss_regions.txt">regions</a> and <a href="https://github.com/undefx/delphi-epidata/blob/master/labels/nidss_locations.txt">locations</a> are available. Also, I’ve specified a range of weeks from the first week of 2010 (<code class="language-plaintext highlighter-rouge">201001</code>) to the last week of 2016 (<code class="language-plaintext highlighter-rouge">201653</code>).</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">Epidata</span><span class="o">$</span><span class="n">nidss.dengue</span><span class="p">(</span><span class="n">locations</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="s1">'nationwide'</span><span class="p">,</span><span class="w"> </span><span class="s1">'central'</span><span class="p">),</span><span class="w"> 
+                            </span><span class="n">epiweeks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">Epidata</span><span class="o">$</span><span class="nf">range</span><span class="p">(</span><span class="m">201001</span><span class="p">,</span><span class="w"> </span><span class="m">201653</span><span class="p">)))</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The above command should pull data down into your current session, but it will be a little bit ‘list-y’, so here is some code I wrote to clean it up and make it a bit more of a workable dataset in R.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">matrix</span><span class="p">(</span><span class="n">unlist</span><span class="p">(</span><span class="n">res</span><span class="o">$</span><span class="n">epidata</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="o">=</span><span class="nf">length</span><span class="p">(</span><span class="n">res</span><span class="o">$</span><span class="n">epidata</span><span class="p">),</span><span class="w"> </span><span class="n">byrow</span><span class="o">=</span><span class="nb">T</span><span class="p">))</span><span class="w">
+</span><span class="n">colnames</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">names</span><span class="p">(</span><span class="n">res</span><span class="o">$</span><span class="n">epidata</span><span class="p">[[</span><span class="m">1</span><span class="p">]])[</span><span class="o">!</span><span class="nf">is.null</span><span class="p">(</span><span class="n">res</span><span class="o">$</span><span class="n">epidata</span><span class="p">[[</span><span class="m">1</span><span class="p">]])]</span><span class="w">
+</span><span class="n">df</span><span class="o">$</span><span class="n">count</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.numeric</span><span class="p">(</span><span class="nf">as.character</span><span class="p">(</span><span class="n">df</span><span class="o">$</span><span class="n">count</span><span class="p">))</span><span class="w">
+</span><span class="n">df</span><span class="o">$</span><span class="n">year</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.numeric</span><span class="p">(</span><span class="n">substr</span><span class="p">(</span><span class="n">df</span><span class="o">$</span><span class="n">epiweek</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">))</span><span class="w">
+</span><span class="n">df</span><span class="o">$</span><span class="n">week</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.numeric</span><span class="p">(</span><span class="n">substr</span><span class="p">(</span><span class="n">df</span><span class="o">$</span><span class="n">epiweek</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">6</span><span class="p">))</span><span class="w">
+</span><span class="n">df</span><span class="o">$</span><span class="n">date</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">MMWRweek2Date</span><span class="p">(</span><span class="n">MMWRyear</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">df</span><span class="o">$</span><span class="n">year</span><span class="p">,</span><span class="w"> </span><span class="n">MMWRweek</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">df</span><span class="o">$</span><span class="n">week</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Note the use of the <code class="language-plaintext highlighter-rouge">MMWRweek2Date()</code> function that gives us a date column in our data frame. And here is a plot of the resulting data.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">ggplot</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">date</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="n">count</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="o">=</span><span class="n">location</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">geom_point</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">scale_y_log10</span><span class="p">()</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="/images/blog/nidss-data.png" alt="" /></p>
+
+<h2 id="wikipedia-data">Wikipedia data</h2>
+
+<p>Let’s try loading some of the Wikipedia data on influenza and other related terms. The article. I think this reflects the number of hits on pages of certain articles, although I’m not sure.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">res</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">Epidata</span><span class="o">$</span><span class="n">wiki</span><span class="p">(</span><span class="n">articles</span><span class="o">=</span><span class="nf">list</span><span class="p">(</span><span class="s2">"influenza"</span><span class="p">,</span><span class="w"> </span><span class="s2">"common_cold"</span><span class="p">,</span><span class="w"> </span><span class="s2">"cough"</span><span class="p">),</span><span class="w">
+                    </span><span class="n">epiweeks</span><span class="o">=</span><span class="nf">list</span><span class="p">(</span><span class="n">Epidata</span><span class="o">$</span><span class="nf">range</span><span class="p">(</span><span class="m">201101</span><span class="p">,</span><span class="w"> </span><span class="m">201553</span><span class="p">)))</span><span class="w">
+</span><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">matrix</span><span class="p">(</span><span class="n">unlist</span><span class="p">(</span><span class="n">res</span><span class="o">$</span><span class="n">epidata</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="o">=</span><span class="nf">length</span><span class="p">(</span><span class="n">res</span><span class="o">$</span><span class="n">epidata</span><span class="p">),</span><span class="w"> </span><span class="n">byrow</span><span class="o">=</span><span class="nb">T</span><span class="p">))</span><span class="w">
+</span><span class="n">colnames</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">names</span><span class="p">(</span><span class="n">res</span><span class="o">$</span><span class="n">epidata</span><span class="p">[[</span><span class="m">1</span><span class="p">]])[</span><span class="o">!</span><span class="nf">is.null</span><span class="p">(</span><span class="n">res</span><span class="o">$</span><span class="n">epidata</span><span class="p">[[</span><span class="m">1</span><span class="p">]])]</span><span class="w">
+</span><span class="n">df</span><span class="o">$</span><span class="n">count</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.numeric</span><span class="p">(</span><span class="nf">as.character</span><span class="p">(</span><span class="n">df</span><span class="o">$</span><span class="n">count</span><span class="p">))</span><span class="w">
+</span><span class="n">df</span><span class="o">$</span><span class="n">year</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.numeric</span><span class="p">(</span><span class="n">substr</span><span class="p">(</span><span class="n">df</span><span class="o">$</span><span class="n">epiweek</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">))</span><span class="w">
+</span><span class="n">df</span><span class="o">$</span><span class="n">week</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">as.numeric</span><span class="p">(</span><span class="n">substr</span><span class="p">(</span><span class="n">df</span><span class="o">$</span><span class="n">epiweek</span><span class="p">,</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">6</span><span class="p">))</span><span class="w">
+</span><span class="n">df</span><span class="o">$</span><span class="n">date</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">MMWRweek2Date</span><span class="p">(</span><span class="n">MMWRyear</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">df</span><span class="o">$</span><span class="n">year</span><span class="p">,</span><span class="w"> </span><span class="n">MMWRweek</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">df</span><span class="o">$</span><span class="n">week</span><span class="p">)</span><span class="w">
+</span><span class="n">ggplot</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="w"> </span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">date</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="n">count</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="o">=</span><span class="n">article</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> 
+  </span><span class="n">geom_point</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w"> 
+  </span><span class="n">geom_smooth</span><span class="p">(</span><span class="n">span</span><span class="o">=</span><span class="m">.1</span><span class="p">,</span><span class="w"> </span><span class="n">se</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="/images/blog/wiki-data.png" alt="" /></p>
+
+<p>Happy data exploring!</p>
+
+<p><strong>UPDATE</strong>: (2 Sept 2016) Roni Rosenfeld, the head of the DELPHI group at CMU, pointed out and asked me to mention that David Farrow was the force behind the creation of the epidata API and the epivis tool.</p>
+
+
+          
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+ var disqus_config = function () {
+   this.page = this.page || {};
+   this.page.url = 'http://reichlab.io//2016/09/01/epidata-api.html';
+   this.page.identifier = '/2016/09/01/epidata-api.html';
+   this.page.title = 'Using the DELPHI API to access infectious disease data';
+ };
+ (function() {  // DON'T EDIT BELOW THIS LINE
+   var d = document, s = d.createElement('script');
+   s.src = 'https://reichlab.disqus.com/embed.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (d.head || d.body).appendChild(s);
+ })();
+</script>
+<noscript>Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+    comments powered by Disqus.
+  </a>
+</noscript>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray">
+  <section class="section-footer container grid-custom">
+    <div class="columns">
+      <div class="column col-12">
+        <p>
+          <a href="https://github.com/reichlab" id="github-btn" target="_blank">
+            <span class="fa-lg">
+              <i class="fa fa-github-alt"></i>
+            </span>
+            <span class="btn-text">
+              <span class="text-light">github /</span>
+              <strong>reichlab</strong>
+            </span>
+          </a>
+          <a href="https://twitter.com/reichlab" id="twitter-btn" target="_blank">
+            <span class="fa-lg">
+              <i class="fa fa-twitter"></i>
+            </span>
+            <span class="btn-text">
+              <span class="text-light">twitter /</span>
+              <strong>@reichlab</strong>
+            </span>
+          </a>
+        </p>
+        <p class="foot-note"><small>&copy; Nicholas Reich 2021. Source code available <a href="https://github.com/reichlab/reichlab.github.io">here</a>.</small></p>
+      </div>
+    </div>
+  </section>
+</footer>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+ var sc_project=10491184;
+ var sc_invisible=1;
+ var sc_security="40c0ea38";
+ var scJsHost = (("https:" == document.location.protocol) ?
+                 "https://secure." : "http://www.");
+ document.write("<sc" + "ript type='text/javascript' src='" +
+                scJsHost + "statcounter.com/counter/counter.js'></" +
+                "script>");
+</script>
+<noscript>
+  <div class="statcounter">
+    <a title="shopify site analytics"
+       href="http://statcounter.com/shopify/" target="_blank">
+      <img class="statcounter"
+           src="http://c.statcounter.com/10491184/0/40c0ea38/1/"
+           alt="shopify site analytics">
+    </a>
+  </div>
+</noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+  </body>
+</html>

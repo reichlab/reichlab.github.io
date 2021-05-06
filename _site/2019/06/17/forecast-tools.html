@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Reich Lab @ UMassAmherst">
+<meta name="author" content="Nick">
+<meta name="keywords" content="blog, R">
+<link rel="canonical" href="http://reichlab.io//2019/06/17/forecast-tools.html">
+
+<title>
+  Forecasting tools in development &#8211; Nicholas Reich: Biostatistics and Infectious Disease Epidemiology
+</title>
+
+<link href="/assets/css/spectre.min.css" rel="stylesheet">
+<link href="/css/custom.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/icon-css/font/flaticon.css"> 
+<link rel="stylesheet" href="css/icon-css/google-scholar/css/academicons.css"/> <!--Google Scholar logo-->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-128x128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#881c1c" />
+<meta name="msapplication-TileImage" content="/assets/images/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/images/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/images/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/images/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/images/favicons/mstile-310x310.png" />
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Forecasting tools in development">
+<meta property="og:description" content="Reich Lab @ UMassAmherst">
+<meta property="og:url" content="http://reichlab.io//2019/06/17/forecast-tools.html">
+<meta property="og:site_name" content="Nicholas Reich: Biostatistics and Infectious Disease Epidemiology">
+
+<meta name="twitter:url" content="http://reichlab.io//2019/06/17/forecast-tools.html">
+<meta name="twitter:title" content="Forecasting tools in development">
+<meta name="twitter:description" content="Reich Lab @ UMassAmherst">
+
+<meta itemprop="name" content="Forecasting tools in development">
+<meta itemprop="description" content="Reich Lab @ UMassAmherst">
+
+  </head>
+  <body>
+    <div class="nav-accent"></div>
+<section class="section-nav bg-gray">
+  <section class="container grid-custom">
+    <div class="columns">
+      <header class="navbar column col-12">
+        <section class="navbar-section">
+          <a href="/" class="navbar-brand mr-10">
+            <img src="/assets/images/logo/nav-logo.png" alt="Reich Lab">
+          </a>
+        </section>
+        <section class="navbar-section">
+          <!-- Show this segment when in small device -->
+          <div class="dropdown dropdown-right show-sm">
+            <a href="#" class="btn btn-link btn-lg dropdown-toggle" tabindex="0">
+              <i class="fa fa-navicon"></i>
+            </a>
+            <ul class="menu">                
+              <li><a href="/people" class="btn btn-link">People</a></li>
+              <li><a href="/research" class="btn btn-link">Research</a></li>
+              <li><a href="/teaching" class="btn btn-link">Teaching</a></li>
+              <li><a href="https://covid19forecasthub.org/" class="btn btn-link">COVID-19</a></li>
+              <li><a href="/publications" class="btn btn-link">Publications</a></li>
+              <li><a href="/blog" class="btn btn-link">Blog</a></li>
+              <li>
+                <div class="dropdown dropdown-right show-sm">
+                  <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                    Apps <i class="fa fa-caret-down"></i>
+                  </a>
+                 <ul class="menu">
+                   <li><a href="/alert" class="btn btn-link">ALERT</a></li>
+                   <li><a href="/flusightnetwork" class="btn btn-link">Flusight Network</a></li>
+                 </ul>
+               </div>
+             </li>
+            </ul>
+          </div>
+
+          <!-- Hide this segment when in small device -->
+          <div class="hide-sm">
+            <a href="/people" class="btn btn-link">People</a>
+            <a href="/research" class="btn btn-link">Research</a>
+            <a href="/teaching" class="btn btn-link">Teaching</a>
+            <a href="https://covid19forecasthub.org/" class="btn btn-link">COVID-19</a>
+            <a href="/publications" class="btn btn-link">Publications</a>
+            <a href="/blog" class="btn btn-link">Blog</a>
+            <div class="dropdown dropdown-right">
+              <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                Apps <i class="fa fa-caret-down"></i>
+              </a>
+              <ul class="menu">
+                <li><a href="/alert" class="btn btn-link">ALERT</a></li>
+                <li><a href="/flusightnetwork" class="btn btn-link">Flusight Network</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </header>
+    </div>
+  </section>
+</section>
+
+
+    <section class="container container-body grid-custom">
+      <div class="columns">
+        <div class="column col-8 col-md-12">
+          <h1>Forecasting tools in development</h1>
+          <p>
+            by <em>Nick</em>
+          </p>
+          <p><i class="fa fa-clock-o"></i> Posted on 17 June, 2019</p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column col-8 col-md-12">
+          <p>As I’ve been writing up a progress report for <a href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9553816">my NIGMS R35 MIRA award</a>, I’ve been reminded at how much of the work that we’ve been doing is focused on forecasting infrastructure. A common theme in the <a href="http://reichlab.io/">Reich Lab</a> is making <em>operational</em> forecasts of infectious disease outbreaks. The operational aspect means that we focus on everything from <a href="https://doi.org/10.1002/sim.7488">developing</a> and <a href="https://doi.org/10.1371/journal.pcbi.1005910">adapting</a> statistical methods to be used in forecasting applications to thinking about the data science toolkit that you need to store, evaluate, and visualize forecasts. To that end, in addition to working closely with the CDC in their <a href="https://www.cdc.gov/flu/weekly/flusight/index.html">FluSight initiative</a>, we’ve been doing a lot of collaborative work on new R packages and data repositories that I hope will be useful beyond the confines of our lab. Some of these projects are fully operational, used in our <a href="http://flusightnetwork.io/">production flu forecasts for CDC</a>, and some have even gone through <a href="https://doi.org/10.21105/joss.00231">a level of code peer review</a>. Others are in earlier stages of development. My hope is that in putting this list out there (see below the fold) we will generate some interest (and possibly find some new open-source collaborators) for these projects.</p>
+
+<p><a href="http://flusightnetwork.io/">
+    <img class="img-responsive" width="700" src="/images/flusight/2_flusight.JPG" />
+</a></p>
+
+<!--more-->
+
+<p>Here is a partial list of in-progress software that we’ve been working on:</p>
+
+<ul>
+  <li><a href="https://github.com/reichlab/sarimaTD"><code class="language-plaintext highlighter-rouge">sarimaTD</code></a> is an R package that serves as a wrapper to some of the ARIMA modeling functionality in the <a href="http://pkg.robjhyndman.com/forecast/"><code class="language-plaintext highlighter-rouge">forecast</code></a> R package. We found that we consistently wanted to be specifying some transformations (T) and differencing (D) in specific ways that we have found useful in modeling infectious disease time-series data, so we made it easy for us and others to use specifications.</li>
+  <li><a href="https://cran.r-project.org/package=ForecastFramework"><code class="language-plaintext highlighter-rouge">ForecastFramework</code></a> is an R package that we have collaborated on with our colleagues at the <a href="http://www.iddynamics.jhsph.edu/">Johns Hopkins Infectious Disease Dynamics lab</a>. We’ve <a href="http://reichlab.io/2019/01/29/forecast-framework-demo.html">blogged about this before</a>, and we see a lot of potential in this object-oriented framework for both standardizing how datasets are specified/accessed and how models are generated. That said, there still is a long ways to go to document and make this infrastructure usable by a wide audience. The most success I’ve had using it so far was having PhD students write <a href="https://github.com/reichlab/german-flu-forecasting">forecast models for a seminar I taught this spring</a>. I used <a href="https://github.com/reichlab/german-flu-forecasting/blob/master/code/evaluation-code.R">a single script</a> that could run and score forecasts from each model, with a very simple plug-and-play interface to the models because they had been specified appropriately.</li>
+  <li><a href="https://zoltardata.com/">Zoltar</a> is a new repository (in alpha-ish release right now) for forecasts that we have been working on over the last year. It was initially designed with our CDC flu forecast use-case in mind, although the forecast structure is quite general, and with <a href="http://cdcepi.github.io/predx"><code class="language-plaintext highlighter-rouge">predx</code></a> integration on the way (see next bullet) we are hoping that this will broaden the scope of possible use cases for Zoltar. To help facilitate our and others use of Zoltar, we are working on two interfaces to the Zoltar API, <a href="https://github.com/reichlab/zoltpy"><code class="language-plaintext highlighter-rouge">zoltpy</code></a> for python and <a href="http://reichlab.io/zoltr/"><code class="language-plaintext highlighter-rouge">zoltr</code></a> for R. Check out the documentation, especially for <code class="language-plaintext highlighter-rouge">zoltr</code>. There is quite a bit of data available!</li>
+  <li><a href="http://cdcepi.github.io/predx"><code class="language-plaintext highlighter-rouge">predx</code></a> is an R package designed my colleague and friend Michael Johansson of <a href="https://cdc.gov/">the US Centers for Disease Control and Prevention</a> and <a href="http://outbreakscience.org/">OutbreakScience</a>. <a href="https://www.mtholyoke.edu/~eray/">Evan Ray</a>, from the Reich Lab team, has contributed to it as well. The goal of <code class="language-plaintext highlighter-rouge">predx</code> is to define some general classes of data for both probabilistic and point forecasts, to better standardize ways that we might want to store and operate on these data.</li>
+  <li><a href="http://reichlab.io/d3-foresight/"><code class="language-plaintext highlighter-rouge">d3-foresight</code></a> is the main engine behind our <a href="http://flusightnetwork.io/">interactive forecast visualizations for flu in the US</a>. We have also integrated it with Zoltar, so that you can <a href="https://zoltardata.com/project/4/visualizations">view forecasts stored in Zoltar</a> (note, kind of a long load time for that last link) using some of the basic <code class="language-plaintext highlighter-rouge">d3-foresight</code> functionality.</li>
+</ul>
+
+<p>The lion’s share of the credit for all of the above are due to some combination of <a href="http://www.matthewcornell.org/">Matthew Cornell</a>, <a href="https://lepisma.xyz/about">Abhinav Tushar</a>, <a href="http://katie-house.com/">Katie House</a>, and <a href="https://www.mtholyoke.edu/~eray/">Evan Ray</a>.</p>
+
+
+          
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+ var disqus_config = function () {
+   this.page = this.page || {};
+   this.page.url = 'http://reichlab.io//2019/06/17/forecast-tools.html';
+   this.page.identifier = '/2019/06/17/forecast-tools.html';
+   this.page.title = 'Forecasting tools in development';
+ };
+ (function() {  // DON'T EDIT BELOW THIS LINE
+   var d = document, s = d.createElement('script');
+   s.src = 'https://reichlab.disqus.com/embed.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (d.head || d.body).appendChild(s);
+ })();
+</script>
+<noscript>Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+    comments powered by Disqus.
+  </a>
+</noscript>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray">
+  <section class="section-footer container grid-custom">
+    <div class="columns">
+      <div class="column col-12">
+        <p>
+          <a href="https://github.com/reichlab" id="github-btn" target="_blank">
+            <span class="fa-lg">
+              <i class="fa fa-github-alt"></i>
+            </span>
+            <span class="btn-text">
+              <span class="text-light">github /</span>
+              <strong>reichlab</strong>
+            </span>
+          </a>
+          <a href="https://twitter.com/reichlab" id="twitter-btn" target="_blank">
+            <span class="fa-lg">
+              <i class="fa fa-twitter"></i>
+            </span>
+            <span class="btn-text">
+              <span class="text-light">twitter /</span>
+              <strong>@reichlab</strong>
+            </span>
+          </a>
+        </p>
+        <p class="foot-note"><small>&copy; Nicholas Reich 2021. Source code available <a href="https://github.com/reichlab/reichlab.github.io">here</a>.</small></p>
+      </div>
+    </div>
+  </section>
+</footer>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+ var sc_project=10491184;
+ var sc_invisible=1;
+ var sc_security="40c0ea38";
+ var scJsHost = (("https:" == document.location.protocol) ?
+                 "https://secure." : "http://www.");
+ document.write("<sc" + "ript type='text/javascript' src='" +
+                scJsHost + "statcounter.com/counter/counter.js'></" +
+                "script>");
+</script>
+<noscript>
+  <div class="statcounter">
+    <a title="shopify site analytics"
+       href="http://statcounter.com/shopify/" target="_blank">
+      <img class="statcounter"
+           src="http://c.statcounter.com/10491184/0/40c0ea38/1/"
+           alt="shopify site analytics">
+    </a>
+  </div>
+</noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+  </body>
+</html>
