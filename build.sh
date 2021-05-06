@@ -11,7 +11,7 @@ HEAD_HASH=${HEAD_HASH: -7} # get the last 7 characters of hash
 sudo apt install ruby ruby-dev gem
 
 # install bundler
-gem install bundler
+sudo gem install bundler
 
 # install packages
 bundle install
