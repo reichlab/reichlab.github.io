@@ -147,6 +147,15 @@
       url: "https://github.com/micokoch"
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/alvaro-j-castro-rivadeneira/"
+      
+- name: Richa Jain
+  role: Undergraduate Student
+  description: |
+    Richa is a senior at UMass double majoring in Public Health and Mathematics. She is also a student in the 4+1 Biostatistics program. She is interested in trends in infectious diseases. In her free time she enjoys playing the guitar and hiking.
+  image: /images/people/Richa.jpg
+  links: 
+    - name: flaticon-linkedin-1
+      url: "www.linkedin.com/in/richa-jain-0a6a19147"
 
 # Staff section
 
