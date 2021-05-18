@@ -17,7 +17,6 @@
     - name: flaticon-curriculum
       url: "http://reichlab.io/pdfs/cv/cvReich.pdf"
 
-
 - name: Evan Ray
   role: Research Faculty
   description: |
@@ -200,7 +199,7 @@
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/yuxin-david-huang-aa663547/"
 
-- name:Li Shandross
+- name: Li Shandross
   role: Undergraduate Student
   description: |
     Li is an Undergrad Mathematics major with a Statistics and Data Science concentration. Li is also a part of the Biostatistics 4+1 program and has an interest in model accuracy. In her free time, she enjoys dancing and writing. 
