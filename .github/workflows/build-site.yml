@@ -1,10 +1,6 @@
 name: Build site
 
 on:
-  push:
-    branches: [ source ]
-  pull_request:
-    branches: [ source ]
   schedule:
   - cron: '30 4 * * *'
   workflow_dispatch:
