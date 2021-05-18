@@ -166,8 +166,10 @@
 - name: Li Shandross
   role: Undergraduate Student
   description: |
-    Li is an Undergrad Mathematics major with a Statistics and Data Science concentration. Li is also a part of the Biostatistics 4+1 program and has an interest in model accuracy. In her free time, she enjoys dancing and writing. 
-  image: /images/people/Shandross Li.JPG
+    Li is an Undergrad Mathematics major with a Statistics and Data Science concentration.
+    Li is also a part of the Biostatistics 4+1 program and has an interest in model accuracy.
+    In her free time, she enjoys dancing and writing. 
+  image: /images/people/li.jpg
   links: 
     - name: flaticon-github-1
       url: "https://github.com/lshandross"  
@@ -178,9 +180,7 @@
   role: MS Student/Software Engineer (2019-2021)
   type: Alumni
   description: |
-    Khoa is an MS student in Computer Science, with a concentration in Data Science. He is interested in machine learning
-    and its application in interdisciplinary fields such as computational sustainability. Besides studying, Khoa enjoys reading
-    about history and international relations.
+
   image: /images/people/khoa.jpg
   links:
     - name: flaticon-github-1
@@ -192,8 +192,7 @@
   role: MS Student/Software Engineer (2020-2021)
   type: Alumni
   description: |
-    Abdul is an MS student in Computer Science at UMass Amherst. He is interested in Machine Learning
-    with an emphasis on Deep Learning and fairness in AI.
+
   image: /images/people/abdul.jpg
   links:
     - name: flaticon-github-1
@@ -205,7 +204,7 @@
   role: Undergraduate Student/Software Engineer (2021)
   type: Alumni
   description: |
-    Apurv is a junior at UMass double majoring in CS and Mathematics and is passionate about writing impactful code and developing software that has a positive impact. In his free time he loves watching and playing basketball and watching documenteries. 
+
   image: /images/people/apurv.jpg
   links:
     - name: flaticon-github-1
