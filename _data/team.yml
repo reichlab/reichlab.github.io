@@ -131,6 +131,20 @@
     - name: flaticon-github-1
       url: "https://github.com/lshandross"  
 
+- name: Trust Okorie
+  role: Summer Research Intern
+  description: |
+    Trust just graduated with a BS in Informatics.
+    Trust has interests in applying Data Science to a variety of fields.
+    In his free time, he enjoys reading, listening to music, and going for runs. 
+  image: /images/people/trust.jpg
+  links: 
+    - name: flaticon-github-1
+      url: "https://github.com/TrustChi"
+    - name: flaticon-linkedin-1
+      url: "https://www.linkedin.com/in/tokorie/"
+
+
 # Staff section
 
 - name: Matthew Cornell
