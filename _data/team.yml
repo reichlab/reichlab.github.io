@@ -83,6 +83,20 @@
   links:
     - name: flaticon-linkedin-1  
       url: “https://www.linkedin.com/in/arianestark/”
+      
+- name: Vrushti Mody
+  role: MS Student
+  description: |
+    Vrushti is an MS student in Computer Science. She received her undergraduate degree in Computer Engineering from NMIMS University. 
+    The ability to reach a wider audience, one health problem at a time is what inspired her to join the lab. She is bubbly, outgoing with a great sense of humor. 
+  image: /images/people/vrushti-mody.jpeg
+  links:
+    - name: flaticon-linkedin-1  
+      url: “https://www.linkedin.com/in/vrushti-mody/”
+    - name: flaticon-twitter-1
+      url: "https://twitter.com/Vrushti_Mody"
+    - name: flaticon-github-1
+      url: "https://github.com/vrushti-mody"  
 
 - name: Aaron Gerding
   role: MS Student
