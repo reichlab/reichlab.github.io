@@ -112,15 +112,6 @@
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/alvaro-j-castro-rivadeneira/"
       
-- name: Richa Jain
-  role: Undergraduate Student
-  description: |
-    Richa is a senior at UMass double majoring in Public Health and Mathematics. She is also a student in the 4+1 Biostatistics program. She is interested in trends in infectious diseases. In her free time she enjoys playing the guitar and hiking.
-  image: /images/people/Richa.jpg
-  links: 
-    - name: flaticon-linkedin-1
-      url: "www.linkedin.com/in/richa-jain-0a6a19147"
-      
 - name: Li Shandross
   role: Undergraduate Student
   description: |
@@ -131,20 +122,6 @@
   links: 
     - name: flaticon-github-1
       url: "https://github.com/lshandross"  
-
-- name: Trust Okorie
-  role: Summer Research Intern
-  description: |
-    Trust graduated from UMass-Amherst in 2021 with a BS in Informatics.
-    Trust has interests in applying Data Science to a variety of fields.
-    In his free time, he enjoys reading, listening to music, and going for runs. 
-  image: /images/people/trust.jpg
-  links: 
-    - name: flaticon-github-1
-      url: "https://github.com/TrustChi"
-    - name: flaticon-linkedin-1
-      url: "https://www.linkedin.com/in/tokorie/"
-
 
 # Staff section
 
@@ -393,3 +370,23 @@
   links:
     - name: alumni_link
       url: "https://github.com/sakrejda"
+
+- name: Trust Okorie
+  description: |
+
+  role: Post-doctoral Fellow (2015-2017)
+  type: Alumni
+  image: /images/people/trust.jpg
+  links:
+    - name: alumni_link
+      url: "https://www.linkedin.com/in/tokorie/"
+
+- name: Richa Jain
+  role: Undergraduate Student
+  description: |
+   
+  image: /images/people/Richa.jpg
+  type: Alumni
+  links: 
+    - name: alumni_link
+      url: "www.linkedin.com/in/richa-jain-0a6a19147"
