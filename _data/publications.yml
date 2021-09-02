@@ -1,6 +1,26 @@
 # 2021
 
-
+- title: 'Projected resurgence of COVID-19 in the United States in July-December 2021 resulting from the increased transmissibility of the Delta variant and faltering vaccination'
+  slug: projected-resurgence
+  authors: Truelove S, Smith CP, Qin M, Mullany LC, Borchering RK,  ....., Reich NG, ....., Johansson MA, Runge MC, Viboud C
+  preprint: https://www.medrxiv.org/content/10.1101/2021.08.28.21262748v1
+  pdf: https://www.medrxiv.org/content/10.1101/2021.08.28.21262748v1.full.pdf
+  year: 2021
+  keywords: forecasting, covid-19
+  abstract: >
+    What is already known about this topic? 
+    The highly transmissible SARS-CoV-2 Delta variant has begun to cause increases in cases, hospitalizations, and deaths in parts of the United States. 
+    With slowed vaccination uptake, this novel variant is expected to increase the risk of pandemic resurgence in the US in July-December 2021. 
+    What is added by this report? 
+    Data from nine mechanistic models project substantial resurgences of COVID-19 across the US resulting from the more transmissible Delta variant. 
+    These resurgences, which have now been observed in most states, were projected to occur across most of the US, coinciding with school and business reopening. 
+    Reaching higher vaccine coverage in July-December 2021 reduces the size and duration of the projected resurgence substantially. 
+    The expected impact of the outbreak is largely concentrated in a subset of states with lower vaccination coverage. 
+    What are the implications for public health practice? 
+    Renewed efforts to increase vaccination uptake are critical to limiting transmission and disease, particularly in states with lower current vaccination coverage. 
+    Reaching higher vaccination goals in the coming months can potentially avert 1.5 million cases and 21,000 deaths and improve the ability to safely resume social contacts, and educational and business activities. 
+    Continued or renewed non-pharmaceutical interventions, including masking, can also help limit transmission, particularly as schools and businesses reopen.
+  
 - title: >
     Modeling of Future COVID-19 Cases, Hospitalizations, and Deaths, by Vaccination Rates and Nonpharmaceutical Intervention Scenarios
     — United States, April–September 2021
@@ -99,7 +119,39 @@
     Forecast accuracy degraded as models made predictions farther into the future, with probabilistic accuracy at a 20-week horizon more than 5 times worse than when predicting at a 1-week horizon. 
     This project underscores the role that collaboration and active coordination between governmental public health agencies, academic modeling teams, and industry partners can play in developing modern modeling capabilities to support local, state, and federal response to outbreaks.
 
+- title: 'Serological surveys to estimate cumulative incidence of SARS-CoV-2 infection in adults (Sero-MAss study), Massachusetts, July–August 2020: a mail-based cross-sectional study'
+  slug: serological-surveys
+  authors: Teah Snyder, Johanna Ravenhurst, Estee Y Cramer, Nicholas G Reich, Laura Balzer, Dominique Alfandari, A Lover
+  journal: BMJ Open 
+  pdf: https://bmjopen.bmj.com/content/bmjopen/11/8/e051157.full.pdf
+  year: 2021
+  doi: https://doi.org/10.1136/bmjopen-2021-051157
+  keywords: forecasting, covid-19
+  abstract: >
+    Objectives 
+      To estimate the seroprevalence of anti-SARSCoV-2 IgG and IgM among Massachusetts residents and to better understand asymptomatic SARS-CoV-2 transmission during the summer of 2020.
+    Design 
+      Mail-based cross-sectional survey.
+    Setting 
+      Massachusetts, USA.
+    Participants 
+      Primary sampling group: sample of undergraduate students at the University of Massachusetts, Amherst (n=548) and a member of their household (n=231).
+      Secondary sampling group: sample of graduate students, faculty, librarians and staff (n=214) and one member of their household (n=78). All participants were residents of Massachusetts without prior COVID-19 diagnosis.
+      Primary and secondary outcome measures 
+        Prevalence of SARS-CoV-2 seropositivity. Association of seroprevalence with variables including age, gender, race, geographic region, occupation and symptoms.
+    Results 
+      Approximately 27 000 persons were invited via email to assess eligibility. 1001 households were mailed dried blood spot sample kits, 762 returned blood samples for analysis. 
+      In the primary sample group, 36 individuals (4.6%) had IgG antibodies detected for an estimated weighted prevalence in this population of 5.3% (95% CI: 3.5 to 8.0). 
+      In the secondary sampling group, 10 participants (3.4%) had IgG antibodies detected for an estimated adjusted prevalence of 4.0% (95% CI: 2.2 to 7.4). No samples were IgM positive. 
+      No association was found in either group between seropositivity and self-reported work duties or customer-facing hours. 
+      In the primary sampling group, self-reported febrile illness since February 2020, male sex and minority race (Black or American Indian/Alaskan Native) were associated with seropositivity. 
+      No factors except geographic regions within the state were associated with evidence of prior SARSCoV-2 infection in the secondary sampling group.
+    Conclusions 
+      This study fills a critical gap in estimating the levels of subclinical and asymptomatic infection. Estimates can be used to calibrate models estimating levels of population immunity over time, and these data are critical for informing public health interventions and policy.
+  
+
 # 2020
+
 
 - title: 'Identification and evaluation of epidemic prediction and forecasting reporting guidelines: A systematic review and a call for action'
   slug: pollet-epidemic

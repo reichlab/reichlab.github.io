@@ -64,6 +64,8 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
     multipart-post (2.1.1)
+    nokogiri (1.11.3-x86_64-darwin)
+      racc (~> 1.4)
     nokogiri (1.11.3-x86_64-linux)
       racc (~> 1.4)
     nokogumbo (2.0.5)
@@ -95,9 +97,11 @@ GEM
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
     unicode-display_width (1.7.0)
+    webrick (1.7.0)
     yell (2.2.2)
 
 PLATFORMS
+  x86_64-darwin-20
   x86_64-linux
 
 DEPENDENCIES
@@ -109,9 +113,10 @@ DEPENDENCIES
   kramdown-parser-gfm
   octokit
   rake
+  webrick (~> 1.7)
 
 RUBY VERSION
-   ruby 2.7.0p0
+   ruby 3.0.2p107
 
 BUNDLED WITH
    2.2.17
