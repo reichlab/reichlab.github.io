@@ -4,7 +4,7 @@
 - name: Nicholas Reich
   role: Principal Investigator
   description: |
-    Nick is an Associate Professor of Biostatistics at UMass. He received his
+    Nick is a Professor of Biostatistics at UMass. He received his
     PhD in Biostatstics from Johns Hopkins, where he also did his post-doctoral
     training in infectious disease epidemiology. He also enjoys spending time outside
     with his family (hiking, camping, canoeing, gardening).
@@ -74,6 +74,20 @@
   links:
     - name: flaticon-linkedin-1  
       url: “https://www.linkedin.com/in/arianestark/”
+      
+- name: Vrushti Mody
+  role: MS Student
+  description: |
+    Vrushti is an MS student in Computer Science. She received her undergraduate degree in Computer Engineering from NMIMS University. 
+    The ability to reach a wider audience, one health problem at a time is what inspired her to join the lab. She is bubbly, outgoing with a great sense of humor. 
+  image: /images/people/vrushti-mody.jpeg
+  links:
+    - name: flaticon-linkedin-1  
+      url: “https://www.linkedin.com/in/vrushti-mody/”
+    - name: flaticon-twitter-1
+      url: "https://twitter.com/Vrushti_Mody"
+    - name: flaticon-github-1
+      url: "https://github.com/vrushti-mody"  
 
 
 - name: Aaron Gerding
@@ -167,6 +181,27 @@
       url: "https://www.linkedin.com/in/yuxin-david-huang-aa663547/"
   
 # Alumni Section
+
+
+- name: Trust Okorie
+  description: |
+
+  role: Post-doctoral Fellow (2015-2017)
+  type: Alumni
+  image: /images/people/trust.jpg
+  links:
+    - name: alumni_link
+      url: "https://www.linkedin.com/in/tokorie/"
+
+- name: Richa Jain
+  role: Undergraduate Student
+  description: |
+   
+  image: /images/people/Richa.jpg
+  type: Alumni
+  links: 
+    - name: alumni_link
+      url: "www.linkedin.com/in/richa-jain-0a6a19147"
 
 - name: Khoa Le
   role: MS Student/Software Engineer (2019-2021)
@@ -362,16 +397,6 @@
     - name: alumni_link
       url: "https://github.com/sakrejda"
 
-- name: Trust Okorie
-  description: |
-
-  role: Post-doctoral Fellow (2015-2017)
-  type: Alumni
-  image: /images/people/trust.jpg
-  links:
-    - name: alumni_link
-      url: "https://www.linkedin.com/in/tokorie/"
-
 - name: Graham Casey Gibson
   role: PhD Student
   description: |
@@ -382,13 +407,4 @@
     - name: alumni_link
       url: "https://gcgibson.github.io/"
       
-- name: Richa Jain
-  role: Undergraduate Student
-  description: |
-   
-  image: /images/people/Richa.jpg
-  type: Alumni
-  links: 
-    - name: alumni_link
-      url: "www.linkedin.com/in/richa-jain-0a6a19147"
 
