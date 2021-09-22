@@ -46,15 +46,6 @@
     - name: flaticon-curriculum
       url: "https://drive.google.com/file/d/0B66FkAegj6nrdlZPSXlIZm9jWDQ/view"
 
-- name: Graham Casey Gibson
-  role: PhD Student
-  description: |
-    Casey is a graduate researcher pursuing his PhD in biostatistics. His work
-    focuses on developing tools to make and evaluate real-time infectious
-    disease forecasts using bayesian non-parametric methods. He likes biking, dogs, and probability.
-  image: /images/people/casey.jpg
-  links: []
-
 - name: Nutcha Wattanachit
   role: PhD Student
   description: |
@@ -381,6 +372,16 @@
     - name: alumni_link
       url: "https://www.linkedin.com/in/tokorie/"
 
+- name: Graham Casey Gibson
+  role: PhD Student
+  description: |
+
+  image: /images/people/casey.jpg
+  type: Alumni
+  links: 
+    - name: alumni_link
+      url: "https://gcgibson.github.io/"
+      
 - name: Richa Jain
   role: Undergraduate Student
   description: |
@@ -390,3 +391,4 @@
   links: 
     - name: alumni_link
       url: "www.linkedin.com/in/richa-jain-0a6a19147"
+
