@@ -84,11 +84,23 @@
   links:
     - name: flaticon-linkedin-1  
       url: “https://www.linkedin.com/in/vrushti-mody/”
-    - name: flaticon-twitter-1
-      url: "https://twitter.com/Vrushti_Mody"
+    - name: flaticon-laptop-1
+      url: "https://vrushtimody.me"
     - name: flaticon-github-1
       url: "https://github.com/vrushti-mody"  
 
+- name: Vidhi Mody
+  role: MS Student
+  description: |
+    Vidhi is a Masters student in Computer Science. She is a curious person who enjoys figuring out the building blocks of the world, and rearranging them to build something even better! She is innovative, energetic, creative and loves to travel in her free time.
+  image: /images/people/vidhi-mody.jpg
+  links:
+    - name: flaticon-linkedin-1  
+      url: “https://www.linkedin.com/in/vidhi-mody/”
+    - name: flaticon-laptop-1
+      url: "https://vidhimody.me"
+    - name: flaticon-github-1
+      url: "https://github.com/vidhi-mody" 
 
 - name: Aaron Gerding
   role: MS Student
