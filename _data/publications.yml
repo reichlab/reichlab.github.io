@@ -5,6 +5,7 @@
   slug: modeling-future
   authors: Simon Pollett,Michael A. Johansson,Nicholas G. Reich,....Rachel Lowe,Travis Porco,....,Oliver Brady,Caitlin Rivers
   doi: https://doi.org/10.1371/journal.pmed.1003793
+  #preprint: https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003793
   year: 2021
   keywords: forecasting
   abstract: >
@@ -20,7 +21,7 @@
     — United States, April–September 2021
   slug: modeling-future
   authors: Borchering RK, Viboud C, ...... Reich NG, ...... Shea K, Lessler J
-  #preprint: https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003793
+  pdf: https://www.cdc.gov/mmwr/volumes/70/wr/pdfs/mm7019e3-H.pdf
   year: 2021
   keywords: covid-19, forecasting
   abstract: >
