@@ -1,14 +1,12 @@
 # 2021
 
-
 - title: >
-    Modeling of Future COVID-19 Cases, Hospitalizations, and Deaths, by Vaccination Rates and Nonpharmaceutical Intervention Scenarios
-    — United States, April–September 2021
+    Recommended reporting items for epidemic forecasting and prediction research: The EPIFORGE 2020 guidelines
   slug: modeling-future
-  authors: Borchering RK, Viboud C, ...... Reich NG, ...... Shea K, Lessler J
-  pdf: https://www.cdc.gov/mmwr/volumes/70/wr/pdfs/mm7019e3-H.pdf
+  authors: Simon Pollett,Michael A. Johansson,Nicholas G. Reich,....Rachel Lowe,Travis Porco,....,Oliver Brady,Caitlin Rivers
+  doi: https://doi.org/10.1371/journal.pmed.1003793
   year: 2021
-  keywords: covid-19, forecasting
+  keywords: forecasting
   abstract: >
     What is already known about this topic?
       Increases in COVID-19 cases in March and early April occurred despite a large-scale vaccination program.
@@ -21,6 +19,21 @@
       High vaccination coverage and compliance with NPIs are essential to control COVID-19 and prevent surges in
       hospitalizations and deaths in the coming months.
 
+- title: >
+    Modeling of Future COVID-19 Cases, Hospitalizations, and Deaths, by Vaccination Rates and Nonpharmaceutical Intervention Scenarios
+    — United States, April–September 2021
+  slug: modeling-future
+  authors: Borchering RK, Viboud C, ...... Reich NG, ...... Shea K, Lessler J
+  #preprint: https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003793
+  year: 2021
+  keywords: covid-19, forecasting
+  abstract: >
+    Background
+      The importance of infectious disease epidemic forecasting and prediction research is underscored by decades of communicable disease outbreaks, including COVID-19. Unlike other fields of medical research, such as clinical trials and systematic reviews, no reporting guidelines exist for reporting epidemic forecasting and prediction research despite their utility. We therefore developed the EPIFORGE checklist, a guideline for standardized reporting of epidemic forecasting research.
+    Methods and findings
+      We developed this checklist using a best-practice process for development of reporting guidelines, involving a Delphi process and broad consultation with an international panel of infectious disease modelers and model end users. The objectives of these guidelines are to improve the consistency, reproducibility, comparability, and quality of epidemic forecasting reporting. The guidelines are not designed to advise scientists on how to perform epidemic forecasting and prediction research, but rather to serve as a standard for reporting critical methodological details of such studies.
+    Conclusions
+      These guidelines have been submitted to the EQUATOR network, in addition to hosting by other dedicated webpages to facilitate feedback and journal endorsement.
 
 - title: 'The Zoltar forecast archive: a tool to facilitate standardization and storage of interdisciplinary prediction research'
   slug: reich-zoltar-forecast
@@ -85,9 +98,9 @@
 - title: 'Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the US'
   slug: cramer-evaluation
   authors: Cramer EY , Ray EL , Lopez VK , Bracher J ...... Slayton RB, Johansson M , Biggerstaff M  , Reich NG
+  preprint: https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v2
   pdf: https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1.full.pdf
   year: 2021
-  doi: https://doi.org/10.1101/2021.02.03.21250974
   keywords: covid-19
   abstract: >
     Short-term probabilistic forecasts of the trajectory of the COVID-19 pandemic in the United States have served as a visible and important communication channel between the scientific modeling community and both the general public and decision-makers. 
