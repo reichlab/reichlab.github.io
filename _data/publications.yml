@@ -1,4 +1,14 @@
 # 2021
+- title: >
+    The United States COVID-19 Forecast Hub dataset
+  slug: covid-hub
+  authors: Estee Y Cramer, Yuxin Huang, Yijin Wang, Evan L Ray, Matthew Cornell,  View ORCID ProfileJohannes Bracher, Andrea Brennen, Alvaro J Castro Rivadeneira, Aaron Gerding, Katie House, Dasuni Jayawardena, Abdul H Kanji, Ayush Khandelwal, Khoa Le,  View ORCID ProfileJarad Niemi, Ariane Stark, Apurv Shah, Nutcha Wattanachit, Martha W Zorn,  View ORCID ProfileNicholas G Reich, US COVID-19 Forecast Hub Consortium
+  preprint: https://www.medrxiv.org/content/10.1101/2021.11.04.21265886v1
+  doi: https://doi.org/10.1101/2021.11.04.21265886
+  year: 2021
+  keywords:  covid-19, forecasting
+  abstract: >
+    Academic researchers, government agencies, industry groups, and individuals have produced forecasts at an unprecedented scale during the COVID-19 pandemic. To leverage these forecasts, the United States Centers for Disease Control and Prevention (CDC) partnered with an academic research lab at the University of Massachusetts Amherst to create the US COVID-19 Forecast Hub. Launched in April 2020, the Forecast Hub is a dataset with point and probabilistic forecasts of incident hospitalizations, incident cases, incident deaths, and cumulative deaths due to COVID-19 at national, state, and county levels in the United States. Included forecasts represent a variety of modeling approaches, data sources, and assumptions regarding the spread of COVID-19. The goal of this dataset is to establish a standardized and comparable set of short-term forecasts from modeling teams. These data can be used to develop ensemble models, communicate forecasts to the public, create visualizations, compare models, and inform policies regarding COVID-19 mitigation. These open-source data are available via download from GitHub, through an online API, and through R packages.
 
 - title: >
     Recommended reporting items for epidemic forecasting and prediction research: The EPIFORGE 2020 guidelines
