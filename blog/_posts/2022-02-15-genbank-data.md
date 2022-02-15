@@ -229,7 +229,7 @@ us_dat %>%
   theme(axis.text.x = element_text(angle=60, vjust=1, hjust=1))
 ```
 
-![](impages/blog/samples-by-location.png)
+![](/images/blog/samples-by-location.png)
 
 Plot of samples over time
 
@@ -242,7 +242,7 @@ us_dat %>%
   geom_smooth(span=.1, se=FALSE)
 ```
 
-![](impages/blog/samples-over-time.png)
+![](/images/blog/samples-over-time.png)
 
 Here is a plot of the prevalence of each clade by week across 2021.
 
@@ -275,7 +275,7 @@ by_clade %>%
   ylab("% of samples by clade")
 ```
 
-![](impages/blog/variants-in-2021.png)
+![](/images/blog/variants-in-2021.png)
 
 ## Acknowledgments
 
