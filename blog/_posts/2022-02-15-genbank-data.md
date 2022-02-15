@@ -1,7 +1,7 @@
 ---
 title: A modeler's primer for working with SARS-CoV-2 genomic data
 layout: post
-author: Estee and Nick
+author: Estee Cramer and Nick Reich
 comments: True
 category: R
 ---
