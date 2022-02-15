@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Reich Lab @ UMassAmherst">
+<meta name="author" content="Estee Cramer and Nick Reich">
+<meta name="keywords" content="blog, R">
+<link rel="canonical" href="http://reichlab.io//2022/02/15/genbank-data.html">
+
+<title>
+  A modeler's primer for working with SARS-CoV-2 genomic data &#8211; Nicholas Reich: Biostatistics and Infectious Disease Epidemiology
+</title>
+
+<link href="/assets/css/spectre.min.css" rel="stylesheet">
+<link href="/css/custom.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/icon-css/font/flaticon.css"> 
+<link rel="stylesheet" href="css/icon-css/google-scholar/css/academicons.css"/> <!--Google Scholar logo-->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/images/favicons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/favicons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/favicons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/favicons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/assets/images/favicons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/images/favicons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/assets/images/favicons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/images/favicons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="/assets/images/favicons/favicon-128x128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#881c1c" />
+<meta name="msapplication-TileImage" content="/assets/images/favicons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="/assets/images/favicons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="/assets/images/favicons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/assets/images/favicons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="/assets/images/favicons/mstile-310x310.png" />
+
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="A modeler's primer for working with SARS-CoV-2 genomic data">
+<meta property="og:description" content="Reich Lab @ UMassAmherst">
+<meta property="og:url" content="http://reichlab.io//2022/02/15/genbank-data.html">
+<meta property="og:site_name" content="Nicholas Reich: Biostatistics and Infectious Disease Epidemiology">
+
+<meta name="twitter:url" content="http://reichlab.io//2022/02/15/genbank-data.html">
+<meta name="twitter:title" content="A modeler's primer for working with SARS-CoV-2 genomic data">
+<meta name="twitter:description" content="Reich Lab @ UMassAmherst">
+
+<meta itemprop="name" content="A modeler's primer for working with SARS-CoV-2 genomic data">
+<meta itemprop="description" content="Reich Lab @ UMassAmherst">
+
+  </head>
+  <body>
+    <div class="nav-accent"></div>
+<section class="section-nav bg-gray">
+  <section class="container grid-custom">
+    <div class="columns">
+      <header class="navbar column col-12">
+        <section class="navbar-section">
+          <a href="/" class="navbar-brand mr-10">
+            <img src="/assets/images/logo/nav-logo.png" alt="Reich Lab">
+          </a>
+        </section>
+        <section class="navbar-section">
+          <!-- Show this segment when in small device -->
+          <div class="dropdown dropdown-right show-sm">
+            <a href="#" class="btn btn-link btn-lg dropdown-toggle" tabindex="0">
+              <i class="fa fa-navicon"></i>
+            </a>
+            <ul class="menu">                
+              <li><a href="/people" class="btn btn-link">People</a></li>
+              <li><a href="/research" class="btn btn-link">Research</a></li>
+              <li><a href="/teaching" class="btn btn-link">Teaching</a></li>
+              <li><a href="https://covid19forecasthub.org/" class="btn btn-link">COVID-19</a></li>
+              <li><a href="/publications" class="btn btn-link">Publications</a></li>
+              <li><a href="/blog" class="btn btn-link">Blog</a></li>
+              <li>
+                <div class="dropdown dropdown-right show-sm">
+                  <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                    Apps <i class="fa fa-caret-down"></i>
+                  </a>
+                 <ul class="menu">
+                   <li><a href="/alert" class="btn btn-link">ALERT</a></li>
+                   <li><a href="/flusightnetwork" class="btn btn-link">Flusight Network</a></li>
+                 </ul>
+               </div>
+             </li>
+            </ul>
+          </div>
+
+          <!-- Hide this segment when in small device -->
+          <div class="hide-sm">
+            <a href="/people" class="btn btn-link">People</a>
+            <a href="/research" class="btn btn-link">Research</a>
+            <a href="/teaching" class="btn btn-link">Teaching</a>
+            <a href="https://covid19forecasthub.org/" class="btn btn-link">COVID-19</a>
+            <a href="/publications" class="btn btn-link">Publications</a>
+            <a href="/blog" class="btn btn-link">Blog</a>
+            <div class="dropdown dropdown-right">
+              <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                Apps <i class="fa fa-caret-down"></i>
+              </a>
+              <ul class="menu">
+                <li><a href="/alert" class="btn btn-link">ALERT</a></li>
+                <li><a href="/flusightnetwork" class="btn btn-link">Flusight Network</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </header>
+    </div>
+  </section>
+</section>
+
+
+    <section class="container container-body grid-custom">
+      <div class="columns">
+        <div class="column col-8 col-md-12">
+          <h1>A modeler's primer for working with SARS-CoV-2 genomic data</h1>
+          <p>
+            by <em>Estee Cramer and Nick Reich</em>
+          </p>
+          <p><i class="fa fa-clock-o"></i> Posted on 15 February, 2022</p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column col-8 col-md-12">
+          <p>SARS-CoV-2 is the name of the virus that causes COVID-19. There have been a lot of really interesting analyses of SARS-CoV-2 genomic data that look at patterns over time in the circulation of different variants. When we started writing this post, we didn’t know how to use or obtain these data, many of which are publicly available. So we wrote this primer for accessing genomic data on SARS-CoV-2 that are available for the US. These data are made public through <a href="https://www.ncbi.nlm.nih.gov/genbank/">GenBank</a> and are pre-processed and served publicly by <a href="https://nextstrain.org/">the Nextstrain team</a>. We hope you find it useful!</p>
+
+<p><img class="img-responsive" width="700" src="/images/blog/variants-in-2021.png" /></p>
+
+<!--more-->
+
+<h2 id="background-on-genomic-data">Background on genomic data</h2>
+
+<h3 id="gisaid-and-genbank">GISAID and GenBank</h3>
+
+<p>Over the last two years, COVID-19 genomic data have been collected and
+stored in two central data repositories,
+<a href="https://www.gisaid.org/">GISAID</a> and
+<a href="https://www.ncbi.nlm.nih.gov/genbank/">GenBank</a>.</p>
+
+<p>GISAID is a global science initiative that provides open-access genomic
+data of influenza viruses and the SARS-CoV-2 virus. With over 6 million
+submissions, GISAID currently hosts the largest repository for
+SARS-CoV-2 sequences. Because GISAID data are not in the public domain,
+GISAID data can only be accessed after creating a username and agreeing
+to a Database Access Agreement.</p>
+
+<p>GenBank is an annotated collection of publicly available DNA sequences.
+It is the genetic sequence database of the US NIH. GenBank currently has
+over 3 million sequence read archive (SRA) runs and over 3.8 million
+nucleotide records for SARS-CoV-2. This database was created to provide
+access to the most up-to-date and comprehensive DNA sequence
+information, therefore there are no restrictions on the use or
+distribution of this data.</p>
+
+<p>Though GISAID contains more variant data for SARS-CoV-2 globally, for
+projects interested in looking at data in the US may find that GenBank
+is sufficient. This is because much US sequencing is conducted through
+CDC contracts that stipulate a GenBank submission.</p>
+
+<h3 id="clade-and-variant-nomenclature">Clade and variant nomenclature</h3>
+
+<p>There are a number of naming systems in use for labeling variants for
+the SARS-CoV-2 virus.</p>
+
+<p>Two naming systems relevant for tracking variants are
+<a href="https://nextstrain.org/blog/2021-01-06-updated-SARS-CoV-2-clade-naming">Nextstrain</a>
+and <a href="https://cov-lineages.org/">PANGO</a>.</p>
+
+<p>The Nextstrain naming system for COVID-19 involves labeling major clades
+by the year they first emerged, and a letter. For example, 19A was the
+first major clade detected in 2019.</p>
+
+<p>A new major clade is named if it is at least 2 nucleotides away from its
+parent clade and if it reaches 20% frequency in the global population or
+for at least 2 months, or if it reaches 30% regional frequency for at
+least 2 months. A major clade may also be named if it is a variant of
+concern, even if it has not reached the required population frequency.</p>
+
+<p>To signify clade major lineages with a hierarchical structure, emerging
+clades may be written as a string of parent clade lineages. For example,
+19A.20A.20C for the major clade 20C. In the Nextstrain notation,
+emerging clades are listed with a parent clade and their defining
+nucleotide mutation or amino acid mutation. For example, 19A/28688C or
+20B/S.484K. To note variants of concern, this nomenclature also labels
+them with their relevant spike mutation and a version numbering. For
+example, 20I/501Y.V1</p>
+
+<p>Additional information regarding the original naming naming conventions
+using the Nextstrain naming structure can be found at the link:
+<a href="https://nextstrain.org/blog/2020-06-02-SARSCoV2-clade-naming">https://nextstrain.org/blog/2020-06-02-SARSCoV2-clade-naming</a> and
+updated nomenclature can be found at the link
+<a href="https://nextstrain.org/blog/2021-01-06-updated-SARS-CoV-2-clade-naming">https://nextstrain.org/blog/2021-01-06-updated-SARS-CoV-2-clade-naming</a></p>
+
+<p>The rules of Pango lineage naming are complex. Information describing
+the naming rules for Pango lineages can be found
+<a href="https://www.pango.network/the-pango-nomenclature-system/statement-of-nomenclature-rules/">here</a>.
+In the Pango naming system, lineages are named to signify clusters of
+infections with shared ancestry and to highlight
+epidemiologically-relevant events.</p>
+
+<p>For modelers conducting a variant-level analysis, we recommend using
+Nextstrain naming conventions. For modelers wishing to conduct a
+sub-variant analysis, Nextstrain naming conventions may not be specific
+enough and therefore PANGO naming conventions may be useful in these
+settings.</p>
+
+<h3 id="data-file-types">Data file types</h3>
+
+<p>When looking to access genomic data, raw data is stored in a number of
+different file types. For variant level analyses, the “metadata” file
+described below is a flat tab-separated dataset that includes one row
+per sample and has information such as the sample’s origin, cell line,
+and preparation method, as well as which variant was identified in the
+sample.</p>
+
+<p>The FASTA file contains the detailed nucleic acid or amino acid sequence
+information in a text fie format for for a single sample.</p>
+
+<h3 id="limitations-in-using-genomic-data">Limitations in using genomic data</h3>
+
+<p>While genomic data is a potentially useful data source, there are flaws
+in the data that are worth noting at this time. One issue with using
+genomic data is that in order to capture emerging variants in a
+geographic region, experts recommend sequencing at least 5% of available
+samples. However, as of December 2021, there were 10 states in the US
+that had sequenced fewer than 2% of available samples. Thus, it is
+possible that within the US, variants and emerging strains are not being
+adequately detected. Information about the heterogenous testing rates in
+the US can be found in the <a href="https://www.nature.com/articles/d41586-021-03698-7">Nature news article linked
+here</a>. Additionally,
+in April of 2021, genomic data was only available for only 1.6% of all
+positive cases, thus it is possible that variant information before this
+date is inaccurate the national level (<a href="https://www.nature.com/articles/d41586-021-00908-0">see another Nature
+article</a>).</p>
+
+<p>Another issue that may bias population estimates of variant prevalence
+is that there are not clear guidelines on how positive samples are
+selected for genotyping. If the more severe or more surprising cases are
+sent out to be genotyped, it may influences the results. This is
+problematic because without knowing how samples are selected for
+testing, we cannot control for this issue in models.</p>
+
+<p>When using genomic data in models, it is important to consider factors
+such as sampling density, the timing of sample collection, the portion
+of the viral genome sequenced, quality of sequencing data and the
+mutation rate of the virus itself. All of these factors may impact the
+validity of variant prevalence values (<a href="https://www.nature.com/articles/s41564-020-0738-5">see Villabona-Arenas et
+al.</a>).</p>
+
+<h2 id="downloading-nextstrain-curated-genbank-data">Downloading Nextstrain-curated GenBank data</h2>
+
+<p>The <a href="https://nextstrain.org/">Nextstrain</a> project makes <a href="https://docs.nextstrain.org/projects/ncov/en/latest/reference/remote_inputs.html#summary-of-available-genbank-open-files">daily snapshots
+of GenBank data available for the US and the
+world</a>.
+Specifically, the flat tab-separated file available at
+<a href="https://data.nextstrain.org/files/ncov/open/metadata.tsv.gz">https://data.nextstrain.org/files/ncov/open/metadata.tsv.gz</a> is updated
+daily, typically around 11am or noon US Pacific time. This file is large
+(&gt;350MB as of 2022-02-09). For the below, we assume that you have
+downloaded this file and unzipped it so the <code class="language-plaintext highlighter-rouge">.tsv</code> file can be read in
+directly.</p>
+
+<p>A codebook for the fields in the dataset are available
+<a href="https://docs.nextstrain.org/projects/ncov/en/latest/reference/metadata-fields.html">here</a>.</p>
+
+<h2 id="initial-genbank-data-exploration">Initial GenBank data exploration</h2>
+
+<p>Let’s start by loading some tidyverse packages that will be useful for
+us and then by reading in the dataset.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="n">lubridate</span><span class="p">)</span><span class="w">
+</span><span class="n">theme_set</span><span class="p">(</span><span class="n">theme_bw</span><span class="p">())</span><span class="w">
+</span><span class="n">genbank_global</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read_tsv</span><span class="p">(</span><span class="s2">"../data/metadata.tsv"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p>This is a large file, with 3707198 rows. For starters, we create a
+version of these data that contain only US data, and only retains
+columns we are interested in. Further, we will reformat certain columns.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">us_dat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">genbank_global</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> 
+  </span><span class="n">filter</span><span class="p">(</span><span class="n">country</span><span class="o">==</span><span class="s2">"USA"</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">mutate</span><span class="p">(</span><span class="n">date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ymd</span><span class="p">(</span><span class="n">date</span><span class="p">),</span><span class="w"> 
+         </span><span class="n">date_submitted</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ymd</span><span class="p">(</span><span class="n">date_submitted</span><span class="p">),</span><span class="w">
+         </span><span class="n">reporting_lag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as.numeric</span><span class="p">(</span><span class="n">date_submitted</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">date</span><span class="p">))</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">select</span><span class="p">(</span><span class="n">strain</span><span class="p">,</span><span class="w"> </span><span class="n">virus</span><span class="p">,</span><span class="w"> </span><span class="n">Nextstrain_clade</span><span class="p">,</span><span class="w">  </span><span class="c1">## info on the virus</span><span class="w">
+         </span><span class="n">region</span><span class="p">,</span><span class="w"> </span><span class="n">country</span><span class="p">,</span><span class="w"> </span><span class="n">division</span><span class="p">,</span><span class="w"> </span><span class="n">location</span><span class="p">,</span><span class="w"> </span><span class="c1">## info on location</span><span class="w">
+         </span><span class="n">host</span><span class="p">,</span><span class="w"> </span><span class="n">sampling_strategy</span><span class="p">,</span><span class="w"> </span><span class="c1">## info about the sample</span><span class="w">
+         </span><span class="n">date</span><span class="p">,</span><span class="w"> </span><span class="n">date_submitted</span><span class="p">,</span><span class="w"> </span><span class="n">reporting_lag</span><span class="p">)</span><span class="w"> </span><span class="c1">## dates</span><span class="w">
+</span></code></pre></div></div>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">us_dat</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">group_by</span><span class="p">(</span><span class="n">Nextstrain_clade</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">summarize</span><span class="p">(</span><span class="n">n_samples</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">())</span><span class="w"> 
+</span><span class="c1">#&gt; # A tibble: 25 × 2</span><span class="w">
+</span><span class="c1">#&gt;    Nextstrain_clade n_samples</span><span class="w">
+</span><span class="c1">#&gt;    &lt;chr&gt;                &lt;int&gt;</span><span class="w">
+</span><span class="c1">#&gt;  1 19A                   4445</span><span class="w">
+</span><span class="c1">#&gt;  2 19B                   3966</span><span class="w">
+</span><span class="c1">#&gt;  3 20A                  50509</span><span class="w">
+</span><span class="c1">#&gt;  4 20B                  23174</span><span class="w">
+</span><span class="c1">#&gt;  5 20C                  57723</span><span class="w">
+</span><span class="c1">#&gt;  6 20D                    613</span><span class="w">
+</span><span class="c1">#&gt;  7 20E (EU1)              134</span><span class="w">
+</span><span class="c1">#&gt;  8 20G                  62703</span><span class="w">
+</span><span class="c1">#&gt;  9 20H (Beta, V2)        2188</span><span class="w">
+</span><span class="c1">#&gt; 10 20I (Alpha, V1)     184305</span><span class="w">
+</span><span class="c1">#&gt; # … with 15 more rows</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Note that the <code class="language-plaintext highlighter-rouge">sampling_strategy</code> field is empty for all US data.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">us_dat</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">group_by</span><span class="p">(</span><span class="n">sampling_strategy</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">summarize</span><span class="p">(</span><span class="n">n_samples</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">())</span><span class="w"> 
+</span><span class="c1">#&gt; # A tibble: 1 × 2</span><span class="w">
+</span><span class="c1">#&gt;   sampling_strategy n_samples</span><span class="w">
+</span><span class="c1">#&gt;   &lt;chr&gt;                 &lt;int&gt;</span><span class="w">
+</span><span class="c1">#&gt; 1 ?                   1838603</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The following figure shows the reporting lags by state as computed in
+the data as the difference between the <code class="language-plaintext highlighter-rouge">date</code> the sample was taken and
+the <code class="language-plaintext highlighter-rouge">date_submitted</code>, which is the date the sample was submitted to the
+GenBank system. There appears to be substantial variation by location
+(note the shorter lags in MA, CA and VT), with 75% of samples typically
+reported by 1 month out. Note this is subsetting to look at all data
+starting in August of 2021. Some analyses, for example <a href="https://github.com/blab/rt-from-frequency-dynamics">the
+<em>R</em><sub><em>t</em></sub> analysis that the Bedford Lab has
+done</a>, remove all
+samples from the last 10 days, to try to remove small sample effects in
+the early reporting.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">us_dat</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">filter</span><span class="p">(</span><span class="n">date</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">ymd</span><span class="p">(</span><span class="s2">"2021-08-01"</span><span class="p">))</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">ggplot</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">division</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="n">reporting_lag</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> 
+  </span><span class="n">geom_boxplot</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">scale_y_log10</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="w"> </span><span class="s2">"lag (days, log scale)"</span><span class="p">,</span><span class="w"> </span><span class="n">breaks</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">7</span><span class="p">,</span><span class="w"> </span><span class="m">14</span><span class="p">,</span><span class="w"> </span><span class="m">21</span><span class="p">,</span><span class="w"> </span><span class="m">30</span><span class="p">,</span><span class="w"> </span><span class="m">90</span><span class="p">,</span><span class="w"> </span><span class="m">360</span><span class="p">,</span><span class="w"> </span><span class="m">720</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">xlab</span><span class="p">(</span><span class="kc">NULL</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">theme</span><span class="p">(</span><span class="n">axis.text.x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">element_text</span><span class="p">(</span><span class="n">angle</span><span class="o">=</span><span class="m">60</span><span class="p">,</span><span class="w"> </span><span class="n">vjust</span><span class="o">=</span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">hjust</span><span class="o">=</span><span class="m">1</span><span class="p">))</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="impages/blog/samples-by-location.png" alt="" /></p>
+
+<p>Plot of samples over time</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">us_dat</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">group_by</span><span class="p">(</span><span class="n">date</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">summarize</span><span class="p">(</span><span class="n">n_samples</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">())</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w"> 
+  </span><span class="n">ggplot</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">date</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="n">n_samples</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">geom_bar</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="m">.3</span><span class="p">,</span><span class="w"> </span><span class="n">stat</span><span class="o">=</span><span class="s2">"identity"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">geom_smooth</span><span class="p">(</span><span class="n">span</span><span class="o">=</span><span class="m">.1</span><span class="p">,</span><span class="w"> </span><span class="n">se</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="impages/blog/samples-over-time.png" alt="" /></p>
+
+<p>Here is a plot of the prevalence of each clade by week across 2021.</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">strains_of_interest</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> 
+  </span><span class="nf">c</span><span class="p">(</span><span class="s2">"20I (Alpha, V1)"</span><span class="p">,</span><span class="w"> 
+    </span><span class="s2">"20J (Gamma, V3)"</span><span class="p">,</span><span class="w"> 
+    </span><span class="s2">"21A (Delta)"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"21C (Epsilon)"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"21I (Delta)"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"21J (Delta)"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"21K (Omicron)"</span><span class="w">
+    </span><span class="p">)</span><span class="w">
+
+</span><span class="n">by_clade</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">us_dat</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">filter</span><span class="p">(</span><span class="n">year</span><span class="p">(</span><span class="n">date</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">2021</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">   </span><span class="c1">## focus only on 2021 </span><span class="w">
+  </span><span class="n">filter</span><span class="p">(</span><span class="n">Nextstrain_clade</span><span class="w"> </span><span class="o">%in%</span><span class="w"> </span><span class="n">strains_of_interest</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">mutate</span><span class="p">(</span><span class="n">epiweek</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">epiweek</span><span class="p">(</span><span class="n">date</span><span class="p">))</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">filter</span><span class="p">(</span><span class="n">epiweek</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">53</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">        </span><span class="c1">## values of 53 are at the start of 2021 </span><span class="w">
+  </span><span class="n">group_by</span><span class="p">(</span><span class="n">Nextstrain_clade</span><span class="p">,</span><span class="w"> </span><span class="n">epiweek</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">summarize</span><span class="p">(</span><span class="n">clade_total</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="p">())</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">group_by</span><span class="p">(</span><span class="n">epiweek</span><span class="p">)</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">mutate</span><span class="p">(</span><span class="n">total_samples</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">sum</span><span class="p">(</span><span class="n">clade_total</span><span class="p">),</span><span class="w">
+         </span><span class="n">pct_clade_in_epiweek</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">clade_total</span><span class="o">/</span><span class="n">total_samples</span><span class="p">)</span><span class="w">  
+
+</span><span class="n">by_clade</span><span class="w"> </span><span class="o">%&gt;%</span><span class="w">
+  </span><span class="n">ggplot</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">epiweek</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="o">=</span><span class="n">pct_clade_in_epiweek</span><span class="p">,</span><span class="w"> </span><span class="n">color</span><span class="o">=</span><span class="n">Nextstrain_clade</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">geom_line</span><span class="p">()</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">xlab</span><span class="p">(</span><span class="s2">"epiweek in 2021"</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w">
+  </span><span class="n">ylab</span><span class="p">(</span><span class="s2">"% of samples by clade"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="impages/blog/variants-in-2021.png" alt="" /></p>
+
+<h2 id="acknowledgments">Acknowledgments</h2>
+
+<p>We wish to thank all the labs whose effort and time are essential to
+making these important data available. Also, thanks to <a href="https://bedford.io/">Trevor
+Bedford</a> and <a href="https://nextstrain.org/">the Nextstrain
+team</a> for providing the processed version of
+the metadata files and providing some pointers and insights about these
+data as we were writing this post.</p>
+
+
+
+          
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+ var disqus_config = function () {
+   this.page = this.page || {};
+   this.page.url = 'http://reichlab.io//2022/02/15/genbank-data.html';
+   this.page.identifier = '/2022/02/15/genbank-data.html';
+   this.page.title = 'A modeler's primer for working with SARS-CoV-2 genomic data';
+ };
+ (function() {  // DON'T EDIT BELOW THIS LINE
+   var d = document, s = d.createElement('script');
+   s.src = 'https://reichlab.disqus.com/embed.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (d.head || d.body).appendChild(s);
+ })();
+</script>
+<noscript>Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+    comments powered by Disqus.
+  </a>
+</noscript>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray">
+  <section class="section-footer container grid-custom">
+    <div class="columns">
+      <div class="column col-12">
+        <p>
+          <a href="https://github.com/reichlab" id="github-btn" target="_blank">
+            <span class="fa-lg">
+              <i class="fa fa-github-alt"></i>
+            </span>
+            <span class="btn-text">
+              <span class="text-light">github /</span>
+              <strong>reichlab</strong>
+            </span>
+          </a>
+          <a href="https://twitter.com/reichlab" id="twitter-btn" target="_blank">
+            <span class="fa-lg">
+              <i class="fa fa-twitter"></i>
+            </span>
+            <span class="btn-text">
+              <span class="text-light">twitter /</span>
+              <strong>@reichlab</strong>
+            </span>
+          </a>
+        </p>
+        <p class="foot-note"><small>&copy; Nicholas Reich 2022. Source code available <a href="https://github.com/reichlab/reichlab.github.io">here</a>.</small></p>
+      </div>
+    </div>
+  </section>
+</footer>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+ var sc_project=10491184;
+ var sc_invisible=1;
+ var sc_security="40c0ea38";
+ var scJsHost = (("https:" == document.location.protocol) ?
+                 "https://secure." : "http://www.");
+ document.write("<sc" + "ript type='text/javascript' src='" +
+                scJsHost + "statcounter.com/counter/counter.js'></" +
+                "script>");
+</script>
+<noscript>
+  <div class="statcounter">
+    <a title="shopify site analytics"
+       href="http://statcounter.com/shopify/" target="_blank">
+      <img class="statcounter"
+           src="http://c.statcounter.com/10491184/0/40c0ea38/1/"
+           alt="shopify site analytics">
+    </a>
+  </div>
+</noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+  </body>
+</html>
