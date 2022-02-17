@@ -160,7 +160,44 @@
   
 # Alumni Section
 
+- name: Xi Meng
+  role: PhD Student (2015-2021)
+  description: |
+  
+  image: /images/people/xi.png
+  type: Alumni
+  links:
+    - name: alumni_link
+      url: "https://drive.google.com/file/d/0B66FkAegj6nrdlZPSXlIZm9jWDQ/view"
+  
+- name: Graham Casey Gibson
+  role: PhD Student (2017-2021)
+  description: |
 
+  image: /images/people/casey.jpg
+  type: Alumni
+  links: 
+    - name: alumni_link
+      url: "https://gcgibson.github.io/"
+
+- name: Dasuni Jayawardena
+  role: Undergrad Researcher (2020-2021)
+  description: |
+    
+  image: /images/people/Dasuni.JPG
+  type: Alumni
+  links: []
+  
+- name: Yuxin David Huang
+  role: Software Engineer
+  description: |
+   
+  image: /images/people/yuxin.jpg
+  type: Alumni
+  links:
+    - name: alumni_link
+      url: "https://www.linkedin.com/in/yuxin-david-huang-aa663547/"
+      
 - name: Trust Okorie
   description: |
 
@@ -373,44 +410,4 @@
   image: /images/people/krzysztof.jpg
   links:
     - name: alumni_link
-      url: "https://github.com/sakrejda"
-
-- name: Graham Casey Gibson
-  role: PhD Student
-  description: |
-
-  image: /images/people/casey.jpg
-  type: Alumni
-  links: 
-    - name: alumni_link
-      url: "https://gcgibson.github.io/"
-      
-- name: Xi Meng
-  role: PhD Student
-  description: |
-  
-  image: /images/people/xi.png
-  type: Alumni
-  links:
-    - name: alumni_link
-      url: "https://drive.google.com/file/d/0B66FkAegj6nrdlZPSXlIZm9jWDQ/view"
-   
-- name: Dasuni Jayawardena
-  role: Undergraduate Student
-  description: |
-    
-  image: /images/people/Dasuni.JPG
-  type: Alumni
-  links: []
-  
-- name: Yuxin David Huang
-  role: Software Engineer
-  description: |
-   
-  image: /images/people/yuxin.jpg
-  type: Alumni
-  links:
-    - name: alumni_link
-      url: "https://www.linkedin.com/in/yuxin-david-huang-aa663547/"
-      
-
+      url: "https://github.com/sakrejda"      
