@@ -34,18 +34,6 @@
 
 # Student section (PhD, MS, undergrad students, in order of seniority)
 
-- name: Xi Meng
-  role: PhD Student
-  description: |
-     Xi received her BS degree from Beijing Institute of Technology with a major
-     in Electrical Engineering. Her PhD research focuses on using particle
-     filtering approaches to draw inference about dynamics in complex,
-     multi-strain infectious disease settings.
-  image: /images/people/xi.png
-  links:
-    - name: flaticon-curriculum
-      url: "https://drive.google.com/file/d/0B66FkAegj6nrdlZPSXlIZm9jWDQ/view"
-
 - name: Nutcha Wattanachit
   role: PhD Student
   description: |
@@ -108,13 +96,6 @@
     Aaron is pursuing a degree in biostatistics after a previous career lecturing in the UMass-Amherst math department.  He is especially interested in how the public health needs of populations with low social or political visibility should inform forecasting and risk assessment methodologies.
   image: /images/people/aaron.jpg
   links: []
-  
-- name: Dasuni Jayawardena
-  role: Undergraduate Student
-  description: |
-    Dasuni is an Undergrad Mathematics major with a Statistics concentration who aspires to apply mathematical and statistical techniques to help solve real-world problems. IN her free time she likes painting, listening to music and hiking.
-  image: /images/people/Dasuni.JPG
-  links: []
 
 - name: Álvaro J. Castro Rivadeneira
   role: PhD Student
@@ -176,21 +157,6 @@
         url: "https://github.com/Serena-Wang"
       - name: flaticon-linkedin-1
         url: "https://www.linkedin.com/in/serena-wang-899562119/"
-
-- name: Yuxin David Huang
-  role: Software Engineer
-  description: |
-    Yuxin is a software engineer with a mathematics background. He has a B.A. in
-    Computer Science and Mathematics from Colgate University and recently graduated
-    from UMass Amherst with a M.S. in Computer Science. In his free time he enjoys
-    watching comedy/satirical shows and Twitch streams, link-surfing on Wikipedia,
-    and playing basketball.
-  image: /images/people/yuxin.jpg
-  links:
-    - name: flaticon-github-1
-      url: "https://github.com/ydhuang28"
-    - name: flaticon-linkedin-1
-      url: "https://www.linkedin.com/in/yuxin-david-huang-aa663547/"
   
 # Alumni Section
 
@@ -418,5 +384,32 @@
   links: 
     - name: alumni_link
       url: "https://gcgibson.github.io/"
+      
+- name: Xi Meng
+  role: PhD Student
+  description: |
+  
+  image: /images/people/xi.png
+  type: Alumni
+  links:
+    - name: alumni_link
+      url: "https://drive.google.com/file/d/0B66FkAegj6nrdlZPSXlIZm9jWDQ/view"
+   
+- name: Dasuni Jayawardena
+  role: Undergraduate Student
+  description: |
+    
+  image: /images/people/Dasuni.JPG
+  type: Alumni
+  links: []
+  
+- name: Yuxin David Huang
+  role: Software Engineer
+  description: |
+   
+  image: /images/people/yuxin.jpg
+  links:
+    - name: alumni_link
+      url: "https://www.linkedin.com/in/yuxin-david-huang-aa663547/"
       
 
