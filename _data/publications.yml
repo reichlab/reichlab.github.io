@@ -1,5 +1,21 @@
 # 2022
-
+- title: 'Comparison of Combination Methods to Create Calibrated Ensemble Forecasts for Seasonal Influenza in the U.S'
+  slug: calibrated-ensmble-forecasts
+  authors: Nutcha Wattanachit, Evan L. Ray, Thomas C. McAndrew, Nicholas G. Reich
+  preprint: https://arxiv.org/abs/2202.11834
+  pdf: https://arxiv.org/pdf/2202.11834.pdf
+  doi: https://doi.org/10.48550/arXiv.2202.11834
+  year: 2022
+  keywords: forecasting, influenza
+  abstract: >
+    The characteristics of influenza seasons varies substantially from year to year, posing challenges for public health 
+    preparation and response. Influenza forecasting is used to inform seasonal outbreak response, which can in turn 
+    potentially reduce the societal impact of an epidemic. The United States Centers for Disease Control and Prevention, 
+    in collaboration with external researchers, has run an annual prospective influenza forecasting exercise, known as the 
+    FluSight challenge. A subset of participating teams has worked together to produce a collaborative multi-model ensemble, 
+    the FluSight Network ensemble. Uniting theoretical results from the forecasting literature with domain-specific forecasts 
+    from influenza outbreaks, we applied parametric forecast combination methods that simultaneously optimize individual model 
+    weights and calibrate the ensemble via a beta transformation. We used the beta-transformed linear pool and the finite beta mixture model to produce ensemble forecasts retrospectively for the 2016/2017 to 2018/2019 influenza seasons in the U.S. We compared their performance to methods currently used in the FluSight challenge, namely the equally weighted linear pool and the linear pool. Ensemble forecasts produced from methods with a beta transformation were shown to outperform those from the equally weighted linear pool and the linear pool for all week-ahead targets across in the test seasons based on average log scores. We observed improvements in overall accuracy despite the beta-transformed linear pool or beta mixture methods' modest under-prediction across all targets and seasons. Combination techniques that explicitly adjust for known calibration issues in linear pooling should be considered to improve ensemble probabilistic scores in outbreak settings.
 
 - title: 'Comparing trained and untrained probabilistic ensemble forecasts of COVID-19 cases and deaths in the United States'
   slug: ray-comparing-trained-untrained

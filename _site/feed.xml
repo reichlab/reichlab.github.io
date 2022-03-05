@@ -7,6 +7,286 @@
     <atom:link href="http://reichlab.io//feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>A modeler&apos;s primer for working with SARS-CoV-2 genomic data</title>
+        <description>&lt;p&gt;SARS-CoV-2 is the name of the virus that causes COVID-19. There have been a lot of really interesting analyses of SARS-CoV-2 genomic data that look at patterns over time in the circulation of different variants. When we started writing this post, we didn’t know how to use or obtain these data, many of which are publicly available. So we wrote this primer for accessing genomic data on SARS-CoV-2 that are available for the US. These data are made public through &lt;a href=&quot;https://www.ncbi.nlm.nih.gov/genbank/&quot;&gt;GenBank&lt;/a&gt; and are pre-processed and served publicly by &lt;a href=&quot;https://nextstrain.org/&quot;&gt;the Nextstrain team&lt;/a&gt;. We hope you find it useful!&lt;/p&gt;
+
+&lt;p&gt;&lt;img class=&quot;img-responsive&quot; width=&quot;700&quot; src=&quot;/images/blog/variants-in-2021.png&quot; /&gt;&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;background-on-genomic-data&quot;&gt;Background on genomic data&lt;/h2&gt;
+
+&lt;h3 id=&quot;gisaid-and-genbank&quot;&gt;GISAID and GenBank&lt;/h3&gt;
+
+&lt;p&gt;Over the last two years, COVID-19 genomic data have been collected and
+stored in two central data repositories,
+&lt;a href=&quot;https://www.gisaid.org/&quot;&gt;GISAID&lt;/a&gt; and
+&lt;a href=&quot;https://www.ncbi.nlm.nih.gov/genbank/&quot;&gt;GenBank&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;GISAID is a global science initiative that provides open-access genomic
+data of influenza viruses and the SARS-CoV-2 virus. With over 6 million
+submissions, GISAID currently hosts the largest repository for
+SARS-CoV-2 sequences. Because GISAID data are not in the public domain,
+GISAID data can only be accessed after creating a username and agreeing
+to a Database Access Agreement.&lt;/p&gt;
+
+&lt;p&gt;GenBank is an annotated collection of publicly available DNA sequences.
+It is the genetic sequence database of the US NIH. GenBank currently has
+over 3 million sequence read archive (SRA) runs and over 3.8 million
+nucleotide records for SARS-CoV-2. This database was created to provide
+access to the most up-to-date and comprehensive DNA sequence
+information, therefore there are no restrictions on the use or
+distribution of this data.&lt;/p&gt;
+
+&lt;p&gt;Though GISAID contains more variant data for SARS-CoV-2 globally, for
+projects interested in looking at data in the US may find that GenBank
+is sufficient. This is because much US sequencing is conducted through
+CDC contracts that stipulate a GenBank submission.&lt;/p&gt;
+
+&lt;h3 id=&quot;clade-and-variant-nomenclature&quot;&gt;Clade and variant nomenclature&lt;/h3&gt;
+
+&lt;p&gt;There are a number of naming systems in use for labeling variants for
+the SARS-CoV-2 virus.&lt;/p&gt;
+
+&lt;p&gt;Two naming systems relevant for tracking variants are
+&lt;a href=&quot;https://nextstrain.org/blog/2021-01-06-updated-SARS-CoV-2-clade-naming&quot;&gt;Nextstrain&lt;/a&gt;
+and &lt;a href=&quot;https://cov-lineages.org/&quot;&gt;PANGO&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The Nextstrain naming system for COVID-19 involves labeling major clades
+by the year they first emerged, and a letter. For example, 19A was the
+first major clade detected in 2019.&lt;/p&gt;
+
+&lt;p&gt;A new major clade is named if it is at least 2 nucleotides away from its
+parent clade and if it reaches 20% frequency in the global population or
+for at least 2 months, or if it reaches 30% regional frequency for at
+least 2 months. A major clade may also be named if it is a variant of
+concern, even if it has not reached the required population frequency.&lt;/p&gt;
+
+&lt;p&gt;To signify clade major lineages with a hierarchical structure, emerging
+clades may be written as a string of parent clade lineages. For example,
+19A.20A.20C for the major clade 20C. In the Nextstrain notation,
+emerging clades are listed with a parent clade and their defining
+nucleotide mutation or amino acid mutation. For example, 19A/28688C or
+20B/S.484K. To note variants of concern, this nomenclature also labels
+them with their relevant spike mutation and a version numbering. For
+example, 20I/501Y.V1&lt;/p&gt;
+
+&lt;p&gt;Additional information regarding the original naming naming conventions
+using the Nextstrain naming structure can be found at the link:
+&lt;a href=&quot;https://nextstrain.org/blog/2020-06-02-SARSCoV2-clade-naming&quot;&gt;https://nextstrain.org/blog/2020-06-02-SARSCoV2-clade-naming&lt;/a&gt; and
+updated nomenclature can be found at the link
+&lt;a href=&quot;https://nextstrain.org/blog/2021-01-06-updated-SARS-CoV-2-clade-naming&quot;&gt;https://nextstrain.org/blog/2021-01-06-updated-SARS-CoV-2-clade-naming&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The rules of Pango lineage naming are complex. Information describing
+the naming rules for Pango lineages can be found
+&lt;a href=&quot;https://www.pango.network/the-pango-nomenclature-system/statement-of-nomenclature-rules/&quot;&gt;here&lt;/a&gt;.
+In the Pango naming system, lineages are named to signify clusters of
+infections with shared ancestry and to highlight
+epidemiologically-relevant events.&lt;/p&gt;
+
+&lt;p&gt;For modelers conducting a variant-level analysis, we recommend using
+Nextstrain naming conventions. For modelers wishing to conduct a
+sub-variant analysis, Nextstrain naming conventions may not be specific
+enough and therefore PANGO naming conventions may be useful in these
+settings.&lt;/p&gt;
+
+&lt;h3 id=&quot;data-file-types&quot;&gt;Data file types&lt;/h3&gt;
+
+&lt;p&gt;When looking to access genomic data, raw data is stored in a number of
+different file types. For variant level analyses, the “metadata” file
+described below is a flat tab-separated dataset that includes one row
+per sample and has information such as the sample’s origin, cell line,
+and preparation method, as well as which variant was identified in the
+sample.&lt;/p&gt;
+
+&lt;p&gt;The FASTA file contains the detailed nucleic acid or amino acid sequence
+information in a text fie format for for a single sample.&lt;/p&gt;
+
+&lt;h3 id=&quot;limitations-in-using-genomic-data&quot;&gt;Limitations in using genomic data&lt;/h3&gt;
+
+&lt;p&gt;While genomic data is a potentially useful data source, there are flaws
+in the data that are worth noting at this time. One issue with using
+genomic data is that in order to capture emerging variants in a
+geographic region, experts recommend sequencing at least 5% of available
+samples. However, as of December 2021, there were 10 states in the US
+that had sequenced fewer than 2% of available samples. Thus, it is
+possible that within the US, variants and emerging strains are not being
+adequately detected. Information about the heterogenous testing rates in
+the US can be found in the &lt;a href=&quot;https://www.nature.com/articles/d41586-021-03698-7&quot;&gt;Nature news article linked
+here&lt;/a&gt;. Additionally,
+in April of 2021, genomic data was only available for only 1.6% of all
+positive cases, thus it is possible that variant information before this
+date is inaccurate the national level (&lt;a href=&quot;https://www.nature.com/articles/d41586-021-00908-0&quot;&gt;see another Nature
+article&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Another issue that may bias population estimates of variant prevalence
+is that there are not clear guidelines on how positive samples are
+selected for genotyping. If the more severe or more surprising cases are
+sent out to be genotyped, it may influences the results. This is
+problematic because without knowing how samples are selected for
+testing, we cannot control for this issue in models.&lt;/p&gt;
+
+&lt;p&gt;When using genomic data in models, it is important to consider factors
+such as sampling density, the timing of sample collection, the portion
+of the viral genome sequenced, quality of sequencing data and the
+mutation rate of the virus itself. All of these factors may impact the
+validity of variant prevalence values (&lt;a href=&quot;https://www.nature.com/articles/s41564-020-0738-5&quot;&gt;see Villabona-Arenas et
+al.&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h2 id=&quot;downloading-nextstrain-curated-genbank-data&quot;&gt;Downloading Nextstrain-curated GenBank data&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://nextstrain.org/&quot;&gt;Nextstrain&lt;/a&gt; project makes &lt;a href=&quot;https://docs.nextstrain.org/projects/ncov/en/latest/reference/remote_inputs.html#summary-of-available-genbank-open-files&quot;&gt;daily snapshots
+of GenBank data available for the US and the
+world&lt;/a&gt;.
+Specifically, the flat tab-separated file available at
+&lt;a href=&quot;https://data.nextstrain.org/files/ncov/open/metadata.tsv.gz&quot;&gt;https://data.nextstrain.org/files/ncov/open/metadata.tsv.gz&lt;/a&gt; is updated
+daily, typically around 11am or noon US Pacific time. This file is large
+(&amp;gt;350MB as of 2022-02-09). For the below, we assume that you have
+downloaded this file and unzipped it so the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.tsv&lt;/code&gt; file can be read in
+directly.&lt;/p&gt;
+
+&lt;p&gt;A codebook for the fields in the dataset are available
+&lt;a href=&quot;https://docs.nextstrain.org/projects/ncov/en/latest/reference/metadata-fields.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;initial-genbank-data-exploration&quot;&gt;Initial GenBank data exploration&lt;/h2&gt;
+
+&lt;p&gt;Let’s start by loading some tidyverse packages that will be useful for
+us and then by reading in the dataset.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tidyverse&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lubridate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theme_set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theme_bw&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;genbank_global&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_tsv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;../data/metadata.tsv&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This is a large file, with 3707198 rows. For starters, we create a
+version of these data that contain only US data, and only retains
+columns we are interested in. Further, we will reformat certain columns.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;us_dat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;genbank_global&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;country&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;USA&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mutate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ymd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+         &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date_submitted&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ymd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date_submitted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reporting_lag&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;as.numeric&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date_submitted&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;select&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;virus&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Nextstrain_clade&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;## info on the virus&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;region&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;country&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;division&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;location&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;## info on location&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;host&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sampling_strategy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;## info about the sample&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date_submitted&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reporting_lag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;## dates&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;us_dat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group_by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Nextstrain_clade&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summarize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_samples&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt; # A tibble: 25 × 2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt;    Nextstrain_clade n_samples&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt;    &amp;lt;chr&amp;gt;                &amp;lt;int&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt;  1 19A                   4445&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt;  2 19B                   3966&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt;  3 20A                  50509&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt;  4 20B                  23174&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt;  5 20C                  57723&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt;  6 20D                    613&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt;  7 20E (EU1)              134&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt;  8 20G                  62703&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt;  9 20H (Beta, V2)        2188&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt; 10 20I (Alpha, V1)     184305&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt; # … with 15 more rows&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Note that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sampling_strategy&lt;/code&gt; field is empty for all US data.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;us_dat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group_by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sampling_strategy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summarize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_samples&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt; # A tibble: 1 × 2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt;   sampling_strategy n_samples&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt;   &amp;lt;chr&amp;gt;                 &amp;lt;int&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;#&amp;gt; 1 ?                   1838603&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The following figure shows the reporting lags by state as computed in
+the data as the difference between the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;date&lt;/code&gt; the sample was taken and
+the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;date_submitted&lt;/code&gt;, which is the date the sample was submitted to the
+GenBank system. There appears to be substantial variation by location
+(note the shorter lags in MA, CA and VT), with 75% of samples typically
+reported by 1 month out. Note this is subsetting to look at all data
+starting in August of 2021. Some analyses, for example &lt;a href=&quot;https://github.com/blab/rt-from-frequency-dynamics&quot;&gt;the
+&lt;em&gt;R&lt;/em&gt;&lt;sub&gt;&lt;em&gt;t&lt;/em&gt;&lt;/sub&gt; analysis that the Bedford Lab has
+done&lt;/a&gt;, remove all
+samples from the last 10 days, to try to remove small sample effects in
+the early reporting.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;us_dat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ymd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2021-08-01&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;division&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reporting_lag&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_boxplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scale_y_log10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;lag (days, log scale)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;breaks&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;14&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;90&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;360&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;720&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;theme&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;axis.text.x&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;element_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;angle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vjust&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hjust&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/samples-by-location.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Plot of samples over time&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;us_dat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group_by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summarize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_samples&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_samples&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;identity&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_smooth&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;span&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;se&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;FALSE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/samples-over-time.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is a plot of the prevalence of each clade by week across 2021.&lt;/p&gt;
+
+&lt;div class=&quot;language-r highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;strains_of_interest&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+  &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;20I (Alpha, V1)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;20J (Gamma, V3)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;21A (Delta)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;21C (Epsilon)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;21I (Delta)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;21J (Delta)&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;21K (Omicron)&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;by_clade&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;us_dat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;year&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2021&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;   &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;## focus only on 2021 &lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Nextstrain_clade&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%in%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;strains_of_interest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mutate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;epiweek&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;epiweek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;epiweek&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;53&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;        &lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;## values of 53 are at the start of 2021 &lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group_by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Nextstrain_clade&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;epiweek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;summarize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clade_total&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;group_by&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;epiweek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mutate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;total_samples&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clade_total&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+         &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pct_clade_in_epiweek&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;clade_total&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;total_samples&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;  
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;by_clade&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&amp;gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;epiweek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pct_clade_in_epiweek&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Nextstrain_clade&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_line&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;epiweek in 2021&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+  &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylab&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;% of samples by clade&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/blog/variants-in-2021.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;acknowledgments&quot;&gt;Acknowledgments&lt;/h2&gt;
+
+&lt;p&gt;We wish to thank all the labs whose effort and time are essential to
+making these important data available. Also, thanks to &lt;a href=&quot;https://bedford.io/&quot;&gt;Trevor
+Bedford&lt;/a&gt; and &lt;a href=&quot;https://nextstrain.org/&quot;&gt;the Nextstrain
+team&lt;/a&gt; for providing the processed version of
+the metadata files and providing some pointers and insights about these
+data as we were writing this post.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 15 Feb 2022 00:00:00 -0500</pubDate>
+        <link>http://reichlab.io//2022/02/15/genbank-data.html</link>
+        <guid isPermaLink="true">http://reichlab.io//2022/02/15/genbank-data.html</guid>
+      </item>
+    
+      <item>
         <title>Forecasting tools in development</title>
         <description>&lt;p&gt;As I’ve been writing up a progress report for &lt;a href=&quot;https://projectreporter.nih.gov/project_info_description.cfm?aid=9553816&quot;&gt;my NIGMS R35 MIRA award&lt;/a&gt;, I’ve been reminded at how much of the work that we’ve been doing is focused on forecasting infrastructure. A common theme in the &lt;a href=&quot;http://reichlab.io/&quot;&gt;Reich Lab&lt;/a&gt; is making &lt;em&gt;operational&lt;/em&gt; forecasts of infectious disease outbreaks. The operational aspect means that we focus on everything from &lt;a href=&quot;https://doi.org/10.1002/sim.7488&quot;&gt;developing&lt;/a&gt; and &lt;a href=&quot;https://doi.org/10.1371/journal.pcbi.1005910&quot;&gt;adapting&lt;/a&gt; statistical methods to be used in forecasting applications to thinking about the data science toolkit that you need to store, evaluate, and visualize forecasts. To that end, in addition to working closely with the CDC in their &lt;a href=&quot;https://www.cdc.gov/flu/weekly/flusight/index.html&quot;&gt;FluSight initiative&lt;/a&gt;, we’ve been doing a lot of collaborative work on new R packages and data repositories that I hope will be useful beyond the confines of our lab. Some of these projects are fully operational, used in our &lt;a href=&quot;http://flusightnetwork.io/&quot;&gt;production flu forecasts for CDC&lt;/a&gt;, and some have even gone through &lt;a href=&quot;https://doi.org/10.21105/joss.00231&quot;&gt;a level of code peer review&lt;/a&gt;. Others are in earlier stages of development. My hope is that in putting this list out there (see below the fold) we will generate some interest (and possibly find some new open-source collaborators) for these projects.&lt;/p&gt;
 
@@ -664,32 +944,6 @@ In this post, I’m going to give you a quick tour under the hood of our ensembl
         <pubDate>Thu, 01 Sep 2016 00:00:00 -0400</pubDate>
         <link>http://reichlab.io//2016/09/01/epidata-api.html</link>
         <guid isPermaLink="true">http://reichlab.io//2016/09/01/epidata-api.html</guid>
-      </item>
-    
-      <item>
-        <title>Five College DataFest recap: tips for next year</title>
-        <description>&lt;p&gt;Another Five College ASA DataFest has long come and gone, and I’ve been meaning to write a recap for a while. Now in its third year in the Pioneer Valley in Western Massachusetts, the number of registrants doubled from last year, from 70 to 140. All Five Colleges (Amherst, Hampshire, Mt. Holyoke, Smith, and UMass-Amherst) sent multiple teams, and there were a few teams with a mix of students from different schools.&lt;/p&gt;
-
-&lt;p&gt;Team “Beta than U” from UMass-Amherst took home one of the Best in Group awards. From left to right: Laura Bowles, Vincent Lee, Harley Jean, Bianca Agustin, and Stephanie Crowley.
-&lt;img class=&quot;img-responsive&quot; width=&quot;450&quot; src=&quot;/images/blog/beta-than-u.jpg&quot; /&gt;&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;p&gt;From UMass participants alone, the academic departmental diversity was striking: I recorded 17 distinct majors represented from the registration list. They were Computer Science, Public Health, Finance, Applied Math, Economics, Mathematics, Statistics, Biology, Kinesiology, Biochemistry, Sports Management, Informatics/Data Science, Chemistry, Operations and Information Management, Actuarial Science, Linguistics, and Mechanical Engineering. The largest number of students came from Computer Science (not a big surprise considering it is one of the data-science oriented biggest majors on campus).&lt;/p&gt;
-
-&lt;p&gt;Despite it all happening now over three months ago, I made a few notes during the presentation sessions about some simple tips that I thought could dramatically improve the group presentations, ranging from the technical to the conceptual.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Lesson 1: Make sure you use big fonts for the images in your presentation.&lt;/strong&gt; I think at least half of the presentations displayed images that even when displayed on the massively large auditorium screens in the Integrated Sciences Building, were completely illegible. I’ve documented &lt;a href=&quot;http://rpubs.com/reichnick/Rpres-font-size&quot;&gt;a simple but piecemal way&lt;/a&gt; to make the graphics better one at a time using Rpresentations (which a lot of folks were using). I’d love to have someone show me how to integrate this into a “theme”, so that it could be included only at the top of the file. But this seemed like a massive rabbit hole to fall down to understand &lt;a href=&quot;http://stackoverflow.com/questions/23619319/rpresentation-in-rstudio-make-image-fill-out-the-whole-screen&quot;&gt;how the Rpres output actually allocates real-estate&lt;/a&gt;. The whole point is to have this be simple and relatively easy.  Bottom line: make sure your graphics will look good when displayed on a large screen!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Lesson 2: Tell a simple story.&lt;/strong&gt;  The best presentations in my opinion were the ones that focused on a simple narrative and supported it with a few key (and legible!) graphics. Overly complex answers to complex questions are hard to explain in your 3-5 minute presentation slot. I encouraged teams throughout the weekend to spend time testing out simple questions and stories. It’s always a balacing act between figuring out the simple, answerable question and wrangling with the data. But without the simple question it’s easy to get sidetracked into non-essential data cleaning tasks.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Lesson 3: Be original.&lt;/strong&gt; Because the data for the DataFests tend to be corporate (at least they have been the past few years), there is this tendency to follow the formal guidelines and think like a data scientist whose been hired by a marketing team. It’s quite possibly an interesting question to ask how the company could try to maximize profits by creating targeted marketing strategies based on say search queries or geographical location. But it’d be a valid (and creative!) approach to come at these datasets from the perspective of a data scientist consumer advocate. Could you give information to consumers that could help them make better decisions for themselves? Tips on finding good deals or seeing market inefficiencies? Yes, part of DataFest certainly incentivizes “best business insight” but it’s important to come at these problems not just as a corporate data scientist, but as a human one too.&lt;/p&gt;
-
-&lt;p&gt;I look forward to seeing the data science wizardry in upcoming iterations of DataFest. As always, hats off to the folks who made it happen this year (&lt;a href=&quot;http://math.smith.edu/~bbaumer/&quot;&gt;Ben&lt;/a&gt; and &lt;a href=&quot;http://www.science.smith.edu/~amcnamara/&quot;&gt;Amelia&lt;/a&gt; in particular).&lt;/p&gt;
-</description>
-        <pubDate>Mon, 04 Apr 2016 00:00:00 -0400</pubDate>
-        <link>http://reichlab.io//2016/04/04/datafest-lessons.html</link>
-        <guid isPermaLink="true">http://reichlab.io//2016/04/04/datafest-lessons.html</guid>
       </item>
     
   </channel>
