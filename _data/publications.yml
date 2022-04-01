@@ -6,6 +6,9 @@
   preprint: https://www.medrxiv.org/content/10.1101/2022.03.08.22271905v1
   pdf: https://www.pnas.org/doi/full/10.1073/pnas.2200703119
   doi: https://doi.org/10.1073/pnas.2200703119
+  journal: PNAS
+  volume: 119 (14)
+  pages: e2200703119
   year: 2022
   keywords: covid-19
   abstract: >
@@ -33,6 +36,7 @@
   preprint: https://arxiv.org/abs/2202.11834
   pdf: https://arxiv.org/pdf/2202.11834.pdf
   doi: https://doi.org/10.48550/arXiv.2202.11834
+  journal: arxiv
   year: 2022
   keywords: forecasting, influenza
   abstract: >
@@ -74,6 +78,7 @@
   authors: Estee Y Cramer, Yuxin Huang, Yijin Wang, Evan L Ray, Matthew Cornell,Johannes Bracher, Andrea Brennen, Alvaro J Castro Rivadeneira, Aaron Gerding, Katie House, Dasuni Jayawardena, Abdul H Kanji, Ayush Khandelwal, Khoa Le, Jarad Niemi, Ariane Stark, Apurv Shah, Nutcha Wattanachit, Martha W Zorn, Nicholas G Reich, US COVID-19 Forecast Hub Consortium
   preprint: https://www.medrxiv.org/content/10.1101/2021.11.04.21265886v1
   doi: https://doi.org/10.1101/2021.11.04.21265886
+  journal: Cold Spring Harbor Laboratory Press
   year: 2021
   keywords:  covid-19, forecasting
   abstract: >
@@ -85,6 +90,9 @@
   authors: Simon Pollett,Michael A. Johansson,Nicholas G. Reich,....Rachel Lowe,Travis Porco,....,Oliver Brady,Caitlin Rivers
   doi: https://doi.org/10.1371/journal.pmed.1003793
   #preprint: https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003793
+  journal: PLOS Medicine
+  volume: 18
+  pages: 1-12
   year: 2021
   keywords: forecasting
   abstract: >
@@ -99,6 +107,9 @@
     Modeling of Future COVID-19 Cases, Hospitalizations, and Deaths, by Vaccination Rates and Nonpharmaceutical Intervention Scenarios
     — United States, April–September 2021
   slug: modeling-future
+  journal: Morbidity and Mortality Weekly Report (MMWR)
+  volume: 70(19)
+  pages: 719–724
   authors: Borchering RK, Viboud C, ...... Reich NG, ...... Shea K, Lessler J
   pdf: https://www.cdc.gov/mmwr/volumes/70/wr/pdfs/mm7019e3-H.pdf
   year: 2021
@@ -120,6 +131,7 @@
   slug: reich-zoltar-forecast
   authors: Reich NG, Cornell M, Ray EL, House K, Le K
   preprint: https://arxiv.org/abs/2006.03922
+  journal: arXiv
   pdf: reich-zoltar-forecast
   year: 2021
   doi: https://doi.org/10.1038/s41597-021-00839-5
@@ -140,6 +152,7 @@
   authors: Gibson GC, Moran K, Reich NG, Osthus D
   preprint: https://www.biorxiv.org/content/10.1101/2019.12.27.889212v1
   pdf: https://www.biorxiv.org/content/10.1101/2019.12.27.889212v1.full.pdf
+  journal: Cold Spring Harbor Laboratory
   year: 2021
   doi:  http://dx.doi.org/10.1371/journal.pcbi.1007623
   keywords: forecasting, influenza, flusight
@@ -158,6 +171,7 @@
   slug: bracher-interval-format
   authors: Bracher J, Ray EL, Gneiting T, Reich NG
   preprint: https://arxiv.org/abs/2005.12881
+  journal: arXiv
   pdf: https://arxiv.org/pdf/2005.12881.pdf
   year: 2021
   doi: https://doi.org/10.1371/journal.pcbi.1008618
@@ -196,6 +210,8 @@
   slug: serological-surveys
   authors: Teah Snyder, Johanna Ravenhurst, Estee Y Cramer, Nicholas G Reich, Laura Balzer, Dominique Alfandari, A Lover
   journal: BMJ Open 
+  volume: 11:e051157
+  pages: 1-10
   pdf: https://bmjopen.bmj.com/content/bmjopen/11/8/e051157.full.pdf
   year: 2021
   doi: https://doi.org/10.1136/bmjopen-2021-051157
@@ -231,6 +247,9 @@
   authors: Pollett S, Johansson M,Biggerstaff M, Morton LC, Bazaco SL, Major DMB, Ibarra AMS, Pavlin JA, Mate S, Sippy R, Hartman LJ, Reich NG, Maljkovic I, Chretien BJP, Althouse BM, Myer D, Viboud C, Rivers C
   pdf: https://reader.elsevier.com/reader/sd/pii/S175543652030027X?token=DCCCED844BA8FB8FC0D1A0D760890C5C5075CCC1D37C317DF5404D7621D9DB43EF5A2BF4D3120AE454E3BAEEC2EF49A1
   year: 2020
+  journal: Epidemics
+  volume: 33
+  pages: 100-400
   doi: https://doi.org/10.1016/j.epidem.2020.100400
   keywords: forecasting
   abstract: >
