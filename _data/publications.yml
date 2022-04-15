@@ -3,10 +3,9 @@
 - title: 'Collaborative Hubs: Making the Most of Predictive Epidemic Modeling'
   slug: ajph-collab-hubs
   authors: Reich NG, Lessler J, Funk S, Viboud C, Vespignani A, Tibshirani RJ, Shea K, Schienle M, Runge MC, Rosenfeld R, Ray EL, Niehus R, Johnson HC, Johansson MA, Hochheiser H, Gardner L, Bracher J, Borchering RK, Biggerstaff M
-  preprint: https://statistik.econ.kit.edu/download/AJPH-HubPerspective-revised-v2-clean.pdf
   pdf: https://ajph.aphapublications.org/doi/epdf/10.2105/AJPH.2022.306831
   year: 2022
-  journal: American Journal of Public Health
+  journal: AJPH
   volume: 0
   pages: e1-e4
   doi: 10.2105/AJPH.2022.306831
@@ -29,7 +28,7 @@
   preprint: https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v3
   pdf: https://www.pnas.org/doi/epdf/10.1073/pnas.2113561119
   year: 2022
-  journal: Proceedings of the National Academy of Sciences
+  journal: PNAS
   volume: 119(15)
   pages: e2113561119
   doi: 10.1073/pnas.2113561119
@@ -54,10 +53,9 @@
 - title: 'Collaborative modeling key to improving outbreak response'
   slug: outbreak-response
   authors: Reich NG, Ray EL
-  preprint: https://www.medrxiv.org/content/10.1101/2022.03.08.22271905v1
   pdf: https://www.pnas.org/doi/full/10.1073/pnas.2200703119
   year: 2022
-  journal: Proceedings of the National Academy of Sciences
+  journal: PNAS
   volume: 119(14)
   pages: e2200703119
   doi: 10.1073/pnas.2200703119
@@ -89,7 +87,6 @@
   pdf: https://arxiv.org/pdf/2202.11834.pdf
   year: 2022
   journal: arXiv
-  doi: 10.48550/arXiv.2202.11834
   keywords: forecasting, influenza
   abstract: >
     The characteristics of influenza seasons varies substantially from year to year, posing challenges for public health 
@@ -108,7 +105,6 @@
   pdf: https://arxiv.org/pdf/2201.12387.pdf
   year: 2022
   journal: arXiv
-  doi: 10.48550/arXiv.2201.12387
   keywords: forecasting, covid-19
   abstract: >
     The U.S. COVID-19 Forecast Hub aggregates forecasts of the short-term burden of COVID-19 in the 
@@ -133,8 +129,7 @@
   pdf: https://www.medrxiv.org/content/10.1101/2021.11.04.21265886v1.full.pdf
   year: 2021
   journal: medRxiv
-  doi: 10.1101/2021.11.04.21265886
-  keywords: covid-19, software
+  keywords: covid-19, forecasting, software
   abstract: >
     Academic researchers, government agencies, industry groups, and individuals have produced forecasts at an unprecedented 
     scale during the COVID-19 pandemic. To leverage these forecasts, the United States Centers for Disease Control and Prevention 
@@ -153,7 +148,7 @@
   preprint: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8525759/
   pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8525759/pdf/pmed.1003793.pdf
   year: 2021
-  journal: PLoS medicine
+  journal: PLOS Medicine
   volume: 18(10)
   pages: e1003793
   doi: 10.1371/journal.pmed.1003793
@@ -174,14 +169,13 @@
 - title: 'Modeling of Future COVID-19 Cases, Hospitalizations, and Deaths, by Vaccination Rates and Nonpharmaceutical Intervention Scenarios — United States, April–September 2021'
   slug: modeling-future
   authors: Borchering RK, Viboud C, Howerton E, Smith CP, Truelove S, Runge MC, Reich NG, ... Shea K, Lessler, J
-  preprint: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8525759/
-  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8525759/pdf/pmed.1003793.pdf
+  pdf: https://www.cdc.gov/mmwr/volumes/70/wr/pdfs/mm7019e3-H.pdf
   year: 2021
   journal: Morbidity and Mortality Weekly Report (MMWR)
   volume: 70(19)
   pages: 719–724
-  doi: 10.1371/journal.pmed.1003793
-  keywords: forecasting
+  doi: 10.15585/mmwr.mm7019e3
+  keywords: forecasting, covid-19
   abstract: >
     Background: The importance of infectious disease epidemic forecasting and prediction research is underscored by decades of 
     communicable disease outbreaks, including COVID-19. Unlike other fields of medical research, such as clinical trials and 
@@ -200,10 +194,11 @@
   slug: reich-zoltar-forecast
   authors: Reich NG, Cornell M, Ray EL, House K, Le K
   preprint: https://arxiv.org/abs/2006.03922
-  journal: arXiv
+  journal: Scientific Data
   pdf: reich-zoltar-forecast
   year: 2021
-  doi: https://doi.org/10.1038/s41597-021-00839-5
+  volume: 8(59)
+  doi: 10.1038/s41597-021-00839-5
   keywords: forecasting, software
   abstract: >
     Forecasting has emerged as an important component of informed, data-driven decision-making in a wide array of fields. 
@@ -220,10 +215,10 @@
   slug: improving-probabilistic-coherence
   authors: Gibson GC, Moran K, Reich NG, Osthus D
   preprint: https://www.biorxiv.org/content/10.1101/2019.12.27.889212v1
-  pdf: https://www.biorxiv.org/content/10.1101/2019.12.27.889212v1.full.pdf
-  journal: Cold Spring Harbor Laboratory
+  pdf: https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1007623&type=printable
+  journal: PLOS Comp Bio
   year: 2021
-  doi:  http://dx.doi.org/10.1371/journal.pcbi.1007623
+  doi:  10.1371/journal.pcbi.1007623
   keywords: forecasting, influenza, flusight
   abstract: >
     With an estimated $10 . 4 billion in medical costs and 31.4 million outpatient visits each year, influenza 
@@ -240,10 +235,10 @@
   slug: bracher-interval-format
   authors: Bracher J, Ray EL, Gneiting T, Reich NG
   preprint: https://arxiv.org/abs/2005.12881
-  journal: arXiv
-  pdf: https://arxiv.org/pdf/2005.12881.pdf
+  journal: PLOS Comp Bio
+  pdf: https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1008618&type=printable
   year: 2021
-  doi: https://doi.org/10.1371/journal.pcbi.1008618
+  doi: 10.1371/journal.pcbi.1008618
   keywords: forecasting, covid-19
   abstract: >
     For practical reasons, many forecasts of case, hospitalization and death counts in the context 
@@ -267,7 +262,7 @@
   pages: 1-10
   pdf: https://bmjopen.bmj.com/content/bmjopen/11/8/e051157.full.pdf
   year: 2021
-  doi: https://doi.org/10.1136/bmjopen-2021-051157
+  doi: 10.1136/bmjopen-2021-051157
   keywords: forecasting, covid-19
   abstract: >
     Objectives 
@@ -303,7 +298,7 @@
   journal: Epidemics
   volume: 33
   pages: 100-400
-  doi: https://doi.org/10.1016/j.epidem.2020.100400
+  doi: 10.1016/j.epidem.2020.100400
   keywords: forecasting
   abstract: >
     Introduction
