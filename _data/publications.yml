@@ -3,6 +3,7 @@
 - title: 'Collaborative Hubs: Making the Most of Predictive Epidemic Modeling'
   slug: ajph-collab-hubs
   authors: Reich NG, Lessler J, Funk S, Viboud C, Vespignani A, Tibshirani RJ, Shea K, Schienle M, Runge MC, Rosenfeld R, Ray EL, Niehus R, Johnson HC, Johansson MA, Hochheiser H, Gardner L, Bracher J, Borchering RK, Biggerstaff M
+  preprint: https://statistik.econ.kit.edu/download/AJPH-HubPerspective-revised-v2-clean.pdf
   pdf: https://ajph.aphapublications.org/doi/epdf/10.2105/AJPH.2022.306831
   year: 2022
   journal: American Journal of Public Health
@@ -22,17 +23,45 @@
     synthesizing uncertainties across different modeling approaches and facilitating comparisons between them.
   
   
+- title: 'Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the United States'
+  slug: cramer-evaluation
+  authors: Cramer EY, Ray EL, Lopez VK, Bracher J, ... Slayton RB, Johansson M , Biggerstaff M, Reich NG
+  preprint: https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v3
+  pdf: https://www.pnas.org/doi/epdf/10.1073/pnas.2113561119
+  year: 2022
+  journal: Proceedings of the National Academy of Sciences
+  volume: 119(15)
+  pages: e2113561119
+  doi: 10.1073/pnas.2113561119
+  keywords: forecasting, covid-19
+  abstract: >
+    Short-term probabilistic forecasts of the trajectory of the COVID-19 pandemic in the United States have served as a 
+    visible and important communication channel between the scientific modeling community and both the general public and 
+    decision-makers. Forecasting models provide specific, quantitative, and evaluable predictions that inform short-term 
+    decisions such as healthcare staffing needs, school closures, and allocation of medical supplies. Starting in April 
+    2020, the US COVID-19 Forecast Hub (https://covid19forecasthub.org/) collected, disseminated, and synthesized tens of 
+    millions of specific predictions from more than 90 different academic, industry, and independent research groups. A 
+    multimodel ensemble forecast that combined predictions from dozens of groups every week provided the most consistently 
+    accurate probabilistic forecasts of incident deaths due to COVID-19 at the state and national level from April 2020 
+    through October 2021. The performance of 27 individual models that submitted complete forecasts of COVID-19 deaths 
+    consistently throughout this year showed high variability in forecast skill across time, geospatial units, and forecast 
+    horizons. Two-thirds of the models evaluated showed better accuracy than a naïve baseline model. Forecast accuracy 
+    degraded as models made predictions further into the future, with probabilistic error at a 20-wk horizon three to five 
+    times larger than when predicting at a 1-wk horizon. This project underscores the role that collaboration and active 
+    coordination between governmental public-health agencies, academic modeling teams, and industry partners can play in 
+    developing modern modeling capabilities to support local, state, and federal response to outbreaks.
+
 - title: 'Collaborative modeling key to improving outbreak response'
   slug: outbreak-response
-  authors: Nicholas G. Reich, Evan L. Ray 
+  authors: Reich NG, Ray EL
   preprint: https://www.medrxiv.org/content/10.1101/2022.03.08.22271905v1
   pdf: https://www.pnas.org/doi/full/10.1073/pnas.2200703119
-  doi: https://doi.org/10.1073/pnas.2200703119
-  journal: PNAS
-  volume: 119 (14)
-  pages: e2200703119
   year: 2022
-  keywords: covid-19
+  journal: Proceedings of the National Academy of Sciences
+  volume: 119(14)
+  pages: e2200703119
+  doi: 10.1073/pnas.2200703119
+  keywords: forecasting, covid-19
   abstract: >
     During the COVID-19 pandemic, modeling and forecasting have informed public health response at the local, state, and national levels by improving situational awareness, providing estimates of key virus characteristics, and optimizing mitigation strategies (1).
     While forecasting efforts often have been the most visible modeling outputs to the general public, as predictions are often highlighted by the media, other modeling has played an important role in the pandemic as well. In PNAS, Fox et al. detail an important and influential collaborative modeling effort that has supported real-time public health decision-making in Austin, TX, during the COVID-19 pandemic (2). The effort described by Fox et al. is notable both for its careful and accurate modeling as well as the in-depth collaboration, clearly built on a relationship of trust, with Austin city officials.
@@ -40,11 +69,12 @@
 
 - title: 'Impact of SARS-CoV-2 vaccination of children ages 5-11 years on COVID-19 disease burden and resilience to new variants in the United States, November 2021-March 2022: a multi-model study'
   slug: sars-impact
-  authors: Nicholas G. Reich, Rebecca K. Borchering, Luke C. Mullany, ........, Cécile Viboud, Justin Lessler
+  authors: Borchering RK, Mullany LC, Howerton E, Chinazzi M, Smith CP, Qin M, Reich NG, ... Viboud C, Lessler J
   preprint: https://www.medrxiv.org/content/10.1101/2022.03.08.22271905v1
   pdf: https://www.medrxiv.org/content/10.1101/2022.03.08.22271905v1.full.pdf
-  doi: https://doi.org/10.1101/2022.03.08.22271905
   year: 2022
+  journal: medRxiv
+  doi: 10.1101/2022.03.08.22271905
   keywords: covid-19
   abstract: >
     Background SARS-CoV-2 vaccination of persons aged 12 years and older has reduced disease burden in the United States. The COVID-19 Scenario Modeling Hub convened multiple modeling teams in September 2021 to project the impact of expanding vaccine administration to children 5-11 years old on anticipated COVID-19 burden and resilience against variant strains.
@@ -54,12 +84,12 @@
 
 - title: 'Comparison of Combination Methods to Create Calibrated Ensemble Forecasts for Seasonal Influenza in the U.S'
   slug: calibrated-ensmble-forecasts
-  authors: Nutcha Wattanachit, Evan L. Ray, Thomas C. McAndrew, Nicholas G. Reich
+  authors: Wattanachit N, Ray EL, McAndrew TC, Reich NG
   preprint: https://arxiv.org/abs/2202.11834
   pdf: https://arxiv.org/pdf/2202.11834.pdf
-  doi: https://doi.org/10.48550/arXiv.2202.11834
-  journal: arxiv
   year: 2022
+  journal: arXiv
+  doi: 10.48550/arXiv.2202.11834
   keywords: forecasting, influenza
   abstract: >
     The characteristics of influenza seasons varies substantially from year to year, posing challenges for public health 
@@ -73,10 +103,12 @@
 
 - title: 'Comparing trained and untrained probabilistic ensemble forecasts of COVID-19 cases and deaths in the United States'
   slug: ray-comparing-trained-untrained
-  authors: Evan L. Ray, Logan C. Brooks, Jacob Bien, Matthew Biggerstaff, Nikos I. Bosse, Johannes Bracher, Estee Y. Cramer, Sebastian Funk, Aaron Gerding, Michael A. Johansson, Aaron Rumack, Yijin Wang, Martha Zorn, Ryan J. Tibshirani, Nicholas G. Reich
+  authors: Ray EL, Brooks LC, Bien J, Biggerstaff M, Bosse NI, Bracher J, Cramer EY, Funk S, Gerding A, Johansson MA, Rumack A, Wang Y, Zorn M, Tibshirani RJ, Reich NG
   preprint: https://arxiv.org/abs/2201.12387
   pdf: https://arxiv.org/pdf/2201.12387.pdf
   year: 2022
+  journal: arXiv
+  doi: 10.48550/arXiv.2201.12387
   keywords: forecasting, covid-19
   abstract: >
     The U.S. COVID-19 Forecast Hub aggregates forecasts of the short-term burden of COVID-19 in the 
@@ -94,59 +126,74 @@
 # 2021
 
 
-- title: >
-    The United States COVID-19 Forecast Hub dataset
+- title: 'The United States COVID-19 Forecast Hub dataset'
   slug: covid-hub
-  authors: Estee Y Cramer, Yuxin Huang, Yijin Wang, Evan L Ray, Matthew Cornell,Johannes Bracher, Andrea Brennen, Alvaro J Castro Rivadeneira, Aaron Gerding, Katie House, Dasuni Jayawardena, Abdul H Kanji, Ayush Khandelwal, Khoa Le, Jarad Niemi, Ariane Stark, Apurv Shah, Nutcha Wattanachit, Martha W Zorn, Nicholas G Reich, US COVID-19 Forecast Hub Consortium
+  authors: Cramer EY, Huang Y, Wang Y, Ray EL, Cornell M, Bracher J, Brennen A, Castro Rivadeneira AJ, Gerding A, House K, Jayawardena D, Kanji AH, Khandelwal A, Le K, Niemi J, Stark A, Shah A, Wattanachit N, Zorn MW, Reich NG
   preprint: https://www.medrxiv.org/content/10.1101/2021.11.04.21265886v1
-  doi: https://doi.org/10.1101/2021.11.04.21265886
-  journal: Cold Spring Harbor Laboratory Press
+  pdf: https://www.medrxiv.org/content/10.1101/2021.11.04.21265886v1.full.pdf
   year: 2021
-  keywords:  covid-19, forecasting
+  journal: medRxiv
+  doi: 10.1101/2021.11.04.21265886
+  keywords: covid-19, software
   abstract: >
-    Academic researchers, government agencies, industry groups, and individuals have produced forecasts at an unprecedented scale during the COVID-19 pandemic. To leverage these forecasts, the United States Centers for Disease Control and Prevention (CDC) partnered with an academic research lab at the University of Massachusetts Amherst to create the US COVID-19 Forecast Hub. Launched in April 2020, the Forecast Hub is a dataset with point and probabilistic forecasts of incident hospitalizations, incident cases, incident deaths, and cumulative deaths due to COVID-19 at national, state, and county levels in the United States. Included forecasts represent a variety of modeling approaches, data sources, and assumptions regarding the spread of COVID-19. The goal of this dataset is to establish a standardized and comparable set of short-term forecasts from modeling teams. These data can be used to develop ensemble models, communicate forecasts to the public, create visualizations, compare models, and inform policies regarding COVID-19 mitigation. These open-source data are available via download from GitHub, through an online API, and through R packages.
+    Academic researchers, government agencies, industry groups, and individuals have produced forecasts at an unprecedented 
+    scale during the COVID-19 pandemic. To leverage these forecasts, the United States Centers for Disease Control and Prevention 
+    (CDC) partnered with an academic research lab at the University of Massachusetts Amherst to create the US COVID-19 Forecast 
+    Hub. Launched in April 2020, the Forecast Hub is a dataset with point and probabilistic forecasts of incident hospitalizations, 
+    incident cases, incident deaths, and cumulative deaths due to COVID-19 at national, state, and county levels in the United 
+    States. Included forecasts represent a variety of modeling approaches, data sources, and assumptions regarding the spread of 
+    COVID-19. The goal of this dataset is to establish a standardized and comparable set of short-term forecasts from modeling 
+    teams. These data can be used to develop ensemble models, communicate forecasts to the public, create visualizations, compare 
+    models, and inform policies regarding COVID-19 mitigation. These open-source data are available via download from GitHub, 
+    through an online API, and through R packages.
 
-- title: >
-    Recommended reporting items for epidemic forecasting and prediction research: The EPIFORGE 2020 guidelines
+- title: 'Recommended reporting items for epidemic forecasting and prediction research: The EPIFORGE 2020 guidelines'
   slug: epiforge
-  authors: Simon Pollett,Michael A. Johansson,Nicholas G. Reich,....Rachel Lowe,Travis Porco,....,Oliver Brady,Caitlin Rivers
-  doi: https://doi.org/10.1371/journal.pmed.1003793
-  #preprint: https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003793
-  journal: PLOS Medicine
-  volume: 18
-  pages: 1-12
+  authors: Pollett S, Johansson MA, Reich NG, ... Viboud C, Brady O, Rivers C
+  preprint: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8525759/
+  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8525759/pdf/pmed.1003793.pdf
   year: 2021
+  journal: PLoS medicine
+  volume: 18(10)
+  pages: e1003793
+  doi: 10.1371/journal.pmed.1003793
   keywords: forecasting
   abstract: >
-    Background
-      The importance of infectious disease epidemic forecasting and prediction research is underscored by decades of communicable disease outbreaks, including COVID-19. Unlike other fields of medical research, such as clinical trials and systematic reviews, no reporting guidelines exist for reporting epidemic forecasting and prediction research despite their utility. We therefore developed the EPIFORGE checklist, a guideline for standardized reporting of epidemic forecasting research.
-    Methods and findings
-      We developed this checklist using a best-practice process for development of reporting guidelines, involving a Delphi process and broad consultation with an international panel of infectious disease modelers and model end users. The objectives of these guidelines are to improve the consistency, reproducibility, comparability, and quality of epidemic forecasting reporting. The guidelines are not designed to advise scientists on how to perform epidemic forecasting and prediction research, but rather to serve as a standard for reporting critical methodological details of such studies.
-    Conclusions
-      These guidelines have been submitted to the EQUATOR network, in addition to hosting by other dedicated webpages to facilitate feedback and journal endorsement.
+    Background: The importance of infectious disease epidemic forecasting and prediction research is underscored by decades of 
+    communicable disease outbreaks, including COVID-19. Unlike other fields of medical research, such as clinical trials and 
+    systematic reviews, no reporting guidelines exist for reporting epidemic forecasting and prediction research despite their 
+    utility. We therefore developed the EPIFORGE checklist, a guideline for standardized reporting of epidemic forecasting research. 
+    Methods and findings: We developed this checklist using a best-practice process for development of reporting guidelines, 
+    involving a Delphi process and broad consultation with an international panel of infectious disease modelers and model end 
+    users. The objectives of these guidelines are to improve the consistency, reproducibility, comparability, and quality of epidemic 
+    forecasting reporting. The guidelines are not designed to advise scientists on how to perform epidemic forecasting and prediction 
+    research, but rather to serve as a standard for reporting critical methodological details of such studies. Conclusions: These 
+    guidelines have been submitted to the EQUATOR network, in addition to hosting by other dedicated webpages to facilitate feedback 
+    and journal endorsement.
 
-- title: >
-    Modeling of Future COVID-19 Cases, Hospitalizations, and Deaths, by Vaccination Rates and Nonpharmaceutical Intervention Scenarios
-    — United States, April–September 2021
+- title: 'Modeling of Future COVID-19 Cases, Hospitalizations, and Deaths, by Vaccination Rates and Nonpharmaceutical Intervention Scenarios — United States, April–September 2021'
   slug: modeling-future
+  authors: Borchering RK, Viboud C, Howerton E, Smith CP, Truelove S, Runge MC, Reich NG, ... Shea K, Lessler, J
+  preprint: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8525759/
+  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8525759/pdf/pmed.1003793.pdf
+  year: 2021
   journal: Morbidity and Mortality Weekly Report (MMWR)
   volume: 70(19)
   pages: 719–724
-  authors: Borchering RK, Viboud C, ...... Reich NG, ...... Shea K, Lessler J
-  pdf: https://www.cdc.gov/mmwr/volumes/70/wr/pdfs/mm7019e3-H.pdf
-  year: 2021
-  keywords: covid-19, forecasting
+  doi: 10.1371/journal.pmed.1003793
+  keywords: forecasting
   abstract: >
-    What is already known about this topic?
-      Increases in COVID-19 cases in March and early April occurred despite a large-scale vaccination program.
-      Increases coincided with the spread of SARS-CoV-2 variants and relaxation of nonpharmaceutical interventions (NPIs).
-    What is added by this report?
-      Data from six models indicate that with high vaccination coverage and moderate NPI adherence,
-      hospitalizations and deaths will likely remain low nationally, with a sharp decline in cases projected by July 2021.
-      Lower NPI adherence could lead to substantial increases in severe COVID-19 outcomes, even with improved vaccination coverage.
-    What are the implications for public health practice?
-      High vaccination coverage and compliance with NPIs are essential to control COVID-19 and prevent surges in
-      hospitalizations and deaths in the coming months.
+    Background: The importance of infectious disease epidemic forecasting and prediction research is underscored by decades of 
+    communicable disease outbreaks, including COVID-19. Unlike other fields of medical research, such as clinical trials and 
+    systematic reviews, no reporting guidelines exist for reporting epidemic forecasting and prediction research despite their 
+    utility. We therefore developed the EPIFORGE checklist, a guideline for standardized reporting of epidemic forecasting research. 
+    Methods and findings: We developed this checklist using a best-practice process for development of reporting guidelines, 
+    involving a Delphi process and broad consultation with an international panel of infectious disease modelers and model end 
+    users. The objectives of these guidelines are to improve the consistency, reproducibility, comparability, and quality of epidemic 
+    forecasting reporting. The guidelines are not designed to advise scientists on how to perform epidemic forecasting and prediction 
+    research, but rather to serve as a standard for reporting critical methodological details of such studies. Conclusions: These 
+    guidelines have been submitted to the EQUATOR network, in addition to hosting by other dedicated webpages to facilitate feedback 
+    and journal endorsement.
 
 
 - title: 'The Zoltar forecast archive: a tool to facilitate standardization and storage of interdisciplinary prediction research'
@@ -211,26 +258,10 @@
     It can be interpreted as a generalization of the absolute error to probabilistic forecasts and allows 
     for a simple decomposition into a measure of sharpness and penalties for over- and underprediction.
 
-- title: 'Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the US'
-  slug: cramer-evaluation
-  authors: Cramer EY , Ray EL , Lopez VK , Bracher J ...... Slayton RB, Johansson M , Biggerstaff M  , Reich NG
-  preprint: https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v2
-  pdf: https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v1.full.pdf
-  year: 2021
-  keywords: covid-19
-  abstract: >
-    Short-term probabilistic forecasts of the trajectory of the COVID-19 pandemic in the United States have served as a visible and important communication channel between the scientific modeling community and both the general public and decision-makers. 
-    Forecasting models provide specific, quantitative, and evaluable predictions that inform short-term decisions such as healthcare staffing needs, school closures, and allocation of medical supplies. 
-    In 2020, the COVID-19 Forecast Hub (https://covid19forecasthub.org/) collected, disseminated, and synthesized hundreds of thousands of specific predictions from more than 50 different academic, industry, and independent research groups. 
-    This manuscript systematically evaluates 23 models that regularly submitted forecasts of reported weekly incident COVID-19 mortality counts in the US at the state and national level. 
-    One of these models was a multi-model ensemble that combined all available forecasts each week. The performance of individual models showed high variability across time, geospatial units, and forecast horizons. 
-    Half of the models evaluated showed better accuracy than a naïve baseline model. In combining the forecasts from all teams, the ensemble showed the best overall probabilistic accuracy of any model. 
-    Forecast accuracy degraded as models made predictions farther into the future, with probabilistic accuracy at a 20-week horizon more than 5 times worse than when predicting at a 1-week horizon. 
-    This project underscores the role that collaboration and active coordination between governmental public health agencies, academic modeling teams, and industry partners can play in developing modern modeling capabilities to support local, state, and federal response to outbreaks.
-
 - title: 'Serological surveys to estimate cumulative incidence of SARS-CoV-2 infection in adults (Sero-MAss study), Massachusetts, July–August 2020: a mail-based cross-sectional study'
   slug: serological-surveys
-  authors: Teah Snyder, Johanna Ravenhurst, Estee Y Cramer, Nicholas G Reich, Laura Balzer, Dominique Alfandari, A Lover
+  authors: Snyder T, Ravenhurst J, Cramer EY, Reich NG, Balzer L, Alfandari D, Lover AA
+  preprint: https://www.medrxiv.org/content/10.1101/2021.03.05.21249174v3
   journal: BMJ Open 
   volume: 11:e051157
   pages: 1-10
