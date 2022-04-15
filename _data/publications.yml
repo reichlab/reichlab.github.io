@@ -1,5 +1,27 @@
 # 2022
 
+- title: 'Collaborative Hubs: Making the Most of Predictive Epidemic Modeling'
+  slug: ajph-collab-hubs
+  authors: Reich NG, Lessler J, Funk S, Viboud C, Vespignani A, Tibshirani RJ, Shea K, Schienle M, Runge MC, Rosenfeld R, Ray EL, Niehus R, Johnson HC, Johansson MA, Hochheiser H, Gardner L, Bracher J, Borchering RK, Biggerstaff M
+  pdf: https://ajph.aphapublications.org/doi/epdf/10.2105/AJPH.2022.306831
+  year: 2022
+  journal: American Journal of Public Health
+  volume: 0
+  pages: e1-e4
+  doi: 10.2105/AJPH.2022.306831
+  keywords: forecasting, covid-19
+  abstract: >
+    The COVID-19 pandemic has made it clear that epidemic models play an important role in how governments and the public 
+    respond to infectious disease crises. Early in the pandemic, models were used to estimate the true number of infections. 
+    Later, they estimated key parameters, generated short-term forecasts of outbreak trends, and quantified possible effects 
+    of interventions on the unfolding epidemic. In contrast to the coordinating role played by major national or international 
+    agencies in weather related emergencies, pandemic modeling efforts were initially scattered across many research institutions. 
+    Differences in modeling approaches led to contrasting results, contributing to confusion in public perception of the pandemic. 
+    Efforts to coordinate modeling efforts in so-called “hubs” have provided governments, healthcare agencies, and the public 
+    with assessments and forecasts that reflect the consensus in the modeling community. This has been achieved by openly 
+    synthesizing uncertainties across different modeling approaches and facilitating comparisons between them.
+  
+  
 - title: 'Collaborative modeling key to improving outbreak response'
   slug: outbreak-response
   authors: Nicholas G. Reich, Evan L. Ray 
