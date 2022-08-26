@@ -3,6 +3,7 @@
 - title: 'Comparing trained and untrained probabilistic ensemble forecasts of COVID-19 cases and deaths in the United States'
   slug: ray-comparing-trained-untrained
   authors: Ray EL, Brooks LC, Bien J, Biggerstaff M, Bosse NI, Bracher J, Cramer EY, Funk S, Gerding A, Johansson MA, Rumack A, Wang Y, Zorn M, Tibshirani RJ, Reich NG
+  preprint: https://arxiv.org/abs/2201.12387
   pdf: https://www.sciencedirect.com/sdfe/reader/pii/S0169207022000966/pdf
   year: 2022
   journal: International Journal of Forecasting
@@ -25,6 +26,7 @@
 - title: 'The United States COVID-19 Forecast Hub dataset'
   slug: covid-hub
   authors: Cramer EY, Huang Y, Wang Y, Ray EL, Cornell M, Bracher J, Brennen A, Castro Rivadeneira AJ, Gerding A, House K, Jayawardena D, Kanji AH, Khandelwal A, Le K, Niemi J, Stark A, Shah A, Wattanachit N, Zorn MW, Reich NG
+  preprint: https://www.medrxiv.org/content/10.1101/2021.11.04.21265886v1
   pdf: https://www.nature.com/articles/s41597-022-01517-w.pdf
   year: 2022
   journal: Scientific Data
@@ -276,9 +278,9 @@
   slug: reich-zoltar-forecast
   authors: Reich NG, Cornell M, Ray EL, House K, Le K
   preprint: https://arxiv.org/abs/2006.03922
-  journal: Scientific Data
   pdf: reich-zoltar-forecast
   year: 2021
+  journal: Scientific Data
   volume: 8(59)
   doi: 10.1038/s41597-021-00839-5
   keywords: forecasting, software
@@ -298,8 +300,8 @@
   authors: Gibson GC, Moran K, Reich NG, Osthus D
   preprint: https://www.biorxiv.org/content/10.1101/2019.12.27.889212v1
   pdf: https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1007623&type=printable
-  journal: PLOS Comp Bio
   year: 2021
+  journal: PLOS Comp Bio
   doi:  10.1371/journal.pcbi.1007623
   keywords: forecasting, influenza, flusight
   abstract: >
@@ -317,9 +319,9 @@
   slug: bracher-interval-format
   authors: Bracher J, Ray EL, Gneiting T, Reich NG
   preprint: https://arxiv.org/abs/2005.12881
-  journal: PLOS Comp Bio
   pdf: https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1008618&type=printable
   year: 2021
+  journal: PLOS Comp Bio
   doi: 10.1371/journal.pcbi.1008618
   keywords: forecasting, covid-19
   abstract: >
@@ -339,11 +341,11 @@
   slug: serological-surveys
   authors: Snyder T, Ravenhurst J, Cramer EY, Reich NG, Balzer L, Alfandari D, Lover AA
   preprint: https://www.medrxiv.org/content/10.1101/2021.03.05.21249174v3
+  pdf: https://bmjopen.bmj.com/content/bmjopen/11/8/e051157.full.pdf
+  year: 2021
   journal: BMJ Open 
   volume: 11:e051157
   pages: 1-10
-  pdf: https://bmjopen.bmj.com/content/bmjopen/11/8/e051157.full.pdf
-  year: 2021
   doi: 10.1136/bmjopen-2021-051157
   keywords: forecasting, covid-19
   abstract: >
@@ -399,6 +401,7 @@
   preprint: https://www.medrxiv.org/content/10.1101/2020.12.22.20248736v2
   pdf: https://www.medrxiv.org/content/10.1101/2020.12.22.20248736v2.full.pdf
   year: 2020
+  journal: medRxiv
   doi: 10.1101/2020.12.22.20248736
   keywords: covid-19
   abstract: >
@@ -425,6 +428,7 @@
   preprint: https://www.medrxiv.org/content/10.1101/2020.11.25.20186056v1
   pdf: https://www.medrxiv.org/content/10.1101/2020.11.25.20186056v1.full.pdf
   year: 2020
+  journal: medRxiv
   doi: 10.1101/2020.11.25.20186056
   keywords: dengue
   abstract: >
@@ -452,6 +456,7 @@
   preprint: https://www.medrxiv.org/content/10.1101/2020.09.21.20196725v1
   pdf: https://www.medrxiv.org/content/10.1101/2020.09.21.20196725v1.full.pdf
   year: 2020
+  journal: medRxiv
   doi: 10.1101/2020.09.21.20196725
   keywords: covid-19, forecasting
   abstract: >
@@ -473,6 +478,7 @@
   preprint: https://www.medrxiv.org/content/10.1101/2020.08.19.20177493v1
   pdf: https://www.medrxiv.org/content/10.1101/2020.08.19.20177493v1.full.pdf
   year: 2020
+  journal: medRxiv
   doi: 10.1101/2020.08.19.20177493
   keywords: covid-19, forecasting
   abstract: >
@@ -502,8 +508,9 @@
   slug: weinberger-estimate-death
   authors: Weinberger D, Cohen T, Crawford F, Mostashari F, Olson D, Pitzer VE, Reich NG, Russi M, Simonsen L, Watkins A, Viboud C
   preprint: https://www.medrxiv.org/content/10.1101/2020.04.15.20066431v2
-  journal: JAMA Internal Medicine
+  pdf: https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2767980
   year: 2020
+  journal: JAMA Internal Medicine
   doi: 10.1001/jamainternmed.2020.3391
   keywords: covid-19
   abstract: >
@@ -543,6 +550,7 @@
   preprint: https://arxiv.org/abs/1912.11409
   pdf: https://arxiv.org/pdf/1912.11409.pdf
   year: 2020
+  journal: arXiv
   keywords: forecasting
   abstract: >
     Forecasts support decision making in a variety of applications. Statistical models can produce 
@@ -563,6 +571,7 @@
   preprint: https://arxiv.org/abs/2006.00073
   pdf: https://arxiv.org/pdf/2006.00073.pdf
   year: 2020
+  journal: arXiv
   keywords: forecasting
   abstract: >
     Forecasting transmission of infectious diseases, especially for vector-borne diseases, poses unique challenges 
@@ -690,9 +699,9 @@
   authors: Brown AC, Lauer SA, Robinson C, Nyquist C, Rao S, Reich NG
   preprint: https://www.biorxiv.org/content/10.1101/664433v1
   pdf: https://www.biorxiv.org/content/biorxiv/early/2019/06/14/664433.full.pdf
-  doi: 10.1002/sim.8467
-  journal: Statistics in Medicine
   year: 2020
+  journal: Statistics in Medicine
+  doi: 10.1002/sim.8467
   keywords: forecasting, influenza
   github: reichlab/ALERT
   abstract: >
@@ -718,11 +727,11 @@
   authors: Reich NG, McGowan CJ, Yamana TK, Tushar A, Ray E, Osthus D, Kandula S, Brooks LC, Crawford-Crudell W, Gibson GC, Moore E, Silva R, Biggerstaff M, Johanssom M, Rosenfeld R, Shaman J
   preprint: https://www.biorxiv.org/content/biorxiv/early/2019/03/08/566604.full-text.pdf
   pdf: https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1007486&type=printable
+  year: 2019
   journal: PLOS Comp Bio
   volume: 15(11)
   pages: e1007486
   doi: 10.1371/journal.pcbi.1007486
-  year: 2019
   keywords: forecasting, influenza, flusight
   github: FluSightNetwork/cdc-flusight-ensemble
   abstract: >
@@ -755,9 +764,9 @@
   slug: challenge-probabilistic
   authors: Johansson MA et al.
   pdf: https://www.pnas.org/content/pnas/early/2019/11/05/1909865116.full.pdf
-  doi: 10.1073/pnas.1909865116
-  journal: PNAS
   year: 2019
+  journal: PNAS
+  doi: 10.1073/pnas.1909865116
   keywords: forecasting, dengue, flusight
   abstract: >
     A wide range of research has promised new tools for forecasting infectious disease 
@@ -788,6 +797,7 @@
   preprint: https://arxiv.org/abs/1910.11397
   pdf: https://arxiv.org/pdf/1910.11397.pdf
   year: 2019
+  journal: arXiv
   keywords: cluster-randomization
   abstract: >
     We often seek to estimate the causal effect of an exposure on a particular outcome in both randomized
@@ -809,11 +819,12 @@
 - title: 'Opioids in the USA: Disparities in addiction and incarceration'
   slug: opioids-disparities
   authors: Kazemi A, Kennedy C, Silverman G, Reich NG
-  doi: 10.1111/j.1740-9713.2019.01312.x
+  pdf: https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1740-9713.2019.01312.x
+  year: 2019
   journal: Significance
+  doi: 10.1111/j.1740-9713.2019.01312.x
   volume: 16(5)
   pages: 6-7
-  year: 2019
   keywords: opioid, addiction
   abstract: >
     Arianna Kazemi, Connor Kennedy and Gabri Silverman, undergraduate winners of 
@@ -825,9 +836,9 @@
   slug: scoring-probabilistic
   authors: Reich NG, Osthus D, Ray EL, Yamana TK, Biggerstaff M, Johansson MA, Rosenfeld R, Shaman J
   pdf: https://www.pnas.org/content/pnas/early/2019/09/25/1912694116.full.pdf
-  doi: 10.1073/pnas.1912694116
-  journal: PNAS
   year: 2019
+  journal: PNAS
+  doi: 10.1073/pnas.1912694116
   keywords: forecasting, influenza, flusight
   github: FluSightNetwork/cdc-flusight-ensemble
   abstract: >
@@ -870,11 +881,11 @@
   slug: respirators
   authors: Radonovich LJ, Simberkoff MS, Bessesen MT, Brown AC, Cummings DAT, Gaydos CA, Los JG, Krosche AE, Gibert CL, Gorse GJ, Nyquist AC, Reich NG, Rodriguez-Barradas MC, Price CS, Perl TM
   pdf: https://scholar.google.com/scholar_url?url=https://jamanetwork.com/journals/jama/articlepdf/2749214/jama_radonovich_2019_oi_190087.pdf&hl=en&sa=T&oi=ucasa&ct=usl&ei=3-V_Xb3DF4ukmAH3l62YDw&scisig=AAGBfm16ej4L9ZhatlupvVocAifiMiFfBA
-  doi: 10.1001/jama.2019.11645
+  year: 2019
   journal: JAMA
+  doi: 10.1001/jama.2019.11645
   volume: 322(9)
   pages: 824-833
-  year: 2019
   keywords: influenza, cluster-randomization
   abstract: >
      Clinical studies have been inconclusive about the effectiveness of N95 respirators and medical masks in preventing health care personnel (HCP) from acquiring workplace viral respiratory infections.
@@ -884,10 +895,10 @@
   slug: forcasting
   authors: George GB, Taylor W, Shaman J, Rivers C, Paul B, O'Toole T, Johansson MA, Hirschman L, Biggerstaff M, Asher J, Reich NG
   pdf: https://www.nature.com/articles/s41467-019-11901-7.pdf
-  doi: 10.1038/s41467-019-11901-7
-  journal: Nature Communications
-  volume: 10(3932)
   year: 2019
+  journal: Nature Communications
+  doi: 10.1038/s41467-019-11901-7
+  volume: 10(3932)
   keywords: forecasting, flusight
   abstract: >
     Forecasting is beginning to be integrated into decision-making processes for
@@ -902,8 +913,9 @@
   authors: McAndrew T, Reich NG 
   preprint: https://arxiv.org/abs/1908.01675
   pdf: https://arxiv.org/pdf/1908.01675.pdf
-  doi: https://doi.org/10.1002/sim.9219
   year: 2019
+  journal: arXiv
+  doi: https://doi.org/10.1002/sim.9219
   keywords: forecasting, influenza, flusight 
   github: tomcm39/adaptively_stacking_ensembles_for_infleunza_forecasting_with_incomplete_data
   abstract: >
@@ -935,10 +947,10 @@
   authors: Rivers C, Chretien JP, Riley S, Pavlin J, Woodward A, Brett-Major D, Berry IB, Morton L, Jarman RG, 
            Biggerstaff M, Johansson MA, Reich NG, Meyer D, Snyder MR, Pollett S
   pdf: https://www.nature.com/articles/s41467-019-11067-2.pdf
-  doi: 10.1038/s41467-019-11067-2
-  journal: Nature Communications
-  volume: 10(3932)
   year: 2019
+  journal: Nature Communications
+  doi: 10.1038/s41467-019-11067-2
+  volume: 10(3932)
   keywords: forecasting 
   github: FluSightNetwork/cdc-flusight-ensemble
   abstract: >
@@ -950,11 +962,11 @@
     
 - title: 'A collaborative multiyear, multimodel assessment of seasonal influenza forecasting in the United States'
   slug: collab-forecasts
-  journal: PNAS
   authors: Reich NG, Brooks L, Spencer F, Kandula S, McGowan C, Moore E, Osthus D, Ray E, Tushar A,Yamana T, Biggerstaff M, Johansson MA, Rosenfeld R, and Shaman J
   pdf: https://www.pnas.org/content/pnas/early/2019/01/14/1812594116.full.pdf
-  doi: 10.1073/pnas.1812594116
   year: 2019
+  journal: PNAS
+  doi: 10.1073/pnas.1812594116
   volume: 116(8)
   pages: 3146-3154
   keywords: forecasting, influenza, flusight
@@ -979,11 +991,11 @@
 
 - title: 'Collaborative efforts to forecast seasonal influenza in the United States, 2015–2016'
   slug: flusight-201516
-  journal: Sci Rep
   authors: McGowan C, Biggerstaff M, Johansson M, Apfeldorf K, Ben-Nun M, Brooks L, Convertino M, Erraguntla M, Farrow D, Freeze J, Ghosh S, Hyun S, Kandula S, Lega J, Liu Y, Michaud N, Morita H, Niemi J, Ramakrishnan N, Ray EL, Reich NG, Riley P, Shaman J, Tibshirani R, Vespignani A, Zhang Q, Reed C
   pdf: https://www.nature.com/articles/s41598-018-36361-9.pdf
-  doi: 10.1038/s41598-018-36361-9
   year: 2019
+  journal: Sci Rep
+  doi: 10.1038/s41598-018-36361-9
   volume: 9(683)
   keywords: forecasting, influenza, flusight
   abstract: >
@@ -996,10 +1008,10 @@
 - title: Prospective forecasts of annual dengue hemorrhagic fever incidence in Thailand, 2010–2014
   slug: lauer-annual-preds
   authors: Lauer SA, Sakrejda K, Ray EL, Keegan LT, Bi Q, Suangtho P, Hinjoy S, Iamsirithaworn S, Suthachana S, Laosiritaworn Y, Cummings DAT, Lessler J and Reich NG
-  journal: PNAS
-  doi: 10.1073/pnas.1714457115
   pdf: http://www.pnas.org/content/early/2018/02/13/1714457115.full.pdf
   year: 2018
+  journal: PNAS
+  doi: 10.1073/pnas.1714457115
   volume: 115(10) 
   pages: E2175-E2182
   keywords: forecasting, dengue
@@ -1011,13 +1023,13 @@
 - title: Prediction of infectious disease epidemics via weighted density ensembles
   slug: ray-density-ensembles
   authors: Ray EL, Reich NG
-  journal: PLOS Comp Bio 
   preprint: https://arxiv.org/abs/1703.10936
   pdf: http://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005910&type=printable
+  year: 2018
+  journal: PLOS Comp Bio 
   doi: 10.1371/journal.pcbi.1005910
   volume: 14(2)
   pages: e1005910
-  year: 2018
   keywords: forecasting, influenza, flusight
   github: reichlab/adaptively-weighted-ensemble
   abstract: >
@@ -1255,14 +1267,15 @@
 # 2015
 
 
-- title: "Triggering Interventions for Influenza: The ALERT Algorithm"
+- title: 'Triggering Interventions for Influenza: The ALERT Algorithm'
   doi: 10.1093/cid/ciu749
   slug: reich-alert
   authors: >
     Reich NG, Cummings DAT, Lauer SA, Zorn M, Robinson C, Nyquist AC, Price CS,
     Simberkoff M, Radonovich LJ, Perl TM
-  journal: Clin Inf Dis
+  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4304363/pdf/ciu749.pdf
   year: 2015
+  journal: Clin Inf Dis
   keywords: forecasting, influenza
   volume: 60
   pages: 499-504
@@ -1379,11 +1392,11 @@
   slug: case-fatality-ratio
   authors: Reich NG, Lessler J, Cummings DAT, Brookmeyer R
   pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4540071/pdf/nihms-636908.pdf
+  year: 2012
   journal: Biometrics
   volume: 68(2)
   pages: 598-606
   doi: 10.1111/j.1541-0420.2011.01709.x
-  year: 2012
   keywords: influenza, case-fatality
   abstract: >
     Knowing which populations are most at risk for severe outcomes from an 
@@ -1411,11 +1424,12 @@
 - title: 'Estimating incubation period distributions with coarse data.'
   slug: reich-estimate-incubation
   authors: Reich NG, Lessler J, Cummings DAT, Brookmeyer R
-  doi: 10.1002/sim.3659
+  pdf: https://onlinelibrary.wiley.com/doi/pdf/10.1002/sim.3659
+  year: 2009
   journal: Statistics in Medicine
+  doi: 10.1002/sim.3659
   volume: 28(22)
   pages: 2769-84
-  year: 2009
   keywords: influenza, incubation-period
   abstract: >
     The incubation period, the time between infection and disease onset, is important in the surveillance and 
