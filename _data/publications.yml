@@ -1,5 +1,27 @@
 # 2022
 
+- title: 'Comparing trained and untrained probabilistic ensemble forecasts of COVID-19 cases and deaths in the United States'
+  slug: ray-comparing-trained-untrained
+  authors: Ray EL, Brooks LC, Bien J, Biggerstaff M, Bosse NI, Bracher J, Cramer EY, Funk S, Gerding A, Johansson MA, Rumack A, Wang Y, Zorn M, Tibshirani RJ, Reich NG
+  pdf: https://www.sciencedirect.com/sdfe/reader/pii/S0169207022000966/pdf
+  year: 2022
+  journal: International Journal of Forecasting
+  volume: 
+  pages: 
+  doi: 10.1016/j.ijforecast.2022.06.005
+  keywords: forecasting, covid-19
+  abstract: >
+    The U.S. COVID-19 Forecast Hub aggregates forecasts of the short-term burden of COVID-19 in the 
+    United States from many contributing teams. We study methods for building an ensemble that combines 
+    forecasts from these teams. These experiments have informed the ensemble methods used by the Hub. 
+    To be most useful to policy makers, ensemble forecasts must have stable performance in the presence 
+    of two key characteristics of the component forecasts: (1) occasional misalignment with the reported 
+    data, and (2) instability in the relative performance of component forecasters over time. Our 
+    results indicate that in the presence of these challenges, an untrained and robust approach to 
+    ensembling using an equally weighted median of all component forecasts is a good choice to support 
+    public health decision makers. In settings where some contributing forecasters have a stable record 
+    of good performance, trained ensembles that give those forecasters higher weight can also be helpful.
+
 - title: 'The United States COVID-19 Forecast Hub dataset'
   slug: covid-hub
   authors: Cramer EY, Huang Y, Wang Y, Ray EL, Cornell M, Bracher J, Brennen A, Castro Rivadeneira AJ, Gerding A, House K, Jayawardena D, Kanji AH, Khandelwal A, Le K, Niemi J, Stark A, Shah A, Wattanachit N, Zorn MW, Reich NG
@@ -197,26 +219,6 @@
     the FluSight Network ensemble. Uniting theoretical results from the forecasting literature with domain-specific forecasts 
     from influenza outbreaks, we applied parametric forecast combination methods that simultaneously optimize individual model 
     weights and calibrate the ensemble via a beta transformation. We used the beta-transformed linear pool and the finite beta mixture model to produce ensemble forecasts retrospectively for the 2016/2017 to 2018/2019 influenza seasons in the U.S. We compared their performance to methods currently used in the FluSight challenge, namely the equally weighted linear pool and the linear pool. Ensemble forecasts produced from methods with a beta transformation were shown to outperform those from the equally weighted linear pool and the linear pool for all week-ahead targets across in the test seasons based on average log scores. We observed improvements in overall accuracy despite the beta-transformed linear pool or beta mixture methods' modest under-prediction across all targets and seasons. Combination techniques that explicitly adjust for known calibration issues in linear pooling should be considered to improve ensemble probabilistic scores in outbreak settings.
-
-- title: 'Comparing trained and untrained probabilistic ensemble forecasts of COVID-19 cases and deaths in the United States'
-  slug: ray-comparing-trained-untrained
-  authors: Ray EL, Brooks LC, Bien J, Biggerstaff M, Bosse NI, Bracher J, Cramer EY, Funk S, Gerding A, Johansson MA, Rumack A, Wang Y, Zorn M, Tibshirani RJ, Reich NG
-  preprint: https://arxiv.org/abs/2201.12387
-  pdf: https://arxiv.org/pdf/2201.12387.pdf
-  year: 2022
-  journal: arXiv
-  keywords: forecasting, covid-19
-  abstract: >
-    The U.S. COVID-19 Forecast Hub aggregates forecasts of the short-term burden of COVID-19 in the 
-    United States from many contributing teams. We study methods for building an ensemble that combines 
-    forecasts from these teams. These experiments have informed the ensemble methods used by the Hub. 
-    To be most useful to policy makers, ensemble forecasts must have stable performance in the presence 
-    of two key characteristics of the component forecasts: (1) occasional misalignment with the reported 
-    data, and (2) instability in the relative performance of component forecasters over time. Our 
-    results indicate that in the presence of these challenges, an untrained and robust approach to 
-    ensembling using an equally weighted median of all component forecasts is a good choice to support 
-    public health decision makers. In settings where some contributing forecasters have a stable record 
-    of good performance, trained ensembles that give those forecasters higher weight can also be helpful.
   
 
 # 2021
