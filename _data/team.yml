@@ -111,7 +111,7 @@
       url: "https://www.linkedin.com/in/alvaro-j-castro-rivadeneira/"
       
 - name: Li Shandross
-  role: Undergraduate Student
+  role: MS Student
   description: |
     Li is an Undergrad Mathematics major with a Statistics and Data Science concentration.
     Li is also a part of the Biostatistics 4+1 program and has an interest in model accuracy.
@@ -155,20 +155,19 @@
   links:
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/martha-zorn-20015628/"
-
-- name: Serena Yijin Wang
-  role: Data Analyst
-  description: |
-    Serena graduated Magna cum laude from Mount Holyoke College. She was a double major of Computer Science and Statistics. She is very intersted in infectious disease forecasting. In her free time, she enjoys traveling and reading about Art History.
-  image: /images/people/serena.jpg
-  links:
-      - name: flaticon-github-1
-        url: "https://github.com/Serena-Wang"
-      - name: flaticon-linkedin-1
-        url: "https://www.linkedin.com/in/serena-wang-899562119/"
   
 # Alumni Section
 
+- name: Serena Yijin Wang
+  role: Data Analyst (2020-2022)
+  description: |
+  
+  image: /images/people/serena.jpg
+  type: Alumni
+  links:
+    - name: alumni_link
+      url: "https://www.linkedin.com/in/serena-wang-899562119/"
+  
 - name: Xi Meng
   role: PhD Student (2015-2021)
   description: |
