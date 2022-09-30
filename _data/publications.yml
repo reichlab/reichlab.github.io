@@ -1,5 +1,29 @@
 # 2022
 
+- title: 'An expert judgment model to predict early stages of the COVID-19 outbreak in the United States'
+  slug: mcandrew-judgement-model
+  authors: McAndrew TC, Reich NG
+  preprint: https://www.medrxiv.org/content/10.1101/2020.09.21.20196725v1
+  pdf: https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1010485&type=printable
+  year: 2022
+  journal: PLOS Comp Bio
+  volume: 18(9)
+  pages: :e1010485
+  doi: 10.1371/journal.pcbi.1010485
+  keywords: covid-19, forecasting
+  abstract: >
+    From February to May 2020, experts in the modeling of infectious disease provided quantitative predictions and estimates of trends in the 
+    emerging COVID-19 pandemic in a series of 13 surveys. Data on existing transmission patterns were sparse when the pandemic began, but experts 
+    synthesized information available to them to provide quantitative, judgment-based assessments of the current and future state of the pandemic. 
+    We aggregated expert predictions into a single “linear pool” by taking an equally weighted average of their probabilistic statements. At a time 
+    when few computational models made public estimates or predictions about the pandemic, expert judgment provided (a) falsifiable predictions of 
+    short- and long-term pandemic outcomes related to reported COVID-19 cases, hospitalizations, and deaths, (b) estimates of latent viral 
+    transmission, and (c) counterfactual assessments of pandemic trajectories under different scenarios. The linear pool approach of aggregating 
+    expert predictions provided more consistently accurate predictions than any individual expert, although the predictive accuracy of a linear pool 
+    rarely provided the most accurate prediction. This work highlights the importance that expert linear pool could play in flexibly assessing a wide 
+    array of risks early in future emerging outbreaks, especially in settings where available data cannot yet support data-driven computational 
+    modeling.
+
 - title: 'An evaluation of prospective COVID-19 modelling studies in the USA: from data to science translation'
   slug: nixon-modeling-evaluation
   authors: Nixon K, Jindal S, Parker F, Reich NG, Ghobadi K, Lee EC, Truelove S, Gardner L
@@ -447,28 +471,6 @@
     multi-annual patterns of dengue incidence in Thailand. Feedback 
     between geographically linked locations with markedly different 
     ecology is key to explaining full disease dynamics across urban-rural gradient.
-
-- title: 'An expert judgment model to predict early stages of the COVID-19 outbreak in the United States'
-  slug: mcandrew-judgement-model
-  authors: McAndrew TC, Reich NG
-  preprint: https://www.medrxiv.org/content/10.1101/2020.09.21.20196725v1
-  pdf: https://www.medrxiv.org/content/10.1101/2020.09.21.20196725v1.full.pdf
-  year: 2020
-  journal: medRxiv
-  doi: 10.1101/2020.09.21.20196725
-  keywords: covid-19, forecasting
-  abstract: >
-    During early stages of the COVID-19 pandemic, forecasts provided actionable information about
-    disease transmission to public health decision-makers. Between February and May 2020, experts
-    in infectious disease modeling made weekly predictions about the impact of the pandemic in the
-    U.S. We aggregated these predictions into consensus predictions. In March and April 2020,
-    experts predicted that the number of COVID-19 related deaths in the U.S. by the end of 2020
-    would be in the range of 150,000 to 250,000, with scenarios of near 1m deaths considered
-    plausible. The wide range of possible future outcomes underscored the uncertainty surrounding
-    the outbreak’s trajectory. Experts’ predictions of measurable short-term outcomes had varying
-    levels of accuracy over the surveys but showed appropriate levels of uncertainty when
-    aggregated. An expert consensus model can provide important insight early on in an emerging
-    global catastrophe.
 
 - title: 'Ensemble Forecasts of Coronavirus Disease 2019 (COVID-19) in the U.S.'
   slug: ray-ensemble-covid19
