@@ -42,17 +42,6 @@
   image: /images/people/nutcha.jpg
   links: []
 
-- name: Estee Cramer
-  role: PhD Student
-  description: |
-    Estee is a PhD student in epidemiology. She is interested in infectious disease transmission and malaria surveillance. She received her MPH in global health from Case Western Reserve University. In her free time she enjoys traveling.
-  image: /images/people/Estee.jpg
-  links:
-    - name: flaticon-curriculum
-      url: /pdfs/people/CV_EsteeCramer_July2020.pdf
-    - name: flaticon-linkedin-1  
-      url: “https://www.linkedin.com/in/estee-cramer-48860a167/”
-
 - name: Ariane Stark
   role: PhD Student
   description: |
@@ -63,53 +52,23 @@
     - name: flaticon-linkedin-1  
       url: “https://www.linkedin.com/in/arianestark/”
       
-- name: Vrushti Mody
-  role: MS Student
+- name: Minsu Kim
+  role: PhD Student
   description: |
-    Vrushti is an MS student in Computer Science. She received her undergraduate degree in Computer Engineering from NMIMS University. 
-    The ability to reach a wider audience, one health problem at a time is what inspired her to join the lab. She is bubbly, outgoing with a great sense of humor. 
-  image: /images/people/vrushti-mody.jpeg
-  links:
-    - name: flaticon-linkedin-1  
-      url: “https://www.linkedin.com/in/vrushti-mody/”
-    - name: flaticon-laptop-1
-      url: "https://vrushtimody.me"
-    - name: flaticon-github-1
-      url: "https://github.com/vrushti-mody"  
-
-- name: Vidhi Mody
-  role: MS Student
-  description: |
-    Vidhi is a Masters student in Computer Science. She is a curious person who enjoys figuring out the building blocks of the world, and rearranging them to build something even better! She is innovative, energetic, creative and loves to travel in her free time.
-  image: /images/people/vidhi-mody.jpg
-  links:
-    - name: flaticon-linkedin-1  
-      url: “https://www.linkedin.com/in/vidhi-mody/”
-    - name: flaticon-laptop-1
-      url: "https://vidhimody.me"
-    - name: flaticon-github-1
-      url: "https://github.com/vidhi-mody" 
+    Minsu is a PhD student in Biostatistics. Her research interest is infectious disease forecasting,
+    ensemble methods, and machine learning. She enjoys programming. She usually go hiking in her free time.
+  image: /images/people/minsu.jpg
+  links: []
 
 - name: Aaron Gerding
   role: MS Student
   description: |
-    Aaron is pursuing a degree in biostatistics after a previous career lecturing in the UMass-Amherst math department.  He is especially interested in how the public health needs of populations with low social or political visibility should inform forecasting and risk assessment methodologies.
+    Aaron is pursuing a degree in biostatistics after a previous career lecturing in the UMass-Amherst math department. 
+    He is especially interested in how the public health needs of populations with low social or political visibility 
+    should inform forecasting and risk assessment methodologies.
   image: /images/people/aaron.jpg
   links: []
 
-- name: Álvaro J. Castro Rivadeneira
-  role: PhD Student
-  description: |
-    Álvaro is a PhD student in epidemiology. He is interested in science communication, economic inequality, gambling, and infectious diseases. He received his MD from Universidad Internacional del Ecuador, and a BSc in Biochemistry from McGill University.
-  image: /images/people/alvaro.jpeg
-  links:
-    - name: flaticon-twitter-1
-      url: "https://twitter.com/micokoch"
-    - name: flaticon-github-1
-      url: "https://github.com/micokoch"
-    - name: flaticon-linkedin-1
-      url: "https://www.linkedin.com/in/alvaro-j-castro-rivadeneira/"
-      
 - name: Li Shandross
   role: MS Student
   description: |
@@ -121,13 +80,20 @@
     - name: flaticon-github-1
       url: "https://github.com/lshandross"  
 
-- name: Minsu Kim
+- name: Álvaro J. Castro Rivadeneira
   role: PhD Student
   description: |
-    Minsu is a PhD student in Biostatistics. Her research interest is infectious disease forecasting,
-    ensemble methods, and machine learning. She enjoys programming. She usually go hiking in her free time.
-  image: /images/people/minsu.jpg
-  links: []
+    Álvaro is a PhD student in epidemiology. He is interested in science communication, economic inequality, 
+    gambling, and infectious diseases. He received his MD from Universidad Internacional del Ecuador, and a 
+    BSc in Biochemistry from McGill University.
+  image: /images/people/alvaro.jpeg
+  links:
+    - name: flaticon-twitter-1
+      url: "https://twitter.com/micokoch"
+    - name: flaticon-github-1
+      url: "https://github.com/micokoch"
+    - name: flaticon-linkedin-1
+      url: "https://www.linkedin.com/in/alvaro-j-castro-rivadeneira/"  
 
 
 # Staff section
@@ -150,7 +116,8 @@
 - name: Martha Zorn
   role: Data analyst/Project manager
   description: |
-    Martha has worked as a biostatistician and data manager in the School of Public Health and Health Sciences, Amherst since 1987. She likes doing anything outside and garland dancing.
+    Martha has worked as a biostatistician and data manager in the School of Public Health and Health Sciences, Amherst 
+    since 1987. She likes doing anything outside and garland dancing.
   image: /images/people/martha.jpg
   links:
     - name: flaticon-linkedin-1
@@ -158,6 +125,36 @@
   
 # Alumni Section
 
+- name: Estee Cramer
+  role: PhD Student (2020-2022)
+  description: |
+  
+  image: /images/people/Estee.jpg
+  type: Alumni
+  links:
+    - name: alumni_link
+      url: "https://www.linkedin.com/in/estee-cramer-48860a167/"
+  
+- name: Vrushti Mody
+  role: MS Student (2021-2022)
+  description: |
+  
+  image: /images/people/vrushti-mody.jpeg
+  type: Alumni
+  links:
+    - name: alumni_link
+      url: "https://vrushtimody.me"
+  
+- name: Vidhi Mody
+  role: MS Student
+  description: |
+  
+  image: /images/people/vidhi-mody.jpg
+  type: Alumni
+  links:
+    - name: alumni_link
+      url: "https://vidhimody.me"
+  
 - name: Serena Yijin Wang
   role: Data Analyst (2020-2022)
   description: |
