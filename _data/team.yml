@@ -42,17 +42,6 @@
   image: /images/people/nutcha.jpg
   links: []
 
-- name: Estee Cramer
-  role: PhD Student
-  description: |
-    Estee is a PhD student in epidemiology. She is interested in infectious disease transmission and malaria surveillance. She received her MPH in global health from Case Western Reserve University. In her free time she enjoys traveling.
-  image: /images/people/Estee.jpg
-  links:
-    - name: flaticon-curriculum
-      url: /pdfs/people/CV_EsteeCramer_July2020.pdf
-    - name: flaticon-linkedin-1  
-      url: “https://www.linkedin.com/in/estee-cramer-48860a167/”
-
 - name: Ariane Stark
   role: PhD Student
   description: |
@@ -63,33 +52,6 @@
     - name: flaticon-linkedin-1  
       url: “https://www.linkedin.com/in/arianestark/”
       
-- name: Vrushti Mody
-  role: MS Student
-  description: |
-    Vrushti is an MS student in Computer Science. She received her undergraduate degree in Computer Engineering from NMIMS University. 
-    The ability to reach a wider audience, one health problem at a time is what inspired her to join the lab. She is bubbly, outgoing with a great sense of humor. 
-  image: /images/people/vrushti-mody.jpeg
-  links:
-    - name: flaticon-linkedin-1  
-      url: “https://www.linkedin.com/in/vrushti-mody/”
-    - name: flaticon-laptop-1
-      url: "https://vrushtimody.me"
-    - name: flaticon-github-1
-      url: "https://github.com/vrushti-mody"  
-
-- name: Vidhi Mody
-  role: MS Student
-  description: |
-    Vidhi is a Masters student in Computer Science. She is a curious person who enjoys figuring out the building blocks of the world, and rearranging them to build something even better! She is innovative, energetic, creative and loves to travel in her free time.
-  image: /images/people/vidhi-mody.jpg
-  links:
-    - name: flaticon-linkedin-1  
-      url: “https://www.linkedin.com/in/vidhi-mody/”
-    - name: flaticon-laptop-1
-      url: "https://vidhimody.me"
-    - name: flaticon-github-1
-      url: "https://github.com/vidhi-mody" 
-
 - name: Aaron Gerding
   role: MS Student
   description: |
@@ -158,6 +120,36 @@
   
 # Alumni Section
 
+- name: Estee Cramer
+  role: PhD Student (2020-2022)
+  description: |
+  
+  image: /images/people/Estee.jpg
+  type: Alumni
+  links:
+    - name: alumni_link
+      url: "https://www.linkedin.com/in/estee-cramer-48860a167/"
+  
+- name: Vrushti Mody
+  role: MS Student (2021-2022)
+  description: |
+  
+  image: /images/people/vrushti-mody.jpeg
+  type: Alumni
+  links:
+    - name: alumni_link
+      url: "https://vrushtimody.me"
+  
+- name: Vidhi Mody
+  role: MS Student
+  description: |
+  
+  image: /images/people/vidhi-mody.jpg
+  type: Alumni
+  links:
+    - name: alumni_link
+      url: "https://vidhimody.me"
+  
 - name: Serena Yijin Wang
   role: Data Analyst (2020-2022)
   description: |
