@@ -50,7 +50,7 @@
   image: /images/people/ariane.jpg
   links:
     - name: flaticon-linkedin-1
-      url: “https://www.linkedin.com/in/arianestark/”
+      url: "https://www.linkedin.com/in/arianestark/"
 
 - name: Minsu Kim
   role: PhD Student
@@ -98,7 +98,7 @@
 - name: Quinn White
   role: Undergraduate Student
   description: |
-     Quinn is currently a senior at Smith College majoring in Statistical and Data Sciences.
+    Quinn is currently a senior at Smith College majoring in Statistical and Data Sciences. 
     She is interested in statistical methods related to infectious disease and causal inference.
   image: /images/people/quinn.png
   links: []
