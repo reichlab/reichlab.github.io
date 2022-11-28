@@ -1,5 +1,36 @@
-# 2022
-
+# 2023  
+  
+- title: 'Impact of SARS-CoV-2 vaccination of children ages 5-11 years on COVID-19 disease burden and resilience to new variants in the United States, November 2021-March 2022: a multi-model study'
+  slug: sars-impact
+  authors: Borchering RK, Mullany LC, Howerton E, Chinazzi M, Smith CP, Qin M, Reich NG, ... Viboud C, Lessler J
+  preprint: https://www.medrxiv.org/content/10.1101/2022.03.08.22271905v1
+  pdf: https://www.sciencedirect.com/science/article/pii/S2667193X22002150
+  year: 2023
+  journal: The Lancet Regional Health-Americas
+  volume: 17
+  pages: 100398
+  doi: 10.1016/j.lana.2022.100398
+  keywords: covid-19
+  abstract: >
+    Background: The COVID-19 Scenario Modeling Hub convened nine modeling teams to project the impact of expanding SARS-CoV-2 vaccination to 
+    children aged 5–11 years on COVID-19 burden and resilience against variant strains. 
+    Methods: Teams contributed state- and national-level weekly projections of cases, hospitalizations, and deaths in the United States from 
+    September 12, 2021 to March 12, 2022. Four scenarios covered all combinations of 1) vaccination (or not) of children aged 5–11 years 
+    (starting November 1, 2021), and 2) emergence (or not) of a variant more transmissible than the Delta variant (emerging November 15, 2021). 
+    Individual team projections were linearly pooled. The effect of childhood vaccination on overall and age-specific outcomes was estimated 
+    using meta-analyses.
+    Findings: Assuming that a new variant would not emerge, all-age COVID-19 outcomes were projected to decrease nationally through mid-March 2022. 
+    In this setting, vaccination of children 5–11 years old was associated with reductions in projections for all-age cumulative cases (7.2%, mean 
+    incidence ratio [IR] 0.928, 95% confidence interval [CI] 0.880–0.977), hospitalizations (8.7%, mean IR 0.913, 95% CI 0.834–0.992), and deaths 
+    (9.2%, mean IR 0.908, 95% CI 0.797–1.020) compared with scenarios without childhood vaccination. Vaccine benefits increased for scenarios 
+    including a hypothesized more transmissible variant, assuming similar vaccine effectiveness. Projected relative reductions in cumulative 
+    outcomes were larger for children than for the entire population. State-level variation was observed.
+    Interpretation: Given the scenario assumptions (defined before the emergence of Omicron), expanding vaccination to children 5–11 years old would 
+    provide measurable direct benefits, as well as indirect benefits to the all-age U.S. population, including resilience to more transmissible 
+    variants.  
+  
+# 2022  
+  
 - title: 'An expert judgment model to predict early stages of the COVID-19 outbreak in the United States'
   slug: mcandrew-judgement-model
   authors: McAndrew TC, Reich NG
@@ -8,7 +39,7 @@
   year: 2022
   journal: PLOS Comp Bio
   volume: 18(9)
-  pages: :e1010485
+  pages: e1010485
   doi: 10.1371/journal.pcbi.1010485
   keywords: covid-19, forecasting
   abstract: >
@@ -32,7 +63,7 @@
   year: 2022
   journal: The Lancet Digital Health
   volume: 4(10)
-  pages: :e738-e747
+  pages: e738-e747
   doi: 10.1016/S2589-7500(22)00148-0
   keywords: forecasting, covid-19
   abstract: >
@@ -211,21 +242,6 @@
     While forecasting efforts often have been the most visible modeling outputs to the general public, as predictions are often highlighted by the media, other modeling has played an important role in the pandemic as well. In PNAS, Fox et al. detail an important and influential collaborative modeling effort that has supported real-time public health decision-making in Austin, TX, during the COVID-19 pandemic (2). The effort described by Fox et al. is notable both for its careful and accurate modeling as well as the in-depth collaboration, clearly built on a relationship of trust, with Austin city officials.
     While this effort is exemplary and hopefully will serve as a model for future similar collaborative work, the paper also raises important questions about how this kind of effort can be scaled. Ideally many municipalities, including ones that are not fortunate enough to have a terrific academic modeling group in or near their city, could take advantage of the insights that models have to offer. Can state and national public health agencies support scalable modeling efforts so that every local and state government can take advantage of a wide range of insights from robust modeling efforts? Furthermore, in doing so, can we reduce the dependency of such an undertaking on one single modeling group, by relying on the successful use of collaborative modeling “hubs” that have sprouted up before and during the pandemic (3–10) and/or by supporting the development of modeling capacity within public health agencies?
 
-- title: 'Impact of SARS-CoV-2 vaccination of children ages 5-11 years on COVID-19 disease burden and resilience to new variants in the United States, November 2021-March 2022: a multi-model study'
-  slug: sars-impact
-  authors: Borchering RK, Mullany LC, Howerton E, Chinazzi M, Smith CP, Qin M, Reich NG, ... Viboud C, Lessler J
-  preprint: https://www.medrxiv.org/content/10.1101/2022.03.08.22271905v1
-  pdf: https://www.medrxiv.org/content/10.1101/2022.03.08.22271905v1.full.pdf
-  year: 2022
-  journal: medRxiv
-  doi: 10.1101/2022.03.08.22271905
-  keywords: covid-19
-  abstract: >
-    Background: SARS-CoV-2 vaccination of persons aged 12 years and older has reduced disease burden in the United States. The COVID-19 Scenario Modeling Hub convened multiple modeling teams in September 2021 to project the impact of expanding vaccine administration to children 5-11 years old on anticipated COVID-19 burden and resilience against variant strains.
-    Methods: Nine modeling teams contributed state- and national-level projections for weekly counts of cases, hospitalizations, and deaths in the United States for the period September 12, 2021 to March 12, 2022. Four scenarios covered all combinations of: 1) presence vs. absence of vaccination of children ages 5-11 years starting on November 1, 2021; and 2) continued dominance of the Delta variant vs. emergence of a hypothetical more transmissible variant on November 15, 2021. Individual team projections were combined using linear pooling. The effect of childhood vaccination on overall and age-specific outcomes was estimated by meta-analysis approaches.
-    Findings: Absent a new variant, COVID-19 cases, hospitalizations, and deaths among all ages were projected to decrease nationally through mid-March 2022. Under a set of specific assumptions, models projected that vaccination of children 5-11 years old was associated with reductions in all-age cumulative cases (7.2%, mean incidence ratio [IR] 0.928, 95% confidence interval [CI] 0.880-0.977), hospitalizations (8.7%, mean IR 0.913, 95% CI 0.834-0.992), and deaths (9.2%, mean IR 0.908, 95% CI 0.797-1.020) compared with scenarios where children were not vaccinated. This projected effect of vaccinating children 5-11 years old increased in the presence of a more transmissible variant, assuming no change in vaccine effectiveness by variant. Larger relative reductions in cumulative cases, hospitalizations, and deaths were observed for children than for the entire U.S. population. Substantial state-level variation was projected in epidemic trajectories, vaccine benefits, and variant impacts.
-    Conclusions: Results from this multi-model aggregation study suggest that, under a specific set of scenario assumptions, expanding vaccination to children 5-11 years old would provide measurable direct benefits to this age group and indirect benefits to the all-age U.S. population, including resilience to more transmissible variants.
-
 - title: 'Comparison of Combination Methods to Create Calibrated Ensemble Forecasts for Seasonal Influenza in the U.S'
   slug: calibrated-ensmble-forecasts
   authors: Wattanachit N, Ray EL, McAndrew TC, Reich NG
@@ -242,7 +258,14 @@
     FluSight challenge. A subset of participating teams has worked together to produce a collaborative multi-model ensemble, 
     the FluSight Network ensemble. Uniting theoretical results from the forecasting literature with domain-specific forecasts 
     from influenza outbreaks, we applied parametric forecast combination methods that simultaneously optimize individual model 
-    weights and calibrate the ensemble via a beta transformation. We used the beta-transformed linear pool and the finite beta mixture model to produce ensemble forecasts retrospectively for the 2016/2017 to 2018/2019 influenza seasons in the U.S. We compared their performance to methods currently used in the FluSight challenge, namely the equally weighted linear pool and the linear pool. Ensemble forecasts produced from methods with a beta transformation were shown to outperform those from the equally weighted linear pool and the linear pool for all week-ahead targets across in the test seasons based on average log scores. We observed improvements in overall accuracy despite the beta-transformed linear pool or beta mixture methods' modest under-prediction across all targets and seasons. Combination techniques that explicitly adjust for known calibration issues in linear pooling should be considered to improve ensemble probabilistic scores in outbreak settings.
+    weights and calibrate the ensemble via a beta transformation. We used the beta-transformed linear pool and the finite beta 
+    mixture model to produce ensemble forecasts retrospectively for the 2016/2017 to 2018/2019 influenza seasons in the U.S. We 
+    compared their performance to methods currently used in the FluSight challenge, namely the equally weighted linear pool and 
+    the linear pool. Ensemble forecasts produced from methods with a beta transformation were shown to outperform those from 
+    the equally weighted linear pool and the linear pool for all week-ahead targets across in the test seasons based on average 
+    log scores. We observed improvements in overall accuracy despite the beta-transformed linear pool or beta mixture methods' 
+    modest under-prediction across all targets and seasons. Combination techniques that explicitly adjust for known calibration 
+    issues in linear pooling should be considered to improve ensemble probabilistic scores in outbreak settings.
   
 
 # 2021
