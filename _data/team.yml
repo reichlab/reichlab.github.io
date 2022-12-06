@@ -32,6 +32,19 @@
     - name: flaticon-laptop-1
       url: "http://www.mtholyoke.edu/~eray/"
 
+- name: Dongah Kim
+  role: Postdoctoral Researcher
+  description: |
+    Dongah is a postdoctoral researcher of Biostatistics at UMass-Amherst.
+    She received her PhD in statistics from UMass-Amherst, developing
+    methods to improve inference from dependent network data. 
+  image: /images/people/Dongah.jpg
+  links:
+    - name: ai ai-google-scholar-square ai-2x
+      url: "https://scholar.google.com/citations?user=Q_-NaWsAAAAJ&hl=en&oi=ao"
+  
+
+
 # Student section (PhD, MS, undergrad students, in order of seniority)
 
 - name: Nutcha Wattanachit
