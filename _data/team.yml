@@ -72,9 +72,9 @@
 - name: Li Shandross
   role: MS Student
   description: |
-    Li is an Undergrad Mathematics major with a Statistics and Data Science concentration.
-    Li is also a part of the Biostatistics 4+1 program and has an interest in model accuracy.
-    In her free time, she enjoys dancing and writing.
+    Li is a MS Student in Biostatistics and is part of the 4+1 program at UMass Amherst. 
+    Li has research interests in infectious disease forecasting, particularly the application of new methods,
+    and enjoys dancing and writing outside of work.
   image: /images/people/li.jpg
   links:
     - name: flaticon-github-1
