@@ -1,5 +1,26 @@
 # 2023  
   
+- title: 'Assessing the utility of COVID-19 case reports as a leading indicator for hospitalization forecasting in the United States'
+  slug: cases_lead_hospitalizations
+  authors: Reich NG, Wang Y, Burns M, Ergas R, Cramer EY, Ray EL
+  preprint: https://www.medrxiv.org/content/10.1101/2023.03.08.23286582v1
+  pdf: https://www.medrxiv.org/content/10.1101/2023.03.08.23286582v1.full.pdf
+  year: 2023
+  journal: medRxiv
+  doi: 10.1101/2023.03.08.23286582
+  keywords: forecasting, covid-19
+  abstract: >
+    Identifying data streams that can consistently improve the accuracy of epidemiological forecasting models is challenging. Using models designed 
+    to predict daily state-level hospital admissions due to COVID-19 in California and Massachusetts, we investigated whether incorporating COVID-19 
+    case data systematically improved forecast accuracy. Additionally, we considered whether using case data aggregated by date of test or by date 
+    of report from a surveillance system made a difference to the forecast accuracy. Evaluating forecast accuracy in a test period, after first 
+    having selected the best-performing methods in a validation period, we found that overall the difference in accuracy between approaches was 
+    small, especially at forecast horizons of less than two weeks. However, forecasts from models using cases aggregated by test date showed lower 
+    accuracy at longer horizons and at key moments in the pandemic, such as the peak of the Omicron wave in January 2022. Overall, these results 
+    highlight the challenge of finding a modeling approach that can generate accurate forecasts of outbreak trends both during periods of relative 
+    stability and during periods that show rapid growth or decay of transmission rates. While COVID-19 case counts seem to be a natural choice to 
+    help predict COVID-19 hospitalizations, in practice any benefits we observed were small and inconsistent.
+
 - title: 'Impact of SARS-CoV-2 vaccination of children ages 5-11 years on COVID-19 disease burden and resilience to new variants in the United States, November 2021-March 2022: a multi-model study'
   slug: sars-impact
   authors: Borchering RK, Mullany LC, Howerton E, Chinazzi M, Smith CP, Qin M, Reich NG, ... Viboud C, Lessler J
