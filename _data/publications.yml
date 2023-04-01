@@ -1049,7 +1049,7 @@
 # 2018
 
 
-- title: Prospective forecasts of annual dengue hemorrhagic fever incidence in Thailand, 2010–2014
+- title: 'Prospective forecasts of annual dengue hemorrhagic fever incidence in Thailand, 2010–2014'
   slug: lauer-annual-preds
   authors: Lauer SA, Sakrejda K, Ray EL, Keegan LT, Bi Q, Suangtho P, Hinjoy S, Iamsirithaworn S, Suthachana S, Laosiritaworn Y, Cummings DAT, Lessler J and Reich NG
   pdf: http://www.pnas.org/content/early/2018/02/13/1714457115.full.pdf
@@ -1064,7 +1064,7 @@
     Dengue hemorrhagic fever (DHF), a severe manifestation of dengue viral infection that can cause severe bleeding, organ impairment, and even death, affects between 15,000 and 105,000 people each year in Thailand. While all Thai provinces experience at least one DHF case most years, the distribution of cases shifts regionally from year to year. Accurately forecasting where DHF outbreaks occur before the dengue season could help public health officials prioritize public health activities. We develop statistical models that use biologically plausible covariates, observed by April each year, to forecast the cumulative DHF incidence for the remainder of the year. We perform cross-validation during the training phase (2000–2009) to select the covariates for these models. A parsimonious model based on preseason incidence outperforms the 10-y median for 65% of province-level annual forecasts, reduces the mean absolute error by 19%, and successfully forecasts outbreaks (area under the receiver operating characteristic curve = 0.84) over the testing period (2010–2014). We find that functions of past incidence contribute most strongly to model performance, whereas the importance of environmental covariates varies regionally. This work illustrates that accurate forecasts of dengue risk are possible in a policy-relevant timeframe.
 
 
-- title: Prediction of infectious disease epidemics via weighted density ensembles
+- title: 'Prediction of infectious disease epidemics via weighted density ensembles'
   slug: ray-density-ensembles
   authors: Ray EL, Reich NG
   preprint: https://arxiv.org/abs/1703.10936
@@ -1103,8 +1103,7 @@
     predictions to public health decision makers.
 
 
-- title: >
-    Preprints: An underutilized mechanism to accelerate outbreak science
+- title: 'Preprints: An underutilized mechanism to accelerate outbreak science'
   slug: johansson-preprints
   authors: Johansson MA, Reich NG, Meyers LA, Lipsitch M
   doi: 10.1371/journal.pmed.1002549
@@ -1121,8 +1120,7 @@
     With broader adoption by scientists, journals, and funding agencies, preprints can complement peer-reviewed publication and ensure the early, open, and transparent dissemination of science relevant to the prevention and control of disease outbreaks.
 
 
-- title: >
-    Quantifying the Risk and Cost of Active Monitoring for Infectious Diseases
+- title: 'Quantifying the Risk and Cost of Active Monitoring for Infectious Diseases'
   slug: reich-active-monitoring
   authors: Reich NG, Lessler J, Varma JK, Vora NM
   preprint: https://www.biorxiv.org/content/early/2017/06/28/156497
@@ -1136,8 +1134,7 @@
     During outbreaks of deadly emerging pathogens (e.g., Ebola, MERS-CoV) and bioterror threats (e.g., smallpox), actively monitoring potentially infected individuals aims to limit disease transmission and morbidity. Guidance issued by CDC on active monitoring was a cornerstone of its response to the West Africa Ebola outbreak. There are limited data on how to balance the costs and performance of this important public health activity. We present a framework that estimates the risks and costs of specific durations of active monitoring for pathogens of significant public health concern. We analyze data from New York City's Ebola active monitoring program over a 16-month period in 2014-2016. For monitored individuals, we identified unique durations of active monitoring that minimize expected costs for those at “low (but not zero) risk” and “some or high risk”: 21 and 31 days, respectively. Extending our analysis to smallpox and MERS-CoV, we found that the optimal length of active monitoring relative to the median incubation period was reduced compared to Ebola due to less variable incubation periods. Active monitoring can save lives but is expensive. Resources can be most effectively allocated by using exposure-risk categories to modify the duration or intensity of active monitoring.
 
 
-- title: >
-    Protecting Healthcare Personnel in Outpatient Settings: The Influence of Mandatory Versus Nonmandatory Influenza Vaccination Policies on Workplace Absenteeism During Multiple Respiratory Virus Seasons
+- title: 'Protecting Healthcare Personnel in Outpatient Settings: The Influence of Mandatory Versus Nonmandatory Influenza Vaccination Policies on Workplace Absenteeism During Multiple Respiratory Virus Seasons'
   slug: frederick-absenteeism
   authors: Frederick J, Brown AC, Cummings DAT, Gaydos CA, Gibert CL, Gorse GJ, Los JG, Nyquist AC, Perl TM, Price CS, Radonovich LJ, Reich NG, Rodriguez-Barradas MC, Bessesen MT, Simberkoff MS, for the ResPECT Teama
   journal: Infect Control Hosp Epidemiol
@@ -1157,8 +1154,7 @@
 
 # 2017
 
-- title: >
-    Infectious Disease Prediction with Kernel Conditional Density Estimation
+- title: 'Infectious Disease Prediction with Kernel Conditional Density Estimation'
   slug: ray-kcde
   authors: Ray EL, Sakrejda K, Lauer SA, Johansson MA, Reich NG
   year: 2017
@@ -1167,12 +1163,12 @@
   pages: 4908-4929
   doi: 10.1002/sim.7488
   keywords: forecasting, dengue, influenza, flusight
+  github: reichlab/article-disease-pred-with-kcde
   abstract: >
     Creating statistical models that generate accurate predictions of infectious disease incidence over multiple time points is a challenging problem whose solution could benefit public health decision makers. We develop a new approach to this problem using kernel conditional density estimation (KCDE) and copulas. We obtain predictive distributions for incidence in individual weeks using KCDE and tie those distributions together into joint distributions using copulas. This strategy enables us to create predictions for the timing of and incidence in the peak week of the season. Our implementation of KCDE incorporates two novel kernel components: a periodic component that captures seasonality in disease incidence, and a component that allows for a full parameterization of the bandwidth matrix with discrete variables. We demonstrate via simulation that a fully parameterized bandwidth matrix can be beneficial for estimating conditional densities. We apply the method to predicting dengue fever and influenza, and compare to a seasonal autoregressive integrated moving average (SARIMA) model and a previously published generalized linear model for infectious disease incidence known as HHH4. KCDE outperforms the baseline methods for predictions of dengue incidence in individual weeks. KCDE also offers more consistent performance than the baseline models for predictions of incidence in the peak week, and is comparable to the baseline models on the other prediction targets. Using the periodic kernel function led to better predictions of incidence. Our approach and extensions of it could yield improved predictions for public health decision makers, particularly in diseases with heterogeneous seasonal dynamics such as dengue fever. 
     
     
-- title: >
-    flusight: interactive visualizations for infectious disease forecasts
+- title: 'flusight: interactive visualizations for infectious disease forecasts'
   authors: Tushar A, Reich NG
   slug: tushar-flusight
   year: 2017
@@ -1184,8 +1180,7 @@
     The rapid emergence of infectious disease outbreaks from both new and known pathogens remains a critical concern of health officials worldwide. Improving communication between teams of scientific researchers who assemble forecasts of outbreaks before and during epidemics, and policy makers who could integrate these data into decicion-making has been identified as a critical area for innovation.(Chretien et al. 2015) In an attempt to address this issue, we have developed flusight, a tool for visualizing infectious disease forecasts. It provides an interactive interface for real-time comparison, exploration, and evaluation of infectious disease forecast models over time and geographic regions. A version is live here, with forecasts of influenza in the US that are updated weekly during the US influenza season. Flusight uses D3 (Bostock 2016) for generating visualizations from a single static file that summarizes the entities to be visualized (such as, predicted and actual weekly influenza incidence, predicted week with the peak incidence for the season, etc...). It is written to keep hosting overhead minimal and pre-generates the data file by parsing model predictions and live influenza data from delphi-API (undefx 2016). All content is bundled into a static web page. The data collection step can be replaced to visualize data and forecasts from custom sources instead of the ones used in the current repository. This allows future users to plug in similar time-series-based disease prediction models for visualization. This application has potential to be widely used by infectious disease forecasters who generate forecasts in real-time. In this way, we hope that flusight will facilitate dissemination, comparison, and standardized evaluation of outbreak predictions.
 
 
-- title: >
-    Enriching Students' Conceptual Understanding of Confidence Intervals: An Interactive Trivia-based Classroom Activity
+- title: "Enriching Students' Conceptual Understanding of Confidence Intervals: An Interactive Trivia-based Classroom Activity"
   slug: wang-confidence
   authors: Wang X, Reich NG, Horton NJ
   doi: 10.1080/00031305.2017.1305294
@@ -1200,9 +1195,7 @@
 # 2016
 
 
-- title: >
-    Challenges in Real-Time Prediction of Infectious Disease: A Case Study of
-    Dengue in Thailand
+- title: 'Challenges in Real-Time Prediction of Infectious Disease: A Case Study of Dengue in Thailand'
   doi: 10.1371/journal.pntd.0004761
   slug: reich-realtime-dengue-prediction
   preprint: https://arxiv.org/abs/1511.04812
@@ -1235,8 +1228,7 @@
     decision making.
 
     
-- title: >
-    Evaluating the performance of infectious disease forecasts: A comparison of climate-driven and seasonal dengue forecasts for Mexico
+- title: 'Evaluating the performance of infectious disease forecasts: A comparison of climate-driven and seasonal dengue forecasts for Mexico'
   authors: Johansson MA, Reich NG, Hota A, Brownstein JS, Santillana M
   year: 2016
   slug: johansson-dengue-mexico
@@ -1248,9 +1240,7 @@
     Dengue viruses, which infect millions of people per year worldwide, cause large epidemics that strain healthcare systems. Despite diverse efforts to develop forecasting tools including autoregressive time series, climate-driven statistical, and mechanistic biological models, little work has been done to understand the contribution of different components to improved prediction. We developed a framework to assess and compare dengue forecasts produced from different types of models and evaluated the performance of seasonal autoregressive models with and without climate variables for forecasting dengue incidence in Mexico. Climate data did not significantly improve the predictive power of seasonal autoregressive models. Short-term and seasonal autocorrelation were key to improving short-term and long-term forecasts, respectively. Seasonal autoregressive models captured a substantial amount of dengue variability, but better models are needed to improve dengue forecasting. This framework contributes to the sparse literature of infectious disease prediction model evaluation, using state-of-the-art validation techniques such as out-of-sample testing and comparison to an appropriate reference model.
 
 
-- title: >
-    Case Study in Evaluating Time Series Prediction Models Using the Relative
-    Mean Absolute Error
+- title: 'Case Study in Evaluating Time Series Prediction Models Using the Relative Mean Absolute Error'
   doi: 10.1080/00031305.2016.1148631
   slug: reich-mae-case-study
   authors: >
@@ -1280,8 +1270,7 @@
     performance metrics when evaluating predictions.
 
 
-- title: >
-    Time to Key Events in the Course of Zika Infection and their Implications for Surveil- lance: A Systematic Review and Pooled Analysis
+- title: 'Time to Key Events in the Course of Zika Infection and their Implications for Surveil- lance: A Systematic Review and Pooled Analysis'
   authors: Lessler J, Ott CT, Carcelen AC, Konikoff JM, Williamson J, Bi Q, Reich NG, Cummings DAT, Kucirka LM, Chaisson LH
   slug: lessler-zika-key-events
   year: 2016
@@ -1294,8 +1283,7 @@
     OBJECTIVE: To estimate the timing of key events in the natural history of Zika virus infection. METHODS: In February 2016, we searched PubMed, Scopus and the Web of Science for publications containing the term Zika. By pooling data, we estimated the incubation period, the time to seroconversion and the duration of viral shedding. We estimated the risk of Zika virus contaminated blood donations. FINDINGS: We identified 20 articles on 25 patients with Zika virus infection. The median incubation period for the infection was estimated to be 5.9 days (95% credible interval, CrI: 4.4-7.6), with 95% of people who developed symptoms doing so within 11.2 days (95% CrI: 7.6-18.0) after infection. On average, seroconversion occurred 9.1 days (95% CrI: 7.0-11.6) after infection. The virus was detectable in blood for 9.9 days (95% CrI: 6.9-21.4) on average. Without screening, the estimated risk that a blood donation would come from an infected individual increased by approximately 1 in 10 000 for every 1 per 100 000 person-days increase in the incidence of Zika virus infection. Symptom-based screening may reduce this rate by 7% (relative risk, RR: 0.93; 95% CrI: 0.89-0.99) and antibody screening, by 29% (RR: 0.71; 95% CrI: 0.28-0.88). CONCLUSION: Neither symptom- nor antibody-based screening for Zika virus infection substantially reduced the risk that blood donations would be contaminated by the virus. Polymerase chain reaction testing should be considered for identifying blood safe for use in pregnant women in high-incidence areas.
 
 
-- title: >
-    The Respiratory Protection Effectiveness Clinical Trial (ResPECT): A Cluster-Randomized Comparison of Respirator and Medical Mask Effectiveness against Respiratory Infections in Healthcare Personnel.
+- title: 'The Respiratory Protection Effectiveness Clinical Trial (ResPECT): A Cluster-Randomized Comparison of Respirator and Medical Mask Effectiveness against Respiratory Infections in Healthcare Personnel'
   authors: Radonovich LJ, Bessesen M, Cummings DAT, Eagan A, Gaydos C, Gibert C, Gorse G, Nyquist C, Reich NG, Rodriguez-Barradas M, Savor-Price C, Shaffer R, Simberkoff M, Perl TM
   slug: radonovich-protocol
   year: 2016
@@ -1345,8 +1333,7 @@
     prevention recommendations, public health practice, and healthcare delivery.
 
 
-- title: >
-    The Effect of Cluster Size Variability on Statistical Power in Cluster-Randomized Trials
+- title: 'The Effect of Cluster Size Variability on Statistical Power in Cluster-Randomized Trials'
   slug: lauer-cluster-power
   doi: 10.1371/journal.pone.0119074
   authors: Lauer SA, Kleinman K, Reich NG
@@ -1362,9 +1349,7 @@
 # 2013
 
 
-- title: >
-    Interactions between serotypes of dengue highlight epidemiological impact of
-    cross-immunity
+- title: 'Interactions between serotypes of dengue highlight epidemiological impact of cross-immunity'
   doi: 10.1098/rsif.2013.0414
   slug: reich-dengue-serotype-interactions
   journal: JRSI
@@ -1397,9 +1382,7 @@
 #2012
 
 
-- title: >
-    Empirical power and sample size calculations for cluster-randomized and
-    cluster-randomized crossover studies
+- title: 'Empirical power and sample size calculations for cluster-randomized and cluster-randomized crossover studies'
   doi: 10.1371/journal.pone.0035564
   slug: reich-cluster-power
   journal: PLOS ONE
