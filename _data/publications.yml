@@ -1,5 +1,37 @@
 # 2023  
   
+- title: 'Predictive performance of multi-model ensemble forecasts of COVID-19 across European nations'
+  slug: euro-evals
+  authors: Sherratt K, Gruson H, Grah R, ... Gibson GC, Ray EL, Reich NG, Sheldon D, Wang Y, Wattanachit N, ... Bracher J, Funk S
+  preprint: https://www.medrxiv.org/content/10.1101/2022.06.16.22276024v1
+  pdf: https://elifesciences.org/articles/81916
+  year: 2023
+  journal: eLife
+  volume: 12
+  pages: e81916
+  doi: 10.7554/eLife.81916
+  keywords: forecasting, covid-19
+  abstract: >
+    Background: Short-term forecasts of infectious disease contribute to situational awareness and capacity planning. Based on best practice 
+    in other fields and recent insights in infectious disease epidemiology, one can maximise forecasts’ predictive performance by combining 
+    independent models into an ensemble. Here we report the performance of ensemble predictions of COVID-19 cases and deaths across Europe 
+    from March 2021 to March 2022.
+    Methods: We created the European COVID-19 Forecast Hub, an online open-access platform where modellers upload weekly forecasts for 32 
+    countries with results publicly visualised and evaluated. We created a weekly ensemble forecast from the equally-weighted average across 
+    individual models' predictive quantiles. We measured forecast accuracy using a baseline and relative Weighted Interval Score (rWIS). We 
+    retrospectively explored ensemble methods, including weighting by past performance.
+    Results: We collected weekly forecasts from 48 models, of which we evaluated 29 models alongside the ensemble model. The ensemble had a 
+    consistently strong performance across countries over time, performing better on rWIS than 91% of forecasts for deaths (N=763 predictions 
+    from 20 models), and 83% forecasts for cases (N=886 predictions from 23 models). Performance remained stable over a 4-week horizon for 
+    death forecasts but declined with longer horizons for cases. Among ensemble methods, the most influential choice came from using a median 
+    average instead of the mean, regardless of weighting component models.
+    Conclusions: Our results support combining independent models into an ensemble forecast to improve epidemiological predictions, and suggest 
+    that median averages yield better performance than methods based on means. We highlight that forecast consumers should place more weight on 
+    incident death forecasts than case forecasts at horizons greater than two weeks.
+    Code and data availability: All source data were openly available before the study, originally available at: 
+    https://github.com/covid19-forecast-hub-europe/covid19-forecast-hub-europe. 
+    All data and code for this study are openly available on Github: covid19-forecast-hub-europe/euro-hub-ensemble.
+
 - title: 'Assessing the utility of COVID-19 case reports as a leading indicator for hospitalization forecasting in the United States'
   slug: cases_lead_hospitalizations
   authors: Reich NG, Wang Y, Burns M, Ergas R, Cramer EY, Ray EL
@@ -162,41 +194,6 @@
     teams. These data can be used to develop ensemble models, communicate forecasts to the public, create visualizations, compare 
     models, and inform policies regarding COVID-19 mitigation. These open-source data are available via download from GitHub, 
     through an online API, and through R packages.
-
-- title: 'Predictive performance of multi-model ensemble forecasts of COVID-19 across European nations'
-  slug: euro-evals
-  authors: Sherratt K, Gruson H, Grah R, ... Gibson GC, Ray EL, Reich NG, Sheldon D, Wang Y, Wattanachit N, ... Bracher J, Funk S
-  preprint: https://www.medrxiv.org/content/10.1101/2022.06.16.22276024v1
-  pdf: https://www.medrxiv.org/content/10.1101/2022.06.16.22276024v1.full.pdf
-  year: 2022
-  journal: medRxiv
-  doi: 10.1101/2022.06.16.22276024
-  keywords: forecasting, covid-19
-  abstract: >
-    Background: Short-term forecasts of infectious disease burden can contribute to situational awareness and aid capacity planning. Based 
-    on best practice in other fields and recent insights in infectious disease epidemiology, one can maximise the predictive performance of 
-    such forecasts if multiple models are combined into an ensemble. Here we report on the performance of ensembles in predicting COVID-19 
-    cases and deaths across Europe between 08 March 2021 and 07 March 2022.
-    Methods: We used open-source tools to develop a public European COVID-19 Forecast Hub. We invited groups globally to contribute weekly 
-    forecasts for COVID-19 cases and deaths reported from a standardised source over the next one to four weeks. Teams submitted forecasts 
-    from March 2021 using standardised quantiles of the predictive distribution. Each week we created an ensemble forecast, where each 
-    predictive quantile was calculated as the equally-weighted average (initially the mean and then from 26th July the median) of all 
-    individual models’ predictive quantiles. We measured the performance of each model using the relative Weighted Interval Score (WIS), 
-    comparing models’ forecast accuracy relative to all other models. We retrospectively explored alternative methods for ensemble forecasts, 
-    including weighted averages based on models’ past predictive performance.
-    Results: Over 52 weeks we collected and combined up to 28 forecast models for 32 countries. We found a weekly ensemble had a consistently 
-    strong performance across countries over time. Across all horizons and locations, the ensemble performed better on relative WIS than 84% 
-    of participating models’ forecasts of incident cases (with a total N=862), and 92% of participating models’ forecasts of deaths (N=746). 
-    Across a one to four week time horizon, ensemble performance declined with longer forecast periods when forecasting cases, but remained 
-    stable over four weeks for incident death forecasts. In every forecast across 32 countries, the ensemble outperformed most contributing 
-    models when forecasting either cases or deaths, frequently outperforming all of its individual component models. Among several choices of 
-    ensemble methods we found that the most influential and best choice was to use a median average of models instead of using the mean, 
-    regardless of methods of weighting component forecast models.
-    Conclusions: Our results support the use of combining forecasts from individual models into an ensemble in order to improve predictive 
-    performance across epidemiological targets and populations during infectious disease epidemics. Our findings further suggest that median 
-    ensemble methods yield better predictive performance more than ones based on means. Our findings also highlight that forecast consumers 
-    should place more weight on incident death forecasts than incident case forecasts at forecast horizons greater than two weeks.
-    Code and data availability: All data and code are publicly available on Github: covid19-forecast-hub-europe/euro-hub-ensemble
 
 - title: 'Collaborative Hubs: Making the Most of Predictive Epidemic Modeling'
   slug: ajph-collab-hubs
