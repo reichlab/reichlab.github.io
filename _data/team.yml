@@ -143,6 +143,23 @@
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/martha-zorn-20015628/"
 
+- name: Anna Krystalli
+  role: Research Software Engineer
+  description: |
+    Anna is a Research Software Engineering consultant at R-RSE specialising in R.
+    She has been engaged by the Lab to work with the wider Consortium of Infectious Disease Modeling Hubs on developing the [HubVerse](https://hubdocs.readthedocs.io/en/latest/), 
+    a collection of R packages and infrastructure enabling set up, maintainance, submission and access to data of modeling hubs. 
+    She received her PhD in Marine Macroecology from the University of Sheffield, UK and spent 5 years as a Research Software Engineer 
+    with the University of Sheffield RSE team before returning home to Greece and setting up on her own. She is also a Software Review Editor for rOpenSci.
+  image: /images/people/anna_krystalli.jpg
+  links:
+    - name: flaticon-laptop-1
+      url: "https://www.r-rse.eu/"
+    - name: flaticon-twitter-1
+      url: "https://twitter.com/annakrystalli"
+    - name: flaticon-github-1
+      url: "https://github.com/annakrystalli"
+
 # Alumni Section
 
 - name: Estee Cramer
