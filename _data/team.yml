@@ -82,17 +82,6 @@
   image: /images/people/aaron.jpg
   links: []
 
-- name: Li Shandross
-  role: MS Student
-  description: |
-    Li is a MS Student in Biostatistics and is part of the 4+1 program at UMass Amherst. 
-    Li has research interests in infectious disease forecasting, particularly the application of new methods,
-    and enjoys dancing and writing outside of work.
-  image: /images/people/li.jpg
-  links:
-    - name: flaticon-github-1
-      url: "https://github.com/lshandross"
-
 - name: Álvaro J. Castro Rivadeneira
   role: PhD Student
   description: |
@@ -101,8 +90,6 @@
     BSc in Biochemistry from McGill University.
   image: /images/people/alvaro.jpeg
   links:
-    - name: flaticon-twitter-1
-      url: "https://twitter.com/micokoch"
     - name: flaticon-github-1
       url: "https://github.com/micokoch"
     - name: flaticon-linkedin-1
@@ -159,6 +146,17 @@
       url: "https://twitter.com/annakrystalli"
     - name: flaticon-github-1
       url: "https://github.com/annakrystalli"
+
+- name: Li Shandross
+  role: Data Analyst
+  description: |
+    Li is a data anylst  who completed her MS in Biostatistics as part of the 4+1 program at UMass Amherst. 
+    Li has research interests in infectious disease forecasting, particularly the application of new methods,
+    and enjoys dancing and writing outside of work.
+  image: /images/people/li.jpg
+  links:
+    - name: flaticon-github-1
+      url: "https://github.com/lshandross"
 
 # Alumni Section
 
