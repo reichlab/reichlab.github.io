@@ -1,5 +1,33 @@
 # 2023  
   
+- title: 'Informing pandemic response in the face of uncertainty. An evaluation of the U.S. COVID-19 Scenario Modeling Hub'
+  slug: covid_scenario_hub_eval
+  authors: Howerton E, Contamin L, Mullany LC, Qin M, Reich NG, ... Viboud C, Lessler J
+  preprint: https://www.medrxiv.org/content/10.1101/2023.06.28.23291998v1
+  pdf: https://www.medrxiv.org/content/10.1101/2023.06.28.23291998v1.full.pdf
+  year: 2023
+  journal: medRxiv
+  doi: 10.1101/2023.06.28.23291998
+  keywords: forecasting, covid-19
+  abstract: >
+    Our ability to forecast epidemics more than a few weeks into the future is constrained by the complexity of disease systems, 
+    our limited ability to measure the current state of an epidemic, and uncertainties in how human action will affect transmission. 
+    Realistic longer-term projections (spanning more than a few weeks) may, however, 
+    be possible under defined scenarios that specify the future state of critical epidemic drivers, 
+    with the additional benefit that such scenarios can be used to anticipate the comparative effect of control measures. 
+    Since December 2020, the U.S. COVID-19 Scenario Modeling Hub (SMH) has convened multiple modeling teams 
+    to make 6-month ahead projections of the number of SARS-CoV-2 cases, hospitalizations and deaths. 
+    The SMH released nearly 1.8 million national and state-level projections between February 2021 and November 2022. 
+    SMH performance varied widely as a function of both scenario validity and model calibration. 
+    Scenario assumptions were periodically invalidated by the arrival of unanticipated SARS-CoV-2 variants, 
+    but SMH still provided projections on average 22 weeks before changes in assumptions (such as virus transmissibility) invalidated scenarios 
+    and their corresponding projections. During these periods, before emergence of a novel variant, 
+    a linear opinion pool ensemble of contributed models was consistently more reliable than any single model, 
+    and projection interval coverage was near target levels for the most plausible scenarios 
+    (e.g., 79% coverage for 95% projection interval). 
+    SMH projections were used operationally to guide planning and policy at different stages of the pandemic, 
+    illustrating the value of the hub approach for long-term scenario projections.
+
 - title: 'Challenges of COVID-19 Case Forecasting in the US, 2020-2021'
   slug: covid_case_challenges
   authors: Lopez V, Cramer EY, Pagano R, ... Biggerstaff M, Reich NG, Johansson MA
