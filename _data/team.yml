@@ -30,7 +30,7 @@
     - name: flaticon-curriculum
       url: /pdfs/people/Evan_L_Ray_CV.pdf
     - name: flaticon-laptop-1
-      url: "http://www.mtholyoke.edu/~eray/"
+      url: "https://www.evanlray.com/"
 
 - name: Dongah Kim
   role: Postdoctoral Researcher
@@ -90,6 +90,8 @@
     BSc in Biochemistry from McGill University.
   image: /images/people/alvaro.jpeg
   links:
+    - name: flaticon-laptop-1
+      url: "https://micokoch.github.io/"
     - name: flaticon-github-1
       url: "https://github.com/micokoch"
     - name: flaticon-linkedin-1
