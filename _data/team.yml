@@ -47,24 +47,6 @@
 
 # Student section (PhD, MS, undergrad students, in order of seniority)
 
-- name: Nutcha Wattanachit
-  role: PhD Student
-  description: |
-    Nutcha is pursuing her PhD in Biostatistics. She is interested in infectious disease forecasting,
-    causal inference, and ensemble methods.
-  image: /images/people/nutcha.jpg
-  links: []
-
-- name: Ariane Stark
-  role: PhD Student
-  description: |
-    Ariane is a PhD student in biostatistics. She received her undergraduate degree in Mathematics from the Georgia Institute of Technology.
-    She is interested in infectious disease forecasting. In her free time she likes to play bridge (a card game).
-  image: /images/people/ariane.jpg
-  links:
-    - name: flaticon-linkedin-1
-      url: "https://www.linkedin.com/in/arianestark/"
-
 - name: Minsu Kim
   role: PhD Student
   description: |
@@ -96,14 +78,6 @@
       url: "https://github.com/micokoch"
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/alvaro-j-castro-rivadeneira/"
-
-- name: Quinn White
-  role: Undergraduate Student
-  description: |
-    Quinn is currently a senior at Smith College majoring in Statistical and Data Sciences. 
-    She is interested in statistical methods related to infectious disease and causal inference.
-  image: /images/people/quinn.png
-  links: []
 
 # Staff section
 
@@ -161,6 +135,32 @@
       url: "https://github.com/lshandross"
 
 # Alumni Section
+
+- name: Nutcha Wattanachit
+  role: PhD Student (2018-2023)
+  description: |
+
+  image: /images/people/nutcha.jpg
+  type: Alumni
+  links: []
+
+- name: Ariane Stark
+  role: MS Student (2020-2023)
+  description: |
+
+  image: /images/people/ariane.jpg
+  type: Alumni
+  links:
+    - name: alumni_link
+      url: "https://www.linkedin.com/in/arianestark/"
+
+- name: Quinn White
+  role: Undergraduate Student (2022-2023)
+  description: |
+
+  image: /images/people/quinn.png
+  type: Alumni
+  links: []
 
 - name: Estee Cramer
   role: PhD Student (2020-2022)
