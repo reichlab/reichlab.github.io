@@ -1,5 +1,36 @@
 # 2023  
   
+- title: 'Comparison of combination methods to create calibrated ensemble forecasts for seasonal influenza in the U.S.'
+  slug: calibrated-ensmble-forecasts
+  authors: Wattanachit N, Ray EL, McAndrew TC, Reich NG
+  preprint: https://arxiv.org/abs/2202.11834
+  pdf: https://onlinelibrary.wiley.com/doi/epdf/10.1002/sim.9884
+  year: 2023
+  journal: Statistics in Medicine
+  volume: 
+  pages: 1-17
+  doi: 10.1002/sim.9884
+  keywords: forecasting, influenza
+  abstract: >
+    The characteristics of influenza seasons vary substantially from year to year, posing challenges for public health preparation and response. 
+    Influenza forecasting is used to inform seasonal outbreak response, which can in turn potentially reduce the impact of an epidemic. 
+    The United States Centers for Disease Control and Prevention, in collaboration with external researchers, 
+    has run an annual prospective influenza forecasting exercise, known as the FluSight challenge. 
+    Uniting theoretical results from the forecasting literature with domain-specific forecasts from influenza outbreaks, 
+    we applied parametric forecast combination methods that simultaneously optimize model weights 
+    and calibrate the ensemble via a beta transformation and made adjustments to the methods to reduce their complexity. 
+    We used the beta-transformed linear pool, the finite beta mixture model, 
+    and their equal weight adaptations to produce ensemble forecasts retrospectively 
+    for the 2016/2017, 2017/2018, and 2018/2019 influenza seasons in the U.S. 
+    We compared their performance to methods that were used in the FluSight challenge to produce the FluSight Network ensemble, 
+    namely the equally weighted linear pool and the linear pool. 
+    Ensemble forecasts produced from methods with a beta transformation were shown to outperform those 
+    from the equally weighted linear pool and the linear pool for all week-ahead targets across in the test seasons based on average log scores. 
+    We observed improvements in overall accuracy despite the beta-transformed linear pool 
+    or beta mixture methods' modest under-prediction across all targets and seasons. 
+    Combination techniques that explicitly adjust for known calibration issues in linear pooling should be considered 
+    to improve probabilistic scores in outbreak settings.
+
 - title: 'Informing pandemic response in the face of uncertainty. An evaluation of the U.S. COVID-19 Scenario Modeling Hub'
   slug: covid_scenario_hub_eval
   authors: Howerton E, Contamin L, Mullany LC, Qin M, Reich NG, ... Viboud C, Lessler J
@@ -314,31 +345,6 @@
     During the COVID-19 pandemic, modeling and forecasting have informed public health response at the local, state, and national levels by improving situational awareness, providing estimates of key virus characteristics, and optimizing mitigation strategies (1).
     While forecasting efforts often have been the most visible modeling outputs to the general public, as predictions are often highlighted by the media, other modeling has played an important role in the pandemic as well. In PNAS, Fox et al. detail an important and influential collaborative modeling effort that has supported real-time public health decision-making in Austin, TX, during the COVID-19 pandemic (2). The effort described by Fox et al. is notable both for its careful and accurate modeling as well as the in-depth collaboration, clearly built on a relationship of trust, with Austin city officials.
     While this effort is exemplary and hopefully will serve as a model for future similar collaborative work, the paper also raises important questions about how this kind of effort can be scaled. Ideally many municipalities, including ones that are not fortunate enough to have a terrific academic modeling group in or near their city, could take advantage of the insights that models have to offer. Can state and national public health agencies support scalable modeling efforts so that every local and state government can take advantage of a wide range of insights from robust modeling efforts? Furthermore, in doing so, can we reduce the dependency of such an undertaking on one single modeling group, by relying on the successful use of collaborative modeling “hubs” that have sprouted up before and during the pandemic (3–10) and/or by supporting the development of modeling capacity within public health agencies?
-
-- title: 'Comparison of Combination Methods to Create Calibrated Ensemble Forecasts for Seasonal Influenza in the U.S'
-  slug: calibrated-ensmble-forecasts
-  authors: Wattanachit N, Ray EL, McAndrew TC, Reich NG
-  preprint: https://arxiv.org/abs/2202.11834
-  pdf: https://arxiv.org/pdf/2202.11834.pdf
-  year: 2022
-  journal: arXiv
-  keywords: forecasting, influenza
-  abstract: >
-    The characteristics of influenza seasons varies substantially from year to year, posing challenges for public health 
-    preparation and response. Influenza forecasting is used to inform seasonal outbreak response, which can in turn 
-    potentially reduce the societal impact of an epidemic. The United States Centers for Disease Control and Prevention, 
-    in collaboration with external researchers, has run an annual prospective influenza forecasting exercise, known as the 
-    FluSight challenge. A subset of participating teams has worked together to produce a collaborative multi-model ensemble, 
-    the FluSight Network ensemble. Uniting theoretical results from the forecasting literature with domain-specific forecasts 
-    from influenza outbreaks, we applied parametric forecast combination methods that simultaneously optimize individual model 
-    weights and calibrate the ensemble via a beta transformation. We used the beta-transformed linear pool and the finite beta 
-    mixture model to produce ensemble forecasts retrospectively for the 2016/2017 to 2018/2019 influenza seasons in the U.S. We 
-    compared their performance to methods currently used in the FluSight challenge, namely the equally weighted linear pool and 
-    the linear pool. Ensemble forecasts produced from methods with a beta transformation were shown to outperform those from 
-    the equally weighted linear pool and the linear pool for all week-ahead targets across in the test seasons based on average 
-    log scores. We observed improvements in overall accuracy despite the beta-transformed linear pool or beta mixture methods' 
-    modest under-prediction across all targets and seasons. Combination techniques that explicitly adjust for known calibration 
-    issues in linear pooling should be considered to improve ensemble probabilistic scores in outbreak settings.
   
 
 # 2021
