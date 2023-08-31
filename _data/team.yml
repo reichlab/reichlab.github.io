@@ -15,7 +15,7 @@
     - name: flaticon-twitter-1
       url: "https://twitter.com/reichlab"
     - name: flaticon-curriculum
-      url: "http://reichlab.io/pdfs/cv/cvReich.pdf"
+      url: /pdfs/cv/cvReich.pdf
 
 - name: Evan Ray
   role: Research Faculty
@@ -30,7 +30,7 @@
     - name: flaticon-curriculum
       url: /pdfs/people/Evan_L_Ray_CV.pdf
     - name: flaticon-laptop-1
-      url: "https://www.evanlray.com/"
+      url: "https://www.evanlray.com"
 
 - name: Dongah Kim
   role: Postdoctoral Researcher
@@ -73,11 +73,11 @@
   image: /images/people/alvaro.jpeg
   links:
     - name: flaticon-laptop-1
-      url: "https://micokoch.github.io/"
+      url: "https://micokoch.github.io"
     - name: flaticon-github-1
       url: "https://github.com/micokoch"
     - name: flaticon-linkedin-1
-      url: "https://www.linkedin.com/in/alvaro-j-castro-rivadeneira/"
+      url: "https://www.linkedin.com/in/alvaro-j-castro-rivadeneira"
 
 # Staff section
 
@@ -104,7 +104,7 @@
   image: /images/people/martha.jpg
   links:
     - name: flaticon-linkedin-1
-      url: "https://www.linkedin.com/in/martha-zorn-20015628/"
+      url: "https://www.linkedin.com/in/martha-zorn-20015628"
 
 - name: Anna Krystalli
   role: Research Software Engineer
@@ -117,7 +117,7 @@
   image: /images/people/anna_krystalli.jpg
   links:
     - name: flaticon-laptop-1
-      url: "https://www.r-rse.eu/"
+      url: "https://www.r-rse.eu"
     - name: flaticon-twitter-1
       url: "https://twitter.com/annakrystalli"
     - name: flaticon-github-1
@@ -152,7 +152,7 @@
   image: /images/people/ariane.jpg
   links:
     - name: alumni_link
-      url: "https://www.linkedin.com/in/arianestark/"
+      url: "https://www.linkedin.com/in/arianestark"
 
 - name: Quinn White
   role: Undergraduate Student (2022-2023)
@@ -170,7 +170,7 @@
   image: /images/people/Estee.jpg
   links:
     - name: alumni_link
-      url: "https://www.linkedin.com/in/estee-cramer-48860a167/"
+      url: "https://www.linkedin.com/in/estee-cramer-48860a167"
 
 - name: Vrushti Mody
   role: MS Student (2021-2022)
@@ -200,7 +200,7 @@
   image: /images/people/serena.jpg
   links:
     - name: alumni_link
-      url: "https://www.linkedin.com/in/syjwang/"
+      url: "https://www.linkedin.com/in/syjwang"
 
 - name: Xi Meng
   role: PhD Student (2015-2021)
@@ -218,7 +218,7 @@
   image: /images/people/casey.jpg
   links:
     - name: alumni_link
-      url: "https://gcgibson.github.io/"
+      url: "https://gcgibson.github.io"
 
 - name: Dasuni Jayawardena
   role: Undergrad Researcher (2020-2021)
@@ -236,7 +236,7 @@
   image: /images/people/yuxin.jpg
   links:
     - name: alumni_link
-      url: "https://github.com/ydhuang28/"
+      url: "https://github.com/ydhuang28"
 
 - name: Trust Okorie
   role: Undergrad intern (2021)
@@ -246,7 +246,7 @@
   image: /images/people/trust.jpg
   links:
     - name: alumni_link
-      url: "https://www.linkedin.com/in/tokorie/"
+      url: "https://www.linkedin.com/in/tokorie"
 
 - name: Richa Jain
   role: Undergrad intern (2021)
@@ -266,7 +266,7 @@
   image: /images/people/khoa.jpg
   links:
     - name: alumni_link
-      url: "https://www.linkedin.com/in/khoagle/"
+      url: "https://www.linkedin.com/in/khoagle"
 
 - name: Abdul Hannan Kanji
   role: MS Student/Software Engineer (2020-2021)
@@ -286,7 +286,7 @@
   image: /images/people/apurv.jpg
   links:
     - name: alumni_link
-      url: "https://www.linkedin.com/in/apurv-shah/"
+      url: "https://www.linkedin.com/in/apurv-shah"
 
 - name: Ayush Khandelwal
   role: Undergraduate Student/Software Engineer (2020)
@@ -306,7 +306,7 @@
   image: /images/people/tom.jpg
   links:
     - name: alumni_link
-      url: "http://www.thomasmcandrew.com/"
+      url: "http://www.thomasmcandrew.com"
 
 - name: Katie House
   role: Software Developer (2018-2020)
@@ -345,7 +345,7 @@
   image: /images/people/lexi.jpg
   links:
     - name: alumni_link
-      url: "https://www.linkedin.com/in/alexandria-lexi-brown-phd/"
+      url: "https://www.linkedin.com/in/alexandria-lexi-brown-phd"
 
 - name: Coco Kusiak
   role: MS Student (2017-2018)
