@@ -30,7 +30,7 @@
     - name: flaticon-curriculum
       url: /pdfs/people/Evan_L_Ray_CV.pdf
     - name: flaticon-laptop-1
-      url: "http://www.mtholyoke.edu/~eray/"
+      url: "https://www.evanlray.com/"
 
 - name: Dongah Kim
   role: Postdoctoral Researcher
@@ -46,24 +46,6 @@
 
 
 # Student section (PhD, MS, undergrad students, in order of seniority)
-
-- name: Nutcha Wattanachit
-  role: PhD Student
-  description: |
-    Nutcha is pursuing her PhD in Biostatistics. She is interested in infectious disease forecasting,
-    causal inference, and ensemble methods.
-  image: /images/people/nutcha.jpg
-  links: []
-
-- name: Ariane Stark
-  role: PhD Student
-  description: |
-    Ariane is a PhD student in biostatistics. She received her undergraduate degree in Mathematics from the Georgia Institute of Technology.
-    She is interested in infectious disease forecasting. In her free time she likes to play bridge (a card game).
-  image: /images/people/ariane.jpg
-  links:
-    - name: flaticon-linkedin-1
-      url: "https://www.linkedin.com/in/arianestark/"
 
 - name: Minsu Kim
   role: PhD Student
@@ -90,18 +72,12 @@
     BSc in Biochemistry from McGill University.
   image: /images/people/alvaro.jpeg
   links:
+    - name: flaticon-laptop-1
+      url: "https://micokoch.github.io/"
     - name: flaticon-github-1
       url: "https://github.com/micokoch"
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/alvaro-j-castro-rivadeneira/"
-
-- name: Quinn White
-  role: Undergraduate Student
-  description: |
-    Quinn is currently a senior at Smith College majoring in Statistical and Data Sciences. 
-    She is interested in statistical methods related to infectious disease and causal inference.
-  image: /images/people/quinn.png
-  links: []
 
 # Staff section
 
@@ -160,6 +136,32 @@
 
 # Alumni Section
 
+- name: Nutcha Wattanachit
+  role: PhD Student (2018-2023)
+  description: |
+
+  image: /images/people/nutcha.jpg
+  type: Alumni
+  links: []
+
+- name: Ariane Stark
+  role: MS Student (2020-2023)
+  description: |
+
+  image: /images/people/ariane.jpg
+  type: Alumni
+  links:
+    - name: alumni_link
+      url: "https://www.linkedin.com/in/arianestark/"
+
+- name: Quinn White
+  role: Undergraduate Student (2022-2023)
+  description: |
+
+  image: /images/people/quinn.png
+  type: Alumni
+  links: []
+
 - name: Estee Cramer
   role: PhD Student (2020-2022)
   description: |
@@ -188,7 +190,7 @@
   type: Alumni
   links:
     - name: alumni_link
-      url: "https://vidhimody.me"
+      url: "https://github.com/vrushti-mody"
 
 - name: Serena Yijin Wang
   role: Data Analyst (2020-2022)
@@ -198,7 +200,7 @@
   type: Alumni
   links:
     - name: alumni_link
-      url: "https://www.linkedin.com/in/serena-wang-899562119/"
+      url: "https://www.linkedin.com/in/syjwang/
 
 - name: Xi Meng
   role: PhD Student (2015-2021)
@@ -206,9 +208,7 @@
 
   image: /images/people/xi.png
   type: Alumni
-  links:
-    - name: alumni_link
-      url: "https://drive.google.com/file/d/0B66FkAegj6nrdlZPSXlIZm9jWDQ/view"
+  links: []
 
 - name: Graham Casey Gibson
   role: PhD Student (2017-2021)
@@ -236,7 +236,7 @@
   type: Alumni
   links:
     - name: alumni_link
-      url: "https://www.linkedin.com/in/yuxin-david-huang-aa663547/"
+      url: "https://github.com/ydhuang28/"
 
 - name: Trust Okorie
   description: |
@@ -256,7 +256,7 @@
   type: Alumni
   links:
     - name: alumni_link
-      url: "www.linkedin.com/in/richa-jain-0a6a19147"
+      url: "https://www.linkedin.com/in/richa-jain-0a6a19147"
 
 - name: Khoa Le
   role: MS Student/Software Engineer (2019-2021)
@@ -265,9 +265,9 @@
 
   image: /images/people/khoa.jpg
   links:
-    - name: flaticon-github-1
-      url: "https://github.com/Khoale1096"
-    - name: flaticon-linkedin-1
+    # - name: flaticon-github-1
+      # url: "https://github.com/Khoale1096"
+    - name: alumni_link
       url: "https://www.linkedin.com/in/khoagle/"
 
 - name: Abdul Hannan Kanji
@@ -277,9 +277,9 @@
 
   image: /images/people/abdul.jpg
   links:
-    - name: flaticon-github-1
-      url: "https://github.com/hannanabdul55"
-    - name: flaticon-laptop-1
+    # - name: flaticon-github-1
+      # url: "https://github.com/hannanabdul55"
+    - name: alumni_link
       url: "https://abdulhannan.in"
 
 - name: Apurv Shah
@@ -289,9 +289,9 @@
 
   image: /images/people/apurv.jpg
   links:
-    - name: flaticon-github-1
-      url: "https://github.com/ApurvShah007"
-    - name: flaticon-linkedin-1
+    # - name: flaticon-github-1
+      # url: "https://github.com/ApurvShah007"
+    - name: alumni_link
       url: "https://www.linkedin.com/in/apurv-shah/"
 
 - name: Ayush Khandelwal
@@ -301,10 +301,10 @@
   type: Alumni
   image: /images/people/ayush.jpg
   links:
-    - name: flaticon-linkedin-1
+    - name: alumni_link
       url: "https://www.linkedin.com/in/ayushkhd"
-    - name: flaticon-github-1
-      url: "https://github.com/ayushkhd"
+    # - name: flaticon-github-1
+      # url: "https://github.com/ayushkhd"
 
 - name: Tom McAndrew
   role: Postdoctoral Fellow (2018-2020)
