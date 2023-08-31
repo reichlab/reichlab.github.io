@@ -140,16 +140,16 @@
   role: PhD Student (2018-2023)
   description: |
 
-  image: /images/people/nutcha.jpg
   type: Alumni
+  image: /images/people/nutcha.jpg
   links: []
 
 - name: Ariane Stark
   role: MS Student (2020-2023)
   description: |
 
-  image: /images/people/ariane.jpg
   type: Alumni
+  image: /images/people/ariane.jpg
   links:
     - name: alumni_link
       url: "https://www.linkedin.com/in/arianestark/"
@@ -158,16 +158,16 @@
   role: Undergraduate Student (2022-2023)
   description: |
 
-  image: /images/people/quinn.png
   type: Alumni
+  image: /images/people/quinn.png
   links: []
 
 - name: Estee Cramer
   role: PhD Student (2020-2022)
   description: |
 
-  image: /images/people/Estee.jpg
   type: Alumni
+  image: /images/people/Estee.jpg
   links:
     - name: alumni_link
       url: "https://www.linkedin.com/in/estee-cramer-48860a167/"
@@ -176,8 +176,8 @@
   role: MS Student (2021-2022)
   description: |
 
-  image: /images/people/vrushti-mody.jpeg
   type: Alumni
+  image: /images/people/vrushti-mody.jpeg
   links:
     - name: alumni_link
       url: "https://vrushtimody.me"
@@ -186,8 +186,8 @@
   role: MS Student (2021-2022)
   description: |
 
-  image: /images/people/vidhi-mody.jpg
   type: Alumni
+  image: /images/people/vidhi-mody.jpg
   links:
     - name: alumni_link
       url: "https://github.com/vrushti-mody"
@@ -196,8 +196,8 @@
   role: Data Analyst (2020-2022)
   description: |
 
-  image: /images/people/serena.jpg
   type: Alumni
+  image: /images/people/serena.jpg
   links:
     - name: alumni_link
       url: "https://www.linkedin.com/in/syjwang/
@@ -206,16 +206,16 @@
   role: PhD Student (2015-2021)
   description: |
 
-  image: /images/people/xi.png
   type: Alumni
+  image: /images/people/xi.png
   links: []
 
 - name: Graham Casey Gibson
   role: PhD Student (2017-2021)
   description: |
 
-  image: /images/people/casey.jpg
   type: Alumni
+  image: /images/people/casey.jpg
   links:
     - name: alumni_link
       url: "https://gcgibson.github.io/"
@@ -224,24 +224,24 @@
   role: Undergrad Researcher (2020-2021)
   description: |
 
-  image: /images/people/Dasuni.JPG
   type: Alumni
+  image: /images/people/Dasuni.JPG
   links: []
 
 - name: Yuxin David Huang
   role: Software Engineer (2020 - 2021)
   description: |
 
-  image: /images/people/yuxin.jpg
   type: Alumni
+  image: /images/people/yuxin.jpg
   links:
     - name: alumni_link
       url: "https://github.com/ydhuang28/"
 
 - name: Trust Okorie
+  role: Undergrad intern (2021)
   description: |
 
-  role: Undergrad intern (2021)
   type: Alumni
   image: /images/people/trust.jpg
   links:
@@ -252,45 +252,39 @@
   role: Undergrad intern (2021)
   description: |
 
-  image: /images/people/Richa.jpg
   type: Alumni
+  image: /images/people/Richa.jpg
   links:
     - name: alumni_link
       url: "https://www.linkedin.com/in/richa-jain-0a6a19147"
 
 - name: Khoa Le
   role: MS Student/Software Engineer (2019-2021)
-  type: Alumni
   description: |
 
+  type: Alumni
   image: /images/people/khoa.jpg
   links:
-    # - name: flaticon-github-1
-      # url: "https://github.com/Khoale1096"
     - name: alumni_link
       url: "https://www.linkedin.com/in/khoagle/"
 
 - name: Abdul Hannan Kanji
   role: MS Student/Software Engineer (2020-2021)
-  type: Alumni
   description: |
 
+  type: Alumni
   image: /images/people/abdul.jpg
   links:
-    # - name: flaticon-github-1
-      # url: "https://github.com/hannanabdul55"
     - name: alumni_link
       url: "https://abdulhannan.in"
 
 - name: Apurv Shah
   role: Undergraduate Student/Software Engineer (2021)
-  type: Alumni
   description: |
 
+  type: Alumni
   image: /images/people/apurv.jpg
   links:
-    # - name: flaticon-github-1
-      # url: "https://github.com/ApurvShah007"
     - name: alumni_link
       url: "https://www.linkedin.com/in/apurv-shah/"
 
@@ -303,8 +297,6 @@
   links:
     - name: alumni_link
       url: "https://www.linkedin.com/in/ayushkhd"
-    # - name: flaticon-github-1
-      # url: "https://github.com/ayushkhd"
 
 - name: Tom McAndrew
   role: Postdoctoral Fellow (2018-2020)
@@ -443,9 +435,9 @@
 
 
 - name: Krzysztof Sakrejda
+  role: Post-doctoral Fellow (2015-2017)
   description: |
 
-  role: Post-doctoral Fellow (2015-2017)
   type: Alumni
   image: /images/people/krzysztof.jpg
   links:
