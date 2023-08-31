@@ -180,7 +180,7 @@
   image: /images/people/vrushti-mody.jpeg
   links:
     - name: alumni_link
-      url: "https://vrushtimody.me"
+      url: "https://github.com/vrushti-mody"
 
 - name: Vidhi Mody
   role: MS Student (2021-2022)
@@ -190,7 +190,7 @@
   image: /images/people/vidhi-mody.jpg
   links:
     - name: alumni_link
-      url: "https://github.com/vrushti-mody"
+      url: "https://www.vidhimody.me/"
 
 - name: Serena Yijin Wang
   role: Data Analyst (2020-2022)
