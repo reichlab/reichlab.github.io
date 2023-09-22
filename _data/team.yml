@@ -134,6 +134,13 @@
     - name: flaticon-github-1
       url: "https://github.com/lshandross"
 
+- name: Melissa Kerr
+  role: Project Manager
+  description: |
+    Melissa is.....
+  image: /images/people/melissa.jpg
+  links: []    
+      
 # Alumni Section
 
 - name: Nutcha Wattanachit
