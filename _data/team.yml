@@ -126,9 +126,9 @@
 - name: Li Shandross
   role: Data Analyst
   description: |
-    Li is a data anylst  who completed her MS in Biostatistics as part of the 4+1 program at UMass Amherst. 
-    Li has research interests in infectious disease forecasting, particularly the application of new methods,
-    and enjoys dancing and writing outside of work.
+    Li is a data analyst who completed an MS in Biostatistics as part of the 4+1 program at UMass Amherst. 
+    Li's research interests include infectious disease forecasting, particularly the application of new 
+    techniques, and ensemble methods. Outside of work, Li enjoys writing and dancing.
   image: /images/people/li.jpg
   links:
     - name: flaticon-github-1
