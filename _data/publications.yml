@@ -1,5 +1,25 @@
 # 2023  
   
+- title: 'Mixture distributions for probabilistic forecasts of disease outbreaks'
+  slug: mix-distrib
+  authors: Wadsworth S, Niemi J, Reich NG
+  preprint: https://arxiv.org/abs/2310.11939
+  pdf: https://arxiv.org/pdf/2310.11939.pdf
+  year: 2023
+  journal: arXiv
+  doi: 10.48550/arXiv.2310.11939
+  keywords: forecasting
+  abstract: >
+    Collaboration among multiple teams has played a major role in probabilistic forecasting events of influenza outbreaks, 
+    the COVID-19 pandemic, other disease outbreaks, and in many other fields. When collecting forecasts from individual teams, 
+    ensuring that each team's model represents forecast uncertainty according to the same format allows for direct comparison of forecasts 
+    as well as methods of constructing multi-model ensemble forecasts. This paper outlines several common probabilistic forecast representation formats 
+    including parametric distributions, sample distributions, bin distributions, and quantiles and compares their use in the context of collaborative projects. 
+    We propose the use of a discrete mixture distribution format in collaborative forecasting in place of other formats. 
+    The flexibility in distribution shape, the ease for scoring and building ensemble models, 
+    and the reasonably low level of computer storage required to store such a forecast make the discrete mixture distribution 
+    an attractive alternative to the other representation formats.
+
 - title: 'Comparison of combination methods to create calibrated ensemble forecasts for seasonal influenza in the U.S.'
   slug: calibrated-ensmble-forecasts
   authors: Wattanachit N, Ray EL, McAndrew TC, Reich NG
