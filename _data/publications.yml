@@ -1,5 +1,5 @@
 # 2023  
-  
+    
 - title: 'Comparison of combination methods to create calibrated ensemble forecasts for seasonal influenza in the U.S.'
   slug: calibrated-ensmble-forecasts
   authors: Wattanachit N, Ray EL, McAndrew TC, Reich NG
@@ -122,10 +122,12 @@
   slug: cases_lead_hospitalizations
   authors: Reich NG, Wang Y, Burns M, Ergas R, Cramer EY, Ray EL
   preprint: https://www.medrxiv.org/content/10.1101/2023.03.08.23286582v1
-  pdf: https://www.medrxiv.org/content/10.1101/2023.03.08.23286582v1.full.pdf
+  pdf: https://pdf.sciencedirectassets.com/277421/1-s2.0-S1755436523X00048/1-s2.0-S1755436523000646/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDkaCXVzLWVhc3QtMSJHMEUCIGDrjDeP%2B9ITodtfRabXm62FCnRvN9prSaCaobCO2epRAiEAmwyMWHurrx1LQrNW29xJNDEnCaXAYLB9rOmlamX%2FZT8quwUIgv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAFGgwwNTkwMDM1NDY4NjUiDFWiJ%2BIWfIPs%2BWnfEyqPBS%2BDxny1XmBqonm6Yh0VEfujgkGz4yL%2B3w64hzuO0haJ64WplUiWNielyx8kmiMQsjdOmtYKYfuLH30zxUpxRinonx4bK%2BRc%2BsYgwgSDxn39BkvXkq2nAOBXEM24%2FiaNSNkArV%2BD4014RMwUSLjfiXwxk7US%2FXaRcemEHU21MQMFw5JH7VjY3qTp1K0VwJGjcLJY14tXzGrs0UsDfzDm%2F3Bdj56%2BFQpZxs%2FhoAmO69XBP3v4bUPX3Jy0hoVr8MmnQwHNSwvasYkZyPJUApjoBVXghbbP2%2BMgs1tSTHvnTgQxOBwuERMqeTvwe382RUWj7xI4v%2FC9wEoCj6Q2GMRUww6KEs2V4on88b1cCghgRGEheZpNNM6Rh368ohBRXqZ8WPUQINgxPbgUcyO%2FqQPAhxwbTSqmtgWReoHl8VYY52qG0FcCMGgoLxSV5zsmjoa4G9ykzjN3TlFi3iYbKaCPaqMIHvuw83gDNvg9VchSWSOm1PtIUi2OOcHCPPf129wR5oTYOx2VWAYhMbn6hvp7yARuWPKNUaYdI%2BDe9du79VzvQ9hrEYelm3ucnD19l4vLjyfoDSF2weZ%2BGd0QV4LM0kdwRHiXFgrdGhyw%2B%2BqIWZsASRtyZNSs3VM%2BYuWQoQ4aL%2FJN6y8LKIbOuTH98i1PIeUvxcI1IPPblLE4o%2BsZaxM8EU5ZgvQNpyneZkl76b4rcljB0I4hNKhkKuANilzTW3GLrY8yDNnP1aVbMAm%2Fc350s5cOzcRoiZM%2FWTnFMBBssSjXMJ9tj%2FZl5cy8iAsiujqFAD4y%2FqHdSHuqFDSJr5VGs%2FAmzfAnf8mEJxfYnHlk8T63tG0kLKSjOJCm6%2FzdlbJbOCZs4DIo93hHsfjMoj0w9cfVqgY6sQE7a0NrcUqCQHn6Z94PvPiGq%2Fb8pVJfi32ij6%2B%2FyGt%2FbURoYFA4zCpDWj1iO6rfcwlK72J9sGb10SPT%2B5R4krcj39o%2BDyC3PCGtQ%2BX51TFQusQcgfHz6IOHC7pPOyIr5obsyNT%2FVdDuU7ohHn0anlTWDuOfwfiSIaLfdqwkPRFZJ%2BkHYO1T7QKmzq5iEmMDCMi%2Fan3Z%2FnGEyHEG2cH%2Fex1rhDHNPbNWvDZ277ALxJaX88M%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20231116T011811Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTY6UAXDNHW%2F20231116%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=0d6407643806e0df2f2a3d230e84fd7b1a2538c85548e09e54218e83f4f91d1f&hash=e2b82e7e9100a1ce48146922b611e9dd3689f5fac164af823c2de291907faf37&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S1755436523000646&tid=spdf-dbdca13d-5194-4c99-a1a4-f0f351a91aaa&sid=c1fcb42b93188546d75926650fd514415376gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=13115651590402565f0e&rr=826be60aaa044cda&cc=us
   year: 2023
-  journal: medRxiv
-  doi: 10.1101/2023.03.08.23286582
+  journal: Epidemics
+  volume: 45
+  pages: 100728
+  doi: 10.1016/j.epidem.2023.100728
   keywords: forecasting, covid-19
   abstract: >
     Identifying data streams that can consistently improve the accuracy of epidemiological forecasting models is challenging. Using models designed 
