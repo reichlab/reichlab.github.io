@@ -142,10 +142,11 @@
   slug: cases_lead_hospitalizations
   authors: Reich NG, Wang Y, Burns M, Ergas R, Cramer EY, Ray EL
   preprint: https://www.medrxiv.org/content/10.1101/2023.03.08.23286582v1
-  pdf: https://www.medrxiv.org/content/10.1101/2023.03.08.23286582v1.full.pdf
-  year: 2023
-  journal: medRxiv
-  doi: 10.1101/2023.03.08.23286582
+  pdf: https://www.sciencedirect.com/science/article/pii/S1755436523000646/pdfft?md5=501f8c5a916c41a194955789cddb3e5e&pid=1-s2.0-S1755436523000646-main.pdf
+  journal: Epidemics
+  volume: 45
+  pages: 100728
+  doi: 10.1016/j.epidem.2023.100728
   keywords: forecasting, covid-19
   abstract: >
     Identifying data streams that can consistently improve the accuracy of epidemiological forecasting models is challenging. Using models designed 
