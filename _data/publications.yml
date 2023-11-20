@@ -545,10 +545,11 @@
   slug: gibson-mortality
   authors: Gibson GC , Reich NG , Sheldon D
   preprint: https://www.medrxiv.org/content/10.1101/2020.12.22.20248736v2
-  pdf: https://www.medrxiv.org/content/10.1101/2020.12.22.20248736v2.full.pdf
-  year: 2020
-  journal: medRxiv
-  doi: 10.1101/2020.12.22.20248736
+  year: 2023
+  journal: Annals of Applied Statistics
+  volume: 17(3)
+  pages: 1801-1819
+  doi: 10.1214/22-AOAS1671
   keywords: covid-19
   abstract: >
     The COVID-19 pandemic emerged in late December 2019. In the first six months of the global outbreak, 
