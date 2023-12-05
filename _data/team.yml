@@ -78,7 +78,15 @@
       url: "https://github.com/micokoch"
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/alvaro-j-castro-rivadeneira"
-
+      
+- name: Doug Arbetter
+  role: PhD Student
+  description: |
+    Doug is a part-time PhD student in Biostatistics, and is a statistician at AstraZeneca in the Vaccines
+    and Immune Therapies unit. His research interest is infectious disease forecasting for public health
+    and clinical trial sponsores. He enjoys playing tennis and skiing in his free time.
+  image: /images/people/Doug.jpg
+  links: []
 # Staff section
 
 - name: Matthew Cornell
