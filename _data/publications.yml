@@ -1,5 +1,29 @@
 # 2023  
   
+- title: 'Evaluating infectious disease forecasts with allocation scoring rules'
+  slug: alloscore
+  authors: Gerding A, Reich NG, Rogers B, Ray EL
+  preprint: https://arxiv.org/abs/2312.16201
+  pdf: https://arxiv.org/pdf/2312.16201.pdf
+  year: 2023
+  journal: arXiv
+  doi: 10.48550/arXiv.2312.16201
+  keywords: forecasting, covid-19
+  abstract: >
+    Recent years have seen increasing efforts to forecast infectious disease burdens, with a primary 
+    goal being to help public health workers make informed policy decisions. However, there has only 
+    been limited discussion of how predominant forecast evaluation metrics might indicate the success
+    of policies based in part on those forecasts. We explore one possible tether between forecasts 
+    and policy: the allocation of limited medical resources so as to minimize unmet need. We use 
+    probabilistic forecasts of disease burden in each of several regions to determine optimal resource 
+    allocations, and then we score forecasts according to how much unmet need their associated 
+    allocations would have allowed. We illustrate with forecasts of COVID-19 hospitalizations in the 
+    US, and we find that the forecast skill ranking given by this allocation scoring rule can vary 
+    substantially from the ranking given by the weighted interval score. We see this as evidence that the 
+    allocation scoring rule detects forecast value that is missed by traditional accuracy measures and 
+    that the general strategy of designing scoring rules that are directly linked to policy performance 
+    is a promising direction for epidemic forecast evaluation.
+
 - title: 'Evaluation of the US COVID-19 Scenario Modeling Hub for informing pandemic response under uncertainty'
   slug: covid_scenario_hub_eval
   authors: Howerton E, Contamin L, Mullany LC, Qin M, Reich NG, ... Viboud C, Lessler J
