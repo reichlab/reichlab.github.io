@@ -4,10 +4,8 @@
   slug: alloscore
   authors: Gerding A, Reich NG, Rogers B, Ray EL
   preprint: https://arxiv.org/abs/2312.16201
-  pdf: https://arxiv.org/pdf/2312.16201.pdf
   year: 2023
   journal: arXiv
-  doi: 10.48550/arXiv.2312.16201
   keywords: forecasting, covid-19
   abstract: >
     Recent years have seen increasing efforts to forecast infectious disease burdens, with a primary 
