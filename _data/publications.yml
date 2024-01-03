@@ -4,8 +4,10 @@
   slug: alloscore
   authors: Gerding A, Reich NG, Rogers B, Ray EL
   preprint: https://arxiv.org/abs/2312.16201
+  #pdf: https://arxiv.org/pdf/2312.16201.pdf [update when published]
   year: 2023
   journal: arXiv
+  #doi: 10.48550/arXiv.2312.16201 [update when published]
   keywords: forecasting, covid-19
   abstract: >
     Recent years have seen increasing efforts to forecast infectious disease burdens, with a primary 
@@ -48,14 +50,42 @@
     SMH projections were used to guide pandemic response, 
     illustrating the value of collaborative hubs for longer-term scenario projections.
 
+- title: 'Real-time mechanistic Bayesian forecasts of COVID-19 mortality'
+  slug: gibson-mortality
+  authors: Gibson GC, Reich NG, Sheldon D
+  preprint: https://www.medrxiv.org/content/10.1101/2020.12.22.20248736v2
+  year: 2023
+  volume: 17(3)
+  pages: 1801-1819
+  journal: Annals of Applied Statistics
+  doi: 10.1214/22-AOAS1671
+  keywords: covid-19
+  abstract: >
+    The COVID-19 pandemic emerged in late December 2019. In the first six months of the global outbreak, 
+    the US reported more cases and deaths than any other country in the world. Effective modeling of the course of the pandemic can help assist 
+    with public health resource planning, intervention efforts, and vaccine clinical trials. 
+    However, building applied forecasting models presents unique challenges during a pandemic. First, case data available to models in 
+    real-time represent a non-stationary fraction of the true case incidence due to changes in available diagnostic tests and test-seeking behavior. 
+    Second, interventions varied across time and geography leading to large changes in transmissibility over the course of the pandemic. 
+    We propose a mechanistic Bayesian model (MechBayes) that builds upon the classic compartmental susceptible-exposed-infected-recovered (SEIR) 
+    model to operationalize COVID-19 forecasting in real time. This framework includes non-parametric modeling of varying transmission rates, 
+    non-parametric modeling of case and death discrepancies due to testing and reporting issues, and a joint observation likelihood on new case 
+    counts and new deaths; it is implemented in a probabilistic programming language to automate the use of Bayesian reasoning for quantifying 
+    uncertainty in probabilistic forecasts. The model has been used to submit forecasts to the US Centers for Disease Control, 
+    through the COVID-19 Forecast Hub. We examine the performance relative to a baseline model as well as alternate models submitted to the Forecast Hub. 
+    Additionally, we include an ablation test of our extensions to the classic SEIR models. We demonstrate a significant gain in both point and 
+    probabilistic forecast scoring measures using MechBayes when compared to a baseline model. We show that MechBayes ranks as one of the top models 
+    out of those submitted to the COVID-19 Forecast Hub. Finally, we demonstrate that MechBayes performs significantly better than the classical SEIR model.
+
+
 - title: 'Mixture distributions for probabilistic forecasts of disease outbreaks'
   slug: mix-distrib
   authors: Wadsworth S, Niemi J, Reich NG
   preprint: https://arxiv.org/abs/2310.11939
-  pdf: https://arxiv.org/pdf/2310.11939.pdf
+  #pdf: https://arxiv.org/pdf/2310.11939.pdf [update when published]
   year: 2023
   journal: arXiv
-  doi: 10.48550/arXiv.2310.11939
+  #doi: 10.48550/arXiv.2310.11939 [update when published]
   keywords: forecasting
   abstract: >
     Collaboration among multiple teams has played a major role in probabilistic forecasting events of influenza outbreaks, 
@@ -103,10 +133,10 @@
   slug: covid_case_challenges
   authors: Lopez V, Cramer EY, Pagano R, ... Biggerstaff M, Reich NG, Johansson MA
   preprint: https://www.medrxiv.org/content/10.1101/2023.05.30.23290732v1
-  pdf: https://www.medrxiv.org/content/10.1101/2023.05.30.23290732v1.full.pdf
+  #pdf: https://www.medrxiv.org/content/10.1101/2023.05.30.23290732v1.full.pdf [update when published]
   year: 2023
   journal: medRxiv
-  doi: 10.1101/2023.05.30.23290732
+  #doi: 10.1101/2023.05.30.23290732 [update when published]
   keywords: forecasting, covid-19
   abstract: >
     During the COVID-19 pandemic, forecasting COVID-19 trends to support planning and response was a priority for scientists and decision makers 
@@ -343,8 +373,7 @@
     Efforts to coordinate modeling efforts in so-called “hubs” have provided governments, healthcare agencies, and the public 
     with assessments and forecasts that reflect the consensus in the modeling community. This has been achieved by openly 
     synthesizing uncertainties across different modeling approaches and facilitating comparisons between them.
-  
-  
+
 - title: 'Evaluation of individual and ensemble probabilistic forecasts of COVID-19 mortality in the United States'
   slug: cramer-evaluation
   authors: Cramer EY, Ray EL, Lopez VK, Bracher J, ... Slayton RB, Johansson M , Biggerstaff M, Reich NG
@@ -387,10 +416,8 @@
     During the COVID-19 pandemic, modeling and forecasting have informed public health response at the local, state, and national levels by improving situational awareness, providing estimates of key virus characteristics, and optimizing mitigation strategies (1).
     While forecasting efforts often have been the most visible modeling outputs to the general public, as predictions are often highlighted by the media, other modeling has played an important role in the pandemic as well. In PNAS, Fox et al. detail an important and influential collaborative modeling effort that has supported real-time public health decision-making in Austin, TX, during the COVID-19 pandemic (2). The effort described by Fox et al. is notable both for its careful and accurate modeling as well as the in-depth collaboration, clearly built on a relationship of trust, with Austin city officials.
     While this effort is exemplary and hopefully will serve as a model for future similar collaborative work, the paper also raises important questions about how this kind of effort can be scaled. Ideally many municipalities, including ones that are not fortunate enough to have a terrific academic modeling group in or near their city, could take advantage of the insights that models have to offer. Can state and national public health agencies support scalable modeling efforts so that every local and state government can take advantage of a wide range of insights from robust modeling efforts? Furthermore, in doing so, can we reduce the dependency of such an undertaking on one single modeling group, by relying on the successful use of collaborative modeling “hubs” that have sprouted up before and during the pandemic (3–10) and/or by supporting the development of modeling capacity within public health agencies?
-  
 
 # 2021
-
 
 - title: 'Recommended reporting items for epidemic forecasting and prediction research: The EPIFORGE 2020 guidelines'
   slug: epiforge
@@ -439,7 +466,6 @@
     guidelines have been submitted to the EQUATOR network, in addition to hosting by other dedicated webpages to facilitate feedback 
     and journal endorsement.
 
-
 - title: 'The Zoltar forecast archive: a tool to facilitate standardization and storage of interdisciplinary prediction research'
   slug: reich-zoltar-forecast
   authors: Reich NG, Cornell M, Ray EL, House K, Le K
@@ -468,7 +494,7 @@
   pdf: https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1007623&type=printable
   year: 2021
   journal: PLOS Comp Bio
-  doi:  10.1371/journal.pcbi.1007623
+  doi: 10.1371/journal.pcbi.1007623
   keywords: forecasting, influenza, flusight
   abstract: >
     With an estimated $10 . 4 billion in medical costs and 31.4 million outpatient visits each year, influenza 
@@ -503,6 +529,59 @@
     It can be interpreted as a generalization of the absolute error to probabilistic forecasts and allows 
     for a simple decomposition into a measure of sharpness and penalties for over- and underprediction.
 
+- title: 'Adaptively stacking ensembles for influenza forecasting'
+  slug: adaptive-ensembles
+  authors: McAndrew T, Reich NG 
+  preprint: https://arxiv.org/abs/1908.01675
+  pdf: https://onlinelibrary.wiley.com/doi/epdf/10.1002/sim.9219
+  year: 2021
+  volume: 40(30)
+  pages: 6931-6952
+  journal: Statistics in medicine
+  doi: 10.1002/sim.9219
+  keywords: forecasting, influenza, flusight 
+  github: tomcm39/adaptively_stacking_ensembles_for_infleunza_forecasting_with_incomplete_data
+  abstract: >
+    Seasonal influenza infects between 10 and 50 million people in the United States every year. 
+    Accurate forecasts of influenza and influenza-like illness (ILI) have been named by the CDC 
+    as an important tool to fight the damaging effects of these epidemics. 
+    Multi-model ensembles make accurate forecasts of seasonal influenza, 
+    but current operational ensemble forecasts are static: 
+    they require an abundance of past ILI data and assign fixed weights to component models at the beginning of a season, 
+    but do not update weights as new data on component model performance is collected. 
+    We propose an adaptive ensemble that (i) does not initially need data to combine forecasts and 
+    (ii) finds optimal weights which are updated week-by-week throughout the influenza season. 
+    We take a regularized likelihood approach and investigate this regularizer's ability to impact adaptive ensemble performance. 
+    After finding an optimal regularization value, we compare our adaptive ensemble to an equal-weighted and static ensemble. 
+    Applied to forecasts of short-term ILI incidence at the regional and national level, 
+    our adaptive model outperforms an equal-weighted ensemble and has similar performance to the static ensemble 
+    using only a fraction of the data available to the static ensemble. 
+    Needing no data at the beginning of an epidemic, an adaptive ensemble can quickly train and forecast an outbreak, 
+    providing a practical tool to public health officials looking for a forecast to conform to unique features of a specific season.
+
+- title: 'Aggregating predictions from experts: A review of statistical methods, experiments, and applications'
+  slug: aggregate-prediction
+  authors: McAndrew T, Wattanachit N, Gibson GC, Reich NG
+  preprint: https://arxiv.org/abs/1912.11409
+  pdf: https://wires.onlinelibrary.wiley.com/doi/epdf/10.1002/wics.1514
+  year: 2021
+  volume: 13(2)
+  pages: e1514
+  journal: Wiley Interdisciplinary Reviews: Computational Statistics
+  doi: 10.1002/wics.1514
+  keywords: forecasting
+  abstract: >
+    Forecasts support decision making in a variety of applications. 
+    Statistical models can produce accurate forecasts given abundant training data, 
+    but when data is sparse or rapidly changing, statistical models may not be able to make accurate predictions. 
+    Expert judgmental forecasts—models that combine expert-generated predictions into a single forecast—
+    can make predictions when training data is limited by relying on human intuition. 
+    Researchers have proposed a wide array of algorithms to combine expert predictions into a single forecast, 
+    but there is no consensus on an optimal aggregation model. 
+    This review surveyed recent literature on aggregating expert-elicited predictions. 
+    We gathered common terminology, aggregation methods, and forecasting performance metrics, 
+    and offer guidance to strengthen future work that is growing at an accelerated pace.
+
 - title: 'Serological surveys to estimate cumulative incidence of SARS-CoV-2 infection in adults (Sero-MAss study), Massachusetts, July–August 2020: a mail-based cross-sectional study'
   slug: serological-surveys
   authors: Snyder T, Ravenhurst J, Cramer EY, Reich NG, Balzer L, Alfandari D, Lover AA
@@ -535,10 +614,8 @@
       No factors except geographic regions within the state were associated with evidence of prior SARSCoV-2 infection in the secondary sampling group.
     Conclusions 
       This study fills a critical gap in estimating the levels of subclinical and asymptomatic infection. Estimates can be used to calibrate models estimating levels of population immunity over time, and these data are critical for informing public health interventions and policy.
-  
 
 # 2020
-
 
 - title: 'Identification and evaluation of epidemic prediction and forecasting reporting guidelines: A systematic review and a call for action'
   slug: pollet-epidemic
@@ -559,44 +636,15 @@
       A literature database search through May 26, 2019, identified 1467 publications (MEDLINE n = 584, EMBASE n = 883), and a grey-literature review identified a further 407 publications, yielding a total 1777 unique publications. A paired-reviewer system screened in 25 potentially eligible publications, of which two were ultimately deemed eligible. A qualitative review of these two published reporting guidelines indicated that neither were specific for epidemic forecasting and prediction, although they described reporting items which may be relevant to epidemic forecasting and prediction studies.
     Conclusions
       This systematic review confirms that no specific guidelines have been published to standardize the reporting of epidemic forecasting and prediction studies. These findings underscore the need to develop such reporting guidelines in order to improve the transparency, quality and implementation of epidemic forecasting and prediction research in operational public health.
-  
-  
-- title: 'Real-time mechanistic bayesian forecasts of Covid-19 mortality'
-  slug: gibson-mortality
-  authors: Gibson GC , Reich NG , Sheldon D
-  preprint: https://www.medrxiv.org/content/10.1101/2020.12.22.20248736v2
-  year: 2023
-  journal: Annals of Applied Statistics
-  volume: 17(3)
-  pages: 1801-1819
-  doi: 10.1214/22-AOAS1671
-  keywords: covid-19
-  abstract: >
-    The COVID-19 pandemic emerged in late December 2019. In the first six months of the global outbreak, 
-    the US reported more cases and deaths than any other country in the world. Effective modeling of the course of the pandemic can help assist 
-    with public health resource planning, intervention efforts, and vaccine clinical trials. 
-    However, building applied forecasting models presents unique challenges during a pandemic. First, case data available to models in 
-    real-time represent a non-stationary fraction of the true case incidence due to changes in available diagnostic tests and test-seeking behavior. 
-    Second, interventions varied across time and geography leading to large changes in transmissibility over the course of the pandemic. 
-    We propose a mechanistic Bayesian model (MechBayes) that builds upon the classic compartmental susceptible-exposed-infected-recovered (SEIR) 
-    model to operationalize COVID-19 forecasting in real time. This framework includes non-parametric modeling of varying transmission rates, 
-    non-parametric modeling of case and death discrepancies due to testing and reporting issues, and a joint observation likelihood on new case 
-    counts and new deaths; it is implemented in a probabilistic programming language to automate the use of Bayesian reasoning for quantifying 
-    uncertainty in probabilistic forecasts. The model has been used to submit forecasts to the US Centers for Disease Control, 
-    through the COVID-19 Forecast Hub. We examine the performance relative to a baseline model as well as alternate models submitted to the Forecast Hub. 
-    Additionally, we include an ablation test of our extensions to the classic SEIR models. We demonstrate a significant gain in both point and 
-    probabilistic forecast scoring measures using MechBayes when compared to a baseline model. We show that MechBayes ranks as one of the top models 
-    out of those submitted to the COVID-19 Forecast Hub. Finally, we demonstrate that MechBayes performs significantly better than the classical SEIR model.
-
 
 - title: 'Seasonal patterns of dengue incidence in Thailand across the urban-rural gradient'
   slug: bi-dengue-patterns
   authors: Bi Q, Cummings DAT, Reich NG, Keegan LT, Kaminsky J, Salje H, Clapham H, Doung-ngern P, Iamsirithaworn S, Lessler J
   preprint: https://www.medrxiv.org/content/10.1101/2020.11.25.20186056v1
-  pdf: https://www.medrxiv.org/content/10.1101/2020.11.25.20186056v1.full.pdf
+  #pdf: https://www.medrxiv.org/content/10.1101/2020.11.25.20186056v1.full.pdf [update when published]
   year: 2020
   journal: medRxiv
-  doi: 10.1101/2020.11.25.20186056
+  #doi: 10.1101/2020.11.25.20186056 [update when published]
   keywords: dengue
   abstract: >
     In Southeast Asia, endemic dengue follows strong spatio-temporal 
@@ -619,12 +667,12 @@
 
 - title: 'Ensemble Forecasts of Coronavirus Disease 2019 (COVID-19) in the U.S.'
   slug: ray-ensemble-covid19
-  authors: Ray EL et al.
+  authors: Ray EL, Wattanachit N, Niemi J, Kanji AH, House K, Cramer EY, ... Reich NG on behalf of the COVID-19 Forecast Hub Consortium
   preprint: https://www.medrxiv.org/content/10.1101/2020.08.19.20177493v1
-  pdf: https://www.medrxiv.org/content/10.1101/2020.08.19.20177493v1.full.pdf
+  #pdf: https://www.medrxiv.org/content/10.1101/2020.08.19.20177493v1.full.pdf [update when published]
   year: 2020
   journal: medRxiv
-  doi: 10.1101/2020.08.19.20177493
+  #doi: 10.1101/2020.08.19.20177493 [update when published]
   keywords: covid-19, forecasting
   abstract: >
     Background: The COVID-19 pandemic has driven demand for forecasts to guide policy and planning.
@@ -687,36 +735,14 @@
     indicate that official tallies likely undercount deaths due to the virus. The mortality burden 
     and the completeness of the tallies vary markedly between states.
 
-
-- title: 'Aggregating predictions from experts: A review of statistical methods, experiments, and applications'
-  slug: aggregate-prediction
-  authors: McAndrew T, Wattanachit N, Gibson GC, Reich NG
-  doi: 10.1002/wics.1514
-  preprint: https://arxiv.org/abs/1912.11409
-  pdf: https://arxiv.org/pdf/1912.11409.pdf
-  year: 2020
-  journal: arXiv
-  keywords: forecasting
-  abstract: >
-    Forecasts support decision making in a variety of applications. Statistical models can produce 
-    accurate forecasts given abundant training data, but when data is sparse or rapidly changing, 
-    statistical models may not be able to make accurate predictions. Expert judgmental forecasts—models 
-    that combine expert‐generated predictions into a single forecast—can make predictions when training 
-    data is limited by relying on human intuition. Researchers have proposed a wide array of algorithms 
-    to combine expert predictions into a single forecast, but there is no consensus on an optimal 
-    aggregation model. This review surveyed recent literature on aggregating expert‐elicited predictions. 
-    We gathered common terminology, aggregation methods, and forecasting performance metrics, and offer 
-    guidance to strengthen future work that is growing at an accelerated pace.
-
-
-
 - title: 'Infectious Disease Forecasting for Public Health'
   slug: lauer-public-health
   authors: Lauer SA, Brown AC, Reich NG
   preprint: https://arxiv.org/abs/2006.00073
-  pdf: https://arxiv.org/pdf/2006.00073.pdf
+  #pdf: https://arxiv.org/pdf/2006.00073.pdf [update when published]
   year: 2020
   journal: arXiv
+  #doi: 10.48550/arXiv.2006.00073 [update when published]
   keywords: forecasting
   abstract: >
     Forecasting transmission of infectious diseases, especially for vector-borne diseases, poses unique challenges 
@@ -838,12 +864,11 @@
     found that our sensor-based features are strongly correlated with laboratory-
     confirmed influenza trends.
 
-
 - title: 'Evaluating the ALERT algorithm for local outbreak onset detection in seasonal infectious disease surveillance data'
   slug: alert-onset-2
   authors: Brown AC, Lauer SA, Robinson C, Nyquist C, Rao S, Reich NG
   preprint: https://www.biorxiv.org/content/10.1101/664433v1
-  pdf: https://www.biorxiv.org/content/biorxiv/early/2019/06/14/664433.full.pdf
+  pdf: https://onlinelibrary.wiley.com/doi/epdf/10.1002/sim.8467
   year: 2020
   journal: Statistics in Medicine
   doi: 10.1002/sim.8467
@@ -863,9 +888,7 @@
     may effect ALERT performance on novel data. We found that the conditions under which ALERT showed 
     ideal performance generally included high seasonality and low off-season incidence.
 
-
 #2019
-
 
 - title: 'Accuracy of real-time multi-model ensemble forecasts for seasonal influenza in the U.S.'
   slug: flu-ensemble-1
@@ -904,12 +927,13 @@
     modeling researchers, are essential to improving our understanding of how best to use forecasts to 
     improve public health response to seasonal and emerging epidemic threats.
 
-
 - title: 'An open challenge to advance probabilistic forecasting for dengue epidemics'
   slug: challenge-probabilistic
-  authors: Johansson MA et al.
+  authors: Johansson, ... Reich NG, Cummings DAT, Lauer SA, ... Brown AC, ... Chretien JP
   pdf: https://www.pnas.org/content/pnas/early/2019/11/05/1909865116.full.pdf
   year: 2019
+  volume: 116(48)
+  pages: 24268-24274
   journal: PNAS
   doi: 10.1073/pnas.1909865116
   keywords: forecasting, dengue, flusight
@@ -935,14 +959,14 @@
     shared and standardized data, and open participation—can help advance infectious 
     disease forecasting beyond dengue.
 
-
 - title: 'The covariate-adjusted residual estimator and its use in both randomized trials and observational settings'
   slug: covariate-adjusted
   authors: Lauer SA, Reich NG, Balzer LB
   preprint: https://arxiv.org/abs/1910.11397
-  pdf: https://arxiv.org/pdf/1910.11397.pdf
+  #pdf: https://arxiv.org/pdf/1910.11397.pdf [update when published]
   year: 2019
   journal: arXiv
+  #doi: 10.48550/arXiv.1910.11397 [update when published]
   keywords: cluster-randomization
   abstract: >
     We often seek to estimate the causal effect of an exposure on a particular outcome in both randomized
@@ -960,7 +984,6 @@
     studies. The covariate-adjusted residuals estimator with inverse probability weighting provides an
     efficient alternative for use in randomized and observational settings.
 
-
 - title: 'Opioids in the USA: Disparities in addiction and incarceration'
   slug: opioids-disparities
   authors: Kazemi A, Kennedy C, Silverman G, Reich NG
@@ -975,7 +998,6 @@
     Arianna Kazemi, Connor Kennedy and Gabri Silverman, undergraduate winners of 
     the ASA Public Health Data Challenge, and their advisor Nicholas G. Reich, explore 
     differences in the death, arrest and reoffending rates for opioid users in the USA.
-
 
 - title: 'Reply to Bracher: Scoring probabilistic forecasts to maximize public health interpretability'
   slug: scoring-probabilistic
@@ -1021,7 +1043,6 @@
     effective real-time decision making. We welcome this ongoing public discussion of both scientific and 
     public policy considerations in the evaluation of forecasts.
 
-
 - title: 'N95 Respirators vs Medical Masks for Preventing Influenza Among Health Care Personnel'
   slug: respirators
   authors: Radonovich LJ, Simberkoff MS, Bessesen MT, Brown AC, Cummings DAT, Gaydos CA, Los JG, Krosche AE, Gibert CL, Gorse GJ, Nyquist AC, Reich NG, Rodriguez-Barradas MC, Price CS, Perl TM
@@ -1033,8 +1054,8 @@
   pages: 824-833
   keywords: influenza, cluster-randomization
   abstract: >
-     Clinical studies have been inconclusive about the effectiveness of N95 respirators and medical masks in preventing health care personnel (HCP) from acquiring workplace viral respiratory infections.
-
+     Clinical studies have been inconclusive about the effectiveness of N95 respirators and medical masks in preventing health care personnel (HCP) 
+     from acquiring workplace viral respiratory infections.
 
 - title: 'Technology to advance infectious disease forecasting for outbreak management'
   slug: forcasting
@@ -1051,41 +1072,6 @@
     accelerate the adoption of forecasting among public health practitioners,
     improve epidemic management, save lives, and reduce the economic impact of
     outbreaks.
-
-
-- title: 'Adaptively stacking ensembles for influenza forecasting with incomplete data'
-  slug: adaptive-ensembles
-  authors: McAndrew T, Reich NG 
-  preprint: https://arxiv.org/abs/1908.01675
-  pdf: https://arxiv.org/pdf/1908.01675.pdf
-  year: 2019
-  journal: arXiv
-  doi: https://doi.org/10.1002/sim.9219
-  keywords: forecasting, influenza, flusight 
-  github: tomcm39/adaptively_stacking_ensembles_for_infleunza_forecasting_with_incomplete_data
-  abstract: >
-    Seasonal influenza infects between 10 and 50 million people in the United States every year, 
-    overburdening hospitals during weeks of peak incidence. Named by the CDC as an important 
-    tool to fight the damaging effects of these epidemics, accurate forecasts of influenza 
-    and influenza-like illness (ILI) forewarn public health officials about when, and where, 
-    seasonal influenza outbreaks will hit hardest. Multi-model ensemble forecasts---weighted 
-    combinations of component models---have shown positive results in forecasting. Ensemble 
-    forecasts of influenza outbreaks have been static, training on all past ILI data at the 
-    beginning of a season, generating a set of optimal weights for each model in the ensemble, 
-    and keeping the weights constant. We propose an adaptive ensemble forecast that (i) changes 
-    model weights week-by-week throughout the influenza season, (ii) only needs the current 
-    influenza season's data to make predictions, and (iii) by introducing a prior distribution, 
-    shrinks weights toward the reference equal weighting approach and adjusts for observed ILI 
-    percentages that are subject to future revisions. We investigate the prior's ability to 
-    impact adaptive ensemble performance and, after finding an optimal prior via a cross-validation 
-    approach, compare our adaptive ensemble's performance to equal-weighted and static ensembles. 
-    Applied to forecasts of short-term ILI incidence at the regional and national level in the US, 
-    our adaptive model outperforms a naive equal-weighted ensemble, and has similar or better 
-    performance to the static ensemble, which requires multiple years of training data. Adaptive 
-    ensembles are able to quickly train and forecast during epidemics, and provide a practical 
-    tool to public health officials looking for forecasts that can conform to unique features 
-    of a specific season.
-
 
 - title: 'Using "outbreak science" to strengthen the use of models during epidemics'
   slug: nature-1
@@ -1104,7 +1090,6 @@
      We recommend establishing ‘outbreak science’ as an inter-disciplinary 
      field to improve applied epidemic modeling. 
 
-    
 - title: 'A collaborative multiyear, multimodel assessment of seasonal influenza forecasting in the United States'
   slug: collab-forecasts
   authors: Reich NG, Brooks L, Spencer F, Kandula S, McGowan C, Moore E, Osthus D, Ray E, Tushar A,Yamana T, Biggerstaff M, Johansson MA, Rosenfeld R, and Shaman J
@@ -1133,7 +1118,6 @@
     traditional data sources are needed to improve forecasting accuracy 
     and its integration with real-time public health decision-making.
 
-
 - title: 'Collaborative efforts to forecast seasonal influenza in the United States, 2015–2016'
   slug: flusight-201516
   authors: McGowan C, Biggerstaff M, Johansson M, Apfeldorf K, Ben-Nun M, Brooks L, Convertino M, Erraguntla M, Farrow D, Freeze J, Ghosh S, Hyun S, Kandula S, Lega J, Liu Y, Michaud N, Morita H, Niemi J, Ramakrishnan N, Ray EL, Reich NG, Riley P, Shaman J, Tibshirani R, Vespignani A, Zhang Q, Reed C
@@ -1144,11 +1128,19 @@
   volume: 9(683)
   keywords: forecasting, influenza, flusight
   abstract: >
-    Since 2013, the Centers for Disease Control and Prevention (CDC) has hosted an annual influenza season forecasting challenge. The 2015–2016 challenge consisted of weekly probabilistic forecasts of multiple targets, including fourteen models submitted by eleven teams. Forecast skill was evaluated using a modified logarithmic score. We averaged submitted forecasts into a mean ensemble model and compared them against predictions based on historical trends. Forecast skill was highest for seasonal peak intensity and short-term forecasts, while forecast skill for timing of season onset and peak week was generally low. Higher forecast skill was associated with team participation in previous influenza forecasting challenges and utilization of ensemble forecasting techniques. The mean ensemble consistently performed well and outperformed historical trend predictions. CDC and contributing teams will continue to advance influenza forecasting and work to improve the accuracy and reliability of forecasts to facilitate increased incorporation into public health response efforts.
-
+    Since 2013, the Centers for Disease Control and Prevention (CDC) has hosted an annual influenza season forecasting challenge. 
+    The 2015–2016 challenge consisted of weekly probabilistic forecasts of multiple targets, including fourteen models submitted by eleven teams. 
+    Forecast skill was evaluated using a modified logarithmic score. 
+    We averaged submitted forecasts into a mean ensemble model and compared them against predictions based on historical trends. 
+    Forecast skill was highest for seasonal peak intensity and short-term forecasts, 
+    while forecast skill for timing of season onset and peak week was generally low. 
+    Higher forecast skill was associated with team participation in previous influenza forecasting challenges 
+    and utilization of ensemble forecasting techniques. 
+    The mean ensemble consistently performed well and outperformed historical trend predictions. 
+    CDC and contributing teams will continue to advance influenza forecasting 
+    and work to improve the accuracy and reliability of forecasts to facilitate increased incorporation into public health response efforts.
 
 # 2018
-
 
 - title: 'Prospective forecasts of annual dengue hemorrhagic fever incidence in Thailand, 2010–2014'
   slug: lauer-annual-preds
@@ -1163,7 +1155,6 @@
   github: reichlab/annual-predictions-paper
   abstract: >
     Dengue hemorrhagic fever (DHF), a severe manifestation of dengue viral infection that can cause severe bleeding, organ impairment, and even death, affects between 15,000 and 105,000 people each year in Thailand. While all Thai provinces experience at least one DHF case most years, the distribution of cases shifts regionally from year to year. Accurately forecasting where DHF outbreaks occur before the dengue season could help public health officials prioritize public health activities. We develop statistical models that use biologically plausible covariates, observed by April each year, to forecast the cumulative DHF incidence for the remainder of the year. We perform cross-validation during the training phase (2000–2009) to select the covariates for these models. A parsimonious model based on preseason incidence outperforms the 10-y median for 65% of province-level annual forecasts, reduces the mean absolute error by 19%, and successfully forecasts outbreaks (area under the receiver operating characteristic curve = 0.84) over the testing period (2010–2014). We find that functions of past incidence contribute most strongly to model performance, whereas the importance of environmental covariates varies regionally. This work illustrates that accurate forecasts of dengue risk are possible in a policy-relevant timeframe.
-
 
 - title: 'Prediction of infectious disease epidemics via weighted density ensembles'
   slug: ray-density-ensembles
@@ -1203,7 +1194,6 @@
     models. Ensemble methods offer the potential to deliver more reliable
     predictions to public health decision makers.
 
-
 - title: 'Preprints: An underutilized mechanism to accelerate outbreak science'
   slug: johansson-preprints
   authors: Johansson MA, Reich NG, Meyers LA, Lipsitch M
@@ -1220,7 +1210,6 @@
     Despite the advantages of preprints and the endorsement of journals and funders in the context of outbreaks, less than 5% of Ebola and Zika journal articles were posted as preprints prior to publication in journals.
     With broader adoption by scientists, journals, and funding agencies, preprints can complement peer-reviewed publication and ensure the early, open, and transparent dissemination of science relevant to the prevention and control of disease outbreaks.
 
-
 - title: 'Quantifying the Risk and Cost of Active Monitoring for Infectious Diseases'
   slug: reich-active-monitoring
   authors: Reich NG, Lessler J, Varma JK, Vora NM
@@ -1232,8 +1221,20 @@
   journal: Nat Sci Rep
   keywords: incubation-period, ebola
   abstract: >
-    During outbreaks of deadly emerging pathogens (e.g., Ebola, MERS-CoV) and bioterror threats (e.g., smallpox), actively monitoring potentially infected individuals aims to limit disease transmission and morbidity. Guidance issued by CDC on active monitoring was a cornerstone of its response to the West Africa Ebola outbreak. There are limited data on how to balance the costs and performance of this important public health activity. We present a framework that estimates the risks and costs of specific durations of active monitoring for pathogens of significant public health concern. We analyze data from New York City's Ebola active monitoring program over a 16-month period in 2014-2016. For monitored individuals, we identified unique durations of active monitoring that minimize expected costs for those at “low (but not zero) risk” and “some or high risk”: 21 and 31 days, respectively. Extending our analysis to smallpox and MERS-CoV, we found that the optimal length of active monitoring relative to the median incubation period was reduced compared to Ebola due to less variable incubation periods. Active monitoring can save lives but is expensive. Resources can be most effectively allocated by using exposure-risk categories to modify the duration or intensity of active monitoring.
-
+    During outbreaks of deadly emerging pathogens (e.g., Ebola, MERS-CoV) and bioterror threats (e.g., smallpox), 
+    actively monitoring potentially infected individuals aims to limit disease transmission and morbidity. 
+    Guidance issued by CDC on active monitoring was a cornerstone of its response to the West Africa Ebola outbreak. 
+    There are limited data on how to balance the costs and performance of this important public health activity. 
+    We present a framework that estimates the risks and costs of specific durations of active monitoring 
+    for pathogens of significant public health concern. 
+    We analyze data from New York City's Ebola active monitoring program over a 16-month period in 2014-2016. 
+    For monitored individuals, we identified unique durations of active monitoring that minimize expected costs 
+    for those at “low (but not zero) risk” and “some or high risk”: 21 and 31 days, respectively. 
+    Extending our analysis to smallpox and MERS-CoV, 
+    we found that the optimal length of active monitoring relative to the median incubation period was reduced 
+    compared to Ebola due to less variable incubation periods. 
+    Active monitoring can save lives but is expensive. 
+    Resources can be most effectively allocated by using exposure-risk categories to modify the duration or intensity of active monitoring.
 
 - title: 'Protecting Healthcare Personnel in Outpatient Settings: The Influence of Mandatory Versus Nonmandatory Influenza Vaccination Policies on Workplace Absenteeism During Multiple Respiratory Virus Seasons'
   slug: frederick-absenteeism
@@ -1252,7 +1253,6 @@
     Results: The proportion of participants who received influenza vaccination was lower each year at nonmandatory than at mandatory vaccination sites (odds ratio [OR], 0.09; 95% confidence interval [CI], 0.07–0.11). Among HCP who reported at least 1 sick day, vaccinated HCP had lower symptomatic days absent compared to unvaccinated HCP (OR for 2012–2013 and 2013–2014, 0.82; 95% CI, 0.72–0.93; OR for 2014–2015, 0.81; 95% CI, 0.69–0.95).
     Conclusions: These data suggest that mandatory HCP influenza vaccination policies increase influenza vaccination rates and that HCP symptomatic absenteeism diminishes as rates of influenza vaccination increase. These findings should be considered in formulating HCP influenza vaccination policies.
 
-
 # 2017
 
 - title: 'Infectious Disease Prediction with Kernel Conditional Density Estimation'
@@ -1266,8 +1266,25 @@
   keywords: forecasting, dengue, influenza, flusight
   github: reichlab/article-disease-pred-with-kcde
   abstract: >
-    Creating statistical models that generate accurate predictions of infectious disease incidence over multiple time points is a challenging problem whose solution could benefit public health decision makers. We develop a new approach to this problem using kernel conditional density estimation (KCDE) and copulas. We obtain predictive distributions for incidence in individual weeks using KCDE and tie those distributions together into joint distributions using copulas. This strategy enables us to create predictions for the timing of and incidence in the peak week of the season. Our implementation of KCDE incorporates two novel kernel components: a periodic component that captures seasonality in disease incidence, and a component that allows for a full parameterization of the bandwidth matrix with discrete variables. We demonstrate via simulation that a fully parameterized bandwidth matrix can be beneficial for estimating conditional densities. We apply the method to predicting dengue fever and influenza, and compare to a seasonal autoregressive integrated moving average (SARIMA) model and a previously published generalized linear model for infectious disease incidence known as HHH4. KCDE outperforms the baseline methods for predictions of dengue incidence in individual weeks. KCDE also offers more consistent performance than the baseline models for predictions of incidence in the peak week, and is comparable to the baseline models on the other prediction targets. Using the periodic kernel function led to better predictions of incidence. Our approach and extensions of it could yield improved predictions for public health decision makers, particularly in diseases with heterogeneous seasonal dynamics such as dengue fever. 
-    
+    Creating statistical models that generate accurate predictions of infectious disease incidence over multiple time points 
+    is a challenging problem whose solution could benefit public health decision makers. 
+    We develop a new approach to this problem using kernel conditional density estimation (KCDE) and copulas. 
+    We obtain predictive distributions for incidence in individual weeks using KCDE 
+    and tie those distributions together into joint distributions using copulas. 
+    This strategy enables us to create predictions for the timing of and incidence in the peak week of the season. 
+    Our implementation of KCDE incorporates two novel kernel components: 
+    a periodic component that captures seasonality in disease incidence, 
+    and a component that allows for a full parameterization of the bandwidth matrix with discrete variables. 
+    We demonstrate via simulation that a fully parameterized bandwidth matrix can be beneficial for estimating conditional densities. 
+    We apply the method to predicting dengue fever and influenza, 
+    and compare to a seasonal autoregressive integrated moving average (SARIMA) model 
+    and a previously published generalized linear model for infectious disease incidence known as HHH4. 
+    KCDE outperforms the baseline methods for predictions of dengue incidence in individual weeks. 
+    KCDE also offers more consistent performance than the baseline models for predictions of incidence in the peak week, 
+    and is comparable to the baseline models on the other prediction targets. 
+    Using the periodic kernel function led to better predictions of incidence. 
+    Our approach and extensions of it could yield improved predictions for public health decision makers, 
+    particularly in diseases with heterogeneous seasonal dynamics such as dengue fever. 
     
 - title: 'flusight: interactive visualizations for infectious disease forecasts'
   authors: Tushar A, Reich NG
@@ -1278,8 +1295,22 @@
   volume: 2
   doi: 10.21105/joss.00231
   abstract: >
-    The rapid emergence of infectious disease outbreaks from both new and known pathogens remains a critical concern of health officials worldwide. Improving communication between teams of scientific researchers who assemble forecasts of outbreaks before and during epidemics, and policy makers who could integrate these data into decicion-making has been identified as a critical area for innovation.(Chretien et al. 2015) In an attempt to address this issue, we have developed flusight, a tool for visualizing infectious disease forecasts. It provides an interactive interface for real-time comparison, exploration, and evaluation of infectious disease forecast models over time and geographic regions. A version is live here, with forecasts of influenza in the US that are updated weekly during the US influenza season. Flusight uses D3 (Bostock 2016) for generating visualizations from a single static file that summarizes the entities to be visualized (such as, predicted and actual weekly influenza incidence, predicted week with the peak incidence for the season, etc...). It is written to keep hosting overhead minimal and pre-generates the data file by parsing model predictions and live influenza data from delphi-API (undefx 2016). All content is bundled into a static web page. The data collection step can be replaced to visualize data and forecasts from custom sources instead of the ones used in the current repository. This allows future users to plug in similar time-series-based disease prediction models for visualization. This application has potential to be widely used by infectious disease forecasters who generate forecasts in real-time. In this way, we hope that flusight will facilitate dissemination, comparison, and standardized evaluation of outbreak predictions.
-
+    The rapid emergence of infectious disease outbreaks from both new and known pathogens remains a critical concern of health officials worldwide. 
+    Improving communication between teams of scientific researchers who assemble forecasts of outbreaks before and during epidemics, 
+    and policy makers who could integrate these data into decicion-making has been identified as a critical area for innovation.(Chretien et al. 2015) 
+    In an attempt to address this issue, we have developed flusight, a tool for visualizing infectious disease forecasts. 
+    It provides an interactive interface for real-time comparison, exploration, 
+    and evaluation of infectious disease forecast models over time and geographic regions. 
+    A version is live here, with forecasts of influenza in the US that are updated weekly during the US influenza season. 
+    Flusight uses D3 (Bostock 2016) for generating visualizations from a single static file that summarizes the entities to be visualized 
+    (such as, predicted and actual weekly influenza incidence, predicted week with the peak incidence for the season, etc...). 
+    It is written to keep hosting overhead minimal and pre-generates the data file by parsing model predictions 
+    and live influenza data from delphi-API (undefx 2016). 
+    All content is bundled into a static web page. 
+    The data collection step can be replaced to visualize data and forecasts from custom sources instead of the ones used in the current repository. 
+    This allows future users to plug in similar time-series-based disease prediction models for visualization. 
+    This application has potential to be widely used by infectious disease forecasters who generate forecasts in real-time. 
+    In this way, we hope that flusight will facilitate dissemination, comparison, and standardized evaluation of outbreak predictions.
 
 - title: "Enriching Students' Conceptual Understanding of Confidence Intervals: An Interactive Trivia-based Classroom Activity"
   slug: wang-confidence
@@ -1290,11 +1321,19 @@
   keywords: education
   journal: Am Stat
   abstract: >
-    Confidence intervals provide a way to determine plausible values for a population parameter. They are omnipresent in research articles involving statistical analyses. Appropriately, a key statistical literacy learning objective is the ability to interpret and understand confidence intervals in a wide range of settings. As instructors, we devote a considerable amount of time and effort to ensure that students master this topic in introductory courses and beyond. Yet, studies continue to find that confidence intervals are commonly misinterpreted and that even experts have trouble calibrating their individual confidence levels. In this article, we present a ten-minute trivia game-based activity that addresses these misconceptions by exposing students to confidence intervals from a personal perspective. We describe how the activity can be integrated into a statistics course as a one-time activity or with repetition at intervals throughout a course, discuss results of using the activity in class, and present possible extensions.
-
+    Confidence intervals provide a way to determine plausible values for a population parameter. 
+    They are omnipresent in research articles involving statistical analyses. 
+    Appropriately, a key statistical literacy learning objective is the ability to interpret and understand confidence intervals 
+    in a wide range of settings. 
+    As instructors, we devote a considerable amount of time and effort to ensure that students master this topic in introductory courses and beyond. 
+    Yet, studies continue to find that confidence intervals are commonly misinterpreted 
+    and that even experts have trouble calibrating their individual confidence levels. 
+    In this article, we present a ten-minute trivia game-based activity that addresses these misconceptions 
+    by exposing students to confidence intervals from a personal perspective. 
+    We describe how the activity can be integrated into a statistics course as a one-time activity 
+    or with repetition at intervals throughout a course, discuss results of using the activity in class, and present possible extensions.
 
 # 2016
-
 
 - title: 'Challenges in Real-Time Prediction of Infectious Disease: A Case Study of Dengue in Thailand'
   doi: 10.1371/journal.pntd.0004761
@@ -1328,7 +1367,6 @@
     implementation of real-time predictions in the context of public health
     decision making.
 
-    
 - title: 'Evaluating the performance of infectious disease forecasts: A comparison of climate-driven and seasonal dengue forecasts for Mexico'
   authors: Johansson MA, Reich NG, Hota A, Brownstein JS, Santillana M
   year: 2016
@@ -1339,7 +1377,6 @@
   volume: 6
   abstract: >
     Dengue viruses, which infect millions of people per year worldwide, cause large epidemics that strain healthcare systems. Despite diverse efforts to develop forecasting tools including autoregressive time series, climate-driven statistical, and mechanistic biological models, little work has been done to understand the contribution of different components to improved prediction. We developed a framework to assess and compare dengue forecasts produced from different types of models and evaluated the performance of seasonal autoregressive models with and without climate variables for forecasting dengue incidence in Mexico. Climate data did not significantly improve the predictive power of seasonal autoregressive models. Short-term and seasonal autocorrelation were key to improving short-term and long-term forecasts, respectively. Seasonal autoregressive models captured a substantial amount of dengue variability, but better models are needed to improve dengue forecasting. This framework contributes to the sparse literature of infectious disease prediction model evaluation, using state-of-the-art validation techniques such as out-of-sample testing and comparison to an appropriate reference model.
-
 
 - title: 'Case Study in Evaluating Time Series Prediction Models Using the Relative Mean Absolute Error'
   doi: 10.1080/00031305.2016.1148631
@@ -1370,7 +1407,6 @@
     practice, and underscores the practical advantages of using relative
     performance metrics when evaluating predictions.
 
-
 - title: 'Time to Key Events in the Course of Zika Infection and their Implications for Surveil- lance: A Systematic Review and Pooled Analysis'
   authors: Lessler J, Ott CT, Carcelen AC, Konikoff JM, Williamson J, Bi Q, Reich NG, Cummings DAT, Kucirka LM, Chaisson LH
   slug: lessler-zika-key-events
@@ -1382,7 +1418,6 @@
   doi: 10.2471/BLT.16.174540
   abstract: >
     OBJECTIVE: To estimate the timing of key events in the natural history of Zika virus infection. METHODS: In February 2016, we searched PubMed, Scopus and the Web of Science for publications containing the term Zika. By pooling data, we estimated the incubation period, the time to seroconversion and the duration of viral shedding. We estimated the risk of Zika virus contaminated blood donations. FINDINGS: We identified 20 articles on 25 patients with Zika virus infection. The median incubation period for the infection was estimated to be 5.9 days (95% credible interval, CrI: 4.4-7.6), with 95% of people who developed symptoms doing so within 11.2 days (95% CrI: 7.6-18.0) after infection. On average, seroconversion occurred 9.1 days (95% CrI: 7.0-11.6) after infection. The virus was detectable in blood for 9.9 days (95% CrI: 6.9-21.4) on average. Without screening, the estimated risk that a blood donation would come from an infected individual increased by approximately 1 in 10 000 for every 1 per 100 000 person-days increase in the incidence of Zika virus infection. Symptom-based screening may reduce this rate by 7% (relative risk, RR: 0.93; 95% CrI: 0.89-0.99) and antibody screening, by 29% (RR: 0.71; 95% CrI: 0.28-0.88). CONCLUSION: Neither symptom- nor antibody-based screening for Zika virus infection substantially reduced the risk that blood donations would be contaminated by the virus. Polymerase chain reaction testing should be considered for identifying blood safe for use in pregnant women in high-incidence areas.
-
 
 - title: 'The Respiratory Protection Effectiveness Clinical Trial (ResPECT): A Cluster-Randomized Comparison of Respirator and Medical Mask Effectiveness against Respiratory Infections in Healthcare Personnel'
   authors: Radonovich LJ, Bessesen M, Cummings DAT, Eagan A, Gaydos C, Gibert C, Gorse G, Nyquist C, Reich NG, Rodriguez-Barradas M, Savor-Price C, Shaffer R, Simberkoff M, Perl TM
@@ -1396,9 +1431,7 @@
   abstract: >
     Although N95 filtering facepiece respirators and medical masks are commonly used for protection against respiratory infections in healthcare settings, more clinical evidence is needed to understand the optimal settings and exposure circumstances for healthcare personnel to use these devices. A lack of clinically germane research has led to equivocal, and occasionally conflicting, healthcare respiratory protection recommendations from public health organizations, professional societies, and experts. The Respiratory Protection Effectiveness Clinical Trial (ResPECT) is a prospective comparison of respiratory protective equipment to be conducted at multiple U.S. study sites. Healthcare personnel who work in outpatient settings will be cluster-randomized to wear N95 respirators or medical masks for protection against infections during respiratory virus season. Outcome measures will include laboratory-confirmed viral respiratory infections, acute respiratory illness, and influenza-like illness. Participant exposures to patients, coworkers, and others with symptoms and signs of respiratory infection, both within and beyond the workplace, will be recorded in daily diaries. Adherence to study protocols will be monitored by the study team. ResPECT is designed to better understand the extent to which N95s and MMs reduce clinical illness among healthcare personnel. A fully successful study would produce clinically relevant results that help clinician-leaders make reasoned decisions about protection of healthcare personnel against occupationally acquired respiratory infections and prevention of spread within healthcare systems.
 
-
 # 2015
-
 
 - title: 'Triggering Interventions for Influenza: The ALERT Algorithm'
   doi: 10.1093/cid/ciu749
@@ -1433,7 +1466,6 @@
     This new algorithm provides valuable information that can impact infection
     prevention recommendations, public health practice, and healthcare delivery.
 
-
 - title: 'The Effect of Cluster Size Variability on Statistical Power in Cluster-Randomized Trials'
   slug: lauer-cluster-power
   doi: 10.1371/journal.pone.0119074
@@ -1446,9 +1478,7 @@
   abstract: >
     The frequency of cluster-randomized trials (CRTs) in peer-reviewed literature has increased exponentially over the past two decades. CRTs are a valuable tool for studying interventions that cannot be effectively implemented or randomized at the individual level. However, some aspects of the design and analysis of data from CRTs are more complex than those for individually randomized controlled trials. One of the key components to designing a successful CRT is calculating the proper sample size (i.e. number of clusters) needed to attain an acceptable level of statistical power. In order to do this, a researcher must make assumptions about the value of several variables, including a fixed mean cluster size. In practice, cluster size can often vary dramatically. Few studies account for the effect of cluster size variation when assessing the statistical power for a given trial. We conducted a simulation study to investigate how the statistical power of CRTs changes with variable cluster sizes. In general, we observed that increases in cluster size variability lead to a decrease in power.
  
-
 # 2013
-
 
 - title: 'Interactions between serotypes of dengue highlight epidemiological impact of cross-immunity'
   doi: 10.1098/rsif.2013.0414
@@ -1479,9 +1509,7 @@
     modelling efforts, and our understanding of evolutionary pressures in
     multi-strain disease systems.
 
-
 #2012
-
 
 - title: 'Empirical power and sample size calculations for cluster-randomized and cluster-randomized crossover studies'
   doi: 10.1371/journal.pone.0035564
@@ -1515,7 +1543,6 @@
     clinical trials. More research is needed to develop standardized and
     recommended methodology for cluster-randomized crossover studies.
 
-
 - title: 'Estimating Absolute and Relative Case Fatality Ratios from Infectious Disease Surveillance Data'
   slug: case-fatality-ratio
   authors: Reich NG, Lessler J, Cummings DAT, Brookmeyer R
@@ -1545,9 +1572,7 @@
     identify vulnerable subpopulations early in an outbreak of an emerging pathogen such as 
     pandemic influenza.
 
-
 #2009
-
 
 - title: 'Estimating incubation period distributions with coarse data.'
   slug: reich-estimate-incubation
