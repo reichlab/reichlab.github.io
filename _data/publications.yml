@@ -1,5 +1,23 @@
+#2024
+
+- title: 'Optimizing the number of models included in outbreak forecasting ensembles'
+  slug: ensemble-sizes
+  authors: Fox SJ, Kim M, Meyers LA, Reich NG, Ray EL
+  preprint: https://www.medrxiv.org/content/10.1101/2024.01.05.24300909v1
+  #pdf: https://www.medrxiv.org/content/10.1101/2024.01.05.24300909v1.full.pdf [update when published]
+  year: 2024
+  journal: medRxiv
+  #doi: 10.1101/2024.01.05.24300909 [update when published]
+  keywords: forecasting, covid-19, influenza
+  abstract: >
+    Based on historical influenza and COVID-19 forecasts, 
+    we quantify the relationship between the number of models in an ensemble and its accuracy 
+    and introduce an ensemble approach that can outperform the current standard. 
+    Our results can assist collaborative forecasting efforts by identifying target participation rates 
+    and improving ensemble forecast performance.
+
 # 2023  
-  
+
 - title: 'Evaluating infectious disease forecasts with allocation scoring rules'
   slug: alloscore
   authors: Gerding A, Reich NG, Rogers B, Ray EL
@@ -929,7 +947,7 @@
 
 - title: 'An open challenge to advance probabilistic forecasting for dengue epidemics'
   slug: challenge-probabilistic
-  authors: Johansson, ... Reich NG, Cummings DAT, Lauer SA, ... Brown AC, ... Chretien JP
+  authors: Johansson MA, ... Reich NG, Cummings DAT, Lauer SA, ... Brown AC, ... Chretien JP
   pdf: https://www.pnas.org/content/pnas/early/2019/11/05/1909865116.full.pdf
   year: 2019
   volume: 116(48)
