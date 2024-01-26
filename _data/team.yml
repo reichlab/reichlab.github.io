@@ -148,8 +148,23 @@
     Melissa completed an MS in global health at King\'s College London and spent four years as manager of the European Cholangiocarcinoma Network.
     In her free time, Melissa enjoys travelling and hiking. 
   image: /images/people/melissa.jpg
-  links: []    
-      
+  links: []
+
+- name: Becky Sweger
+  role: Research Software Engineer
+  description: |
+    Becky has been a technical leader and software engineer for more than twenty-five years. After completing an MS in Information Systems at 
+    Drexel University, she began specializing in data modeling and data-driven applications and has experience in numerous domains, including 
+    healthcare, government, and higher education. Becky enjoys skeeball, spending time with her family, and reading science fiction.
+  image: /images/people/becky.jpg
+  links:
+    - name: flaticon-laptop-1
+      url: "https://beckysweger.com"
+    - name: flaticon-github-1
+      url: "https://github.com/bsweger"
+    - name: flaticon-linkedin-1
+      url: "https://www.linkedin.com/in/beckysweger/"
+
 # Alumni Section
 
 - name: Nutcha Wattanachit
