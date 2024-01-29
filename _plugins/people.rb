@@ -7,6 +7,8 @@ module People
   class PeopleGen < Jekyll::Generator
     def generate(site)
       team_data = YAML.load_file File.join('_data', 'team.yml')
+      # randomize the array of team members
+      team_data.shuffle!
 
       people = site.pages.detect { |page| page.name == 'people.html' }
       people.data['members'] = team_data.map { |tm| parse_member_entry(tm, site.config['baseurl']) }
