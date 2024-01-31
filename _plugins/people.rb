@@ -7,15 +7,13 @@ module People
   class PeopleGen < Jekyll::Generator
     def generate(site)
       team_data = YAML.load_file File.join('_data', 'team.yml')
-      # randomize the array of team members
-      team_data.shuffle!
+      # split alumni and current members into separate arrays
+      alumni = team_data.select {|p| p.fetch('type', '').downcase == 'alumni'}
+      current_members = team_data - alumni
 
       people = site.pages.detect { |page| page.name == 'people.html' }
-      people.data['members'] = team_data.map { |tm| parse_member_entry(tm, site.config['baseurl']) }
-      uniq_types = people.data['members'].map { |tm| tm['type'] }.uniq.sort
-      # Keep 'default' at top
-      uniq_types.insert(0, uniq_types.delete_at(uniq_types.index('default')))
-      people.data['types'] = uniq_types
+      people.data['current_members'] = current_members.shuffle!
+      people.data['alumni'] = alumni
     end
 
     def get_full_url(url, base)
