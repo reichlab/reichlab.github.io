@@ -32,6 +32,18 @@
     - name: flaticon-laptop-1
       url: "https://www.evanlray.com"
 
+  - name: Benjamin Rogers
+  role: Research Faculty
+  description: |
+    Ben is a Research Assistant Professor and Lecturer of Biostatistics at UMass-Amherst. 
+    He received his PhD in Biostatistics from UCLA where he developed Bayesian models for
+    medical visit and substance use data. He enjoys getting outdoors (skiing, biking, hiking),
+    cooking, reading fiction and spending time with his family. 
+  image: /images/people/Ben.jpg
+  links:
+    - name: ai ai-google-scholar-square ai-2x
+      url: "https://scholar.google.com/citations?hl=en&user=NP8nF4MAAAAJ"
+
 - name: Dongah Kim
   role: Postdoctoral Researcher
   description: |
