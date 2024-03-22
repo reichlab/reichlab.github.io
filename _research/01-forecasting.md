@@ -10,6 +10,8 @@ projects:
   - reichlab/KCDE
   - reichlab/2017-2018-cdc-flu-contest
   - reichlab/dengue-thailand-2014-forecasts
+  - aaronger/utility-eval-papers
+  - reichlab/covid-hosp-forecasts-with-cases
 publications: forecasting # Optional tag for publications page
 ---
 
