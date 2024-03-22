@@ -44,16 +44,6 @@
     - name: ai ai-google-scholar-square ai-2x
       url: "https://scholar.google.com/citations?hl=en&user=NP8nF4MAAAAJ"
 
-- name: Dongah Kim
-  role: Postdoctoral Researcher
-  description: |
-    Dongah is a postdoctoral researcher of Biostatistics at UMass-Amherst.
-    She received her PhD in statistics from UMass-Amherst, developing
-    methods to improve inference from dependent network data. 
-  image: /images/people/Dongah.jpeg
-  links:
-    - name: ai ai-google-scholar-square ai-2x
-      url: "https://scholar.google.com/citations?user=Q_-NaWsAAAAJ&hl=en&oi=ao"
   
 
 
@@ -179,6 +169,16 @@
 
 # Alumni Section
 
+- name: Dongah Kim
+  role: Postdoctoral Researcher (2022-2024)
+  description: |
+
+  type: Alumni
+  image: /images/people/Dongah.jpeg
+  links: 
+      - name: alumni_link
+        url: "https://scholar.google.com/citations?user=Q_-NaWsAAAAJ&hl=en&oi=ao"
+      
 - name: Nutcha Wattanachit
   role: PhD Student (2018-2023)
   description: |
