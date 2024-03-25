@@ -3,7 +3,7 @@ title: Infrastructure for Modeling Hubs
 image: /images/research/modeling-hubs.png
 projects:
   -  Infectious-Disease-Modeling-Hubs/hubDocs
-publications: hubs # Optional tag for publications page
+publications: # Optional tag for publications page
 ---
 
 The hubverse is a collection of open-source software and data tools that enables collaborative modeling exercises. 
