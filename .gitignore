@@ -6,3 +6,6 @@
 *.Rproj
 *.Rhistory
 .DS_Store
+
+.envrc
+.env
