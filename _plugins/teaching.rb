@@ -8,7 +8,7 @@ module Teaching
     def generate(site)
       repo_data = {}
       data_file = File.join('_data', 'repositories.yml')
-      if File.exists? data_file
+      if File.exist? data_file
         repo_data = YAML.load_file(data_file)
       end
       teaching_files = Dir.glob(File.join('_teaching', '*.md'))
