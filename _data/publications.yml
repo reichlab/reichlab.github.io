@@ -151,10 +151,10 @@
   slug: covid_case_challenges
   authors: Lopez V, Cramer EY, Pagano R, ... Biggerstaff M, Reich NG, Johansson MA
   preprint: https://www.medrxiv.org/content/10.1101/2023.05.30.23290732v1
-  #pdf: https://www.medrxiv.org/content/10.1101/2023.05.30.23290732v1.full.pdf [update when published]
+  pdf: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011200
   year: 2023
-  journal: medRxiv
-  #doi: 10.1101/2023.05.30.23290732 [update when published]
+  journal: PLOS Computational Biology
+  doi: 10.1371/journal.pcbi.1011200
   keywords: forecasting, covid-19
   abstract: >
     During the COVID-19 pandemic, forecasting COVID-19 trends to support planning and response was a priority for scientists and decision makers 
