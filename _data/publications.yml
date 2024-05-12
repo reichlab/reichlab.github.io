@@ -16,6 +16,33 @@
     Our results can assist collaborative forecasting efforts by identifying target participation rates 
     and improving ensemble forecast performance.
 
+- title: 'Challenges of COVID-19 Case Forecasting in the US, 2020-2021'
+  slug: covid_case_challenges
+  authors: Lopez V, Cramer EY, Pagano R, ... Biggerstaff M, Reich NG, Johansson MA
+  preprint: https://www.medrxiv.org/content/10.1101/2023.05.30.23290732v1
+  pdf: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011200
+  year: 2024
+  journal: PLOS Computational Biology
+  doi: 10.1371/journal.pcbi.1011200
+  keywords: forecasting, covid-19
+  abstract: >
+    During the COVID-19 pandemic, forecasting COVID-19 trends to support planning and response was a priority for scientists and decision makers 
+    alike. In the United States, COVID-19 forecasting was coordinated by a large group of universities, companies, and government entities led by 
+    the Centers for Disease Control and Prevention and the US COVID-19 Forecast Hub (https://covid19forecasthub.org). We evaluated approximately 
+    9.7 million forecasts of weekly state-level COVID-19 cases for predictions 1-4 weeks into the future submitted by 24 teams from August 2020 
+    to December 2021. We assessed coverage of central prediction intervals and weighted interval scores (WIS), adjusting for missing forecasts 
+    relative to a baseline forecast, and used a Gaussian generalized estimating equation (GEE) model to evaluate differences in skill across 
+    epidemic phases that were defined by the effective reproduction number. Overall, we found high variation in skill across individual models, 
+    with ensemble-based forecasts outperforming other approaches. Forecast skill relative to the baseline was generally higher for larger 
+    jurisdictions (e.g., states compared to counties). Over time, forecasts generally performed worst in periods of rapid changes in reported 
+    cases (either in increasing or decreasing epidemic phases) with 95% prediction interval coverage dropping below 50% during the growth phases 
+    of the winter 2020, Delta, and Omicron waves. Ideally, case forecasts could serve as a leading indicator of changes in transmission dynamics. 
+    However, while most COVID-19 case forecasts outperformed a naïve baseline model, even the most accurate case forecasts were unreliable in key 
+    phases. Further research could improve forecasts of leading indicators, like COVID-19 cases, by leveraging additional real-time data, 
+    addressing performance across phases, improving the characterization of forecast confidence, and ensuring that forecasts were coherent across 
+    spatial scales. In the meantime, it is critical for forecast users to appreciate current limitations and use a broad set of indicators to 
+    inform pandemic-related decision making.
+    
 # 2023  
 
 - title: 'Evaluating infectious disease forecasts with allocation scoring rules'
@@ -95,7 +122,6 @@
     probabilistic forecast scoring measures using MechBayes when compared to a baseline model. We show that MechBayes ranks as one of the top models 
     out of those submitted to the COVID-19 Forecast Hub. Finally, we demonstrate that MechBayes performs significantly better than the classical SEIR model.
 
-
 - title: 'Mixture distributions for probabilistic forecasts of disease outbreaks'
   slug: mix-distrib
   authors: Wadsworth S, Niemi J, Reich NG
@@ -146,33 +172,6 @@
     or beta mixture methods' modest under-prediction across all targets and seasons. 
     Combination techniques that explicitly adjust for known calibration issues in linear pooling should be considered 
     to improve probabilistic scores in outbreak settings.
-
-- title: 'Challenges of COVID-19 Case Forecasting in the US, 2020-2021'
-  slug: covid_case_challenges
-  authors: Lopez V, Cramer EY, Pagano R, ... Biggerstaff M, Reich NG, Johansson MA
-  preprint: https://www.medrxiv.org/content/10.1101/2023.05.30.23290732v1
-  pdf: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011200
-  year: 2023
-  journal: PLOS Computational Biology
-  doi: 10.1371/journal.pcbi.1011200
-  keywords: forecasting, covid-19
-  abstract: >
-    During the COVID-19 pandemic, forecasting COVID-19 trends to support planning and response was a priority for scientists and decision makers 
-    alike. In the United States, COVID-19 forecasting was coordinated by a large group of universities, companies, and government entities led by 
-    the Centers for Disease Control and Prevention and the US COVID-19 Forecast Hub (https://covid19forecasthub.org). We evaluated approximately 
-    9.7 million forecasts of weekly state-level COVID-19 cases for predictions 1-4 weeks into the future submitted by 24 teams from August 2020 
-    to December 2021. We assessed coverage of central prediction intervals and weighted interval scores (WIS), adjusting for missing forecasts 
-    relative to a baseline forecast, and used a Gaussian generalized estimating equation (GEE) model to evaluate differences in skill across 
-    epidemic phases that were defined by the effective reproduction number. Overall, we found high variation in skill across individual models, 
-    with ensemble-based forecasts outperforming other approaches. Forecast skill relative to the baseline was generally higher for larger 
-    jurisdictions (e.g., states compared to counties). Over time, forecasts generally performed worst in periods of rapid changes in reported 
-    cases (either in increasing or decreasing epidemic phases) with 95% prediction interval coverage dropping below 50% during the growth phases 
-    of the winter 2020, Delta, and Omicron waves. Ideally, case forecasts could serve as a leading indicator of changes in transmission dynamics. 
-    However, while most COVID-19 case forecasts outperformed a naïve baseline model, even the most accurate case forecasts were unreliable in key 
-    phases. Further research could improve forecasts of leading indicators, like COVID-19 cases, by leveraging additional real-time data, 
-    addressing performance across phases, improving the characterization of forecast confidence, and ensuring that forecasts were coherent across 
-    spatial scales. In the meantime, it is critical for forecast users to appreciate current limitations and use a broad set of indicators to 
-    inform pandemic-related decision making.
 
 - title: 'Predictive performance of multi-model ensemble forecasts of COVID-19 across European nations'
   slug: euro-evals
