@@ -2,7 +2,7 @@
 title: Infrastructure for Modeling Hubs
 image: /images/research/modeling-hubs.png
 projects:
-  -  Infectious-Disease-Modeling-Hubs/hubDocs
+  -  hubverse-org/hubDocs
 publications: # Optional tag for publications page
 ---
 
