@@ -29,7 +29,7 @@ module Research
             end
           end
         }
-        if fm.key? 'publications'
+        if fm.key? 'publications' && !fm['publications'].nil? && !fm['publications'].empty?
           # Create hash url for publication page
           data['publications'] = fm['publications'].split(',').map { |kw| kw.downcase.strip }
           data['publications'] = 'keywords=' + data['publications'].join(',')
