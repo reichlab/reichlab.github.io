@@ -1,5 +1,21 @@
 # 2024
 
+- title: 'hubEnsembles: Ensembling Methods in R'
+  slug: hubEnsembles
+  authors: Shandross L, Howerton E, Contamin L, Hochheiser H, Krystalli A, Consortium of Infectious Disease Modeling Hubs, Reich NG, Ray EL
+  preprint: https://www.medrxiv.org/content/10.1101/2024.06.24.24309416v1
+  #pdf: https://www.medrxiv.org/content/10.1101/2024.06.24.24309416v1.full-text [update when published]
+  year: 2024
+  journal: medRxiv
+  #doi: 10.1101/2024.06.24.24309416 [update when published]
+  keywords: ensemble, R
+  abstract: >
+    Combining predictions from multiple models into an ensemble is a widely used practice across many fields with demonstrated
+    performance benefits. The R package hubEnsembles provides a flexible framework for ensembling various types of predictions, including
+    point estimates and probabilistic predictions. A range of common methods for generating ensembles are supported, including weighted
+    averages, quantile averages, and linear pools. The hubEnsembles package fits within a broader framework of open-source software and
+    data tools called the “hubverse”, which facilitates the development and management of collaborative modelling exercises.
+    
 - title: 'Optimizing the number of models included in outbreak forecasting ensembles'
   slug: ensemble-sizes
   authors: Fox SJ, Kim M, Meyers LA, Reich NG, Ray EL
