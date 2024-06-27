@@ -8,7 +8,7 @@
   year: 2024
   journal: medRxiv
   #doi: 10.1101/2024.06.24.24309416 [update when published]
-  keywords: ensemble, R
+  keywords: forecasting, software
   abstract: >
     Combining predictions from multiple models into an ensemble is a widely used practice across many fields with demonstrated
     performance benefits. The R package hubEnsembles provides a flexible framework for ensembling various types of predictions, including
