@@ -3,6 +3,9 @@ title: Infrastructure for Modeling Hubs
 image: /images/research/modeling-hubs.png
 projects:
   -  hubverse-org/hubDocs
+  -  hubverse-org/hubverse
+  -  hubverse-org/hubData
+  -  hubverse-org/hubEnsembles
 publications: # Optional tag for publications page
 ---
 
