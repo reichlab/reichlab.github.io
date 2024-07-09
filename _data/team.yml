@@ -89,6 +89,14 @@
     and clinical trial sponsors. He enjoys playing tennis and skiing in his free time.
   image: /images/people/Doug.jpg
   links: []
+- name: Yujie Gong
+  role: Undergrads student
+  description: |
+    Yujie is an undergraduate student majoring in Statistical & Data Science and Psychology. Yujie is interested 
+    in pursuing a further degree in the area of biostatistics and enthusiastic about data modeling. Outside of 
+    studying, Yujie enjoys music and traveling. 
+image: /images/people/yujie.jpg
+links: []
 # Staff section
 
 - name: Matthew Cornell
