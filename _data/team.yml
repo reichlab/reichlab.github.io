@@ -176,11 +176,11 @@
   image: /images/people/zhian.jpg
   links:
     - name: flaticon-laptop-1
-      url: "https://beckysweger.com"
+      url: "https://zkamvar.netlify.app"
     - name: flaticon-github-1
-      url: "https://github.com/bsweger"
+      url: "https://github.com/zkamvar"
     - name: flaticon-linkedin-1
-      url: "https://www.linkedin.com/in/beckysweger/"
+      url: "https://www.linkedin.com/in/zkamvar/"
 
 # Alumni Section
 
