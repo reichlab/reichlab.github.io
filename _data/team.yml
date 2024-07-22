@@ -167,6 +167,21 @@
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/beckysweger/"
 
+- name: "Zhian N. Kamvar"
+  role: "Community Engineer"
+  description: |
+    Zhian is a research software engineer and recovering bioinformatician with a strong passion for creating user-friendly and sensible computational tools for research.
+    He has a PhD in Botany and Plant Pathology from Oregon State University and has published research software in the realms of plant pathology, epidemiology, web publication, and reproducible research.
+    He lives in Portland, Oregon with his partner and cat and enjoys cats, baking, reading, bikes, and bad SF/horror (though not all at the same time, because that can get difficult to balance on a bicycle).
+  image: /images/people/zhian.jpg
+  links:
+    - name: flaticon-laptop-1
+      url: "https://zkamvar.netlify.app"
+    - name: flaticon-github-1
+      url: "https://github.com/zkamvar"
+    - name: flaticon-linkedin-1
+      url: "https://www.linkedin.com/in/zkamvar/"
+
 # Alumni Section
 
 - name: Dongah Kim
