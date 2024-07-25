@@ -1,5 +1,28 @@
 # 2024
 
+- title: 'Infectious disease surveillance needs for the United States: lessons from Covid-19'
+  slug: id_surveillance_needs
+  authors: Lipsitch M, Bassett MT, Brownstein JS, ... Reich NG, ... Truelove S, Varma JK, Grad YH
+  preprint: https://arxiv.org/abs/2311.13724
+  pdf: https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2024.1408193/full
+  year: 2024
+  volume: 12
+  pages: 1408193
+  journal: Frontiers in Public Health
+  doi: 10.3389/fpubh.2024.1408193
+  keywords: covid-19
+  abstract: >
+    The COVID-19 pandemic has highlighted the need to upgrade systems for infectious disease surveillance and 
+    forecasting and modeling of the spread of infection, both of which inform evidence-based public health 
+    guidance and policies. Here, we discuss requirements for an effective surveillance system to support 
+    decision making during a pandemic, drawing on the lessons of COVID-19 in the U.S., while looking to 
+    jurisdictions in the U.S. and beyond to learn lessons about the value of specific data types. In this 
+    report, we define the range of decisions for which surveillance data are required, the data elements 
+    needed to inform these decisions and to calibrate inputs and outputs of transmission-dynamic models, and 
+    the types of data needed to inform decisions by state, territorial, local, and tribal health authorities. 
+    We define actions needed to ensure that such data will be available and consider the contribution of such 
+    efforts to improving health equity.
+
 - title: 'hubEnsembles: Ensembling Methods in R'
   slug: hubEnsembles
   authors: Shandross L, Howerton E, Contamin L, Hochheiser H, Krystalli A, Consortium of Infectious Disease Modeling Hubs, Reich NG, Ray EL
