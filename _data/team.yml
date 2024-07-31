@@ -64,7 +64,13 @@
     He is especially interested in how the public health needs of populations with low social or political visibility
     should inform forecasting and risk assessment methodologies.
   image: /images/people/aaron.jpg
-  links: []
+  links:
+    - name: flaticon-laptop-1
+      url: "https://aaronger.github.io"
+    - name: flaticon-github-1
+      url: "https://github.com/aaronger"
+    - name: flaticon-linkedin-1
+      url: "https://www.linkedin.com/in/aaron-gerding-72338949"
 
 - name: Álvaro J. Castro Rivadeneira
   role: PhD Student
