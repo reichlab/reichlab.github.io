@@ -1,5 +1,35 @@
 # 2024
 
+- title: 'Flusion: Integrating multiple data sources for accurate influenza predictions'
+  slug: flusion
+  authors: Ray EL, Wang Y, Wolfinger RD, Reich NG
+  preprint: https://arxiv.org/abs/2407.19054
+  #pdf: https://arxiv.org/pdf/2407.19054 [update when published]
+  year: 2024
+  journal: arXiv
+  #doi: 10.48550/arXiv.2407.19054 [update when published]
+  keywords: forecasting, influenza, flusight
+  abstract: >
+    Over the last ten years, the US Centers for Disease Control and Prevention (CDC) has organized an 
+    annual influenza forecasting challenge with the motivation that accurate probabilistic forecasts 
+    could improve situational awareness and yield more effective public health actions. Starting with 
+    the 2021/22 influenza season, the forecasting targets for this challenge have been based on hospital 
+    admissions reported in the CDC's National Healthcare Safety Network (NHSN) surveillance system. 
+    Reporting of influenza hospital admissions through NHSN began within the last few years, and as such 
+    only a limited amount of historical data are available for this signal. To produce forecasts in the 
+    presence of limited data for the target surveillance system, we augmented these data with two signals 
+    that have a longer historical record: 1) ILI+, which estimates the proportion of outpatient doctor 
+    visits where the patient has influenza; and 2) rates of laboratory-confirmed influenza hospitalizations 
+    at a selected set of healthcare facilities. Our model, Flusion, is an ensemble that combines gradient 
+    boosting quantile regression models with a Bayesian autoregressive model. The gradient boosting models 
+    were trained on all three data signals, while the autoregressive model was trained on only the target 
+    signal; all models were trained jointly on data for multiple locations. Flusion was the top-performing 
+    model in the CDC's influenza prediction challenge for the 2023/24 season. In this article we investigate 
+    the factors contributing to Flusion's success, and we find that its strong performance was primarily 
+    driven by the use of a gradient boosting model that was trained jointly on data from multiple surveillance 
+    signals and locations. These results indicate the value of sharing information across locations and 
+    surveillance signals, especially when doing so adds to the pool of available training data.
+
 - title: 'Infectious disease surveillance needs for the United States: lessons from Covid-19'
   slug: id_surveillance_needs
   authors: Lipsitch M, Bassett MT, Brownstein JS, ... Reich NG, ... Truelove S, Varma JK, Grad YH
