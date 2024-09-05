@@ -193,15 +193,15 @@
   </div>
   <div class="keyword-btn-container">
     
-      <span class="chip active btn-keyword">covid-19</span>
-    
       <span class="chip active btn-keyword">forecasting</span>
-    
-      <span class="chip active btn-keyword">software</span>
     
       <span class="chip active btn-keyword">influenza</span>
     
       <span class="chip active btn-keyword">flusight</span>
+    
+      <span class="chip active btn-keyword">covid-19</span>
+    
+      <span class="chip active btn-keyword">software</span>
     
       <span class="chip active btn-keyword">dengue</span>
     
@@ -231,6 +231,62 @@
         <h3 class="pub-year">2024</h3>
       </div>
     
+    
+      <div class="column pub-item col-12" id="flusion">
+        <div class="card-publication columns">
+          <div class="card-image column col-2 col-sm-12">
+            <a href="#pub=flusion">
+              <img class="rounded pub-image" src="images/publications/flusion.png">
+            </a>
+          </div>
+          <div class="column col-10 col-sm-12">
+            <div class="card-header">
+              <h4 class="card-title">
+                <a href="#pub=flusion" class="pub-title">Flusion: Integrating multiple data sources for accurate influenza predictions</a>
+              </h4>
+              <h6 class="card-subtitle">
+                Ray EL, Wang Y, Wolfinger RD, Reich NG (2024). <em>arXiv</em>.
+              </h6>
+            </div>
+            <div class="card-footer">
+              
+                <div class="pub-keywords">
+                  
+                    <span class="label pub-keyword">forecasting</span>
+                  
+                    <span class="label pub-keyword">influenza</span>
+                  
+                    <span class="label pub-keyword">flusight</span>
+                  
+                </div>
+              
+              <div class="pub-btns">
+                
+                  <a class="btn btn-link btn-sm pub-btn tooltip"
+                     data-tooltip="Get pdf"
+                     href="/pdfs/publications/flusion.pdf">
+                    <i class="fa fa-file-pdf-o"></i> pdf
+                  </a>
+                
+                
+                
+                  <a class="btn btn-link btn-sm pub-btn tooltip"
+                     data-tooltip="Open preprint"
+                     href="https://arxiv.org/abs/2407.19054"
+                     target="_blank">
+                    <i class="fa fa-external-link"></i> preprint
+                  </a>
+                
+                
+              </div>
+              <div class="pub-abstract">
+                <h6>Abstract</h6>
+                  Over the last ten years, the US Centers for Disease Control and Prevention (CDC) has organized an  annual influenza forecasting challenge with the motivation that accurate probabilistic forecasts  could improve situational awareness and yield more effective public health actions. Starting with  the 2021/22 influenza season, the forecasting targets for this challenge have been based on hospital  admissions reported in the CDC's National Healthcare Safety Network (NHSN) surveillance system.  Reporting of influenza hospital admissions through NHSN began within the last few years, and as such  only a limited amount of historical data are available for this signal. To produce forecasts in the  presence of limited data for the target surveillance system, we augmented these data with two signals  that have a longer historical record: 1) ILI+, which estimates the proportion of outpatient doctor  visits where the patient has influenza; and 2) rates of laboratory-confirmed influenza hospitalizations  at a selected set of healthcare facilities. Our model, Flusion, is an ensemble that combines gradient  boosting quantile regression models with a Bayesian autoregressive model. The gradient boosting models  were trained on all three data signals, while the autoregressive model was trained on only the target  signal; all models were trained jointly on data for multiple locations. Flusion was the top-performing  model in the CDC's influenza prediction challenge for the 2023/24 season. In this article we investigate  the factors contributing to Flusion's success, and we find that its strong performance was primarily  driven by the use of a gradient boosting model that was trained jointly on data from multiple surveillance  signals and locations. These results indicate the value of sharing information across locations and  surveillance signals, especially when doing so adds to the pool of available training data.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     
       <div class="column pub-item col-12" id="id_surveillance_needs">
         <div class="card-publication columns">
