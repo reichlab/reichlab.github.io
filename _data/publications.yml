@@ -1,5 +1,23 @@
 # 2024
 
+- title: 'Optimizing Disease Outbreak Forecast Ensembles'
+  slug: ensemble-sizes
+  authors: Fox SJ, Kim M, Meyers LA, Reich NG, Ray EL
+  preprint: https://www.medrxiv.org/content/10.1101/2024.01.05.24300909v1
+  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11347000/pdf/24-0026.pdf
+  year: 2024
+  volume: 30(9)
+  pages: 1967-1969
+  journal: Emerging Infectious Diseases
+  github: sjfox/ensemble-size
+  doi: 10.3201/eid3009.240026
+  keywords: forecasting, covid-19, influenza
+  abstract: >
+    On the basis of historical influenza and COVID-19 forecasts, we found that more than 3 forecast models 
+    are needed to ensure robust ensemble accuracy. Additional models can improve ensemble performance, 
+    but with diminishing accuracy returns. This understanding will assist with the design of current and 
+    future collaborative infectious disease forecasting efforts.
+
 - title: 'Flusion: Integrating multiple data sources for accurate influenza predictions'
   slug: flusion
   authors: Ray EL, Wang Y, Wolfinger RD, Reich NG
@@ -70,22 +88,6 @@
     averages, quantile averages, and linear pools. The hubEnsembles package fits within a broader framework of open-source software and
     data tools called the “hubverse”, which facilitates the development and management of collaborative modelling exercises.
     
-- title: 'Optimizing the number of models included in outbreak forecasting ensembles'
-  slug: ensemble-sizes
-  authors: Fox SJ, Kim M, Meyers LA, Reich NG, Ray EL
-  preprint: https://www.medrxiv.org/content/10.1101/2024.01.05.24300909v1
-  #pdf: https://www.medrxiv.org/content/10.1101/2024.01.05.24300909v1.full.pdf [update when published]
-  year: 2024
-  journal: medRxiv
-  #doi: 10.1101/2024.01.05.24300909 [update when published]
-  keywords: forecasting, covid-19, influenza
-  abstract: >
-    Based on historical influenza and COVID-19 forecasts, 
-    we quantify the relationship between the number of models in an ensemble and its accuracy 
-    and introduce an ensemble approach that can outperform the current standard. 
-    Our results can assist collaborative forecasting efforts by identifying target participation rates 
-    and improving ensemble forecast performance.
-
 - title: 'Challenges of COVID-19 Case Forecasting in the US, 2020-2021'
   slug: covid_case_challenges
   authors: Lopez V, Cramer EY, Pagano R, ... Biggerstaff M, Reich NG, Johansson MA
