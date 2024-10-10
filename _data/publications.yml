@@ -25,6 +25,7 @@
   #pdf: https://arxiv.org/pdf/2407.19054 [update when published]
   year: 2024
   journal: arXiv
+  github: reichlab/flusion-manuscript
   #doi: 10.48550/arXiv.2407.19054 [update when published]
   keywords: forecasting, influenza, flusight
   abstract: >
@@ -94,7 +95,8 @@
   preprint: https://www.medrxiv.org/content/10.1101/2023.05.30.23290732v1
   pdf: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011200
   year: 2024
-  journal: PLOS Computational Biology
+  journal: PLOS Comp Bio
+  github: cdcepi/Evaluation-of-case-forecasts-submitted-to-COVID19-Forecast-Hub
   doi: 10.1371/journal.pcbi.1011200
   keywords: forecasting, covid-19
   abstract: >
@@ -124,6 +126,7 @@
   #pdf: https://arxiv.org/pdf/2312.16201.pdf [update when published]
   year: 2023
   journal: arXiv
+  github: aaronger/utility-eval-papers
   #doi: 10.48550/arXiv.2312.16201 [update when published]
   keywords: forecasting, covid-19
   abstract: >
@@ -150,6 +153,7 @@
   volume: 14(1)
   pages: 7260
   journal: Nature Communications
+  github: midas-network/covid19-scenario-hub_evaluation
   doi: 10.1038/s41467-023-42680-x
   keywords: forecasting, covid-19
   abstract: >
@@ -221,9 +225,10 @@
   preprint: https://arxiv.org/abs/2202.11834
   pdf: https://onlinelibrary.wiley.com/doi/epdf/10.1002/sim.9884
   year: 2023
-  journal: Statistics in Medicine
   volume: 42(26)
   pages: 4696-4712
+  journal: Statistics in Medicine
+  github: nutchaw/forecast_calibration
   doi: 10.1002/sim.9884
   keywords: forecasting, influenza
   abstract: >
@@ -252,9 +257,10 @@
   preprint: https://www.medrxiv.org/content/10.1101/2022.06.16.22276024v1
   pdf: https://elifesciences.org/download/aHR0cHM6Ly9jZG4uZWxpZmVzY2llbmNlcy5vcmcvYXJ0aWNsZXMvODE5MTYvZWxpZmUtODE5MTYtdjEucGRmP2Nhbm9uaWNhbFVyaT1odHRwczovL2VsaWZlc2NpZW5jZXMub3JnL2FydGljbGVzLzgxOTE2/elife-81916-v1.pdf?_hash=zJo10Qiyhk8kAXEi%2B%2FOT8Mo6K%2BIfcrV6QRyie39sdO4%3D
   year: 2023
-  journal: eLife
   volume: 12
   pages: e81916
+  journal: eLife
+  github: epiforecasts/euro-hub-ensemble
   doi: 10.7554/eLife.81916
   keywords: forecasting, covid-19
   abstract: >
@@ -283,10 +289,11 @@
   authors: Reich NG, Wang Y, Burns M, Ergas R, Cramer EY, Ray EL
   preprint: https://www.medrxiv.org/content/10.1101/2023.03.08.23286582v1
   pdf: https://www.sciencedirect.com/science/article/pii/S1755436523000646/pdfft?md5=501f8c5a916c41a194955789cddb3e5e&pid=1-s2.0-S1755436523000646-main.pdf
-  journal: Epidemics
   volume: 45
   pages: 100728
   year: 2023
+  journal: Epidemics
+  github: reichlab/covid-hosp-forecasts-with-cases
   doi: 10.1016/j.epidem.2023.100728
   keywords: forecasting, covid-19
   abstract: >
@@ -307,9 +314,10 @@
   preprint: https://www.medrxiv.org/content/10.1101/2022.03.08.22271905v1
   pdf: https://www.sciencedirect.com/science/article/pii/S2667193X22002150
   year: 2023
-  journal: The Lancet Regional Health-Americas
   volume: 17
   pages: 100398
+  journal: The Lancet Regional Health-Americas
+  github: midas-network/covid19-scenario-modeling-hub
   doi: 10.1016/j.lana.2022.100398
   keywords: covid-19
   abstract: >
@@ -338,9 +346,10 @@
   preprint: https://www.medrxiv.org/content/10.1101/2020.09.21.20196725v1
   pdf: https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1010485&type=printable
   year: 2022
-  journal: PLOS Comp Bio
   volume: 18(9)
   pages: e1010485
+  journal: PLOS Comp Bio
+  github: tomcm39/COVID19_expert_survey
   doi: 10.1371/journal.pcbi.1010485
   keywords: covid-19, forecasting
   abstract: >
@@ -362,9 +371,9 @@
   preprint: https://www.medrxiv.org/content/10.1101/2022.04.18.22273992v1
   pdf: https://www.thelancet.com/action/showPdf?pii=S2589-7500%2822%2900148-0
   year: 2022
-  journal: The Lancet Digital Health
   volume: 4(10)
   pages: e738-e747
+  journal: The Lancet Digital Health
   doi: 10.1016/S2589-7500(22)00148-0
   keywords: forecasting, covid-19
   abstract: >
@@ -383,9 +392,9 @@
   authors: Nixon K, Jindal S, Parker F, Marshall M, Reich NG, Ghobadi K, Lee EC, Truelove S, Gardner L
   pdf: https://www.thelancet.com/action/showPdf?pii=S2589-7500%2822%2900167-4
   year: 2022
-  journal: The Lancet Digital Health
   volume: 4(10)
   pages: :e699–e701
+  journal: The Lancet Digital Health
   doi: 10.1016/S2589-7500(22)00167-4
   keywords: forecasting, covid-19
   abstract: >
@@ -403,9 +412,10 @@
   preprint: https://arxiv.org/abs/2201.12387
   pdf: https://www.sciencedirect.com/sdfe/reader/pii/S0169207022000966/pdf
   year: 2022
-  journal: International Journal of Forecasting
   volume: 39
   pages: 1366-1383
+  journal: International Journal of Forecasting
+  github: reichlab/covid19-ensemble-methods-manuscript
   doi: 10.1016/j.ijforecast.2022.06.005
   keywords: forecasting, covid-19
   abstract: >
@@ -426,9 +436,10 @@
   preprint: https://www.medrxiv.org/content/10.1101/2021.11.04.21265886v1
   pdf: https://www.nature.com/articles/s41597-022-01517-w.pdf
   year: 2022
-  journal: Scientific Data
   volume: 9(1)
   pages: 1-15
+  journal: Scientific Data
+  github: reichlab/covid19-forecast-hub
   doi: 10.1038/s41597-022-01517-w
   keywords: covid-19, forecasting, software
   abstract: >
@@ -448,9 +459,9 @@
   authors: Reich NG, Lessler J, Funk S, Viboud C, Vespignani A, Tibshirani RJ, Shea K, Schienle M, Runge MC, Rosenfeld R, Ray EL, Niehus R, Johnson HC, Johansson MA, Hochheiser H, Gardner L, Bracher J, Borchering RK, Biggerstaff M
   pdf: https://ajph.aphapublications.org/doi/epdf/10.2105/AJPH.2022.306831
   year: 2022
-  journal: AJPH
   volume: 112(6)
   pages: 839-842
+  journal: AJPH
   doi: 10.2105/AJPH.2022.306831
   keywords: forecasting, covid-19
   abstract: >
@@ -470,9 +481,10 @@
   preprint: https://www.medrxiv.org/content/10.1101/2021.02.03.21250974v3
   pdf: https://www.pnas.org/doi/epdf/10.1073/pnas.2113561119
   year: 2022
-  journal: PNAS
   volume: 119(15)
   pages: e2113561119
+  journal: PNAS
+  github: reichlab/covid19-forecast-evals
   doi: 10.1073/pnas.2113561119
   keywords: forecasting, covid-19
   abstract: >
@@ -497,9 +509,9 @@
   authors: Reich NG, Ray EL
   pdf: https://www.pnas.org/doi/full/10.1073/pnas.2200703119
   year: 2022
-  journal: PNAS
   volume: 119(14)
   pages: e2200703119
+  journal: PNAS
   doi: 10.1073/pnas.2200703119
   keywords: forecasting, covid-19
   abstract: >
@@ -515,9 +527,9 @@
   preprint: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8525759/
   pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8525759/pdf/pmed.1003793.pdf
   year: 2021
-  journal: PLOS Medicine
   volume: 18(10)
   pages: e1003793
+  journal: PLOS Medicine
   doi: 10.1371/journal.pmed.1003793
   keywords: forecasting
   abstract: >
@@ -538,23 +550,20 @@
   authors: Borchering RK, Viboud C, Howerton E, Smith CP, Truelove S, Runge MC, Reich NG, ... Shea K, Lessler, J
   pdf: https://www.cdc.gov/mmwr/volumes/70/wr/pdfs/mm7019e3-H.pdf
   year: 2021
-  journal: Morbidity and Mortality Weekly Report (MMWR)
   volume: 70(19)
   pages: 719–724
+  journal: Morbidity and Mortality Weekly Report (MMWR)
+  github: midas-network/covid19-scenario-modeling-hub
   doi: 10.15585/mmwr.mm7019e3
   keywords: forecasting, covid-19
   abstract: >
-    Background: The importance of infectious disease epidemic forecasting and prediction research is underscored by decades of 
-    communicable disease outbreaks, including COVID-19. Unlike other fields of medical research, such as clinical trials and 
-    systematic reviews, no reporting guidelines exist for reporting epidemic forecasting and prediction research despite their 
-    utility. We therefore developed the EPIFORGE checklist, a guideline for standardized reporting of epidemic forecasting research. 
-    Methods and findings: We developed this checklist using a best-practice process for development of reporting guidelines, 
-    involving a Delphi process and broad consultation with an international panel of infectious disease modelers and model end 
-    users. The objectives of these guidelines are to improve the consistency, reproducibility, comparability, and quality of epidemic 
-    forecasting reporting. The guidelines are not designed to advise scientists on how to perform epidemic forecasting and prediction 
-    research, but rather to serve as a standard for reporting critical methodological details of such studies. Conclusions: These 
-    guidelines have been submitted to the EQUATOR network, in addition to hosting by other dedicated webpages to facilitate feedback 
-    and journal endorsement.
+    What is already known about this topic? Increases in COVID-19 cases in March and early April occurred despite a large-scale 
+    vaccination program. Increases coincided with the spread of SARS-CoV-2 variants and relaxation of nonpharmaceutical 
+    interventions (NPIs). What is added by this report? Data from six models indicate that with high vaccination coverage and 
+    moderate NPI adherence, hospitalizations and deaths will likely remain low nationally, with a sharp decline in cases projected 
+    by July 2021. Lower NPI adherence could lead to substantial increases in severe COVID-19 outcomes, even with improved vaccination 
+    coverage. What are the implications for public health practice? High vaccination coverage and compliance with NPIs are essential 
+    to control COVID-19 and prevent surges in hospitalizations and deaths in the coming months.
 
 - title: 'The Zoltar forecast archive: a tool to facilitate standardization and storage of interdisciplinary prediction research'
   slug: reich-zoltar-forecast
@@ -562,8 +571,9 @@
   preprint: https://arxiv.org/abs/2006.03922
   pdf: reich-zoltar-forecast
   year: 2021
-  journal: Scientific Data
   volume: 8(59)
+  journal: Scientific Data
+  github: reichlab/forecast-repository
   doi: 10.1038/s41597-021-00839-5
   keywords: forecasting, software
   abstract: >
@@ -604,6 +614,7 @@
   pdf: https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1008618&type=printable
   year: 2021
   journal: PLOS Comp Bio
+  github: reichlab/proper-scores-comparison
   doi: 10.1371/journal.pcbi.1008618
   keywords: forecasting, covid-19
   abstract: >
@@ -627,10 +638,10 @@
   year: 2021
   volume: 40(30)
   pages: 6931-6952
-  journal: Statistics in medicine
+  journal: Statistics in Medicine
+  github: tomcm39/adaptively_stacking_ensembles_for_infleunza_forecasting_with_incomplete_data
   doi: 10.1002/sim.9219
   keywords: forecasting, influenza, flusight 
-  github: tomcm39/adaptively_stacking_ensembles_for_infleunza_forecasting_with_incomplete_data
   abstract: >
     Seasonal influenza infects between 10 and 50 million people in the United States every year. 
     Accurate forecasts of influenza and influenza-like illness (ILI) have been named by the CDC 
@@ -658,6 +669,7 @@
   volume: 13(2)
   pages: e1514
   journal: 'Wiley Interdisciplinary Reviews: Computational Statistics'
+  github: tomcm39/AggregatingExpertElicitedDataForPrediction
   doi: 10.1002/wics.1514
   keywords: forecasting
   abstract: >
@@ -678,9 +690,9 @@
   preprint: https://www.medrxiv.org/content/10.1101/2021.03.05.21249174v3
   pdf: https://bmjopen.bmj.com/content/bmjopen/11/8/e051157.full.pdf
   year: 2021
-  journal: BMJ Open 
   volume: 11:e051157
   pages: 1-10
+  journal: BMJ Open
   doi: 10.1136/bmjopen-2021-051157
   keywords: forecasting, covid-19
   abstract: >
@@ -712,9 +724,9 @@
   authors: Pollett S, Johansson M,Biggerstaff M, Morton LC, Bazaco SL, Major DMB, Ibarra AMS, Pavlin JA, Mate S, Sippy R, Hartman LJ, Reich NG, Maljkovic I, Chretien BJP, Althouse BM, Myer D, Viboud C, Rivers C
   pdf: https://reader.elsevier.com/reader/sd/pii/S175543652030027X?token=DCCCED844BA8FB8FC0D1A0D760890C5C5075CCC1D37C317DF5404D7621D9DB43EF5A2BF4D3120AE454E3BAEEC2EF49A1
   year: 2020
-  journal: Epidemics
   volume: 33
   pages: 100-400
+  journal: Epidemics
   doi: 10.1016/j.epidem.2020.100400
   keywords: forecasting
   abstract: >
@@ -762,6 +774,7 @@
   #pdf: https://www.medrxiv.org/content/10.1101/2020.08.19.20177493v1.full.pdf [update when published]
   year: 2020
   journal: medRxiv
+  github: reichlab/covidEnsembles
   #doi: 10.1101/2020.08.19.20177493 [update when published]
   keywords: covid-19, forecasting
   abstract: >
@@ -794,6 +807,7 @@
   pdf: https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2767980
   year: 2020
   journal: JAMA Internal Medicine
+  github: weinbergerlab/excess_pi_covid
   doi: 10.1001/jamainternmed.2020.3391
   keywords: covid-19
   abstract: >
@@ -858,6 +872,7 @@
   pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7081172/pdf/aim-olf-M200504.pdf
   year: 2020
   journal: Annals of Internal Medicine
+  github: HopkinsIDD/ncov_incubation
   doi: 10.7326/M20-0504
   keywords: incubation-period, covid-19
   abstract: >
@@ -898,9 +913,9 @@
   authors: Biggerstaff M et al.
   pdf: https://onlinelibrary.wiley.com/doi/pdf/10.1111/irv.12705
   year: 2020
-  journal: Influenza and Other Respiratory Viruses
   volume: 14(2)
   pages: 105-110
+  journal: Influenza and Other Respiratory Viruses
   doi: 10.1111/irv.12705
   keywords: influenza, flusight
   abstract: >
@@ -928,9 +943,9 @@
   authors: Hossain FA, Lover AA, Corey GA, Reich NG, Rahman T
   pdf: https://dl.acm.org/doi/pdf/10.1145/3381014
   year: 2020
-  journal: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies
   volume: 4(1)
   pages: 1
+  journal: Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies
   doi: 10.1145/3381014
   keywords: influenza, software
   abstract: >
@@ -961,9 +976,9 @@
   pdf: https://onlinelibrary.wiley.com/doi/epdf/10.1002/sim.8467
   year: 2020
   journal: Statistics in Medicine
+  github: reichlab/ALERT
   doi: 10.1002/sim.8467
   keywords: forecasting, influenza
-  github: reichlab/ALERT
   abstract: >
     Estimation of epidemic onset timing is an important component of controlling the spread of 
     seasonal infectious diseases within community healthcare sites. The Above Local Elevated 
@@ -986,12 +1001,12 @@
   preprint: https://www.biorxiv.org/content/biorxiv/early/2019/03/08/566604.full-text.pdf
   pdf: https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1007486&type=printable
   year: 2019
-  journal: PLOS Comp Bio
   volume: 15(11)
   pages: e1007486
+  journal: PLOS Comp Bio
+  github: FluSightNetwork/cdc-flusight-ensemble
   doi: 10.1371/journal.pcbi.1007486
   keywords: forecasting, influenza, flusight
-  github: FluSightNetwork/cdc-flusight-ensemble
   abstract: >
     Seasonal influenza results in substantial annual morbidity and mortality in the United States and worldwide. 
     Accurate forecasts of key features of influenza epidemics, such as the timing and severity of the 
@@ -1025,6 +1040,7 @@
   volume: 116(48)
   pages: 24268-24274
   journal: PNAS
+  github: cdcepi/dengue-forecasting-project-2015
   doi: 10.1073/pnas.1909865116
   keywords: forecasting, dengue, flusight
   abstract: >
@@ -1079,10 +1095,10 @@
   authors: Kazemi A, Kennedy C, Silverman G, Reich NG
   pdf: https://rss.onlinelibrary.wiley.com/doi/full/10.1111/j.1740-9713.2019.01312.x
   year: 2019
-  journal: Significance
-  doi: 10.1111/j.1740-9713.2019.01312.x
   volume: 16(5)
   pages: 6-7
+  journal: Significance
+  doi: 10.1111/j.1740-9713.2019.01312.x
   keywords: opioid
   abstract: >
     Arianna Kazemi, Connor Kennedy and Gabri Silverman, undergraduate winners of 
@@ -1095,9 +1111,9 @@
   pdf: https://www.pnas.org/content/pnas/early/2019/09/25/1912694116.full.pdf
   year: 2019
   journal: PNAS
+  github: FluSightNetwork/cdc-flusight-ensemble
   doi: 10.1073/pnas.1912694116
   keywords: forecasting, influenza, flusight
-  github: FluSightNetwork/cdc-flusight-ensemble
   abstract: >
     Evaluating probabilistic forecasts in the context of a real-time public health surveillance 
     system is a complicated business. We agree with Bracher’s (1) observations that the scores 
@@ -1138,10 +1154,10 @@
   authors: Radonovich LJ, Simberkoff MS, Bessesen MT, Brown AC, Cummings DAT, Gaydos CA, Los JG, Krosche AE, Gibert CL, Gorse GJ, Nyquist AC, Reich NG, Rodriguez-Barradas MC, Price CS, Perl TM
   pdf: https://scholar.google.com/scholar_url?url=https://jamanetwork.com/journals/jama/articlepdf/2749214/jama_radonovich_2019_oi_190087.pdf&hl=en&sa=T&oi=ucasa&ct=usl&ei=3-V_Xb3DF4ukmAH3l62YDw&scisig=AAGBfm16ej4L9ZhatlupvVocAifiMiFfBA
   year: 2019
-  journal: JAMA
-  doi: 10.1001/jama.2019.11645
   volume: 322(9)
   pages: 824-833
+  journal: JAMA
+  doi: 10.1001/jama.2019.11645
   keywords: influenza, cluster-randomization
   abstract: >
      Clinical studies have been inconclusive about the effectiveness of N95 respirators and medical masks in preventing health care personnel (HCP) 
@@ -1152,9 +1168,9 @@
   authors: George GB, Taylor W, Shaman J, Rivers C, Paul B, O'Toole T, Johansson MA, Hirschman L, Biggerstaff M, Asher J, Reich NG
   pdf: https://www.nature.com/articles/s41467-019-11901-7.pdf
   year: 2019
+  volume: 10(3932)
   journal: Nature Communications
   doi: 10.1038/s41467-019-11901-7
-  volume: 10(3932)
   keywords: forecasting, flusight
   abstract: >
     Forecasting is beginning to be integrated into decision-making processes for
@@ -1169,11 +1185,11 @@
            Biggerstaff M, Johansson MA, Reich NG, Meyer D, Snyder MR, Pollett S
   pdf: https://www.nature.com/articles/s41467-019-11067-2.pdf
   year: 2019
-  journal: Nature Communications
-  doi: 10.1038/s41467-019-11067-2
   volume: 10(3932)
-  keywords: forecasting 
+  journal: Nature Communications
   github: FluSightNetwork/cdc-flusight-ensemble
+  doi: 10.1038/s41467-019-11067-2
+  keywords: forecasting 
   abstract: >
     Infectious disease modeling has played a prominent role in recent outbreaks, yet 
     integrating these analyses into public health decision-making has been challenging.
@@ -1185,12 +1201,12 @@
   authors: Reich NG, Brooks L, Spencer F, Kandula S, McGowan C, Moore E, Osthus D, Ray E, Tushar A,Yamana T, Biggerstaff M, Johansson MA, Rosenfeld R, and Shaman J
   pdf: https://www.pnas.org/content/pnas/early/2019/01/14/1812594116.full.pdf
   year: 2019
-  journal: PNAS
-  doi: 10.1073/pnas.1812594116
   volume: 116(8)
   pages: 3146-3154
-  keywords: forecasting, influenza, flusight
+  journal: PNAS
   github: FluSightNetwork/cdc-flusight-ensemble
+  doi: 10.1073/pnas.1812594116
+  keywords: forecasting, influenza, flusight
   abstract: >
     Influenza infects an estimated 9 to 35 million individuals each year in the United States and is a 
     contributing cause for between 12,000 and 56,000 deaths annually. Seasonal outbreaks of influenza are 
@@ -1213,9 +1229,10 @@
   authors: McGowan C, Biggerstaff M, Johansson M, Apfeldorf K, Ben-Nun M, Brooks L, Convertino M, Erraguntla M, Farrow D, Freeze J, Ghosh S, Hyun S, Kandula S, Lega J, Liu Y, Michaud N, Morita H, Niemi J, Ramakrishnan N, Ray EL, Reich NG, Riley P, Shaman J, Tibshirani R, Vespignani A, Zhang Q, Reed C
   pdf: https://www.nature.com/articles/s41598-018-36361-9.pdf
   year: 2019
-  journal: Sci Rep
-  doi: 10.1038/s41598-018-36361-9
   volume: 9(683)
+  journal: Scientific Reports
+  github: cdcepi/FluSight-forecasts
+  doi: 10.1038/s41598-018-36361-9
   keywords: forecasting, influenza, flusight
   abstract: >
     Since 2013, the Centers for Disease Control and Prevention (CDC) has hosted an annual influenza season forecasting challenge. 
@@ -1237,12 +1254,12 @@
   authors: Lauer SA, Sakrejda K, Ray EL, Keegan LT, Bi Q, Suangtho P, Hinjoy S, Iamsirithaworn S, Suthachana S, Laosiritaworn Y, Cummings DAT, Lessler J and Reich NG
   pdf: http://www.pnas.org/content/early/2018/02/13/1714457115.full.pdf
   year: 2018
-  journal: PNAS
-  doi: 10.1073/pnas.1714457115
   volume: 115(10) 
   pages: E2175-E2182
-  keywords: forecasting, dengue
+  journal: PNAS
   github: reichlab/annual-predictions-paper
+  doi: 10.1073/pnas.1714457115
+  keywords: forecasting, dengue
   abstract: >
     Dengue hemorrhagic fever (DHF), a severe manifestation of dengue viral infection that can cause severe bleeding, organ impairment, and even death, affects between 15,000 and 105,000 people each year in Thailand. While all Thai provinces experience at least one DHF case most years, the distribution of cases shifts regionally from year to year. Accurately forecasting where DHF outbreaks occur before the dengue season could help public health officials prioritize public health activities. We develop statistical models that use biologically plausible covariates, observed by April each year, to forecast the cumulative DHF incidence for the remainder of the year. We perform cross-validation during the training phase (2000–2009) to select the covariates for these models. A parsimonious model based on preseason incidence outperforms the 10-y median for 65% of province-level annual forecasts, reduces the mean absolute error by 19%, and successfully forecasts outbreaks (area under the receiver operating characteristic curve = 0.84) over the testing period (2010–2014). We find that functions of past incidence contribute most strongly to model performance, whereas the importance of environmental covariates varies regionally. This work illustrates that accurate forecasts of dengue risk are possible in a policy-relevant timeframe.
 
@@ -1252,12 +1269,12 @@
   preprint: https://arxiv.org/abs/1703.10936
   pdf: http://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005910&type=printable
   year: 2018
-  journal: PLOS Comp Bio 
-  doi: 10.1371/journal.pcbi.1005910
   volume: 14(2)
   pages: e1005910
-  keywords: forecasting, influenza, flusight
+  journal: PLOS Comp Bio 
   github: reichlab/adaptively-weighted-ensemble
+  doi: 10.1371/journal.pcbi.1005910
+  keywords: forecasting, influenza, flusight
   abstract: >
     Accurate and reliable predictions of infectious disease dynamics can be
     valuable to public health organizations that plan interventions to decrease
@@ -1287,12 +1304,12 @@
 - title: 'Preprints: An underutilized mechanism to accelerate outbreak science'
   slug: johansson-preprints
   authors: Johansson MA, Reich NG, Meyers LA, Lipsitch M
-  doi: 10.1371/journal.pmed.1002549
-  journal: PLOS Medicine
+  pdf: http://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1002549&type=printable
   volume: 15(4)
   pages: e1002549
   year: 2018
-  pdf: http://journals.plos.org/plosmedicine/article/file?id=10.1371/journal.pmed.1002549&type=printable
+  journal: PLOS Medicine
+  doi: 10.1371/journal.pmed.1002549
   keywords: ebola, zika
   abstract: >
     Preprints—manuscripts posted openly online prior to peer review—offer an opportunity to accelerate the dissemination of scientific findings to support responses to infectious disease outbreaks.
@@ -1305,10 +1322,11 @@
   authors: Reich NG, Lessler J, Varma JK, Vora NM
   preprint: https://www.biorxiv.org/content/early/2017/06/28/156497
   year: 2018
-  doi: 10.1038/s41598-018-19406-x
   volume: 8
   pages: 1093
-  journal: Nat Sci Rep
+  journal: Scientific Reports
+  github: reichlab/activemonitr
+  doi: 10.1038/s41598-018-19406-x
   keywords: incubation-period, ebola
   abstract: >
     During outbreaks of deadly emerging pathogens (e.g., Ebola, MERS-CoV) and bioterror threats (e.g., smallpox), 
@@ -1329,10 +1347,10 @@
 - title: 'Protecting Healthcare Personnel in Outpatient Settings: The Influence of Mandatory Versus Nonmandatory Influenza Vaccination Policies on Workplace Absenteeism During Multiple Respiratory Virus Seasons'
   slug: frederick-absenteeism
   authors: Frederick J, Brown AC, Cummings DAT, Gaydos CA, Gibert CL, Gorse GJ, Los JG, Nyquist AC, Perl TM, Price CS, Radonovich LJ, Reich NG, Rodriguez-Barradas MC, Bessesen MT, Simberkoff MS, for the ResPECT Teama
-  journal: Infect Control Hosp Epidemiol
-  doi: 10.1017/ice.2018.9
   year: 2018
   volume: 39
+  journal: Infect Control Hosp Epidemiol
+  doi: 10.1017/ice.2018.9
   keywords: influenza
   abstract: >
     Objective: To determine the effect of mandatory and nonmandatory influenza vaccination policies on vaccination rates and symptomatic absenteeism among healthcare personnel (HCP).
@@ -1349,12 +1367,12 @@
   slug: ray-kcde
   authors: Ray EL, Sakrejda K, Lauer SA, Johansson MA, Reich NG
   year: 2017
-  journal: Stat Med
   volume: 36
   pages: 4908-4929
+  journal: Statistics in Medicine
+  github: reichlab/article-disease-pred-with-kcde
   doi: 10.1002/sim.7488
   keywords: forecasting, dengue, influenza, flusight
-  github: reichlab/article-disease-pred-with-kcde
   abstract: >
     Creating statistical models that generate accurate predictions of infectious disease incidence over multiple time points 
     is a challenging problem whose solution could benefit public health decision makers. 
@@ -1380,10 +1398,11 @@
   authors: Tushar A, Reich NG
   slug: tushar-flusight
   year: 2017
-  journal: JOSS
-  keywords: software, flusight
   volume: 2
+  journal: JOSS
+  github: reichlab/flusight
   doi: 10.21105/joss.00231
+  keywords: software, flusight
   abstract: >
     The rapid emergence of infectious disease outbreaks from both new and known pathogens remains a critical concern of health officials worldwide. 
     Improving communication between teams of scientific researchers who assemble forecasts of outbreaks before and during epidemics, 
@@ -1405,11 +1424,11 @@
 - title: "Enriching Students' Conceptual Understanding of Confidence Intervals: An Interactive Trivia-based Classroom Activity"
   slug: wang-confidence
   authors: Wang X, Reich NG, Horton NJ
-  doi: 10.1080/00031305.2017.1305294
   preprint: https://arxiv.org/abs/1701.08452
   year: 2017
+  journal: The American Statistician
+  doi: 10.1080/00031305.2017.1305294
   keywords: education
-  journal: Am Stat
   abstract: >
     Confidence intervals provide a way to determine plausible values for a population parameter. 
     They are omnipresent in research articles involving statistical analyses. 
@@ -1426,7 +1445,6 @@
 # 2016
 
 - title: 'Challenges in Real-Time Prediction of Infectious Disease: A Case Study of Dengue in Thailand'
-  doi: 10.1371/journal.pntd.0004761
   slug: reich-realtime-dengue-prediction
   preprint: https://arxiv.org/abs/1511.04812
   volume: 10
@@ -1434,8 +1452,10 @@
   authors: >
     Reich NG, Lauer SA, Sakrejda K, Iamsirithaworn S, Hinjoy S, Suangtho P,
     Suthachana S, Clapham H, Salje H, Cummings DAT, Lessler J
-  journal: PLOS Neg Trop Dis
   year: 2016
+  journal: PLOS Neg Trop Dis
+  github: reichlab/dengue-thailand-2014-forecasts
+  doi: 10.1371/journal.pntd.0004761
   keywords: forecasting, dengue
   abstract: >
     Epidemics of communicable diseases place a huge burden on public health
@@ -1461,23 +1481,23 @@
   authors: Johansson MA, Reich NG, Hota A, Brownstein JS, Santillana M
   year: 2016
   slug: johansson-dengue-mexico
-  keywords: forecasting, dengue
-  journal: Sci Rep
-  doi: 10.1038/srep33707
   volume: 6
+  journal: Scientific Reports
+  doi: 10.1038/srep33707
+  keywords: forecasting, dengue
   abstract: >
     Dengue viruses, which infect millions of people per year worldwide, cause large epidemics that strain healthcare systems. Despite diverse efforts to develop forecasting tools including autoregressive time series, climate-driven statistical, and mechanistic biological models, little work has been done to understand the contribution of different components to improved prediction. We developed a framework to assess and compare dengue forecasts produced from different types of models and evaluated the performance of seasonal autoregressive models with and without climate variables for forecasting dengue incidence in Mexico. Climate data did not significantly improve the predictive power of seasonal autoregressive models. Short-term and seasonal autocorrelation were key to improving short-term and long-term forecasts, respectively. Seasonal autoregressive models captured a substantial amount of dengue variability, but better models are needed to improve dengue forecasting. This framework contributes to the sparse literature of infectious disease prediction model evaluation, using state-of-the-art validation techniques such as out-of-sample testing and comparison to an appropriate reference model.
 
 - title: 'Case Study in Evaluating Time Series Prediction Models Using the Relative Mean Absolute Error'
-  doi: 10.1080/00031305.2016.1148631
   slug: reich-mae-case-study
   authors: >
     Reich NG, Lessler J, Sakrejda K, Lauer SA, Iamsirithaworn S, Cummings DAT
-  journal: Am Stat
   year: 2016
-  keywords: forecasting, dengue
   volume: 70
   pages: 285-292
+  journal: The American Statistician
+  doi: 10.1080/00031305.2016.1148631
+  keywords: forecasting, dengue
   abstract: >
     Statistical prediction models inform decision-making processes in many
     real-world settings. Prior to using predictions in practice, one must
@@ -1501,11 +1521,12 @@
   authors: Lessler J, Ott CT, Carcelen AC, Konikoff JM, Williamson J, Bi Q, Reich NG, Cummings DAT, Kucirka LM, Chaisson LH
   slug: lessler-zika-key-events
   year: 2016
-  keywords: incubation-period
   preprint: https://www.biorxiv.org/content/early/2016/03/02/041913
   volume: 94
-  journal: Bull WHO
+  journal: Bulletin of the World Health Organization
+  github: HopkinsIDD/ZikaLitReview
   doi: 10.2471/BLT.16.174540
+  keywords: incubation-period
   abstract: >
     OBJECTIVE: To estimate the timing of key events in the natural history of Zika virus infection. METHODS: In February 2016, we searched PubMed, Scopus and the Web of Science for publications containing the term Zika. By pooling data, we estimated the incubation period, the time to seroconversion and the duration of viral shedding. We estimated the risk of Zika virus contaminated blood donations. FINDINGS: We identified 20 articles on 25 patients with Zika virus infection. The median incubation period for the infection was estimated to be 5.9 days (95% credible interval, CrI: 4.4-7.6), with 95% of people who developed symptoms doing so within 11.2 days (95% CrI: 7.6-18.0) after infection. On average, seroconversion occurred 9.1 days (95% CrI: 7.0-11.6) after infection. The virus was detectable in blood for 9.9 days (95% CrI: 6.9-21.4) on average. Without screening, the estimated risk that a blood donation would come from an infected individual increased by approximately 1 in 10 000 for every 1 per 100 000 person-days increase in the incidence of Zika virus infection. Symptom-based screening may reduce this rate by 7% (relative risk, RR: 0.93; 95% CrI: 0.89-0.99) and antibody screening, by 29% (RR: 0.71; 95% CrI: 0.28-0.88). CONCLUSION: Neither symptom- nor antibody-based screening for Zika virus infection substantially reduced the risk that blood donations would be contaminated by the virus. Polymerase chain reaction testing should be considered for identifying blood safe for use in pregnant women in high-incidence areas.
 
@@ -1513,28 +1534,29 @@
   authors: Radonovich LJ, Bessesen M, Cummings DAT, Eagan A, Gaydos C, Gibert C, Gorse G, Nyquist C, Reich NG, Rodriguez-Barradas M, Savor-Price C, Shaffer R, Simberkoff M, Perl TM
   slug: radonovich-protocol
   year: 2016
-  journal: BMC Inf Dis
-  keywords: cluster-randomization
   volume: 16
   pages: 243
+  journal: BMC Infectious Diseases
   doi: 10.1186/s12879-016-1494-2
+  keywords: cluster-randomization
   abstract: >
     Although N95 filtering facepiece respirators and medical masks are commonly used for protection against respiratory infections in healthcare settings, more clinical evidence is needed to understand the optimal settings and exposure circumstances for healthcare personnel to use these devices. A lack of clinically germane research has led to equivocal, and occasionally conflicting, healthcare respiratory protection recommendations from public health organizations, professional societies, and experts. The Respiratory Protection Effectiveness Clinical Trial (ResPECT) is a prospective comparison of respiratory protective equipment to be conducted at multiple U.S. study sites. Healthcare personnel who work in outpatient settings will be cluster-randomized to wear N95 respirators or medical masks for protection against infections during respiratory virus season. Outcome measures will include laboratory-confirmed viral respiratory infections, acute respiratory illness, and influenza-like illness. Participant exposures to patients, coworkers, and others with symptoms and signs of respiratory infection, both within and beyond the workplace, will be recorded in daily diaries. Adherence to study protocols will be monitored by the study team. ResPECT is designed to better understand the extent to which N95s and MMs reduce clinical illness among healthcare personnel. A fully successful study would produce clinically relevant results that help clinician-leaders make reasoned decisions about protection of healthcare personnel against occupationally acquired respiratory infections and prevention of spread within healthcare systems.
 
 # 2015
 
 - title: 'Triggering Interventions for Influenza: The ALERT Algorithm'
-  doi: 10.1093/cid/ciu749
   slug: reich-alert
   authors: >
     Reich NG, Cummings DAT, Lauer SA, Zorn M, Robinson C, Nyquist AC, Price CS,
     Simberkoff M, Radonovich LJ, Perl TM
   pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4304363/pdf/ciu749.pdf
   year: 2015
-  journal: Clin Inf Dis
-  keywords: forecasting, influenza
   volume: 60
   pages: 499-504
+  journal: Clinical Infectious Diseases
+  github: reichlab/ALERT
+  doi: 10.1093/cid/ciu749
+  keywords: forecasting, influenza
   abstract: >
     Early, accurate predictions of the onset of influenza season enable targeted
     implementation of control efforts. Our objective was to develop a tool to
@@ -1558,29 +1580,30 @@
 
 - title: 'The Effect of Cluster Size Variability on Statistical Power in Cluster-Randomized Trials'
   slug: lauer-cluster-power
-  doi: 10.1371/journal.pone.0119074
   authors: Lauer SA, Kleinman K, Reich NG
-  journal: PLOS ONE
   year: 2015
-  keywords: cluster-randomization
   volume: 10
   pages: e0119074
+  journal: PLOS ONE
+  doi: 10.1371/journal.pone.0119074
+  keywords: cluster-randomization
   abstract: >
     The frequency of cluster-randomized trials (CRTs) in peer-reviewed literature has increased exponentially over the past two decades. CRTs are a valuable tool for studying interventions that cannot be effectively implemented or randomized at the individual level. However, some aspects of the design and analysis of data from CRTs are more complex than those for individually randomized controlled trials. One of the key components to designing a successful CRT is calculating the proper sample size (i.e. number of clusters) needed to attain an acceptable level of statistical power. In order to do this, a researcher must make assumptions about the value of several variables, including a fixed mean cluster size. In practice, cluster size can often vary dramatically. Few studies account for the effect of cluster size variation when assessing the statistical power for a given trial. We conducted a simulation study to investigate how the statistical power of CRTs changes with variable cluster sizes. In general, we observed that increases in cluster size variability lead to a decrease in power.
  
 # 2013
 
 - title: 'Interactions between serotypes of dengue highlight epidemiological impact of cross-immunity'
-  doi: 10.1098/rsif.2013.0414
   slug: reich-dengue-serotype-interactions
-  journal: JRSI
-  volume: 10
-  pages: 20130414
-  year: 2013
-  keywords: pathogen-interactions, dengue
   authors: >
     Reich NG, Shrestha S, King AA, Rohani P, Lessler J, Kalayanarooj S, Yoon IK,
     Gibbons RV, Burke DS, Cummings DAT.
+  year: 2013
+  volume: 10
+  pages: 20130414
+  journal: JRSI
+  github: nickreich/dengueCP
+  doi: 10.1098/rsif.2013.0414
+  keywords: pathogen-interactions, dengue
   abstract: >
     Dengue, a mosquito-borne virus of humans, infects over 50 million people
     annually. Infection with any of the four dengue serotypes induces protective
@@ -1602,14 +1625,15 @@
 #2012
 
 - title: 'Empirical power and sample size calculations for cluster-randomized and cluster-randomized crossover studies'
-  doi: 10.1371/journal.pone.0035564
   slug: reich-cluster-power
-  journal: PLOS ONE
+  authors: Reich NG, Myers JA, Obeng D, Milstone AM, Perl TM
   year: 2012
   volume: 7
   number: 4
   pages: e35564
-  authors: Reich NG, Myers JA, Obeng D, Milstone AM, Perl TM
+  journal: PLOS ONE
+  github: Kenkleinman/clusterPower
+  doi: 10.1371/journal.pone.0035564
   keywords: cluster-randomization, software
   abstract: >
     In recent years, the number of studies using a cluster-randomized design has
@@ -1638,9 +1662,9 @@
   authors: Reich NG, Lessler J, Cummings DAT, Brookmeyer R
   pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4540071/pdf/nihms-636908.pdf
   year: 2012
-  journal: Biometrics
   volume: 68(2)
   pages: 598-606
+  journal: Biometrics
   doi: 10.1111/j.1541-0420.2011.01709.x
   keywords: influenza, case-fatality
   abstract: >
@@ -1669,10 +1693,10 @@
   authors: Reich NG, Lessler J, Cummings DAT, Brookmeyer R
   pdf: https://onlinelibrary.wiley.com/doi/pdf/10.1002/sim.3659
   year: 2009
-  journal: Statistics in Medicine
-  doi: 10.1002/sim.3659
   volume: 28(22)
   pages: 2769-84
+  journal: Statistics in Medicine
+  doi: 10.1002/sim.3659
   keywords: influenza, incubation-period
   abstract: >
     The incubation period, the time between infection and disease onset, is important in the surveillance and 
