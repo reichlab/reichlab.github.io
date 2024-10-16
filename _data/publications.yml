@@ -22,7 +22,7 @@
   slug: flusion
   authors: Ray EL, Wang Y, Wolfinger RD, Reich NG
   preprint: https://arxiv.org/abs/2407.19054
-  #pdf: https://arxiv.org/pdf/2407.19054 [update when published]
+  pdf: https://arxiv.org/pdf/2407.19054
   year: 2024
   journal: arXiv
   github: reichlab/flusion-manuscript
@@ -76,7 +76,7 @@
   slug: hubEnsembles
   authors: Shandross L, Howerton E, Contamin L, Hochheiser H, Krystalli A, Consortium of Infectious Disease Modeling Hubs, Reich NG, Ray EL
   preprint: https://www.medrxiv.org/content/10.1101/2024.06.24.24309416v1
-  #pdf: https://www.medrxiv.org/content/10.1101/2024.06.24.24309416v1.full-text [update when published]
+  pdf: https://www.medrxiv.org/content/10.1101/2024.06.24.24309416v1.full.pdf
   year: 2024
   journal: medRxiv
   github: hubverse-org/hubEnsemblesManuscript
@@ -123,7 +123,7 @@
   slug: alloscore
   authors: Gerding A, Reich NG, Rogers B, Ray EL
   preprint: https://arxiv.org/abs/2312.16201
-  #pdf: https://arxiv.org/pdf/2312.16201.pdf [update when published]
+  pdf: https://arxiv.org/pdf/2312.16201
   year: 2023
   journal: arXiv
   github: aaronger/utility-eval-papers
@@ -175,6 +175,7 @@
   slug: gibson-mortality
   authors: Gibson GC, Reich NG, Sheldon D
   preprint: https://www.medrxiv.org/content/10.1101/2020.12.22.20248736v2
+  pdf: https://www.medrxiv.org/content/10.1101/2020.12.22.20248736v2.full.pdf
   year: 2023
   volume: 17(3)
   pages: 1801-1819
@@ -203,7 +204,7 @@
   slug: mix-distrib
   authors: Wadsworth S, Niemi J, Reich NG
   preprint: https://arxiv.org/abs/2310.11939
-  #pdf: https://arxiv.org/pdf/2310.11939.pdf [update when published]
+  pdf: https://arxiv.org/pdf/2310.11939
   year: 2023
   journal: arXiv
   #doi: 10.48550/arXiv.2310.11939 [update when published]
@@ -569,7 +570,7 @@
   slug: reich-zoltar-forecast
   authors: Reich NG, Cornell M, Ray EL, House K, Le K
   preprint: https://arxiv.org/abs/2006.03922
-  pdf: reich-zoltar-forecast
+  pdf: https://www.nature.com/articles/s41597-021-00839-5.pdf
   year: 2021
   volume: 8(59)
   journal: Scientific Data
@@ -743,7 +744,7 @@
   slug: bi-dengue-patterns
   authors: Bi Q, Cummings DAT, Reich NG, Keegan LT, Kaminsky J, Salje H, Clapham H, Doung-ngern P, Iamsirithaworn S, Lessler J
   preprint: https://www.medrxiv.org/content/10.1101/2020.11.25.20186056v1
-  #pdf: https://www.medrxiv.org/content/10.1101/2020.11.25.20186056v1.full.pdf [update when published]
+  pdf: https://www.medrxiv.org/content/10.1101/2020.11.25.20186056v1.full.pdf
   year: 2020
   journal: medRxiv
   #doi: 10.1101/2020.11.25.20186056 [update when published]
@@ -771,7 +772,7 @@
   slug: ray-ensemble-covid19
   authors: Ray EL, Wattanachit N, Niemi J, Kanji AH, House K, Cramer EY, ... Reich NG on behalf of the COVID-19 Forecast Hub Consortium
   preprint: https://www.medrxiv.org/content/10.1101/2020.08.19.20177493v1
-  #pdf: https://www.medrxiv.org/content/10.1101/2020.08.19.20177493v1.full.pdf [update when published]
+  pdf: https://www.medrxiv.org/content/10.1101/2020.08.19.20177493v1.full.pdf
   year: 2020
   journal: medRxiv
   github: reichlab/covidEnsembles
@@ -843,7 +844,7 @@
   slug: lauer-public-health
   authors: Lauer SA, Brown AC, Reich NG
   preprint: https://arxiv.org/abs/2006.00073
-  #pdf: https://arxiv.org/pdf/2006.00073.pdf [update when published]
+  pdf: https://arxiv.org/pdf/2006.00073
   year: 2020
   journal: arXiv
   #doi: 10.48550/arXiv.2006.00073 [update when published]
@@ -1069,7 +1070,7 @@
   slug: covariate-adjusted
   authors: Lauer SA, Reich NG, Balzer LB
   preprint: https://arxiv.org/abs/1910.11397
-  #pdf: https://arxiv.org/pdf/1910.11397.pdf [update when published]
+  pdf: https://arxiv.org/pdf/1910.11397
   year: 2019
   journal: arXiv
   #doi: 10.48550/arXiv.1910.11397 [update when published]
@@ -1321,6 +1322,7 @@
   slug: reich-active-monitoring
   authors: Reich NG, Lessler J, Varma JK, Vora NM
   preprint: https://www.biorxiv.org/content/early/2017/06/28/156497
+  pdf: https://www.nature.com/articles/s41598-018-19406-x.pdf
   year: 2018
   volume: 8
   pages: 1093
@@ -1347,6 +1349,7 @@
 - title: 'Protecting Healthcare Personnel in Outpatient Settings: The Influence of Mandatory Versus Nonmandatory Influenza Vaccination Policies on Workplace Absenteeism During Multiple Respiratory Virus Seasons'
   slug: frederick-absenteeism
   authors: Frederick J, Brown AC, Cummings DAT, Gaydos CA, Gibert CL, Gorse GJ, Los JG, Nyquist AC, Perl TM, Price CS, Radonovich LJ, Reich NG, Rodriguez-Barradas MC, Bessesen MT, Simberkoff MS, for the ResPECT Teama
+  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10241003/pdf/nihms-1880614.pdf
   year: 2018
   volume: 39
   journal: Infect Control Hosp Epidemiol
@@ -1366,6 +1369,7 @@
 - title: 'Infectious Disease Prediction with Kernel Conditional Density Estimation'
   slug: ray-kcde
   authors: Ray EL, Sakrejda K, Lauer SA, Johansson MA, Reich NG
+  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5771499/pdf/nihms903505.pdf
   year: 2017
   volume: 36
   pages: 4908-4929
@@ -1397,6 +1401,7 @@
 - title: 'flusight: interactive visualizations for infectious disease forecasts'
   authors: Tushar A, Reich NG
   slug: tushar-flusight
+  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5565220/pdf/nihms888278.pdf
   year: 2017
   volume: 2
   journal: JOSS
@@ -1425,6 +1430,7 @@
   slug: wang-confidence
   authors: Wang X, Reich NG, Horton NJ
   preprint: https://arxiv.org/abs/1701.08452
+  pdf: https://www.tandfonline.com/doi/epdf/10.1080/00031305.2017.1305294?needAccess=true
   year: 2017
   journal: The American Statistician
   doi: 10.1080/00031305.2017.1305294
@@ -1447,6 +1453,7 @@
 - title: 'Challenges in Real-Time Prediction of Infectious Disease: A Case Study of Dengue in Thailand'
   slug: reich-realtime-dengue-prediction
   preprint: https://arxiv.org/abs/1511.04812
+  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4909288/pdf/pntd.0004761.pdf
   volume: 10
   pages: e0004761
   authors: >
@@ -1479,6 +1486,7 @@
 
 - title: 'Evaluating the performance of infectious disease forecasts: A comparison of climate-driven and seasonal dengue forecasts for Mexico'
   authors: Johansson MA, Reich NG, Hota A, Brownstein JS, Santillana M
+  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5036038/pdf/srep33707.pdf
   year: 2016
   slug: johansson-dengue-mexico
   volume: 6
@@ -1492,6 +1500,7 @@
   slug: reich-mae-case-study
   authors: >
     Reich NG, Lessler J, Sakrejda K, Lauer SA, Iamsirithaworn S, Cummings DAT
+  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5270768/pdf/nihms-810008.pdf
   year: 2016
   volume: 70
   pages: 285-292
@@ -1522,6 +1531,7 @@
   slug: lessler-zika-key-events
   year: 2016
   preprint: https://www.biorxiv.org/content/early/2016/03/02/041913
+  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5096355/pdf/BLT.16.174540.pdf
   volume: 94
   journal: Bulletin of the World Health Organization
   github: HopkinsIDD/ZikaLitReview
@@ -1531,8 +1541,9 @@
     OBJECTIVE: To estimate the timing of key events in the natural history of Zika virus infection. METHODS: In February 2016, we searched PubMed, Scopus and the Web of Science for publications containing the term Zika. By pooling data, we estimated the incubation period, the time to seroconversion and the duration of viral shedding. We estimated the risk of Zika virus contaminated blood donations. FINDINGS: We identified 20 articles on 25 patients with Zika virus infection. The median incubation period for the infection was estimated to be 5.9 days (95% credible interval, CrI: 4.4-7.6), with 95% of people who developed symptoms doing so within 11.2 days (95% CrI: 7.6-18.0) after infection. On average, seroconversion occurred 9.1 days (95% CrI: 7.0-11.6) after infection. The virus was detectable in blood for 9.9 days (95% CrI: 6.9-21.4) on average. Without screening, the estimated risk that a blood donation would come from an infected individual increased by approximately 1 in 10 000 for every 1 per 100 000 person-days increase in the incidence of Zika virus infection. Symptom-based screening may reduce this rate by 7% (relative risk, RR: 0.93; 95% CrI: 0.89-0.99) and antibody screening, by 29% (RR: 0.71; 95% CrI: 0.28-0.88). CONCLUSION: Neither symptom- nor antibody-based screening for Zika virus infection substantially reduced the risk that blood donations would be contaminated by the virus. Polymerase chain reaction testing should be considered for identifying blood safe for use in pregnant women in high-incidence areas.
 
 - title: 'The Respiratory Protection Effectiveness Clinical Trial (ResPECT): A Cluster-Randomized Comparison of Respirator and Medical Mask Effectiveness against Respiratory Infections in Healthcare Personnel'
-  authors: Radonovich LJ, Bessesen M, Cummings DAT, Eagan A, Gaydos C, Gibert C, Gorse G, Nyquist C, Reich NG, Rodriguez-Barradas M, Savor-Price C, Shaffer R, Simberkoff M, Perl TM
   slug: radonovich-protocol
+  authors: Radonovich LJ, Bessesen M, Cummings DAT, Eagan A, Gaydos C, Gibert C, Gorse G, Nyquist C, Reich NG, Rodriguez-Barradas M, Savor-Price C, Shaffer R, Simberkoff M, Perl TM
+  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4890247/pdf/12879_2016_Article_1494.pdf
   year: 2016
   volume: 16
   pages: 243
@@ -1581,6 +1592,7 @@
 - title: 'The Effect of Cluster Size Variability on Statistical Power in Cluster-Randomized Trials'
   slug: lauer-cluster-power
   authors: Lauer SA, Kleinman K, Reich NG
+  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4382318/pdf/pone.0119074.pdf
   year: 2015
   volume: 10
   pages: e0119074
@@ -1597,6 +1609,7 @@
   authors: >
     Reich NG, Shrestha S, King AA, Rohani P, Lessler J, Kalayanarooj S, Yoon IK,
     Gibbons RV, Burke DS, Cummings DAT.
+  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3730691/pdf/rsif20130414.pdf
   year: 2013
   volume: 10
   pages: 20130414
@@ -1627,6 +1640,7 @@
 - title: 'Empirical power and sample size calculations for cluster-randomized and cluster-randomized crossover studies'
   slug: reich-cluster-power
   authors: Reich NG, Myers JA, Obeng D, Milstone AM, Perl TM
+  pdf: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3338707/pdf/pone.0035564.pdf
   year: 2012
   volume: 7
   number: 4
