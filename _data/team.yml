@@ -5,7 +5,7 @@
   role: Principal Investigator
   description: |
     Nick is a Professor of Biostatistics at UMass. He received his
-    PhD in Biostatstics from Johns Hopkins, where he also did his post-doctoral
+    PhD in Biostatstics from Johns Hopkins, where he also did his postdoctoral
     training in infectious disease epidemiology. He also enjoys spending time outside
     with his family (hiking, camping, canoeing, gardening).
   image: /images/people/nick.jpg
@@ -23,7 +23,7 @@
     Evan is a Research Assistant Professor of Biostatistics at UMass-Amherst.
     He received his PhD in statistics from UMass-Amherst, developing
     methods to infer physical activity type and intensity from accelerometer
-    data. A former post-doc in the Reich Lab, he also works on developing
+    data. A former postdoc in the Reich Lab, he also works on developing
     methods for predicting infectious disease outbreaks.
   image: /images/people/evan.jpg
   links:
@@ -57,21 +57,6 @@
   image: /images/people/minsu.jpg
   links: []
 
-- name: Aaron Gerding
-  role: MS Student
-  description: |
-    Aaron is pursuing a degree in biostatistics after a previous career lecturing in the UMass-Amherst math department.
-    He is especially interested in how the public health needs of populations with low social or political visibility
-    should inform forecasting and risk assessment methodologies.
-  image: /images/people/aaron.jpg
-  links:
-    - name: flaticon-laptop-1
-      url: "https://aaronger.github.io"
-    - name: flaticon-github-1
-      url: "https://github.com/aaronger"
-    - name: flaticon-linkedin-1
-      url: "https://www.linkedin.com/in/aaron-gerding-72338949"
-
 - name: Álvaro J. Castro Rivadeneira
   role: PhD Student
   description: |
@@ -95,15 +80,6 @@
     and clinical trial sponsors. He enjoys playing tennis and skiing in his free time.
   image: /images/people/Doug.jpg
   links: []
-  
-- name: Yujie Gong
-  role: Undergrad student
-  description: |
-    Yujie is an undergraduate student majoring in Statistical and Data Science and Psychology. Yujie is interested 
-    in pursuing a further degree in the area of biostatistics and enthusiastic about data modeling. Outside of 
-    studying, Yujie enjoys music and traveling. 
-  image: /images/people/yujie.jpg
-  links: []
 
 # Staff section
 
@@ -121,16 +97,6 @@
       url: "http://www.matthewcornell.org"
     - name: flaticon-linkedin-1
       url: "https://www.linkedin.com/in/matthewcornell"
-
-- name: Martha Zorn
-  role: Data analyst/Project manager
-  description: |
-    Martha has worked as a biostatistician and data manager in the School of Public Health and Health Sciences, Amherst
-    since 1987. She likes doing anything outside and garland dancing.
-  image: /images/people/martha.jpg
-  links:
-    - name: flaticon-linkedin-1
-      url: "https://www.linkedin.com/in/martha-zorn-20015628"
 
 - name: Anna Krystalli
   role: Research Software Engineer
@@ -200,8 +166,36 @@
 
 # Alumni Section
 
+- name: Aaron Gerding
+  role: MS Student (2021-2024)
+  description: |
+
+  type: Alumni
+  image: /images/people/aaron.jpg
+  links: 
+      - name: alumni_link
+        url: "https://aaronger.github.io"
+
+- name: Martha Zorn
+  role: Data Analyst/Project Manager (2020-2024)
+  description: |
+
+  type: Alumni
+  image: /images/people/martha.jpg
+  links: 
+      - name: alumni_link
+        url: "https://www.linkedin.com/in/martha-zorn-20015628"
+
+- name: Yujie Gong
+  role: Undergraduate Student (2024)
+  description: |
+
+  type: Alumni
+  image: /images/people/yujie.jpg
+  links: []
+
 - name: Dongah Kim
-  role: Postdoctoral Researcher (2022-2024)
+  role: Postdoctoral Fellow (2022-2024)
   description: |
 
   type: Alumni
@@ -295,7 +289,7 @@
       url: "https://gcgibson.github.io"
 
 - name: Dasuni Jayawardena
-  role: Undergrad Researcher (2020-2021)
+  role: Undergraduate Student (2020-2021)
   description: |
 
   type: Alumni
@@ -313,7 +307,7 @@
       url: "https://github.com/ydhuang28"
 
 - name: Trust Okorie
-  role: Undergrad intern (2021)
+  role: Undergraduate Student (2021)
   description: |
 
   type: Alumni
@@ -323,7 +317,7 @@
       url: "https://www.linkedin.com/in/tokorie"
 
 - name: Richa Jain
-  role: Undergrad intern (2021)
+  role: Undergraduate Student (2021)
   description: |
 
   type: Alumni
@@ -393,7 +387,7 @@
       url: "http://www.katie-house.com"
 
 - name: Justin Stott
-  role: Undergrad RA (2019-2020)
+  role: Undergraduate Student (2019-2020)
   description: |
 
   type: Alumni
@@ -412,7 +406,7 @@
       url: "https://scholar.google.com/citations?user=EEKbG5sAAAAJ&hl=en"
 
 - name: Alexandria (Lexi) Brown
-  role: Post-doctoral Fellow (2015-2018)
+  role: Postdoctoral Fellow (2015-2018)
   description: |
 
   type: Alumni
@@ -432,7 +426,7 @@
       url: "https://github.com/ckusiak17"
 
 - name: Willow Crawford-Crudell
-  role: Undergrad Intern (2018)
+  role: UUndergraduate Student (2018)
   description: |
 
   type: Alumni
@@ -440,7 +434,7 @@
   links: []
 
 - name: Dean Gladish
-  role: Undergrad Intern (2018)
+  role: Undergraduate Student (2018)
   description: |
 
   type: Alumni
@@ -450,7 +444,7 @@
       url: "https://github.com/deangladish"
 
 - name: Rebecca Silva
-  role: Undergrad Intern (2018)
+  role: Undergraduate Student (2018)
   description: |
 
   type: Alumni
@@ -470,7 +464,7 @@
       url: "https://github.com/lepisma"
 
 - name: Kristina Yamkovoy
-  role: Undergrad Researcher (2017-2018)
+  role: Undergraduate Student (2017-2018)
   description: |
 
   type: Alumni
@@ -480,7 +474,7 @@
       url: "https://github.com/kyamkovoy"
 
 - name: Evan Moore
-  role: Undergrad Researcher (2018)
+  role: Undergraduate Student (2018)
   description: |
 
   type: Alumni
@@ -490,7 +484,7 @@
       url: "https://github.com/evanm31"
 
 - name: Harley Jean
-  role: Undergrad Researcher (2016-2017)
+  role: Undergraduate Student (2016-2017)
   description: |
 
   type: Alumni
@@ -509,7 +503,7 @@
 
 
 - name: Krzysztof Sakrejda
-  role: Post-doctoral Fellow (2015-2017)
+  role: Postdoctoral Fellow (2015-2017)
   description: |
 
   type: Alumni
