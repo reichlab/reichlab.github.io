@@ -1,5 +1,26 @@
 # 2024
-
+- title: 'Beyond forecast leaderboards: Measuring individual model importance based on contribution to ensemble accuracy'
+  slug: model_importance
+  authors: Kim M, Ray EL, Reich NG
+  preprint: https://arxiv.org/abs/2412.08916
+  pdf: https://arxiv.org/pdf/2412.08916
+  year: 2024
+  #volume: 30(9)[update when published]
+  #pages: 1967-1969[update when published]
+  journal: arXiv
+  github: mkim425/model-importance
+  #doi: 10.3201/eid3009.240026[update when published]
+  keywords: forecasting, covid-19
+  abstract: >
+    Ensemble forecasts often outperform forecasts from individual standalone models, and have been used to support decision-making and policy
+    planning in various fields. As collaborative forecasting efforts to create effective ensembles grow, so does interest in understanding 
+    individual models' relative importance in the ensemble. To this end, we propose two practical methods that measure the difference between 
+    ensemble performance when a given model is or is not included in the ensemble: a leave-one-model-out algorithm and a leave-all-subsets-of-
+    models-out algorithm, which is based on the Shapley value. We explore the relationship between these metrics, forecast accuracy, and the 
+    similarity of errors, both analytically and through simulations. We illustrate this measure of the value a component model adds to an ensemble
+    in the presence of other models using US COVID-19 death forecasts. This study offers valuable insight into individual models' unique features
+    within an ensemble, which standard accuracy metrics alone cannot reveal.
+    
 - title: 'Optimizing Disease Outbreak Forecast Ensembles'
   slug: ensemble-sizes
   authors: Fox SJ, Kim M, Meyers LA, Reich NG, Ray EL
