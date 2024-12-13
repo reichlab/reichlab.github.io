@@ -1,7 +1,7 @@
 # 2024
 
 - title: 'Beyond forecast leaderboards: Measuring individual model importance based on contribution to ensemble accuracy'
-  slug: model_importance
+  slug: model-importance
   authors: Kim M, Ray EL, Reich NG
   preprint: https://arxiv.org/abs/2412.08916
   pdf: https://arxiv.org/pdf/2412.08916
