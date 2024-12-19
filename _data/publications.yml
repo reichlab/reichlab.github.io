@@ -8,7 +8,7 @@
   slug: alloscore
   authors: Gerding A, Reich NG, Rogers B, Ray EL
   preprint: https://arxiv.org/abs/2312.16201
-  #pdf: https://arxiv.org/pdf/2312.16201 [update if pdf becomes open access]
+  pdf: alloscore.pdf #[update if pdf becomes open access]
   year: 2024
   journal: Journal of the Royal Statistical Society Series A: Statistics in Society
   github: aaronger/utility-eval-papers
