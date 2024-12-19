@@ -10,7 +10,7 @@
   preprint: https://arxiv.org/abs/2312.16201
   pdf: alloscore.pdf #[update if pdf becomes open access]
   year: 2024
-  journal: Journal of the Royal Statistical Society Series A: Statistics in Society
+  journal: 'Journal of the Royal Statistical Society Series A: Statistics in Society'
   github: aaronger/utility-eval-papers
   doi: 10.1093/jrsssa/qnae136
   keywords: forecasting, covid-19
