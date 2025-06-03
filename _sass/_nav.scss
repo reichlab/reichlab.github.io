@@ -1,7 +1,9 @@
+@use "colors";
+
 .nav-accent {
   height: 5px;
   width: 100%;
-  background-color: $color-gray-dark;
+  background-color: colors.$color-gray-dark;
 }
 
 .section-nav {

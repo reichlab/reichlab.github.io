@@ -1,11 +1,12 @@
-@import 'nav';
-@import 'footer';
-@import 'people';
-@import 'theme';
-@import 'publications';
+@use "colors";
+@use 'nav';
+@use 'footer';
+@use 'people';
+@use 'theme';
+@use 'publications';
 
 .bg-gray {
-  background-color: $color-gray-light;
+  background-color: colors.$color-gray-light;
 }
 
 .container-body {
@@ -42,9 +43,9 @@ ul {
 }
 
 code {
-  background: $color-code-background;
+  background: colors.$color-code-background;
   border-radius: 5px;
-  color: $color-code-foreground;
+  color: colors.$color-code-foreground;
   font-family: 'Source Code Pro';
   padding: 0 5px;
 }
@@ -76,7 +77,7 @@ slick-dotted.slick-slider {
 
 // Carosel Button
 .slick-prev:before, .slick-next:before { 
-    color:$color-gray-medium !important;
+    color:colors.$color-gray-medium !important;
 }
 
 // Carosel Caption

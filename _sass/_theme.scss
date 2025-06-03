@@ -1,3 +1,5 @@
+@use "colors";
+
 // Thematic page css
 
 .project-section-divider {
@@ -5,7 +7,7 @@
   width: 40%;
 
   &::after {
-    color: $color-text-light !important;
+    color: colors.$color-text-light !important;
     font-size: 1.4rem !important;
   }
 }
@@ -21,13 +23,13 @@
     }
 
     .project-description {
-      color: $color-text-medium;
+      color: colors.$color-text-medium;
       padding-top: 10px;
     }
   }
 }
 
 .theme-image {
-  border: .1rem solid $color-gray-light;
+  border: .1rem solid colors.$color-gray-light;
   border-radius: .2rem;
 }

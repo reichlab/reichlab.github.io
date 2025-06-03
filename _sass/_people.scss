@@ -1,9 +1,11 @@
+@use "colors";
+
 .people-type {
   margin-bottom: 0;
 }
 
 .card-people {
-  border: .1rem solid $color-gray-light;
+  border: .1rem solid colors.$color-gray-light;
   padding: 0;
  
 
@@ -12,7 +14,7 @@
       background-position: center;
       background-size: cover;
       border-radius: 1000px;
-      box-shadow: 0 0 2px $color-gray-medium;
+      box-shadow: 0 0 2px colors.$color-gray-medium;
       height: 160px;
       margin: 0 auto;
       width: 160px;
@@ -42,7 +44,7 @@
   overflow: hidden;
   padding: 5px;
   text-align: center;
-  border: .1rem solid $color-gray-light;
+  border: .1rem solid colors.$color-gray-light;
 }
 
 .alumni-container{

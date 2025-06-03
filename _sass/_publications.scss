@@ -1,3 +1,5 @@
+@use "colors";
+
 .keyword-toggle-container {
   margin-bottom: 10px;
   margin-top: 30px;
@@ -13,18 +15,18 @@
 }
 
 .pub-year {
-  color: $color-text-light;
+  color: colors.$color-text-light;
   margin-bottom: 0;
   margin-top: 30px;
 }
 
 .card-publication {
-  border: .1rem solid $color-gray-light;
+  border: .1rem solid colors.$color-gray-light;
   padding: 0;
 
   .card-image {
     img {
-      box-shadow: 0 0 2px $color-gray-medium;
+      box-shadow: 0 0 2px colors.$color-gray-medium;
       height: 120px;
       margin: 0 auto;
       width: 120px;

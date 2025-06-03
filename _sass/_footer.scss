@@ -1,9 +1,11 @@
+@use "colors";
+
 .section-footer {
   padding: 2em;
   padding-top: 4em;
 
   a {
-    color: $color-gray-dark;
+    color: colors.$color-gray-dark;
 
     &:hover {
       text-decoration: none;
@@ -13,12 +15,12 @@
       margin-left: 2em;
 
       &:hover {
-        color: $color-twitter;
+        color: colors.$color-twitter;
       }
     }
 
     &#github-btn:hover {
-      color: $color-github;
+      color: colors.$color-github;
     }
   }
 }
