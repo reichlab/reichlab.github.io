@@ -29,6 +29,8 @@ GEM
       faraday-net_http (>= 2.0, < 3.2)
     faraday-net_http (3.1.0)
       net-http
+    faraday-retry (2.3.1)
+      faraday (~> 2.0)
     ffi (1.16.3)
     fiber-annotation (0.2.0)
     fiber-local (1.0.0)
@@ -146,6 +148,7 @@ PLATFORMS
 DEPENDENCIES
   base64
   csv
+  faraday-retry
   front_matter_parser (>= 1.0.1)
   html-proofer (>= 3.19.3)
   jekyll (>= 3.3.1)

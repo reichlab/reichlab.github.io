@@ -1,0 +1,488 @@
+---
+nickreich/data-stories:
+  url: https://github.com/nickreich/data-stories
+  title: data-stories
+  description: The web home for the Telling Stories with Data course at UMass-Amherst
+    (Fall 2016 and beyond).
+  commit:
+    date: Sep 26, 2024
+    string: adding authorization scope to fix spotify code.
+    author: Nicholas Reich
+    url: https://github.com/nickreich/data-stories/commit/1860e7abdcbdb93bf14e84dd6788d1a46b7d27ea
+    author_url: https://github.com/nickreich
+nickreich/data-stories-2016:
+  url: https://github.com/nickreich/data-stories-2016
+  title: data-stories-2016
+  description: Course materials and website for Telling Stories with Data (PUBHLTH
+    490ST) in Spring 2016 at UMass-Amherst.
+  commit:
+    date: Nov 17, 2016
+    string: |-
+      Merge pull request #3 from sdcastillo/patch-1
+
+      Update lecture8-logistic-regression.Rnw
+    author: Nicholas G Reich
+    url: https://github.com/nickreich/data-stories-2016/commit/ae227c50b1993816d48297d140edf4da600f9b32
+    author_url: https://github.com/nickreich
+nickreich/applied-regression-2016:
+  url: https://github.com/nickreich/applied-regression-2016
+  title: applied-regression-2016
+  description: Course materials and website for Applied Regression Modeling (BIOSTATS
+    690NR) in Spring 2016 at UMass-Amherst.
+  commit:
+    date: Apr 18, 2016
+    string: updates.
+    author: Nicholas G Reich
+    url: https://github.com/nickreich/applied-regression-2016/commit/c715999d2d4047e98888c47b24a3f157d61786f6
+    author_url: https://github.com/nickreich
+nickreich/methods2:
+  url: https://github.com/nickreich/methods2
+  title: methods2
+  description: 'Course materials for the UMass Biostatistics Methods 2 course, a.k.a.
+    PUBHLTH 690NR: Statistical Modeling and Data Visualization.'
+  commit:
+    date: Aug 13, 2014
+    string: adding syllabus file.
+    author: Nicholas G Reich
+    url: https://github.com/nickreich/methods2/commit/b890bbd4c3a0a65b4bbfbe80604d636e9ec26625
+    author_url: https://github.com/nickreich
+nickreich/stat-modeling-2015:
+  url: https://github.com/nickreich/stat-modeling-2015
+  title: stat-modeling-2015
+  description: Course website for Statistical Modeling and Data Visualization (Spring
+    2015) at UMass-Amherst.
+  commit:
+    date: May 24, 2015
+    string: adding notes for improvement.
+    author: Nicholas Reich
+    url: https://github.com/nickreich/stat-modeling-2015/commit/71d46513127e74e62b03d8da0bf21547ec00b9c3
+    author_url: https://github.com/nickreich
+nickreich/statComp2014:
+  url: https://github.com/nickreich/statComp2014
+  title: statComp2014
+  description: 'Materials for the Introduction to Statistical Computing with R course
+    at UMass in Fall 2014. '
+  commit:
+    date: Nov 26, 2014
+    string: |-
+      Merge pull request #6 from bakiros/patch-2
+
+      Update homework.md
+    author: Nicholas G Reich
+    url: https://github.com/nickreich/statComp2014/commit/0cfcae51802f008836a5c68050ff121192c56e4c
+    author_url: https://github.com/nickreich
+nickreich/BiP:
+  url: https://github.com/nickreich/BiP
+  title: BiP
+  description: High Performance Computing workshop (February 2014)
+  commit:
+    date: Feb 07, 2014
+    string: Update README.md
+    author: Nicholas G Reich
+    url: https://github.com/nickreich/BiP/commit/4be1d2445e740c8bdc34da5d25ab10b9a1701c13
+    author_url: https://github.com/nickreich
+nickreich/statsTeachR:
+  url: https://github.com/nickreich/statsTeachR
+  title: statsTeachR
+  description: Open-source modules for teaching statistics.
+  commit:
+    date: Jul 03, 2014
+    string: cleaning up mlr1 and mlr2
+    author: Nicholas Reich
+    url: https://github.com/nickreich/statsTeachR/commit/2e41b8e3e25225d230073d5cc00147005b6a693c
+    author_url: https://github.com/nickreich
+sakrejda/stan-workshop:
+  url: https://github.com/sakrejda/stan-workshop
+  title: stan-workshop
+  description: Examples of working and non-working models, initially for ODCS 2016
+    in Boston.
+  commit:
+    date: May 26, 2016
+    string: Adding quantile noise example.
+    author: Krzysztof Sakrejda
+    url: https://github.com/sakrejda/stan-workshop/commit/52b8e165053f0fb1da1f0f0a1a11da2d0cb29fee
+    author_url: https://github.com/koxpvp1337
+reichlab/covid19-forecast-hub:
+  url: https://github.com/reichlab/covid19-forecast-hub
+  title: covid19-forecast-hub
+  description: Projections of COVID-19, in standardized format
+  commit:
+    date: Nov 21, 2024
+    string: |-
+      Merge pull request #9419 from reichlab/nickreich-patch-1
+
+      Add info on new CDC COVID Hub repo
+    author: Alvaro J. Castro Rivadeneira
+    url: https://github.com/reichlab/covid19-forecast-hub/commit/3a6997b6abdcfabe321dd059ebe32334095d49b5
+    author_url: https://github.com/micokoch
+dsheldon/covid:
+  url: https://github.com/dsheldon/covid
+  title: covid
+  description: Bayesian modeling of COVID-19
+  commit:
+    date: Dec 15, 2022
+    string: Update README.md
+    author: Daniel Sheldon
+    url: https://github.com/dsheldon/covid/commit/81922452a74244219cf1940fbed535903fdaed32
+    author_url: https://github.com/dsheldon
+FluSightNetwork/cdc-flusight-ensemble:
+  url: https://github.com/FluSightNetwork/cdc-flusight-ensemble
+  title: cdc-flusight-ensemble
+  description: Guidelines and forecasts for a collaborative U.S. influenza forecasting
+    project.
+  commit:
+    date: May 04, 2020
+    string: Protea EW17
+    author: Craig McGowan
+    url: https://github.com/FluSightNetwork/cdc-flusight-ensemble/commit/8c3100af015cae2fb43db823c3f61e7e6a7d59ea
+    author_url: https://github.com/craigjmcgowan
+tomcm39/adaptively_stacking_ensembles_for_infleunza_forecasting_with_incomplete_data:
+  url: https://github.com/tomcm39/adaptively_stacking_ensembles_for_infleunza_forecasting_with_incomplete_data
+  title: adaptively_stacking_ensembles_for_infleunza_forecasting_with_incomplete_data
+  description:
+  commit:
+    date: Jan 13, 2021
+    string: |-
+      Merge pull request #2 from tomcm39/talks
+
+      update
+    author: thomasmcandrew
+    url: https://github.com/tomcm39/adaptively_stacking_ensembles_for_infleunza_forecasting_with_incomplete_data/commit/e895fa64736173e6230bc1fe9c3b098803c0c7e5
+    author_url: https://github.com/tomcm39
+reichlab/annual-predictions-paper:
+  url: https://github.com/reichlab/annual-predictions-paper
+  title: annual-predictions-paper
+  description: The code and data required to make annual predictions for Thailand
+  commit:
+    date: Feb 12, 2023
+    string: Update README.md
+    author: Nicholas G Reich
+    url: https://github.com/reichlab/annual-predictions-paper/commit/2deb474b8f5a51a28c3ee17c4a9962b45936e481
+    author_url: https://github.com/nickreich
+reichlab/KCDE:
+  url: https://github.com/reichlab/kcde
+  title: kcde
+  description: Kernel conditional density estimation with flexible kernel specifications.
+  commit:
+    date: Apr 05, 2017
+    string: Merge branch 'master' of https://github.com/reichlab/kcde
+    author: EvanLRay
+    url: https://github.com/reichlab/kcde/commit/6f8c8e5c82ec63e2e8f8bc2a143ec75460d86ab4
+    author_url: https://github.com/elray1
+reichlab/2017-2018-cdc-flu-contest:
+  url: https://github.com/reichlab/2017-2018-cdc-flu-contest
+  title: 2017-2018-cdc-flu-contest
+  description: Code and submissions for 2017-2018 CDC flu prediction contest
+  commit:
+    date: Sep 19, 2018
+    string: changed model-id-map.csv to exclude models already included in the FluSightNetwork
+    author: matthewcornell
+    url: https://github.com/reichlab/2017-2018-cdc-flu-contest/commit/dcb99465bccbe1167e196878182b2e84749b6d87
+    author_url: https://github.com/matthewcornell
+reichlab/dengue-thailand-2014-forecasts:
+  url: https://github.com/reichlab/dengue-thailand-2014-forecasts
+  title: dengue-thailand-2014-forecasts
+  description: 'Code and public data for "Challenges in real-time prediction of infectious
+    disease: a case study of dengue in Thailand"'
+  commit:
+    date: May 12, 2016
+    string: first updates to repo.
+    author: Nicholas G Reich
+    url: https://github.com/reichlab/dengue-thailand-2014-forecasts/commit/021e439910c24c59562855ff59a43801a14f8fbe
+    author_url: https://github.com/nickreich
+aaronger/utility-eval-papers:
+  url: https://github.com/aaronger/utility-eval-papers
+  title: utility-eval-papers
+  description: Pipelines and drafts related to arXiv:2312.16201
+  commit:
+    date: Sep 09, 2024
+    string: response2, using hyperlinks to diff
+    author: Aaron Gerding
+    url: https://github.com/aaronger/utility-eval-papers/commit/f22df1e2dc2ce65b520fbe09d73adad56dc8af2e
+    author_url: https://github.com/aaronger
+reichlab/covid-hosp-forecasts-with-cases:
+  url: https://github.com/reichlab/covid-hosp-forecasts-with-cases
+  title: covid-hosp-forecasts-with-cases
+  description:
+  commit:
+    date: Sep 26, 2023
+    string: updates to figure legend and shapes
+    author: Nicholas Reich
+    url: https://github.com/reichlab/covid-hosp-forecasts-with-cases/commit/f47bd5a8c97bf719645bf61ed6d43f81e0d274db
+    author_url: https://github.com/nickreich
+reichlab/flusion:
+  url: https://github.com/reichlab/flusion
+  title: flusion
+  description: Influenza forecasting using data fusion
+  commit:
+    date: Jun 19, 2024
+    string: |-
+      Merge pull request #36 from reichlab/feat_importance
+
+      feature importance for one example model run
+    author: Evan Ray
+    url: https://github.com/reichlab/flusion/commit/ab82656e4724f1c33b4cf8b133f49befc4dc8e63
+    author_url: https://github.com/elray1
+hubverse-org/hubDocs:
+  url: https://github.com/hubverse-org/hubDocs
+  title: hubDocs
+  description: This is the source for docs.hubverse.io. It is built with ReadTheDocs
+  commit:
+    date: Jun 02, 2025
+    string: |-
+      Merge pull request #345 from hubverse-org/bs/update-python-release-docs
+
+      Minor updates to the checklist
+    author: Alvaro J. Castro Rivadeneira
+    url: https://github.com/hubverse-org/hubDocs/commit/5c0b7aa5093889b41c62053979ee90b28ff8c374
+    author_url: https://github.com/micokoch
+hubverse-org/hubverse:
+  url: https://github.com/hubverse-org/hubverse
+  title: hubverse
+  description: Easily install and load packages from the hubverse
+  commit:
+    date: May 01, 2025
+    string: |-
+      Update links to docs.hubverse.io (#14)
+
+      * Update hubverse.io → docs.hubverse.io in README.md
+
+      * Update hubverse.io → docs.hubverse.io in DESCRIPTION
+
+      * Update hubverse.io → docs.hubverse.io in README.Rmd
+
+      * Update hubverse.io → docs.hubverse.io in man/hubverse-package.Rd
+
+      * Update hubverse.io → docs.hubverse.io in .github/CONTRIBUTING.md
+
+      * Update hubverse.io → docs.hubverse.io in .github/CODE_OF_CONDUCT.md
+
+      * Update README.Rmd
+
+      Co-authored-by: Zhian N. Kamvar <zkamvar@gmail.com>
+
+      * Update README.Rmd
+
+      Co-authored-by: Zhian N. Kamvar <zkamvar@gmail.com>
+
+      * Update DESCRIPTION
+
+      Co-authored-by: Zhian N. Kamvar <zkamvar@gmail.com>
+
+      * Update README.md
+
+      Co-authored-by: Zhian N. Kamvar <zkamvar@gmail.com>
+
+      * Update README.md
+
+      Co-authored-by: Zhian N. Kamvar <zkamvar@gmail.com>
+
+      * Update README.Rmd
+
+      * Update README.md
+
+      * Update man/hubverse-package.Rd
+
+      ---------
+
+      Co-authored-by: Zhian N. Kamvar <zkamvar@gmail.com>
+    author: Anna Krystalli
+    url: https://github.com/hubverse-org/hubverse/commit/2a6b68e57e63db8bd00a0250b0eda5e3c59c3e4d
+    author_url: https://github.com/annakrystalli
+hubverse-org/hubData:
+  url: https://github.com/hubverse-org/hubData
+  title: hubData
+  description: Tools for accessing and working with hubverse Hub data
+  commit:
+    date: May 01, 2025
+    string: |-
+      Merge pull request #86 from hubverse-org/fix-doc-links
+
+      Update links to docs.hubverse.io
+    author: Lucie Contamin
+    url: https://github.com/hubverse-org/hubData/commit/d6bcc0df8b4bd722ad1f165bc00d64b8c0d6f513
+    author_url: https://github.com/LucieContamin
+hubverse-org/hubEnsembles:
+  url: https://github.com/hubverse-org/hubEnsembles
+  title: hubEnsembles
+  description: Ensemble methods for combining hub model outputs.
+  commit:
+    date: May 28, 2025
+    string: |-
+      Merge pull request #171 from hubverse-org/post-release-1.0.0
+
+      Increment version number to 1.0.0.9000
+    author: Li Shandross
+    url: https://github.com/hubverse-org/hubEnsembles/commit/7b822951154fcbf18d64cf5061f1305e6acc1d0f
+    author_url: https://github.com/lshandross
+reichlab/activemonitr:
+  url: https://github.com/reichlab/activemonitr
+  title: activemonitr
+  description: Modeling of costs and risks of active monitoring during pandemics.
+  commit:
+    date: Apr 04, 2024
+    string: |-
+      Merge pull request #20 from reichlab/nickreich-patch-1
+
+      Update README.md
+    author: Nicholas G Reich
+    url: https://github.com/reichlab/activemonitr/commit/c427abff2da7e6474e7b1928e117ec3b70e7c2f1
+    author_url: https://github.com/nickreich
+nickreich/dengueCP:
+  url: https://github.com/nickreich/dengueCP
+  title: dengueCP
+  description: Code and modeled data for JRSI paper on estimating cross-protection
+    between dengue serotypes.
+  commit:
+    date: Jan 09, 2014
+    string: Update README.md
+    author: Nicholas G Reich
+    url: https://github.com/nickreich/dengueCP/commit/5a522d8ad679bf7c0a40d3af89808f2557c7c4a5
+    author_url: https://github.com/nickreich
+nickreich/coarseDataTools:
+  url: https://github.com/nickreich/coarseDataTools
+  title: coarseDataTools
+  description: An R package for analyzing censored and under-reported surveillance
+    data.
+  commit:
+    date: Apr 11, 2025
+    string: |-
+      Merge pull request #61 from nickreich/cran-link-fix
+
+      update cross-reference for MCMCmetrop1R link
+    author: Nicholas G Reich
+    url: https://github.com/nickreich/coarseDataTools/commit/ff0290751126eaac43f5732b19478225ccfb2fbe
+    author_url: https://github.com/nickreich
+reichlab/d3-foresight:
+  url: https://github.com/reichlab/d3-foresight
+  title: d3-foresight
+  description: Interactive visualization for time series forecasts
+  commit:
+    date: Jan 28, 2021
+    string: added .DS_Store to .gitignore
+    author: ydhuang28
+    url: https://github.com/reichlab/d3-foresight/commit/829ac2bb77af3a713c2a91e0ffc5798c23eaf5fc
+reichlab/forecast-repository:
+  url: https://github.com/reichlab/forecast-repository
+  title: forecast-repository
+  description: Codebase for Zoltar forecast repository
+  commit:
+    date: Apr 08, 2025
+    string: |-
+      Merge pull request #386 from reichlab/mc/push-master-fix
+
+      Mc/push master fix
+    author: Matthew Cornell
+    url: https://github.com/reichlab/forecast-repository/commit/dc25e1d9855d10f75361486c0fa3d250d0998958
+    author_url: https://github.com/matthewcornell
+reichlab/zoltr:
+  url: https://github.com/reichlab/zoltr
+  title: zoltr
+  description:
+  commit:
+    date: Mar 06, 2025
+    string: |-
+      Merge pull request #57 from reichlab/mc/cran-prep
+
+      cran prep
+    author: Matthew Cornell
+    url: https://github.com/reichlab/zoltr/commit/e7e2587b4a75018a86d909a6b79c50daa94b5da6
+    author_url: https://github.com/matthewcornell
+reichlab/zoltpy:
+  url: https://github.com/reichlab/zoltpy
+  title: zoltpy
+  description: A python module that interfaces with Zoltar https://github.com/reichlab/forecast-repository
+  commit:
+    date: May 28, 2024
+    string: attempt to fix broken workflow
+    author: matthewcornell
+    url: https://github.com/reichlab/zoltpy/commit/ed1db5f28529e2d6734fd05c5812de96728eb866
+    author_url: https://github.com/matthewcornell
+reichlab/cdcForecastUtils:
+  url: https://github.com/reichlab/cdcForecastUtils
+  title: cdcForecastUtils
+  description: utilities for forecasting for cdc competitions
+  commit:
+    date: Apr 24, 2020
+    string: |-
+      Merge pull request #25 from reichlab/casey
+
+      update 0 prob bin check for hosp
+    author: Casey Gibson
+    url: https://github.com/reichlab/cdcForecastUtils/commit/d4fb1ea6672b5754770916d95f615c352b073e02
+    author_url: https://github.com/gcgibson
+reichlab/sarimaTD:
+  url: https://github.com/reichlab/sarimaTD
+  title: sarimaTD
+  description: 'sarimaTD R package: SARIMA Models with Transformations and Seasonal
+    Differencing'
+  commit:
+    date: Mar 19, 2020
+    string: update to allow for specific values of first-order and seasonal differencing
+      outside of forecast::auto.arima
+    author: Evan Ray
+    url: https://github.com/reichlab/sarimaTD/commit/bb4d3dd77e803ebffaa1ba365e090528fa9e5af3
+    author_url: https://github.com/elray1
+reichlab/kcde:
+  url: https://github.com/reichlab/kcde
+  title: kcde
+  description: Kernel conditional density estimation with flexible kernel specifications.
+  commit:
+    date: Apr 05, 2017
+    string: Merge branch 'master' of https://github.com/reichlab/kcde
+    author: EvanLRay
+    url: https://github.com/reichlab/kcde/commit/6f8c8e5c82ec63e2e8f8bc2a143ec75460d86ab4
+    author_url: https://github.com/elray1
+reichlab/pymmwr:
+  url: https://github.com/reichlab/pymmwr
+  title: pymmwr
+  description: MMWR weeks for Python
+  commit:
+    date: Oct 19, 2019
+    string: |-
+      Bump urllib3 from 1.22 to 1.24.2
+
+      Bumps [urllib3](https://github.com/urllib3/urllib3) from 1.22 to 1.24.2.
+      - [Release notes](https://github.com/urllib3/urllib3/releases)
+      - [Changelog](https://github.com/urllib3/urllib3/blob/master/CHANGES.rst)
+      - [Commits](https://github.com/urllib3/urllib3/compare/1.22...1.24.2)
+
+      Signed-off-by: dependabot[bot] <support@github.com>
+    author: dependabot[bot]
+    url: https://github.com/reichlab/pymmwr/commit/b5ebdd88cc1e4d33548010e04b25ece4cb982b8e
+    author_url: https://github.com/apps/dependabot
+reichlab/ALERT:
+  url: https://github.com/reichlab/ALERT
+  title: ALERT
+  description: Implementation of the ALERT algorithm for detecting the onset of influenza
+    season.
+  commit:
+    date: Jan 08, 2020
+    string: updated simulation code, so it now runs.
+    author: Nicholas Reich
+    url: https://github.com/reichlab/ALERT/commit/159ed9a12029cd868ff422783da58d63a9c0fc93
+    author_url: https://github.com/nickreich
+Kenkleinman/clusterPower:
+  url: https://github.com/Kenkleinman/clusterPower
+  title: clusterPower
+  description: 'the clusterPower package for R: simulating power and sample size calculations
+    for cluster-randomized trials'
+  commit:
+    date: Jan 30, 2021
+    string: |-
+      Merge pull request #216 from Kenkleinman/lexi
+
+      nlme version number removed
+    author: Alexandria Sakrejda
+    url: https://github.com/Kenkleinman/clusterPower/commit/cfa3a00a14c381a824eb399c05596b252003795a
+    author_url: https://github.com/alexandria-sakrejda
+salauer/CARE-in-RCTs-and-obs:
+  url: https://github.com/salauer/CARE-in-RCTs-and-obs
+  title: CARE-in-RCTs-and-obs
+  description: 'Code for manuscript: "The covariate-adjusted residual estimator and
+    its use in both randomized trials and observational settings"'
+  commit:
+    date: Oct 23, 2019
+    string: added zenodo information to manuscript
+    author: Steve Lauer
+    url: https://github.com/salauer/CARE-in-RCTs-and-obs/commit/8910227af1b574eef04b14afbc9efe5c3f0204f5
