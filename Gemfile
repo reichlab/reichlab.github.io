@@ -10,7 +10,6 @@ gem "kramdown"
 gem "kramdown-parser-gfm"
 gem "rake"
 gem "octokit"
-gem 'faraday-retry'
 
 group :jekyll_plugins do
   gem "jekyll-paginate"
