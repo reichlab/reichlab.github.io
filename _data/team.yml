@@ -176,6 +176,16 @@
       - name: alumni_link
         url: "https://aaronger.github.io"
 
+- name: Aaron Gerding
+  role: MS Student (2021-2024)
+  description: |
+
+  type: Alumni
+  image: /images/people/aaron.jpg
+  links: 
+      - name: alumni_link
+        url: "https://aaronger.github.io"
+
 - name: Martha Zorn
   role: Data Analyst/Project Manager (2020-2024)
   description: |
