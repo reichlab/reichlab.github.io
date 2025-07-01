@@ -80,12 +80,13 @@
     and clinical trial sponsors. He enjoys playing tennis and skiing in his free time.
   image: /images/people/Doug.jpg
   links: []
+
 - name: Isaac MacArthur
   role: PhD Student
   description: |
-  Isaac is a PhD student in Statistics. His research intrerests include Bayesian modeling and
-  infectous disease forecasting. In his spare time, he likes to read both fiction and non-fiction
-  and take long walks.
+    Isaac is a PhD student in Statistics. His research intrerests include Bayesian modeling and
+    infectous disease forecasting. In his spare time, he likes to read both fiction and non-fiction
+    and take long walks.
   image: /images/people/Isaac.jpg
   links: []
 
