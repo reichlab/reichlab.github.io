@@ -80,6 +80,17 @@
     and clinical trial sponsors. He enjoys playing tennis and skiing in his free time.
   image: /images/people/Doug.jpg
   links: []
+  
+- name: Thomas Robacker
+  role: PhD Student
+  description: | 
+    Thomas is a PhD student in Statistics. His research interests include infection disease
+    and probabilistic forecasting along with Bayesian, spatio-temporal, and machine learning methods. 
+    Prior to grad school he taught mathematics and statistics at Warren Wilson College for many years.
+    In his free time he enjoys roller skating, kayaking, reading, and video games. 
+  links:
+    - name: flaticon-linkedin-1
+      url: "https://www.linkedin.com/in/thomas-robacker/"
 
 - name: Isaac MacArthur
   role: PhD Student
