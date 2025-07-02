@@ -1,53 +1,38 @@
-# Sass and Jekyll
+# Jekyll & Sass
 .sass-cache
 .jekyll-metadata
 .jekyll-cache
-
-#env
-.envrc
-.env
-
-# Site build
 /_site/
 
-# Local Netlify folder
-.netlify
-
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
+# Environment files
+.env
+.envrc
+.Renviron
 .httr-oauth
 
-# Mac DS files
+# Netlify
+.netlify/
+
+# macOS system files
 .DS_Store
 
-## R files
-# History files
+# R: History & Session
 *.Rhistory
 .Rapp.history
-
-# Session Data files
 .RData
-
-# User-specific files
 .Ruserdata
 
-# Output files from R CMD build
-/*.tar.gz
+# R: Build & Check artifacts
+*.tar.gz
+*.Rcheck/
 
-# Output files from R CMD check
-/*.Rcheck/
-
-# RStudio files
-.Rproj.user/
+# RStudio
 *.Rproj
+.Rproj.user/
 
-# Temporary files created by R markdown
+# R Markdown cache
+*_cache/
+*/cache/
 *.utf8.md
 *.knit.md
-
-# R Environment Variables
-.Renviron
-
-# knitr and R markdown default cache directories
-*_cache/
-/cache/
 
