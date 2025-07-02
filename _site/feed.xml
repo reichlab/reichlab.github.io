@@ -3,8 +3,8 @@
   <channel>
     <title>Nicholas Reich: Biostatistics and Infectious Disease Epidemiology</title>
     <description>Reich Lab @ UMassAmherst</description>
-    <link>http://reichlab.io//</link>
-    <atom:link href="http://reichlab.io//feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>A modeler&apos;s primer for working with SARS-CoV-2 genomic data</title>
@@ -282,8 +282,8 @@ data as we were writing this post.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 15 Feb 2022 00:00:00 -0500</pubDate>
-        <link>http://reichlab.io//2022/02/15/genbank-data.html</link>
-        <guid isPermaLink="true">http://reichlab.io//2022/02/15/genbank-data.html</guid>
+        <link>http://localhost:4000/2022/02/15/genbank-data.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2022/02/15/genbank-data.html</guid>
       </item>
     
       <item>
@@ -309,8 +309,8 @@ data as we were writing this post.&lt;/p&gt;
 &lt;p&gt;The lion’s share of the credit for all of the above are due to some combination of &lt;a href=&quot;http://www.matthewcornell.org/&quot;&gt;Matthew Cornell&lt;/a&gt;, &lt;a href=&quot;https://lepisma.xyz/about&quot;&gt;Abhinav Tushar&lt;/a&gt;, &lt;a href=&quot;http://katie-house.com/&quot;&gt;Katie House&lt;/a&gt;, and &lt;a href=&quot;https://www.mtholyoke.edu/~eray/&quot;&gt;Evan Ray&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 17 Jun 2019 00:00:00 -0400</pubDate>
-        <link>http://reichlab.io//2019/06/17/forecast-tools.html</link>
-        <guid isPermaLink="true">http://reichlab.io//2019/06/17/forecast-tools.html</guid>
+        <link>http://localhost:4000/2019/06/17/forecast-tools.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/06/17/forecast-tools.html</guid>
       </item>
     
       <item>
@@ -342,8 +342,8 @@ data as we were writing this post.&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 29 Jan 2019 00:00:00 -0500</pubDate>
-        <link>http://reichlab.io//2019/01/29/forecast-framework-demo.html</link>
-        <guid isPermaLink="true">http://reichlab.io//2019/01/29/forecast-framework-demo.html</guid>
+        <link>http://localhost:4000/2019/01/29/forecast-framework-demo.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/01/29/forecast-framework-demo.html</guid>
       </item>
     
       <item>
@@ -637,8 +637,8 @@ about dynamics of pandemic second waves, spatial variation in outbreaks,
 and more.&lt;/p&gt;
 </description>
         <pubDate>Mon, 17 Sep 2018 00:00:00 -0400</pubDate>
-        <link>http://reichlab.io//2018/09/17/pandemic-flu-data.html</link>
-        <guid isPermaLink="true">http://reichlab.io//2018/09/17/pandemic-flu-data.html</guid>
+        <link>http://localhost:4000/2018/09/17/pandemic-flu-data.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/09/17/pandemic-flu-data.html</guid>
       </item>
     
       <item>
@@ -741,8 +741,8 @@ The forecasts themselves are text files containing, in a specified format, data 
 
 </description>
         <pubDate>Tue, 28 Nov 2017 00:00:00 -0500</pubDate>
-        <link>http://reichlab.io//2017/11/28/flusight-ensemble.html</link>
-        <guid isPermaLink="true">http://reichlab.io//2017/11/28/flusight-ensemble.html</guid>
+        <link>http://localhost:4000/2017/11/28/flusight-ensemble.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/11/28/flusight-ensemble.html</guid>
       </item>
     
       <item>
@@ -757,8 +757,8 @@ The forecasts themselves are text files containing, in a specified format, data 
 &lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;5c7b7fc721c44d4db80dae250db0a704&quot; data-ratio=&quot;1.33333333333333&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 24 May 2017 00:00:00 -0400</pubDate>
-        <link>http://reichlab.io//2017/05/24/MIDAS-slides.html</link>
-        <guid isPermaLink="true">http://reichlab.io//2017/05/24/MIDAS-slides.html</guid>
+        <link>http://localhost:4000/2017/05/24/MIDAS-slides.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/05/24/MIDAS-slides.html</guid>
       </item>
     
       <item>
@@ -784,8 +784,8 @@ The forecasts themselves are text files containing, in a specified format, data 
 &lt;/blockquote&gt;
 </description>
         <pubDate>Sun, 14 May 2017 00:00:00 -0400</pubDate>
-        <link>http://reichlab.io//2017/05/14/ai-vs-md.html</link>
-        <guid isPermaLink="true">http://reichlab.io//2017/05/14/ai-vs-md.html</guid>
+        <link>http://localhost:4000/2017/05/14/ai-vs-md.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/05/14/ai-vs-md.html</guid>
       </item>
     
       <item>
@@ -817,8 +817,8 @@ This “backfill” issue (adjustment of reported data in weeks following the in
 &lt;p&gt;Stay tuned for periodic updates throughout the season!&lt;/p&gt;
 </description>
         <pubDate>Wed, 30 Nov 2016 00:00:00 -0500</pubDate>
-        <link>http://reichlab.io//2016/11/30/flu-forecasts.html</link>
-        <guid isPermaLink="true">http://reichlab.io//2016/11/30/flu-forecasts.html</guid>
+        <link>http://localhost:4000/2016/11/30/flu-forecasts.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/11/30/flu-forecasts.html</guid>
       </item>
     
       <item>
@@ -867,8 +867,8 @@ In this post, I’m going to give you a quick tour under the hood of our ensembl
 &lt;p&gt;There is a lot more work to do on this to get it to where we want to it be, but one of the “advantages” of these challenges is that they force you to get stuff out there and just try it out. Some of the things that we are thinking about doing are improving the estimation methodology for the weights (including perhaps some kind of smoothing or regularization of the weights), adding a more mechanistic model that incorporates some biological features of flu, and incorporating the uncertainty in recent observations (as you can see in the app, there can be adjustments to reported cases, especially in the most recently reported weeks). So, there’s lots to do, and we’re hopefully just getting started.&lt;/p&gt;
 </description>
         <pubDate>Wed, 23 Nov 2016 00:00:00 -0500</pubDate>
-        <link>http://reichlab.io//2016/11/23/introducing-flusight.html</link>
-        <guid isPermaLink="true">http://reichlab.io//2016/11/23/introducing-flusight.html</guid>
+        <link>http://localhost:4000/2016/11/23/introducing-flusight.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/11/23/introducing-flusight.html</guid>
       </item>
     
       <item>
@@ -942,8 +942,8 @@ In this post, I’m going to give you a quick tour under the hood of our ensembl
 &lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt;: (2 Sept 2016) Roni Rosenfeld, the head of the DELPHI group at CMU, pointed out and asked me to mention that David Farrow was the force behind the creation of the epidata API and the epivis tool.&lt;/p&gt;
 </description>
         <pubDate>Thu, 01 Sep 2016 00:00:00 -0400</pubDate>
-        <link>http://reichlab.io//2016/09/01/epidata-api.html</link>
-        <guid isPermaLink="true">http://reichlab.io//2016/09/01/epidata-api.html</guid>
+        <link>http://localhost:4000/2016/09/01/epidata-api.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/09/01/epidata-api.html</guid>
       </item>
     
   </channel>

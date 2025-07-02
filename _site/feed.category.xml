@@ -3,8 +3,8 @@
 	<channel>
 		<title> - R</title>
 		<description>Posts categorized as 'R'</description>
-		<link>http://reichlab.io/</link>
-		<atom:link href="http://reichlab.io//feed.category.xml" rel="self" type="application/rss+xml" />
+		<link>http://localhost:4000</link>
+		<atom:link href="http://localhost:4000/feed.category.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>A modeler&apos;s primer for working with SARS-CoV-2 genomic data</title>
@@ -282,8 +282,8 @@ data as we were writing this post.&lt;/p&gt;
 
 </description>
 				<pubDate>Tue, 15 Feb 2022 00:00:00 -0500</pubDate>
-				<link>http://reichlab.io//2022/02/15/genbank-data.html</link>
-				<guid isPermaLink="true">http://reichlab.io//2022/02/15/genbank-data.html</guid>
+				<link>http://localhost:4000/2022/02/15/genbank-data.html</link>
+				<guid isPermaLink="true">http://localhost:4000/2022/02/15/genbank-data.html</guid>
 			</item>
 		
 			<item>
@@ -309,8 +309,8 @@ data as we were writing this post.&lt;/p&gt;
 &lt;p&gt;The lion’s share of the credit for all of the above are due to some combination of &lt;a href=&quot;http://www.matthewcornell.org/&quot;&gt;Matthew Cornell&lt;/a&gt;, &lt;a href=&quot;https://lepisma.xyz/about&quot;&gt;Abhinav Tushar&lt;/a&gt;, &lt;a href=&quot;http://katie-house.com/&quot;&gt;Katie House&lt;/a&gt;, and &lt;a href=&quot;https://www.mtholyoke.edu/~eray/&quot;&gt;Evan Ray&lt;/a&gt;.&lt;/p&gt;
 </description>
 				<pubDate>Mon, 17 Jun 2019 00:00:00 -0400</pubDate>
-				<link>http://reichlab.io//2019/06/17/forecast-tools.html</link>
-				<guid isPermaLink="true">http://reichlab.io//2019/06/17/forecast-tools.html</guid>
+				<link>http://localhost:4000/2019/06/17/forecast-tools.html</link>
+				<guid isPermaLink="true">http://localhost:4000/2019/06/17/forecast-tools.html</guid>
 			</item>
 		
 			<item>
@@ -342,8 +342,8 @@ data as we were writing this post.&lt;/p&gt;
 
 </description>
 				<pubDate>Tue, 29 Jan 2019 00:00:00 -0500</pubDate>
-				<link>http://reichlab.io//2019/01/29/forecast-framework-demo.html</link>
-				<guid isPermaLink="true">http://reichlab.io//2019/01/29/forecast-framework-demo.html</guid>
+				<link>http://localhost:4000/2019/01/29/forecast-framework-demo.html</link>
+				<guid isPermaLink="true">http://localhost:4000/2019/01/29/forecast-framework-demo.html</guid>
 			</item>
 		
 			<item>
@@ -637,8 +637,8 @@ about dynamics of pandemic second waves, spatial variation in outbreaks,
 and more.&lt;/p&gt;
 </description>
 				<pubDate>Mon, 17 Sep 2018 00:00:00 -0400</pubDate>
-				<link>http://reichlab.io//2018/09/17/pandemic-flu-data.html</link>
-				<guid isPermaLink="true">http://reichlab.io//2018/09/17/pandemic-flu-data.html</guid>
+				<link>http://localhost:4000/2018/09/17/pandemic-flu-data.html</link>
+				<guid isPermaLink="true">http://localhost:4000/2018/09/17/pandemic-flu-data.html</guid>
 			</item>
 		
 	</channel>

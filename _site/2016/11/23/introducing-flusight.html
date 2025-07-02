@@ -7,7 +7,7 @@
 <meta name="description" content="Reich Lab @ UMassAmherst">
 <meta name="author" content="Nick">
 <meta name="keywords" content="blog">
-<link rel="canonical" href="http://reichlab.io//2016/11/23/introducing-flusight.html">
+<link rel="canonical" href="http://localhost:4000/2016/11/23/introducing-flusight.html">
 
 <title>
   Under the hood of our real-time flu predictions &#8211; Nicholas Reich: Biostatistics and Infectious Disease Epidemiology
@@ -46,10 +46,10 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="Under the hood of our real-time flu predictions">
 <meta property="og:description" content="Reich Lab @ UMassAmherst">
-<meta property="og:url" content="http://reichlab.io//2016/11/23/introducing-flusight.html">
+<meta property="og:url" content="http://localhost:4000/2016/11/23/introducing-flusight.html">
 <meta property="og:site_name" content="Nicholas Reich: Biostatistics and Infectious Disease Epidemiology">
 
-<meta name="twitter:url" content="http://reichlab.io//2016/11/23/introducing-flusight.html">
+<meta name="twitter:url" content="http://localhost:4000/2016/11/23/introducing-flusight.html">
 <meta name="twitter:title" content="Under the hood of our real-time flu predictions">
 <meta name="twitter:description" content="Reich Lab @ UMassAmherst">
 
@@ -63,11 +63,9 @@
   <section class="container grid-custom">
     <div class="columns">
       <header class="navbar column col-12">
-        <section class="navbar-section">
           <a href="/" class="navbar-brand mr-10">
             <img src="/assets/images/logo/nav-logo.png" alt="Reich Lab">
           </a>
-        </section>
         <section class="navbar-section">
           <!-- Show this segment when in small device -->
           <div class="dropdown dropdown-right show-sm">
@@ -77,21 +75,55 @@
             <ul class="menu">                
               <li><a href="/people" class="btn btn-link">People</a></li>
               <li><a href="/research" class="btn btn-link">Research</a></li>
-              <li><a href="/teaching" class="btn btn-link">Teaching</a></li>
-              <li><a href="https://covid19forecasthub.org/" class="btn btn-link">COVID-19</a></li>
+<!--               <li><a href="/teaching" class="btn btn-link">Teaching</a></li> -->
               <li><a href="/publications" class="btn btn-link">Publications</a></li>
               <li><a href="/blog" class="btn btn-link">Blog</a></li>
               <li>
                 <div class="dropdown dropdown-right show-sm">
                   <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
-                    Apps <i class="fa fa-caret-down"></i>
+                    Software <i class="fa fa-caret-down"></i>
                   </a>
                  <ul class="menu">
-                   <li><a href="/alert" class="btn btn-link">ALERT</a></li>
-                   <li><a href="/flusightnetwork" class="btn btn-link">Flusight Network</a></li>
+                   <li><a href="http://nickreich.github.io/coarseDataTools" class="btn btn-link">coarseDataTools</a></li>
+                   <li><a href="/zoltr" class="btn btn-link">zoltr</a></li>
+                   <li><a href="https://github.com/reichlab/zoltpy" class="btn btn-link">zoltpy</a></li>
+                   <li><a href="/covidHubUtils" class="btn btn-link">covidHubUtils</a></li>
+                   <li><a href="https://github.com/reichlab/covidData" class="btn btn-link">covidData</a></li>
+                   <li><a href="https://github.com/reichlab/sarimaTD" class="btn btn-link">sarimaTD</a></li>
+                   <li><a href="https://github.com/reichlab/kcde" class="btn btn-link">kcde</a></li>
+                   <li><a href="/d3-foresight" class="btn btn-link">d3-foresight</a></li>
+                   <li><a href="https://github.com/reichlab/predtimechart" class="btn btn-link">predtimechart</a></li>
                  </ul>
-               </div>
-             </li>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown dropdown-right show-sm">
+                  <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                    Projects <i class="fa fa-caret-down"></i>
+                  </a>
+                 <ul class="menu">
+                   <li><a href="https://hubdocs.readthedocs.io/en/latest/" class="btn btn-link">Hubverse</a></li>
+                   <li><a href="https://covid19forecasthub.org/" class="btn btn-link">US COVID-19 Forecast Hub</a></li>
+                   <li><a href="/flusightnetwork" class="btn btn-link">FluSight Network</a></li>
+                   <li><a href="https://zoltardata.com/" class="btn btn-link">Zoltar</a></li>
+                   <li><a href="/alert" class="btn btn-link">ALERT</a></li>
+                 </ul>
+                </div>
+              </li>
+              <li>
+                <div class="dropdown dropdown-right show-sm">
+                  <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                    Dashboards <i class="fa fa-caret-down"></i>
+                  </a>
+                 <ul class="menu">
+                   <li><a href="https://reichlab.io/flusight-dashboard/" class="btn btn-link">FluSight</a></li>
+                   <li><a href="https://reichlab.io/covidhub-dashboard/" class="btn btn-link">COVID-19</a></li>
+                   <li><a href="https://reichlab.io/flusight-eval/" class="btn btn-link">FluSight (2023/24)</a></li>
+                   <li><a href="http://flusightnetwork.io/" class="btn btn-link">FluSight (historical)</a></li>
+                   <li><a href="https://viz.covid19forecasthub.org/" class="btn btn-link">COVID-19 (historical)</a></li>
+                 </ul>
+                </div>
+              </li>
             </ul>
           </div>
 
@@ -99,17 +131,47 @@
           <div class="hide-sm">
             <a href="/people" class="btn btn-link">People</a>
             <a href="/research" class="btn btn-link">Research</a>
-            <a href="/teaching" class="btn btn-link">Teaching</a>
-            <a href="https://covid19forecasthub.org/" class="btn btn-link">COVID-19</a>
+<!--             <a href="/teaching" class="btn btn-link">Teaching</a> -->
             <a href="/publications" class="btn btn-link">Publications</a>
             <a href="/blog" class="btn btn-link">Blog</a>
             <div class="dropdown dropdown-right">
               <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
-                Apps <i class="fa fa-caret-down"></i>
+                Software <i class="fa fa-caret-down"></i>
               </a>
               <ul class="menu">
+                <li><a href="http://nickreich.github.io/coarseDataTools" class="btn btn-link">coarseDataTools</a></li>
+                <li><a href="/zoltr" class="btn btn-link">zoltr</a></li>
+                <li><a href="https://github.com/reichlab/zoltpy" class="btn btn-link">zoltpy</a></li>
+                <li><a href="/covidHubUtils" class="btn btn-link">covidHubUtils</a></li>
+                <li><a href="https://github.com/reichlab/covidData" class="btn btn-link">covidData</a></li>
+                <li><a href="https://github.com/reichlab/sarimaTD" class="btn btn-link">sarimaTD</a></li>
+                <li><a href="https://github.com/reichlab/kcde" class="btn btn-link">kcde</a></li>
+                <li><a href="/d3-foresight" class="btn btn-link">d3-foresight</a></li>
+                <li><a href="https://github.com/reichlab/predtimechart" class="btn btn-link">predtimechart</a></li>
+              </ul>
+            </div>
+            <div class="dropdown dropdown-right">
+              <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                Projects <i class="fa fa-caret-down"></i>
+              </a>
+              <ul class="menu">
+                <li><a href="https://hubdocs.readthedocs.io/en/latest/" class="btn btn-link">Hubverse</a></li>
+                <li><a href="https://covid19forecasthub.org/" class="btn btn-link">US COVID-19 Forecast Hub</a></li>
+                <li><a href="/flusightnetwork" class="btn btn-link">FluSight Network</a></li>
+                <li><a href="https://zoltardata.com/" class="btn btn-link">Zoltar</a></li>
                 <li><a href="/alert" class="btn btn-link">ALERT</a></li>
-                <li><a href="/flusightnetwork" class="btn btn-link">Flusight Network</a></li>
+              </ul>
+            </div>
+            <div class="dropdown dropdown-right">
+              <a href="#" class="btn btn-link dropdown-toggle" tabindex="0">
+                Dashboards <i class="fa fa-caret-down"></i>
+              </a>
+              <ul class="menu">
+                <li><a href="https://reichlab.io/flusight-dashboard/" class="btn btn-link">FluSight</a></li>
+                <li><a href="https://reichlab.io/covidhub-dashboard/" class="btn btn-link">COVID-19</a></li>
+                <li><a href="https://reichlab.io/flusight-eval/" class="btn btn-link">FluSight (2023/24)</a></li>
+                <li><a href="http://flusightnetwork.io/" class="btn btn-link">FluSight (historical)</a></li>
+                <li><a href="https://viz.covid19forecasthub.org/" class="btn btn-link">COVID-19 (historical)</a></li>
               </ul>
             </div>
           </div>
@@ -181,7 +243,7 @@ In this post, I’m going to give you a quick tour under the hood of our ensembl
 <script type="text/javascript">
  var disqus_config = function () {
    this.page = this.page || {};
-   this.page.url = 'http://reichlab.io//2016/11/23/introducing-flusight.html';
+   this.page.url = 'http://localhost:4000/2016/11/23/introducing-flusight.html';
    this.page.identifier = '/2016/11/23/introducing-flusight.html';
    this.page.title = 'Under the hood of our real-time flu predictions';
  };
@@ -227,7 +289,7 @@ In this post, I’m going to give you a quick tour under the hood of our ensembl
             </span>
           </a>
         </p>
-        <p class="foot-note"><small>&copy; Nicholas Reich 2022. Source code available <a href="https://github.com/reichlab/reichlab.github.io">here</a>.</small></p>
+        <p class="foot-note"><small>&copy; Nicholas Reich 2025. Source code available <a href="https://github.com/reichlab/reichlab.github.io">here</a>.</small></p>
       </div>
     </div>
   </section>
