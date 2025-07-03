@@ -1,6 +1,58 @@
-#2025  
+#2026  
 
 # New publications  
+
+#2025  
+
+- title: 'Forecasting COVID-19 with Temporal Hierarchies and Ensemble Methods'
+  slug: thief
+  authors: Shandross L, Ray EL, Rogers BW, Reich NG
+  preprint: https://www.medrxiv.org/content/10.1101/2025.06.26.25330355v1
+  pdf: https://www.medrxiv.org/content/10.1101/2025.06.26.25330355v1.full.pdf
+  year: 2025
+  journal: medRxiv
+  github: lshandross/covidTHieF
+  #doi: 10.1101/2025.06.26.25330355 [update when published]
+  keywords: forecasting, covid-19
+  abstract: >
+    Infectious disease forecasting efforts underwent rapid growth during the COVID-19 pandemic, providing guidance for pandemic response and about potential future trends. 
+    Yet despite their importance, short-term forecasting models often struggled to produce accurate real-time predictions of this complex and rapidly changing system. 
+    This gap in accuracy persisted into the pandemic and warrants the exploration and testing of new methods to glean fresh insights. 
+    In this work, we examined the application of the temporal hierarchical forecasting (THieF) methodology to probabilistic forecasts of COVID-19 incident hospital admissions in the United States. 
+    THieF is an innovative forecasting technique that aggregates time-series data into a hierarchy made up of different temporal scales, produces forecasts at each level of the hierarchy, 
+    then reconciles those forecasts using optimized weighted forecast combination. 
+    Vhile THieF’s unique approach has shown substantial accuracy improvements in a diverse range of applications, such as operations management and emergency room admission predictions, 
+    this technique had not previously been applied to outbreak forecasting. 
+    We generated candidate models formulated using the THieF methodology, which differed by their hierarchy schemes and data transformations, and ensembles of the THieF models, 
+    computed as a mean of predictive quantiles. 
+    The models were evaluated using weighted interval score (WIS) as a measure of forecast skill, and the top-performing subset was compared to a group of benchmark models. 
+    These models included simple ARIMA and seasonal ARIMA models, an ensemble of these ARIMA models, a naive baseline model, four operational incident hospitalization models from the U.S. COVID-19 Forecast Hub, 
+    and an equally-weighted quantile median of all models that submitted incident hospitalization forecasts to the Forecast Hub. 
+    The THieF models and THieF ensembles demonstrated improvements in WIS and MAE, as well as competitive prediction interval coverage, over many benchmark models for both the validation and testing phases. 
+    The best THieF model’s rank oscillated between second or third out of fourteen total models during the testing evaluation. 
+    These accuracy improvements suggest the THieF methodology may serve as a useful addition to the infectious disease forecasting toolkit.
+
+- title: 'Evaluation of FluSight influenza forecasting in the 2021–22 and 2022–23 seasons with a new target laboratory-confirmed influenza hospitalizations'
+  slug: flusight212223
+  authors: Mathis SM, Webber AE, ... Cramer EY, Gerding A, Stark A, Ray EL, Reich NG, Shandross L, Wattanachit N, Wang Y, Zorn MW, , ... Reed C, Biggerstaff M, Borchering RK
+  pdf: https://www.nature.com/articles/s41467-024-50601-9.pdf
+  year: 2025
+  volume: 15(1)
+  pages: 6289
+  journal: 'Nature Communications'
+  github: cdcepi/FluSight-manuscripts/tree/main/HospitalAdmissionsForecasts_2021-22_2022-23
+  doi: 10.1038/s41467-024-50601-9
+  keywords: forecasting, flusight, influenza
+  abstract: >
+    Accurate forecasts can enable more effective public health responses during seasonal influenza epidemics. 
+    For the 2021–22 and 2022–23 influenza seasons, 26 forecasting teams provided national and jurisdiction-specific 
+    probabilistic predictions of weekly confirmed influenza hospital admissions for one-to-four weeks ahead. 
+    Forecast skill is evaluated using the Weighted Interval Score (WIS), relative WIS, and coverage. 
+    Six out of 23 models outperform the baseline model across forecast weeks and locations in 2021–22 and 12 out of 18 models in 2022–23. 
+    Averaging across all forecast targets, the FluSight ensemble is the 2nd most accurate model measured by WIS in 2021–22 
+    and the 5th most accurate in the 2022–23 season. 
+    Forecast skill and 95% coverage for the FluSight ensemble and most component models degrade over longer forecast horizons. 
+    In this work we demonstrate that while the FluSight ensemble was a robust predictor, even ensembles face challenges during periods of rapid change.
 
 # 2024  
 
