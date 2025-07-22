@@ -54,19 +54,19 @@
     Forecast skill and 95% coverage for the FluSight ensemble and most component models degrade over longer forecast horizons. 
     In this work we demonstrate that while the FluSight ensemble was a robust predictor, even ensembles face challenges during periods of rapid change.
 
-  - title: 'Flusion: Integrating multiple data sources for accurate influenza predictions'
-  slug: flusion
-  authors: Ray EL, Wang Y, Wolfinger RD, Reich NG
-  preprint: https://arxiv.org/abs/2407.19054
-  pdf: https://www.sciencedirect.com/science/article/pii/S1755436524000719
-  year: 2025
-  volume: 50
-  pages: 100810
-  journal: 'Epidemics'
-  github: reichlab/flusion-manuscript
-  doi: 10.1016/j.epidem.2024.100810
-  keywords: forecasting, influenza, flusight
-  abstract: >
+ - title: 'Flusion: Integrating multiple data sources for accurate influenza predictions'
+   slug: flusion
+   authors: Ray EL, Wang Y, Wolfinger RD, Reich NG
+   preprint: https://arxiv.org/abs/2407.19054
+   pdf: https://www.sciencedirect.com/science/article/pii/S1755436524000719
+   year: 2025
+   volume: 50
+   pages: 100810
+   journal: 'Epidemics'
+   github: reichlab/flusion-manuscript
+   doi: 10.1016/j.epidem.2024.100810
+   keywords: forecasting, influenza, flusight
+   abstract: >
     Over the last ten years, the US Centers for Disease Control and Prevention (CDC) has organized an 
     annual influenza forecasting challenge with the motivation that accurate probabilistic forecasts 
     could improve situational awareness and yield more effective public health actions. Starting with 
