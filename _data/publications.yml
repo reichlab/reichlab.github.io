@@ -54,6 +54,39 @@
     Forecast skill and 95% coverage for the FluSight ensemble and most component models degrade over longer forecast horizons. 
     In this work we demonstrate that while the FluSight ensemble was a robust predictor, even ensembles face challenges during periods of rapid change.
 
+  - title: 'Flusion: Integrating multiple data sources for accurate influenza predictions'
+  slug: flusion
+  authors: Ray EL, Wang Y, Wolfinger RD, Reich NG
+  preprint: https://arxiv.org/abs/2407.19054
+  pdf: https://pdf.sciencedirectassets.com/277421/1-s2.0-S1755436524X00055/1-s2.0-S1755436524000719/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjENj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQD3FtKMkHTFZq78sPIuzL34ak7Tl9ICoHCcPGe5Cy6yuwIhANOqbeDSIQNU0x7d2saGlYXf1Pgg7s9A3iyZm22rPuAvKrsFCPH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQBRoMMDU5MDAzNTQ2ODY1IgzLYmjS0hTLA8RhWXwqjwUDanWjxyQLXdGFEvN43lcgssLpbd%2BIIPDa9NhCk6PQeOVriVaaPsaUPzkn2NiygASI%2FE34ekQ2iDiHUZ1XNPrXyZUGNNmgPKRT8nOWNhvMYbeem7vkO6lzZRhACSnDifDlp7zFDoiBZ6LJms2UKKqszGFSU4ONuM8XtyEFNMfzDadxJXTC9ZEo3ozMbV5k%2F%2Bd7okEk%2FYZ3H0MHsTJOyoZqSk7XS%2FCUaFB4Tuq50CCTFh9A3pbiOst%2BTDXsWMyu%2BQdfO8WQuVo93lKv69FX3%2F%2FS1vXv8lqLEyBflb06YTlR0c6%2FS3STyrXftBTNbTa4WOcLtc0VcEmHCJfpaWxSol%2BNlh%2BtOuqpNoVDH0OagodvQaBzM8PnAZJ1h2gnMmDupY6F4GeIiHn6d1PE9fHSz7TBSYwirXT5FpShyB5MmnDdH17HSh8H7zh%2FNDWNFx28NVZg3UzYOqDMfxh0tuzJ0P1v63F%2BIRMHAmFUr8b2oF8SqjRKOfsu%2Fmvzi2M7tQPhh9iI1SuI2JswpKNAaCq2I5RAbmkf6EG%2FZ3scKM%2FGxRWTsQ93%2BC9VFXZEeGhFJRDyeka1F6YKdxiteuDDJqJtOkAbNAjd7%2Fv4cVgRlfskUPvcorhakyJJWvYxeeWQ9llK8Ve8Tg8iNhxfj%2BpfLZ5porSsZqx0%2FjlpFWxcXbUR%2FfHbEroX3GjN3648c5J68U3qWHrPrzPiuptxcejjl0pWoNOgpQZzfZ5pJP995ORKdZ%2BTlllr3u1nDljVRmFWJMKug0OYV1KxzOQJ0ynlVCiSK%2B1ngrQdlIBvLK7DBSYCk3WhbzhjyCagAQ3%2FefdwdWEcVif%2BrM%2FU6gOKJQ6gZp0u%2Fu%2FFYAlXvtFxy99ygRWUjXGtMNDs%2FsMGOrABCiMV4deDGhNMCeIYyFK3SDHoQ%2B1fMJWWztD302tV4hAHoxINIaiX7HnzCHrt1I0nm4XRa1%2B%2FOEJd4lBRBWbrnaEWL7PKFUVm8JL5Si1FoGE9v21WVPp4FMW3ZmpGdUzzgzH1sOO7Zib18WmURjT8IMCW7AwbJu6ODAmS%2FvqRXldhuWAXNLyqETEfDr8wXBleI131e5iaLylFJKkBxiP42jzEEqggs1tYYIo0UlgB%2BLo%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250722T173316Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYZXJLSVQG%2F20250722%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=c7f7a6ae5c5045c11bd09c3d03c5242b8c659952097229a83c051fec33260b0f&hash=fd5dbd165f43302502dd220bbb8856725ec00f6176800bbb3709f962e125bf91&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S1755436524000719&tid=spdf-d7106e07-4e33-4a00-a3e6-b805e8f125b4&sid=4530827a4088724e7d3a3e04afffe3ca5ac3gxrqa&type=client&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t&ua=10145952545b06020f52&rr=9634aea1fc4058c1&cc=us
+  year: 2025
+  volume: 50
+  pages: 100810
+  journal: 'Epidemics'
+  github: reichlab/flusion-manuscript
+  doi: 10.1016/j.epidem.2024.100810
+  keywords: forecasting, influenza, flusight
+  abstract: >
+    Over the last ten years, the US Centers for Disease Control and Prevention (CDC) has organized an 
+    annual influenza forecasting challenge with the motivation that accurate probabilistic forecasts 
+    could improve situational awareness and yield more effective public health actions. Starting with 
+    the 2021/22 influenza season, the forecasting targets for this challenge have been based on hospital 
+    admissions reported in the CDC's National Healthcare Safety Network (NHSN) surveillance system. 
+    Reporting of influenza hospital admissions through NHSN began within the last few years, and as such 
+    only a limited amount of historical data are available for this signal. To produce forecasts in the 
+    presence of limited data for the target surveillance system, we augmented these data with two signals 
+    that have a longer historical record: 1) ILI+, which estimates the proportion of outpatient doctor 
+    visits where the patient has influenza; and 2) rates of laboratory-confirmed influenza hospitalizations 
+    at a selected set of healthcare facilities. Our model, Flusion, is an ensemble that combines gradient 
+    boosting quantile regression models with a Bayesian autoregressive model. The gradient boosting models 
+    were trained on all three data signals, while the autoregressive model was trained on only the target 
+    signal; all models were trained jointly on data for multiple locations. Flusion was the top-performing 
+    model in the CDC's influenza prediction challenge for the 2023/24 season. In this article we investigate 
+    the factors contributing to Flusion's success, and we find that its strong performance was primarily 
+    driven by the use of a gradient boosting model that was trained jointly on data from multiple surveillance 
+    signals and locations. These results indicate the value of sharing information across locations and 
+    surveillance signals, especially when doing so adds to the pool of available training data.
+
 # 2024  
 
 - title: 'Evaluating infectious disease forecasts with allocation scoring rules'
@@ -120,37 +153,6 @@
     are needed to ensure robust ensemble accuracy. Additional models can improve ensemble performance, 
     but with diminishing accuracy returns. This understanding will assist with the design of current and 
     future collaborative infectious disease forecasting efforts.
-
-- title: 'Flusion: Integrating multiple data sources for accurate influenza predictions'
-  slug: flusion
-  authors: Ray EL, Wang Y, Wolfinger RD, Reich NG
-  preprint: https://arxiv.org/abs/2407.19054
-  pdf: https://arxiv.org/pdf/2407.19054
-  year: 2024
-  journal: arXiv
-  github: reichlab/flusion-manuscript
-  #doi: 10.48550/arXiv.2407.19054 [update when published]
-  keywords: forecasting, influenza, flusight
-  abstract: >
-    Over the last ten years, the US Centers for Disease Control and Prevention (CDC) has organized an 
-    annual influenza forecasting challenge with the motivation that accurate probabilistic forecasts 
-    could improve situational awareness and yield more effective public health actions. Starting with 
-    the 2021/22 influenza season, the forecasting targets for this challenge have been based on hospital 
-    admissions reported in the CDC's National Healthcare Safety Network (NHSN) surveillance system. 
-    Reporting of influenza hospital admissions through NHSN began within the last few years, and as such 
-    only a limited amount of historical data are available for this signal. To produce forecasts in the 
-    presence of limited data for the target surveillance system, we augmented these data with two signals 
-    that have a longer historical record: 1) ILI+, which estimates the proportion of outpatient doctor 
-    visits where the patient has influenza; and 2) rates of laboratory-confirmed influenza hospitalizations 
-    at a selected set of healthcare facilities. Our model, Flusion, is an ensemble that combines gradient 
-    boosting quantile regression models with a Bayesian autoregressive model. The gradient boosting models 
-    were trained on all three data signals, while the autoregressive model was trained on only the target 
-    signal; all models were trained jointly on data for multiple locations. Flusion was the top-performing 
-    model in the CDC's influenza prediction challenge for the 2023/24 season. In this article we investigate 
-    the factors contributing to Flusion's success, and we find that its strong performance was primarily 
-    driven by the use of a gradient boosting model that was trained jointly on data from multiple surveillance 
-    signals and locations. These results indicate the value of sharing information across locations and 
-    surveillance signals, especially when doing so adds to the pool of available training data.
 
 - title: 'Infectious disease surveillance needs for the United States: lessons from Covid-19'
   slug: id_surveillance_needs
