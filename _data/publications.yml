@@ -6,6 +6,29 @@ publications:
 
 #2025  
 
+- title: 'Baseline nowcasting methods for handling delays in epidemiological data'
+  slug: baselinenowcast
+  authors: Johnson KE, Tang ML, Tyszka E, Jones L, Nemcova B, Wolffram D, Ergas R, Reich NG, Funk S, Mellor J, Bracher J, Abbott S
+  preprint: https://www.medrxiv.org/content/10.1101/2025.08.14.25333653v1
+  pdf: https://www.medrxiv.org/content/10.1101/2025.08.14.25333653v1.full.pdf
+  year: 2025
+  journal: medRxiv
+  github: epinowcast/baselinenowcast-paper
+  #doi: 10.1101/2025.08.14.25333653 [update when published]
+  keywords: forecasting, software
+  abstract: >
+    Up-to-date real-time disease surveillance data can provide critical public health insights, however reporting delays can create downward bias in the latest data. 
+    Nowcasting methods designed to correct for this bias remain underused in public health practice due to their complexity, lack of tailored documentation, or technical barriers. 
+    Methodological advances in nowcasting are also hampered by the absence of standardised benchmarks for evaluating new methods. 
+    We propose an empirically motivated family of nowcasting methods and accompanying R package, baselinenowcast, which addresses these dual needs. 
+    We validated our default method specification against the baseline method that was used in the German COVID-19 Nowcast Hub and on which our approach was based. 
+    Using these data, we conducted an analysis to compare different ways of configuring the method and evaluated performance against our method's default specification. 
+    We then used our approach on norovirus surveillance data from the United Kingdom Health Security Agency (UKHSA) and compared performance against three methods evaluated in a previous study. 
+    Our baseline method improved estimates compared to unadjusted data across all case studies. 
+    We found that the optimal choice of baseline method specification depends on context but that our default performed well in a range of settings. 
+    Applied to UKHSA norovirus data, our method helped us understand performance differences for the model currently used in public health practice. 
+    Our method and software can be used both as a straightforward nowcasting method and provides a benchmark for nowcasting model development.
+
 - title: 'Forecasting COVID-19 with Temporal Hierarchies and Ensemble Methods'
   slug: thief
   authors: Shandross L, Ray EL, Rogers BW, Reich NG
