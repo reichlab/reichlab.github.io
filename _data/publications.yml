@@ -12,7 +12,7 @@ publications:
   pdf: https://www.medrxiv.org/content/10.1101/2025.10.03.25337284v1.full.pdf
   year: 2025
   journal: medRxiv
-  #github: epinowcast/baselinenowcast-paper
+  github: hubverse-org/hubverse
   #doi: 10.1101/2025.08.14.25333653 [update when published]
   keywords: forecasting, software
   abstract: >
