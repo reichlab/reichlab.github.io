@@ -5,7 +5,25 @@ publications:
 # New publications  
 
 #2025  
-
+- title: 'Coordinating collaborative infectious disease modeling projects with the hubverse'
+  slug: hubverse-ms
+  authors: Consortium of Infectious Disease Modeling Hubs, Kerr M, Borchering RK, Castro Rivadeneira AJ, Contamin L, Funk S, Hochheiser H, Howerton E, Krystalli A, Shandross L, Reich NG
+  preprint: https://www.medrxiv.org/content/10.1101/2025.10.03.25337284v1
+  pdf: https://www.medrxiv.org/content/10.1101/2025.10.03.25337284v1.full.pdf
+  year: 2025
+  journal: medRxiv
+  github: hubverse-org/hubverse
+  #doi: 10.1101/2025.08.14.25333653 [update when published]
+  keywords: forecasting, software
+  abstract: >
+    To better respond to a range of threats, decision-makers in diverse fields are increasingly interested in predictions they can understand and trust. Collaborative modeling can
+    help increase the relevance, transparency, and robustness of predictions. This approach can be facilitated with hubs, or centralized data portals to collect, analyze, and 
+    communicate model output. This paper introduces the hubverse, an open-source suite of standards and software tools to streamline the creation and operation of collaborative 
+    modeling hubs. Hubverse file structure and model output standards enable the use of common tools to validate, aggregate, visualize, evaluate, and communicate model output. 
+    Currently, the hubverse is used by nearly two dozen collaborative and local modeling hubs around the globe to support infectious disease modeling efforts, including hubs hosted
+    and/or used by the United States Centers for Disease Control and Prevention, the European Centre for Disease Prevention and Control, the Australia-Aotearoa Consortium for 
+    Epidemic Forecasting and Analytics, and the California Department of Public Health.
+    
 - title: 'Baseline nowcasting methods for handling delays in epidemiological data'
   slug: baselinenowcast
   authors: Johnson KE, Tang ML, Tyszka E, Jones L, Nemcova B, Wolffram D, Ergas R, Reich NG, Funk S, Mellor J, Bracher J, Abbott S
