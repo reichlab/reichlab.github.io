@@ -2,7 +2,7 @@
 title: Courses
 image: /images/teaching/icb3-workshop-teachr-moment-2.jpg
 projects:
-  - nickreich/data-stories
+<!--  - nickreich/data-stories -->
   - nickreich/data-stories-2016
   - nickreich/applied-regression-2016
   - nickreich/methods2
