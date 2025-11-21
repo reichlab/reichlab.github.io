@@ -5,6 +5,36 @@ publications:
 # New publications  
 
 #2025  
+- title: 'Baseline nowcasting methods for handling delays in epidemiological data'
+  slug: baselinenowcast
+  authors: Johnson KE, Tang ML, Tyszka E, Jones L, Nemcova B, Wolffram D, Ergas R, Reich NG, Funk S, Mellor J, Bracher J, Abbott S
+  preprint: https://www.medrxiv.org/content/10.1101/2025.08.14.25333653v2
+  pdf: /pdfs/publications/baselinenowcast.pdf
+  year: 2025
+  volume: 10
+  pages: 614
+  journal: 'Wellcome Open Research'
+  github: epinowcast/baselinenowcast-paper
+  doi: 10.12688/wellcomeopenres.25027.1
+  keywords: forecasting, software
+  abstract: >
+    Background: Up-to-date real-time disease surveillance data can provide critical public health insights, 
+    however reporting delays can create downward bias in the latest data. 
+    Nowcasting methods designed to correct for this bias remain underused in public health practice due to 
+    their complexity, lack of tailored documentation, or technical barriers. 
+    Methodological advances in nowcasting are also hampered by the absence of standardised benchmarks for evaluating new methods.
+    Methods: To address these needs, we developed a family of nowcasting methods and an accompanying R package, baselinenowcast. 
+    We validated our method against the baseline method that was used in the German COVID-19 Nowcast Hub and on which our approach was based. 
+    Using this data, we conducted an analysis to compare different specifications of our method which were designed to address 
+    common issues in epidemiology such as weekday patterns in reporting and the ability to share estimates across different strata. 
+    We used our approach on norovirus surveillance data from the United Kingdom Health Security Agency (UKHSA) 
+    and compared the performance of three of our method specifications against three methods evaluated in a previous study.
+    Results: Our baseline method improved estimates compared to unadjusted data across all case studies. 
+    We found that the optimal choice of baseline method specification depends on context 
+    but that our default method specification performed well in a range of settings. 
+    Applied to UKHSA norovirus data, our method helped us understand the performance of the model currently used in public health practice.
+    Conclusions: Our method and software can be used both as a straightforward nowcasting method and provides a benchmark for nowcasting model development.
+
 - title: 'Coordinating collaborative infectious disease modeling projects with the hubverse'
   slug: hubverse-ms
   authors: Consortium of Infectious Disease Modeling Hubs, Kerr M, Borchering RK, Castro Rivadeneira AJ, Contamin L, Funk S, Hochheiser H, Howerton E, Krystalli A, Shandross L, Reich NG
@@ -16,36 +46,15 @@ publications:
   #doi: 10.1101/2025.08.14.25333653 [update when published]
   keywords: forecasting, software
   abstract: >
-    To better respond to a range of threats, decision-makers in diverse fields are increasingly interested in predictions they can understand and trust. Collaborative modeling can
-    help increase the relevance, transparency, and robustness of predictions. This approach can be facilitated with hubs, or centralized data portals to collect, analyze, and 
-    communicate model output. This paper introduces the hubverse, an open-source suite of standards and software tools to streamline the creation and operation of collaborative 
-    modeling hubs. Hubverse file structure and model output standards enable the use of common tools to validate, aggregate, visualize, evaluate, and communicate model output. 
-    Currently, the hubverse is used by nearly two dozen collaborative and local modeling hubs around the globe to support infectious disease modeling efforts, including hubs hosted
-    and/or used by the United States Centers for Disease Control and Prevention, the European Centre for Disease Prevention and Control, the Australia-Aotearoa Consortium for 
-    Epidemic Forecasting and Analytics, and the California Department of Public Health.
-    
-- title: 'Baseline nowcasting methods for handling delays in epidemiological data'
-  slug: baselinenowcast
-  authors: Johnson KE, Tang ML, Tyszka E, Jones L, Nemcova B, Wolffram D, Ergas R, Reich NG, Funk S, Mellor J, Bracher J, Abbott S
-  preprint: https://www.medrxiv.org/content/10.1101/2025.08.14.25333653v1
-  pdf: https://www.medrxiv.org/content/10.1101/2025.08.14.25333653v1.full.pdf
-  year: 2025
-  journal: medRxiv
-  github: epinowcast/baselinenowcast-paper
-  #doi: 10.1101/2025.08.14.25333653 [update when published]
-  keywords: forecasting, software
-  abstract: >
-    Up-to-date real-time disease surveillance data can provide critical public health insights, however reporting delays can create downward bias in the latest data. 
-    Nowcasting methods designed to correct for this bias remain underused in public health practice due to their complexity, lack of tailored documentation, or technical barriers. 
-    Methodological advances in nowcasting are also hampered by the absence of standardised benchmarks for evaluating new methods. 
-    We propose an empirically motivated family of nowcasting methods and accompanying R package, baselinenowcast, which addresses these dual needs. 
-    We validated our default method specification against the baseline method that was used in the German COVID-19 Nowcast Hub and on which our approach was based. 
-    Using these data, we conducted an analysis to compare different ways of configuring the method and evaluated performance against our method's default specification. 
-    We then used our approach on norovirus surveillance data from the United Kingdom Health Security Agency (UKHSA) and compared performance against three methods evaluated in a previous study. 
-    Our baseline method improved estimates compared to unadjusted data across all case studies. 
-    We found that the optimal choice of baseline method specification depends on context but that our default performed well in a range of settings. 
-    Applied to UKHSA norovirus data, our method helped us understand performance differences for the model currently used in public health practice. 
-    Our method and software can be used both as a straightforward nowcasting method and provides a benchmark for nowcasting model development.
+    To better respond to a range of threats, decision-makers in diverse fields are increasingly interested in predictions they can understand and trust. 
+    Collaborative modeling can help increase the relevance, transparency, and robustness of predictions. 
+    This approach can be facilitated with hubs, or centralized data portals to collect, analyze, and communicate model output. 
+    This paper introduces the hubverse, an open-source suite of standards and software tools 
+    to streamline the creation and operation of collaborative modeling hubs. 
+    Hubverse file structure and model output standards enable the use of common tools to validate, aggregate, visualize, evaluate, and communicate model output. 
+    Currently, the hubverse is used by nearly two dozen collaborative and local modeling hubs around the globe to support infectious disease modeling efforts, 
+    including hubs hosted and/or used by the United States Centers for Disease Control and Prevention, the European Centre for Disease Prevention and Control, 
+    the Australia-Aotearoa Consortium for Epidemic Forecasting and Analytics, and the California Department of Public Health.
 
 - title: 'Forecasting COVID-19 with Temporal Hierarchies and Ensemble Methods'
   slug: thief
