@@ -20,6 +20,9 @@ exclude:
   - build.sh
   - Rakefile
   - spectre
+  - .Rproj.user
+watch_exclude:
+  - .Rproj.user/**
 paginate: 5
 paginate_path: "/blog/page:num/"
 excerpt_separator: <!--more-->

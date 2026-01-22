@@ -6,13 +6,13 @@
 
 
 // Default mixins and settings -----------------
-@import "../template/mixins";
-@import "../template/settings";
+@use "../template/mixins";
+@use "../template/settings";
 // ---------------------------------------------
 
 
 // Include theme-specific fonts
-@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@use url(../../lib/font/source-sans-pro/source-sans-pro.css);
 
 
 // Override theme settings (see ../template/settings.scss)
@@ -45,5 +45,5 @@ section.has-dark-background {
 
 
 // Theme template ------------------------------
-@import "../template/theme";
+@use "../template/theme";
 // ---------------------------------------------
