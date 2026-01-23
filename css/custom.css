@@ -1,3 +1,9 @@
+@charset "UTF-8";
+.navbar {
+  background-color: #273640;
+  /* … rest of the rules … */
+}
+
 .nav-accent {
   height: 5px;
   width: 100%;
@@ -594,6 +600,12 @@ slick-dotted.slick-slider {
 
 .highlight .il {
   color: #0a74b9;
+}
+
+.nav-section,
+.navbar,
+.bg-gray {
+  background-color: #eef2f2;
 }
 
 /*# sourceMappingURL=custom.css.map */

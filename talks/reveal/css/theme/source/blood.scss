@@ -11,13 +11,13 @@
  */
 
  // Default mixins and settings -----------------
-@import "../template/mixins";
-@import "../template/settings";
+@use "../template/mixins";
+@use "../template/settings";
 // ---------------------------------------------
 
 // Include theme-specific fonts
 
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
+@use url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
 
 // Colors used in the theme
 $blood: #a23;
@@ -48,7 +48,7 @@ $selectionColor: #fff;
 
 
 // Theme template ------------------------------
-@import "../template/theme";
+@use "../template/theme";
 // ---------------------------------------------
 
 // some overrides after theme template import
