@@ -1,8 +1,9 @@
-@import 'nav';
-@import 'footer';
-@import 'people';
-@import 'theme';
-@import 'publications';
+@use 'colors' as *;
+@use 'nav';
+@use 'footer';
+@use 'people';
+@use 'theme';
+@use 'publications';
 
 .bg-gray {
   background-color: $color-gray-light;
@@ -75,7 +76,7 @@ slick-dotted.slick-slider {
 }
 
 // Carosel Button
-.slick-prev:before, .slick-next:before { 
+.slick-prev:before, .slick-next:before {
     color:$color-gray-medium !important;
 }
 
@@ -89,7 +90,7 @@ slick-dotted.slick-slider {
   left: 70%;
   z-index: 2;
   padding:5px;
-  color:#fff; 
+  color:#fff;
   background: rgba(0, 0, 0, 0.6);
   -o-transition:.5s;
   -ms-transition:.5s;

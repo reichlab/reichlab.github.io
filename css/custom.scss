@@ -2,6 +2,13 @@
 # Custom css
 ---
 
-@import 'colors';
-@import 'main';
-@import 'pyg';
+@use 'colors' as c;
+@use 'main';
+@use 'pyg';
+
+.nav-section,
+.navbar,
+.bg-gray {
+  background-color: c.$color-gray-light;
+}
+
