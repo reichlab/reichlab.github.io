@@ -218,3 +218,4 @@ which branch are we building for) and runs the rake tasks `collect` and `build`.
 Once done, it pushes the generated static html files to the repository's master
 branch. For pushing, it needs an authentication key which is kept encrypted in
 the file `./deploy_key.enc`.
+
