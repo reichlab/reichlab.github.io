@@ -2,7 +2,7 @@
   publish = "_site" # where the site is built
 
 [context.production]
-  command = "echo 'Skipping production build'"
+  command = "bundle exec rake collect && bundle exec rake build"
 
 [context.deploy-preview]
   command = "bundle exec rake collect && bundle exec rake build"
