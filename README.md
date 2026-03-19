@@ -39,8 +39,7 @@ kept in separate files and then is injected to the template via plugins kept in
 
 - Team members data go in `_data/team.yml`
 - Publications go in `_data/publications.yml`
-- New sections for 'research' and 'teaching' page go in `_research` and
-  `_teaching` directory respectively.
+- New sections for 'research' and 'teaching' page go in `_research` and `_teaching` directory respectively.
 
 Pull requests should go to `source` branch (not master) since travis builds the
 website from there.
