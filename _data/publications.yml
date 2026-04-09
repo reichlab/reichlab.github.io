@@ -25,6 +25,34 @@ publications:
 
 #2026
 
+- title: 'Retrospective evaluation of trained and untrained probabilistic ensemble forecasts for influenza hospital admissions — United States, 2022–2025'
+  slug: retrofluhosp
+  authors: Frutos AM, Hines A, Shandross L, Ray EL, Reich NG, Borchering RK, Biggerstaff M
+  pdf: /pdfs/publications/retrofluhosp.pdf
+  year: 2026
+  volume: 11(3)
+  pages: 1227-1233
+  journal: Infectious Disease Modelling
+  github: cdcepi/FluSight-manuscripts/tree/main/Weighted_Ensembles
+  doi: 10.1016/j.idm.2026.04.002
+  keywords: forecasting, flusight, influenza
+  abstract: >
+    The United States Centers for Disease Control and Prevention (CDC) coordinates influenza forecasting efforts
+    with approximately 30 academic and industry teams and combines their short-term, weekly forecasts
+    into an ensemble forecast to improve accuracy and increase utility.
+    To investigate the accuracy of trained ensemble methods for forecasting confirmed influenza hospital admissions,
+    we retrospectively compared ensembles trained on past forecast performance of submitting teams during
+    the 2022–23, 2023–24, and 2024–25 influenza seasons to the untrained ensemble used during each season.
+    Forecasts are based on laboratory-confirmed influenza hospital admission data from CDC's National Healthcare Safety Network.
+    For each week from October 2022–April 2023, October 2023–April 2024, and November 2024–May 2025,
+    we produced three trained median and three trained mean ensembles that weight individual forecasts
+    based on their weighted interval score (WIS) during the prior 2, 4, or 6 weeks of performance.
+    We evaluated the trained and untrained ensembles using prediction interval coverage and the WIS.
+    Compared to the untrained ensemble, multiple trained ensemble performed better in each season and across jurisdictions,
+    although the best performing ensemble differed.
+    As this is an analysis of only three influenza seasons, we will continue to evaluate ensemble performance
+    over subsequent seasons to see if consistent patterns emerge in the performance of different methods to train ensembles.
+
 - title: 'Multi-Model Ensembles in Infectious Disease and Public Health: Methods, Interpretation, and Implementation in R'
   slug: hubEnsembles
   authors: Shandross L, Howerton E, Contamin L, Hochheiser H, Krystalli A, Consortium of Infectious Disease Modeling Hubs, Reich NG, Ray EL
