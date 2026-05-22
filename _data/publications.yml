@@ -25,6 +25,36 @@ publications:
 
 #2026
 
+- title: 'Comparison of probabilistic nowcasts and forecasts of SARS-CoV-2 variant proportions made by hierarchical multinomial linear regression models'
+  slug: variant-hierarchical-multinomial
+  authors: MacArthur I, Robacker T, Ray EL, Rogers BW, Reich NG, Griffin M
+  preprint: https://arxiv.org/pdf/2605.22676
+  pdf: /pdfs/publications/kim_model_importance.pdf
+  year: 2026
+  journal: arXiv
+  github: reichlab/variant-nowcast-model-dev-retro
+  #doi: 10.48550/arXiv.2605.22676
+  keywords: forecasting, covid-19
+  abstract: >
+    Nowcasting and forecasting of infectious diseases have become increasingly important since the SARS-CoV-2 pandemic.
+    In particular, methods for modeling the composition of circulating variants at a given time have seen more use
+    in part due to a large increase in the frequency of genomic sequencing conducted as a part of routine surveillance.
+    However, methods must take into account that locations have different amounts of data and sometimes have different trends.
+    We discuss hierarchical multinomial logistic regression (HMLR), a commonly used method for forecasting SARS-CoV-2 variants,
+    which allows for data sharing across locations.
+    We show how it has been used in the literature, and define a class of HMLR models for SARS-CoV-2 variant nowcasting and forecasting.
+    We rigorously test a subset of this class of models using the framework of the US SARS-CoV-2 Variant Nowcast Hub,
+    a collaborative modeling project that launched in 2024.
+    We created two years of weekly predictions based on retrospective datasets,
+    with the prediction dates ranging from Wednesday, August 3, 2022, to Wednesday, August 7, 2024.
+    We tested 12 HMLR models against a baseline model on these datasets.
+    We found that the HMLR models outperformed the baseline both in terms of probabilistic accuracy, as measured by the energy score,
+    as well as point accuracy, as measured by the Brier score.
+    Overall, we find that HMLR models perform best with respect to the baseline model in locations with more data,
+    and more complex HMLR models also showed more improvement in those high-data locations;
+    however, there was no one best model across all metrics, and simpler HMLR models perform better in low-data locations.
+    We find that HMLR models perform well in practice for nowcasting and forecasting SARS-CoV-2 variants.
+
 - title: 'Retrospective evaluation of trained and untrained probabilistic ensemble forecasts for influenza hospital admissions — United States, 2022–2025'
   slug: retrofluhosp
   authors: Frutos AM, Hines A, Shandross L, Ray EL, Reich NG, Borchering RK, Biggerstaff M
@@ -86,8 +116,8 @@ publications:
   preprint: https://arxiv.org/abs/2412.08916
   pdf: /pdfs/publications/kim_model_importance.pdf
   year: 2026
-  #volume: 30(9)[update when published]
-  #pages: 1967-1969[update when published]
+  volume: 42(3)
+  pages: 924-936
   journal: International Journal of Forecasting
   github: mkim425/model-importance
   doi: 10.1016/j.ijforecast.2025.12.006
