@@ -29,7 +29,7 @@ publications:
   slug: variant-hierarchical-multinomial
   authors: MacArthur I, Robacker T, Ray EL, Rogers BW, Reich NG, Griffin M
   preprint: https://arxiv.org/pdf/2605.22676
-  pdf: /pdfs/publications/kim_model_importance.pdf
+  pdf: https://arxiv.org/pdf/2605.22676
   year: 2026
   journal: arXiv
   github: reichlab/variant-nowcast-model-dev-retro
