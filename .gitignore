@@ -37,3 +37,7 @@
 *.knit.md
 
 .positai
+
+# Claude
+/.claude/
+CLAUDE.md

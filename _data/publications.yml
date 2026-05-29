@@ -25,10 +25,37 @@ publications:
 
 #2026
 
+- title: '`modelimportance`: An R package for evaluating model importance within a multi-model ensemble'
+  slug: modelimportance
+  authors: Kim M, Shandross L, Ray EL, Reich NG
+  preprint: https://arxiv.org/abs/2605.30278
+  pdf: https://arxiv.org/pdf/2605.30278
+  year: 2026
+  journal: arXiv
+  github: mkim425/modelimportance
+  #doi: 10.48550/arXiv.2605.30278
+  keywords: forecasting, software
+  abstract: >
+    Ensemble forecasts are commonly used to support decision-making and policy planning across various fields 
+    because they often offer improved accuracy and stability compared to individual models. 
+    As each model has its own unique characteristics, understanding and measuring the value of each constituent model 
+    can support the construction of effective ensembles. 
+    The R package `modelimportance` provides tools to quantify how each component model 
+    contributes to the accuracy of ensemble performance for both point and probabilistic forecasts. 
+    The package supports multiple ensemble methods and multiple model importance metrics. 
+    Additionally, the software offers customizable options for handling missing values. 
+    These features enable the package to serve as a versatile tool for researchers and practitioners. 
+    It helps not only in constructing an effective ensemble model across a wide range of forecasting tasks, 
+    but also in understanding the role of each model within the ensemble and gaining insights into individual models themselves. 
+    This package follows the 'hubverse' framework, which is a collection of open-source software, tools and data standards 
+    developed to promote collaborative modeling hub efforts and simplify their setup and operation. 
+    Doing so enables seamless integration and flexibility with other forecasting tools and systems, 
+    allowing many analyses to be performed on existing hubs.
+
 - title: 'Comparison of probabilistic nowcasts and forecasts of SARS-CoV-2 variant proportions made by hierarchical multinomial linear regression models'
   slug: variant-hierarchical-multinomial
   authors: MacArthur I, Robacker T, Ray EL, Rogers BW, Reich NG, Griffin M
-  preprint: https://arxiv.org/pdf/2605.22676
+  preprint: https://arxiv.org/abs/2605.22676
   pdf: https://arxiv.org/pdf/2605.22676
   year: 2026
   journal: arXiv
