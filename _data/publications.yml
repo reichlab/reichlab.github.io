@@ -36,7 +36,7 @@ publications:
   journal: arXiv
   github: epiforecasts/evalvariantnowcasthub
   #doi: 10.48550/arXiv.2605.30278
-  keywords: forecasting, software
+  keywords: forecasting, covid-19
   abstract: >
     The ability to estimate and predict pathogen variant dynamics can inform public health responses, including planning for 
     increased transmission or severity, shifts in population immunity, or changes to vaccine or therapeutic effectiveness. The
@@ -53,6 +53,30 @@ publications:
     those submitted for all locations, potentially due to greater timeliness and magnitude of local data. Much remains to be investigated
     regarding relative model performance across different phases of variant emergence, and we conclude by proposing future directions within
     and beyond this Hub.
+    
+- title: 'Local Influenza Forecasts Outperform State-Level Forecasts in the United States'
+  slug: local-influenza-forecast-eval
+  authors: Kim D, Pasco R, Johnson KE, Fox SJ, Reich NG, Meyers LA
+  preprint: https://www.medrxiv.org/content/10.64898/2026.06.04.26354836v1
+  pdf: https://www.medrxiv.org/content/10.64898/2026.06.04.26354836v1.full.pdf
+  year: 2026
+  journal: medrXiv
+  github: donga0223/Local-Level-Forecasting
+  #doi: 10.48550/arXiv.2605.30278
+  keywords: forecasting, influenza
+  abstract: >
+    Accurate outbreak forecasts are critical for timely and effective public health response. In the United States, however,
+    most forecasts are produced at the state level, which can mask substantial sub-state heterogeneity and limit their utility
+    for local planning. We generated and evaluated forecasts of the percentage of Emergency Department visits attributable to
+    influenza across 173 large metropolitan Health Service Areas (HSAs) using a gradient boosting quantile regression (GBQR) model,
+    and compared their accuracy to forecasts derived from state-level data alone. At a one-week, two-week and three-week horizon,
+    local forecasts outperformed state-based forecasts in 98.8%, 90.8%, and 78.6% of HSAs, respectively, achieving mean weighted
+    interval scores that were on average a 39.2% lower (95% range: 5.9% to 76.7%), 19.6% lower (-6.3% to 59.5%) , and 11.4% lower
+    (-11.7% to 44.9%), respectively. The performance advantage of local forecasting was strongest in HSAs representing a smaller
+    share of their state's population and increased with the proportion of the HSA population living in urban areas and the number
+    of metropolitan areas within a state. These results, based on an analysis of HSAs with populations greater than 250,000,
+    demonstrate that fine-scale modeling can substantially improve forecast accuracy and highlight the potential value of local
+    forecasts for outbreak preparedness and response.
 
 - title: '`modelimportance`: An R package for evaluating model importance within a multi-model ensemble'
   slug: modelimportance
