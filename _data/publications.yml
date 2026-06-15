@@ -25,6 +25,24 @@ publications:
 
 #2026
 
+- title: 'Modeling the Impact of Pediatric RSV Immunization in Massachusetts, 2024–2025'
+  slug: pediatric-RSV
+  authors: Jones L, Ergas R, Tibbs A, Russo ET, Norville J, Bingay B, Brown CM, Reich NG, Pasco R 
+  preprint: https://www.medrxiv.org/content/10.64898/2026.06.05.26354236v1
+  pdf: https://www.medrxiv.org/content/10.64898/2026.06.05.26354236v1.full.pdf
+  year: 2026
+  journal: medrXiv
+  #github: epiforecasts/evalvariantnowcasthub
+  #doi: 10.48550/arXiv.2605.30278
+  keywords: rsv
+  abstract: >
+    Pediatric immunizations for Respiratory Syncytial Virus (RSV), including monoclonal antibodies for infants and vaccines for
+    pregnant people, have become broadly available and can prevent severe RSV outcomes in infants. However, quantifying the impact
+    of RSV immunization in prevention of severe pediatric illness at the population-level is limited by lack of RSV case surveillance
+    data. The Massachusetts Department of Public Health (DPH) conducted a modeling analysis using routine public health surveillance
+    data to estimate the state-level impact of new RSV immunization products on Emergency Department (ED) visits and hospitalizations
+    in Massachusetts for highest risk pediatric groups.
+
 - title: 'Collaborative estimation and evaluation of SARS-CoV-2 variant nowcasting in the United States'
   slug: SARS-CoV-2-variant-nowcasting-eval
   authors: MacArthur I, Robacker T, Case B, Fox SJ, Morris DH, Ray EL, Rogers B, Sweger B, Linton NM, Huddleston JL, Magee A, Susswein Z, Lee J, Bedford T, Figgins MD, Suez E, Prabhakar R, Leon T, Siegel B, Thakur M, Hoover CM, Ryder R, Elder J, Kupperman M, Ke R, Goldberg E, Funk S, Griffin M, Reich NG, Johnson KE
