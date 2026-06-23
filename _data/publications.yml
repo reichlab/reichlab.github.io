@@ -1041,6 +1041,24 @@ publications:
     Conclusions
       This study fills a critical gap in estimating the levels of subclinical and asymptomatic infection. Estimates can be used to calibrate models estimating levels of population immunity over time, and these data are critical for informing public health interventions and policy.
 
+- title: 'Infectious disease forecasting for public health'
+  slug: lauer-public-health
+  authors: Lauer SA, Brown AC, Reich NG
+  preprint: https://arxiv.org/abs/2006.00073
+  pdf: https://arxiv.org/pdf/2006.00073
+  year: 2021
+  journal: Population Biology of Vector-Borne Diseases
+  doi: 10.1093/oso/9780198853244.003.0004
+  keywords: forecasting
+  abstract: >
+    Forecasting transmission of infectious diseases, especially for vector-borne diseases, poses unique challenges for researchers.
+    Behaviors of and interactions between viruses, vectors, hosts, and the environment each play a part in determining the transmission of a disease.
+    Public health surveillance systems and other sources provide valuable data that can be used to accurately forecast disease incidence.
+    However, many aspects of common infectious disease surveillance data are imperfect: cases may be reported with a delay or in some cases not at all,
+    data on vectors may not be available, and case data may not be available at high geographical or temporal resolution.
+    In the face of these challenges, researchers must make assumptions to either account for these underlying processes in a mechanistic model
+    or to justify their exclusion altogether in a statistical model.
+
 # 2020
 
 - title: 'Identification and evaluation of epidemic prediction and forecasting reporting guidelines: a systematic review and a call for action'
@@ -1162,32 +1180,6 @@ publications:
     Conclusions and Relevance: Excess deaths provide an estimate of the full COVID-19 burden and
     indicate that official tallies likely undercount deaths due to the virus. The mortality burden
     and the completeness of the tallies vary markedly between states.
-
-- title: 'Infectious disease forecasting for public health'
-  slug: lauer-public-health
-  authors: Lauer SA, Brown AC, Reich NG
-  preprint: https://arxiv.org/abs/2006.00073
-  pdf: https://arxiv.org/pdf/2006.00073
-  year: 2020
-  journal: arXiv
-  #doi: 10.48550/arXiv.2006.00073 [update when published]
-  keywords: forecasting
-  abstract: >
-    Forecasting transmission of infectious diseases, especially for vector-borne diseases, poses unique challenges
-    for researchers. Behaviors of and interactions between viruses, vectors, hosts, and the environment each play
-    a part in determining the transmission of a disease. Public health surveillance systems and other sources provide
-    valuable data that can be used to accurately forecast disease incidence. However, many aspects of common infectious
-    disease surveillance data are imperfect: cases may be reported with a delay or in some cases not at all, data on
-    vectors may not be available, and case data may not be available at high geographical or temporal resolution. In the
-    face of these challenges, researchers must make assumptions to either account for these underlying processes in a
-    mechanistic model or to justify their exclusion altogether in a statistical model. Whether a model is mechanistic
-    or statistical, researchers should evaluate their model using accepted best practices from the emerging field of
-    infectious disease forecasting while adopting conventions from other fields that have been developing forecasting
-    methods for decades. Accounting for assumptions and properly evaluating models will allow researchers to generate
-    forecasts that have the potential to provide valuable insights for public health officials. This chapter provides
-    a background to the practice of forecasting in general, discusses the biological and statistical models used for
-    infectious disease forecasting, presents technical details about making and evaluating forecasting models, and
-    explores the issues in communicating forecasting results in a public health context.
 
 - title: 'The incubation period of 2019-nCoV from publicly reported confirmed cases: estimation and application'
   slug: lauer-2019-ncov-incubation
