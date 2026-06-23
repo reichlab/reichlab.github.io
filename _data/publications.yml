@@ -1488,7 +1488,7 @@ publications:
      from acquiring workplace viral respiratory infections.
 
 - title: 'Technology to advance infectious disease forecasting for outbreak management'
-  slug: forcasting
+  slug: forecasting-technology
   authors: George GB, Taylor W, Shaman J, Rivers C, Paul B, O'Toole T, Johansson MA, Hirschman L, Biggerstaff M, Asher J, Reich NG
   pdf: https://www.nature.com/articles/s41467-019-11901-7.pdf
   year: 2019
@@ -1576,7 +1576,7 @@ publications:
 - title: 'Prospective forecasts of annual dengue hemorrhagic fever incidence in Thailand, 2010–2014'
   slug: lauer-annual-preds
   authors: Lauer SA, Sakrejda K, Ray EL, Keegan LT, Bi Q, Suangtho P, Hinjoy S, Iamsirithaworn S, Suthachana S, Laosiritaworn Y, Cummings DAT, Lessler J and Reich NG
-  pdf: https://www.pnas.org/content/early/2018/02/13/1714457115.full.pdf
+  pdf: https://www.pnas.org/doi/pdf/10.1073/pnas.1714457115
   year: 2018
   volume: 115(10)
   pages: E2175-E2182
