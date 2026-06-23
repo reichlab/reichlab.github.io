@@ -1044,7 +1044,6 @@ publications:
 - title: 'Infectious disease forecasting for public health'
   slug: lauer-public-health
   authors: Lauer SA, Brown AC, Reich NG
-  preprint: https://arxiv.org/abs/2006.00073
   pdf: https://arxiv.org/pdf/2006.00073
   year: 2021
   journal: Population Biology of Vector-Borne Diseases
