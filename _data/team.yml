@@ -20,14 +20,6 @@
 
 # Student section (PhD, MS, undergrad students, in order of seniority)
 
-- name: Minsu Kim
-  role: PhD Student
-  description: |
-    Minsu is a PhD student in Biostatistics. Her research interest is infectious disease forecasting,
-    ensemble methods, and machine learning. She enjoys programming. She usually go hiking in her free time.
-  image: /images/people/minsu.jpg
-  links: []
-
 - name: Álvaro J. Castro Rivadeneira
   role: PhD Student
   description: |
@@ -128,6 +120,15 @@
 
 
 # Alumni Section
+
+- name: Minsu Kim
+  role: PhD Student
+  description: |
+  type: Alumni
+  image: /images/people/minsu.jpg
+  links: 
+      - name: alumni_link
+        url: https://www.linkedin.com/in/minsukim-425kimi/
 
 - name: Zhian N. Kamvar
   role: Community Engineer (2024-2025)
