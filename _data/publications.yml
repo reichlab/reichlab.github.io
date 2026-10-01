@@ -48,7 +48,7 @@ publications:
     were most accurate during stable periods and least during periods of rapid change, with most
     models underestimating observed trends. Conclusions were robust to choice of scoring metric
     and reference model. These results support categorical trend ensembles as an approach to
-    communicating infectious disease forecasts that may inform public health decision-making. 
+    communicating infectious disease forecasts that may inform public health decision-making.
 
 - title: 'A software platform for collaborative infectious disease modelling'
   slug: hubverse-ms
