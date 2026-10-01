@@ -60,7 +60,7 @@ publications:
   pages: 1-10
   journal: Nat Health
   github: hubverse-org/hubverse
-  #doi: 10.1038/s44360-026-00145-7
+  doi: 10.1038/s44360-026-00145-7
   keywords: forecasting, software
   abstract: >
     To better respond to threats, decision-makers are increasingly interested in predictions they can understand and trust.
