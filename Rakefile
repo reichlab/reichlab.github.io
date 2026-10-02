@@ -1,5 +1,3 @@
-require 'html-proofer'
-
 task :clean do
   File.delete('_data/repositories.yml')
 end
@@ -17,6 +15,8 @@ task :tpgen, [:page, :divider] do |t, args|
 end
 
 task test: [:build] do
+  # Loading html-proofer pulls in libcurl + OpenSSL, which segfaults Ruby on Netlify's build image
+  require 'html-proofer'
   sh 'bundle exec jekyll build'
   options = { :assume_extension => true }
   HTMLProofer.check_directory('./_site', options).run
