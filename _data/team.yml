@@ -17,6 +17,21 @@
     - name: flaticon-curriculum
       url: /pdfs/cv/cvReich.pdf
 
+- name: Evan Ray
+  role: Research Faculty
+  description: |
+    Evan is a Research Associate Professor of Biostatistics at UMass-Amherst.
+    He received his PhD in statistics from UMass-Amherst, developing
+    methods to infer physical activity type and intensity from accelerometer
+    data. A former postdoc in the Reich Lab, he also works on developing
+    methods for predicting infectious disease outbreaks.
+  image: /images/people/evan.jpg
+  links:
+    - name: flaticon-curriculum
+      url: /pdfs/people/Evan_L_Ray_CV.pdf
+    - name: flaticon-laptop-1
+      url: "https://www.evanlray.com"
+
 
 # Student section (PhD, MS, undergrad students, in order of seniority)
 
@@ -156,15 +171,6 @@
   links: 
       - name: alumni_link
         url: "https://scholar.google.com/citations?hl=en&user=NP8nF4MAAAAJ"
-
-- name: Evan Ray
-  role: Postdoctoral Fellow (2015-2017), Research Faculty (2020-2025)
-  description: |
-  type: Alumni
-  image: /images/people/evan.jpg
-  links: 
-      - name: alumni_link
-        url: "https://www.evanlray.com"
 
 - name: Aaron Gerding
   role: MS Student (2021-2024)
